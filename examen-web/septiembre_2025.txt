@@ -1,0 +1,799 @@
+1. A mayor altura del centro de gravedad, la estabilidad del camión:
+* a) disminuye.
+b) aumenta.
+c) aumenta, siempre que la parte más ligera de la carga permanezca en la base de la caja.
+d) no sufre alteraciones.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+2. Cuando el apoyo de un camión pasa sucesivamente de las ruedas de un lado a las del otro, se 
+habla de:
+* a) un cambio de apoyo.
+b) apoyos simétricos.
+c) apoyos altos.
+d) apoyos largos.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+3. Cada vez que se realiza un cambio durante la subida de una pendiente, existe un instante en el que
+el camión pierde potencia. ¿De qué dependen estas pérdidas de potencia?
+a) De la experiencia del conductor.
+* b) De la inclinación de la pendiente and de la masa del vehículo.
+c) Del aumento del flujo de refrigeración.
+d) De la disminución de la temperatura.
+Referencia: 
+Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, 
+Ref. Doctrinal
+4. Un factor que puede afectar a la estabilidad del vehículo es:
+a) la masa neta que se puede levantar.
+b) la masa de velocidad máxima.
+c) la fuerza termotecnia lateral.
+* d) la rigidez torsional de la carrocería.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+5. El contenedor se caracteriza principalmente por:
+a) tener un volumen mínimo de 3 metros cúbicos.
+b) facilitar el transporte de mercancías de carga fraccionada.
+c) estar concebido para usarse una sola vez.
+* d) facilitar el transporte de mercancías sin ruptura de carga.
+Referencia: 
+Análisis, información y divulgación sobre la aportación del transporte por carretera a la 
+intermodalidad. Ministerio de Fomento, Ref. Doctrinal
+6. ¿Qué clases de autorizaciones administrativas se otorgan para realizar transporte público interior de
+mercancías?
+* a) La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada no 
+superior a 3,5 toneladas y la que habilita para efectuarlo con vehículos de Masa Máxima 
+Autorizada superior a 3,5 toneladas.
+b) La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada no 
+superior a 2 toneladas y la que habilita para efectuarlo con vehículos de Masa Máxima 
+Autorizada superior a 2 toneladas.
+c) La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada superior 
+a 2 toneladas, pues los vehículos de hasta 2 toneladas no necesitan autorización.
+d) La autorización para empresarios individuales (autónomos) y la autorización para 
+sociedades.
+Referencia Legal: 16/1987, Ley, 43
+7. En transporte internacional de mercancías, ¿qué permite la autorización bilateral de tránsito?
+a) Transitar por un país y dejar mercancías.
+b) Transitar por un país y recoger mercancías.
+* c) Solo permite transitar por un país.
+d) Solo permite dejar mercancías en un país.
+Referencia: 
+Observatorio del transporte de mercancías por carretera. Ministerio de Fomento, Ref. 
+Doctrinal
+8. ¿Cuál será el número mínimo de socios para formar una cooperativa de primer grado?
+* a) Tres.
+b) Cuatro.
+c) Cinco.
+d) Seis.
+Referencia Legal: 27/1999, Ley, Art. 8
+9. ¿A qué se llama embalaje primario?
+* a) Es aquel que está en contacto directo con el producto.
+b) Al que se realiza con materiales desechables como cartón, papel, etc.
+c) Respecto de una carga, al que sea más ligero.
+d) Al que se utiliza para transportar productos dentro de sus envases.
+Referencia: 
+Manual de estiba de la mercancía. CEFTRAL;Manual de estiba para mercancías sólidas.
+Ediciones UPC, Ref. Doctrinal; Ref. Doctrinal
+10.¿Hay obligación de contar con el documento de control de los envíos en un transporte de 
+mudanzas?
+* a) No.
+b) Sí.
+c) Solo si interviene más de un vehículo.
+d) Solo si el vehículo tiene más de 10 toneladas de MMA.
+Referencia Legal: FOM/2861/2012, OM, Art. 2
+11.¿Cómo responderán los socios de las deudas sociales en una sociedad de responsabilidad 
+limitada?
+a) Responderán personalmente.
+* b) No responderán personalmente.
+c) Uno de los socios, al menos, responderá personalmente de las deudas sociales como socio 
+colectivo.
+d) Depende del importe de la deuda.
+Referencia Legal: 1/2010, RD Legislativo, Art. 1.2
+12.Señale la afirmación correcta.
+* a) Los centros de transporte y logística de mercancías están contemplados en la Ley de 
+Ordenación de los Transportes Terrestres (LOTT).
+b) La LOTT solo habla de estaciones de transporte de viajeros.
+c) La LOTT diferencia entre estaciones de mercancías, de viajeros y mixtas.
+d) Los centros de transporte y logística de mercancías no están contemplados en la Ley de 
+Ordenación de los Transportes Terrestres (LOTT).
+Referencia Legal: 16/1987, Ley, Art. 127
+13.¿Puede provocar un aumento de la distancia de detención la sobrecarga de alguno de los ejes de 
+un camión?
+* a) Sí.
+b) No, puesto que la masa no afecta a la distancia de reacción.
+c) Sí, pero solamente si el eje que se sobrecarga es alguno de los delanteros.
+d) Sí, puesto que la masa afecta directamente a la distancia del tiempo de reacción del 
+conductor.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+14.Cuando la fuerza disponible para poner en movimiento un camión es inferior a la fuerza resistente 
+que se opone al movimiento¿
+* a) el motor se calará.
+b) el vehículo solo se pondrá en movimiento si la pendiente es inferior al 15 %.
+c) el vehículo solo se pondrá en movimiento si la pendiente es inferior al 5 %.
+d) el vehículo se comenzará a mover normalmente.
+Referencia: 
+Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, 
+Ref. Doctrinal
+15.¿Qué particularidad presentan, de cara a su utilización, las autorizaciones CEMT con un sello que 
+contenga un camión de color verde y el símbolo III encima?
+a) Solo pueden usarse con vehículos ecológicos y para un máximo de tres viajes.
+b) Solo pueden usarse con vehículos ecológicos y para atravesar un máximo de tres países.
+* c) Deben usarse en vehículos calificados como EURO III seguros.
+d) No existen este tipo de autorizaciones CEMT.
+Referencia: 
+Guía CEMT de utilización del contingente multilateral, Ref. Doctrinal
+16.¿Cuál de los siguientes transportes internacionales de mercancías está liberalizado en la Unión 
+Europea?
+* a) Los transportes por cuenta propia.
+b) Los transportes por cuenta propia, pero solo si son efectuados en vehículos de hasta 10 
+toneladas de Masa Máxima Autorizada.
+c) Los transportes por cuenta ajena en vehículos de hasta 10 toneladas de Masa Máxima 
+Autorizada.
+d) Ninguno de los anteriores.
+Referencia Legal: (CE) 1072/2009, Reglamento Comunitario, Art. 1.5
+17.Para la realización de actividades de transporte de mercancías con un vehículo de 10 toneladas de 
+Masa Máxima Autorizada, será necesaria previamente la obtención de:
+a) una licencia municipal de actividad.
+b) un certificado de conductor.
+* c) una autorización administrativa habilitante para la actividad de transporte.
+d) una tarjeta de tacógrafo.
+Referencia Legal: 16/1987, Ley, 42
+18.¿Quién expide los certificados de conductor de tercer país?
+a) Las comisarías de Policía.
+b) Las delegaciones de Extranjería del Ministerio del Interior.
+c) El Ministerio de Transportes.
+* d) Las Comunidades Autónomas.
+Referencia Legal: TRM/59/2025, OM, 3
+19.En un contrato de transporte sujeto al Convenio CMR¿
+a) la responsabilidad del transportista por pérdida de la mercancía viene determinada 
+únicamente por el valor de esta y los gastos en los que se haya incurrido con ocasión del 
+transporte.
+b) la responsabilidad del transportista por pérdida de la mercancía está siempre limitada a 8,33 
+unidades de cuenta por kilogramo.
+* c) el remitente puede declarar en la carta de porte un valor superior a 8,33 unidades de cuenta,
+que será el nuevo límite de responsabilidad.
+d) el remitente puede declarar en la carta de porte un valor superior a 4,5 euros por kilogramo, 
+que será el nuevo límite de responsabilidad.
+Referencia Legal: CMR, Convenio, Art. 24
+20.Si un consumidor opta por contratar un seguro que cubra los daños que puedan sufrir las 
+mercancías durante el transporte, ¿quién debe asumir su coste?
+a) El transportista.
+b) El transportista, pero puede repercutir el 25 % del mismo en el precio del transporte.
+c) El transportista, pero puede repercutir el 50 % del mismo en el precio del transporte.
+* d) El consumidor, pues el transportista puede repercutir el coste íntegro en el precio del 
+transporte.
+Referencia Legal: FOM/1882/2012, OM, Anexo, 3.3
+21.Según el acuerdo ATP, ¿qué es un vehículo identificado con las letras FNA?
+a) Un vehículo frigorífico normal con autorización de validez anual.
+b) Un vehículo refrigerante reforzado de la clase A.
+* c) Un vehículo frigorífico normal de la clase A.
+d) Un vehículo refrigerado normal de la clase A.
+Referencia Legal: ATP, Acuerdo, Anejo I, Apéndice 4
+22.¿Es obligatorio llevar la tarjeta de inspección técnica en el vehículo?
+a) Solo en los vehículos pesados.
+b) Solo en los vehículos ligeros.
+c) Solo en los vehículos con más de 10 años de antigüedad.
+* d) Sí, siempre.
+Referencia Legal: 6/2015, RDL, Art. 59
+23.Si el transporte lo lleva a cabo un conjunto articulado, ¿qué matrícula debe hacerse constar en el 
+documento de control administrativo del transporte?
+a) Ninguna.
+* b) Las del vehículo tractor y el semirremolque.
+c) Únicamente la del vehículo tractor.
+d) Cualquiera de las dos indistintamente.
+Referencia Legal: FOM/2861/2012, OM, 6
+24.¿En qué caso de los siguientes puede, un vehículo que transporta mercancías peligrosas, entrar en 
+un núcleo urbano?
+a) Si su MMA es inferior a 7,5 toneladas.
+b) Si transporta mercancías poco peligrosas de las clases 2 o 3.
+c) Cuando sea necesario para acceder a un aparcamiento vigilado y debidamente 
+acondicionado.
+* d) Cuando vaya a realizar una operación de descarga.
+Referencia Legal: 97/2014, RD, 5
+25.¿Para efectuar la actividad de transitario es necesario contar con autorización administrativa?
+a) No, en ningún caso.
+b) Solo aquellos que intermedien en transportes intermodales.
+c) Sí, la de agente de transporte internacional.
+* d) Sí, la de operador de transporte.
+Referencia Legal: 16/1987, Ley, 119
+26.¿Cómo no debe ser la presentación personal de un trabajador de una empresa de transporte?
+a) Tener una sonrisa amistosa.
+b) Mostrar respeto en todo momento.
+* c) Utilizar el singular en lugar del plural al referirse a la empresa.
+d) Saludar al cliente.
+Referencia: 
+, 
+27.¿Cómo son los valores de par y potencia que aparecen en las especificaciones técnicas indicadas 
+por el fabricante del vehículo?
+a) Mínimos.
+b) Medios.
+c) Incrementados.
+* d) Máximos.
+Referencia: 
+Manual de conducción eficiente para conductores de vehículos industriales. IDAE, Ref. 
+Doctrinal
+28.¿Qué datos registra automáticamente el tacógrafo?
+a) Exclusivamente las actividades de los conductores.
+b) Solo la velocidad.
+c) Únicamente la distancia recorrida.
+* d) Datos sobre la marcha de los vehículos y sobre determinados tiempos de trabajo de los 
+conductores.
+Referencia Legal: (UE) 165/2014, Reglamento Comunitario, Art. 4.3
+29.¿Qué es lo primero que debemos hacer en caso de accidente?
+a) Ayudar a las víctimas.
+b) Solicitar ayuda especializada.
+* c) Preservar la seguridad de la zona del accidente.
+d) Es igual.
+Referencia: 
+Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+30.¿Qué son los retardadores en una caja de cambios?
+a) Un dispositivo que actúa impidiendo el cambio de marcha hasta que los dos elementos a 
+conectar tienen el mismo número de revoluciones.
+* b) Un dispositivo que realiza una función de frenado de los ejes, aminorando las revoluciones 
+que llegan a las ruedas.
+c) Un dispositivo que transmite eléctricamente la orden de acoplamiento.
+d) Un dispositivo que permite el accionamiento del grupo distribuidor y zonal en una caja de 
+velocidades de triple grupo.
+Referencia: 
+Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, 
+Ref. Doctrinal
+31.En relación con las rutas de fuera del Espacio Schengen, los transportistas están obligados a 
+comprobar:
+a) que el dinero de los pasajeros sea de curso legal en España.
+* b) la validez y vigencia de los títulos de viaje y de los documentos de identidad de sus 
+pasajeros.
+c) la validez del precontrato de trabajo de los inmigrantes.
+d) la validez y vigencia de los títulos de viaje y de los certificados de vacunación de sus 
+pasajeros.
+Referencia Legal: 4/2000, Ley Orgánica, Art. 66.3
+32.En presencia de un accidente de tráfico, no debemos:
+* a) dar comida o bebida a los heridos.
+b) hablar con los heridos.
+c) preguntar a los heridos el nombre y cómo se encuentran.
+d) pararnos y auxiliar a los heridos.
+Referencia: 
+Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+33.La arena seca proyectada contra el foco de un incendio actúa por:
+a) dilución del oxígeno.
+* b) sofocación del fuego.
+c) enfriamiento de la temperatura.
+d) oxigenación.
+Referencia: 
+Fichas NTP (Notas Técnicas de Prevención). Instituto Nacional de Seguridad e Higiene 
+en el Trabajo;Enciclopedia OIT de Salud y Seguridad en el Trabajo. OIT, Ref. Doctrinal; 
+Ref. Doctrinal
+34.La minoración superior al 50 % sobre los períodos de descanso semanales obligatorios, ¿qué tipo 
+de infracción se considera?
+a) Leve.
+* b) Muy grave.
+c) Grave.
+d) No se considera infracción.
+Referencia Legal: 16/1987, Ley, Art. 140.37
+35.La toma de medicamentos, ¿influye en la conducción?
+* a) Sí, ya que puede llegar a producir efectos sedantes, disminuyendo la atención.
+b) No influye.
+c) Solo influye si se mezcla con alcohol.
+d) Solo influye si se mezcla con drogas.
+Referencia: 
+Guía de consejo sanitario en seguridad vial laboral. Observatorio Nacional de Seguridad 
+Vial-Dirección General de Tráfico, Ref. Doctrinal
+36.Cuanto mayor es el régimen de giro del motor¿
+a) menores serán las pérdidas por fricción entre las piezas del motor.
+* b) mayor será el consumo.
+c) mayores serán las pérdidas por fricción entre las piezas del motor, lo que se traducirá en un 
+menor consumo.
+d) habrá un menor consumo.
+Referencia: 
+, 
+37.¿Para qué conductores no es necesario el certificado de aptitud profesional (CAP)?
+a) Para los conductores de camiones con una MMA > 15.000 kg.
+b) Para los conductores de vehículos de transporte de mercancías que desarrollen una 
+velocidad máxima autorizada superior a 65 kilómetros por hora.
+* c) Para los conductores de vehículos utilizados para realizar transporte privado particular de 
+viajeros o mercancías.
+d) Para los conductores de autobuses con más de 45 plazas.
+Referencia Legal: 284/2021, RD, Art. 2
+38.Si el freno de un vehículo es incapaz de evacuar el calor que genera:
+a) puede alcanzar su máxima potencia.
+* b) puede perder eficacia e incluso dejar de funcionar.
+c) puede deteriorar el asfalto de la carretera.
+d) no tiene consecuencia alguna, puesto que el freno genera un calor mínimo.
+Referencia: 
+, 
+39.¿Qué actuación debe realizarse antes en caso de evacuación de un vehículo?
+a) Sacar todas las pertenencias del conductor.
+* b) Asegurar el vehículo quitando la llave de encendido.
+c) Ponerse en contacto con la empresa aseguradora.
+d) Rellenar el parte de evacuación.
+Referencia: 
+, 
+40.Señale la afirmación incorrecta:
+a) La declaración amistosa de accidente agiliza el pago de indemnizaciones derivadas de un 
+siniestro.
+* b) La declaración amistosa de accidente hace que disminuya el consumo de los vehículos.
+c) La declaración amistosa de accidente facilita y agiliza la labor del empleado que recibe el 
+parte de siniestro en la oficina.
+d) La declaración amistosa de accidente facilita y agiliza la labor de los tramitadores de la 
+indemnización.
+Referencia Legal: CIDE; CIDE, Convenio; Convenio, Preliminar; 1
+41.En relación con el auxilio a los heridos de un accidente de tráfico, señale cuál de las siguientes 
+afirmaciones es incorrecta:
+a) Si el herido se encuentra fuera del vehículo, únicamente se debe moverlo para proteger su 
+integridad, por ejemplo, en caso de que se encuentre expuesto a riesgo grave de atropello.
+b) Si algún herido permanece dentro del vehículo y se le puede atender allí mismo, no se debe 
+intentar sacarlo al exterior.
+* c) La primera actuación ante un herido es siempre sacarlo del lugar del accidente.
+d) No debe moverse a los heridos, incluso en caso de vuelco, salvo peligro inminente de 
+incendio u otra circunstancia extrema.
+Referencia: 
+, 
+42.El empuje que el aire ejerce sobre un vehículo en movimiento repercute sobre:
+a) el embrague.
+b) la fuerza termodinámica.
+* c) el consumo.
+d) la fuerza de solubilidad térmica.
+Referencia: 
+, 
+43.Si, como consecuencia de una inspección de transporte en carretera, hay que proceder al traslado 
+obligatorio del vehículo:
+a) el vehículo solo podrá ser conducido hasta el taller más próximo por los agentes que 
+efectúen el control.
+b) el conductor no tiene ninguna obligación de facilitarles las operaciones de verificación.
+* c) el conductor está obligado a conducirlo hasta el taller autorizado y facilitar las verificaciones.
+d) para la conducción al taller más cercano, la empresa transportista tendrá que facilitar un 
+nuevo conductor.
+Referencia Legal: 16/1987, Ley, Art. 33.4
+44.¿Pueden combinarse los pictogramas que aparecen en el tacógrafo digital entre sí?
+* a) Sí, para expresar diferentes contenidos.
+b) No.
+c) Sí, pero solo los de incidentes.
+d) Sí, pero solo los de fallos.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, Apéndice 3
+45.¿Cometen alguna infracción dos conductores cuando hacen un descanso diario de 8 horas si van 
+conduciendo un vehículo en equipo?
+a) Sí, una infracción grave.
+* b) Sí, una infracción leve.
+c) No, ninguna.
+d) Sí, muy grave.
+Referencia Legal: 16/1987, Ley, Art. 142.17
+46.¿Cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de 
+carburante?
+a) Evitar el viento trasero.
+* b) Reducir el régimen de revoluciones.
+c) Circular en punto muerto siempre que sea posible.
+d) Usar un adecuado asistente de la dirección.
+Referencia: 
+, 
+47.¿Cuál es el concepto de "par motor"?
+a) Es el trabajo realizado en la unidad de tiempo.
+b) Es el esfuerzo necesario para hacer girar las ruedas del vehículo.
+* c) Es el esfuerzo que transmite el pistón sobre el cigüeñal y, por tanto, sobre el volante de 
+inercia.
+d) Es el trabajo necesario para hacer girar las ruedas del vehículo.
+Referencia: 
+, 
+48.¿Cuáles son las medidas que es aconsejable tomar con lluvia?
+a) Pegarse al coche que va delante para que nos sirva de referencia.
+b) Utilizar los intermitentes de emergencia y frenar bruscamente para detener el vehículo.
+* c) Utilizar la luz de cruce o antiniebla en caso de lluvia fuerte, frenar de manera suave y 
+progresiva y aumentar la distancia de seguridad.
+d) Circular a una velocidad constante de 80 km/h.
+Referencia: 
+, 
+49.¿Cuál es uno de los momentos en el que se va formando la percepción del cliente sobre la calidad 
+de un servicio de transporte?
+a) Al recibir las mercancías del transportista.
+b) Al entregar las mercancías al transportista.
+c) Al comprar un billete de viaje.
+* d) Todas las respuestas anteriores son correctas.
+Referencia: 
+Manual de apoyo para la implantación de la gestión de la calidad según la Norma 
+UNE-EN 13816 en empresas de transporte de viajeros por carretera. Fundación 
+CETMO;Calidad y corresponsabilidad en el transporte público de viajeros por carretera. 
+Fundación CETMO, Ref. Doctrinal; Ref. Doctrinal
+50.De las siguientes opciones, ¿cuál no es un riesgo asociado a la actividad de transporte?
+a) Accidentes de tráfico.
+b) Accidentes derivados del transporte de mercancías peligrosas.
+c) Accidentes en operaciones de carga y descarga.
+* d) Accidentes en operaciones de mantenimiento de vehículos particulares.
+Referencia: 
+, 
+51.¿En qué modalidades puede obtenerse el certificado de aptitud profesional de conductores 
+acreditativo de la cualificación inicial?
+* a) Modalidades inicial ordinaria e inicial acelerada.
+b) Modalidades inicial básica e inicial avanzada.
+c) Modalidades inicial sencilla e inicial compleja.
+d) Modalidades inicial simple e inicial especial.
+Referencia Legal: 284/2021, RD, Art. 4
+52.¿En qué unidades se mide la potencia?
+* a) Kilovatios (kW).
+b) Newtons (N).
+c) Kilogramos (kg).
+d) Kilogramos por metro (kg/m).
+Referencia: 
+, 
+53.¿La falta de sueño puede alterar el comportamiento del conductor?
+a) No.
+b) Solo por la noche.
+c) Sí, hace que esté más atento.
+* d) Sí, generando nerviosismo y agresividad.
+Referencia: 
+Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+54.Al accionar el ralentizador, se ven frenadas:
+a) todas las ruedas.
+b) siempre las ruedas delanteras.
+c) siempre las ruedas directrices.
+* d) solo las ruedas motrices.
+Referencia: 
+, 
+55.Una dosis excesiva de café, ¿qué efecto negativo puede llegar a producir?
+a) Alivio de la fatiga.
+* b) Ansiedad.
+c) Mantenimiento del estado de vigilia.
+d) Mejora de los reflejos.
+Referencia: 
+, 
+56.Los datos registrados en una tarjeta de conductor se pueden descargar:
+a) solo a través del tacógrafo digital.
+b) solo desde un taller.
+* c) desde el tacógrafo o a través de un lector de tarjetas que tenga acceso a los datos de 
+usuario.
+d) solo desde un lector de tarjetas que tenga acceso a los datos de usuario.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, IV.2  
+57.Si se multiplica la mitad de la masa de un vehículo por el cuadrado de su velocidad, el resultado 
+obtenido será:
+a) su potencia.
+b) su par motor.
+* c) su energía cinética.
+d) su consumo específico.
+Referencia: 
+, 
+58.El uso que se realice de los sistemas de frenado de un automóvil, ¿puede influir en el consumo de 
+carburante?
+* a) Sí.
+b) Sí, siempre y cuando los frenos no sean eléctricos.
+c) No, ya que los frenos solo influyen en la distancia de frenado.
+d) No si se utiliza un adecuado sistema de inyección.
+Referencia: 
+, 
+59.¿Qué actuación es inadecuada como medida de ahorro de carburante?
+a) Circular a un régimen medio de revoluciones.
+* b) Circular con una presión de inflado de los neumáticos superior a la recomendada por el 
+fabricante.
+c) Bajar las pendientes utilizando el motor como freno.
+d) Bajar las pendientes sin acelerar.
+Referencia: 
+Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, 
+Ref. Doctrinal
+60.La utilización del freno eléctrico¿
+a) se limitará a lo imprescindible ya que deteriora rápidamente los elementos frenantes.
+b) se limitará a lo imprescindible ya que deteriora la transmisión.
+c) se utilizará siempre después del freno de servicio.
+* d) evita el fenómeno "fading".
+Referencia: 
+, 
+61.¿Por dónde debe pasar la parte baja del cinturón de seguridad?
+a) Por el hombro.
+b) Por el abdomen.
+c) Por el cuello.
+* d) Por la zona pélvica.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+62.¿Qué objetivo tienen los reposacabezas?
+a) Son un elemento de seguridad activa.
+* b) Disminuyen considerablemente la gravedad de las lesiones en el cuello y en las vértebras.
+c) Disminuyen considerablemente la gravedad de las lesiones en las piernas.
+d) Ninguno, ya que es un elemento decorativo.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+63.Las funciones previstas para las Juntas Arbitrales del Transporte serán ejercidas en relación con:
+a) cualquier medio de transporte.
+* b) los transportes terrestres.
+c) los transportes marítimos y por carretera.
+d) los transportes por carretera, únicamente.
+Referencia Legal: 1211/1990, RD, Art. 6.1
+64.Efectuar un servicio de transporte de mercancías supone la realización de una serie de actuaciones,
+excepto:
+a) efectuar una carga.
+b) efectuar una descarga.
+c) realizar una ruta.
+* d) pintar el vehículo antes de iniciar el viaje.
+Referencia: 
+, 
+65.Conducir de forma que se reduzca la velocidad media de circulación tiene como ventaja:
+* a) un menor consumo.
+b) reducir el coeficiente aerodinámico del vehículo y prolongar la vida del motor.
+c) no tener que comprobar el nivel del líquido refrigerante ya que, conducir de esta manera, 
+hace que el consumo de refrigerante sea nulo.
+d) reducir la frecuencia de la inspección técnica periódica y aumentar los plazos de 
+mantenimiento del vehículo.
+Referencia: 
+Manual de conducción eficiente. IDAE, Ref. Doctrinal
+66.Un vehículo que se dedica exclusivamente a transportar material de feria está:
+a) exento de usar tacógrafo en los trayectos inferiores a 200 km.
+* b) exento del uso de tacógrafo si se trata de un transporte privado complementario y el vehículo
+está especialmente acondicionado para ello.
+c) obligado a usar tacógrafo si los trayectos son superiores a 200 km.
+d) obligado a usar tacógrafo.
+Referencia Legal: 640/2007, RD, Art. 2.i
+67.¿Qué se pretende conseguir con la formación obligatoria de los conductores adicional a la del 
+permiso de conducir?
+* a) Que los conductores puedan responder a las nuevas exigencias originadas por la evolución 
+del sector.
+b) Que los conductores respondan a las exigencias de los empresarios en cuanto a horas de 
+conducción.
+c) Que las empresas obtengan más beneficios.
+d) Que los Estados dejen de realizar inspecciones en carretera.
+Referencia Legal: (UE)2022/2561, Directiva, Considerandos
+68.Al accionar el freno motor en el escape:
+a) el cilindro de amortiguación se apaga.
+b) la válvula de aceleración sube de revoluciones.
+c) la válvula de aceleración baja de revoluciones.
+* d) se limita la salida de gases de escape, frenando el desplazamiento de los pistones.
+Referencia: 
+, 
+69.En el cuentarrevoluciones, la zona de máxima eficiencia del motor está indicada en color:
+a) rojo.
+b) naranja.
+c) amarillo.
+* d) verde.
+Referencia: 
+, 
+70.Para saber el momento adecuado en el que se debe cambiar de marcha, y con ello reducir el 
+consumo de carburante, el conductor de un vehículo pesado deberá tener en cuenta:
+a) el coeficiente aerodinámico del vehículo.
+b) el tipo de ralentizador que monte el vehículo.
+* c) el perfil de la carretera.
+d) la anchura de los neumáticos.
+Referencia: 
+, 
+71.Para ahorrar carburante, ¿es conveniente reducir de marchas lo más pronto posible?
+a) Sí.
+* b) No, es mejor reducir de marchas lo más tarde posible.
+c) No, es mejor reducir de marchas siempre que el motor gire a más de 2.500 revoluciones por 
+minuto.
+d) La reducción de marchas es un factor que no influye en el consumo.
+Referencia: 
+Manual de conducción eficiente. IDAE, Ref. Doctrinal
+72.En los motores de los automóviles actuales, si el vehículo circula a más de 20 km/h, el consumo es 
+nulo:
+a) siempre.
+b) si el pedal del embrague está pisado y no se acelera.
+* c) si el pedal del embrague no está pisado, no se acelera y no se pone punto muerto.
+d) cuando está metida la primera relación de marchas.
+Referencia: 
+, 
+73.¿Cuál es una medida de ahorro equivocada?
+a) Circular con los cristales de las ventanillas subidos.
+b) Circular a velocidad moderada.
+* c) Parar el motor cuando se vaya a bajar una pendiente.
+d) Subir las pendientes procurando cambiar de marchas lo menos posible.
+Referencia: 
+Manual de conducción eficiente. IDAE, Ref. Doctrinal
+74.A mayor velocidad, ¿es también mayor el consumo de combustible?
+a) No, se consume menos.
+b) No, tal circunstancia no influye en el consumo.
+c) Sí, aunque el consumo aumenta muy ligeramente.
+* d) Sí, aumentando en mayor proporción el consumo respecto de la velocidad.
+Referencia: 
+Manual de conducción eficiente. IDAE, Ref. Doctrinal
+75.En un vehículo, el aire acondicionado o el climatizador¿
+a) es uno de los accesorios que permite ahorrar combustible.
+b) no tiene ninguna incidencia en el consumo de combustible.
+* c) influye en gran medida en el consumo de combustible.
+d) solo influye en el consumo de combustible cuando se circula por debajo de 50 Km/h.
+Referencia: 
+, 
+76.El mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre 
+otros:
+* a) del perfil de la carretera y la presión de los neumáticos.
+b) del mantenimiento del vehículo y el voltaje que suministre la batería.
+c) de la posición del pedal del acelerador y la longitud del cigüeñal.
+d) del motor de arranque y del tipo de ralentizador que monte el vehículo.
+Referencia: 
+, 
+77.Los mayores, como peatones, tienen:
+a) una mayor movilidad.
+b) una mejor visión.
+* c) una disminución de la audición.
+d) una menor gravedad en las lesiones en caso de accidente.
+Referencia: 
+Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+78.Un calentamiento excesivo de las zapatas¿
+a) incrementa la eficacia del frenado.
+b) incrementa el desgaste de los neumáticos.
+* c) disminuye la eficacia del frenado.
+d) disminuye el desgaste de los neumáticos.
+Referencia: 
+, 
+79.En las estadísticas de accidentes de circulación, el índice de peligrosidad hace referencia:
+a) al número de fallecidos respecto del número de kilómetros recorridos.
+* b) al número de accidentes con víctimas respecto del número de kilómetros recorridos.
+c) a indicadores que comparan el número de víctimas y el número de fallecidos.
+d) Todas las respuestas son correctas.
+Referencia: 
+Estadística de Accidentes de Tráfico. Dirección General de Tráfico.;Estudio de 
+accidentes - Red regional de carreteras. Junta de Castilla y León, Ref. Doctrinal; Ref. 
+Doctrinal
+80.En las estadísticas de accidentes de circulación, el índice de gravedad hace referencia:
+a) al número de fallecidos respecto del número de kilómetros recorridos.
+b) al número de accidentes con víctimas respecto del número de kilómetros recorridos.
+* c) a indicadores que comparan el número de fallecidos con el número de accidentes.
+d) Todas las respuestas son correctas.
+Referencia: 
+Estadística de Accidentes de Tráfico. Dirección General de Tráfico.;Estudio de 
+accidentes - Red regional de carreteras. Junta de Castilla y León, Ref. Doctrinal; Ref. 
+Doctrinal
+81.¿Qué efecto tiene el sistema antibloqueo de frenos (ABS) en una maniobra de frenado?
+* a) Impide que las ruedas se bloqueen, manteniendo así el control de la dirección del vehículo.
+b) Impide que los frenos se activen en las trayectorias rectas.
+c) Impide que los frenos se bloqueen, no permitiendo una reducción drástica de la velocidad del
+vehículo.
+d) Impide que el vehículo arranque después de la maniobra de frenado.
+Referencia: 
+, 
+82.¿A qué distancia deben colocarse los triángulos de señalización de peligro?
+a) Al menos, a 25 metros.
+* b) Al menos, a 50 metros.
+c) Al menos, a 75 metros.
+d) Al menos, a 100 metros.
+Referencia Legal: 159/2021;2822/1998, RD, Disposición transitoria primera;  Anexo XI
+83.¿Cuáles de los siguientes Estados forman parte del Espacio Schengen?
+* a) Bélgica y Luxemburgo
+b) Bélgica y Reino Unido.
+c) Irlanda.
+d) Todas las respuestas son correctas.
+Referencia Legal: Schengen, Acuerdo, Preámbulo
+84.Indique cuál de las siguientes afirmaciones es correcta:
+a) En carretera se producen más accidentes con víctimas que en zona urbana.
+* b) En zona urbana se producen más accidentes con víctimas que en carretera, pero mueren 
+menos personas.
+c) En zona urbana se producen más accidentes con víctimas y mueren más personas que en 
+carretera.
+d) En zona urbana se producen más accidentes que en carretera, pero no hay víctimas.
+Referencia: 
+, 
+85.En una alimentación equilibrada, es recomendable moderar el consumo de:
+a) frutas.
+b) verduras.
+c) hortalizas.
+* d) carnes grasas.
+Referencia: 
+Guía de alimentación saludable. Sociedad Española de Nutrición Comunitaria, Ref. 
+Doctrinal
+86.¿Qué se deberá tener en cuenta respecto a la utilización del cinturón de seguridad?
+a) Que la parte superior de la cinta debe pasar por el cuello.
+* b) Que debe llevarse correctamente abrochado, bien reglado y ajustado al cuerpo sin holgura.
+c) Que la parte superior de la cinta debe pasar por la zona pélvica.
+d) Que debe llevarse muy flojo.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+87.De los elementos de seguridad que se citan, ¿cuál está considerado como elemento de seguridad 
+activa?
+a) El cinturón de seguridad.
+* b) El sistema de frenado.
+c) El airbag.
+d) Los reposacabezas.
+Referencia: 
+Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+88.¿Cuál de las técnicas indicadas es más correcta para optimizar el consumo de carburante?
+a) Acelerar muy rápidamente para obtener una velocidad de crucero económica.
+b) Circular siempre en marchas cortas.
+* c) Evitar acelerones y frenazos innecesarios.
+d) Conducir con un vehículo muy potente.
+Referencia: 
+, 
+89.¿Qué debe realizarse para aprovechar mejor la inercia de un vehículo?
+a) Frenar un poco más que el vehículo precedente.
+b) Acelerar un poco más que el vehículo precedente.
+* c) Mantener la velocidad media constante.
+d) Todas las respuestas son correctas.
+Referencia: 
+Mecánica y entretenimiento simple del automóvil. Curso de profesores de formación vial.
+DGT, Ref. Doctrinal
+90.¿Qué debe realizarse para aprovechar mejor la inercia de un vehículo?
+a) Acelerar un poco más que el vehículo precedente.
+* b) Mantener una distancia de seguridad superior a la habitual.
+c) No utilizar el freno motor.
+d) Todas las respuestas son correctas.
+Referencia: 
+Mecánica y entretenimiento simple del automóvil. Curso de profesores de formación vial.
+DGT, Ref. Doctrinal
+91.Según la normativa estatal, ¿qué caracteriza a los itinerarios de interés general?
+a) Formar parte de RIMP.
+b) Enlazar poblaciones de más de 10.000 habitantes.
+* c) Constituir el acceso a un puerto de interés general.
+d) Transcurrir por ellos servicios de transporte regular de uso general.
+Referencia Legal: 37/2015, Ley, 4
+92.¿Cómo actúa el TCS?
+a) En caso de derrape, hace actuar los frenos.
+b) Sincronizado del sistema de frenos en todas las ruedas.
+c) Avisa al conductor si se sale de la trayectoria del carril por el que circula.
+* d) Reduce la fuerza del motor si las ruedas motrices pierden adherencia.
+Referencia: 
+Cuestiones de seguridad vial. Curso de profesores de formación vial. DGT, Ref. 
+Doctrinal
+93.En la zona de interacción entre conductor y peatón es fundamental¿
+a) la percepción que tenga el peatón de los movimientos de otros peatones.
+b) la percepción que tenga el conductor de los movimientos de otros conductores.
+* c) la percepción que tenga el conductor de los movimientos del peatón.
+d) No existe una zona de interacción entre conductor y peatón.
+Referencia: 
+, 
+94.¿Qué clase de costes de un accidente de tráfico es más difícil de valorar económicamente?
+a) Los directos.
+b) Los indirectos.
+* c) Los humanos.
+d) Todos presentan una dificultad similar.
+Referencia: 
+Manual de seguridad vial para profesores de formación vial. Dirección General de 
+Tráfico, Ref. Doctrinal
+95.El elemento básico a tener en cuenta para evitar la aparición de sueño al volante es:
+a) tener el habitáculo ventilado.
+* b) mantener hábitos de sueño correctos.
+c) tomar mucho café durante el viaje.
+d) parar con mucha frecuencia.
+Referencia: 
+Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+96.¿Cuál es el efecto en virtud del cual actúan los extintores de polvo químico?
+* a) Inhiben la reacción en cadena que se produce en el fuego.
+b) Sofocan el oxígeno del aire que rodea al incendio.
+c) Enfrían el combustible que se está quemando.
+d) Todas las respuestas son correctas.
+Referencia: 
+Fichas NTP (Notas Técnicas de Prevención). Instituto Nacional de Seguridad e Higiene 
+en el Trabajo, Ref. Doctrinal
+97.El conductor de un vehículo de mudanzas:
+a) debe limitarse a conducir el vehículo.
+* b) debe colaborar en las tareas propias de la mudanza.
+c) debe colaborar en la mudanza, pero solo en la estiba de los enseres en el vehículo.
+d) debe colaborar en la mudanza, pero solo respecto de los enseres que requieran ayuda de 
+maquinaria para su carga en el vehículo.
+Referencia Legal: II Acuerdo general para las empresas de transporte de mercancías, Acuerdo, 16
+98.Salvo excepciones, los conductores de vehículos de transporte de mercancías no deben participar 
+en las operaciones de carga del vehículo cuando este tenga una MMA:
+a) superior a 3,5 toneladas.
+b) inferior a 3,5 toneladas.
+* c) superior a 7,5 toneladas.
+d) inferior a 7,5 toneladas.
+Referencia Legal: 16/1987, Ley, Disposición adicional decimotercera
+99.¿Qué efecto tiene sobre el consumo de carburante aprovechar las inercias de las pendientes?
+a) Siempre supone una disminución del consumo.
+b) Lo disminuye en el caso de las pendientes ascendentes.
+c) Lo aumenta en el caso de las pendientes descendentes.
+* d) Lo disminuye en el caso de las pendientes descendentes.
+Referencia: 
+, 
+100.Un mal diseño del asiento del conductor puede provocar, de manera más común...
+a) Tendinitis,
+b) Luxaciones.
+c) Bursitis.
+* d) Lumbalgia.
+Referencia: 
+, 
+101.Los embragues hidráulicos son¿
+* a) embragues automáticos.
+b) embragues específicos para camiones.
+c) embragues específicos para autobuses.
+d) embragues para cajas de más de 8 marchas.
+Referencia: 
+Mecánica y entretenimiento simple del automóvil. DGT., Ref. Doctrinal
+102.Realizar una conducción encaminada a la optimización del consumo de carburante:
+a) no reduce significativamente el consumo.
+b) aumenta las emisiones de gases contaminantes.
+* c) mejora la seguridad en la circulación.
+d) aumenta la contaminación acústica.
+Referencia: 
+Manual de conducción eficiente. IDAE, Ref. Doctrinal
+103.El estado en el que se encuentre el filtro del aire del sistema de alimentación de un motor de 
+combustión, ¿puede influir en el consumo de carburante?
+* a) Sí, ya que, si está sucio, aumenta el consumo.
+b) No, solo influye en la cantidad de humos blancos que salgan por el escape.
+c) No, solo influye en la cantidad de humos negros que salgan por el escape.
+d) No, solo influye en la potencia media ponderada del motor.
+Referencia: 
+, 

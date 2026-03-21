@@ -1,0 +1,609 @@
+1.¿A qué se debe la resistencia a la aceleración?
+a) A la máxima velocidad del camión.
+*	b) A la inercia de la masa del camión.
+c)	Al estado de la superficie de la calzada.
+d)	A la fuerza aerodinámica.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+2.Las autorizaciones de transporte público de mercancías que solo permiten efectuar transporte con vehículos de Masa Máxima Autorizada no superior a 3,5 toneladas se identifican registralmente con la clave:
+a) MDPE.
+*	b) MDLE.
+c)	MPCE.
+d)	VDE.
+Referencia Legal: 03/12/2018, Resolución D.G. Transporte Terrestre, Primero
+3.Según el acuerdo ATP, las marcas de identificación de los vehículos de temperatura controlada consisten en:
+a) unos números.
+*	b) unas letras.
+c)	unos números y unas letras.
+d)	unos números y unos colores.
+Referencia Legal: ATP, Acuerdo, Anejo I, Apéndice 4
+4.En España, por modos de transporte, la aportación del transporte por carretera al valor total de la producción del sector supone alrededor de un:
+a)	10 % del total.
+b)	20 % del total.
+c)	30 % del total.
+*	d) 50 % del total.
+	Referencia: 	Encuesta Anual de Servicios, Ref. Doctrinal
+5.En los camiones, la caja de cambios o caja de velocidades es el elemento encargado de:
+*	a) conectar el motor con el sistema de transmisión.
+b)	convertir la velocidad lineal en velocidad de giro.
+c)	convertir la energía cinética en energía potencial.
+d)	reducir el rozamiento termodinámico.
+Referencia: Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+6.¿Cómo se denomina el arte de colocar la carga para ser transportada de la mejor manera? a) Balanceo.
+*	b) Estiba.
+c)	Cabeceo.
+d)	Guiñada.
+Referencia: 	Manual de estiba de la mercancía. CEFTRAL;Manual de estiba para mercancías sólidas.  Ediciones UPC, Ref. Doctrinal; Ref. Doctrinal
+7.En la base de datos nacional de transportistas de animales deberán figurar, aparte de los datos de los propios transportistas,:
+a) los ganaderos.
+*	b) los contenedores y medios de transporte de animales vivos.
+c)	los mataderos.
+d)	las granjas.
+Referencia Legal: 990/2022, RD, 13
+8.¿Es obligatorio que una cisterna tenga rompeolas?
+a)	Sí, si tiene una capacidad superior a 7.500 l.
+b)	Sí, si va a estar destinada a transporte de líquidos y tiene una capacidad superior a 7.500 l.
+c)	Sí, si va a estar destinada a transporte de líquidos.
+* d) No.
+	Referencia: 	, 
+9.¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera?
+a)	Buscar operaciones de transporte para la empresa.
+b)	Controlar el rendimiento de los conductores.
+* c) Gestionar la flota.
+d) Todas las respuestas anteriores son correctas.
+Referencia: 	Estudio sobre las ocupaciones de los sectores de logística y transporte. Principado de Asturias, Ref. Doctrinal
+10.¿Cómo se clasifican los transportes de mercancías, según el ámbito en que se realicen?
+* a) Interiores e internacionales.
+b)	De mercancías normales y peligrosas.
+c)	Permanentes y temporales.
+d)	Públicos y privados.
+Referencia Legal: 16/1987, Ley, Art. 65
+11.Señale qué indicaciones debe contener una carta de porte sujeta al convenio CMR.
+a)	Lugar y fecha de emisión.
+b)	Lugar y fecha de la carga de la mercancía y lugar previsto para su entrega.
+c)	Nombre y domicilio del transportista, del remitente y del destinatario.
+*	d) Todas las respuestas anteriores son correctas. Referencia Legal: CMR, Convenio, Art. 6.1
+12.¿Cuándo se produce un cabeceo?
+a)	Cada vez que circulamos en una curva.
+b)	Cuando el camión experimenta una fuerza lateral.
+*	c) Cuando hay una aceleración o una frenada.
+d) Solo cuando hay una frenada.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+13.¿Cuándo se produce un cambio de apoyo?
+a)	Cuando la curva permite que el camión circule apoyado durante un gran recorrido.
+b)	Cuando la inclinación que alcanza el camión es la máxima posible.
+* c) Cuando el apoyo pasa sucesivamente de las ruedas de un lado a las del otro.
+d) Cuando el apoyo pasa sucesivamente de las ruedas delanteras a las traseras.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+14.¿Cómo se denomina habitualmente el transporte de mercancías por cuenta ajena?
+* a) Transporte público.
+b)	Transporte común.
+c)	Transporte privado.
+d)	Transporte complementario.
+Referencia Legal: 16/1987, Ley, Art. 62
+15.¿Cuál es la marca de identificación de un vehículo calorífico reforzado de la clase A?
+* a) CRA.
+b)	CNA.
+c)	CRB.
+d)	CFA.
+Referencia Legal: ATP, Acuerdo, Anejo I, Apéndice 4
+16.¿Cuál es la medida del palé europeo o europalé?
+a) 1.000 x 700 milímetros.
+*	b) 1.200 x 800 milímetros.
+c)	1.400 x 900 milímetros.
+d)	1.500 x 1.000 milímetros.
+Referencia: 	Manual de estiba de la mercancía. CEFTRAL;Manual de estiba para mercancías sólidas.  Ediciones UPC, Ref. Doctrinal; Ref. Doctrinal
+17.¿Cuál es la contribución del sector del transporte a la producción total de la economía española? 
+a) En torno al 1 % del Valor Añadido Bruto. 
+* b) En torno al 5 % del Valor Añadido Bruto.
+c)	En torno al 10 % del Valor Añadido Bruto.
+d)	En torno al 15 % del Valor Añadido Bruto.
+	Referencia: 	Contabilidad Nacional de España, Ref. Doctrinal
+18.¿Cómo se denominan las acciones o influencias que modifican el estado de movimiento o de reposo de un camión?
+*	a) Fuerzas.
+b)	Resistencias.
+c)	Resortes.
+d)	Facultades.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+19.En el caso de un transporte sujeto al Convenio CMR, ¿qué requisitos debe reunir una firma electrónica para que se considere fiable a efectos de la certificación de la carta de porte electrónica?
+a)	Que esté vinculada únicamente al firmante.
+b)	Que permita identificar al firmante.
+c)	Que esté vinculada a los datos de manera que cualquier modificación posterior de estos pueda ser detectada.
+*	d) Todas las respuestas anteriores son correctas.
+Referencia Legal: Protocolo Adicional al Convenio CMR, Convenio, Art. 3.1
+20.En el caso de un transporte sujeto al Convenio CMR, ¿qué requisitos debe reunir una firma electrónica para que se considere fiable a efectos de la certificación de la carta de porte electrónica?
+a) Que esté vinculada únicamente al firmante o, en el caso de empresas cuyo titular es una persona física, a su cónyuge.
+*	b) Que permita identificar al firmante.
+c)	Que esté vinculada a los datos, con independencia de que permita o no detectar cualquier modificación posterior de estos.
+d)	Todas las respuestas anteriores son correctas.
+Referencia Legal: Protocolo Adicional al Convenio CMR, Convenio, Art. 3.1
+21.¿Cuál de los siguientes transportes internacionales de mercancías está liberalizado en la Unión Europea?
+*	a) Los transportes por cuenta propia.
+b)	Los transportes por cuenta propia, pero solo si son efectuados en vehículos de hasta 10 toneladas de Masa Máxima Autorizada.
+c)	Los transportes por cuenta ajena en vehículos de hasta 10 toneladas de Masa Máxima Autorizada.
+d)	Ninguno de los anteriores.
+Referencia Legal: (CE) 1072/2009, Reglamento Comunitario, Art. 1.5
+22.¿Cómo se denominan los transportes de mercancías realizados íntegramente en el territorio de un Estado extranjero por transportistas que no están establecidos en el mismo? 
+a) Servicios irregulares.
+b)	Servicios triangulares.
+c)	Transporte ocasional.
+* d) Transporte de cabotaje.
+Referencia Legal: (CE) 1072/2009;(CE) 1072/2009, Reglamento Comunitario;Reglamento Comunitario, 2; 8
+23.¿Cuál de los siguientes es un sistema de tránsito aduanero utilizado en la Unión Europea? 
+a) El régimen de tránsito interno.
+b)	El Manifiesto Renano.
+c)	El régimen de envíos postales.
+*	d) Todas las respuestas son correctas.
+Referencia Legal: (UE) 952/2013, Reglamento Comunitario, Art. 227
+24.¿Es posible transmitir una autorización de transporte público de mercancías a otro titular?
+a) Siempre que ambos se pongan de acuerdo y lo soliciten a la Administración.
+*	b) Solo si se cumplen determinadas condiciones.
+c)	Solo en caso de transmisión a herederos forzosos.
+d)	No, las autorizaciones de este tipo son intransferibles. Referencia Legal: 1211/1990, RD, 45
+25.¿Se pueden acumular en una misma persona las diferentes modalidades del estatuto de operador económico autorizado?
+*	a) Sí.
+b)	No.
+c)	Es una decisión que depende de cada Estado.
+d)	Depende del volumen de operaciones que se realicen anualmente. Referencia Legal: (UE) 952/2013, Reglamento Comunitario, Art. 38
+26.¿Cómo no debe ser la presentación personal de un trabajador de una empresa de transporte?
+a)	Tener una sonrisa amistosa.
+b)	Mostrar respeto en todo momento.
+* c) Utilizar el singular en lugar del plural al referirse a la empresa.
+d) Saludar al cliente.
+	Referencia: 	, 
+27.La arena seca proyectada contra el foco de un incendio actúa por:
+a) dilución del oxígeno.
+*	b) sofocación del fuego.
+c)	enfriamiento de la temperatura.
+d)	oxigenación.
+Referencia: 	Fichas NTP (Notas Técnicas de Prevención). Instituto Nacional de Seguridad e Higiene en el Trabajo;Enciclopedia OIT de Salud y Seguridad en el Trabajo. OIT, Ref. Doctrinal; Ref. Doctrinal
+28.El funcionamiento del motor implica un consumo de carburante que es función de las resistencias que debe vencer el vehículo. ¿Cuál de los siguientes factores no está directamente relacionado con estas resistencias?
+*	a) La energía termodinámica de los gases del escape.
+b)	El viento lateral.
+c)	La velocidad a la que se circula.
+d)	La pendiente de la carretera.
+Referencia: Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+29.El tacógrafo es obligatorio con carácter general, salvo en autobuses de líneas regulares con recorrido:
+a) superior a 50 kilómetros.
+*	b) igual o inferior a 50 kilómetros.
+c)	igual o superior a 50 kilómetros.
+d)	inferior a 50 kilómetros.
+Referencia Legal: (CE) 561/2006, Reglamento Comunitario, 3
+30.En los vehículos de transporte de mercancías de hasta 3.500 kg de MMA, ¿qué extintor es obligatorio llevar?
+a)	Uno de la clase 8A/34B.
+b)	Uno de clase 34A/144B.
+*	c) Ninguno.
+d) Dos de la clase 13A/55B.
+Referencia Legal: 2822/1998, RD, Anexo XII
+31.Ante una emergencia en carretera, se debe socorrer a los heridos, proteger la zona y alertar a los servicios de auxilio. ¿En qué orden debe hacerse?
+a) 1º Socorrer, 2º Proteger y 3º Alertar.
+*	b) 1º Proteger, 2º Alertar, 3º Socorrer.
+c)	1º Socorrer, 2º Alertar, 3º Proteger.
+d)	El orden en que se actúe no es importante, se puede hacer como se prefiera.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+32.En la actividad de transporte, ¿qué lesión, causada por la falta de barandillas en las plataformas superiores de almacenes y muelles de carga, es más frecuente?
+a)	Lumbalgias, cervicalgias y todo tipo de molestias en la espalda.
+b)	Hernias discales.
+*	c) Fracturas de huesos.
+d) Problemas de circulación sanguínea.
+	Referencia: 	, 
+33.Para evitar los problemas de salud que produce el trabajo sedentario, es recomendado cambiar de postura al menos cada:
+* a) 45 minutos.
+b)	90 minutos.
+c)	2 horas.
+d)	3 horas.
+Referencia: 	Prevención de riesgos laborales en el sector del transporte por carretera. Fundación para la Prevención de Riesgos Laborales;Prevención de riesgos laborales en el sector del transporte por carretera. UGT;Prevención de riesgos laborales para el sector del transporte por carretera. Labour Asociados, Ref. Doctrinal; Ref. Doctrinal; Ref. Doctrinal
+34.El tipo de esfuerzo requerido para el manejo de la carga del vehículo influye en el nivel de riesgo. Así, es más segura la manipulación que exija:
+a)	tener que cambiar el punto de agarre de la carga.
+b)	esfuerzos demasiado frecuentes.
+c)	esfuerzos manteniendo un ritmo de trabajo elevado.
+*	d) no realizar esfuerzos.
+Referencia: 	Guía técnica para la evaluación y prevención de riesgos relativos a la manipulación manual de cargas. Instituto Nacional de Seguridad e Higiene en el Trabajo, Ref. Doctrinal
+35.El tacógrafo digital cambiará de modo de funcionamiento según:
+a)	demande el agente de control actuante.
+*	b) las tarjetas de tacógrafo válidas que se inserten en los dispositivos de interfaz.
+c)	actúe el conductor sobre el conmutador de actividades.
+d)	se realice un calibrado con tarjeta de empresa.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, II.3
+36.¿Es necesario introducir en el tacógrafo digital la tarjeta de taller para hacer una intervención técnica?
+a)	No.
+b)	Sí, pero solo para activar el tacógrafo.
+c)	Sí, pero solo para realizar el primer calibrado.
+*	d) Sí, en todas las intervenciones técnicas.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, IV.5.3  
+37.Ante una situación como la caída de carga sobre la vía, ¿qué actuaciones no deben realizarse?
+a)	Señalizar convenientemente el obstáculo.
+b)	Avisar del peligro al resto de usuarios de la vía.
+c)	Dar cuenta inmediatamente a los servicios de auxilio en carretera.
+*	d) Abandonar la zona inmediatamente para evitar males mayores. Referencia Legal: 1428/2003, RD, Art. 130
+38.¿Es aconsejable al circular pegarse al vehículo que nos precede?
+a)	Sí, en todo caso.
+b)	Sí, pero solo cuando queremos ahorrar combustible.
+c)	Sí, pero solo si el vehículo que nos precede es conocido.
+*	d) No, ya que nos deja sin margen de reacción ante una reducción brusca en la velocidad de quien nos precede.
+	Referencia: 	, 
+39.El par motor se mide en¿
+a)	caballos de vapor (CV).
+b)	caballos fiscales (CF).
+* c) newton - metro (Nm).
+d) kilómetros por hora (km/h).
+	Referencia: 	, 
+40.La máxima fuerza de empuje que puede proporcionar el pistón sobre el cigüeñal es¿
+* a) el par máximo.
+b)	la potencia máxima.
+c)	el consumo específico.
+d)	la relación de compresión máxima.
+	Referencia: 	, 
+41.Un motor diésel de inyección directa respecto de un motor diésel de inyección indirecta:
+a) tiene un mayor consumo específico.
+*	b) tiene un menor consumo específico.
+c)	tiene el mismo consumo específico.
+d)	siempre tiene un menor par motor.
+Referencia: Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+42.Señale la afirmación correcta:
+a)	La declaración amistosa de accidente determina la responsabilidad del siniestro.
+b)	La declaración amistosa de accidente es vinculante para las entidades aseguradoras en cuanto a la indemnización de los daños materiales.
+c)	La declaración amistosa de accidente agiliza el pago de indemnizaciones derivadas de un siniestro.
+*	d) Todas las respuestas anteriores son correctas.
+Referencia Legal: CIDE; CIDE; CIDE, Convenio; Convenio; Convenio, 1; 3; 6
+43.El consumo específico de un motor diésel es:
+a)	mayor que el de un motor de gasolina.
+b)	igual que el de un motor de gasolina.
+*	c) menor que el de un motor de gasolina.
+d) menor cuanto mayor sea el número de revoluciones.
+	Referencia: 	Manual de conducción eficiente. IDAE, Ref. Doctrinal
+44.La alteración del funcionamiento normal del aparato de control o hacer que los registros no correspondan a la realidad está considerado una infracción de:
+* a) manipulación del aparato de control.
+b)	carencia de tacógrafo.
+c)	minoración del descanso.
+d)	mal uso de la hoja de registro.
+Referencia Legal: 16/1987, Ley, Art. 140.10
+45.¿Es necesario que los miembros de las Juntas Arbitrales del Transporte tengan alguna titulación?
+a)	Sí, todos han de tener una licenciatura o título equivalente.
+b)	Sí, todos han de ser licenciados en Derecho.
+* c) Sí, el presidente ha de ser licenciado en Derecho.
+d) No se exige titulación a ninguno de sus miembros.
+Referencia Legal: 1211/1990, RD, 8
+46.¿Cuál es la materia más empleada para extinguir un incendio por enfriamiento de la temperatura?
+* a) Agua.
+b)	Arena seca.
+c)	Oxígeno.
+d)	Gas halón.
+Referencia: 	Fichas NTP (Notas Técnicas de Prevención). Instituto Nacional de Seguridad e Higiene en el Trabajo;Enciclopedia OIT de Salud y Seguridad en el Trabajo. OIT, Ref. Doctrinal; Ref. Doctrinal
+47.¿Cuáles son los accidentes de trabajo que producen bajas laborales con una duración más larga?
+* a) Los accidentes con forma no traumática.
+b)	Los accidentes con forma traumática.
+c)	Los accidentes de origen violento.
+d)	Los accidentes cuyo protagonista principal es un elemento externo.
+	Referencia: 	, 
+48.¿Cuántos extintores debe llevar obligatoriamente un vehículo autotaxi de 7 plazas, incluido el conductor?
+a)	Uno.
+b)	Dos.
+* c) Ninguno.
+d) Tres.
+Referencia Legal: 2822/1998, RD, Anexo XII
+49.¿De qué tipos diferentes pueden ser las tarjetas de tacógrafo?
+a)	De conductor, de control, de centro de ensayo y de visita.
+b)	De primer conductor, de segundo conductor, de centro de ensayo y de empresa.
+c)	De conductor, de crédito, de débito y de empresa.
+*	d) De conductor, de control, de centro de ensayo y de empresa.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, I.kk
+50.¿Es adecuado conducir frecuentemente en la zona de revoluciones que dan la potencia máxima de un vehículo?
+a)	Sí, porque es la zona donde se produce un buen aprovechamiento del motor.
+b)	Sí, porque es la zona donde se produce un mejor aprovechamiento del combustible.
+*	c) No, porque en esa zona los consumos son muy elevados.
+d) No, porque entonces se sobrepasan los límites de velocidad.
+	Referencia: 	, 
+51.¿Por qué denominación es conocido también el control electrónico del sistema de frenado?
+* a) Electronically controlled brake system (EBS).
+b)	Electronic stability program (ESP).
+c)	Brake assistance system (BAS).
+d)	Electronic brake variation (EBV).
+	Referencia: 	, 
+52.La energía que lleva asociada un vehículo en movimiento¿
+* a) se puede aprovechar dejando de acelerar.
+b)	es menor en vehículos pesados que en vehículos ligeros.
+c)	no es conveniente hacer uso de ella, ya que aumenta el riesgo de accidente por calentamiento de frenos.
+d)	depende de la altura y anchura del vehículo.
+	Referencia: 	, 
+53.La elección de la relación de marchas correcta durante la conducción depende, entre otras circunstancias¿
+* a) del perfil de la carretera.
+b)	de la temperatura exterior.
+c)	del carburante utilizado.
+d)	de lo que indique el manómetro.
+	Referencia: 	, 
+54.¿Qué bebida se debe utilizar para mitigar la aparición de la deshidratación en verano?
+* a) Agua.
+b)	Café.
+c)	Alcohol.
+d)	Leche caliente.
+Referencia: 	Guía de alimentación saludable. Sociedad Española de Nutrición Comunitaria, Ref. Doctrinal
+55.¿Sirve cualquier tipo de hoja de registro para todos los tacógrafos analógicos?
+a) Sí, aunque no estén homologadas.
+*	b) No, las hojas deben indicar para qué modelos de tacógrafo están homologadas.
+c)	Sí, cualquier hoja, una vez homologada, debe servir para todos los modelos.
+d)	Sí, incluso para el tacógrafo digital.
+Referencia Legal: (UE) 165/2014, Reglamento Comunitario, Anexo I, IV.c)
+56.Si, en una inspección en carretera, el controlador inserta su tarjeta en el tacógrafo digital, pasa a modo:
+a)	de funcionamiento de taller.
+b)	operativo si ya hay una tarjeta de conductor.
+c)	de carretera.
+*	d) de funcionamiento de control.
+Referencia Legal: (CEE) 3821/85, Reglamento Comunitario, Anexo IB, II.3
+57.¿Sobre qué actúa el freno eléctrico o ralentizador?
+a)	Sobre las zapatas de los frenos.
+b)	Sobre las pastillas de los frenos.
+c)	Sobre el diferencial autoblocante.
+*	d) Sobre el árbol de transmisión a la salida del secundario mediante un campo magnético.
+	Referencia: 	, 
+58.El sistema de frenado ABS¿
+a) evita el bloqueo de las ruedas en caso de frenada, únicamente si la calzada está seca.
+* b) permite mantener la direccionalidad del vehículo en una frenada brusca.
+c)	reduce considerablemente la distancia de frenado cualquiera que sea el estado de la calzada.
+d)	reduce el tiempo de reacción del conductor.
+	Referencia: 	, 
+59.¿Sobre qué elemento actúa el decelerador eléctrico o, en su caso, el decelerador hidrodinámico?
+* a) Sobre la transmisión.
+b)	Sobre los elementos frenantes de las ruedas.
+c)	Sobre el ABS.
+d)	Sobre el ASR. Referencia: 	, 
+60.El que un automóvil monte una caja de velocidades con cambio manual o con cambio automático, ¿influye en el consumo de carburante?
+a) Sí, con las cajas de velocidades con cambio manual el consumo es mayor.
+*	b) Sí, con las cajas de velocidades con cambio manual el consumo es menor.
+c)	No, si la velocidad a la que se circula es la misma.
+d)	No, si la forma de conducir es la misma.
+	Referencia: 	Mecánica de automóviles. Arias Paz, Ref. Doctrinal
+61.Cuando se utiliza un aceite de alta calidad para lubricar un motor:
+*	a) se reduce el consumo de carburante.
+b)	se dificulta la refrigeración del motor.
+c)	se mejora el poder acidulante de las piezas.
+d) se reduce la velocidad de movimiento de las piezas.
+	Referencia: 	Mecánica de automóviles. Arias Paz, Ref. Doctrinal
+62.¿El número de marchas que posea una caja de velocidades permite al conductor reducir el consumo de carburante del vehículo?
+* a) Sí, a mayor número de marchas, mayor facilidad para reducir el consumo.
+b)	Sí, a menor número de marchas, mayor facilidad para reducir el consumo.
+c)	No, el número de marchas solo influirá en la potencia que suministre el motor.
+d)	No, el número de marchas solo influirá en el par motor suministrado.
+	Referencia: 	, 
+63.La utilización del freno eléctrico¿
+a)	se limitará a lo imprescindible ya que deteriora rápidamente los elementos frenantes.
+b)	se limitará a lo imprescindible ya que deteriora la transmisión.
+c)	se utilizará siempre después del freno de servicio.
+* d) evita el fenómeno "fading".
+	Referencia: 	, 
+64.¿Es conveniente, durante la conducción, aprovechar la inercia de un vehículo en movimiento?
+a)	No, ya que aumenta el consumo de carburante.
+b)	No, ya que aumentan los desgastes mecánicos.
+* c) Sí.
+d) No, lo ideal es pasar de acelerar a frenar.
+	Referencia: 	, 
+65.Si la calzada está cubierta de hielo y se pisa fuertemente el pedal del freno, el sistema antibloqueo de frenos (ABS), ¿evita el bloqueo de la rueda?
+a)	No, porque el ABS cumple su función solo si la calzada está seca.
+b)	Sí, pero únicamente si el neumático presenta dibujo suficiente.
+c)	No, porque el ABS no cumple su función si la calzada presenta hielo o nieve.
+*	d) Sí.
+Referencia: 	Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal 
+66.¿Qué objetivo tienen los reposacabezas?
+a)	Son un elemento de seguridad activa.
+*	b) Disminuyen considerablemente la gravedad de las lesiones en el cuello y en las vértebras.
+c)	Disminuyen considerablemente la gravedad de las lesiones en las piernas.
+d)	Ninguno, ya que es un elemento decorativo.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+67.¿A qué grupo de riesgo le afecta fundamentalmente la pérdida de visión cuando actúan como peatones?
+a)	Los jóvenes.
+*	b) Los mayores.
+c)	Los niños.
+d)	Los conductores.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+68.¿Qué medidas se deben tomar en caso de producirse un accidente?
+a)	No solicitar ayudas.
+*	b) Restablecer, en la medida de lo posible, la seguridad de la circulación.
+c)	Adoptar medidas que favorezcan la creación de peligros.
+d)	Ninguna, ya que de eso se encargan las fuerzas de seguridad.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+69.¿Por qué no es recomendable saltar desde la cabina del vehículo al suelo para bajar? 
+a) Perjudica la columna.
+b)	Perjudica las articulaciones de la rodilla.
+c)	Perjudica las articulaciones de los tobillos.
+*	d) Todas las respuestas anteriores son correctas.
+	Referencia: 	Análisis ergonómico, organizacional y psicosocial del puesto de conductor. SGS 
+Tecnos;Transporte, seguridad y salud. CC.OO;Prevención de riesgos laborales para Logística. Fundación para la Prevención de Riesgos Laborales.;Prevención y seguridad para conductores de vehículos de transporte de mercancías. CEFTRAL, Ref. Doctrinal; Ref. Doctrinal; Ref. Doctrinal; Ref. Doctrinal
+70.¿Qué tipo de actividad favorece la aparición de la fatiga?
+a)	La que dura más de cinco horas.
+b)	Aquella en la que no existe mucha repetición de los estímulos.
+*	c) La que se repite durante un largo período de tiempo.
+d) La que no necesita mantener la atención constantemente.
+Referencia: 	Manual práctico de conducción para conductores profesionales. Dirección General de Tráfico, Ref. Doctrinal
+71.¿Dónde tiene validez el certificado de aptitud profesional de los conductores?
+a)	Solo en los países donde tenga sede la empresa.
+b)	Solo en el país de residencia del conductor.
+c)	En todo el mundo.
+*	d) En todo el territorio de la Unión Europea.
+Referencia Legal: (UE)2022/2561, Directiva, 10
+72.¿Necesitan certificado de aptitud profesional los conductores de vehículos de los Cuerpos de Seguridad del Estado?
+a)	Sí.
+b)	Sí, pero solo para conducir autobuses fuera de un radio de 100 km.
+*	c) No.
+d) Sí, pero solo para vehículos de mercancías. Referencia Legal: 284/2021, RD, Art. 2
+73.¿Qué resistencias intervienen en el movimiento de los vehículos?
+* a) La resistencia aerodinámica, la resistencia a la rodadura y la resistencia a la pendiente.
+b)	La resistencia aerodinámica, la resistencia a la rodadura y la resistencia de la transmisión.
+c)	La resistencia aerodinámica, la resistencia a la pendiente y la resistencia de la transmisión.
+d)	La resistencia aerodinámica, la resistencia a la rodadura, la resistencia de la transmisión y la resistencia a la pendiente.
+	Referencia: 	Manual de conducción eficiente. IDAE, Ref. Doctrinal
+74.¿Qué duración deben tener los cursos posteriores a la formación inicial para mantener la vigencia del certificado de aptitud profesional (CAP)?
+* a) 35 horas.
+b)	30 horas.
+c)	25 horas.
+d)	20 horas.
+Referencia Legal: 284/2021, RD, Art. 7
+75.Para controlar el espacio posterior al vehículo, es importante:
+a) utilizar las luces antiniebla siempre.
+*	b) frenar con tiempo y progresivamente.
+c)	no frenar bajo ningún concepto para evitar alcances.
+d)	utilizar las luces de emergencia en caso de conducción bajo la lluvia.
+Referencia: 	Programa de Intervención, sensibilización y reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+76.¿A qué distancia mínima del vehículo es conveniente que se sitúen los pasajeros de un autobús después de ser evacuados?
+a) 100 m.
+*	b) 30 m.
+c)	300 m.
+d) 50 m.
+	Referencia: 	, 
+77.¿Cuál de los siguientes supuestos se considera tiempo de presencia en la jornada de un conductor, según la normativa laboral española?
+a)	El tiempo de carga y descarga.
+b)	El tiempo dedicado a limpieza y mantenimiento técnico del vehículo.
+* c) Los períodos de espera causados por las prohibiciones de circular, si se ha comunicado de antemano su existencia y duración.
+d) Todas las tareas cuyo objeto sea garantizar la seguridad del vehículo y de la carga. Referencia Legal: 1561/1995; 1561/1995, RD; RD, 8; 10
+78.Si se conduce un vehículo muy cargado, se debe tener en cuenta que:
+a)	el consumo del vehículo no se ve afectado.
+b)	la aceleración será menor.
+* c) aumentará el consumo de carburante.
+d) la distancia de detención del vehículo será menor.
+	Referencia: 	, 
+79.Si se conduce un vehículo pesado y con el motor funcionando a la temperatura adecuada, se debe saber que el consumo de carburante depende, entre otros factores:
+a)	de la posición del conductor.
+b)	del octanaje del gasóleo.
+c)	de la variación de la relación de compresión, según las revoluciones del motor.
+* d) de un correcto mantenimiento del vehículo.
+	Referencia: 	, 
+80.¿Qué factor influye en el consumo de carburante?
+* a) La posición del pedal del acelerador.
+b)	La carga del árbol de levas.
+c)	La longitud del pistón.
+d)	El ángulo del cigüeñal.
+	Referencia: 	, 
+81.Para reducir el consumo de carburante de un vehículo pesado se deben conocer los factores que influyen en él. Entre estos factores se encuentra:
+a)	el montaje de frenos de disco.
+b)	el tipo de bujías que monte: frías o calientes.
+c)	el tipo de sistema de frenado que se monte: hidráulico o neumático.
+* d) el perfil de la carretera, el tipo de conducción que realice el conductor y la aerodinámica del vehículo.
+	Referencia: 	Manual de conducción eficiente. IDAE, Ref. Doctrinal
+82.El conductor de un vehículo pesado, ¿tiene la posibilidad de reducir el consumo de carburante de su vehículo?
+*	a) Sí, por ejemplo, realizando una conducción económica.
+b)	Sí, por ejemplo, aumentando la presión de inflado de las ruedas delanteras.
+c)	No, porque el consumo de carburante es un dato invariable y que depende únicamente del par motor suministrado.
+d)	No, porque el consumo es un dato característico invariable de cada motor.
+	Referencia: 	, 
+83.En el caso de trabajo nocturno efectuado por trabajadores móviles del transporte por carretera que no tienen la consideración de trabajador nocturno, la jornada de trabajo por cada período de veinticuatro horas no podrá exceder de:
+a)	doce horas.
+b)	ocho horas.
+* c) diez horas.
+d) nueve horas.
+Referencia Legal: 1561/1995, RD, Art. 10 bis
+84.¿Qué regula la Orden de 27 de julio de 1999, sobre condiciones que deben reunir determinados extintores de incendios?
+a)	Los tipos de extintor que deben llevar los vehículos de transporte de personas.
+b)	Los tipos de extintor que deben llevar los vehículos de transporte de mercancías.
+c)	Los tipos de extintor que debe haber en un garaje.
+*	d) Las respuestas A y B son correctas.
+Referencia Legal: 27/07/1999, OM, Segundo
+85.Señale la afirmación correcta:
+a)	La declaración amistosa de accidente consigue mayores indemnizaciones.
+b)	La declaración amistosa de accidente hace que disminuya el consumo de los vehículos.
+c)	La declaración amistosa de accidente disminuye el número de siniestros.
+*	d) La declaración amistosa de accidente agiliza la tramitación y pago de los siniestros. Referencia Legal: CIDE, Convenio, Art. Preliminar
+86.En relación con la aparición del sueño, las horas más peligrosas son:
+a)	entre las 22:00 y las 24:00.
+b)	entre las 00:00 y las 03:00. 
+* c) entre las 03:00 y las 06:00. 
+d) entre las 06:00 y las 08:00.
+Referencia: 	Patología médica y conducción de vehículos - Guía para el consejo médico. Dirección General de Tráfico, Ref. Doctrinal
+87.De los siguientes dispositivos, ¿cuál está considerado como elementos de seguridad pasiva? 
+a) Las ruedas.
+b) El sistema de suspensión.
+* c) El airbag.
+d) El sistema de frenado.
+	Referencia: 	Manual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal
+88.La conducción preventiva tiene como objeto fundamental:
+a)	la anticipación a posibles averías mecánicas.
+b)	la utilización de marchas altas.
+* c) la anticipación a posibles situaciones de peligro.
+d) la circulación a un régimen alto de revoluciones de motor.
+Referencia: Manual de seguridad vial para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+89.Para garantizar una circulación segura, será necesario:
+* a) observar el entorno, advertir las maniobras y ejecutarlas con precisión.
+b)	mantener una reducida distancia de seguridad con el vehículo precedente.
+c)	observar las maniobras y advertir al entorno.
+d)	mantener una velocidad de crucero estable.
+Referencia: Manual de seguridad vial para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+90.Según la Ley de responsabilidad civil y seguro en la circulación de vehículo a motor, el fallecimiento del conductor del vehiculo causante del accidente:
+a)	da derecho a una indemnización de hasta un máximo de 300.000 euros.
+b)	no se indemnizará en caso de haber habido negligencia por su parte.
+c)	no se indemnizará excepto si fuese el tomador del seguro.
+*	d) no está cubierto por este seguro.
+Referencia Legal: 8/2004, RD Legislativo, Art. 5.1
+91.La potencia máxima del motor da lugar¿
+a)	al consumo específico máximo.
+b)	al par motor máximo.
+c)	al giro máximo del motor.
+*	d) a la mayor potencia de rueda.
+	Referencia: 	, 
+92.¿Con qué siglas se conocen los sistemas de vigilancia de los vehículos?
+a)	VBAS.
+b)	VSTC.
+c)	AEBS.
+* d) IVMS.
+	Referencia: 	, 
+93.En los sistemas avanzados de ayuda a la conducción, ¿cómo funciona la tecnología RADAR? 
+a) No se utiliza en este tipo de sistemas.
+* b) Lanzando ondas electromagnéticas que se reflejan en objetos volviendo al emisor.
+c)	Identificando objetos mediante comparación con los almacenados en una base de datos.
+d)	Analizando las vibraciones del vehículo en función del terreno y la presión de los neumáticos.
+	Referencia: 	, 
+94.El conductor, ante una sensación de pérdida durante la conducción, suele¿ 
+a) obviarla.
+b) racionalizarla.
+* c) compensarla.
+d) Todas las respuestas anteriores son correctas.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+95.Durante la conducción, ¿qué información recibe el conductor proveniente de las condiciones del tráfico?
+a) Condiciones de luz.
+*	b) Tipo de vehículos circulando.
+c)	Trazado de la vía.
+d)	Señalización de la vía.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+96.Durante la conducción, ¿qué información recibe el conductor proveniente del vehículo? a) Estado del firme de la carretera.
+*	b) Vibraciones y ruidos del vehículo.
+c)	Velocidad de vehículos cercanos.
+d)	Condiciones de luminosidad.
+	Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. 
+Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+97.El protocolo de actuación ante emergencias que se desarrolla en las fases de proteger, avisar y socorrer se conoce como:
+a)	Protocolo médico.
+b)	Protocolo de intervención.
+c)	PAE.
+*	d) PAS.
+Referencia: 	Programa de Intervención, Sensibilización y Reeducación Vial - Manual del formador. Dirección General de Tráfico - INTRAS, Ref. Doctrinal
+98.Para conseguir la satisfacción del cliente en un servicio de transporte es imprescindible cumplir perfectamente:
+*	a) con sus elementos básicos.
+b)	con sus elementos proporcionales.
+c)	con sus elementos atractivos.
+d)	Todas las respuestas son correctas.
+Referencia: 	Calidad y corresponsabilidad en el transporte público de viajeros por carretera. Fundación CETMO;Modelos para implantar la mejora continua en la gestión de empresas de transporte por carretera. Fundación CETMO, Ref. Doctrinal; Ref. Doctrinal 
+99.¿Qué se quiere significar, en el marco de un modelo de gestión de la calidad, al decir que un servicio de transporte se caracteriza por su inseparabilidad?
+*	a) Que su producción por la empresa es inseparable de su consumo por el cliente.
+b)	Que es inseparable de las características particulares de cada cliente.
+c)	Que es inseparable de la forma de operar de la empresa que lo presta.
+d)	Que las distintas prestaciones que lo componen no se pueden separar unas de otras en ningún caso.
+Referencia: Modelos para implantar la mejora continua en la gestión de empresas de transporte por carretera. Fundación CETMO, Ref. Doctrinal
+100.¿Con qué periodicidad se debe llevar a cabo el control de las empresas CAP por parte de la Administración que las autorizó?
+a) Al menos, cada dos años.
+*	b) Al menos, cada cinco años.
+c)	Anualmente.
+d)	La Administración no está obligada a realizar ningún control después de otorgar la autorización, salvo que abra un expediente de revocación de la misma, pues la autorización tiene validez indefinida.
+Referencia Legal: 284/2021, RD, 10
+101.El capital social de una sociedad anónima no puede ser nunca inferior a: a) 30.000 euros.
+b)	40.000 euros.
+c)	50.000 euros.
+*	d) 60.000 euros.
+Referencia Legal: 1/2010, RD Legislativo, 4
+102.Para evitar que aparezca el efecto fading":"
+a)	se debe abrir la válvula de 3 vías.
+b)	no se debe hacer nada.
+*	c) se debe actuar sobre los ralentizadores de que disponga el vehículo.
+d) se debe mantener la velocidad constante.
+Referencia: Manual de mecánica para profesores de formación vial. Dirección General de Tráfico, Ref. Doctrinal
+103.La materia más utilizada en la extinción de un incendio por enfriamiento es: a) el oxígeno.
+b) el peróxido de carbono.
+* c) el agua.
+d) un gas halógeno.
+Referencia: 	Fichas NTP (Notas Técnicas de Prevención). Instituto Nacional de Seguridad y Salud en el Trabajo;Enciclopedia OIT de Salud y Seguridad en el Trabajo. OIT, Ref. Doctrinal; Ref.
+ Doctrinal
