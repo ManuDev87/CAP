@@ -27,6 +27,23 @@ const availableTests = [
     { id: 'marzo_2026', name: 'Marzo 2026', img: 'truck2.jpg' }
 ];
 
+const testPdfUrls = {
+    'enero_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_se_cap1_2024.pdf',
+    'marzo_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_se_cap2_2024.pdf',
+    'mayo_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen-a_mer_se_cap3_2024.pdf',
+    'julio_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_se_cap4_2024_modelo%20A.pdf',
+    'septiembre_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_merc-modeloA_se_cap5_2024.pdf',
+    'noviembre_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer-A_se_cap6_2024.pdf',
+    'enero_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_merc-modeloA_se_cap5_2025_0.pdf',
+    'marzo_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_cr_mer_se_mod-a_cap2_2025.pdf',
+    'mayo_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_A_se_cap3_2025.pdf',
+    'julio_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_se_cap4_modeloA.pdf',
+    'septiembre_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_se_cap5_2025_opci%C3%B3n%20A.pdf',
+    'noviembre_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf',
+    'enero_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf',
+    'marzo_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Examen%20con%20respuestas%20mercanc%C3%ADas%20A_0.pdf'
+};
+
 // DOM Elements
 const loginScreen = document.getElementById('login-screen');
 const loginForm = document.getElementById('login-form');
@@ -103,6 +120,7 @@ const panelContent = document.getElementById('panel-content');
 const toggleIcon = document.getElementById('toggle-icon');
 const panelLegend = document.getElementById('panel-legend');
 const mainTestTitle = document.getElementById('main-test-title');
+const btnOpenPdf = document.getElementById('btn-open-pdf');
 
 // --- Firebase Initialization ---
 const firebaseConfig = {
@@ -174,6 +192,16 @@ async function init() {
     btnModeExamen.addEventListener('click', () => startApp('examen'));
     btnModeAyuda.addEventListener('click', () => startApp('ayuda'));
     btnChangeTest.addEventListener('click', showTestSelection);
+
+    if (btnOpenPdf) {
+        btnOpenPdf.addEventListener('click', () => {
+            if (currentTestId && testPdfUrls[currentTestId]) {
+                window.open(testPdfUrls[currentTestId], '_blank');
+            } else {
+                alert('El PDF original de este examen aún no está disponible.');
+            }
+        });
+    }
 
     // Event Listeners
     prevBtn.addEventListener('click', () => {
@@ -283,6 +311,24 @@ async function renderTestSelection() {
         card.addEventListener('click', () => selectTest(test.id, test.name, pausedMode));
         testGrid.appendChild(card);
     });
+
+    // Añadir tarjeta para Plantilla CAP PDF en el último hueco
+    const plantillaCard = document.createElement('div');
+    plantillaCard.className = 'test-card plantilla-card';
+    plantillaCard.style.backgroundColor = '#ffffff';
+    plantillaCard.style.border = '2px dashed #0A8442';
+    plantillaCard.innerHTML = `
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding-bottom: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 50px; height: 50px; fill: #cc0000; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));">
+                <path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/>
+            </svg>
+        </div>
+        <div class="test-card-label" style="justify-content:center; background: rgba(255, 255, 255, 0.95); width: 100%;">Plantilla CAP</div>
+    `;
+    plantillaCard.addEventListener('click', () => {
+        window.open('Plantilla_Cap.pdf', '_blank');
+    });
+    testGrid.appendChild(plantillaCard);
 }
 
 function selectTest(id, name, pausedMode = null) {
