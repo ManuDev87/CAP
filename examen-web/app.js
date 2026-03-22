@@ -44,6 +44,19 @@ const testSelectionScreen = document.getElementById('test-selection-screen');
 const testGrid = document.getElementById('test-grid');
 const currentUserNameSpan = document.getElementById('current-user-name');
 const btnLogoutUser = document.getElementById('btn-logout-user');
+const btnUserMenu = document.getElementById('btn-user-menu');
+const userDropdown = document.getElementById('user-dropdown');
+
+const setPasswordScreen = document.getElementById('set-password-screen');
+const setPasswordForm = document.getElementById('set-password-form');
+const newPwdInput = document.getElementById('new-pwd-input');
+const newPwdConfirm = document.getElementById('new-pwd-confirm');
+const setPwdError = document.getElementById('set-pwd-error');
+const setPwdName = document.getElementById('set-pwd-name');
+const newUserNoPwd = document.getElementById('new-user-no-pwd');
+
+let tempUserForPwd = null;
+let tempUserNameForPwd = null;
 
 const startScreen = document.getElementById('start-screen');
 const selectedTestLabel = document.getElementById('selected-test-label');
@@ -115,7 +128,7 @@ async function init() {
             showBackoffice();
         } else {
             const currentUserName = localStorage.getItem('cap_current_user_name');
-            if (currentUserName) currentUserNameSpan.textContent = `Hola, ${currentUserName}`;
+            if (currentUserName) currentUserNameSpan.textContent = currentUserName;
             showTestSelection();
         }
     } else {
@@ -125,8 +138,37 @@ async function init() {
     // Login & Backoffice Listeners
     if (loginForm) loginForm.addEventListener('submit', handleLogin);
     if (btnLogoutAdmin) btnLogoutAdmin.addEventListener('click', handleLogout);
-    if (btnLogoutUser) btnLogoutUser.addEventListener('click', handleLogout);
+    if (btnLogoutUser) {
+        btnLogoutUser.addEventListener('click', (e) => {
+            e.preventDefault();
+            handleLogout();
+        });
+    }
+    if (btnUserMenu && userDropdown) {
+        btnUserMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            userDropdown.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!userDropdown.classList.contains('hidden') && !e.target.closest('.user-menu-container')) {
+                userDropdown.classList.add('hidden');
+            }
+        });
+    }
     if (addUserForm) addUserForm.addEventListener('submit', handleAddUser);
+    
+    if (newUserNoPwd) {
+        newUserNoPwd.addEventListener('change', (e) => {
+            const pwdInput = document.getElementById('new-user-password');
+            if (pwdInput) {
+                pwdInput.disabled = e.target.checked;
+                if (e.target.checked) pwdInput.value = '';
+            }
+        });
+    }
+    if (setPasswordForm) setPasswordForm.addEventListener('submit', handleSetPassword);
 
     // Start screen logic
     btnModeExamen.addEventListener('click', () => startApp('examen'));
@@ -592,6 +634,7 @@ function enterReviewMode() {
 // --- Screen Transitions ---
 function hideAllScreens() {
     loginScreen.classList.add('hidden');
+    if (setPasswordScreen) setPasswordScreen.classList.add('hidden');
     backofficeScreen.classList.add('hidden');
     testSelectionScreen.classList.add('hidden');
     startScreen.classList.add('hidden');
@@ -607,6 +650,9 @@ function showLogin() {
     loginUsernameInput.value = '';
     loginPasswordInput.value = '';
     loginError.classList.add('hidden');
+    if (setPwdError) setPwdError.classList.add('hidden');
+    if (newPwdInput) newPwdInput.value = '';
+    if (newPwdConfirm) newPwdConfirm.value = '';
 }
 
 function showBackoffice() {
@@ -631,20 +677,67 @@ async function handleLogin(e) {
 
     try {
         const docRef = await db.collection('users').doc(user).get();
-        if (docRef.exists && docRef.data().password === pass) {
+        if (docRef.exists) {
             const userData = docRef.data();
-            currentUser = user;
-            localStorage.setItem('cap_current_user', user);
-            localStorage.setItem('cap_current_user_name', userData.name);
-            loginError.classList.add('hidden');
-            currentUserNameSpan.textContent = `Hola, ${userData.name}`;
-            showTestSelection();
+            
+            // Check if user needs to set password initially
+            if (!userData.password || userData.password === "") {
+                tempUserForPwd = user;
+                tempUserNameForPwd = userData.name;
+                setPwdName.textContent = userData.name;
+                hideAllScreens();
+                setPasswordScreen.classList.remove('hidden');
+                return;
+            }
+
+            if (userData.password === pass) {
+                currentUser = user;
+                localStorage.setItem('cap_current_user', user);
+                localStorage.setItem('cap_current_user_name', userData.name);
+                loginError.classList.add('hidden');
+                currentUserNameSpan.textContent = userData.name;
+                showTestSelection();
+            } else {
+                loginError.textContent = "Credenciales incorrectas";
+                loginError.classList.remove('hidden');
+            }
         } else {
+            loginError.textContent = "Alumno no encontrado";
             loginError.classList.remove('hidden');
         }
     } catch(err) {
         console.error("Login err", err);
+        loginError.textContent = "Error de conexión";
         loginError.classList.remove('hidden');
+    }
+}
+
+async function handleSetPassword(e) {
+    e.preventDefault();
+    const p1 = newPwdInput.value.trim();
+    const p2 = newPwdConfirm.value.trim();
+    
+    if (p1 !== p2) {
+        setPwdError.textContent = "Las contraseñas no coinciden";
+        setPwdError.classList.remove('hidden');
+        return;
+    }
+    if (!tempUserForPwd) return;
+
+    try {
+        await db.collection('users').doc(tempUserForPwd).update({ password: p1 });
+        setPwdError.classList.add('hidden');
+        
+        currentUser = tempUserForPwd;
+        localStorage.setItem('cap_current_user', tempUserForPwd);
+        localStorage.setItem('cap_current_user_name', tempUserNameForPwd);
+        
+        currentUserNameSpan.textContent = tempUserNameForPwd;
+        showTestSelection();
+    } catch(err) {
+        console.error("Set password error", err);
+        setPwdError.textContent = "Error al guardar contraseña";
+        setPwdError.classList.remove('hidden');
     }
 }
 
@@ -659,9 +752,16 @@ async function handleAddUser(e) {
     e.preventDefault();
     const name = document.getElementById('new-user-name').value.trim();
     const user = document.getElementById('new-user-username').value.trim().toLowerCase();
-    const pass = document.getElementById('new-user-password').value.trim();
+    const pwdInput = document.getElementById('new-user-password');
+    let pass = pwdInput.value.trim();
+    const noPwd = newUserNoPwd ? newUserNoPwd.checked : false;
 
-    if (!name || !user || !pass) return;
+    if (!name || !user) return;
+    if (!noPwd && !pass) return;
+    
+    if (noPwd) {
+        pass = "";
+    }
 
     try {
         const docRef = await db.collection('users').doc(user).get();
@@ -673,6 +773,10 @@ async function handleAddUser(e) {
         await db.collection('users').doc(user).set({ name, password: pass, role: 'student' });
 
         addUserForm.reset();
+        if (newUserNoPwd) {
+            newUserNoPwd.checked = false;
+            pwdInput.disabled = false;
+        }
         addUserMsg.classList.remove('hidden');
         setTimeout(() => addUserMsg.classList.add('hidden'), 3000);
         renderUsersList();
@@ -702,7 +806,7 @@ async function renderUsersList() {
                     <span class="user-item-name">${data.name}</span>
                     <span class="user-item-login">Usuario: ${user}</span>
                 </div>
-                <button class="delete-user-btn" onclick="deleteUser('${user}')"><i class="fas fa-trash"></i></button>
+                <button class="delete-user-btn" onclick="deleteUser('${user}')">Eliminar <i class="fas fa-trash"></i></button>
             `;
             usersListUl.appendChild(li);
         });

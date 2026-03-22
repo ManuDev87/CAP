@@ -16,6 +16,24 @@
 
 <body>
 
+    <!-- Pantalla 0.2: Nueva Contraseña -->
+    <div id="set-password-screen" class="login-overlay hidden">
+        <div class="login-box">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo Grupo CAP" class="junta-logo">
+                <div class="brand-badge">Grupo CAP</div>
+            </div>
+            <h2>Bienvenido <span id="set-pwd-name"></span></h2>
+            <p class="subtitle" style="margin-bottom: 20px; color: #555;">Por favor, establece tu contraseña para acceder al campus.</p>
+            <form id="set-password-form">
+                <input type="password" id="new-pwd-input" placeholder="Nueva Contraseña" required>
+                <input type="password" id="new-pwd-confirm" placeholder="Repita la Contraseña" required>
+                <p id="set-pwd-error" class="error-text hidden">Las contraseñas no coinciden</p>
+                <button type="submit" class="btn primary btn-login" style="margin-top: 10px;">Guardar y Entrar</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Pantalla 0: Login -->
     <div id="login-screen" class="login-overlay">
         <div class="login-box">
@@ -26,7 +44,7 @@
             <h2>Iniciar Sesión</h2>
             <form id="login-form">
                 <input type="text" id="login-username" placeholder="Usuario" required autocomplete="username">
-                <input type="password" id="login-password" placeholder="Contraseña" required autocomplete="current-password">
+                <input type="password" id="login-password" placeholder="Contraseña (vacío si es primera vez)" autocomplete="current-password">
                 <p id="login-error" class="error-text hidden">Credenciales incorrectas</p>
                 <button type="submit" class="btn primary btn-login">Entrar</button>
             </form>
@@ -47,6 +65,10 @@
                         <input type="text" id="new-user-name" placeholder="Nombre completo" required>
                         <input type="text" id="new-user-username" placeholder="Usuario login" required>
                         <input type="password" id="new-user-password" placeholder="Contraseña" required>
+                        <label class="checkbox-label" style="display:flex; align-items:center; gap:8px; font-size:14px; color:#555; margin-bottom: 5px;">
+                            <input type="checkbox" id="new-user-no-pwd" style="width:auto; margin:0;">
+                            El alumno establecerá la contraseña al entrar
+                        </label>
                         <button type="submit" class="btn primary">Crear Usuario</button>
                         <p id="add-user-msg" class="success-text hidden">Usuario creado con éxito</p>
                     </form>
@@ -67,8 +89,19 @@
             <div class="test-selection-header" style="justify-content: space-between;">
                 <h2>Selecciona un test</h2>
                 <div class="user-info">
-                    <span id="current-user-name">Hola, Alumno</span>
-                    <button id="btn-logout-user" class="btn-logout" title="Cerrar sesión"><i class="fas fa-sign-out-alt"></i></button>
+                    <div class="user-menu-container">
+                        <button id="btn-user-menu" class="btn-user-menu pill" title="Opciones de usuario">
+                            <span id="current-user-name" class="user-name-text">Alumno</span>
+                            <div class="avatar-wrapper">
+                                <img src="user-avatar.png" alt="Avatar Usuario" class="user-avatar-img">
+                            </div>
+                        </button>
+                        <div id="user-dropdown" class="user-dropdown hidden">
+                            <button id="btn-logout-user" class="dropdown-item dropdown-logout">
+                                <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="test-selection-grid" id="test-grid">
@@ -109,7 +142,7 @@
         <header class="header">
             <div class="header-left">
                 <div class="user-avatar">
-                    <i class="fas fa-user"></i>
+                    <img src="user-avatar.png" alt="Avatar Usuario" class="user-avatar-img">
                 </div>
                 <div class="header-titles">
                     <span class="test-title" id="main-test-title">Test CAP Mercancías</span>
