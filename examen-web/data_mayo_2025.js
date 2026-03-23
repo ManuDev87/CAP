@@ -657,7 +657,7 @@ const examData_mayo_2025 = [
       },
       {
         "id": "c",
-        "text": "Comer copiosamente and continuar el viaje."
+        "text": "Comer copiosamente y continuar el viaje."
       },
       {
         "id": "d",

@@ -1328,7 +1328,7 @@ const examData_noviembre_2025 = [
       },
       {
         "id": "d",
-        "text": "Comunicárselo a la empresa and continuar viaje."
+        "text": "Comunicárselo a la empresa y continuar viaje."
       }
     ],
     "correct": "a"
@@ -1780,15 +1780,15 @@ const examData_noviembre_2025 = [
       },
       {
         "id": "b",
-        "text": "El mantenimiento del vehículo and el voltaje que suministre la batería."
+        "text": "El mantenimiento del vehículo y el voltaje que suministre la batería."
       },
       {
         "id": "c",
-        "text": "El tipo de turbocompresor and la relación de marchas seleccionada."
+        "text": "El tipo de turbocompresor y la relación de marchas seleccionada."
       },
       {
         "id": "d",
-        "text": "La aerodinámica and la posición del pedal del acelerador."
+        "text": "La aerodinámica y la posición del pedal del acelerador."
       }
     ],
     "correct": "d"

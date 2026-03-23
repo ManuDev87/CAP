@@ -247,7 +247,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas anteriores son correctas. Referencia Legal: CMR, Convenio, Art. 6.1"
+        "text": "Todas las respuestas anteriores son correctas."
       }
     ],
     "correct": "d"
@@ -546,7 +546,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "No, las autorizaciones de este tipo son intransferibles. Referencia Legal: 1211/1990, RD, 45"
+        "text": "No, las autorizaciones de este tipo son intransferibles."
       }
     ],
     "correct": "b"
@@ -569,7 +569,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Depende del volumen de operaciones que se realicen anualmente. Referencia Legal: (UE) 952/2013, Reglamento Comunitario, Art. 38"
+        "text": "Depende del volumen de operaciones que se realicen anualmente."
       }
     ],
     "correct": "a"
@@ -845,7 +845,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Abandonar la zona inmediatamente para evitar males mayores. Referencia Legal: 1428/2003, RD, Art. 130"
+        "text": "Abandonar la zona inmediatamente para evitar males mayores."
       }
     ],
     "correct": "d"
@@ -1351,7 +1351,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Sobre el ASR. Referencia: \t,"
+        "text": "Sobre el ASR."
       }
     ],
     "correct": "a"
@@ -1650,7 +1650,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Sí, pero solo para vehículos de mercancías. Referencia Legal: 284/2021, RD, Art. 2"
+        "text": "Sí, pero solo para vehículos de mercancías."
       }
     ],
     "correct": "c"
@@ -1765,7 +1765,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "Todas las tareas cuyo objeto sea garantizar la seguridad del vehículo y de la carga. Referencia Legal: 1561/1995; 1561/1995, RD; RD, 8; 10"
+        "text": "Todas las tareas cuyo objeto sea garantizar la seguridad del vehículo y de la carga."
       }
     ],
     "correct": "c"
@@ -1949,7 +1949,7 @@ const examData_julio_2024 = [
       },
       {
         "id": "d",
-        "text": "La declaración amistosa de accidente agiliza la tramitación y pago de los siniestros. Referencia Legal: CIDE, Convenio, Art. Preliminar"
+        "text": "La declaración amistosa de accidente agiliza la tramitación y pago de los siniestros."
       }
     ],
     "correct": "d"
@@ -2324,7 +2324,7 @@ const examData_julio_2024 = [
   },
   {
     "num": "102",
-    "question": "Para evitar que aparezca el efecto fading\":\"",
+    "question": "Para evitar que aparezca el efecto fading:",
     "options": [
       {
         "id": "a",

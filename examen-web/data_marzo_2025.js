@@ -109,7 +109,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas anteriores son incorrectas. Duración: 120 MINUTOS"
+        "text": "Todas las respuestas anteriores son incorrectas."
       }
     ],
     "correct": "d"
@@ -235,7 +235,7 @@ const examData_marzo_2025 = [
     "options": [
       {
         "id": "a",
-        "text": "una declaración responsable de cumplimiento de la normativa aduanera. Duración: 120 MINUTOS"
+        "text": "una declaración responsable de cumplimiento de la normativa aduanera."
       },
       {
         "id": "b",
@@ -350,7 +350,7 @@ const examData_marzo_2025 = [
     "options": [
       {
         "id": "a",
-        "text": "Sí, y en casi su práctica totalidad se trata de acuerdos de exclusividad. Duración: 120 MINUTOS"
+        "text": "Sí, y en casi su práctica totalidad se trata de acuerdos de exclusividad."
       },
       {
         "id": "b",
@@ -473,7 +473,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "c",
-        "text": "Como autorización de empresa. Duración: 120 MINUTOS"
+        "text": "Como autorización de empresa."
       },
       {
         "id": "d",
@@ -588,7 +588,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "c",
-        "text": "Uno de la clase 13A/55B. Duración: 120 MINUTOS"
+        "text": "Uno de la clase 13A/55B."
       },
       {
         "id": "d",
@@ -1282,7 +1282,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "d",
-        "text": "Modalidades ordinaria y acelerada. Duración: 120 MINUTOS"
+        "text": "Modalidades ordinaria y acelerada."
       }
     ],
     "correct": "d"
@@ -1404,7 +1404,7 @@ const examData_marzo_2025 = [
   },
   {
     "num": "62",
-    "question": "¿Existe una zona en el disco-diagrama u hoja de registro del tacógrafo analógico donde anotar los kilómetros que marca el contador del vehículo al principio y al final de la utilización del disco? Duración: 120 MINUTOS",
+    "question": "¿Existe una zona en el disco-diagrama u hoja de registro del tacógrafo analógico donde anotar los kilómetros que marca el contador del vehículo al principio y al final de la utilización del disco?",
     "options": [
       {
         "id": "a",
@@ -1523,7 +1523,7 @@ const examData_marzo_2025 = [
     "options": [
       {
         "id": "a",
-        "text": "Aumentar la energía cinética del vehículo. Duración: 120 MINUTOS"
+        "text": "Aumentar la energía cinética del vehículo."
       },
       {
         "id": "b",
@@ -1642,7 +1642,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "b",
-        "text": "30 horas. Duración: 120 MINUTOS"
+        "text": "30 horas."
       },
       {
         "id": "c",
@@ -1757,7 +1757,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "b",
-        "text": "Circular a velocidad moderada. Duración: 120 MINUTOS"
+        "text": "Circular a velocidad moderada."
       },
       {
         "id": "c",
@@ -1876,7 +1876,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "c",
-        "text": "Registrar la actividad del conductor y distancia recorrida por el vehículo. Duración: 120 MINUTOS"
+        "text": "Registrar la actividad del conductor y distancia recorrida por el vehículo."
       },
       {
         "id": "d",
@@ -1987,7 +1987,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "b",
-        "text": "Solamente pueden imponerle obligaciones en el caso de que sean viajeros procedentes del continente africano. Duración: 120 MINUTOS"
+        "text": "Solamente pueden imponerle obligaciones en el caso de que sean viajeros procedentes del continente africano."
       },
       {
         "id": "c",
@@ -2102,7 +2102,7 @@ const examData_marzo_2025 = [
       },
       {
         "id": "b",
-        "text": "Neopeatón. Duración: 120 MINUTOS"
+        "text": "Neopeatón."
       },
       {
         "id": "c",
@@ -2213,7 +2213,7 @@ const examData_marzo_2025 = [
     "options": [
       {
         "id": "a",
-        "text": "debe limitarse a conducir el vehículo. Duración: 120 MINUTOS"
+        "text": "debe limitarse a conducir el vehículo."
       },
       {
         "id": "b",
@@ -2301,7 +2301,7 @@ const examData_marzo_2025 = [
   },
   {
     "num": "101",
-    "question": "En los vehículos de temperatura controlada, ¿dwonde se colocarán las marcas de clasificación y la fecha de expiración?",
+    "question": "En los vehículos de temperatura controlada, ¿donde se colocarán las marcas de clasificación y la fecha de expiración?",
     "options": [
       {
         "id": "a",

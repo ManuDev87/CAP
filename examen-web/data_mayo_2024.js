@@ -339,7 +339,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "En los destacamentos de la Guardia Civil de Tráfico. Referencia Legal: FOM/3399/2002, OM, Art. 2"
+        "text": "En los destacamentos de la Guardia Civil de Tráfico."
       }
     ],
     "correct": "a"
@@ -546,7 +546,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "En el que emplearía un porteador diligente, añadiéndose 36 horas más para imprevistos. Referencia Legal: FOM/1882/2012, OM, Anexo, 6.1"
+        "text": "En el que emplearía un porteador diligente, añadiéndose 36 horas más para imprevistos."
       }
     ],
     "correct": "a"
@@ -730,7 +730,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "no estarán obligados a detenerse para auxiliar a las víctimas. Referencia Legal: 1428/2003, RD, 129"
+        "text": "no estarán obligados a detenerse para auxiliar a las víctimas."
       }
     ],
     "correct": "b"
@@ -960,7 +960,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas anteriores son correctas. Referencia Legal: 16/1987, Ley, Art. 143.4"
+        "text": "Todas las respuestas anteriores son correctas."
       }
     ],
     "correct": "d"
@@ -1167,7 +1167,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "El conductor será conducido a presencia judicial. Referencia Legal: 16/1987, Ley, Art. 143.4"
+        "text": "El conductor será conducido a presencia judicial."
       }
     ],
     "correct": "d"
@@ -1627,7 +1627,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "Solo si su MMA no es superior a 4,5 toneladas. Referencia Legal: 640/2007, RD, Art. 2"
+        "text": "Solo si su MMA no es superior a 4,5 toneladas."
       }
     ],
     "correct": "b"
@@ -2087,7 +2087,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "La empresa y el conductor serán sancionados, debiendo asumir la sanción al 50 %. Referencia Legal: 16/1987, Ley, 138"
+        "text": "La empresa y el conductor serán sancionados, debiendo asumir la sanción al 50 %."
       }
     ],
     "correct": "c"
@@ -2340,7 +2340,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "La formación continua no exige la realización de un examen posterior al curso. Referencia Legal: 284/2021, RD, 7"
+        "text": "La formación continua no exige la realización de un examen posterior al curso."
       }
     ],
     "correct": "d"

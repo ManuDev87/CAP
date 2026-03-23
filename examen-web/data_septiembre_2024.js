@@ -40,7 +40,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "se editará por el Comité Nacional del Transporte por Carretera. Referencia Legal: FOM/2861/2012, OM, Art. 5"
+        "text": "se editará por el Comité Nacional del Transporte por Carretera."
       }
     ],
     "correct": "c"
@@ -86,7 +86,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "la vinculación del vehículo con la empresa no puede basarse en un contrato de alquiler. Referencia Legal: 16/1987, Ley, Art. 102"
+        "text": "la vinculación del vehículo con la empresa no puede basarse en un contrato de alquiler."
       }
     ],
     "correct": "b"
@@ -109,7 +109,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "un vehículo frigorífico normal de la clase F. Referencia Legal: ATP, Acuerdo, Anejo I, Apéndice 4"
+        "text": "un vehículo frigorífico normal de la clase F."
       }
     ],
     "correct": "c"
@@ -201,7 +201,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "al menos un 20 % del peso del vehículo debería descansar sobre los ejes con dirección. Referencia: \tManual de seguridad vial. Dirección General de Tráfico, Ref. Doctrinal"
+        "text": "al menos un 20 % del peso del vehículo debería descansar sobre los ejes con dirección."
       }
     ],
     "correct": "d"
@@ -224,7 +224,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Un vehículo refrigerante reforzado de la clase A. Referencia Legal: ATP, Acuerdo, Anejo I, Apéndice 4"
+        "text": "Un vehículo refrigerante reforzado de la clase A."
       }
     ],
     "correct": "c"
@@ -270,7 +270,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "3 meses siguientes a la fecha de cierre del ejercicio económico. Referencia Legal: 27/1999, Ley, Art. 23.1"
+        "text": "3 meses siguientes a la fecha de cierre del ejercicio económico."
       }
     ],
     "correct": "a"
@@ -293,7 +293,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "solo a las operations de transporte por cuenta ajena por carretera. Referencia Legal: ATP, Acuerdo, Art. 3.1"
+        "text": "solo a las operations de transporte por cuenta ajena por carretera."
       }
     ],
     "correct": "a"
@@ -362,7 +362,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "la masa del vehículo con su conductor y su carga. Referencia Legal: 2822/1998, RD, Anexo IX, 1"
+        "text": "la masa del vehículo con su conductor y su carga."
       }
     ],
     "correct": "a"
@@ -431,7 +431,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas A y B son correctas. Referencia Legal: 1211/1990, RD, 33"
+        "text": "Las respuestas A y B son correctas."
       }
     ],
     "correct": "d"
@@ -477,7 +477,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas B y C son correctas. Referencia Legal: 1211/1990, RD, 44"
+        "text": "Las respuestas B y C son correctas."
       }
     ],
     "correct": "c"
@@ -500,7 +500,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Cualquiera de los anteriores, a elección del transportista. Referencia Legal: FOM/1882/2012, OM, Anexo, 3.1"
+        "text": "Cualquiera de los anteriores, a elección del transportista."
       }
     ],
     "correct": "c"
@@ -523,7 +523,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas A y B son correctas. Referencia Legal: 16/1987, Ley, Art. 119"
+        "text": "Las respuestas A y B son correctas."
       }
     ],
     "correct": "d"
@@ -546,7 +546,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Depende del ámbito territorial de su actividad. Referencia Legal: 16/1987, Ley, Art. 122"
+        "text": "Depende del ámbito territorial de su actividad."
       }
     ],
     "correct": "c"
@@ -569,7 +569,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "se debe recorrer la mínima distancia posible a lo largo de autovías. Referencia Legal: 97/2014, RD, Art. 5"
+        "text": "se debe recorrer la mínima distancia posible a lo largo de autovías."
       }
     ],
     "correct": "c"
@@ -630,7 +630,11 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "b",
-        "text": "Control de la inserción y extracción de las tarjetas de fabricante de vehículos. c) Localización del taller instalador."
+        "text": "Control de la inserción y extracción de las tarjetas de fabricante de vehículos."
+      },
+      {
+        "id": "c",
+        "text": "Localización del taller instalador."
       },
       {
         "id": "d",
@@ -749,7 +753,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "están exentos de llevar instalado tacógrafo. Referencia Legal: 640/2007, RD, Art. 2.e"
+        "text": "están exentos de llevar instalado tacógrafo."
       }
     ],
     "correct": "d"
@@ -887,7 +891,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Utilizar las herramientas con precaución. Referencia Legal: 31/1995, Ley, 18; 19"
+        "text": "Utilizar las herramientas con precaución."
       }
     ],
     "correct": "c"
@@ -1002,7 +1006,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Abandonar la zona inmediatamente para evitar males mayores. Referencia Legal: 1428/2003, RD, Art. 130"
+        "text": "Abandonar la zona inmediatamente para evitar males mayores."
       }
     ],
     "correct": "d"
@@ -1531,7 +1535,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Sí, pero solo si supera 15.500 kg de Masa Máxima Autorizada. Referencia Legal: 640/2007, RD, Art. 2.a"
+        "text": "Sí, pero solo si supera 15.500 kg de Masa Máxima Autorizada."
       }
     ],
     "correct": "a"
@@ -1554,7 +1558,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Sí, pero solo para vehículos que transporten viajeros. Referencia Legal: 284/2021, RD, Art. 2"
+        "text": "Sí, pero solo para vehículos que transporten viajeros."
       }
     ],
     "correct": "b"
@@ -1669,7 +1673,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Solo si el vehículo se destina al transporte de viajeros. Referencia Legal: 284/2021, RD, Art. 1"
+        "text": "Solo si el vehículo se destina al transporte de viajeros."
       }
     ],
     "correct": "b"
@@ -1945,7 +1949,7 @@ const examData_septiembre_2024 = [
       },
       {
         "id": "d",
-        "text": "cualquier persona que haga uso del vehículo. Referencia Legal: 8/2004, RD Legislativo, Art. 2.1"
+        "text": "cualquier persona que haga uso del vehículo."
       }
     ],
     "correct": "a"
@@ -2117,7 +2121,11 @@ const examData_septiembre_2024 = [
     "options": [
       {
         "id": "a",
-        "text": "No se considera elemento de seguridad al no ser obligatoria su instalación en los vehículos. b) pasiva."
+        "text": "No se considera elemento de seguridad al no ser obligatoria su instalación en los vehículos."
+      },
+      {
+        "id": "b",
+        "text": "pasiva."
       },
       {
         "id": "c",

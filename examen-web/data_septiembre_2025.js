@@ -55,7 +55,7 @@ const examData_septiembre_2025 = [
       },
       {
         "id": "b",
-        "text": "De la inclinación de la pendiente and de la masa del vehículo."
+        "text": "De la inclinación de la pendiente y de la masa del vehículo."
       },
       {
         "id": "c",

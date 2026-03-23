@@ -266,7 +266,11 @@ const examData_enero_2024 = [
       },
       {
         "id": "c",
-        "text": "Decidir la renovación y ampliación de la flota de vehículos y la forma de su financiación. d) Representar a la empresa."
+        "text": "Decidir la renovación y ampliación de la flota de vehículos y la forma de su financiación."
+      },
+      {
+        "id": "d",
+        "text": "Representar a la empresa."
       }
     ],
     "correct": "a"
@@ -492,7 +496,11 @@ const examData_enero_2024 = [
       },
       {
         "id": "c",
-        "text": "Hasta que expire el plazo de validez del permiso de conducción sea cual sea su plazo. d) Siempre 5 años."
+        "text": "Hasta que expire el plazo de validez del permiso de conducción sea cual sea su plazo."
+      },
+      {
+        "id": "d",
+        "text": "Siempre 5 años."
       }
     ],
     "correct": "a"
@@ -2286,7 +2294,7 @@ const examData_enero_2024 = [
       },
       {
         "id": "d",
-        "text": "está exento de usar tacógrafo en todo caso. Referencia Legal: 640/2007, RD, Art. 2.o"
+        "text": "está exento de usar tacógrafo en todo caso."
       }
     ],
     "correct": "d"

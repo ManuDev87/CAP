@@ -1255,7 +1255,7 @@ const examData_enero_2026 = [
       },
       {
         "id": "c",
-        "text": "Utilizar la relación de marchas más alta posible de forma que la aguja del cuentarrevoluciones se mantenga en la zona de máxima eficiencia del motor, generalmente una zona marcada de color verde. ,"
+        "text": "Utilizar la relación de marchas más alta posible de forma que la aguja del cuentarrevoluciones se mantenga en la zona de máxima eficiencia del motor, generalmente una zona marcada de color verde."
       },
       {
         "id": "d",
@@ -1845,7 +1845,7 @@ const examData_enero_2026 = [
     "options": [
       {
         "id": "a",
-        "text": "Un  cuadrado rojo con un volante tachado."
+        "text": "Un cuadrado rojo con un volante tachado."
       },
       {
         "id": "b",

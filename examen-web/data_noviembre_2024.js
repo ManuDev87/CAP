@@ -132,7 +132,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "la junta constituyente de la cooperativa. Referencia Legal: 27/1999, Ley, Art. 19"
+        "text": "la asamblea general."
       }
     ],
     "correct": "c"
@@ -243,7 +243,11 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "c",
-        "text": "el remitente, el transportista, la agencia de transportes y el consignatario. d) No necesita ir firmada."
+        "text": "el remitente, el transportista, la agencia de transportes y el consignatario."
+      },
+      {
+        "id": "d",
+        "text": "No necesita ir firmada."
       }
     ],
     "correct": "b"
@@ -312,7 +316,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "el Certificado de Aptitud Profesional (CAP). Referencia Legal: 284/2021, RD, Art. 3"
+        "text": "el Certificado de Aptitud Profesional (CAP)."
       }
     ],
     "correct": "d"
@@ -335,7 +339,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Ninguna de las tres respuestas anteriores es correcta. Referencia Legal: 15/2009, Ley, Art. 26"
+        "text": "Ninguna de las tres respuestas anteriores es correcta."
       }
     ],
     "correct": "a"
@@ -542,7 +546,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Puede realizarlo en cualquier momento sin necesidad de motivación alguna. Referencia Legal: 6/2015, RDL, Art. 18"
+        "text": "Puede realizarlo en cualquier momento sin necesidad de motivación alguna."
       }
     ],
     "correct": "b"
@@ -565,7 +569,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "El cargador contractual y el transportista efectivo. Referencia Legal: FOM/2861/2012, OM, Art. 8"
+        "text": "El cargador contractual y el transportista efectivo."
       }
     ],
     "correct": "d"
@@ -622,7 +626,11 @@ const examData_noviembre_2024 = [
     "options": [
       {
         "id": "a",
-        "text": "Mirar en el manual el rango óptimo de operación, según las revoluciones del motor. b) La experiencia en la conducción."
+        "text": "Mirar en el manual el rango óptimo de operación, según las revoluciones del motor."
+      },
+      {
+        "id": "b",
+        "text": "La experiencia en la conducción."
       },
       {
         "id": "c",
@@ -998,7 +1006,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "No haber tenido en el año más de otros dos accidentes. Referencia Legal: CIDE, Convenio, Art. 2"
+        "text": "No haber tenido en el año más de otros dos accidentes."
       }
     ],
     "correct": "b"
@@ -1044,7 +1052,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Sí, pero solo en caso de que sea mal funcionamiento del tacógrafo. Referencia Legal: 16/1987, Ley, Art. 33.4"
+        "text": "Sí, pero solo en caso de que sea mal funcionamiento del tacógrafo."
       }
     ],
     "correct": "c"
@@ -1067,7 +1075,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "solo se considerará infracción si el vehículo está matriculado en ese país. Referencia Legal: 16/1987, Ley, Art. 140.10"
+        "text": "solo se considerará infracción si el vehículo está matriculado en ese país."
       }
     ],
     "correct": "b"
@@ -1481,7 +1489,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "No es obligatorio que se realice por escrito. Referencia Legal: 50/1980, Ley, Art. 8"
+        "text": "No es obligatorio que se realice por escrito."
       }
     ],
     "correct": "c"
@@ -1504,7 +1512,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "un mínimo de 6 y un máximo de 12 vocales. Referencia Legal: 1211/1990, RD, Art. 8.1"
+        "text": "un mínimo de 6 y un máximo de 12 vocales."
       }
     ],
     "correct": "b"
@@ -1596,7 +1604,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Sí, pero solo para vehículos que transporten viajeros. Referencia Legal: 284/2021, RD, Art. 2"
+        "text": "Sí, pero solo para vehículos que transporten viajeros."
       }
     ],
     "correct": "b"
@@ -2125,7 +2133,7 @@ const examData_noviembre_2024 = [
       },
       {
         "id": "d",
-        "text": "Los reposacabezas. Referencia: \t,"
+        "text": "Los reposacabezas."
       }
     ],
     "correct": "a"
