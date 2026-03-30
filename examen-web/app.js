@@ -122,6 +122,20 @@ const panelLegend = document.getElementById('panel-legend');
 const mainTestTitle = document.getElementById('main-test-title');
 const btnOpenPdf = document.getElementById('btn-open-pdf');
 
+// Save result modal
+const saveResultModal = document.getElementById('save-result-modal');
+const saveResultPreview = document.getElementById('save-result-preview');
+const saveResultYesBtn = document.getElementById('save-result-yes-btn');
+const saveResultNoBtn = document.getElementById('save-result-no-btn');
+
+// Stats screen
+const btnStats = document.getElementById('btn-stats');
+const statsScreen = document.getElementById('stats-screen');
+const btnCloseStats = document.getElementById('btn-close-stats');
+const chartTestSelect = document.getElementById('chart-test-select');
+
+let allScoreRecords = [];
+
 // --- Firebase Initialization ---
 const firebaseConfig = {
     apiKey: "AIzaSyDkp_dWIG6WdZ_hPLBT--Uo2fVi85ulK7U",
@@ -220,8 +234,28 @@ async function init() {
 
     finishBtn.addEventListener('click', tryFinishTest);
     reviewBtn.addEventListener('click', enterReviewMode);
-    restartBtn.addEventListener('click', showStartScreen);
+    restartBtn.addEventListener('click', showTestSelection);
     backMenuBtn.addEventListener('click', showStartScreen);
+
+    if (btnStats) {
+        btnStats.addEventListener('click', (e) => {
+            e.preventDefault();
+            userDropdown && userDropdown.classList.add('hidden');
+            showStatsScreen();
+        });
+    }
+    if (btnCloseStats) btnCloseStats.addEventListener('click', () => {
+        statsScreen && statsScreen.classList.add('hidden');
+        showTestSelection();
+    });
+    if (chartTestSelect) chartTestSelect.addEventListener('change', () => {
+        renderStatsChart(allScoreRecords, chartTestSelect.value);
+    });
+
+    const btnSeedData = document.getElementById('btn-seed-data');
+    const btnClearData = document.getElementById('btn-clear-data');
+    if (btnSeedData) btnSeedData.addEventListener('click', seedTestData);
+    if (btnClearData) btnClearData.addEventListener('click', clearTestData);
 
     if (confirmFinishBtn) confirmFinishBtn.addEventListener('click', () => {
         confirmModal.classList.add('hidden');
@@ -241,6 +275,7 @@ async function init() {
     if (endTestBtn) endTestBtn.addEventListener('click', async () => {
         pauseModal.classList.add('hidden');
         await clearTestState();
+        await saveResultStats();  // save automatically, no modal
         showResults();
     });
 
@@ -276,6 +311,8 @@ async function renderTestSelection() {
     testGrid.innerHTML = '';
     
     const pausedTests = new Map();
+    const resultStats = await loadAllResultStats();
+
     if (currentUser && currentUser !== 'root') {
         try {
             const snapshot = await db.collection('paused_tests').where('user', '==', currentUser).get();
@@ -291,10 +328,10 @@ async function renderTestSelection() {
         const card = document.createElement('div');
         card.className = 'test-card';
 
-        let pauseHtml = '';
-        let labelAddon = '';
         const pausedMode = pausedTests.get(test.id);
-        
+        const stats = resultStats.get(test.id);
+
+        let pauseHtml = '';
         if (pausedMode) {
             pauseHtml = `
             <div class="paused-indicator">
@@ -303,8 +340,36 @@ async function renderTestSelection() {
             </div>`;
         }
 
+        let statsHtml = '';
+        if (stats && (stats.passes > 0 || stats.fails > 0)) {
+            statsHtml = `<div class="result-stats-indicator">`;
+            if (stats.passes > 0) {
+                statsHtml += `
+                    <div class="stat-badge stat-pass">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="11" fill="white"/>
+                            <path d="M7 13l3.5 3.5L17 9" stroke="#0A8442" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>x${stats.passes}</span>
+                    </div>`;
+            }
+            if (stats.fails > 0) {
+                statsHtml += `
+                    <div class="stat-badge stat-fail">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="11" fill="white"/>
+                            <line x1="7" y1="7" x2="17" y2="17" stroke="#cc0000" stroke-width="2.5" stroke-linecap="round"/>
+                            <line x1="17" y1="7" x2="7" y2="17" stroke="#cc0000" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        <span>x${stats.fails}</span>
+                    </div>`;
+            }
+            statsHtml += `</div>`;
+        }
+
         card.innerHTML = `
             ${pauseHtml}
+            ${statsHtml}
             <img src="${test.img}" alt="${test.name}">
             <div class="test-card-label">${test.name}</div>
         `;
@@ -640,6 +705,89 @@ function calculateScore() {
     return { correct, wrong, blank, bonusCorrect, finalScore };
 }
 
+
+async function saveResultStats() {
+    if (!currentUser || currentUser === 'root' || !currentTestId) return;
+    const { finalScore } = calculateScore();
+    const PASS_THRESHOLD = 50;
+    const passed = finalScore >= PASS_THRESHOLD;
+    const testObj = availableTests.find(t => t.id === currentTestId);
+    const testName = testObj ? testObj.name : currentTestId;
+
+    try {
+        // Update pass/fail counters
+        const docId = `${currentUser}_${currentTestId}`;
+        const docRef = db.collection('test_results').doc(docId);
+        const doc = await docRef.get();
+        if (doc.exists) {
+            const data = doc.data();
+            await docRef.update({
+                passes: passed ? (data.passes || 0) + 1 : (data.passes || 0),
+                fails: !passed ? (data.fails || 0) + 1 : (data.fails || 0)
+            });
+        } else {
+            await docRef.set({
+                user: currentUser,
+                testId: currentTestId,
+                passes: passed ? 1 : 0,
+                fails: !passed ? 1 : 0
+            });
+        }
+        // Save individual score record for stats
+        await db.collection('score_records').add({
+            user: currentUser,
+            testId: currentTestId,
+            testName: testName,
+            score: finalScore,
+            passed: passed,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        });
+    } catch(err) {
+        console.error('Error guardando resultado', err);
+    }
+}
+
+async function loadScoreRecords() {
+    if (!currentUser || currentUser === 'root') return [];
+    const records = [];
+    try {
+        // No orderBy to avoid requiring a Firestore composite index — sort client-side
+        const snap = await db.collection('score_records')
+            .where('user', '==', currentUser)
+            .get();
+        snap.forEach(doc => {
+            const d = doc.data();
+            records.push({
+                testId: d.testId,
+                testName: d.testName || d.testId,
+                score: d.score,
+                passed: d.passed,
+                timestamp: d.timestamp ? d.timestamp.toDate() : new Date(0)
+            });
+        });
+        // Sort chronologically client-side
+        records.sort((a, b) => a.timestamp - b.timestamp);
+    } catch(err) {
+        console.error('Error cargando registros de puntuación', err);
+    }
+    return records;
+}
+
+async function loadAllResultStats() {
+    if (!currentUser || currentUser === 'root') return new Map();
+    const statsMap = new Map();
+    try {
+        const snapshot = await db.collection('test_results').where('user', '==', currentUser).get();
+        snapshot.forEach(doc => {
+            const d = doc.data();
+            statsMap.set(d.testId, { passes: d.passes || 0, fails: d.fails || 0 });
+        });
+    } catch(err) {
+        console.error('Error cargando resultados', err);
+    }
+    return statsMap;
+}
+
 function showResults() {
     stopTimer();
     const { correct, wrong, blank, bonusCorrect, finalScore } = calculateScore();
@@ -688,7 +836,307 @@ function hideAllScreens() {
     resultModal.classList.add('hidden');
     confirmModal.classList.add('hidden');
     pauseModal.classList.add('hidden');
+    if (saveResultModal) saveResultModal.classList.add('hidden');
+    if (statsScreen) statsScreen.classList.add('hidden');
 }
+
+async function showStatsScreen() {
+    hideAllScreens();
+    if (!statsScreen) return;
+    statsScreen.classList.remove('hidden');
+
+    // Check if this user has permission to see the seed data button
+    const btnSeedData = document.getElementById('btn-seed-data');
+    const btnClearData = document.getElementById('btn-clear-data');
+    try {
+        const userDoc = await db.collection('users').doc(currentUser).get();
+        const canSeeSeed = userDoc.exists && userDoc.data().showSeedBtn === true;
+        if (btnSeedData) btnSeedData.style.display = canSeeSeed ? '' : 'none';
+        if (btnClearData) btnClearData.style.display = canSeeSeed ? '' : 'none';
+    } catch(err) {
+        if (btnSeedData) btnSeedData.style.display = 'none';
+        if (btnClearData) btnClearData.style.display = 'none';
+    }
+
+    // Load data
+    allScoreRecords = await loadScoreRecords();
+
+    renderStatsRanking(allScoreRecords);
+
+    // Populate test filter dropdown
+    if (chartTestSelect) {
+        chartTestSelect.innerHTML = '<option value="all">Todos los exámenes</option>';
+        const testsSeen = new Set();
+        allScoreRecords.forEach(r => {
+            if (!testsSeen.has(r.testId)) {
+                testsSeen.add(r.testId);
+                const opt = document.createElement('option');
+                opt.value = r.testId;
+                opt.textContent = r.testName;
+                chartTestSelect.appendChild(opt);
+            }
+        });
+    }
+
+    renderStatsChart(allScoreRecords, 'all');
+}
+
+function renderStatsRanking(records) {
+    const rankList = document.getElementById('stats-ranking-list');
+    if (!rankList) return;
+
+    if (records.length === 0) {
+        rankList.innerHTML = '<li class="ranking-empty">Aún no has completado ningún examen.<br>Finaliza un test y guarda el resultado para ver tu ranking.</li>';
+        return;
+    }
+
+    // Best score per test
+    const bestByTest = new Map();
+    records.forEach(r => {
+        const existing = bestByTest.get(r.testId);
+        if (!existing || r.score > existing.score) {
+            bestByTest.set(r.testId, { testName: r.testName, score: r.score, passed: r.score >= 50 });
+        }
+    });
+
+    // Sort by best score descending
+    const sorted = Array.from(bestByTest.values()).sort((a, b) => b.score - a.score);
+    const medals = ['🥇', '🥈', '🥉'];
+
+    rankList.innerHTML = sorted.map((item, i) => {
+        const medal = medals[i] || `${i + 1}º`;
+        const scoreStr = item.score % 1 === 0 ? item.score : item.score.toFixed(1);
+        const passClass = item.passed ? 'rank-pass' : 'rank-fail';
+        const statusIcon = item.passed
+            ? '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#0A8442"/><path d="M7 13l3.5 3.5L17 9" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+            : '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#cc0000"/><line x1="7" y1="7" x2="17" y2="17" stroke="white" stroke-width="2.5" stroke-linecap="round"/><line x1="17" y1="7" x2="7" y2="17" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>';
+        const attempts = records.filter(r => r.testId === (Array.from(bestByTest.keys())[i])).length;
+        return `<li class="ranking-item ${passClass}">
+            <span class="rank-medal">${medal}</span>
+            <div class="rank-info">
+                <span class="rank-name">${item.testName}</span>
+                <span class="rank-attempts">${attempts} intento${attempts !== 1 ? 's' : ''}</span>
+            </div>
+            <div class="rank-score-wrap">
+                <span class="rank-status-icon">${statusIcon}</span>
+                <span class="rank-score">${scoreStr}<small>/100</small></span>
+            </div>
+        </li>`;
+    }).join('');
+}
+
+function renderStatsChart(records, filterTestId) {
+    const canvas = document.getElementById('stats-chart');
+    const noData = document.getElementById('chart-no-data');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let filtered = filterTestId === 'all' ? [...records] : records.filter(r => r.testId === filterTestId);
+
+    if (filtered.length === 0) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (noData) noData.classList.remove('hidden');
+        canvas.style.display = 'none';
+        return;
+    }
+    canvas.style.display = 'block';
+    if (noData) noData.classList.add('hidden');
+
+    // --- Canvas sizing: grow with data points so labels never overlap ---
+    const wrapper = canvas.parentElement;
+    const containerW = wrapper.clientWidth - 20 || 600;
+    const PAD_L = 54, PAD_R = 24, PAD_T = 24, PAD_B = 58;
+    const MIN_PX_PER_POINT = 72;  // minimum pixels between each data point
+    const minDataW = filtered.length <= 1 ? 0 : (filtered.length - 1) * MIN_PX_PER_POINT;
+    const W = Math.max(containerW, minDataW + PAD_L + PAD_R);
+    const H = 300;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.scale(dpr, dpr);
+
+    const cW = W - PAD_L - PAD_R;
+    const cH = H - PAD_T - PAD_B;
+
+    const xPos = i => PAD_L + (filtered.length <= 1 ? cW / 2 : (i / (filtered.length - 1)) * cW);
+    const yPos = s => PAD_T + cH - Math.max(0, Math.min(1, s / 100)) * cH;
+    const y50 = yPos(50);
+
+    ctx.clearRect(0, 0, W, H);
+
+    // --- Background ---
+    // Light green tint above 50
+    ctx.fillStyle = 'rgba(10,132,66,0.04)';
+    ctx.fillRect(PAD_L, PAD_T, cW, y50 - PAD_T);
+    // Light red tint below 50
+    ctx.fillStyle = 'rgba(204,0,0,0.04)';
+    ctx.fillRect(PAD_L, y50, cW, H - PAD_B - y50);
+
+    // --- Grid lines ---
+    for (let y = 0; y <= 100; y += 10) {
+        if (y === 50) continue;
+        const yp = yPos(y);
+        ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath(); ctx.moveTo(PAD_L, yp); ctx.lineTo(W - PAD_R, yp); ctx.stroke();
+    }
+    ctx.setLineDash([]);
+
+    // --- Y axis labels ---
+    ctx.font = '11px Roboto, sans-serif';
+    ctx.textAlign = 'right';
+    for (let y = 0; y <= 100; y += 10) {
+        const yp = yPos(y);
+        if (y === 50) continue;
+        ctx.fillStyle = '#ccc';
+        ctx.fillText(y, PAD_L - 8, yp + 4);
+    }
+
+    // --- Axes ---
+    ctx.strokeStyle = '#e0e0e0';
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(PAD_L, PAD_T); ctx.lineTo(PAD_L, H - PAD_B); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(PAD_L, H - PAD_B); ctx.lineTo(W - PAD_R, H - PAD_B); ctx.stroke();
+
+    // --- Threshold line at 50 (prominent amber/brown) ---
+    ctx.strokeStyle = '#c47a3a';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(PAD_L, y50); ctx.lineTo(W - PAD_R, y50); ctx.stroke();
+    // Label for 50 line
+    ctx.fillStyle = '#c47a3a';
+    ctx.font = 'bold 11px Roboto, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText('50', PAD_L - 8, y50 + 4);
+
+    if (filtered.length < 2) {
+        // Single point
+        const x = xPos(0), y = yPos(filtered[0].score);
+        const color = filtered[0].score >= 50 ? '#0A8442' : '#cc0000';
+        ctx.fillStyle = color;
+        ctx.beginPath(); ctx.arc(x, y, 6, 0, Math.PI * 2); ctx.fill();
+        canvas._points = [{ x, y, record: filtered[0], index: 0 }];
+    } else {
+        // Build smooth bezier path (Catmull-Rom -> bezier)
+        const pts = filtered.map((r, i) => ({ x: xPos(i), y: yPos(r.score) }));
+
+        function buildSmoothPath(ctx, pts) {
+            const tension = 0.35;
+            ctx.moveTo(pts[0].x, pts[0].y);
+            for (let i = 0; i < pts.length - 1; i++) {
+                const p0 = pts[Math.max(0, i - 1)];
+                const p1 = pts[i];
+                const p2 = pts[i + 1];
+                const p3 = pts[Math.min(pts.length - 1, i + 2)];
+                const cp1x = p1.x + (p2.x - p0.x) * tension;
+                const cp1y = p1.y + (p2.y - p0.y) * tension;
+                const cp2x = p2.x - (p3.x - p1.x) * tension;
+                const cp2y = p2.y - (p3.y - p1.y) * tension;
+                ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
+            }
+        }
+
+        // Draw GREEN segment (above 50) using clip to upper half
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(PAD_L - 2, PAD_T, cW + 4, y50 - PAD_T);
+        ctx.clip();
+        ctx.beginPath();
+        buildSmoothPath(ctx, pts);
+        ctx.strokeStyle = '#0A8442';
+        ctx.lineWidth = 2.8;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.stroke();
+        // Area fill green
+        ctx.lineTo(pts[pts.length - 1].x, y50);
+        ctx.lineTo(pts[0].x, y50);
+        ctx.closePath();
+        ctx.fillStyle = 'rgba(10,132,66,0.12)';
+        ctx.fill();
+        ctx.restore();
+
+        // Draw RED segment (below 50) using clip to lower half
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(PAD_L - 2, y50, cW + 4, H - PAD_B - y50 + 2);
+        ctx.clip();
+        ctx.beginPath();
+        buildSmoothPath(ctx, pts);
+        ctx.strokeStyle = '#cc0000';
+        ctx.lineWidth = 2.8;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.stroke();
+        // Area fill red
+        ctx.lineTo(pts[pts.length - 1].x, y50);
+        ctx.lineTo(pts[0].x, y50);
+        ctx.closePath();
+        ctx.fillStyle = 'rgba(204,0,0,0.09)';
+        ctx.fill();
+        ctx.restore();
+
+        // Draw dots at data points
+        canvas._points = filtered.map((r, i) => {
+            const x = pts[i].x, y = pts[i].y;
+            const color = r.score >= 50 ? '#0A8442' : '#cc0000';
+            ctx.fillStyle = 'white';
+            ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2.5;
+            ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.stroke();
+            ctx.fillStyle = color;
+            ctx.beginPath(); ctx.arc(x, y, 2.5, 0, Math.PI * 2); ctx.fill();
+            return { x, y, record: r, index: i };
+        });
+    }
+
+    // --- X axis labels ---
+    ctx.font = '10px Roboto, sans-serif';
+    ctx.fillStyle = '#aaa';
+    ctx.textAlign = 'center';
+    filtered.forEach((r, i) => {
+        const x = xPos(i);
+        const parts = r.testName ? r.testName.split(' ') : ['?', '?'];
+        const abbr = (parts[0] || '').substring(0, 3) + ' ' + (parts[1] || '').slice(-2);
+        ctx.fillText(abbr, x, H - PAD_B + 16);
+        ctx.fillText(`#${i + 1}`, x, H - PAD_B + 28);
+    });
+
+    // --- Hover interactivity ---
+    const tooltip = document.getElementById('chart-tooltip');
+    canvas.onmousemove = (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mx = e.clientX - rect.left;
+        const my = e.clientY - rect.top;
+        let found = null, minDist = 22;
+        (canvas._points || []).forEach(p => {
+            const d = Math.sqrt((mx - p.x) ** 2 + (my - p.y) ** 2);
+            if (d < minDist) { minDist = d; found = p; }
+        });
+        if (found && tooltip) {
+            const scoreStr = found.record.score % 1 === 0 ? found.record.score : found.record.score.toFixed(1);
+            tooltip.innerHTML = `<strong>${found.record.testName}</strong><br>
+                <span style="color:${found.record.score >= 50 ? '#0A8442' : '#cc0000'}; font-weight:700;">${scoreStr} pts</span>
+                &nbsp;${found.record.passed ? '✅ Aprobado' : '❌ Suspenso'}`;
+            const tipX = found.x + 14 > W - 120 ? found.x - 130 : found.x + 14;
+            tooltip.style.left = tipX + 'px';
+            tooltip.style.top = (found.y - 44) + 'px';
+            tooltip.classList.remove('hidden');
+            canvas.style.cursor = 'crosshair';
+        } else {
+            if (tooltip) tooltip.classList.add('hidden');
+            canvas.style.cursor = 'default';
+        }
+    };
+    canvas.onmouseleave = () => { if (tooltip) tooltip.classList.add('hidden'); };
+}
+
+
 
 function showLogin() {
     hideAllScreens();
@@ -845,6 +1293,9 @@ async function renderUsersList() {
             const user = doc.id;
             const data = doc.data();
             if (user === 'root') return;
+
+            const showSeed = data.showSeedBtn === true;
+            const cbId = `seed-cb-${user}`;
             
             const li = document.createElement('li');
             li.innerHTML = `
@@ -852,7 +1303,14 @@ async function renderUsersList() {
                     <span class="user-item-name">${data.name}</span>
                     <span class="user-item-login">Usuario: ${user}</span>
                 </div>
-                <button class="delete-user-btn" onclick="deleteUser('${user}')">Eliminar <i class="fas fa-trash"></i></button>
+                <div class="user-item-actions">
+                    <label class="seed-toggle" title="Mostrar botón 'Datos de prueba' a este alumno">
+                        <input type="checkbox" id="${cbId}" ${showSeed ? 'checked' : ''}
+                            onchange="toggleSeedBtn('${user}', this.checked)">
+                        <span class="seed-toggle-label">Datos prueba</span>
+                    </label>
+                    <button class="delete-user-btn" onclick="deleteUser('${user}')">Eliminar <i class="fas fa-trash"></i></button>
+                </div>
             `;
             usersListUl.appendChild(li);
         });
@@ -861,6 +1319,14 @@ async function renderUsersList() {
         console.error(err);
     }
 }
+
+window.toggleSeedBtn = async function(user, enabled) {
+    try {
+        await db.collection('users').doc(user).update({ showSeedBtn: enabled });
+    } catch(err) {
+        alert('Error al actualizar permiso: ' + err.message);
+    }
+};
 
 async function deleteUser(user) {
     if (confirm(`¿Seguro que quieres borrar al usuario ${user}?`)) {
@@ -937,6 +1403,111 @@ async function clearTestState() {
         await db.collection('paused_tests').doc(docId).delete();
     } catch(err) {
         console.error("Error clearing state", err);
+    }
+}
+
+// --- TEST DATA SEEDING (remove when done testing) ---
+async function seedTestData() {
+    if (!currentUser || currentUser === 'root') return alert('Inicia sesión como alumno primero.');
+    const btn = document.getElementById('btn-seed-data');
+    if (btn) { btn.disabled = true; btn.textContent = 'Insertando...'; }
+
+    const now = new Date();
+    const day = 24 * 60 * 60 * 1000;
+
+    const mockRecords = [
+        // Enero 2024 — 2 intentos (suspenso → aprobado)
+        { testId: 'enero_2024', testName: 'Enero 2024', score: 33, passed: false, date: new Date(now - 60 * day) },
+        { testId: 'enero_2024', testName: 'Enero 2024', score: 54, passed: true,  date: new Date(now - 50 * day) },
+        // Marzo 2024 — 2 intentos (ambos suspensos)
+        { testId: 'marzo_2024', testName: 'Marzo 2024', score: 22, passed: false, date: new Date(now - 48 * day) },
+        { testId: 'marzo_2024', testName: 'Marzo 2024', score: 40, passed: false, date: new Date(now - 40 * day) },
+        // Mayo 2024 — 3 intentos (mejora progresiva)
+        { testId: 'mayo_2024', testName: 'Mayo 2024', score: 44, passed: false, date: new Date(now - 38 * day) },
+        { testId: 'mayo_2024', testName: 'Mayo 2024', score: 55, passed: true,  date: new Date(now - 30 * day) },
+        { testId: 'mayo_2024', testName: 'Mayo 2024', score: 67, passed: true,  date: new Date(now - 22 * day) },
+        // Julio 2024 — 1 intento excelente
+        { testId: 'julio_2024', testName: 'Julio 2024', score: 88, passed: true, date: new Date(now - 20 * day) },
+        // Septiembre 2024 — 1 intento suspenso
+        { testId: 'septiembre_2024', testName: 'Septiembre 2024', score: 31, passed: false, date: new Date(now - 18 * day) },
+        // Noviembre 2024 — 2 intentos aprobados
+        { testId: 'noviembre_2024', testName: 'Noviembre 2024', score: 65, passed: true, date: new Date(now - 15 * day) },
+        { testId: 'noviembre_2024', testName: 'Noviembre 2024', score: 72, passed: true, date: new Date(now - 10 * day) },
+        // Enero 2025 — 1 intento rozando el suspenso
+        { testId: 'enero_2025', testName: 'Enero 2025', score: 48, passed: false, date: new Date(now - 8 * day) },
+        // Marzo 2025 — 2 intentos (suspenso → aprobado justo)
+        { testId: 'marzo_2025', testName: 'Marzo 2025', score: 43, passed: false, date: new Date(now - 6 * day) },
+        { testId: 'marzo_2025', testName: 'Marzo 2025', score: 51, passed: true,  date: new Date(now - 3 * day) },
+        // Mayo 2025 — 1 intento muy alto
+        { testId: 'mayo_2025', testName: 'Mayo 2025', score: 79, passed: true,  date: new Date(now - 1 * day) },
+    ];
+
+    try {
+        const batch = db.batch();
+        // Also update test_results counters
+        const counters = {};
+        mockRecords.forEach(r => {
+            const ref = db.collection('score_records').doc();
+            batch.set(ref, {
+                user: currentUser,
+                testId: r.testId,
+                testName: r.testName,
+                score: r.score,
+                passed: r.passed,
+                timestamp: firebase.firestore.Timestamp.fromDate(r.date)
+            });
+            if (!counters[r.testId]) counters[r.testId] = { passes: 0, fails: 0 };
+            r.passed ? counters[r.testId].passes++ : counters[r.testId].fails++;
+        });
+        await batch.commit();
+
+        // Update test_results
+        for (const [testId, counts] of Object.entries(counters)) {
+            const docId = `${currentUser}_${testId}`;
+            const docRef = db.collection('test_results').doc(docId);
+            const existing = await docRef.get();
+            if (existing.exists) {
+                await docRef.update({ passes: (existing.data().passes || 0) + counts.passes, fails: (existing.data().fails || 0) + counts.fails });
+            } else {
+                await docRef.set({ user: currentUser, testId, passes: counts.passes, fails: counts.fails });
+            }
+        }
+
+        if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-flask"></i> Datos de prueba'; }
+        // Refresh stats
+        await showStatsScreen();
+    } catch(err) {
+        console.error('Error seeding data', err);
+        alert('Error: ' + err.message);
+        if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-flask"></i> Datos de prueba'; }
+    }
+}
+
+async function clearTestData() {
+    if (!currentUser || currentUser === 'root') return;
+    if (!confirm('¿Eliminar TODOS los datos de estadísticas de tu cuenta?')) return;
+    const btn = document.getElementById('btn-clear-data');
+    if (btn) { btn.disabled = true; btn.textContent = 'Borrando...'; }
+
+    try {
+        // Delete score_records
+        const snap = await db.collection('score_records').where('user', '==', currentUser).get();
+        const batch = db.batch();
+        snap.forEach(doc => batch.delete(doc.ref));
+        await batch.commit();
+
+        // Delete test_results
+        const snap2 = await db.collection('test_results').where('user', '==', currentUser).get();
+        const batch2 = db.batch();
+        snap2.forEach(doc => batch2.delete(doc.ref));
+        await batch2.commit();
+
+        if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-trash"></i> Borrar datos'; }
+        await showStatsScreen();
+    } catch(err) {
+        console.error('Error clearing data', err);
+        alert('Error: ' + err.message);
+        if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-trash"></i> Borrar datos'; }
     }
 }
 

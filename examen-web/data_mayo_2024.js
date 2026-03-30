@@ -40,7 +40,7 @@ const examData_mayo_2024 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas B y C son correctas. Referencia Legal: 16/1987, Ley, Art. 62"
+        "text": "Las respuestas B y C son correctas."
       }
     ],
     "correct": "b"
