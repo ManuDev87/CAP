@@ -34,6 +34,12 @@ const availableTests = [
 ];
 
 const testPdfUrls = {
+    'febrero_2023': 'https://web.araba.eus/documents/1247685/1249405/PLANTILLA+MERCANCIAS.pdf/2b3142dd-2c5d-73f1-358d-a72acdefeaab?t=1675426465593',
+    'marzo_2023': 'https://web.araba.eus/documents/1247685/1248559/PlantillaMercancias.pdf/baf75bf5-c8c3-073f-6431-eed78886082c?t=1680260555891',
+    'junio_2023': 'https://web.araba.eus/documents/1247685/1249489/PLANTILLA+MERCANCIAS.pdf/a191e2d8-87f9-2d85-3fae-74125e9d2fb9?t=1685704851002',
+    'julio_2023': 'https://web.araba.eus/documents/1247685/1249509/Plantilla+Mercancias.pdf/a59274b8-68a2-6ec4-2919-57163c2a1d58?t=1689335365851',
+    'septiembre_2023': 'https://web.araba.eus/documents/1247685/1249519/20230929+Plantilla+Examen+Mercanc%C3%ADas.pdf/1a4394c5-7a90-674a-a53f-2cf599c22af0?t=1695992158931',
+    'noviembre_2023': 'https://web.araba.eus/documents/1247685/1249536/20231124+Plantilla+Respuestas+Examen+Mercanc%C3%ADas.pdf/49f865b0-09c3-d3f5-1d86-640f2cec32e9?t=1701076611807',
     'enero_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_se_cap1_2024.pdf',
     'marzo_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_se_cap2_2024.pdf',
     'mayo_2024': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen-a_mer_se_cap3_2024.pdf',
@@ -261,7 +267,11 @@ async function init() {
     const btnSeedData = document.getElementById('btn-seed-data');
     const btnClearData = document.getElementById('btn-clear-data');
     if (btnSeedData) btnSeedData.addEventListener('click', seedTestData);
-    if (btnClearData) btnClearData.addEventListener('click', clearTestData);
+    if (btnClearData) btnClearData.addEventListener('click', () => {
+        if (confirm("¿Seguro que quieres borrar los datos?")) {
+            clearTestData();
+        }
+    });
 
     if (confirmFinishBtn) confirmFinishBtn.addEventListener('click', () => {
         confirmModal.classList.add('hidden');

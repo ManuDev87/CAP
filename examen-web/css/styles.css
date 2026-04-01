@@ -312,6 +312,22 @@ body {
     font-weight: 700;
 }
 
+#btn-close-stats {
+    background-color: white !important;
+    color: #0A8442 !important;
+    border: none !important;
+    padding: 8px 18px !important;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#btn-close-stats:hover {
+    background-color: #f1f1f1 !important;
+    transform: translateY(-2px);
+}
+
 .stats-content {
     display: grid;
     grid-template-columns: 320px minmax(0, 1fr);
@@ -634,56 +650,86 @@ body {
 
 .user-dropdown {
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    min-width: 170px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    min-width: 190px;
     z-index: 1000;
-    overflow: hidden;
-    animation: fadeIn 0.2s ease;
+    padding: 6px;
+    border: 1px solid #eaeaea;
+    animation: fadeIn 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-10px) scale(0.95);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
 .dropdown-item {
     width: 100%;
-    padding: 12px 16px;
+    padding: 10px 14px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     border: none;
-    background: white;
+    background: transparent;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 15px;
-    font-family: inherit;
-    color: #333;
-    transition: background 0.2s;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    transition: all 0.2s ease;
     text-align: left;
+    margin-bottom: 4px;
+}
+
+.dropdown-item:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-item i {
+    font-size: 18px;
+    color: #8fa0b3;
+    transition: all 0.2s;
+    width: 20px;
+    text-align: center;
 }
 
 .dropdown-item:hover {
-    background: #f8f9fa;
+    background: #f0f4f8;
+    color: #0A8442;
+    transform: translateX(3px);
+}
+
+.dropdown-item:hover i {
+    color: #0A8442;
 }
 
 .dropdown-logout {
     color: #cc0000;
-    font-weight: 500;
+}
+
+.dropdown-logout i {
+    color: #cc0000;
 }
 
 .dropdown-logout:hover {
-    background: #ffebeb;
+    background: #fff0f0;
+    color: #cc0000;
+}
+
+.dropdown-logout:hover i {
+    color: #cc0000;
 }
 
 .test-selection-grid {
