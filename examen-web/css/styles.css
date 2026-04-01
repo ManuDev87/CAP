@@ -1411,7 +1411,7 @@ body {
 }
 
 .danger-btn:hover {
-    background-color: #f1a449;
+    background-color: #c47d2e;
 }
 
 .modal-box h2 {
@@ -1464,7 +1464,7 @@ body {
 }
 
 .btn.secondary:hover {
-    background-color: #f1a449;
+    background-color: #c47d2e;
 }
 
 /* Score Breakdown (Modal CAP) */
