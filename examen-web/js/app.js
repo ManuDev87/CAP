@@ -1519,7 +1519,6 @@ async function seedTestData() {
 
 async function clearTestData() {
     if (!currentUser || currentUser === 'root') return;
-    if (!confirm('¿Eliminar TODOS los datos de estadísticas de tu cuenta?')) return;
     const btn = document.getElementById('btn-clear-data');
     if (btn) { btn.disabled = true; btn.textContent = 'Borrando...'; }
 
