@@ -1,0 +1,2371 @@
+const examData_febrero_2023 = [
+  {
+    "num": "1",
+    "question": "Cuando el conductor de un camión acelera en una pendiente ascendente, ¿qué ocurrirá con la mercancía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tenderá a desplazarse hacia el lateral del vehículo que soporte más peso."
+      },
+      {
+        "id": "b",
+        "text": "Tenderá a desplazarse en el mismo sentido de la marcha del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Tenderá a desplazarse en sentido opuesto a la marcha del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "No tenderá a desplazarse hacia ninguna parte."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "2",
+    "question": "La sociedad de responsabilidad limitada¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "tiene un capital social máximo de 3.000 euros."
+      },
+      {
+        "id": "b",
+        "text": "tiene socios con una responsabilidad ilimitada."
+      },
+      {
+        "id": "c",
+        "text": "debe inscribirse en el Registro de la Propiedad."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "3",
+    "question": "¿Cuándo se habla de apoyos fuertes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando el intervalo entre girar la dirección y el apoyo es pequeño."
+      },
+      {
+        "id": "b",
+        "text": "Cuando la inclinación que alcanza el camión es la mínima posible."
+      },
+      {
+        "id": "c",
+        "text": "Cuando la inclinación que alcanza el camión es la máxima posible o cercana a la máxima."
+      },
+      {
+        "id": "d",
+        "text": "Cuando la curva permite que el camión circule apoyado durante un gran recorrido."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "4",
+    "question": "¿Qué es la resistencia a la pendiente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es la fuerza que opone resistencia al movimiento de una superficie sobre la otra."
+      },
+      {
+        "id": "b",
+        "text": "Es la fuerza que opone resistencia a la caída libre sobre una superficie líquida."
+      },
+      {
+        "id": "c",
+        "text": "Es la magnitud física que mide la tasa de variación de la velocidad respecto del tiempo."
+      },
+      {
+        "id": "d",
+        "text": "La forma en que la inclinación del terreno, en forma de pendiente, afecta al movimiento del camión."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "5",
+    "question": "En la estiba de un vehículo, ¿para qué sirve un torno?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para rotar la mercancía sobre su eje."
+      },
+      {
+        "id": "b",
+        "text": "Para comprimir una carga a granel."
+      },
+      {
+        "id": "c",
+        "text": "Para subir o bajar la mercancía."
+      },
+      {
+        "id": "d",
+        "text": "Para generar tensión sobre cinchas y cables."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "6",
+    "question": "¿Cómo se denomina el arte de colocar la carga para ser transportada de la mejor manera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Balanceo."
+      },
+      {
+        "id": "b",
+        "text": "Estiba."
+      },
+      {
+        "id": "c",
+        "text": "Cabeceo."
+      },
+      {
+        "id": "d",
+        "text": "Guiñada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "7",
+    "question": "¿Cómo se denominan las acciones o influencias que modifican el estado de movimiento o de reposo de un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuerzas."
+      },
+      {
+        "id": "b",
+        "text": "Resistencias."
+      },
+      {
+        "id": "c",
+        "text": "Resortes."
+      },
+      {
+        "id": "d",
+        "text": "Facultades."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "8",
+    "question": "El contenedor se caracteriza principalmente por:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tener un volumen mínimo de 3 metros cúbicos."
+      },
+      {
+        "id": "b",
+        "text": "facilitar el transporte de mercancías de carga fraccionada."
+      },
+      {
+        "id": "c",
+        "text": "estar concebido para usarse una sola vez."
+      },
+      {
+        "id": "d",
+        "text": "facilitar el transporte de mercancías sin ruptura de carga."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "9",
+    "question": "Las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán:",
+    "options": [
+      {
+        "id": "a",
+        "text": "con el transportista en nombre del que haya requerido sus servicios."
+      },
+      {
+        "id": "b",
+        "text": "siempre en nombre propio."
+      },
+      {
+        "id": "c",
+        "text": "con el cargador en nombre del transportista efectivo."
+      },
+      {
+        "id": "d",
+        "text": "en nombre propio solo cuando utilicen camiones de su propiedad o de los que dispongan en leasing o renting."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "10",
+    "question": "La clasificación de los transportes en viajeros y mercancías es una clasificación en función de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "su ámbito."
+      },
+      {
+        "id": "b",
+        "text": "su objeto."
+      },
+      {
+        "id": "c",
+        "text": "la especificidad de su objeto y su régimen jurídico."
+      },
+      {
+        "id": "d",
+        "text": "su naturaleza."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "11",
+    "question": "¿Qué tipo de sociedad ha de tener normalmente, como mínimo, tres socios?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Las sociedades laborales."
+      },
+      {
+        "id": "b",
+        "text": "Las sociedades anónimas."
+      },
+      {
+        "id": "c",
+        "text": "Las sociedades de responsabilidad limitada."
+      },
+      {
+        "id": "d",
+        "text": "Todas las sociedades han de tener, como mínimo, tres socios."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "12",
+    "question": "¿Cuántas autorizaciones administrativas de transporte público de mercancías se otorgan por empresa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Una por cada vehículo ligero que posea la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Siete."
+      },
+      {
+        "id": "c",
+        "text": "Diez."
+      },
+      {
+        "id": "d",
+        "text": "Una, que habilita para realizar transporte con los vehículos que se le hayan vinculado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "13",
+    "question": "En el transporte de mercancías por cuenta ajena, la autorización administrativa es necesaria cuando la MMA del vehículo sea superior a:",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 toneladas."
+      },
+      {
+        "id": "b",
+        "text": "1 toneladas."
+      },
+      {
+        "id": "c",
+        "text": "4 toneladas."
+      },
+      {
+        "id": "d",
+        "text": "2 toneladas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "14",
+    "question": "Según la capacidad de enfriamiento, ¿cuántas clases de vehículos refrigerantes existen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tres."
+      },
+      {
+        "id": "b",
+        "text": "Cuatro."
+      },
+      {
+        "id": "c",
+        "text": "Cinco."
+      },
+      {
+        "id": "d",
+        "text": "Dos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "15",
+    "question": "En derecho español, el contrato de transporte, ¿tiene carácter consensual y no formal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "No, siempre tiene que ser consensual y formalizado en un documento."
+      },
+      {
+        "id": "c",
+        "text": "Sí."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo en caso de transporte entre particulares."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "16",
+    "question": "Las cooperativas de transportistas deberán estar inscritas:",
+    "options": [
+      {
+        "id": "a",
+        "text": "en el Registro Mercantil que corresponda al lugar donde la cooperativa tenga su domicilio social o estén domiciliados el mayor número de socios."
+      },
+      {
+        "id": "b",
+        "text": "en el Registro de Sociedades Cooperativas."
+      },
+      {
+        "id": "c",
+        "text": "en el Registro de Empresas y Actividades de Transporte, entre otros Registros."
+      },
+      {
+        "id": "d",
+        "text": "No tienen que estar inscritas en ningún Registro distinto del que corresponde a cualquier sociedad mercantil."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "17",
+    "question": "La actividad de arrendamiento de vehículos sin conductor para la realización de transporte público de mercancías por carretera necesitará autorización administrativa del órgano competente en materia de transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "si su actividad consiste en el alquiler de remolques."
+      },
+      {
+        "id": "b",
+        "text": "si su actividad consiste en el alquiler de semirremolques."
+      },
+      {
+        "id": "c",
+        "text": "si su actividad consiste en el alquiler de cabezas tractoras pesadas."
+      },
+      {
+        "id": "d",
+        "text": "No la necesitará en ningún caso."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "18",
+    "question": "De las siguientes actuaciones que realiza el conductor de un camión, ¿cuál es correcta para reducir la resistencia a la aceleración?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provocar aceleraciones excesivas, sobre todo en los arranques."
+      },
+      {
+        "id": "b",
+        "text": "Reducir la presión de los neumáticos."
+      },
+      {
+        "id": "c",
+        "text": "Mantener la distancia de seguridad para evitar frenadas bruscas."
+      },
+      {
+        "id": "d",
+        "text": "Utilizar los frenos asiduamente, sobre todo en pendientes ascendentes."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "19",
+    "question": "¿Cuántos vehículos se pueden autorizar, como máximo, a una empresa para efectuar transporte privado complementario de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tres."
+      },
+      {
+        "id": "b",
+        "text": "Cinco."
+      },
+      {
+        "id": "c",
+        "text": "El número necesario para cubrir las necesidades de transporte que justifique."
+      },
+      {
+        "id": "d",
+        "text": "Todos los que solicite."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "20",
+    "question": "En una empresa de transporte de mercancías, archivar la documentación de la empresa es función propia del:",
+    "options": [
+      {
+        "id": "a",
+        "text": "administrativo."
+      },
+      {
+        "id": "b",
+        "text": "conductor."
+      },
+      {
+        "id": "c",
+        "text": "comercial."
+      },
+      {
+        "id": "d",
+        "text": "gerente."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "21",
+    "question": "En un transporte efectuado en régimen TIR las mercancías viajan, por regla general,:",
+    "options": [
+      {
+        "id": "a",
+        "text": "bajo precinto aduanero."
+      },
+      {
+        "id": "b",
+        "text": "acompañadas de un agente de aduanas."
+      },
+      {
+        "id": "c",
+        "text": "con escolta policial."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "22",
+    "question": "¿Qué requisitos no es preciso cumplir para obtener una autorización de transporte privado complementario de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ser persona física o sociedad mercantil, no pudiendo otorgarse a comunidades de bienes."
+      },
+      {
+        "id": "b",
+        "text": "Cumplir el requisito de competencia profesional."
+      },
+      {
+        "id": "c",
+        "text": "Cumplir las condiciones requeridas en cuanto a honorabilidad."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "23",
+    "question": "¿Es posible transmitir una autorización de transporte público de mercancías a otro titular?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre que ambos se pongan de acuerdo y lo soliciten a la Administración."
+      },
+      {
+        "id": "b",
+        "text": "Solo si se cumplen determinadas condiciones."
+      },
+      {
+        "id": "c",
+        "text": "Solo en caso de transmisión a herederos forzosos."
+      },
+      {
+        "id": "d",
+        "text": "No, las autorizaciones de este tipo son intransferibles."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "24",
+    "question": "¿Puede la Administración establecer la prohibición total de acceso a partes de una vía para determinados vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Solo por razones de urgencia y seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Sí, por motivos medioambientales."
+      },
+      {
+        "id": "d",
+        "text": "Sí, solo por causas sanitarias o sociales."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "25",
+    "question": "Según la normativa vigente, la metodología de cálculo de un peaje, ¿qué debe tener en consideración?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los costes del tramo de la red por la que se percibe el peaje."
+      },
+      {
+        "id": "b",
+        "text": "Los costes destinados a inversiones en otros tramos de red."
+      },
+      {
+        "id": "c",
+        "text": "El total de kilómetros de la red, incluidos lo no afectados por el peaje."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "26",
+    "question": "¿A qué régimen de revoluciones del motor de un vehículo es mayor el par motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A un régimen bajo de revoluciones."
+      },
+      {
+        "id": "b",
+        "text": "A un régimen medio de revoluciones."
+      },
+      {
+        "id": "c",
+        "text": "A un régimen alto de revoluciones."
+      },
+      {
+        "id": "d",
+        "text": "En todo el rango de revoluciones del motor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "27",
+    "question": "¿A quién causa un perjuicio económico los accidentes laborales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al trabajador."
+      },
+      {
+        "id": "b",
+        "text": "A la empresa del trabajador."
+      },
+      {
+        "id": "c",
+        "text": "Al conjunto de la sociedad."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "28",
+    "question": "De las siguientes indicaciones, ¿cuál es incorrecta para seleccionar una relación de marchas más alta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tener en cuenta el tipo de material empleado en el motor."
+      },
+      {
+        "id": "b",
+        "text": "Consultar el manual del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Observar el desnivel si hay pendientes."
+      },
+      {
+        "id": "d",
+        "text": "Observar la velocidad del vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "29",
+    "question": "¿Qué es recomendable para prevenir los efectos del sueño sobre la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interrumpir la conducción cada dos horas o 200 km."
+      },
+      {
+        "id": "b",
+        "text": "Tratar de adoptar una postura relajada al volante, incluso un poco recostada."
+      },
+      {
+        "id": "c",
+        "text": "Mantener en el vehículo una temperatura elevada."
+      },
+      {
+        "id": "d",
+        "text": "Realizar comidas copiosas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "30",
+    "question": "¿Qué se representa en las curvas características del motor de un vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La forma en que varía la potencia en función del par del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "La forma en que varían las prestaciones (el par y la potencia) en función del número de revoluciones del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "La forma en que varía el par en función de la potencia del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "La forma en que varía la velocidad en función del consumo del vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "31",
+    "question": "Entre las ventajas de realizar un mantenimiento preventivo está:",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder circular a más velocidad."
+      },
+      {
+        "id": "b",
+        "text": "disminuir la resistencia al aire."
+      },
+      {
+        "id": "c",
+        "text": "ajustar el consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "elevar la energía calorífica centrípeta."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "32",
+    "question": "La extracción de las tarjetas de tacógrafo puede realizarse:",
+    "options": [
+      {
+        "id": "a",
+        "text": "únicamente cuando lo solicite el agente de control."
+      },
+      {
+        "id": "b",
+        "text": "únicamente con el vehículo en movimiento."
+      },
+      {
+        "id": "c",
+        "text": "con el vehículo en movimiento o parado, indistintamente."
+      },
+      {
+        "id": "d",
+        "text": "únicamente con el vehículo parado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "33",
+    "question": "Las Juntas Arbitrales del Transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "son gratuitas."
+      },
+      {
+        "id": "b",
+        "text": "requieren abogado."
+      },
+      {
+        "id": "c",
+        "text": "requieren procurador."
+      },
+      {
+        "id": "d",
+        "text": "No es necesario en ningún caso que las partes intervinientes estén de común acuerdo en someter a su conocimiento la controversia de que se trate."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "34",
+    "question": "Al prestar ayuda en un accidente de circulación, ¿qué se debe hacer antes de socorrer a los heridos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Llamar la atención del resto de conductores para solicitar su ayuda."
+      },
+      {
+        "id": "b",
+        "text": "Acudir al puesto de socorro más próximo para solicitar ayuda."
+      },
+      {
+        "id": "c",
+        "text": "Proteger y señalizar el lugar del accidente."
+      },
+      {
+        "id": "d",
+        "text": "Retirar los vehículos accidentados de la calzada."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "35",
+    "question": "Cuando se agota la capacidad de almacenamiento de la memoria del tacógrafo digital, ¿qué ocurre con los datos más antiguos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se almacenan en la tarjeta de empresa durante un año más."
+      },
+      {
+        "id": "b",
+        "text": "Se almacenan en una segunda memoria durante un año más."
+      },
+      {
+        "id": "c",
+        "text": "Se sustituyen por otros nuevos."
+      },
+      {
+        "id": "d",
+        "text": "La memoria del tacógrafo digital no tiene límite de almacenamiento."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "36",
+    "question": "Cuanto menor es el régimen de giro del motor¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "menores serán las pérdidas por fricción entre las piezas del motor, lo que se traducirá en un menor consumo."
+      },
+      {
+        "id": "b",
+        "text": "menores serán las pérdidas por fricción entre las piezas del motor sin que exista incidencia alguna en el consumo."
+      },
+      {
+        "id": "c",
+        "text": "mayores serán las pérdidas por fricción entre las piezas del motor, lo que se traducirá en un menor consumo."
+      },
+      {
+        "id": "d",
+        "text": "mayores serán las pérdidas por fricción entre las piezas del motor, lo que se traducirá en un mayor consumo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "37",
+    "question": "De acuerdo con el Reglamento (CE) 561/2006, ¿a qué concepto se refiere la expresión el período de tiempo comprendido entre las 00.00 del lunes y las 24.00 del domingo\"?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Período de descanso diario."
+      },
+      {
+        "id": "b",
+        "text": "Día civil."
+      },
+      {
+        "id": "c",
+        "text": "Semana."
+      },
+      {
+        "id": "d",
+        "text": "Descanso semanal."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "38",
+    "question": "El exceso superior a dos horas sobre los tiempos máximos de conducción diaria, ¿qué tipo de infracción se considera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muy grave."
+      },
+      {
+        "id": "b",
+        "text": "Grave."
+      },
+      {
+        "id": "c",
+        "text": "Leve."
+      },
+      {
+        "id": "d",
+        "text": "No se considera infracción."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "39",
+    "question": "En el modelo oficial de la declaración amistosa de accidentes debe anotarse:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el lugar del accidente."
+      },
+      {
+        "id": "b",
+        "text": "los datos de los asegurados correspondientes a los vehículos implicados."
+      },
+      {
+        "id": "c",
+        "text": "las firmas de los conductores."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "40",
+    "question": "En el puesto de conducción, la temperatura es un factor a tener en cuenta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "solo en verano."
+      },
+      {
+        "id": "b",
+        "text": "solo en invierno."
+      },
+      {
+        "id": "c",
+        "text": "en todo momento, es necesario mantener una temperatura ideal."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "41",
+    "question": "Para evitar que aparezca el efecto fading\":\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "se debe abrir la válvula de 3 vías."
+      },
+      {
+        "id": "b",
+        "text": "no se debe hacer nada."
+      },
+      {
+        "id": "c",
+        "text": "se debe actuar sobre los ralentizadores de que disponga el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "se debe mantener la velocidad constante."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "42",
+    "question": "Señale la respuesta correcta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "El desgaste de los cojinetes del cigüeñal aumenta el consumo de carburante."
+      },
+      {
+        "id": "b",
+        "text": "Para reducir la contaminación se deben evitar las turbulencias."
+      },
+      {
+        "id": "c",
+        "text": "El cambio del filtro del aire no incide en el consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "El cambio del filtro del aire favorece el ahorro de carburante."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "43",
+    "question": "Una mala alimentación, ¿puede incrementar la fatiga y reducir la concentración?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Puede reducir la concentración, pero no incrementar la fatiga."
+      },
+      {
+        "id": "c",
+        "text": "Puede incrementar la fatiga, pero no la concentración."
+      },
+      {
+        "id": "d",
+        "text": "Sí."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "44",
+    "question": "¿Qué información debe facilitar el tacógrafo analógico de cada conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sus datos personales."
+      },
+      {
+        "id": "b",
+        "text": "La matrícula del vehículo que conducen."
+      },
+      {
+        "id": "c",
+        "text": "Los datos de la empresa."
+      },
+      {
+        "id": "d",
+        "text": "Los datos de los distintos periodos de actividad."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "45",
+    "question": "En los accidentes de trabajo en el transporte, ¿cuál de las siguientes lesiones están asociadas al levantamiento de pesos excesivos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quemaduras."
+      },
+      {
+        "id": "b",
+        "text": "Problemas de circulación sanguínea."
+      },
+      {
+        "id": "c",
+        "text": "Paradas cardíacas."
+      },
+      {
+        "id": "d",
+        "text": "Muerte."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "46",
+    "question": "En los accidentes de trabajo del sector transporte, ¿qué lesión, causada por el calentamiento del motor, es más frecuente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Magulladuras."
+      },
+      {
+        "id": "b",
+        "text": "Fractura de huesos."
+      },
+      {
+        "id": "c",
+        "text": "Luxaciones."
+      },
+      {
+        "id": "d",
+        "text": "Quemaduras, asfixia."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "47",
+    "question": "Durante la conducción, ¿cuál es la postura idónea de los brazos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Han de estar tensos."
+      },
+      {
+        "id": "b",
+        "text": "Han de estar ligeramente flexionados."
+      },
+      {
+        "id": "c",
+        "text": "Han de estar en ángulo recto."
+      },
+      {
+        "id": "d",
+        "text": "Deben agarrar al volante con suavidad."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "48",
+    "question": "Durante el transporte pueden producirse toda una serie de circunstancias que afectan al normal desarrollo del mismo. ¿Qué circunstancia puede considerarse como un incidente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avería mecánica."
+      },
+      {
+        "id": "b",
+        "text": "Incendio del motor del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Incendio de cualquier parte del vehículo y evacuación, bien por puertas de acceso, puertas de socorro, ventanas de socorro o trampillas de evacuación."
+      },
+      {
+        "id": "d",
+        "text": "Vuelco parcial o total del vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "49",
+    "question": "Ordene los motores de menor a mayor consumo específico.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diésel de inyección directa, diésel de inyección indirecta, gasolina de inyección directa y gasolina de inyección indirecta."
+      },
+      {
+        "id": "b",
+        "text": "Gasolina de inyección directa, gasolina de inyección indirecta, diésel de inyección directa y diésel de inyección indirecta."
+      },
+      {
+        "id": "c",
+        "text": "Diésel de inyección directa, gasolina de inyección directa, diésel de inyección indirecta y gasolina de inyección indirecta."
+      },
+      {
+        "id": "d",
+        "text": "Diésel de inyección indirecta, diésel de inyección directa, gasolina de inyección directa y gasolina de inyección indirecta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "50",
+    "question": "Señale la afirmación correcta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "En el impreso de la declaración amistosa de accidente es imprescindible hacer constar siempre la fecha y la hora del accidente."
+      },
+      {
+        "id": "b",
+        "text": "En el impreso de la declaración amistosa de accidente deben indicarse y verificarse, respectivamente, los datos de los asegurados correspondientes a los vehículos implicados."
+      },
+      {
+        "id": "c",
+        "text": "Al cumplimentar una declaración amistosa de accidente, en caso de accidente con un conductor extranjero, hay que pedirle la Carta Verde o Certificado Internacional de Seguro."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "51",
+    "question": "Cuando se produce la inmovilización de un vehículo de transporte por la autoridad competente, ¿de quién es la responsabilidad de la custodia del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del juez de guardia."
+      },
+      {
+        "id": "b",
+        "text": "De la Policía local del lugar más cercano."
+      },
+      {
+        "id": "c",
+        "text": "De la autoridad que ordena la inmovilización."
+      },
+      {
+        "id": "d",
+        "text": "Del transportista."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "52",
+    "question": "¿Durante cuántos días se puede conducir sin tarjeta de conductor un vehículo equipado con tacógrafo digital?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 meses, o más, si fuese necesario."
+      },
+      {
+        "id": "b",
+        "text": "1 mes, o más, si es para devolver el vehículo a sus locales y se justifica la imposibilidad de utilizar tarjeta."
+      },
+      {
+        "id": "c",
+        "text": "15 días naturales, o más, si es para devolver el vehículo a sus locales y se justifica la imposibilidad de utilizar tarjeta."
+      },
+      {
+        "id": "d",
+        "text": "Como máximo, 5 días naturales."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "53",
+    "question": "La alteración del funcionamiento normal del aparato de control o hacer que los registros no correspondan a la realidad está considerado una infracción de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "manipulación del aparato de control."
+      },
+      {
+        "id": "b",
+        "text": "carencia de tacógrafo."
+      },
+      {
+        "id": "c",
+        "text": "minoración del descanso."
+      },
+      {
+        "id": "d",
+        "text": "mal uso de la hoja de registro."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "54",
+    "question": "¿Cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circular en punto muerto siempre que sea posible."
+      },
+      {
+        "id": "b",
+        "text": "Usar un adecuado asistente de la dirección."
+      },
+      {
+        "id": "c",
+        "text": "Utilizar el freno solo en casos muy extremos."
+      },
+      {
+        "id": "d",
+        "text": "Evitar la práctica de una conducción basada en continuas aceleraciones."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "55",
+    "question": "¿Qué es aconsejable que haga en primer lugar el conductor de un vehículo que hubiera sufrido un incidente como, por ejemplo, una avería?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intentar arreglar la avería."
+      },
+      {
+        "id": "b",
+        "text": "Abandonar el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Evitar que el vehículo se convierta en un obstáculo en la vía."
+      },
+      {
+        "id": "d",
+        "text": "Recurrir a los servicios de una grúa."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "56",
+    "question": "¿Cuál es una enfermedad profesional reconocida en el sector transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sordera provocada por el ruido."
+      },
+      {
+        "id": "b",
+        "text": "Enfermedades osteoarticulares por vibraciones mecánicas."
+      },
+      {
+        "id": "c",
+        "text": "Derrames cerebrales."
+      },
+      {
+        "id": "d",
+        "text": "Las respuesta A y B son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "57",
+    "question": "En la declaración amistosa de accidentes, ¿se podrán hacer constar las observaciones particulares de los conductores?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, salvo que hubiera heridos."
+      },
+      {
+        "id": "c",
+        "text": "No, salvo que estos fueran a la vez agentes de la autoridad."
+      },
+      {
+        "id": "d",
+        "text": "No, en ningún caso."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "58",
+    "question": "¿En qué consiste la tetraplejia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En no tener conciencia de sí mismo ni del entorno, no poder hablar ni comunicarse."
+      },
+      {
+        "id": "b",
+        "text": "En la pérdida de movilidad de las extremidades inferiores."
+      },
+      {
+        "id": "c",
+        "text": "En la pérdida de las funciones motoras en todas las extremidades y el tronco."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "59",
+    "question": "¿Es obligatorio llevar un botiquín en el vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, siempre."
+      },
+      {
+        "id": "b",
+        "text": "No, pero es muy recomendable."
+      },
+      {
+        "id": "c",
+        "text": "Solo en vehículos pesados."
+      },
+      {
+        "id": "d",
+        "text": "Solo si se trata de un transporte de viajeros."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "60",
+    "question": "¿Para qué es necesario generar un par cuando el motor está al ralentí?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para compensar la pérdida de calor por el tubo de escape."
+      },
+      {
+        "id": "b",
+        "text": "Para compensar las pérdidas térmicas a través del sistema de refrigeración."
+      },
+      {
+        "id": "c",
+        "text": "Para vencer la resistencia aerodinámica al movimiento del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Para vencer los rozamientos internos del motor."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "61",
+    "question": "Un vehículo pesado posee un ralentizador hidrodinámico, al accionarlo¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "actuará sobre el cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "actuará sobre las ruedas motrices."
+      },
+      {
+        "id": "c",
+        "text": "actuará sobre todas las ruedas."
+      },
+      {
+        "id": "d",
+        "text": "frenará el movimiento del árbol de transmisión, pero no de las ruedas motrices."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "62",
+    "question": "Para pasar a marchas más cortas, ¿es recomendable saltar de marchas? Por ejemplo, pasar de octava a sexta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en pendientes descendentes para que disminuya la acción del freno motor."
+      },
+      {
+        "id": "b",
+        "text": "Solo si se trata de vehículos ligeros."
+      },
+      {
+        "id": "c",
+        "text": "No, nunca."
+      },
+      {
+        "id": "d",
+        "text": "Sí, en determinadas circunstancias."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "63",
+    "question": "La elección de la relación de marchas correcta durante la conducción depende, entre otras circunstancias, ¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "de la masa del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "de la temperatura exterior."
+      },
+      {
+        "id": "c",
+        "text": "del carburante utilizado."
+      },
+      {
+        "id": "d",
+        "text": "del número de revoluciones de la caja de velocidades."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "64",
+    "question": "Las siglas EBS hacen referencia a una mejora en el sistema de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "frenado."
+      },
+      {
+        "id": "b",
+        "text": "suspensión."
+      },
+      {
+        "id": "c",
+        "text": "dirección."
+      },
+      {
+        "id": "d",
+        "text": "transmisión."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "65",
+    "question": "¿Qué efectos pueden provocar los fármacos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somnolencia."
+      },
+      {
+        "id": "b",
+        "text": "Fatiga muscular."
+      },
+      {
+        "id": "c",
+        "text": "Mareos."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "66",
+    "question": "¿Cómo se diferencian los registros de las actividades del conductor en el discodiagrama u hoja de registro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rápidamente, puesto que están escritos en letra roja."
+      },
+      {
+        "id": "b",
+        "text": "No se diferencian."
+      },
+      {
+        "id": "c",
+        "text": "Con facilidad, puesto que destacan en letras mayúsculas."
+      },
+      {
+        "id": "d",
+        "text": "Por la diferencia en el grosor o la diferente posición de los trazos en la zona donde se registran."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "67",
+    "question": "¿Cuándo puede levantarse una inmovilización si se produce por una minoración del descanso diario?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando lo estime oportuno el agente que la realiza."
+      },
+      {
+        "id": "b",
+        "text": "Cuando el conductor haya descansado las horas reglamentarias."
+      },
+      {
+        "id": "c",
+        "text": "No se puede inmovilizar por minoraciones del descanso."
+      },
+      {
+        "id": "d",
+        "text": "Cuando lo comunique la empresa propietaria del vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "68",
+    "question": "Un conductor profesional, cuando conduzca un vehículo pesado de transporte de mercancías o un autobús, debe llevar a bordo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "los discos-diagrama para el tacógrafo digital."
+      },
+      {
+        "id": "b",
+        "text": "la tarjeta de conductor para el tacógrafo analógico."
+      },
+      {
+        "id": "c",
+        "text": "el certificado de conductor para la realización de la actividad de transporte, si es nacional de un Estado no perteneciente a la Unión Europea."
+      },
+      {
+        "id": "d",
+        "text": "el libro de ruta (solo en el caso de transporte internacional)."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "69",
+    "question": "La energía cinética de un vehículo es igual al resultado de multiplicar:",
+    "options": [
+      {
+        "id": "a",
+        "text": "su masa por su velocidad."
+      },
+      {
+        "id": "b",
+        "text": "su masa por el cuadrado de su velocidad."
+      },
+      {
+        "id": "c",
+        "text": "la mitad de su masa por su velocidad."
+      },
+      {
+        "id": "d",
+        "text": "la mitad de su masa por el cuadrado de su velocidad."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "70",
+    "question": "Entre otras, ¿qué característica va a definir en el cuentarrevoluciones de un automóvil la zona económica del motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La relación de compresión."
+      },
+      {
+        "id": "b",
+        "text": "El tamaño del embrague."
+      },
+      {
+        "id": "c",
+        "text": "El consumo específico."
+      },
+      {
+        "id": "d",
+        "text": "El tamaño del volante de inercia."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "71",
+    "question": "¿Dónde se encuentra situado el ralentizador hidrodinámico del tipo retárder\"?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "En el embrague."
+      },
+      {
+        "id": "b",
+        "text": "A la salida de la caja de velocidades."
+      },
+      {
+        "id": "c",
+        "text": "En el grupo cónico."
+      },
+      {
+        "id": "d",
+        "text": "Dentro de la caja de velocidades."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "72",
+    "question": "¿Qué característica no influye a la hora de determinar en el cuentarrevoluciones de un automóvil la zona de menor consumo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El par motor máximo."
+      },
+      {
+        "id": "b",
+        "text": "El consumo específico."
+      },
+      {
+        "id": "c",
+        "text": "El octanaje del carburante."
+      },
+      {
+        "id": "d",
+        "text": "La potencia."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "73",
+    "question": "¿Con qué siglas se conoce al dispositivo antibloqueo de ruedas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "EBV."
+      },
+      {
+        "id": "b",
+        "text": "ASR."
+      },
+      {
+        "id": "c",
+        "text": "ABS."
+      },
+      {
+        "id": "d",
+        "text": "ABF."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "74",
+    "question": "¿Cómo se llama a la energía que tiene un vehículo en movimiento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Energía calorífica."
+      },
+      {
+        "id": "b",
+        "text": "Energía mecánica."
+      },
+      {
+        "id": "c",
+        "text": "Energía cinética."
+      },
+      {
+        "id": "d",
+        "text": "Energía eléctrica."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "75",
+    "question": "¿Qué ocurre si la parte reclamada no acude a la vista celebrada ante una Junta Arbitral del Transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impedirá la celebración de la vista."
+      },
+      {
+        "id": "b",
+        "text": "Se puede celebrar la vista, pero no se podrá dictar el laudo hasta que se haya dado audiencia al reclamante."
+      },
+      {
+        "id": "c",
+        "text": "No impedirá la celebración de la vista ni que se dicte el laudo."
+      },
+      {
+        "id": "d",
+        "text": "Se dictará directamente el laudo sin celebración de la vista."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "76",
+    "question": "Los arbitrajes en materia de transportes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "serán gratuitos."
+      },
+      {
+        "id": "b",
+        "text": "solo serán gratuitos para el que obtenga un laudo favorable."
+      },
+      {
+        "id": "c",
+        "text": "tienen el mismo coste que un juicio ordinario."
+      },
+      {
+        "id": "d",
+        "text": "Se abonarán los gastos a partes iguales entre demandante y demandado."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "77",
+    "question": "¿Qué condicionantes tienen los peatones infantiles a la hora de tomar la decisión de cruzar una calle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Campo visual más amplio."
+      },
+      {
+        "id": "b",
+        "text": "Percepción de la velocidad más clara."
+      },
+      {
+        "id": "c",
+        "text": "Percepción del tiempo más real."
+      },
+      {
+        "id": "d",
+        "text": "El tiempo necesitado para la toma de la decisión es muy superior al del adulto."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "78",
+    "question": "¿Qué tipo de conductores tienen una tasa de siniestralidad más alta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los jóvenes y los que realizan trayectos nacionales."
+      },
+      {
+        "id": "b",
+        "text": "Los conductores de mayor experiencia y trayectos nacionales."
+      },
+      {
+        "id": "c",
+        "text": "Los jóvenes y trayectos provinciales."
+      },
+      {
+        "id": "d",
+        "text": "Los jóvenes y los que realizan trayectos internacionales."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "79",
+    "question": "Desde el punto de vista de la seguridad, ¿cómo debe ser la presión de inflado de un neumático?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuanta más presión, más seguridad."
+      },
+      {
+        "id": "b",
+        "text": "Debe ser la recomendada por el fabricante."
+      },
+      {
+        "id": "c",
+        "text": "Cuanta menos presión, más seguridad."
+      },
+      {
+        "id": "d",
+        "text": "La presión ha de ser muy baja."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "80",
+    "question": "En el cuentarrevoluciones de un vehículo pesado existe una zona marcada, generalmente, de color verde, ¿qué supone circular con un número de revoluciones por encima de esa zona?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Una menor presión en el circuito de engrase."
+      },
+      {
+        "id": "b",
+        "text": "Una reducción en la velocidad de giro del árbol de levas."
+      },
+      {
+        "id": "c",
+        "text": "Una menor velocidad de la bomba de refrigeración."
+      },
+      {
+        "id": "d",
+        "text": "Un mayor consumo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "81",
+    "question": "¿Qué elementos confluyen en la aparición del estrés?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El entorno."
+      },
+      {
+        "id": "b",
+        "text": "Las respuestas fisiológicas ante él."
+      },
+      {
+        "id": "c",
+        "text": "La actitud de quien lo sufre."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "82",
+    "question": "Si un vehículo dispone de un sistema antipatinaje de ruedas ASR, ¿deberá tener también un sistema de frenos ABS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No necesariamente, ya que ambos sistemas son independientes."
+      },
+      {
+        "id": "b",
+        "text": "No, ya que ambos sistemas son incompatibles."
+      },
+      {
+        "id": "c",
+        "text": "Sí, ya que el calculador del ABS maneja también el ASR."
+      },
+      {
+        "id": "d",
+        "text": "Es indiferente."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "83",
+    "question": "¿Qué acción hay que realizar una vez pasada una zona inundada por el agua?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comprobar el dibujo del neumático."
+      },
+      {
+        "id": "b",
+        "text": "Comprobar el sistema de ventilación."
+      },
+      {
+        "id": "c",
+        "text": "Comprobar el funcionamiento de los limpiaparabrisas."
+      },
+      {
+        "id": "d",
+        "text": "Comprobar el sistema de frenos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "84",
+    "question": "A la energía que posee un vehículo en movimiento se la denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "potencial."
+      },
+      {
+        "id": "b",
+        "text": "cinética."
+      },
+      {
+        "id": "c",
+        "text": "calórica."
+      },
+      {
+        "id": "d",
+        "text": "química."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "85",
+    "question": "Es una característica de la conducción defensiva:",
+    "options": [
+      {
+        "id": "a",
+        "text": "confiar siempre en la actuación de los demás."
+      },
+      {
+        "id": "b",
+        "text": "pensar siempre que los otros conductores tienen más experiencia."
+      },
+      {
+        "id": "c",
+        "text": "mantener distancia de seguridad y reacción."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "86",
+    "question": "La conducción preventiva implica:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ajustar la carga a las condiciones del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "pensar de forma desconfiada y estar preparado para reaccionar."
+      },
+      {
+        "id": "c",
+        "text": "no pensar y actuar cuando llegue el momento."
+      },
+      {
+        "id": "d",
+        "text": "tomar decisiones consensuadas con otros conductores."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "87",
+    "question": "Relacionado con el coeficiente aerodinámico de un vehículo, ¿qué se debe saber?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que el coeficiente aerodinámico no influye en la estabilidad del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Que, cuanto menor sea, menor será su consumo."
+      },
+      {
+        "id": "c",
+        "text": "Que, cuanto menor sea, menor será su estabilidad."
+      },
+      {
+        "id": "d",
+        "text": "Que será peor cuanto menor sea su Cx."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "88",
+    "question": "Circulando con un automóvil con una determinada relación de marchas seleccionada en la caja de velocidades, el consumo de carburante será menor:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuanto menor sea la velocidad a la que se circule."
+      },
+      {
+        "id": "b",
+        "text": "cuanto mayor sea la velocidad a la que se circule."
+      },
+      {
+        "id": "c",
+        "text": "cuanto más cargado circule el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "cuanto mayor sea su coeficiente aerodinámico."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "89",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De la longitud del cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "De la longitud del árbol de levas."
+      },
+      {
+        "id": "c",
+        "text": "De la carga que lleve el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "De la longitud del pistón."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "90",
+    "question": "En el consumo de carburante de un automóvil no influye:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el mantenimiento del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "el número de revoluciones por minuto del motor."
+      },
+      {
+        "id": "c",
+        "text": "el béndix."
+      },
+      {
+        "id": "d",
+        "text": "la relación de marchas seleccionada en la caja de velocidades."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "91",
+    "question": "¿Qué factor no tiene influencia en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El motor de arranque."
+      },
+      {
+        "id": "b",
+        "text": "La presión de los neumáticos."
+      },
+      {
+        "id": "c",
+        "text": "El perfil de la carretera."
+      },
+      {
+        "id": "d",
+        "text": "La posición del pedal del acelerador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "92",
+    "question": "Además de influir en la seguridad del vehículo y, por tanto, de la circulación, ¿qué supone llevar un correcto mantenimiento del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumentar los plazos previstos reglamentariamente para pasar la inspección técnica periódica."
+      },
+      {
+        "id": "b",
+        "text": "Reducir los plazos previstos reglamentariamente para pasar la inspección técnica periódica."
+      },
+      {
+        "id": "c",
+        "text": "Un gasto innecesario."
+      },
+      {
+        "id": "d",
+        "text": "Evitar un aumento del consumo de carburante."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "93",
+    "question": "Un vehículo especial utilizado con fines médicos, ¿está obligado a llevar instalado tacógrafo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en cualquier caso."
+      },
+      {
+        "id": "b",
+        "text": "No, en ningún caso."
+      },
+      {
+        "id": "c",
+        "text": "Sí, salvo que vaya escoltado por la Policía."
+      },
+      {
+        "id": "d",
+        "text": "No, siempre que se dedique exclusivamente a recorridos inferiores a 25 km de radio."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "94",
+    "question": "¿Está exento del uso de tacógrafo un vehículo cuya velocidad máxima autorizada no supere 40 kilómetros por hora?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Solo si su MMA no supera 6 toneladas."
+      },
+      {
+        "id": "d",
+        "text": "Solo si se destina al transporte urbano."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "95",
+    "question": "¿Qué se deberá tener en cuenta respecto a la utilización del cinturón de seguridad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que la parte superior de la cinta debe pasar por el cuello."
+      },
+      {
+        "id": "b",
+        "text": "Que debe llevarse correctamente abrochado, bien reglado y ajustado al cuerpo sin holgura."
+      },
+      {
+        "id": "c",
+        "text": "Que la parte superior de la cinta debe pasar por la zona pélvica."
+      },
+      {
+        "id": "d",
+        "text": "Que debe llevarse muy flojo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "96",
+    "question": "¿Cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedir al motor más potencia."
+      },
+      {
+        "id": "b",
+        "text": "Pedir al motor menos potencia."
+      },
+      {
+        "id": "c",
+        "text": "Circular siempre en marchas cortas."
+      },
+      {
+        "id": "d",
+        "text": "Abrir las ventanillas para que circule el aire libremente."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "97",
+    "question": "En zonas urbanas o con congestión del tráfico, es conveniente¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "no evitar las reducciones continuas de marchas."
+      },
+      {
+        "id": "b",
+        "text": "conducir con bastante anticipación."
+      },
+      {
+        "id": "c",
+        "text": "aprovechar el rodaje al ralentí."
+      },
+      {
+        "id": "d",
+        "text": "utilizar una marcha más corta que la que permita el tráfico."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "98",
+    "question": "¿Cómo actúa el ESP en caso de derrape del eje delantero del vehículo al tomar una curva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frena la rueda delantera exterior a la curva."
+      },
+      {
+        "id": "b",
+        "text": "Frena la rueda delantera interior a la curva."
+      },
+      {
+        "id": "c",
+        "text": "Frena la rueda trasera interior a la curva."
+      },
+      {
+        "id": "d",
+        "text": "Frena la rueda trasera exterior a la curva."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "99",
+    "question": "Durante la conducción, ¿qué información recibe el conductor proveniente de la carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trazado."
+      },
+      {
+        "id": "b",
+        "text": "Condiciones del firme."
+      },
+      {
+        "id": "c",
+        "text": "Señalización."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "100",
+    "question": "El conductor de un vehículo pesado de transporte de mercancías:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tiene obligación de acondicionar la carga en todos los transportes que realice."
+      },
+      {
+        "id": "b",
+        "text": "tiene obligación de acondicionar la carga si se lo ordenan los responsables de su empresa y se trata de servicios de paquetería."
+      },
+      {
+        "id": "c",
+        "text": "no está obligado a acondicionar la carga nunca."
+      },
+      {
+        "id": "d",
+        "text": "tiene obligación de acondicionar la carga siempre que se trate de mercancías envasadas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "R1",
+    "question": "El capital de una sociedad de responsabilidad limitada se encuentra dividido en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "participaciones."
+      },
+      {
+        "id": "b",
+        "text": "acciones."
+      },
+      {
+        "id": "c",
+        "text": "valores."
+      },
+      {
+        "id": "d",
+        "text": "bonos."
+      }
+    ],
+    "correct": "n/a"
+  },
+  {
+    "num": "R2",
+    "question": "En el transporte de viajeros, ¿quién puede considerarse un agente básico e inmediato de seguridad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El viajero."
+      },
+      {
+        "id": "b",
+        "text": "El conductor."
+      },
+      {
+        "id": "c",
+        "text": "El transportista."
+      },
+      {
+        "id": "d",
+        "text": "El contratante del transporte."
+      }
+    ],
+    "correct": "n/a"
+  },
+  {
+    "num": "R3",
+    "question": "¿Cuál de las siguientes es la causa menos probable de accidente de trabajo por incendio del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circuitos eléctricos del vehículo en mal estado."
+      },
+      {
+        "id": "b",
+        "text": "Calentamiento excesivo del motor."
+      },
+      {
+        "id": "c",
+        "text": "Fuga del combustible."
+      },
+      {
+        "id": "d",
+        "text": "Mala colocación de la carga."
+      }
+    ],
+    "correct": "n/a"
+  }
+];

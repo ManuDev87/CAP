@@ -11,20 +11,26 @@ let currentUser = null; // null means not logged in.
 const ADMIN_USER = 'root';
 // Mock test database (User will add more data)
 const availableTests = [
-    { id: 'enero_2024', name: 'Enero 2024', img: 'truck1.jpg' },
-    { id: 'marzo_2024', name: 'Marzo 2024', img: 'truck2.jpg' },
-    { id: 'mayo_2024', name: 'Mayo 2024', img: 'truck3.jpg' },
-    { id: 'julio_2024', name: 'Julio 2024', img: 'truck4.jpg' },
-    { id: 'septiembre_2024', name: 'Septiembre 2024', img: 'truck1.jpg' },
-    { id: 'noviembre_2024', name: 'Noviembre 2024', img: 'truck2.jpg' },
-    { id: 'enero_2025', name: 'Enero 2025', img: 'truck3.jpg' },
-    { id: 'marzo_2025', name: 'Marzo 2025', img: 'truck4.jpg' },
-    { id: 'mayo_2025', name: 'Mayo 2025', img: 'truck1.jpg' },
-    { id: 'julio_2025', name: 'Julio 2025', img: 'truck2.jpg' },
-    { id: 'septiembre_2025', name: 'Septiembre 2025', img: 'truck3.jpg' },
-    { id: 'noviembre_2025', name: 'Noviembre 2025', img: 'truck4.jpg' },
-    { id: 'enero_2026', name: 'Enero 2026', img: 'truck1.jpg' },
-    { id: 'marzo_2026', name: 'Marzo 2026', img: 'truck2.jpg' }
+    { id: 'febrero_2023', name: 'Febrero 2023', img: 'img/truck1.jpg' },
+    { id: 'marzo_2023', name: 'Marzo 2023', img: 'img/truck2.jpg' },
+    { id: 'junio_2023', name: 'Junio 2023', img: 'img/truck3.jpg' },
+    { id: 'julio_2023', name: 'Julio 2023', img: 'img/truck4.jpg' },
+    { id: 'septiembre_2023', name: 'Septiembre 2023', img: 'img/truck1.jpg' },
+    { id: 'noviembre_2023', name: 'Noviembre 2023', img: 'img/truck2.jpg' },
+    { id: 'enero_2024', name: 'Enero 2024', img: 'img/truck3.jpg' },
+    { id: 'marzo_2024', name: 'Marzo 2024', img: 'img/truck4.jpg' },
+    { id: 'mayo_2024', name: 'Mayo 2024', img: 'img/truck1.jpg' },
+    { id: 'julio_2024', name: 'Julio 2024', img: 'img/truck2.jpg' },
+    { id: 'septiembre_2024', name: 'Septiembre 2024', img: 'img/truck3.jpg' },
+    { id: 'noviembre_2024', name: 'Noviembre 2024', img: 'img/truck4.jpg' },
+    { id: 'enero_2025', name: 'Enero 2025', img: 'img/truck1.jpg' },
+    { id: 'marzo_2025', name: 'Marzo 2025', img: 'img/truck2.jpg' },
+    { id: 'mayo_2025', name: 'Mayo 2025', img: 'img/truck3.jpg' },
+    { id: 'julio_2025', name: 'Julio 2025', img: 'img/truck4.jpg' },
+    { id: 'septiembre_2025', name: 'Septiembre 2025', img: 'img/truck1.jpg' },
+    { id: 'noviembre_2025', name: 'Noviembre 2025', img: 'img/truck2.jpg' },
+    { id: 'enero_2026', name: 'Enero 2026', img: 'img/truck3.jpg' },
+    { id: 'marzo_2026', name: 'Marzo 2026', img: 'img/truck4.jpg' }
 ];
 
 const testPdfUrls = {
@@ -401,7 +407,25 @@ function selectTest(id, name, pausedMode = null) {
     selectedTestLabel.innerText = name;
     mainTestTitle.innerText = `${name} - CAP Mercancías`;
 
-    if (id === 'enero_2024') {
+    if (id === 'febrero_2023') {
+        if (typeof examData_febrero_2023 !== 'undefined') questions = examData_febrero_2023;
+        else return alert("Base de datos no encontrada para Febrero 2023.");
+    } else if (id === 'marzo_2023') {
+        if (typeof examData_marzo_2023 !== 'undefined') questions = examData_marzo_2023;
+        else return alert("Base de datos no encontrada para Marzo 2023.");
+    } else if (id === 'junio_2023') {
+        if (typeof examData_junio_2023 !== 'undefined') questions = examData_junio_2023;
+        else return alert("Base de datos no encontrada para Junio 2023.");
+    } else if (id === 'julio_2023') {
+        if (typeof examData_julio_2023 !== 'undefined') questions = examData_julio_2023;
+        else return alert("Base de datos no encontrada para Julio 2023.");
+    } else if (id === 'septiembre_2023') {
+        if (typeof examData_septiembre_2023 !== 'undefined') questions = examData_septiembre_2023;
+        else return alert("Base de datos no encontrada para Septiembre 2023.");
+    } else if (id === 'noviembre_2023') {
+        if (typeof examData_noviembre_2023 !== 'undefined') questions = examData_noviembre_2023;
+        else return alert("Base de datos no encontrada para Noviembre 2023.");
+    } else if (id === 'enero_2024') {
         if (typeof examData_enero_2024 !== 'undefined') questions = examData_enero_2024;
         else return alert("Base de datos no encontrada para Enero 2024.");
     } else if (id === 'marzo_2024') {
