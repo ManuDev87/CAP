@@ -279,7 +279,8 @@ body {
     background-color: #f4f6f8;
     z-index: 4500;
     overflow-y: auto;
-    overflow-x: hidden;  /* never let canvas push the page wider */
+    overflow-x: hidden;
+    /* never let canvas push the page wider */
     padding: 40px 20px;
     box-sizing: border-box;
 }
@@ -289,7 +290,7 @@ body {
     margin: 0 auto;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     /* Prevent container from stretching beyond viewport */
     min-width: 0;
@@ -329,7 +330,8 @@ body {
 
 .stats-panel {
     padding: 28px;
-    min-width: 0; /* Critical: prevents panel from expanding beyond grid cell */
+    min-width: 0;
+    /* Critical: prevents panel from expanding beyond grid cell */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -372,7 +374,7 @@ body {
 
 .ranking-item:hover {
     transform: translateY(-1px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .ranking-item.rank-pass {
@@ -489,10 +491,12 @@ body {
 .chart-wrapper::-webkit-scrollbar {
     height: 6px;
 }
+
 .chart-wrapper::-webkit-scrollbar-track {
     background: #f0f0f0;
     border-radius: 3px;
 }
+
 .chart-wrapper::-webkit-scrollbar-thumb {
     background: #0A8442;
     border-radius: 3px;
@@ -505,7 +509,7 @@ body {
 
 .chart-tooltip {
     position: absolute;
-    background: rgba(0,0,0,0.82);
+    background: rgba(0, 0, 0, 0.82);
     color: white;
     padding: 8px 12px;
     border-radius: 8px;
@@ -514,7 +518,7 @@ body {
     white-space: nowrap;
     z-index: 10;
     line-height: 1.6;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .chart-no-data {
@@ -586,14 +590,15 @@ body {
     background: white;
     border: 1px solid #ddd;
     height: 46px;
-    border-radius: 23px; /* Pill shape */
+    border-radius: 23px;
+    /* Pill shape */
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4px 0 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     gap: 12px;
 }
 
@@ -624,7 +629,7 @@ body {
 .btn-user-menu.pill:hover {
     background: #f8f9fa;
     border-color: #ccc;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .user-dropdown {
@@ -633,7 +638,7 @@ body {
     right: 0;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     min-width: 170px;
     z-index: 1000;
     overflow: hidden;
@@ -641,8 +646,15 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .dropdown-item {
@@ -738,7 +750,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     z-index: 10;
 }
 
@@ -764,10 +776,10 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
-    background: rgba(0,0,0,0.65);
+    background: rgba(0, 0, 0, 0.65);
     border-radius: 20px;
     padding: 2px 7px 2px 3px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .stat-badge svg {
@@ -784,8 +796,13 @@ body {
     letter-spacing: 0.5px;
 }
 
-.stat-pass svg circle { fill: #0A8442; }
-.stat-fail svg circle { fill: #cc0000; }
+.stat-pass svg circle {
+    fill: #0A8442;
+}
+
+.stat-fail svg circle {
+    fill: #cc0000;
+}
 
 
 /* Start Overlay (Seleccion de Modo) */
@@ -949,7 +966,7 @@ body {
     align-items: center;
     overflow: hidden;
     border: 2px solid #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-titles {
@@ -1388,13 +1405,13 @@ body {
 }
 
 .danger-btn {
-    background-color: #fee;
-    color: #c00 !important;
-    border: 1px solid #fcc;
+    background-color: #db8c34;
+    color: white !important;
+    border: 1px solid #c47d2e;
 }
 
 .danger-btn:hover {
-    background-color: #fdd;
+    background-color: #f1a449;
 }
 
 .modal-box h2 {
@@ -1441,8 +1458,13 @@ body {
 }
 
 .btn.secondary {
-    background-color: #eee;
-    color: #333;
+    background-color: #db8c34;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn.secondary:hover {
+    background-color: #f1a449;
 }
 
 /* Score Breakdown (Modal CAP) */
