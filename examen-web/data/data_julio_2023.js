@@ -109,7 +109,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "para ser transportada con un máximo de seguridad para el personal del vehículo. Página 2"
+        "text": "para ser transportada con un máximo de seguridad para el personal del vehículo."
       }
     ],
     "correct": "d"
@@ -224,7 +224,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "El diseño de las superficies del camión. Página 3"
+        "text": "El diseño de las superficies del camión."
       }
     ],
     "correct": "a"
@@ -362,7 +362,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Utilizar los frenos asiduamente, sobre todo en pendientes ascendentes. Página 4"
+        "text": "Utilizar los frenos asiduamente, sobre todo en pendientes ascendentes."
       }
     ],
     "correct": "c"
@@ -500,7 +500,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "La aduana de entrada en el territorio aduanero comunitario. Página 5"
+        "text": "La aduana de entrada en el territorio aduanero comunitario."
       }
     ],
     "correct": "b"
@@ -553,12 +553,8 @@ const examData_julio_2023 = [
   },
   {
     "num": "25",
-    "question": "¿Porqué causas puede ordenar la Administración la prohibición total o parcial de acceso",
+    "question": "¿Porqué causas puede ordenar la Administración la prohibición total o parcial de acceso a partes de una vía?",
     "options": [
-      {
-        "id": "a",
-        "text": "partes de una vía?"
-      },
       {
         "id": "a",
         "text": "Por razones de urgencia y oportunidad."
@@ -642,7 +638,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Inercia estática. Página 6"
+        "text": "Inercia estática."
       }
     ],
     "correct": "c"
@@ -780,7 +776,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Para los conductores de camiones con una MMA > 10.000 kg. Página 7"
+        "text": "Para los conductores de camiones con una MMA > 10.000 kg."
       }
     ],
     "correct": "b"
@@ -918,7 +914,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "La temperatura del puesto de trabajo debe ser lo más alta posible, dentro de unos límites. Página 8"
+        "text": "La temperatura del puesto de trabajo debe ser lo más alta posible, dentro de unos límites."
       }
     ],
     "correct": "a"
@@ -1056,7 +1052,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "cuando el motor gira al ralentí. Página 9"
+        "text": "cuando el motor gira al ralentí."
       }
     ],
     "correct": "c"
@@ -1171,7 +1167,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas son correctas. Página 10"
+        "text": "Todas las respuestas son correctas."
       }
     ],
     "correct": "b"
@@ -1309,7 +1305,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "No tiene cuatro modos de funcionamiento, tiene cinco. Página 11"
+        "text": "No tiene cuatro modos de funcionamiento, tiene cinco."
       }
     ],
     "correct": "c"
@@ -1447,7 +1443,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "El embrague. Página 12"
+        "text": "El embrague."
       }
     ],
     "correct": "a"
@@ -1585,7 +1581,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas A y C son correctas. Página 13"
+        "text": "Las respuestas A y C son correctas."
       }
     ],
     "correct": "d"
@@ -1723,7 +1719,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "20 horas. Página 14"
+        "text": "20 horas."
       }
     ],
     "correct": "a"
@@ -1861,7 +1857,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "no tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo. Página 15"
+        "text": "no tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
       }
     ],
     "correct": "b"
@@ -1999,7 +1995,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Los niveles de circulación por nieve son negro, rojo y verde. Página 16"
+        "text": "Los niveles de circulación por nieve son negro, rojo y verde."
       }
     ],
     "correct": "b"
@@ -2160,7 +2156,7 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Las que indican que el vehículo realiza un transporte especial Página 17"
+        "text": "Las que indican que el vehículo realiza un transporte especial"
       }
     ],
     "correct": "b"
@@ -2298,13 +2294,13 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Poner la radio más fuerte. Página 18"
+        "text": "Poner la radio más fuerte."
       }
     ],
     "correct": "a"
   },
   {
-    "num": "R1",
+    "num": "101",
     "question": "¿Pueden los Estados firmantes del Convenio CMR adoptar acuerdos particulares entre ellos que resulten contrarios al mismo?",
     "options": [
       {
@@ -2324,10 +2320,10 @@ const examData_julio_2023 = [
         "text": "Solo si los adoptan al menos cinco Estados."
       }
     ],
-    "correct": "n/a"
+    "correct": "a"
   },
   {
-    "num": "R2",
+    "num": "102",
     "question": "Respecto del cliente de una empresa de servicios se puede decir que:",
     "options": [
       {
@@ -2347,10 +2343,10 @@ const examData_julio_2023 = [
         "text": "Todas las respuestas son correctas."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   },
   {
-    "num": "R3",
+    "num": "103",
     "question": "¿Cuál de las siguientes es la causa menos probable de accidente de trabajo por incendio del vehículo?",
     "options": [
       {
@@ -2367,9 +2363,9 @@ const examData_julio_2023 = [
       },
       {
         "id": "d",
-        "text": "Mala colocación de la carga. Página 19"
+        "text": "Mala colocación de la carga."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   }
 ];

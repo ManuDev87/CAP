@@ -132,7 +132,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "40 metros cúbicos. Página 2"
+        "text": "40 metros cúbicos."
       }
     ],
     "correct": "c"
@@ -247,7 +247,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Acuerdo sobre transportes de mercancías agroganaderas de consumo (ATMA). Página 3"
+        "text": "Acuerdo sobre transportes de mercancías agroganaderas de consumo (ATMA)."
       }
     ],
     "correct": "a"
@@ -385,7 +385,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "transportes a la demanda. Página 4"
+        "text": "transportes a la demanda."
       }
     ],
     "correct": "c"
@@ -523,7 +523,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Se consideran mercancías no pertenecientes a la Unión, salvo que se demuestre lo contrario. Página 5"
+        "text": "Se consideran mercancías no pertenecientes a la Unión, salvo que se demuestre lo contrario."
       }
     ],
     "correct": "b"
@@ -661,7 +661,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Estoncología. Página 6"
+        "text": "Estoncología."
       }
     ],
     "correct": "c"
@@ -776,7 +776,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "inferior a 50 kilómetros. Página 7"
+        "text": "inferior a 50 kilómetros."
       }
     ],
     "correct": "b"
@@ -914,7 +914,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Las respuestas A y C son correctas. Página 8"
+        "text": "Las respuestas A y C son correctas."
       }
     ],
     "correct": "d"
@@ -1052,7 +1052,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Rodillas estiradas y espalda inclinada. Página 9"
+        "text": "Rodillas estiradas y espalda inclinada."
       }
     ],
     "correct": "b"
@@ -1190,7 +1190,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "no se reducirá la velocidad de giro del árbol de transmisión ni de las ruedas motrices, ya que actúa sobre el embrague. Página 10"
+        "text": "no se reducirá la velocidad de giro del árbol de transmisión ni de las ruedas motrices, ya que actúa sobre el embrague."
       }
     ],
     "correct": "c"
@@ -1328,7 +1328,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Reduce el esfuerzo del conductor al frenar. Página 11"
+        "text": "Reduce el esfuerzo del conductor al frenar."
       }
     ],
     "correct": "a"
@@ -1466,7 +1466,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Ninguna, ya que de eso se encargan las fuerzas de seguridad. Página 12"
+        "text": "Ninguna, ya que de eso se encargan las fuerzas de seguridad."
       }
     ],
     "correct": "b"
@@ -1604,7 +1604,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "un gas halógeno. Página 13"
+        "text": "un gas halógeno."
       }
     ],
     "correct": "c"
@@ -1742,7 +1742,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "de la presión de los neumáticos y la longitud del pistón. Página 14"
+        "text": "de la presión de los neumáticos y la longitud del pistón."
       }
     ],
     "correct": "c"
@@ -1880,7 +1880,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas son correctas. Página 15"
+        "text": "Todas las respuestas son correctas."
       }
     ],
     "correct": "c"
@@ -2018,7 +2018,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "el consumo con el giro de las ruedas. Página 16"
+        "text": "el consumo con el giro de las ruedas."
       }
     ],
     "correct": "c"
@@ -2156,7 +2156,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "el realizado entre las 00:00  y las 04:00 horas. Página 17"
+        "text": "el realizado entre las 00:00  y las 04:00 horas."
       }
     ],
     "correct": "d"
@@ -2294,7 +2294,7 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas son correctas. Página 18"
+        "text": "Todas las respuestas son correctas."
       }
     ],
     "correct": "d"
@@ -2320,7 +2320,7 @@ const examData_junio_2023 = [
         "text": "Tratan de girar al camión en torno al eje geométrico horizontal."
       }
     ],
-    "correct": "n/a"
+    "correct": "c"
   },
   {
     "num": "102",
@@ -2343,7 +2343,7 @@ const examData_junio_2023 = [
         "text": "Variar la presión de inflado es un factor que no influye en el consumo."
       }
     ],
-    "correct": "n/a"
+    "correct": "c"
   },
   {
     "num": "103",
@@ -2363,9 +2363,9 @@ const examData_junio_2023 = [
       },
       {
         "id": "d",
-        "text": "se evacuará el vehículo por las salidas que se encuentren practicables. Página 19"
+        "text": "se evacuará el vehículo por las salidas que se encuentren practicables."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   }
 ];

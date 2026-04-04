@@ -2300,7 +2300,7 @@ const examData_septiembre_2023 = [
     "correct": "c"
   },
   {
-    "num": "R1",
+    "num": "101",
     "question": "Según el círculo de Kamm, si disminuye la fuerza de frenado en curva:",
     "options": [
       {
@@ -2320,10 +2320,10 @@ const examData_septiembre_2023 = [
         "text": "la fuerza de guiado lateral ni aumenta ni disminuye."
       }
     ],
-    "correct": "n/a"
+    "correct": "b"
   },
   {
-    "num": "R2",
+    "num": "102",
     "question": "El consumo de carburante:",
     "options": [
       {
@@ -2343,10 +2343,10 @@ const examData_septiembre_2023 = [
         "text": "es inexistente con el vehículo en ralentí."
       }
     ],
-    "correct": "n/a"
+    "correct": "c"
   },
   {
-    "num": "R3",
+    "num": "103",
     "question": "¿Cómo se debe proceder ante un quemado en un accidente de tráfico?",
     "options": [
       {
@@ -2366,6 +2366,6 @@ const examData_septiembre_2023 = [
         "text": "Las respuestas B y C son correctas."
       }
     ],
-    "correct": "n/a"
+    "correct": "c"
   }
 ];

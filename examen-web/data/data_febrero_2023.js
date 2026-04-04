@@ -2300,7 +2300,7 @@ const examData_febrero_2023 = [
     "correct": "b"
   },
   {
-    "num": "R1",
+    "num": "101",
     "question": "El capital de una sociedad de responsabilidad limitada se encuentra dividido en:",
     "options": [
       {
@@ -2320,10 +2320,10 @@ const examData_febrero_2023 = [
         "text": "bonos."
       }
     ],
-    "correct": "n/a"
+    "correct": "a"
   },
   {
-    "num": "R2",
+    "num": "102",
     "question": "En el transporte de viajeros, ¿quién puede considerarse un agente básico e inmediato de seguridad?",
     "options": [
       {
@@ -2343,10 +2343,10 @@ const examData_febrero_2023 = [
         "text": "El contratante del transporte."
       }
     ],
-    "correct": "n/a"
+    "correct": "b"
   },
   {
-    "num": "R3",
+    "num": "103",
     "question": "¿Cuál de las siguientes es la causa menos probable de accidente de trabajo por incendio del vehículo?",
     "options": [
       {
@@ -2366,6 +2366,6 @@ const examData_febrero_2023 = [
         "text": "Mala colocación de la carga."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   }
 ];

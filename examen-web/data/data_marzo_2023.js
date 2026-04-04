@@ -109,7 +109,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Los cuidados mecánicos corresponden exclusivamente a los talleres. Página 2"
+        "text": "Los cuidados mecánicos corresponden exclusivamente a los talleres."
       }
     ],
     "correct": "c"
@@ -224,7 +224,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "al menos parcialmente por el territorio de un Estado extranjero. Página 3"
+        "text": "al menos parcialmente por el territorio de un Estado extranjero."
       }
     ],
     "correct": "d"
@@ -362,7 +362,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Transporte de cabotaje. Página 4"
+        "text": "Transporte de cabotaje."
       }
     ],
     "correct": "d"
@@ -477,7 +477,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Un vehículo refrigerado normal de la clase A. Página 5"
+        "text": "Un vehículo refrigerado normal de la clase A."
       }
     ],
     "correct": "c"
@@ -615,7 +615,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Hispanoamérica. Página 6"
+        "text": "Hispanoamérica."
       }
     ],
     "correct": "a"
@@ -753,7 +753,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "de disponibilidad. Página 7"
+        "text": "de disponibilidad."
       }
     ],
     "correct": "b"
@@ -891,7 +891,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "La libre circulación de personas no tiene nada que ver con ese tratado. Página 8"
+        "text": "La libre circulación de personas no tiene nada que ver con ese tratado."
       }
     ],
     "correct": "b"
@@ -1029,7 +1029,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Solo cuando se conduce un vehículo pesado. Página 9"
+        "text": "Solo cuando se conduce un vehículo pesado."
       }
     ],
     "correct": "a"
@@ -1167,7 +1167,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "24 horas. Página 10"
+        "text": "24 horas."
       }
     ],
     "correct": "d"
@@ -1282,7 +1282,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Paraplejía. Página 11"
+        "text": "Paraplejía."
       }
     ],
     "correct": "b"
@@ -1397,7 +1397,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "exento de utilizar tacógrafo. Página 12"
+        "text": "exento de utilizar tacógrafo."
       }
     ],
     "correct": "d"
@@ -1535,7 +1535,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Lesiones laborales. Página 13"
+        "text": "Lesiones laborales."
       }
     ],
     "correct": "c"
@@ -1650,7 +1650,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "utilizando siempre la primera relación de marchas. Página 14"
+        "text": "utilizando siempre la primera relación de marchas."
       }
     ],
     "correct": "b"
@@ -1765,7 +1765,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "la utilización de la marcha reductora siempre que las condiciones del tráfico lo permitan. Página 15"
+        "text": "la utilización de la marcha reductora siempre que las condiciones del tráfico lo permitan."
       }
     ],
     "correct": "a"
@@ -1880,15 +1880,31 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Todas las respuestas anteriores son incorrectas. Página 16"
+        "text": "Todas las respuestas anteriores son incorrectas."
       }
     ],
     "correct": "d"
   },
   {
     "num": "83",
-    "question": "¿Qué posición ocupan los conductores de transporte urbano y por carretera, por lo que se refiere a número de accidentes mortales, en el conjunto de actividades profesionales? A Primera. B Tercera. C Cuarta. D Es una de las ocupaciones con menos accidentes mortales.",
+    "question": "¿Qué posición ocupan los conductores de transporte urbano y por carretera, por lo que se refiere a número de accidentes mortales, en el conjunto de actividades profesionales?",
     "options": [
+      {
+        "id": "a",
+        "text": "Primera."
+      },
+      {
+        "id": "b",
+        "text": "Tercera."
+      },
+      {
+        "id": "c",
+        "text": "Cuarta."
+      },
+      {
+        "id": "d",
+        "text": "Es una de las ocupaciones con menos accidentes mortales."
+      }
     ],
     "correct": "a"
   },
@@ -2002,7 +2018,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "Actúa sobre la trayectoria de las ruedas directrices. Página 17"
+        "text": "Actúa sobre la trayectoria de las ruedas directrices."
       }
     ],
     "correct": "b"
@@ -2140,7 +2156,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "De 501 a 5.000 euros. Página 18"
+        "text": "De 501 a 5.000 euros."
       }
     ],
     "correct": "c"
@@ -2255,7 +2271,7 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "deben ser recogidas por los afectados que se consideren perjudicados. Página 19"
+        "text": "deben ser recogidas por los afectados que se consideren perjudicados."
       }
     ],
     "correct": "b"
@@ -2284,7 +2300,7 @@ const examData_marzo_2023 = [
     "correct": "a"
   },
   {
-    "num": "R1",
+    "num": "101",
     "question": "La mejor utilización de la caja de cambios de un camión es la que permite circular con la aguja del cuentarrevoluciones en la zona:",
     "options": [
       {
@@ -2304,10 +2320,10 @@ const examData_marzo_2023 = [
         "text": "de par de viraje."
       }
     ],
-    "correct": "n/a"
+    "correct": "a"
   },
   {
-    "num": "R2",
+    "num": "102",
     "question": "¿Cuál es una característica de la batería de Litio de un vehículo eléctrico?",
     "options": [
       {
@@ -2327,10 +2343,10 @@ const examData_marzo_2023 = [
         "text": "Tiene un mayor peso que la de Zinc."
       }
     ],
-    "correct": "n/a"
+    "correct": "b"
   },
   {
-    "num": "R3",
+    "num": "103",
     "question": "En pendientes ascendentes, se debe:",
     "options": [
       {
@@ -2347,9 +2363,9 @@ const examData_marzo_2023 = [
       },
       {
         "id": "d",
-        "text": "acelerar manteniendo las revoluciones por encima de la zona verde del cuentarrevoluciones. Página 20"
+        "text": "acelerar manteniendo las revoluciones por encima de la zona verde del cuentarrevoluciones."
       }
     ],
-    "correct": "n/a"
+    "correct": "c"
   }
 ];

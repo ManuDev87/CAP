@@ -2300,7 +2300,7 @@ const examData_noviembre_2023 = [
     "correct": "d"
   },
   {
-    "num": "R1",
+    "num": "101",
     "question": "Para garantizar la buena tracción del vehículo:",
     "options": [
       {
@@ -2320,10 +2320,10 @@ const examData_noviembre_2023 = [
         "text": "al menos un 20 % del peso del vehículo debería descansar sobre los ejes con dirección."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   },
   {
-    "num": "R2",
+    "num": "102",
     "question": "¿Qué datos ha de anotar el conductor en las impresiones que debe realizar en caso de no poder utilizar en el tacógrafo digital su tarjeta de conductor?",
     "options": [
       {
@@ -2343,10 +2343,10 @@ const examData_noviembre_2023 = [
         "text": "Deberá identificarse y firmar."
       }
     ],
-    "correct": "n/a"
+    "correct": "d"
   },
   {
-    "num": "R3",
+    "num": "103",
     "question": "El uso que se realice del motor de un automóvil, ¿puede influir en el consumo de carburante?",
     "options": [
       {
@@ -2366,6 +2366,6 @@ const examData_noviembre_2023 = [
         "text": "No, el consumo solo depende de la aerodinámica del vehículo."
       }
     ],
-    "correct": "n/a"
+    "correct": "a"
   }
 ];
