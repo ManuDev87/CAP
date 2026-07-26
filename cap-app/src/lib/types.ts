@@ -1,0 +1,88 @@
+export interface ExamOption {
+  id: string;
+  text: string;
+}
+
+export interface Question {
+  num: string;
+  question: string;
+  options: ExamOption[];
+  correct: string;
+  /** Only present in a few legacy exams (e.g. marzo_2024). */
+  reference?: string;
+  /** Origin exam when the question belongs to the error bank. */
+  sourceTestId?: string;
+}
+
+export type ExamMode = "examen" | "ayuda";
+
+export interface TestMeta {
+  id: string;
+  name: string;
+  img: string;
+}
+
+export interface CommunityRegion {
+  id: string;
+  name: string;
+  tests: TestMeta[];
+}
+
+export type UserRole = "student" | "teacher";
+
+export interface SessionUser {
+  username: string;
+  name: string;
+  role: "root" | UserRole;
+}
+
+/** Answer maps are keyed by question index (as in the legacy app). */
+export type AnswerMap = Record<number, string>;
+export type AnsweredMap = Record<number, boolean>;
+
+export interface PausedState {
+  currentQuestionIndex: number;
+  userAnswers: AnswerMap;
+  hasAnswered: AnsweredMap;
+  secondsElapsed: number;
+}
+
+export interface ScoreRecord {
+  testId: string;
+  testName: string;
+  score: number;
+  passed: boolean;
+  timestamp: Date;
+}
+
+export interface TestResultStats {
+  passes: number;
+  fails: number;
+}
+
+export interface ScoreBreakdown {
+  correct: number;
+  wrong: number;
+  blank: number;
+  bonusCorrect: number;
+  finalScore: number;
+}
+
+/** Stable reference to a missed question across exams. */
+export interface WrongQuestionRef {
+  testId: string;
+  questionNum: string;
+}
+
+export const ERRORS_EXAM_ID = "errores";
+
+export interface UserDoc {
+  name: string;
+  password?: string;
+  role?: UserRole;
+  /** Student only: username of the owning teacher (autoescuela). */
+  teacherId?: string;
+  /** Teacher only: driving-school / class label. */
+  schoolName?: string;
+  showSeedBtn?: boolean;
+}

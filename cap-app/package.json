@@ -1,0 +1,27 @@
+{
+  "name": "cap-app",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portal del Alumno - Examen CAP (PWA)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/build-sw.mjs",
+    "preview": "node scripts/serve.mjs",
+    "convert-data": "node scripts/convert-data.mjs",
+    "icons": "powershell -ExecutionPolicy Bypass -File scripts/generate-icons.ps1"
+  },
+  "dependencies": {
+    "firebase": "^12.16.0",
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.2"
+  }
+}

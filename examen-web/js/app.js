@@ -30,7 +30,8 @@ const availableTests = [
     { id: 'septiembre_2025', name: 'Septiembre 2025', img: 'img/truck1.jpg' },
     { id: 'noviembre_2025', name: 'Noviembre 2025', img: 'img/truck2.jpg' },
     { id: 'enero_2026', name: 'Enero 2026', img: 'img/truck3.jpg' },
-    { id: 'marzo_2026', name: 'Marzo 2026', img: 'img/truck4.jpg' }
+    { id: 'marzo_2026', name: 'Marzo 2026', img: 'img/truck4.jpg' },
+    { id: 'mayo_2026', name: 'Mayo 2026', img: 'img/truck1.jpg' }
 ];
 
 const testPdfUrls = {
@@ -53,7 +54,8 @@ const testPdfUrls = {
     'septiembre_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_se_cap5_2025_opci%C3%B3n%20A.pdf',
     'noviembre_2025': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf',
     'enero_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf',
-    'marzo_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Examen%20con%20respuestas%20mercanc%C3%ADas%20A_0.pdf'
+    'marzo_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Examen%20con%20respuestas%20mercanc%C3%ADas%20A_0.pdf',
+    'mayo_2026': 'https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/Examen%20con%20respuestas%20mercanc%C3%ADas%20b.pdf'
 };
 
 // DOM Elements
@@ -477,6 +479,9 @@ function selectTest(id, name, pausedMode = null) {
     } else if (id === 'marzo_2026') {
         if (typeof examData_marzo_2026 !== 'undefined') questions = examData_marzo_2026;
         else return alert("Base de datos no encontrada para Marzo 2026.");
+    } else if (id === 'mayo_2026') {
+        if (typeof examData_mayo_2026 !== 'undefined') questions = examData_mayo_2026;
+        else return alert("Base de datos no encontrada para Mayo 2026.");
     } else {
         alert("Ese test aún no está disponible. ¡Dile a tu asistente que lo añada!");
         return;
