@@ -1,12 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Roboto } from "next/font/google";
+import { Lexend, Source_Sans_3 } from "next/font/google";
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 import "./globals.css";
 
-const roboto = Roboto({
-  weight: ["400", "500", "700", "900"],
+const lexend = Lexend({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-roboto",
+  variable: "--font-lexend",
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-source-sans",
   display: "swap",
 });
 
@@ -36,7 +43,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" className={roboto.variable}>
+    <html lang="es" className={`${lexend.variable} ${sourceSans.variable}`}>
       <body>
         {children}
         <ServiceWorkerRegistration />

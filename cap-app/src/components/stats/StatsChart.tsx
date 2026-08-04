@@ -90,7 +90,7 @@ export default function StatsChart({ records, filterTestId }: StatsChartProps) {
     ctx.fill();
 
     // Grid
-    ctx.font = "600 11px Roboto, sans-serif";
+    ctx.font = "600 11px Lexend, 'Source Sans 3', sans-serif";
     ctx.textAlign = "right";
     for (let y = 0; y <= 100; y += 25) {
       const yp = yPos(y);
@@ -118,7 +118,7 @@ export default function StatsChart({ records, filterTestId }: StatsChartProps) {
     ctx.stroke();
     ctx.setLineDash([]);
     ctx.fillStyle = "#c47d2e";
-    ctx.font = "700 11px Roboto, sans-serif";
+    ctx.font = "700 11px Lexend, 'Source Sans 3', sans-serif";
     ctx.textAlign = "right";
     ctx.fillText("50", PAD_L - 10, y50 + 4);
 
@@ -155,19 +155,19 @@ export default function StatsChart({ records, filterTestId }: StatsChartProps) {
 
       // Score label above bar
       ctx.fillStyle = passed ? BRAND : DANGER;
-      ctx.font = "700 12px Roboto, sans-serif";
+      ctx.font = "700 12px Lexend, 'Source Sans 3', sans-serif";
       ctx.textAlign = "center";
       ctx.fillText(formatScore(r.score), cx, top - 8);
 
       // X labels
       ctx.fillStyle = INK;
-      ctx.font = "600 10px Roboto, sans-serif";
+      ctx.font = "600 10px Lexend, 'Source Sans 3', sans-serif";
       const parts = r.testName ? r.testName.split(" ") : ["?", "?"];
       const abbr =
         (parts[0] || "").substring(0, 3) + " " + (parts[1] || "").slice(-2);
       ctx.fillText(abbr, cx, H - PAD_B + 16);
       ctx.fillStyle = "#aeb8bd";
-      ctx.font = "500 10px Roboto, sans-serif";
+      ctx.font = "500 10px Lexend, 'Source Sans 3', sans-serif";
       ctx.fillText(`#${i + 1}`, cx, H - PAD_B + 30);
 
       return { x, y: top, w: barW, h, record: r };

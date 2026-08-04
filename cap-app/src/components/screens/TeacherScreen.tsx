@@ -145,7 +145,7 @@ export default function TeacherScreen() {
             </h2>
             <button
               onClick={() => setSelected(null)}
-              className="btn rounded-full border-none bg-white px-4.5 py-2 text-sm font-bold text-brand-600 shadow-md hover:-translate-y-0.5 hover:bg-appbg"
+              className="btn rounded-2xl border-none bg-white px-4.5 py-2 text-sm font-bold text-brand-600 shadow-md hover:-translate-y-0.5 hover:bg-appbg"
             >
               <IconArrowLeft /> Volver a mis alumnos
             </button>
