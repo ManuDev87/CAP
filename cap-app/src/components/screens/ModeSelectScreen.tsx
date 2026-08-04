@@ -39,12 +39,12 @@ export default function ModeSelectScreen() {
         <div className="flex justify-center gap-5 max-md:flex-col max-md:gap-2.5">
           <button
             onClick={() => chooseMode("examen")}
-            className="group flex flex-1 cursor-pointer flex-col items-center rounded-2xl border-[3px] border-ink-900/12 bg-appbg/70 p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-brand-500 hover:bg-brand-50/50 hover:shadow-card max-md:p-3.5"
+            className="group flex flex-1 cursor-pointer flex-col items-center rounded-xl border-2 border-ink-900/25 bg-appbg/60 p-5 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500 hover:shadow-[0_8px_20px_rgb(10_132_66/0.2)] max-md:p-3.5"
           >
-            <div className="mb-3.5 text-[40px] text-brand-500 transition-colors duration-200 group-hover:text-brand-600 max-md:mb-1.5 max-md:text-[28px]">
+            <div className="mb-3.5 text-[40px] text-brand-500 transition-transform duration-300 group-hover:scale-110 max-md:mb-1.5 max-md:text-[28px]">
               <IconFileSign />
             </div>
-            <h3 className="mb-2.5 font-display text-lg font-bold text-brand-700 max-md:mb-1 max-md:text-sm">
+            <h3 className="mb-2.5 font-bold text-ink-900 max-md:mb-1 max-md:text-sm">
               Modo Examen
             </h3>
             <p className="text-sm leading-relaxed text-ink-600 max-md:text-xs">
@@ -55,12 +55,12 @@ export default function ModeSelectScreen() {
 
           <button
             onClick={() => chooseMode("ayuda")}
-            className="group flex flex-1 cursor-pointer flex-col items-center rounded-2xl border-[3px] border-ink-900/12 bg-appbg/70 p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-brand-500 hover:bg-brand-50/50 hover:shadow-card max-md:p-3.5"
+            className="group flex flex-1 cursor-pointer flex-col items-center rounded-xl border-2 border-ink-900/25 bg-appbg/60 p-5 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500 hover:shadow-[0_8px_20px_rgb(10_132_66/0.2)] max-md:p-3.5"
           >
-            <div className="mb-3.5 text-[40px] text-brand-500 transition-colors duration-200 group-hover:text-brand-600 max-md:mb-1.5 max-md:text-[28px]">
+            <div className="mb-3.5 text-[40px] text-brand-500 transition-transform duration-300 group-hover:scale-110 max-md:mb-1.5 max-md:text-[28px]">
               <IconTeacher />
             </div>
-            <h3 className="mb-2.5 font-display text-lg font-bold text-brand-700 max-md:mb-1 max-md:text-sm">
+            <h3 className="mb-2.5 font-bold text-ink-900 max-md:mb-1 max-md:text-sm">
               Modo Ayuda
             </h3>
             <p className="text-sm leading-relaxed text-ink-600 max-md:text-xs">
@@ -72,7 +72,7 @@ export default function ModeSelectScreen() {
 
         <button
           onClick={goToTestSelection}
-          className="btn-ghost-brand mt-7 max-md:mt-5"
+          className="btn-ghost-brand mt-7 rounded-full max-md:mt-5"
         >
           Cambiar de Test
         </button>
