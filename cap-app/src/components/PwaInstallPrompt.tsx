@@ -4,12 +4,23 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "cap-pwa-install-dismissed";
 const DISMISS_DAYS = 14;
-const SHOW_DELAY_MS = 2500;
+const SHOW_DELAY_MS = 1800;
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 };
+
+/** Captura temprana: el evento puede dispararse antes de hidratar React. */
+let earlyDeferred: BeforeInstallPromptEvent | null = null;
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    earlyDeferred = e as BeforeInstallPromptEvent;
+    window.dispatchEvent(new Event("cap-pwa-ready"));
+  });
+}
 
 function isStandalone(): boolean {
   if (typeof window === "undefined") return false;
@@ -23,6 +34,17 @@ function isStandalone(): boolean {
 function isIos(): boolean {
   if (typeof navigator === "undefined") return false;
   return /iphone|ipad|ipod/i.test(navigator.userAgent);
+}
+
+function isMobile(): boolean {
+  if (typeof navigator === "undefined") return false;
+  return (
+    isIos() ||
+    /android|mobile|webos|blackberry|iemobile|opera mini/i.test(
+      navigator.userAgent
+    ) ||
+    window.matchMedia("(max-width: 900px) and (pointer: coarse)").matches
+  );
 }
 
 function isDismissed(): boolean {
@@ -49,65 +71,79 @@ function dismiss() {
 }
 
 /**
- * Bottom banner to install the PWA.
- * - Chromium/Android: uses beforeinstallprompt → native install dialog.
- * - iOS Safari: shows Share → Add to Home Screen instructions.
- * Hidden when already running as installed app.
+ * Banner de instalación PWA.
+ * - Chromium: beforeinstallprompt (captura temprana + botón nativo).
+ * - iOS / resto: instrucciones manuales.
+ * - Si ya está en modo standalone (icono de inicio), no se muestra.
+ *
+ * Nota: en el navegador SIEMPRE se ve la barra de URL. Solo desaparece
+ * al abrir la app desde el icono de pantalla de inicio (display: standalone).
  */
 export default function PwaInstallPrompt() {
   const [visible, setVisible] = useState(false);
-  const [iosHelp, setIosHelp] = useState(false);
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(
     null
   );
+  const [ios, setIos] = useState(false);
+  const [canNativeInstall, setCanNativeInstall] = useState(false);
 
   useEffect(() => {
     if (isStandalone() || isDismissed()) return;
 
-    let showTimer: ReturnType<typeof setTimeout> | undefined;
-    const ios = isIos();
+    setIos(isIos());
 
-    const onBip = (e: Event) => {
-      e.preventDefault();
-      setDeferred(e as BeforeInstallPromptEvent);
-      showTimer = setTimeout(() => setVisible(true), SHOW_DELAY_MS);
+    const syncDeferred = () => {
+      if (earlyDeferred) {
+        setDeferred(earlyDeferred);
+        setCanNativeInstall(true);
+      }
     };
+    syncDeferred();
 
-    window.addEventListener("beforeinstallprompt", onBip);
+    const onReady = () => syncDeferred();
+    window.addEventListener("cap-pwa-ready", onReady);
 
-    // iOS never fires beforeinstallprompt — show instructional banner.
-    if (ios) {
-      showTimer = setTimeout(() => {
-        setIosHelp(true);
-        setVisible(true);
-      }, SHOW_DELAY_MS);
-    }
+    // Mostrar siempre (móvil y escritorio) tras un breve delay,
+    // aunque beforeinstallprompt no haya llegado aún.
+    const showTimer = setTimeout(() => {
+      if (isStandalone() || isDismissed()) return;
+      syncDeferred();
+      setVisible(true);
+    }, SHOW_DELAY_MS);
 
     return () => {
-      window.removeEventListener("beforeinstallprompt", onBip);
-      if (showTimer) clearTimeout(showTimer);
+      window.removeEventListener("cap-pwa-ready", onReady);
+      clearTimeout(showTimer);
     };
   }, []);
 
   if (!visible) return null;
 
   async function handleInstall() {
-    if (deferred) {
-      await deferred.prompt();
-      const { outcome } = await deferred.userChoice;
-      setDeferred(null);
-      setVisible(false);
-      if (outcome === "dismissed") dismiss();
+    const promptEvent = deferred || earlyDeferred;
+    if (promptEvent) {
+      try {
+        await promptEvent.prompt();
+        const { outcome } = await promptEvent.userChoice;
+        earlyDeferred = null;
+        setDeferred(null);
+        setCanNativeInstall(false);
+        setVisible(false);
+        if (outcome === "dismissed") dismiss();
+      } catch {
+        /* usuario canceló o navegador bloqueó */
+      }
       return;
     }
-    // iOS: keep banner open showing steps (already iosHelp).
-    setIosHelp(true);
+    // Sin API nativa: el texto de ayuda ya está visible.
   }
 
   function handleLater() {
     dismiss();
     setVisible(false);
   }
+
+  const showNativeButton = canNativeInstall || Boolean(deferred || earlyDeferred);
 
   return (
     <div
@@ -130,20 +166,27 @@ export default function PwaInstallPrompt() {
               id="pwa-install-title"
               className="font-bold text-ink-900 text-[15px] leading-snug"
             >
-              Instala Grupo CAP
+              Instala Grupo CAP en tu móvil
             </p>
             <p className="mt-1 text-[13px] text-ink-600 leading-snug">
-              {iosHelp
-                ? "Añádela a tu pantalla de inicio y úsala como una app, sin barra del navegador."
-                : "Instálala en tu dispositivo para abrirla a pantalla completa, como una app."}
+              Así se abre a pantalla completa, sin barra de dirección, como una
+              app.
             </p>
           </div>
+          <button
+            type="button"
+            onClick={handleLater}
+            className="shrink-0 self-start rounded-lg px-2 py-1 text-ink-400 text-lg leading-none hover:bg-appbg hover:text-ink-700"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
         </div>
 
-        {iosHelp && (
+        {ios && (
           <ol className="mt-3 space-y-1.5 rounded-xl bg-appbg px-3 py-2.5 text-[13px] text-ink-700">
             <li>
-              1. Pulsa <strong>Compartir</strong> en la barra de Safari
+              1. Pulsa <strong>Compartir</strong> en Safari
             </li>
             <li>
               2. Elige <strong>Añadir a pantalla de inicio</strong>
@@ -154,8 +197,16 @@ export default function PwaInstallPrompt() {
           </ol>
         )}
 
+        {!ios && !showNativeButton && (
+          <p className="mt-3 rounded-xl bg-appbg px-3 py-2.5 text-[13px] text-ink-700 leading-snug">
+            En Chrome: menú <strong>⋮</strong> →{" "}
+            <strong>Instalar aplicación</strong> o{" "}
+            <strong>Añadir a la pantalla de inicio</strong>.
+          </p>
+        )}
+
         <div className="mt-3 flex gap-2">
-          {!iosHelp && (
+          {showNativeButton && (
             <button
               type="button"
               onClick={handleInstall}
@@ -168,12 +219,19 @@ export default function PwaInstallPrompt() {
             type="button"
             onClick={handleLater}
             className={`rounded-xl border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink-700 hover:bg-appbg ${
-              iosHelp ? "flex-1" : ""
+              showNativeButton ? "" : "flex-1"
             }`}
           >
             Ahora no
           </button>
         </div>
+
+        {!isMobile() && !ios && (
+          <p className="mt-2 text-[11px] text-ink-400 leading-snug">
+            Tip: en el móvil se usa mejor. Tras instalarla, ábrela desde el
+            icono (no desde la pestaña del navegador).
+          </p>
+        )}
       </div>
     </div>
   );

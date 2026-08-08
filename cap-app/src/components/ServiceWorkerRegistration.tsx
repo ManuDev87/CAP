@@ -17,11 +17,8 @@ export default function ServiceWorkerRegistration() {
       });
     };
 
-    if (document.readyState === "complete") register();
-    else {
-      window.addEventListener("load", register);
-      return () => window.removeEventListener("load", register);
-    }
+    // Registrar cuanto antes para que beforeinstallprompt pueda dispararse.
+    register();
   }, []);
 
   return null;
