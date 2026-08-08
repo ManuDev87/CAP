@@ -122,7 +122,7 @@ export default function PwaInstallPrompt() {
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center p-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-black/50 animate-fade-in"
+      className="fixed inset-0 z-[10000] flex items-end sm:items-center justify-center p-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-black/55 animate-fade-in"
       role="dialog"
       aria-modal="true"
       aria-labelledby="pwa-install-title"
