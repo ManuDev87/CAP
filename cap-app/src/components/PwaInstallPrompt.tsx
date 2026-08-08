@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
-const STORAGE_KEY = "cap-pwa-install-dismissed";
-const DISMISS_DAYS = 7;
+/** Nueva clave: invalida dismiss antiguos que ocultaban el modal. */
+const STORAGE_KEY = "cap-pwa-dismiss-v2";
+const DISMISS_MS = 24 * 60 * 60 * 1000; // 1 día
 const SHOW_DELAY_MS = 2000;
 
 type BeforeInstallPromptEvent = Event & {
@@ -11,7 +13,6 @@ type BeforeInstallPromptEvent = Event & {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 };
 
-/** Captura temprana: el evento puede dispararse antes de hidratar React. */
 let earlyDeferred: BeforeInstallPromptEvent | null = null;
 
 if (typeof window !== "undefined") {
@@ -23,48 +24,43 @@ if (typeof window !== "undefined") {
 }
 
 function isStandalone(): boolean {
-  if (typeof window === "undefined") return false;
-  const mq = window.matchMedia("(display-mode: standalone)").matches;
-  const iosStandalone =
-    "standalone" in navigator &&
-    (navigator as Navigator & { standalone?: boolean }).standalone === true;
-  return mq || Boolean(iosStandalone);
+  try {
+    if (window.matchMedia("(display-mode: standalone)").matches) return true;
+    const nav = navigator as Navigator & { standalone?: boolean };
+    if (nav.standalone === true) return true;
+  } catch {
+    /* ignore */
+  }
+  return false;
 }
 
 function isIos(): boolean {
-  if (typeof navigator === "undefined") return false;
-  return /iphone|ipad|ipod/i.test(navigator.userAgent);
+  return /iphone|ipad|ipod/i.test(navigator.userAgent || "");
 }
 
 function isDismissed(): boolean {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return false;
-    const until = Number(raw);
-    if (!Number.isFinite(until)) return false;
-    return Date.now() < until;
+    const until = Number(localStorage.getItem(STORAGE_KEY));
+    return Number.isFinite(until) && Date.now() < until;
   } catch {
     return false;
   }
 }
 
-function dismiss() {
+function setDismissed() {
   try {
-    localStorage.setItem(
-      STORAGE_KEY,
-      String(Date.now() + DISMISS_DAYS * 24 * 60 * 60 * 1000)
-    );
+    localStorage.setItem(STORAGE_KEY, String(Date.now() + DISMISS_MS));
   } catch {
     /* ignore */
   }
 }
 
 /**
- * Modal de instalación PWA (~2 s tras entrar).
- * No usa alert() nativo (bloquea la UI y no permite instalar).
- * Si ya está abierta como app (standalone), no se muestra.
+ * Modal de instalación ~2 s tras cargar.
+ * Portal a body + z-index inline (por encima del login z-5000).
  */
 export default function PwaInstallPrompt() {
+  const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(
     null
@@ -72,91 +68,139 @@ export default function PwaInstallPrompt() {
   const [ios, setIos] = useState(false);
 
   useEffect(() => {
-    if (isStandalone() || isDismissed()) return;
-
+    setMounted(true);
     setIos(isIos());
 
-    const syncDeferred = () => {
+    // Ya instalada como app → no molestar
+    if (isStandalone()) return;
+    if (isDismissed()) return;
+
+    const sync = () => {
       if (earlyDeferred) setDeferred(earlyDeferred);
     };
-    syncDeferred();
+    sync();
+    window.addEventListener("cap-pwa-ready", sync);
 
-    const onReady = () => syncDeferred();
-    window.addEventListener("cap-pwa-ready", onReady);
-
-    const showTimer = setTimeout(() => {
-      if (isStandalone() || isDismissed()) return;
-      syncDeferred();
+    const t = window.setTimeout(() => {
+      if (isStandalone()) return;
+      if (isDismissed()) return;
+      sync();
       setVisible(true);
     }, SHOW_DELAY_MS);
 
     return () => {
-      window.removeEventListener("cap-pwa-ready", onReady);
-      clearTimeout(showTimer);
+      window.removeEventListener("cap-pwa-ready", sync);
+      window.clearTimeout(t);
     };
   }, []);
 
-  if (!visible) return null;
+  if (!mounted || !visible) return null;
 
-  const showNativeButton = Boolean(deferred || earlyDeferred);
+  const canNative = Boolean(deferred || earlyDeferred);
 
   async function handleInstall() {
-    const promptEvent = deferred || earlyDeferred;
-    if (!promptEvent) return;
+    const ev = deferred || earlyDeferred;
+    if (!ev) return;
     try {
-      await promptEvent.prompt();
-      const { outcome } = await promptEvent.userChoice;
+      await ev.prompt();
+      const { outcome } = await ev.userChoice;
       earlyDeferred = null;
       setDeferred(null);
       setVisible(false);
-      if (outcome === "dismissed") dismiss();
+      if (outcome !== "accepted") setDismissed();
     } catch {
       /* cancelado */
     }
   }
 
   function handleLater() {
-    dismiss();
+    setDismissed();
     setVisible(false);
   }
 
-  return (
+  const modal = (
     <div
-      className="fixed inset-0 z-[10000] flex items-end sm:items-center justify-center p-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-black/55 animate-fade-in"
       role="dialog"
       aria-modal="true"
       aria-labelledby="pwa-install-title"
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 2147483000,
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "center",
+        padding: "16px",
+        paddingBottom: "max(16px, env(safe-area-inset-bottom))",
+        background: "rgba(0,0,0,0.55)",
+        boxSizing: "border-box",
+      }}
     >
       <div
-        className="w-full max-w-sm rounded-2xl bg-surface p-5 shadow-pop animate-pop-in border border-line"
-        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "100%",
+          maxWidth: 360,
+          background: "#fff",
+          borderRadius: 16,
+          padding: 20,
+          boxShadow: "0 18px 50px rgba(0,0,0,0.28)",
+          boxSizing: "border-box",
+        }}
       >
-        <div className="flex flex-col items-center text-center gap-3">
+        <div style={{ textAlign: "center" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/icons/icon-192.png"
             alt=""
             width={72}
             height={72}
-            className="h-[72px] w-[72px] rounded-2xl shadow-card"
+            style={{
+              width: 72,
+              height: 72,
+              borderRadius: 16,
+              display: "block",
+              margin: "0 auto",
+            }}
           />
-          <div>
-            <h2
-              id="pwa-install-title"
-              className="font-bold text-ink-900 text-lg leading-snug"
-            >
-              ¿Instalar Grupo CAP?
-            </h2>
-            <p className="mt-2 text-sm text-ink-600 leading-relaxed">
-              Añádela a tu pantalla de inicio y úsala como una app: a pantalla
-              completa, más rápida y sin la barra del navegador.
-            </p>
-          </div>
+          <h2
+            id="pwa-install-title"
+            style={{
+              margin: "14px 0 0",
+              fontSize: 18,
+              fontWeight: 700,
+              color: "#1c2b33",
+            }}
+          >
+            ¿Instalar Grupo CAP?
+          </h2>
+          <p
+            style={{
+              margin: "10px 0 0",
+              fontSize: 14,
+              lineHeight: 1.45,
+              color: "#52616a",
+            }}
+          >
+            Añádela a tu pantalla de inicio y úsala como una app, a pantalla
+            completa.
+          </p>
         </div>
 
         {ios && (
-          <ol className="mt-4 space-y-1.5 rounded-xl bg-appbg px-3 py-3 text-left text-[13px] text-ink-700">
+          <ol
+            style={{
+              margin: "16px 0 0",
+              padding: "12px 14px",
+              background: "#f0f3f1",
+              borderRadius: 12,
+              fontSize: 13,
+              color: "#37474f",
+              textAlign: "left",
+              lineHeight: 1.55,
+            }}
+          >
             <li>
-              1. Pulsa <strong>Compartir</strong> en Safari
+              1. Pulsa <strong>Compartir</strong> en Chrome/Safari
             </li>
             <li>
               2. Elige <strong>Añadir a pantalla de inicio</strong>
@@ -167,20 +211,48 @@ export default function PwaInstallPrompt() {
           </ol>
         )}
 
-        {!ios && !showNativeButton && (
-          <p className="mt-4 rounded-xl bg-appbg px-3 py-3 text-left text-[13px] text-ink-700 leading-snug">
+        {!ios && !canNative && (
+          <p
+            style={{
+              margin: "16px 0 0",
+              padding: "12px 14px",
+              background: "#f0f3f1",
+              borderRadius: 12,
+              fontSize: 13,
+              color: "#37474f",
+              textAlign: "left",
+              lineHeight: 1.45,
+            }}
+          >
             En Chrome: menú <strong>⋮</strong> →{" "}
-            <strong>Instalar aplicación</strong> /{" "}
+            <strong>Instalar aplicación</strong> o{" "}
             <strong>Añadir a la pantalla de inicio</strong>.
           </p>
         )}
 
-        <div className="mt-5 flex flex-col gap-2">
-          {showNativeButton && (
+        <div
+          style={{
+            marginTop: 18,
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+          }}
+        >
+          {canNative && (
             <button
               type="button"
               onClick={handleInstall}
-              className="w-full rounded-xl bg-brand-500 px-4 py-3 text-sm font-bold text-white shadow-btn-brand hover:bg-brand-600 active:translate-y-px"
+              style={{
+                width: "100%",
+                border: "none",
+                borderRadius: 12,
+                padding: "14px 16px",
+                background: "#0A8442",
+                color: "#fff",
+                fontWeight: 700,
+                fontSize: 15,
+                cursor: "pointer",
+              }}
             >
               Instalar ahora
             </button>
@@ -188,7 +260,17 @@ export default function PwaInstallPrompt() {
           <button
             type="button"
             onClick={handleLater}
-            className="w-full rounded-xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink-700 hover:bg-appbg"
+            style={{
+              width: "100%",
+              border: "1px solid #e2e8ea",
+              borderRadius: 12,
+              padding: "14px 16px",
+              background: "#fff",
+              color: "#37474f",
+              fontWeight: 600,
+              fontSize: 15,
+              cursor: "pointer",
+            }}
           >
             Ahora no
           </button>
@@ -196,4 +278,6 @@ export default function PwaInstallPrompt() {
       </div>
     </div>
   );
+
+  return createPortal(modal, document.body);
 }
