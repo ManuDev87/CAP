@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "cap-pwa-install-dismissed";
-const DISMISS_DAYS = 14;
-const SHOW_DELAY_MS = 1800;
+const DISMISS_DAYS = 7;
+const SHOW_DELAY_MS = 2000;
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -36,17 +36,6 @@ function isIos(): boolean {
   return /iphone|ipad|ipod/i.test(navigator.userAgent);
 }
 
-function isMobile(): boolean {
-  if (typeof navigator === "undefined") return false;
-  return (
-    isIos() ||
-    /android|mobile|webos|blackberry|iemobile|opera mini/i.test(
-      navigator.userAgent
-    ) ||
-    window.matchMedia("(max-width: 900px) and (pointer: coarse)").matches
-  );
-}
-
 function isDismissed(): boolean {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -71,13 +60,9 @@ function dismiss() {
 }
 
 /**
- * Banner de instalación PWA.
- * - Chromium: beforeinstallprompt (captura temprana + botón nativo).
- * - iOS / resto: instrucciones manuales.
- * - Si ya está en modo standalone (icono de inicio), no se muestra.
- *
- * Nota: en el navegador SIEMPRE se ve la barra de URL. Solo desaparece
- * al abrir la app desde el icono de pantalla de inicio (display: standalone).
+ * Modal de instalación PWA (~2 s tras entrar).
+ * No usa alert() nativo (bloquea la UI y no permite instalar).
+ * Si ya está abierta como app (standalone), no se muestra.
  */
 export default function PwaInstallPrompt() {
   const [visible, setVisible] = useState(false);
@@ -85,7 +70,6 @@ export default function PwaInstallPrompt() {
     null
   );
   const [ios, setIos] = useState(false);
-  const [canNativeInstall, setCanNativeInstall] = useState(false);
 
   useEffect(() => {
     if (isStandalone() || isDismissed()) return;
@@ -93,18 +77,13 @@ export default function PwaInstallPrompt() {
     setIos(isIos());
 
     const syncDeferred = () => {
-      if (earlyDeferred) {
-        setDeferred(earlyDeferred);
-        setCanNativeInstall(true);
-      }
+      if (earlyDeferred) setDeferred(earlyDeferred);
     };
     syncDeferred();
 
     const onReady = () => syncDeferred();
     window.addEventListener("cap-pwa-ready", onReady);
 
-    // Mostrar siempre (móvil y escritorio) tras un breve delay,
-    // aunque beforeinstallprompt no haya llegado aún.
     const showTimer = setTimeout(() => {
       if (isStandalone() || isDismissed()) return;
       syncDeferred();
@@ -119,23 +98,21 @@ export default function PwaInstallPrompt() {
 
   if (!visible) return null;
 
+  const showNativeButton = Boolean(deferred || earlyDeferred);
+
   async function handleInstall() {
     const promptEvent = deferred || earlyDeferred;
-    if (promptEvent) {
-      try {
-        await promptEvent.prompt();
-        const { outcome } = await promptEvent.userChoice;
-        earlyDeferred = null;
-        setDeferred(null);
-        setCanNativeInstall(false);
-        setVisible(false);
-        if (outcome === "dismissed") dismiss();
-      } catch {
-        /* usuario canceló o navegador bloqueó */
-      }
-      return;
+    if (!promptEvent) return;
+    try {
+      await promptEvent.prompt();
+      const { outcome } = await promptEvent.userChoice;
+      earlyDeferred = null;
+      setDeferred(null);
+      setVisible(false);
+      if (outcome === "dismissed") dismiss();
+    } catch {
+      /* cancelado */
     }
-    // Sin API nativa: el texto de ayuda ya está visible.
   }
 
   function handleLater() {
@@ -143,48 +120,41 @@ export default function PwaInstallPrompt() {
     setVisible(false);
   }
 
-  const showNativeButton = canNativeInstall || Boolean(deferred || earlyDeferred);
-
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-[100] p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pointer-events-none"
+      className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center p-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-black/50 animate-fade-in"
       role="dialog"
+      aria-modal="true"
       aria-labelledby="pwa-install-title"
-      aria-live="polite"
     >
-      <div className="pointer-events-auto mx-auto max-w-md rounded-2xl border border-line bg-surface p-4 shadow-pop animate-pop-in">
-        <div className="flex gap-3">
+      <div
+        className="w-full max-w-sm rounded-2xl bg-surface p-5 shadow-pop animate-pop-in border border-line"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex flex-col items-center text-center gap-3">
           <img
             src="/icons/icon-192.png"
             alt=""
-            width={48}
-            height={48}
-            className="h-12 w-12 shrink-0 rounded-xl"
+            width={72}
+            height={72}
+            className="h-[72px] w-[72px] rounded-2xl shadow-card"
           />
-          <div className="min-w-0 flex-1">
-            <p
+          <div>
+            <h2
               id="pwa-install-title"
-              className="font-bold text-ink-900 text-[15px] leading-snug"
+              className="font-bold text-ink-900 text-lg leading-snug"
             >
-              Instala Grupo CAP en tu móvil
-            </p>
-            <p className="mt-1 text-[13px] text-ink-600 leading-snug">
-              Así se abre a pantalla completa, sin barra de dirección, como una
-              app.
+              ¿Instalar Grupo CAP?
+            </h2>
+            <p className="mt-2 text-sm text-ink-600 leading-relaxed">
+              Añádela a tu pantalla de inicio y úsala como una app: a pantalla
+              completa, más rápida y sin la barra del navegador.
             </p>
           </div>
-          <button
-            type="button"
-            onClick={handleLater}
-            className="shrink-0 self-start rounded-lg px-2 py-1 text-ink-400 text-lg leading-none hover:bg-appbg hover:text-ink-700"
-            aria-label="Cerrar"
-          >
-            ×
-          </button>
         </div>
 
         {ios && (
-          <ol className="mt-3 space-y-1.5 rounded-xl bg-appbg px-3 py-2.5 text-[13px] text-ink-700">
+          <ol className="mt-4 space-y-1.5 rounded-xl bg-appbg px-3 py-3 text-left text-[13px] text-ink-700">
             <li>
               1. Pulsa <strong>Compartir</strong> en Safari
             </li>
@@ -198,40 +168,31 @@ export default function PwaInstallPrompt() {
         )}
 
         {!ios && !showNativeButton && (
-          <p className="mt-3 rounded-xl bg-appbg px-3 py-2.5 text-[13px] text-ink-700 leading-snug">
+          <p className="mt-4 rounded-xl bg-appbg px-3 py-3 text-left text-[13px] text-ink-700 leading-snug">
             En Chrome: menú <strong>⋮</strong> →{" "}
-            <strong>Instalar aplicación</strong> o{" "}
+            <strong>Instalar aplicación</strong> /{" "}
             <strong>Añadir a la pantalla de inicio</strong>.
           </p>
         )}
 
-        <div className="mt-3 flex gap-2">
+        <div className="mt-5 flex flex-col gap-2">
           {showNativeButton && (
             <button
               type="button"
               onClick={handleInstall}
-              className="flex-1 rounded-xl bg-brand-500 px-4 py-2.5 text-sm font-bold text-white shadow-btn-brand hover:bg-brand-600 active:translate-y-px"
+              className="w-full rounded-xl bg-brand-500 px-4 py-3 text-sm font-bold text-white shadow-btn-brand hover:bg-brand-600 active:translate-y-px"
             >
-              Instalar app
+              Instalar ahora
             </button>
           )}
           <button
             type="button"
             onClick={handleLater}
-            className={`rounded-xl border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink-700 hover:bg-appbg ${
-              showNativeButton ? "" : "flex-1"
-            }`}
+            className="w-full rounded-xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink-700 hover:bg-appbg"
           >
             Ahora no
           </button>
         </div>
-
-        {!isMobile() && !ios && (
-          <p className="mt-2 text-[11px] text-ink-400 leading-snug">
-            Tip: en el móvil se usa mejor. Tras instalarla, ábrela desde el
-            icono (no desde la pestaña del navegador).
-          </p>
-        )}
       </div>
     </div>
   );
