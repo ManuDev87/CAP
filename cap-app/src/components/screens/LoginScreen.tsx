@@ -3,11 +3,16 @@
 import { useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
 import { getUserDoc } from "@/lib/db";
+import {
+  PORTAL_LABELS,
+  roleMatchesPortal,
+  wrongPortalMessage,
+} from "@/lib/portal";
 import type { SessionUser } from "@/lib/types";
 import { IconSpinner } from "@/components/icons";
 
 export default function LoginScreen() {
-  const { loginAs, requestSetPassword } = useApp();
+  const { loginAs, requestSetPassword, portal } = useApp();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -20,6 +25,10 @@ export default function LoginScreen() {
     setError(null);
 
     if (user === "root" && pass === "1234") {
+      if (!roleMatchesPortal("root", portal)) {
+        setError(wrongPortalMessage(portal));
+        return;
+      }
       loginAs({ username: "root", name: "root", role: "root" });
       return;
     }
@@ -34,6 +43,11 @@ export default function LoginScreen() {
 
       const role: SessionUser["role"] =
         data.role === "teacher" ? "teacher" : "student";
+
+      if (!roleMatchesPortal(role, portal)) {
+        setError(wrongPortalMessage(portal));
+        return;
+      }
 
       if (!data.password || data.password === "") {
         requestSetPassword(user, data.name, role);
@@ -61,6 +75,7 @@ export default function LoginScreen() {
             <img src="/img/logo.png" alt="Logo Grupo CAP" className="junta-logo" />
           </div>
           <div className="brand-badge">Grupo CAP</div>
+          <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
         </div>
         <h2 className="mb-5 text-2xl font-bold text-ink-900">Iniciar Sesión</h2>
         <form onSubmit={handleLogin} className="flex flex-col gap-4">

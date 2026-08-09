@@ -3,10 +3,11 @@
 import { useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
 import { setUserPassword } from "@/lib/db";
+import { PORTAL_LABELS } from "@/lib/portal";
 import { IconSpinner } from "@/components/icons";
 
 export default function SetPasswordScreen() {
-  const { pendingPwdUser, loginAs } = useApp();
+  const { pendingPwdUser, loginAs, portal } = useApp();
   const [pwd1, setPwd1] = useState("");
   const [pwd2, setPwd2] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -47,6 +48,7 @@ export default function SetPasswordScreen() {
             <img src="/img/logo.png" alt="Logo Grupo CAP" className="junta-logo" />
           </div>
           <div className="brand-badge">Grupo CAP</div>
+          <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
         </div>
         <h2 className="text-2xl font-bold text-ink-900">
           Bienvenido <span>{pendingPwdUser?.name}</span>

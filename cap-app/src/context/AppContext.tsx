@@ -9,7 +9,13 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useRouter } from "next/navigation";
 import { getUserDoc, loadWrongQuestions } from "@/lib/db";
+import {
+  PORTAL_PATHS,
+  portalForRole,
+  type Portal,
+} from "@/lib/portal";
 import { loadExam } from "@/lib/tests";
 import type { ExamMode, Question, SessionUser, TestMeta } from "@/lib/types";
 import { ERRORS_EXAM_ID } from "@/lib/types";
@@ -42,6 +48,7 @@ function screenForRole(role: SessionUser["role"]): Screen {
 
 interface AppContextValue {
   hydrated: boolean;
+  portal: Portal;
   screen: Screen;
   user: SessionUser | null;
   activeExam: ActiveExam | null;
@@ -66,7 +73,14 @@ interface AppContextValue {
 
 const AppContext = createContext<AppContextValue | null>(null);
 
-export function AppProvider({ children }: { children: ReactNode }) {
+export function AppProvider({
+  portal,
+  children,
+}: {
+  portal: Portal;
+  children: ReactNode;
+}) {
+  const router = useRouter();
   const [hydrated, setHydrated] = useState(false);
   const [screen, setScreen] = useState<Screen>("login");
   const [user, setUser] = useState<SessionUser | null>(null);
@@ -88,13 +102,22 @@ export function AppProvider({ children }: { children: ReactNode }) {
         return;
       }
 
+      const applySession = (u: SessionUser) => {
+        const home = portalForRole(u.role);
+        if (home !== portal) {
+          router.replace(PORTAL_PATHS[home]);
+          return;
+        }
+        setUser(u);
+        localStorage.setItem(USER_NAME_KEY, u.name);
+        localStorage.setItem(USER_ROLE_KEY, u.role);
+        setScreen(screenForRole(u.role));
+        setHydrated(true);
+      };
+
       if (username === "root") {
-        const u: SessionUser = { username: "root", name: "root", role: "root" };
         if (!cancelled) {
-          setUser(u);
-          setScreen("backoffice");
-          localStorage.setItem(USER_ROLE_KEY, "root");
-          setHydrated(true);
+          applySession({ username: "root", name: "root", role: "root" });
         }
         return;
       }
@@ -114,42 +137,43 @@ export function AppProvider({ children }: { children: ReactNode }) {
         }
         const role: SessionUser["role"] =
           doc.role === "teacher" ? "teacher" : "student";
-        const u: SessionUser = {
+        applySession({
           username,
           name: doc.name || cachedName,
           role,
-        };
-        setUser(u);
-        localStorage.setItem(USER_NAME_KEY, u.name);
-        localStorage.setItem(USER_ROLE_KEY, u.role);
-        setScreen(screenForRole(u.role));
+        });
       } catch {
         if (cancelled) return;
-        // Offline / error: fall back to cached role if present
         const role: SessionUser["role"] =
           cachedRole === "teacher"
             ? "teacher"
             : cachedRole === "root"
               ? "root"
               : "student";
-        setUser({ username, name: cachedName, role });
-        setScreen(screenForRole(role));
+        applySession({ username, name: cachedName, role });
       }
-      if (!cancelled) setHydrated(true);
     })();
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [portal, router]);
 
-  const loginAs = useCallback((u: SessionUser) => {
-    setUser(u);
-    setPendingPwdUser(null);
-    localStorage.setItem(USER_KEY, u.username);
-    localStorage.setItem(USER_NAME_KEY, u.name);
-    localStorage.setItem(USER_ROLE_KEY, u.role);
-    setScreen(screenForRole(u.role));
-  }, []);
+  const loginAs = useCallback(
+    (u: SessionUser) => {
+      const home = portalForRole(u.role);
+      setUser(u);
+      setPendingPwdUser(null);
+      localStorage.setItem(USER_KEY, u.username);
+      localStorage.setItem(USER_NAME_KEY, u.name);
+      localStorage.setItem(USER_ROLE_KEY, u.role);
+      if (home !== portal) {
+        router.replace(PORTAL_PATHS[home]);
+        return;
+      }
+      setScreen(screenForRole(u.role));
+    },
+    [portal, router]
+  );
 
   const requestSetPassword = useCallback(
     (username: string, name: string, role?: SessionUser["role"]) => {
@@ -238,6 +262,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const value = useMemo<AppContextValue>(
     () => ({
       hydrated,
+      portal,
       screen,
       user,
       activeExam,
@@ -256,6 +281,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }),
     [
       hydrated,
+      portal,
       screen,
       user,
       activeExam,

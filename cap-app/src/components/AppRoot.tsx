@@ -1,6 +1,8 @@
 "use client";
 
 import { AppProvider, useApp } from "@/context/AppContext";
+import type { Portal } from "@/lib/portal";
+import { PORTAL_LABELS } from "@/lib/portal";
 import LoginScreen from "@/components/screens/LoginScreen";
 import SetPasswordScreen from "@/components/screens/SetPasswordScreen";
 import BackofficeScreen from "@/components/screens/BackofficeScreen";
@@ -10,20 +12,21 @@ import ModeSelectScreen from "@/components/screens/ModeSelectScreen";
 import QuizScreen from "@/components/screens/quiz/QuizScreen";
 import StatsScreen from "@/components/screens/StatsScreen";
 
-function Splash() {
+function Splash({ portal }: { portal: Portal }) {
   return (
     <div className="screen-overlay gradient-auth z-5000 flex flex-col items-center justify-center gap-5">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/img/logo.png" alt="Logo Grupo CAP" className="splash-logo" />
       <div className="brand-badge">Grupo CAP</div>
+      <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
     </div>
   );
 }
 
-function Screens() {
+function Screens({ portal }: { portal: Portal }) {
   const { hydrated, screen } = useApp();
 
-  if (!hydrated) return <Splash />;
+  if (!hydrated) return <Splash portal={portal} />;
 
   switch (screen) {
     case "login":
@@ -45,10 +48,10 @@ function Screens() {
   }
 }
 
-export default function AppRoot() {
+export default function AppRoot({ portal }: { portal: Portal }) {
   return (
-    <AppProvider>
-      <Screens />
+    <AppProvider portal={portal}>
+      <Screens portal={portal} />
     </AppProvider>
   );
 }
