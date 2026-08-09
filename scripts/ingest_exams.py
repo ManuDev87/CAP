@@ -4,16 +4,18 @@ Convierte PDFs de Examenes CAP a JSON de la app.
 Regiones:
   cataluna — questionari + plantilla-correccio (texto)
   valencia — EXAMEN + PLANTILLA (respuestas = casillas negras)
+  extremadura — un solo PDF; la correcta va marcada con '*' junto a la opción
 
 Filtros:
   - Solo mercancías
   - Cataluña: modelo A + castellano
   - Valencia: plantilla modelo A (casillas), sin ampliación
+  - Extremadura: mercancías A (asterisco en opción correcta)
 
 Uso:
   python scripts/ingest_exams.py --region cataluna
   python scripts/ingest_exams.py --region valencia
-  python scripts/ingest_exams.py --region valencia --limit 2
+  python scripts/ingest_exams.py --region extremadura
 """
 
 from __future__ import annotations
@@ -53,8 +55,21 @@ HEADER_RE = re.compile(
     r"Examen:.*|"
     r"Fecha:.*|"
     r"Duraci[oó]n:.*|"
+    r"Lugar:.*|"
+    r"MERCANC[IÍ]AS\s*A|"
+    r"VIAJEROS\s*A|"
+    r"P[aá]gina\s+\d+\s+de\s+\d+|"
     r"PREGUNTAS DE RESERVA:.*|"
     r"NOTA SOBRE LA CORRECCI[OÓ]N:.*"
+    r")$",
+    re.I,
+)
+# Cabeceras Extremadura / restos de Referencia entre preguntas
+SKIP_LINE_RE = re.compile(
+    r"^("
+    r",|"
+    r"\d+\s*MINUTOS|"
+    r"CENTRO REGIONAL DE TRANSPORTES\..*"
     r")$",
     re.I,
 )
@@ -69,7 +84,12 @@ Q_START = re.compile(
     r"([1-9]\d{0,2})\s+([A-ZÁÉÍÓÚÜÑ¿¡].*)"
     r")$"
 )
-OPT_START = re.compile(r"^([a-d])\)\s*(.*)$", re.I)
+# Extremadura: "* a) texto" marca la correcta
+OPT_START = re.compile(r"^(\*)?\s*([a-d])\)\s*(.*)$", re.I)
+REF_LINE_RE = re.compile(r"^Referencia(\s+Legal)?:?", re.I)
+FECHA_IN_TEXT = re.compile(
+    r"Fecha:\s*(\d{1,2})[-/](\d{1,2})[-/](\d{2,4})", re.I
+)
 
 # Fechas en nombres Valencia: 31_05_2025, 28-01-2023, 15-07-23
 DATE_IN_NAME = re.compile(
@@ -173,17 +193,27 @@ def clean_join(parts: list[str]) -> str:
     return text
 
 
+def is_junk_line(s: str) -> bool:
+    if HEADER_RE.match(s) or SKIP_LINE_RE.match(s):
+        return True
+    if PAGE_NUM_ONLY.match(s) and len(s) <= 2:
+        return True
+    return False
+
+
 def parse_questions(text: str) -> list[dict]:
-    """Parse CAP questionari text into question dicts (without correct)."""
+    """Parse CAP text into question dicts. Si hay '* a)', incluye 'correct'."""
     raw_lines = [ln.rstrip() for ln in text.splitlines()]
     lines: list[str] = []
     for ln in raw_lines:
         s = ln.strip()
         if not s:
             continue
-        if HEADER_RE.match(s):
+        # Mantener "Referencia:" como corte entre preguntas (Extremadura)
+        if REF_LINE_RE.match(s):
+            lines.append(s)
             continue
-        if PAGE_NUM_ONLY.match(s) and len(s) <= 2:
+        if is_junk_line(s):
             continue
         lines.append(s)
 
@@ -201,32 +231,37 @@ def parse_questions(text: str) -> list[dict]:
         while i < len(lines) and not OPT_START.match(lines[i]) and not Q_START.match(
             lines[i]
         ):
-            if not HEADER_RE.match(lines[i]) and not (
-                PAGE_NUM_ONLY.match(lines[i]) and len(lines[i]) <= 2
-            ):
+            if not is_junk_line(lines[i]):
                 q_parts.append(lines[i])
             i += 1
 
         options: list[dict] = []
+        correct: str | None = None
         while i < len(lines):
             om = OPT_START.match(lines[i])
             if not om:
                 break
-            oid = om.group(1).lower()
-            o_parts = [om.group(2)] if om.group(2) else []
+            starred = bool(om.group(1))
+            oid = om.group(2).lower()
+            o_parts = [om.group(3)] if om.group(3) else []
             i += 1
             while i < len(lines) and not OPT_START.match(lines[i]) and not Q_START.match(
                 lines[i]
             ):
-                if HEADER_RE.match(lines[i]):
-                    i += 1
-                    continue
-                if PAGE_NUM_ONLY.match(lines[i]) and len(lines[i]) <= 2:
+                # Fin de opciones (Extremadura) — no mezclar con el texto de la opción
+                if REF_LINE_RE.match(lines[i]):
+                    break
+                if is_junk_line(lines[i]):
                     i += 1
                     continue
                 o_parts.append(lines[i])
                 i += 1
+            if starred:
+                correct = oid
             options.append({"id": oid, "text": clean_join(o_parts)})
+            # Si paramos por Referencia, salir del bloque de opciones
+            if i < len(lines) and REF_LINE_RE.match(lines[i]):
+                break
 
         question_text = clean_join(q_parts)
         if not question_text or len(options) < 2:
@@ -241,13 +276,14 @@ def parse_questions(text: str) -> list[dict]:
         options = uniq_opts
         if len(options) < 2:
             continue
-        questions.append(
-            {
-                "num": num,
-                "question": question_text,
-                "options": options,
-            }
-        )
+        item: dict = {
+            "num": num,
+            "question": question_text,
+            "options": options,
+        }
+        if correct:
+            item["correct"] = correct
+        questions.append(item)
     return questions
 
 
@@ -433,9 +469,72 @@ def find_valencia_pairs() -> list[dict]:
     return pairs
 
 
+def parse_date_from_text(text: str) -> str | None:
+    m = FECHA_IN_TEXT.search(text)
+    if not m:
+        return None
+    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if y < 100:
+        y += 2000
+    if not (1 <= mo <= 12 and 1 <= d <= 31):
+        return None
+    return f"{y:04d}{mo:02d}{d:02d}"
+
+
+def find_extremadura_pairs() -> list[dict]:
+    """Un solo PDF mercancías A con '*' en la opción correcta."""
+    pdf_root = ROOT / "Examenes CAP" / "Extremadura"
+    pairs: list[dict] = []
+    for pdf in sorted(pdf_root.rglob("*.pdf")):
+        if not re.search(r"mercanc", pdf.name, re.I):
+            continue
+        text = pdf_text(pdf)
+        date = parse_date_from_name(pdf.name) or parse_date_from_text(text)
+        if not date:
+            continue
+        eid, name = exam_id_from_date("extremadura", date)
+        existing = [p for p in pairs if p["id"].startswith(eid)]
+        if existing:
+            eid = f"{eid}_{int(date[6:8])}"
+            name = f"{name} ({int(date[6:8])})"
+        pairs.append(
+            {
+                "id": eid,
+                "name": name,
+                "date": date,
+                "year": date[:4],
+                "convocatoria": pdf.parent.name,
+                "exam_pdf": pdf,
+                "key_pdf": pdf,
+                "region": "extremadura",
+            }
+        )
+    return pairs
+
+
 def convert_pair(pair: dict) -> list[dict]:
     q_text = pdf_text(pair["exam_pdf"])
     questions = parse_questions(q_text)
+
+    if pair["region"] == "extremadura":
+        exam: list[dict] = []
+        for q in questions:
+            n = int(q["num"])
+            if n < 1 or n > 100:
+                continue
+            if "correct" not in q:
+                raise ValueError(f"{pair['id']} Q{q['num']}: sin asterisco de respuesta")
+            exam.append(
+                {
+                    "num": q["num"],
+                    "question": q["question"],
+                    "options": q["options"],
+                    "correct": q["correct"],
+                }
+            )
+        validate(exam, pair["id"])
+        return exam
+
     if pair["region"] == "valencia":
         answers = parse_answer_key_valencia_filled(pair["key_pdf"])
     else:
@@ -453,7 +552,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--region",
-        choices=("cataluna", "valencia"),
+        choices=("cataluna", "valencia", "extremadura"),
         default="cataluna",
     )
     ap.add_argument("--limit", type=int, default=0, help="Solo N primeros pares")
@@ -462,6 +561,8 @@ def main() -> None:
 
     if args.region == "valencia":
         pairs = find_valencia_pairs()
+    elif args.region == "extremadura":
+        pairs = find_extremadura_pairs()
     else:
         pairs = find_cataluna_pairs()
 

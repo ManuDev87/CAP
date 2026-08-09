@@ -70,13 +70,17 @@ const valenciaTests: TestMeta[] = [
   { id: "valencia_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
 ];
 
+const extremaduraTests: TestMeta[] = [
+  { id: "extremadura_febrero_2026", name: "Febrero 2026", img: "/img/truck1.jpg" },
+];
+
 /** Comunidades autónomas disponibles en el portal del alumno. */
 export const communityRegions: CommunityRegion[] = [
   { id: "andalucia", name: "Andalucía", tests: andaluciaTests },
   { id: "cataluna", name: "Cataluña", tests: catalunaTests },
   { id: "valencia", name: "Valencia", tests: valenciaTests },
   { id: "galicia", name: "Galicia", tests: [] },
-  { id: "extremadura", name: "Extremadura", tests: [] },
+  { id: "extremadura", name: "Extremadura", tests: extremaduraTests },
 ];
 
 /** Flat list of all tests (compat for loaders / stats / getTestMeta). */
@@ -197,6 +201,9 @@ const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
   valencia_marzo_2026: () => import("@/data/exams/valencia_marzo_2026.json"),
   valencia_mayo_2026: () => import("@/data/exams/valencia_mayo_2026.json"),
   valencia_julio_2026: () => import("@/data/exams/valencia_julio_2026.json"),
+  // Extremadura — mercancías A (* marca la correcta en el mismo PDF)
+  extremadura_febrero_2026: () =>
+    import("@/data/exams/extremadura_febrero_2026.json"),
 };
 
 export async function loadExam(id: string): Promise<Question[]> {
