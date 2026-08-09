@@ -74,19 +74,72 @@ const extremaduraTests: TestMeta[] = [
   { id: "extremadura_febrero_2026", name: "Febrero 2026", img: "/img/truck1.jpg" },
 ];
 
+const cantabriaTests: TestMeta[] = [
+  { id: "cantabria_febrero_2025", name: "Febrero 2025", img: "/img/truck1.jpg" },
+  { id: "cantabria_abril_2025", name: "Abril 2025", img: "/img/truck2.jpg" },
+  { id: "cantabria_junio_2025", name: "Junio 2025", img: "/img/truck3.jpg" },
+  { id: "cantabria_agosto_2025", name: "Agosto 2025", img: "/img/truck4.jpg" },
+  { id: "cantabria_octubre_2025", name: "Octubre 2025", img: "/img/truck1.jpg" },
+  { id: "cantabria_febrero_2026", name: "Febrero 2026", img: "/img/truck2.jpg" },
+  { id: "cantabria_abril_2026", name: "Abril 2026", img: "/img/truck3.jpg" },
+  { id: "cantabria_junio_2026", name: "Junio 2026", img: "/img/truck4.jpg" },
+];
+
+const alavaTests: TestMeta[] = [
+  { id: "alava_febrero_2023", name: "Febrero 2023", img: "/img/truck1.jpg" },
+  { id: "alava_marzo_2023", name: "Marzo 2023", img: "/img/truck2.jpg" },
+  { id: "alava_junio_2023", name: "Junio 2023", img: "/img/truck3.jpg" },
+  { id: "alava_julio_2023", name: "Julio 2023", img: "/img/truck4.jpg" },
+  { id: "alava_septiembre_2023", name: "Septiembre 2023", img: "/img/truck1.jpg" },
+  { id: "alava_noviembre_2023", name: "Noviembre 2023", img: "/img/truck2.jpg" },
+  { id: "alava_febrero_2024", name: "Febrero 2024", img: "/img/truck3.jpg" },
+  { id: "alava_marzo_2024", name: "Marzo 2024", img: "/img/truck4.jpg" },
+  { id: "alava_mayo_2024", name: "Mayo 2024", img: "/img/truck1.jpg" },
+  { id: "alava_julio_2024", name: "Julio 2024", img: "/img/truck2.jpg" },
+  { id: "alava_septiembre_2024", name: "Septiembre 2024", img: "/img/truck3.jpg" },
+  { id: "alava_noviembre_2024", name: "Noviembre 2024", img: "/img/truck4.jpg" },
+  { id: "alava_enero_2025", name: "Enero 2025", img: "/img/truck1.jpg" },
+  { id: "alava_marzo_2025", name: "Marzo 2025", img: "/img/truck2.jpg" },
+  { id: "alava_mayo_2025", name: "Mayo 2025", img: "/img/truck3.jpg" },
+  { id: "alava_julio_2025", name: "Julio 2025", img: "/img/truck4.jpg" },
+  { id: "alava_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "alava_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "alava_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "alava_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
 /** Comunidades autónomas disponibles en el portal del alumno. */
 export const communityRegions: CommunityRegion[] = [
   { id: "andalucia", name: "Andalucía", tests: andaluciaTests },
   { id: "cataluna", name: "Cataluña", tests: catalunaTests },
   { id: "valencia", name: "Valencia", tests: valenciaTests },
+  { id: "cantabria", name: "Cantabria", tests: cantabriaTests },
+  {
+    id: "pais_vasco",
+    name: "País Vasco",
+    tests: [],
+    subregions: [
+      { id: "alava", name: "Álava", tests: alavaTests },
+      { id: "guipuzkoa", name: "Guipúzcoa", tests: [] },
+    ],
+  },
   { id: "galicia", name: "Galicia", tests: [] },
   { id: "extremadura", name: "Extremadura", tests: extremaduraTests },
 ];
 
+function regionTestsFlat(region: CommunityRegion): TestMeta[] {
+  if (region.subregions?.length) {
+    return region.subregions.flatMap((s) => s.tests);
+  }
+  return region.tests;
+}
+
 /** Flat list of all tests (compat for loaders / stats / getTestMeta). */
-export const availableTests: TestMeta[] = communityRegions.flatMap(
-  (r) => r.tests
-);
+export const availableTests: TestMeta[] = communityRegions.flatMap(regionTestsFlat);
+
+export function regionTestCount(region: CommunityRegion): number {
+  return regionTestsFlat(region).length;
+}
 
 export const testPdfUrls: Record<string, string> = {
   febrero_2023:
@@ -204,6 +257,36 @@ const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
   // Extremadura — mercancías A (* marca la correcta en el mismo PDF)
   extremadura_febrero_2026: () =>
     import("@/data/exams/extremadura_febrero_2026.json"),
+  // Cantabria — plantilla casillas (formato Valencia)
+  cantabria_febrero_2025: () => import("@/data/exams/cantabria_febrero_2025.json"),
+  cantabria_abril_2025: () => import("@/data/exams/cantabria_abril_2025.json"),
+  cantabria_junio_2025: () => import("@/data/exams/cantabria_junio_2025.json"),
+  cantabria_agosto_2025: () => import("@/data/exams/cantabria_agosto_2025.json"),
+  cantabria_octubre_2025: () => import("@/data/exams/cantabria_octubre_2025.json"),
+  cantabria_febrero_2026: () => import("@/data/exams/cantabria_febrero_2026.json"),
+  cantabria_abril_2026: () => import("@/data/exams/cantabria_abril_2026.json"),
+  cantabria_junio_2026: () => import("@/data/exams/cantabria_junio_2026.json"),
+  // Álava (País Vasco) — plantilla casillas
+  alava_febrero_2023: () => import("@/data/exams/alava_febrero_2023.json"),
+  alava_marzo_2023: () => import("@/data/exams/alava_marzo_2023.json"),
+  alava_junio_2023: () => import("@/data/exams/alava_junio_2023.json"),
+  alava_julio_2023: () => import("@/data/exams/alava_julio_2023.json"),
+  alava_septiembre_2023: () => import("@/data/exams/alava_septiembre_2023.json"),
+  alava_noviembre_2023: () => import("@/data/exams/alava_noviembre_2023.json"),
+  alava_febrero_2024: () => import("@/data/exams/alava_febrero_2024.json"),
+  alava_marzo_2024: () => import("@/data/exams/alava_marzo_2024.json"),
+  alava_mayo_2024: () => import("@/data/exams/alava_mayo_2024.json"),
+  alava_julio_2024: () => import("@/data/exams/alava_julio_2024.json"),
+  alava_septiembre_2024: () => import("@/data/exams/alava_septiembre_2024.json"),
+  alava_noviembre_2024: () => import("@/data/exams/alava_noviembre_2024.json"),
+  alava_enero_2025: () => import("@/data/exams/alava_enero_2025.json"),
+  alava_marzo_2025: () => import("@/data/exams/alava_marzo_2025.json"),
+  alava_mayo_2025: () => import("@/data/exams/alava_mayo_2025.json"),
+  alava_julio_2025: () => import("@/data/exams/alava_julio_2025.json"),
+  alava_enero_2026: () => import("@/data/exams/alava_enero_2026.json"),
+  alava_marzo_2026: () => import("@/data/exams/alava_marzo_2026.json"),
+  alava_mayo_2026: () => import("@/data/exams/alava_mayo_2026.json"),
+  alava_julio_2026: () => import("@/data/exams/alava_julio_2026.json"),
 };
 
 export async function loadExam(id: string): Promise<Question[]> {

@@ -68,38 +68,119 @@ HEADER_RE = re.compile(
 SKIP_LINE_RE = re.compile(
     r"^("
     r",|"
-    r"\d+\s*MINUTOS|"
-    r"CENTRO REGIONAL DE TRANSPORTES\..*"
+    r"\d+\s*MINUTOS?|"
+    r"CENTRO REGIONAL DE TRANSPORTES\..*|"
+    r"MODELO\s+[AB]|"
+    r"MERCANC[IÍ]AS|"
+    r"Certificado de Aptitud Profesional.*"
+    r"|Examen para la obtenci[oó]n del.*"
+    r"|(PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|S[EÉ]PTIMA)\s+CONVOCATORIA.*"
     r")$",
     re.I,
 )
 
 PAGE_NUM_ONLY = re.compile(r"^\d{1,2}$")
-# "12. Texto", "12.Texto" o "12 Texto" (mayúscula).
+# "12. Texto", "12 . Texto" (Álava), "12 Texto"
 # Evitar horas tipo "00.00" / "24.00" (dígito justo tras el punto).
 Q_START = re.compile(
     r"^(?:"
-    r"([1-9]\d{0,2})\.\s*(?!\d)(.+)"
+    r"([1-9]\d{0,2})\s*\.\s*(?!\d)(.+)"
     r"|"
     r"([1-9]\d{0,2})\s+([A-ZÁÉÍÓÚÜÑ¿¡].*)"
     r")$"
 )
-# Extremadura: "* a) texto" marca la correcta
-OPT_START = re.compile(r"^(\*)?\s*([a-d])\)\s*(.*)$", re.I)
+# Extremadura / Valencia / Cantabria: "* a) texto"
+# Lookbehind: evita falsos positivos en "...encuentra)."
+OPT_PAREN = re.compile(r"(?<![A-Za-zÁÉÍÓÚÜáéíóúüÑñ])(\*)?\s*([a-d])\)(?:\s+|$)", re.I)
+# Álava: "a texto. b texto." (letra tras inicio de línea o tras ". ")
+OPT_BARE = re.compile(r"(?:^|\.\s+)(\*)?\s*([a-d])\s+", re.I)
 REF_LINE_RE = re.compile(r"^Referencia(\s+Legal)?:?", re.I)
 FECHA_IN_TEXT = re.compile(
     r"Fecha:\s*(\d{1,2})[-/](\d{1,2})[-/](\d{2,4})", re.I
+)
+# "2 DE FEBRERO DE 2024" / "4 FEBRERO 2025" / "4 DIC 2025"
+MONTH_ALIAS = {
+    "enero": 1,
+    "ene": 1,
+    "febrero": 2,
+    "feb": 2,
+    "marzo": 3,
+    "mar": 3,
+    "abril": 4,
+    "abr": 4,
+    "mayo": 5,
+    "may": 5,
+    "junio": 6,
+    "jun": 6,
+    "julio": 7,
+    "jul": 7,
+    "agosto": 8,
+    "ago": 8,
+    "septiembre": 9,
+    "sep": 9,
+    "set": 9,
+    "octubre": 10,
+    "oct": 10,
+    "noviembre": 11,
+    "nov": 11,
+    "diciembre": 12,
+    "dic": 12,
+}
+_MONTH_ALT = "|".join(sorted(MONTH_ALIAS.keys(), key=len, reverse=True))
+DATE_ES_TEXT = re.compile(
+    rf"(?<!\d)(\d{{1,2}})\s+(?:DE\s+)?({_MONTH_ALT})\s+(?:DE\s+)?(\d{{4}})",
+    re.I,
 )
 
 # Fechas en nombres Valencia: 31_05_2025, 28-01-2023, 15-07-23
 DATE_IN_NAME = re.compile(
     r"(?<!\d)(\d{1,2})[-_/](\d{1,2})[-_/](\d{2,4})(?!\d)"
 )
+DATE_YYYYMMDD = re.compile(r"(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)")
+DATE_DDMMYYYY = re.compile(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)")
+
+
+def split_option_fragments(line: str) -> list[tuple[str | None, str, str]]:
+    """Soporta 'a) texto', '* a) texto' y 'a texto. b texto.' (Álava)."""
+    matches = list(OPT_PAREN.finditer(line))
+    if matches:
+        if matches[0].start() > 0 and line[: matches[0].start()].strip():
+            return []
+        out: list[tuple[str | None, str, str]] = []
+        for i, m in enumerate(matches):
+            start = m.end()
+            end = matches[i + 1].start() if i + 1 < len(matches) else len(line)
+            out.append((m.group(1), m.group(2).lower(), line[start:end].strip()))
+        return out
+
+    # Bare options: la línea debe empezar por a-d
+    if not re.match(r"^(\*)?\s*[a-d]\s+\S", line, re.I):
+        return []
+    matches = list(OPT_BARE.finditer(line))
+    if not matches:
+        return []
+    out: list[tuple[str | None, str, str]] = []
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(line)
+        out.append((m.group(1), m.group(2).lower(), line[start:end].strip()))
+    return out
 
 
 def pdf_text(path: Path) -> str:
+    """Texto en orden de lectura visual (y, x) para no mezclar columnas/bloques."""
     doc = fitz.open(path)
-    return "\n".join(page.get_text() for page in doc)
+    parts: list[str] = []
+    for page in doc:
+        blocks = sorted(
+            page.get_text("blocks"),
+            key=lambda b: (round(b[1], 1), round(b[0], 1)),
+        )
+        for b in blocks:
+            t = (b[4] or "").strip()
+            if t:
+                parts.append(t)
+    return "\n".join(parts)
 
 
 def parse_answer_key(text: str) -> dict[str, str]:
@@ -228,7 +309,7 @@ def parse_questions(text: str) -> list[dict]:
         first = m.group(2) if m.group(1) else m.group(4)
         q_parts = [first] if first else []
         i += 1
-        while i < len(lines) and not OPT_START.match(lines[i]) and not Q_START.match(
+        while i < len(lines) and not split_option_fragments(lines[i]) and not Q_START.match(
             lines[i]
         ):
             if not is_junk_line(lines[i]):
@@ -238,28 +319,27 @@ def parse_questions(text: str) -> list[dict]:
         options: list[dict] = []
         correct: str | None = None
         while i < len(lines):
-            om = OPT_START.match(lines[i])
-            if not om:
+            frags = split_option_fragments(lines[i])
+            if not frags:
                 break
-            starred = bool(om.group(1))
-            oid = om.group(2).lower()
-            o_parts = [om.group(3)] if om.group(3) else []
             i += 1
-            while i < len(lines) and not OPT_START.match(lines[i]) and not Q_START.match(
-                lines[i]
-            ):
-                # Fin de opciones (Extremadura) — no mezclar con el texto de la opción
-                if REF_LINE_RE.match(lines[i]):
-                    break
-                if is_junk_line(lines[i]):
-                    i += 1
-                    continue
-                o_parts.append(lines[i])
-                i += 1
-            if starred:
-                correct = oid
-            options.append({"id": oid, "text": clean_join(o_parts)})
-            # Si paramos por Referencia, salir del bloque de opciones
+            for fi, (starred_mark, oid, first_text) in enumerate(frags):
+                o_parts = [first_text] if first_text else []
+                # Continuación solo tras el último fragmento de la línea
+                if fi == len(frags) - 1:
+                    while i < len(lines):
+                        if REF_LINE_RE.match(lines[i]):
+                            break
+                        if split_option_fragments(lines[i]) or Q_START.match(lines[i]):
+                            break
+                        if is_junk_line(lines[i]):
+                            i += 1
+                            continue
+                        o_parts.append(lines[i])
+                        i += 1
+                if starred_mark:
+                    correct = oid
+                options.append({"id": oid, "text": clean_join(o_parts)})
             if i < len(lines) and REF_LINE_RE.match(lines[i]):
                 break
 
@@ -274,6 +354,26 @@ def parse_questions(text: str) -> list[dict]:
             seen.add(o["id"])
             uniq_opts.append(o)
         options = uniq_opts
+        if len(options) < 2:
+            continue
+        # Re-partir opciones si el texto embebió "b ... c ..." (Álava)
+        expanded: list[dict] = []
+        for o in options:
+            frags = split_option_fragments(f"{o['id']} {o['text']}")
+            if len(frags) > 1:
+                for star, oid, text in frags:
+                    if star:
+                        correct = oid
+                    expanded.append({"id": oid, "text": text})
+            else:
+                expanded.append(o)
+        seen = set()
+        options = []
+        for o in expanded:
+            if o["id"] in seen or not o["text"]:
+                continue
+            seen.add(o["id"])
+            options.append(o)
         if len(options) < 2:
             continue
         item: dict = {
@@ -335,16 +435,50 @@ def exam_id_from_date(prefix: str, date_yyyymmdd: str) -> tuple[str, str]:
 
 
 def parse_date_from_name(name: str) -> str | None:
-    """Return YYYYMMDD or None."""
+    """Return YYYYMMDD or None from filename."""
+    m = DATE_YYYYMMDD.search(name)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
+    m = DATE_DDMMYYYY.search(name)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
     m = DATE_IN_NAME.search(name)
-    if not m:
-        return None
-    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
-    if y < 100:
-        y += 2000
-    if not (1 <= mo <= 12 and 1 <= d <= 31):
-        return None
-    return f"{y:04d}{mo:02d}{d:02d}"
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if y < 100:
+            y += 2000
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
+    m = DATE_ES_TEXT.search(name)
+    if m:
+        d = int(m.group(1))
+        mo = MONTH_ALIAS[m.group(2).lower()]
+        y = int(m.group(3))
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
+    return None
+
+
+def parse_date_from_text(text: str) -> str | None:
+    m = FECHA_IN_TEXT.search(text)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if y < 100:
+            y += 2000
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
+    m = DATE_ES_TEXT.search(text)
+    if m:
+        d = int(m.group(1))
+        mo = MONTH_ALIAS[m.group(2).lower()]
+        y = int(m.group(3))
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}{mo:02d}{d:02d}"
+    return None
 
 
 def find_cataluna_pairs() -> list[dict]:
@@ -394,8 +528,32 @@ def find_cataluna_pairs() -> list[dict]:
     return pairs
 
 
-def find_valencia_pairs() -> list[dict]:
-    pdf_root = ROOT / "Examenes CAP" / "Valencia"
+def _is_viajeros(name: str) -> bool:
+    return bool(re.search(r"viajer|persona", name, re.I))
+
+
+def _is_modelo_b(name: str) -> bool:
+    return bool(
+        re.search(
+            r"modelo[-_\s]?b\b|examen\s*b\b|examb_|\bb_mercan|mercancias\s*b\b",
+            name,
+            re.I,
+        )
+    )
+
+
+def _pick_prefer_modelo_a(files: list[Path]) -> list[Path]:
+    if len(files) <= 1:
+        return files
+    a_files = [f for f in files if re.search(r"modelo[-_\s]?a\b|examena_|\ba_mercan", f.name, re.I)]
+    return a_files if a_files else files
+
+
+def find_filled_plantilla_pairs(pdf_root: Path, prefix: str) -> list[dict]:
+    """
+    Empareja EXAMEN + PLANTILLA mercancías (casillas negras), como Valencia.
+    Usado por Valencia, Cantabria y Álava.
+    """
     pairs: list[dict] = []
     for conv in sorted(pdf_root.rglob("*")):
         if not conv.is_dir() or "convocatoria" not in conv.name.lower():
@@ -404,28 +562,29 @@ def find_valencia_pairs() -> list[dict]:
         exams = [
             f
             for f in files
-            if re.search(r"examen", f.name, re.I)
-            and re.search(r"mercanc", f.name, re.I)
+            if re.search(r"mercanc", f.name, re.I)
             and not re.search(r"plantilla", f.name, re.I)
+            and not _is_viajeros(f.name)
+            and not _is_modelo_b(f.name)
         ]
-        # Algunos exámenes se llaman solo "MERCANCIAS DD-MM-YY.pdf"
-        if not exams:
-            exams = [
-                f
-                for f in files
-                if re.search(r"mercanc", f.name, re.I)
-                and not re.search(r"plantilla", f.name, re.I)
-            ]
+        # Preferir nombres con "examen" si hay varios
+        named = [f for f in exams if re.search(r"examen", f.name, re.I)]
+        if named:
+            exams = named
+        exams = _pick_prefer_modelo_a(exams)
+
         keys = [
             f
             for f in files
             if re.search(r"plantilla", f.name, re.I)
             and re.search(r"mercanc", f.name, re.I)
+            and not _is_viajeros(f.name)
+            and not _is_modelo_b(f.name)
         ]
+        keys = _pick_prefer_modelo_a(keys)
         if not exams or not keys:
             continue
 
-        # Emparejar por fecha en el nombre
         keyed = {parse_date_from_name(k.name): k for k in keys}
         keyed.pop(None, None)
 
@@ -437,19 +596,34 @@ def find_valencia_pairs() -> list[dict]:
                 key = keyed[exam_date]
             elif len(keys) == 1:
                 key = keys[0]
-                # Preferir fecha del examen (plantillas a veces tienen typo, p.ej. 2925)
                 date = exam_date or parse_date_from_name(key.name)
             elif exam_date:
-                # Misma carpeta, fechas cercanas: tomar la única key si hay una
-                # o la que coincida en mes/día ignorando año tipográfico
                 for kd, kf in keyed.items():
                     if kd[4:] == exam_date[4:]:
                         key = kf
                         break
-            if not key or not date:
+            if not key:
+                continue
+            if not date:
+                date = parse_date_from_text(pdf_text(exam)) or parse_date_from_name(
+                    key.name
+                )
+            if not date:
+                date = parse_date_from_text(pdf_text(key))
+            if not date:
+                # Último recurso: año de carpeta + mes estimado por nº convocatoria
+                year = conv.parent.name if conv.parent.name.isdigit() else None
+                conv_n = re.search(r"(\d)", conv.name)
+                if year and conv_n:
+                    # 1→feb, 2→abr, 3→jun, 4→ago, 5→oct, 6→dic (aprox. CAP)
+                    month = {1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12}.get(
+                        int(conv_n.group(1)), 1
+                    )
+                    date = f"{int(year):04d}{month:02d}01"
+            if not date:
                 continue
 
-            eid, name = exam_id_from_date("valencia", date)
+            eid, name = exam_id_from_date(prefix, date)
             existing = [p for p in pairs if p["id"].startswith(eid)]
             if existing:
                 eid = f"{eid}_{int(date[6:8])}"
@@ -463,22 +637,24 @@ def find_valencia_pairs() -> list[dict]:
                     "convocatoria": conv.name,
                     "exam_pdf": exam,
                     "key_pdf": key,
-                    "region": "valencia",
+                    "region": prefix,
                 }
             )
     return pairs
 
 
-def parse_date_from_text(text: str) -> str | None:
-    m = FECHA_IN_TEXT.search(text)
-    if not m:
-        return None
-    d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
-    if y < 100:
-        y += 2000
-    if not (1 <= mo <= 12 and 1 <= d <= 31):
-        return None
-    return f"{y:04d}{mo:02d}{d:02d}"
+def find_valencia_pairs() -> list[dict]:
+    return find_filled_plantilla_pairs(ROOT / "Examenes CAP" / "Valencia", "valencia")
+
+
+def find_cantabria_pairs() -> list[dict]:
+    return find_filled_plantilla_pairs(ROOT / "Examenes CAP" / "Cantabria", "cantabria")
+
+
+def find_alava_pairs() -> list[dict]:
+    return find_filled_plantilla_pairs(
+        ROOT / "Examenes CAP" / "Examenes Pais Vasco" / "Alava", "alava"
+    )
 
 
 def find_extremadura_pairs() -> list[dict]:
@@ -512,6 +688,9 @@ def find_extremadura_pairs() -> list[dict]:
     return pairs
 
 
+FILLED_REGIONS = frozenset({"valencia", "cantabria", "alava"})
+
+
 def convert_pair(pair: dict) -> list[dict]:
     q_text = pdf_text(pair["exam_pdf"])
     questions = parse_questions(q_text)
@@ -535,7 +714,7 @@ def convert_pair(pair: dict) -> list[dict]:
         validate(exam, pair["id"])
         return exam
 
-    if pair["region"] == "valencia":
+    if pair["region"] in FILLED_REGIONS:
         answers = parse_answer_key_valencia_filled(pair["key_pdf"])
     else:
         answers = parse_answer_key(pdf_text(pair["key_pdf"]))
@@ -552,19 +731,21 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--region",
-        choices=("cataluna", "valencia", "extremadura"),
+        choices=("cataluna", "valencia", "extremadura", "cantabria", "alava"),
         default="cataluna",
     )
     ap.add_argument("--limit", type=int, default=0, help="Solo N primeros pares")
     ap.add_argument("--id", type=str, default="", help="Solo este exam id")
     args = ap.parse_args()
 
-    if args.region == "valencia":
-        pairs = find_valencia_pairs()
-    elif args.region == "extremadura":
-        pairs = find_extremadura_pairs()
-    else:
-        pairs = find_cataluna_pairs()
+    finders = {
+        "cataluna": find_cataluna_pairs,
+        "valencia": find_valencia_pairs,
+        "extremadura": find_extremadura_pairs,
+        "cantabria": find_cantabria_pairs,
+        "alava": find_alava_pairs,
+    }
+    pairs = finders[args.region]()
 
     print(f"Pares {args.region} mercancías: {len(pairs)}")
     if args.id:

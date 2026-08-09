@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cantabria_febrero_2025",
+    "name": "Febrero 2025",
+    "date": "20250204",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\1ª convocatoria\\EXAMEN MERCANCIAS 4 FEBRERO 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\1ª convocatoria\\PLANTILLA MERCANCIAS 4 FEBRERO 2025.pdf"
+  },
+  {
+    "id": "cantabria_abril_2025",
+    "name": "Abril 2025",
+    "date": "20250403",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\2ª convocatoria\\EXAMEN MERCANCIAS 3 ABRIL 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\2ª convocatoria\\PLANTILLAS EXAMEN MERCANCIAS 3 ABRIL 2025.pdf"
+  },
+  {
+    "id": "cantabria_junio_2025",
+    "name": "Junio 2025",
+    "date": "20250605",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\3ª convocatoria\\EXAMEN MERCANCIAS 5 JUNIO 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\3ª convocatoria\\PLANTILLA MERCANCIAS EXAMEN 5 JUNIO 2025.pdf"
+  },
+  {
+    "id": "cantabria_agosto_2025",
+    "name": "Agosto 2025",
+    "date": "20250805",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\4ª convocatoria\\EXAMEN MERCANCIAS 5 AGOSTO 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\4ª convocatoria\\PLANTILLA MERCANCIAS 5 AGOSTO 2025.pdf"
+  },
+  {
+    "id": "cantabria_octubre_2025",
+    "name": "Octubre 2025",
+    "date": "20251002",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\5ª convocatoria\\EXAMEN CAP MERCANCIAS 2 OCTUBRE 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\5ª convocatoria\\PLANTILLA MERCANCIAS 2 OCTUBRE 2025.pdf"
+  },
+  {
+    "id": "cantabria_febrero_2026",
+    "name": "Febrero 2026",
+    "date": "20260203",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2026\\1ª convocatoria\\EXAMEN MERCANCIAS 3 FEBRERO 2026.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2026\\1ª convocatoria\\PLANTILLA MERCANCIAS 3 FEBRERO 2026.pdf"
+  },
+  {
+    "id": "cantabria_abril_2026",
+    "name": "Abril 2026",
+    "date": "20260407",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2026\\2ª convocatoria\\EXAMEN MERCANCIAS 7 ABRIL 2026.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2026\\2ª convocatoria\\PLANTILLA RESPUESTAS MERCANCIAS 7 ABRIL 2026.pdf"
+  },
+  {
+    "id": "cantabria_junio_2026",
+    "name": "Junio 2026",
+    "date": "20260604",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2026\\3ª convocatoria\\EXAMEN CAP MERCANCIAS 4 JUNIO 2026.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2026\\3ª convocatoria\\PLANTILLAS CAP MERCANCIAS 4 JUNIO 2026.pdf"
+  }
+]

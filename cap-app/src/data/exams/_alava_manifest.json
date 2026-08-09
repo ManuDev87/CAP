@@ -1,0 +1,162 @@
+[
+  {
+    "id": "alava_febrero_2023",
+    "name": "Febrero 2023",
+    "date": "20230203",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\1ª convocatoria\\EXAMEN MERCANCIAS.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\1ª convocatoria\\PLANTILLA MERCANCIAS.pdf"
+  },
+  {
+    "id": "alava_marzo_2023",
+    "name": "Marzo 2023",
+    "date": "20230331",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\2ª convocatoria\\examenMercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\2ª convocatoria\\PlantillaMercancias.pdf"
+  },
+  {
+    "id": "alava_junio_2023",
+    "name": "Junio 2023",
+    "date": "20230602",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\3ª convocatoria\\examenMercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\3ª convocatoria\\PLANTILLA MERCANCIAS.pdf"
+  },
+  {
+    "id": "alava_julio_2023",
+    "name": "Julio 2023",
+    "date": "20230714",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\4ª convocatoria\\examenMercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\4ª convocatoria\\Plantilla Mercancias.pdf"
+  },
+  {
+    "id": "alava_septiembre_2023",
+    "name": "Septiembre 2023",
+    "date": "20230929",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\5ª convocatoria\\Examen mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\5ª convocatoria\\Plantilla mercancias.pdf"
+  },
+  {
+    "id": "alava_noviembre_2023",
+    "name": "Noviembre 2023",
+    "date": "20231124",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\6ª convocatoria\\Examen mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2023\\6ª convocatoria\\Plantilla Respuestas Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_febrero_2024",
+    "name": "Febrero 2024",
+    "date": "20240202",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\1ª convocatoria\\20240202 Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\1ª convocatoria\\20240202 Plantilla Respuestas Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_marzo_2024",
+    "name": "Marzo 2024",
+    "date": "20240322",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\2ª convocatoria\\Examen mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\2ª convocatoria\\Plantilla Examen mercancias.pdf"
+  },
+  {
+    "id": "alava_mayo_2024",
+    "name": "Mayo 2024",
+    "date": "20240531",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\3ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\3ª convocatoria\\Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_julio_2024",
+    "name": "Julio 2024",
+    "date": "20240719",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\4ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\4ª convocatoria\\Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_septiembre_2024",
+    "name": "Septiembre 2024",
+    "date": "20240927",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\5ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\5ª convocatoria\\Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_noviembre_2024",
+    "name": "Noviembre 2024",
+    "date": "20241129",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\6ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2024\\6ª convocatoria\\Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_enero_2025",
+    "name": "Enero 2025",
+    "date": "20250131",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\1ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\1ª convocatoria\\20250131 Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_marzo_2025",
+    "name": "Marzo 2025",
+    "date": "20250328",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\2ª convocatoria\\Examen Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\2ª convocatoria\\Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_mayo_2025",
+    "name": "Mayo 2025",
+    "date": "20250530",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\3ª convocatoria\\20250530-examen-de-mercancias-pdf.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\3ª convocatoria\\20250530 Plantilla Examen Mercancias.pdf"
+  },
+  {
+    "id": "alava_julio_2025",
+    "name": "Julio 2025",
+    "date": "20250718",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\4ª convocatoria\\20250718-examen-de-mercancias-pdf.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2025\\4ª convocatoria\\plantilla-aplicacion_mercancias-pdf.pdf"
+  },
+  {
+    "id": "alava_enero_2026",
+    "name": "Enero 2026",
+    "date": "20260130",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\1ª convocatoria\\30012026-examen-de-mercancias-modelo-a-pdf.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\1ª convocatoria\\Plantilla respuestas Mercancias.pdf"
+  },
+  {
+    "id": "alava_marzo_2026",
+    "name": "Marzo 2026",
+    "date": "20260327",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\2ª convocatoria\\27032026-examen-de-mercancias-modelo-a-pdf.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\2ª convocatoria\\Plantilla Mercancias.pdf"
+  },
+  {
+    "id": "alava_mayo_2026",
+    "name": "Mayo 2026",
+    "date": "20260522",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\3ª convocatoria\\22052026-examen-de-mercancias-modelo-a-pdf.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\3ª convocatoria\\Plantilla mercancias.pdf"
+  },
+  {
+    "id": "alava_julio_2026",
+    "name": "Julio 2026",
+    "date": "20260717",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\4ª convocatoria\\Examen mercancias modelo A.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Alava\\2026\\4ª convocatoria\\Plantilla mercancias modelo A.pdf"
+  }
+]

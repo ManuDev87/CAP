@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/context/AppContext";
-import { communityRegions } from "@/lib/tests";
+import { communityRegions, regionTestCount } from "@/lib/tests";
 import { loadAllResultStats, loadPausedMap } from "@/lib/db";
 import type { ExamMode, TestMeta, TestResultStats } from "@/lib/types";
 import {
@@ -24,6 +24,7 @@ export default function TestSelectionScreen() {
   const [loadingTest, setLoadingTest] = useState<string | null>(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [regionId, setRegionId] = useState(communityRegions[0]?.id ?? "andalucia");
+  const [subregionId, setSubregionId] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const activeRegion = useMemo(
@@ -31,7 +32,28 @@ export default function TestSelectionScreen() {
       communityRegions.find((r) => r.id === regionId) ?? communityRegions[0],
     [regionId]
   );
-  const regionTests = activeRegion?.tests ?? [];
+  const subregions = activeRegion?.subregions;
+  const activeSubregion = useMemo(() => {
+    if (!subregions?.length) return null;
+    return (
+      subregions.find((s) => s.id === subregionId) ?? subregions[0] ?? null
+    );
+  }, [subregions, subregionId]);
+  const regionTests = activeSubregion
+    ? activeSubregion.tests
+    : (activeRegion?.tests ?? []);
+
+  useEffect(() => {
+    if (subregions?.length) {
+      setSubregionId((prev) =>
+        prev && subregions.some((s) => s.id === prev)
+          ? prev
+          : subregions[0]?.id ?? null
+      );
+    } else {
+      setSubregionId(null);
+    }
+  }, [regionId, subregions]);
 
   // Load paused indicators + pass/fail badges
   useEffect(() => {
@@ -139,31 +161,60 @@ export default function TestSelectionScreen() {
 
         {/* Community tabs */}
         <div className="region-tabs" role="tablist" aria-label="Comunidad autónoma">
-          {communityRegions.map((region) => (
-            <button
-              key={region.id}
-              type="button"
-              role="tab"
-              aria-selected={region.id === regionId}
-              className={`region-tab ${
-                region.id === regionId ? "region-tab-active" : ""
-              }`}
-              onClick={() => setRegionId(region.id)}
-            >
-              {region.name}
-              {region.tests.length > 0 && (
-                <span className="ml-1.5 opacity-80">({region.tests.length})</span>
-              )}
-            </button>
-          ))}
+          {communityRegions.map((region) => {
+            const count = regionTestCount(region);
+            return (
+              <button
+                key={region.id}
+                type="button"
+                role="tab"
+                aria-selected={region.id === regionId}
+                className={`region-tab ${
+                  region.id === regionId ? "region-tab-active" : ""
+                }`}
+                onClick={() => setRegionId(region.id)}
+              >
+                {region.name}
+                {count > 0 && (
+                  <span className="ml-1.5 opacity-80">({count})</span>
+                )}
+              </button>
+            );
+          })}
         </div>
+
+        {subregions && subregions.length > 0 && (
+          <div
+            className="subregion-tabs"
+            role="tablist"
+            aria-label="Territorio"
+          >
+            {subregions.map((sub) => (
+              <button
+                key={sub.id}
+                type="button"
+                role="tab"
+                aria-selected={sub.id === activeSubregion?.id}
+                className={`subregion-tab ${
+                  sub.id === activeSubregion?.id ? "subregion-tab-active" : ""
+                }`}
+                onClick={() => setSubregionId(sub.id)}
+              >
+                {sub.name}
+                {sub.tests.length > 0 && (
+                  <span className="ml-1.5 opacity-80">({sub.tests.length})</span>
+                )}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Grid */}
         <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3.5 bg-panelbg p-5 max-md:grid-cols-2 max-md:gap-2 max-md:p-2.5">
           {regionTests.length === 0 && (
             <div className="col-span-full rounded-xl border border-dashed border-ink-900/20 bg-white px-5 py-12 text-center">
               <p className="text-base font-bold text-ink-900">
-                {activeRegion?.name}
+                {activeSubregion?.name ?? activeRegion?.name}
               </p>
               <p className="mt-1.5 text-sm text-ink-400">
                 Todavía no hay tests disponibles para esta comunidad.

@@ -22,10 +22,18 @@ export interface TestMeta {
   img: string;
 }
 
+export interface CommunitySubregion {
+  id: string;
+  name: string;
+  tests: TestMeta[];
+}
+
 export interface CommunityRegion {
   id: string;
   name: string;
   tests: TestMeta[];
+  /** Si existe, al pulsar la CCAA se elige primero la provincia/territorio. */
+  subregions?: CommunitySubregion[];
 }
 
 export type UserRole = "student" | "teacher";

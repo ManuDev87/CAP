@@ -231,6 +231,15 @@
   .region-tab-active {
     @apply border-brand-500 bg-brand-500 text-white shadow-sm hover:border-brand-500 hover:bg-brand-600 hover:text-white;
   }
+  .subregion-tabs {
+    @apply flex flex-wrap items-center gap-2 border-b border-line bg-panelbg px-7 py-3 max-md:gap-1.5 max-md:px-4 max-md:py-2.5;
+  }
+  .subregion-tab {
+    @apply cursor-pointer rounded-lg border border-ink-900/12 bg-white px-3.5 py-1.5 text-sm font-semibold text-ink-600 transition-all duration-150 hover:border-brand-500/40 hover:text-brand-600 max-md:px-3 max-md:py-1 max-md:text-xs;
+  }
+  .subregion-tab-active {
+    @apply border-navy-700 bg-navy-700 text-white hover:border-navy-800 hover:bg-navy-800 hover:text-white;
+  }
   .test-card {
     @apply relative h-27.5 cursor-pointer overflow-hidden rounded-xl border border-ink-900/20 bg-navy-800 shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-ink-900/35 hover:shadow-card-hover;
     isolation: isolate;
