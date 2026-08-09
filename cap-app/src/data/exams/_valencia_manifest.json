@@ -1,0 +1,162 @@
+[
+  {
+    "id": "valencia_enero_2023",
+    "name": "Enero 2023",
+    "date": "20230128",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2023\\1ª convocatoria\\EXAMEN CAP MERCANCIAS 28-01-2023.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2023\\1ª convocatoria\\PLANTILLA MERCANCIAS 28-01-2023.pdf"
+  },
+  {
+    "id": "valencia_julio_2023",
+    "name": "Julio 2023",
+    "date": "20230715",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2023\\4ª convocatoria\\EXAMEN MERCANCIAS 15-07-23.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2023\\4ª convocatoria\\PLANTILLA MERCANCIAS 15-07-23.pdf"
+  },
+  {
+    "id": "valencia_septiembre_2023",
+    "name": "Septiembre 2023",
+    "date": "20230923",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2023\\5ª convocatoria\\EXAMEN MERCANCIAS 23-09-2023.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2023\\5ª convocatoria\\PLANTILLA CAP MERCANCIAS 23-09-2023.pdf"
+  },
+  {
+    "id": "valencia_noviembre_2023",
+    "name": "Noviembre 2023",
+    "date": "20231125",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2023\\6ª convocatoria\\EXAMEN MERCANCIAS 25-11-2023.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2023\\6ª convocatoria\\PLANTILLA CAP MERCANCIAS 25-11-2023.pdf"
+  },
+  {
+    "id": "valencia_enero_2024",
+    "name": "Enero 2024",
+    "date": "20240127",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\1ª convocatoria\\EXAMEN OBTENCION CAP MERCANCIAS 27-01-2024.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\1ª convocatoria\\PLANTILLA CAP MERCANCIAS 27-01-2024.pdf"
+  },
+  {
+    "id": "valencia_marzo_2024",
+    "name": "Marzo 2024",
+    "date": "20240323",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\2ª convocatoria\\EXAMEN MERCANCIAS 23-03-2024.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\2ª convocatoria\\PLANTILLA CAP MERCANCIAS 23-03-2024.pdf"
+  },
+  {
+    "id": "valencia_mayo_2024",
+    "name": "Mayo 2024",
+    "date": "20240525",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\3ª convocatoria\\EXAMEN CAP MERCANCIAS 25-05-2024 (A).pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\3ª convocatoria\\PLANTILLA MERCANCIAS 25_05_2024.pdf"
+  },
+  {
+    "id": "valencia_julio_2024",
+    "name": "Julio 2024",
+    "date": "20240713",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\4ª convocatoria\\EXAMEN OBTENCION DEL CAP MERCANCIAS 13-07-2024.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\4ª convocatoria\\PLANTILLA MERCANCIAS 13-07-2024.pdf"
+  },
+  {
+    "id": "valencia_septiembre_2024",
+    "name": "Septiembre 2024",
+    "date": "20240928",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\5ª convocatoria\\EXAMEN MERCANCIAS 28-09-2024.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\5ª convocatoria\\PLANTILLA MERCANCIAS 28-09-2024.pdf"
+  },
+  {
+    "id": "valencia_noviembre_2024",
+    "name": "Noviembre 2024",
+    "date": "20241130",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2024\\6ª convocatoria\\EXAMEN MERCANCIAS 30-11-2024.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2024\\6ª convocatoria\\PLANTILLA MERCANCIAS 30-11-2024.pdf"
+  },
+  {
+    "id": "valencia_febrero_2025",
+    "name": "Febrero 2025",
+    "date": "20250201",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\1ª convocatoria\\EXAMEN MERCANCIAS 01-02-2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\1ª convocatoria\\PLANTILLA MERCANCIAS 01-02-2025.pdf"
+  },
+  {
+    "id": "valencia_abril_2025",
+    "name": "Abril 2025",
+    "date": "20250405",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\2ª convocatoria\\EXAMEN MERCANCIAS 05-04-2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\2ª convocatoria\\PLANTILLA CAP MERCANCIAS 05-04-2025.pdf"
+  },
+  {
+    "id": "valencia_mayo_2025",
+    "name": "Mayo 2025",
+    "date": "20250531",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\3ª convocatoria\\EXAMEN CAP MERCANCIAS 31_05_2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\3ª convocatoria\\PLANTILLA CAP MERCANCIAS 31_05_2025.pdf"
+  },
+  {
+    "id": "valencia_julio_2025",
+    "name": "Julio 2025",
+    "date": "20250719",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\4ª convocatoria\\EXAMEN MERCANCIAS 19_07_2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\4ª convocatoria\\PLANTILLA MERCANCIAS 19_07_2025.pdf"
+  },
+  {
+    "id": "valencia_septiembre_2025",
+    "name": "Septiembre 2025",
+    "date": "20250927",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\5ª convocatoria\\EXAMEN MERCANCIAS 27_09_2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\5ª convocatoria\\PLANTILLA CAP MERCANCIAS 27_09_2925.pdf"
+  },
+  {
+    "id": "valencia_noviembre_2025",
+    "name": "Noviembre 2025",
+    "date": "20251129",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2025\\6ª convocatoria\\EXAMEN MERCANCIAS 29-11-2025.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2025\\6ª convocatoria\\PLANTILLA CAP MERCANCIAS 29-11-2025.pdf"
+  },
+  {
+    "id": "valencia_febrero_2026",
+    "name": "Febrero 2026",
+    "date": "20260207",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2026\\1ª convocatoria\\EXAMEN MERCANCIAS 07_02_2026.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2026\\1ª convocatoria\\PLANTILLA CAP MERCANCIAS 07_02_2026.pdf"
+  },
+  {
+    "id": "valencia_marzo_2026",
+    "name": "Marzo 2026",
+    "date": "20260328",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2026\\2ª convocatoria\\EXAMEN MERCANCIAS 28-03-2026.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2026\\2ª convocatoria\\PLANTILLA CAP MERCANCIAS 28-03-2026.pdf"
+  },
+  {
+    "id": "valencia_mayo_2026",
+    "name": "Mayo 2026",
+    "date": "20260530",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2026\\3ª convocatoria\\EXAMEN OBTENCION CAP MERCANCIAS 30-05-2026.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2026\\3ª convocatoria\\PLANTILLA CAP MERCANCIAS 30_05_2026.pdf"
+  },
+  {
+    "id": "valencia_julio_2026",
+    "name": "Julio 2026",
+    "date": "20260718",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Valencia\\2026\\4ª convocatoria\\EXAMEN CAP MERCANCIAS 18-07-2026.pdf",
+    "key_pdf": "Examenes CAP\\Valencia\\2026\\4ª convocatoria\\PLANTILLA CAP MERCANCIAS 18-07-2026.pdf"
+  }
+]

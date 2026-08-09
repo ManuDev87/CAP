@@ -1,0 +1,162 @@
+[
+  {
+    "id": "cataluna_marzo_2023",
+    "name": "Marzo 2023",
+    "date": "20230324",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2023\\2ª convocatoria\\20230324-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2023\\2ª convocatoria\\20230324-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_septiembre_2023",
+    "name": "Septiembre 2023",
+    "date": "20230915",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2023\\5ª convocatoria\\20230915-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2023\\5ª convocatoria\\20230915-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_noviembre_2023",
+    "name": "Noviembre 2023",
+    "date": "20231115",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2023\\6ª convocatoria\\20231115-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2023\\6ª convocatoria\\20231115-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_enero_2024",
+    "name": "Enero 2024",
+    "date": "20240119",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\1ª convocatoria\\20240119-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\1ª convocatoria\\20240119-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_marzo_2024",
+    "name": "Marzo 2024",
+    "date": "20240322",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\2ª convocatoria\\20240322-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\2ª convocatoria\\20240322-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_mayo_2024",
+    "name": "Mayo 2024",
+    "date": "20240522",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\3ª convocatoria\\20240522-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\3ª convocatoria\\20240522-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_julio_2024",
+    "name": "Julio 2024",
+    "date": "20240712",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\4ª convocatoria\\20240712-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\4ª convocatoria\\20240712-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_septiembre_2024",
+    "name": "Septiembre 2024",
+    "date": "20240920",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\5ª convocatoria\\20240920-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\5ª convocatoria\\20240920-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_noviembre_2024",
+    "name": "Noviembre 2024",
+    "date": "20241113",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\6ª convocatoria\\20241113-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\6ª convocatoria\\20241113-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_noviembre_2024_29",
+    "name": "Noviembre 2024 (29)",
+    "date": "20241129",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2024\\7ª convocatoria\\20241129-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2024\\7ª convocatoria\\20241129-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_enero_2025",
+    "name": "Enero 2025",
+    "date": "20250124",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\1ª convocatoria\\20250124-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\1ª convocatoria\\20250124-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_marzo_2025",
+    "name": "Marzo 2025",
+    "date": "20250321",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\2ª convocatoria\\20250321-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\2ª convocatoria\\20250321-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_mayo_2025",
+    "name": "Mayo 2025",
+    "date": "20250514",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\3ª convocatoria\\20250514-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\3ª convocatoria\\20250514-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_julio_2025",
+    "name": "Julio 2025",
+    "date": "20250718",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\4ª convocatoria\\20250718-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\4ª convocatoria\\20250718-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_septiembre_2025",
+    "name": "Septiembre 2025",
+    "date": "20250919",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\5ª convocatoria\\20250919-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\5ª convocatoria\\20250919-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_noviembre_2025",
+    "name": "Noviembre 2025",
+    "date": "20251112",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2025\\6ª convocatoria\\20251112-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2025\\6ª convocatoria\\20251112-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_enero_2026",
+    "name": "Enero 2026",
+    "date": "20260123",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2026\\1ª convocatoria\\20260123-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2026\\1ª convocatoria\\20260123-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_marzo_2026",
+    "name": "Marzo 2026",
+    "date": "20260320",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2026\\2ª convocatoria\\20260320-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2026\\2ª convocatoria\\20260320-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_mayo_2026",
+    "name": "Mayo 2026",
+    "date": "20260522",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2026\\3ª convocatoria\\20260522-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2026\\3ª convocatoria\\20260522-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  },
+  {
+    "id": "cataluna_julio_2026",
+    "name": "Julio 2026",
+    "date": "20260717",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cataluña\\2026\\4ª convocatoria\\20260717-questionari-CAP-mercaderies-model-A-castella.pdf",
+    "key_pdf": "Examenes CAP\\Cataluña\\2026\\4ª convocatoria\\20260717-plantilla-correccio-CAP-mercaderies-model-A.pdf"
+  }
+]
