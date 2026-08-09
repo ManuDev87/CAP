@@ -1,0 +1,82 @@
+[
+  {
+    "id": "guipuzkoa_enero_2025",
+    "name": "Enero 2025",
+    "date": "20250101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\1ª convocatoria\\ExamenA_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\1ª convocatoria\\Respuestas A y B 1ªconvocatoria 24.01.2025 (1).pdf"
+  },
+  {
+    "id": "guipuzkoa_marzo_2025",
+    "name": "Marzo 2025",
+    "date": "20250301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\2ª convocatoria\\ExamenA_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\2ª convocatoria\\Plantilla examen mercancias.pdf"
+  },
+  {
+    "id": "guipuzkoa_mayo_2025",
+    "name": "Mayo 2025",
+    "date": "20250501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\3ª convocatoria\\ExamenA_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\3ª convocatoria\\Plantillas respuestas Mercancias A Y B - Viajeros.pdf"
+  },
+  {
+    "id": "guipuzkoa_julio_2025",
+    "name": "Julio 2025",
+    "date": "20250701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\4ª convocatoria\\ExamenA_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\4ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_septiembre_2025",
+    "name": "Septiembre 2025",
+    "date": "20250901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\5ª convocatoria\\Examen mercancias A 26.09.2025.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\5ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_noviembre_2025",
+    "name": "Noviembre 2025",
+    "date": "20251101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\6ª convocatoria\\2025-11-28 Mercancias A.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2025\\6ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_enero_2026",
+    "name": "Enero 2026",
+    "date": "20260101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\1ª convocatoria\\EXAMEN A_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\1ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_marzo_2026",
+    "name": "Marzo 2026",
+    "date": "20260301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\2ª convocatoria\\ExamenA_Mercancias.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\2ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_mayo_2026",
+    "name": "Mayo 2026",
+    "date": "20260501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\3ª convocatoria\\EXAMEN- MERCANCIAS-A.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\3ª convocatoria\\Plantilla respuestas Mercancias A y B - Viajeros A y B.pdf"
+  },
+  {
+    "id": "guipuzkoa_julio_2026",
+    "name": "Julio 2026",
+    "date": "20260701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\4ª convocatoria\\ExamenA_MERCANCIAS.pdf",
+    "key_pdf": "Examenes CAP\\Examenes Pais Vasco\\Guipuzkoa\\2026\\4ª convocatoria\\Plantillas respuestas.pdf"
+  }
+]

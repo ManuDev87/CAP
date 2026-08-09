@@ -84,7 +84,8 @@ PAGE_NUM_ONLY = re.compile(r"^\d{1,2}$")
 # Evitar horas tipo "00.00" / "24.00" (dígito justo tras el punto).
 Q_START = re.compile(
     r"^(?:"
-    r"([1-9]\d{0,2})\s*\.\s*(?!\d)(.+)"
+    # Evita falsos positivos en miles europeos: "3. 500 kg" / "3.500 kg"
+    r"([1-9]\d{0,2})\s*\.(?!\s*\d)(\s*.+)"
     r"|"
     r"([1-9]\d{0,2})\s+([A-ZÁÉÍÓÚÜÑ¿¡].*)"
     r")$"

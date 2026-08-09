@@ -1,0 +1,34 @@
+[
+  {
+    "id": "murcia_enero_2026",
+    "name": "Enero 2026",
+    "date": "20260131",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Murcia\\2026\\1ª convocatoria\\204298-Mercancias_Tipo 1_CAP 1-2026.pdf",
+    "key_pdf": "Examenes CAP\\Murcia\\2026\\1ª convocatoria\\Plantilla 204298-Mercancias_Tipo 1_CAP 1-2026.pdf"
+  },
+  {
+    "id": "murcia_marzo_2026",
+    "name": "Marzo 2026",
+    "date": "20260328",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Murcia\\2026\\2ª convocatoria\\205553-MERCANCIAS TIPO 1_CAP2-2026.pdf",
+    "key_pdf": "Examenes CAP\\Murcia\\2026\\2ª convocatoria\\descarga.pdf"
+  },
+  {
+    "id": "murcia_mayo_2026",
+    "name": "Mayo 2026",
+    "date": "20260530",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Murcia\\2026\\3ª convocatoria\\206986-Mercancias_TIPO 1_CAP 3-2026.pdf",
+    "key_pdf": "Examenes CAP\\Murcia\\2026\\3ª convocatoria\\Plantilla 206986-Mercancias_TIPO 1_CAP 3-2026.pdf"
+  },
+  {
+    "id": "murcia_julio_2026",
+    "name": "Julio 2026",
+    "date": "20260725",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Murcia\\2026\\4ª convocatoria\\206986-Mercancias_TIPO 1_CAP 4-2026.pdf",
+    "key_pdf": "Examenes CAP\\Murcia\\2026\\4ª convocatoria\\208202-Plantilla Correccion_CAP 4-2026_Mercancias T1.pdf"
+  }
+]

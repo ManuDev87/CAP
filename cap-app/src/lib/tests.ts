@@ -109,6 +109,26 @@ const alavaTests: TestMeta[] = [
   { id: "alava_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
 ];
 
+const guipuzkoaTests: TestMeta[] = [
+  { id: "guipuzkoa_enero_2025", name: "Enero 2025", img: "/img/truck1.jpg" },
+  { id: "guipuzkoa_marzo_2025", name: "Marzo 2025", img: "/img/truck2.jpg" },
+  { id: "guipuzkoa_mayo_2025", name: "Mayo 2025", img: "/img/truck3.jpg" },
+  { id: "guipuzkoa_julio_2025", name: "Julio 2025", img: "/img/truck4.jpg" },
+  { id: "guipuzkoa_septiembre_2025", name: "Septiembre 2025", img: "/img/truck1.jpg" },
+  { id: "guipuzkoa_noviembre_2025", name: "Noviembre 2025", img: "/img/truck2.jpg" },
+  { id: "guipuzkoa_enero_2026", name: "Enero 2026", img: "/img/truck3.jpg" },
+  { id: "guipuzkoa_marzo_2026", name: "Marzo 2026", img: "/img/truck4.jpg" },
+  { id: "guipuzkoa_mayo_2026", name: "Mayo 2026", img: "/img/truck1.jpg" },
+  { id: "guipuzkoa_julio_2026", name: "Julio 2026", img: "/img/truck2.jpg" },
+];
+
+const murciaTests: TestMeta[] = [
+  { id: "murcia_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "murcia_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "murcia_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "murcia_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
 const galiciaTests: TestMeta[] = [
   { id: "galicia_enero_2023", name: "Enero 2023", img: "/img/truck1.jpg" },
   { id: "galicia_marzo_2023", name: "Marzo 2023", img: "/img/truck2.jpg" },
@@ -167,12 +187,13 @@ export const communityRegions: CommunityRegion[] = [
     tests: [],
     subregions: [
       { id: "alava", name: "Álava", tests: alavaTests },
-      { id: "guipuzkoa", name: "Guipúzcoa", tests: [] },
+      { id: "guipuzkoa", name: "Guipúzcoa", tests: guipuzkoaTests },
       { id: "vizcaya", name: "Vizcaya", tests: [] },
     ],
   },
   { id: "galicia", name: "Galicia", tests: galiciaTests },
   { id: "extremadura", name: "Extremadura", tests: extremaduraTests },
+  { id: "murcia", name: "Murcia", tests: murciaTests },
 ];
 
 function regionTestsFlat(region: CommunityRegion): TestMeta[] {
@@ -336,6 +357,22 @@ const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
   alava_marzo_2026: () => import("@/data/exams/alava_marzo_2026.json"),
   alava_mayo_2026: () => import("@/data/exams/alava_mayo_2026.json"),
   alava_julio_2026: () => import("@/data/exams/alava_julio_2026.json"),
+  // Guipúzcoa (País Vasco) — examen bilingüe / plantilla OMR o texto
+  guipuzkoa_enero_2025: () => import("@/data/exams/guipuzkoa_enero_2025.json"),
+  guipuzkoa_marzo_2025: () => import("@/data/exams/guipuzkoa_marzo_2025.json"),
+  guipuzkoa_mayo_2025: () => import("@/data/exams/guipuzkoa_mayo_2025.json"),
+  guipuzkoa_julio_2025: () => import("@/data/exams/guipuzkoa_julio_2025.json"),
+  guipuzkoa_septiembre_2025: () => import("@/data/exams/guipuzkoa_septiembre_2025.json"),
+  guipuzkoa_noviembre_2025: () => import("@/data/exams/guipuzkoa_noviembre_2025.json"),
+  guipuzkoa_enero_2026: () => import("@/data/exams/guipuzkoa_enero_2026.json"),
+  guipuzkoa_marzo_2026: () => import("@/data/exams/guipuzkoa_marzo_2026.json"),
+  guipuzkoa_mayo_2026: () => import("@/data/exams/guipuzkoa_mayo_2026.json"),
+  guipuzkoa_julio_2026: () => import("@/data/exams/guipuzkoa_julio_2026.json"),
+  // Murcia — plantilla OMR escaneada (sidecar)
+  murcia_enero_2026: () => import("@/data/exams/murcia_enero_2026.json"),
+  murcia_marzo_2026: () => import("@/data/exams/murcia_marzo_2026.json"),
+  murcia_mayo_2026: () => import("@/data/exams/murcia_mayo_2026.json"),
+  murcia_julio_2026: () => import("@/data/exams/murcia_julio_2026.json"),
   // Galicia — mercancías modelo A (castellano)
   galicia_enero_2023: () => import("@/data/exams/galicia_enero_2023.json"),
   galicia_marzo_2023: () => import("@/data/exams/galicia_marzo_2023.json"),
