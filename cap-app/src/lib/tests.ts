@@ -1,27 +1,146 @@
 import type { CommunityRegion, Question, TestMeta } from "./types";
 
-const andaluciaTests: TestMeta[] = [
-  { id: "febrero_2023", name: "Febrero 2023", img: "/img/truck1.jpg" },
-  { id: "marzo_2023", name: "Marzo 2023", img: "/img/truck2.jpg" },
-  { id: "junio_2023", name: "Junio 2023", img: "/img/truck3.jpg" },
-  { id: "julio_2023", name: "Julio 2023", img: "/img/truck4.jpg" },
-  { id: "septiembre_2023", name: "Septiembre 2023", img: "/img/truck1.jpg" },
-  { id: "noviembre_2023", name: "Noviembre 2023", img: "/img/truck2.jpg" },
-  { id: "enero_2024", name: "Enero 2024", img: "/img/truck3.jpg" },
-  { id: "marzo_2024", name: "Marzo 2024", img: "/img/truck4.jpg" },
-  { id: "mayo_2024", name: "Mayo 2024", img: "/img/truck1.jpg" },
-  { id: "julio_2024", name: "Julio 2024", img: "/img/truck2.jpg" },
-  { id: "septiembre_2024", name: "Septiembre 2024", img: "/img/truck3.jpg" },
-  { id: "noviembre_2024", name: "Noviembre 2024", img: "/img/truck4.jpg" },
-  { id: "enero_2025", name: "Enero 2025", img: "/img/truck1.jpg" },
-  { id: "marzo_2025", name: "Marzo 2025", img: "/img/truck2.jpg" },
-  { id: "mayo_2025", name: "Mayo 2025", img: "/img/truck3.jpg" },
-  { id: "julio_2025", name: "Julio 2025", img: "/img/truck4.jpg" },
-  { id: "septiembre_2025", name: "Septiembre 2025", img: "/img/truck1.jpg" },
-  { id: "noviembre_2025", name: "Noviembre 2025", img: "/img/truck2.jpg" },
-  { id: "enero_2026", name: "Enero 2026", img: "/img/truck3.jpg" },
-  { id: "marzo_2026", name: "Marzo 2026", img: "/img/truck4.jpg" },
-  { id: "mayo_2026", name: "Mayo 2026", img: "/img/truck1.jpg" },
+const almeriaTests: TestMeta[] = [
+  { id: "almeria_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "almeria_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "almeria_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "almeria_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "almeria_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "almeria_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "almeria_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "almeria_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "almeria_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "almeria_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "almeria_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "almeria_noviembre_2025", name: "Noviembre 2025", img: "/img/truck4.jpg" },
+  { id: "almeria_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "almeria_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "almeria_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "almeria_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
+const cadizTests: TestMeta[] = [
+  { id: "cadiz_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "cadiz_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "cadiz_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "cadiz_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "cadiz_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "cadiz_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "cadiz_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "cadiz_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "cadiz_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "cadiz_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "cadiz_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "cadiz_enero_2026", name: "Enero 2026", img: "/img/truck4.jpg" },
+  { id: "cadiz_marzo_2026", name: "Marzo 2026", img: "/img/truck1.jpg" },
+  { id: "cadiz_mayo_2026", name: "Mayo 2026", img: "/img/truck2.jpg" },
+  { id: "cadiz_julio_2026", name: "Julio 2026", img: "/img/truck3.jpg" },
+];
+
+const cordobaTests: TestMeta[] = [
+  { id: "cordoba_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "cordoba_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "cordoba_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "cordoba_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "cordoba_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "cordoba_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "cordoba_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "cordoba_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "cordoba_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "cordoba_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "cordoba_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "cordoba_noviembre_2025", name: "Noviembre 2025", img: "/img/truck4.jpg" },
+  { id: "cordoba_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "cordoba_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "cordoba_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "cordoba_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
+const granadaTests: TestMeta[] = [
+  { id: "granada_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "granada_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "granada_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "granada_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "granada_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "granada_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "granada_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "granada_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "granada_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "granada_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "granada_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "granada_noviembre_2025", name: "Noviembre 2025", img: "/img/truck4.jpg" },
+  { id: "granada_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "granada_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "granada_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "granada_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
+const huelvaTests: TestMeta[] = [
+  { id: "huelva_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "huelva_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "huelva_noviembre_2025", name: "Noviembre 2025", img: "/img/truck3.jpg" },
+  { id: "huelva_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
+const jaenTests: TestMeta[] = [
+  { id: "jaen_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "jaen_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "jaen_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "jaen_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "jaen_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "jaen_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "jaen_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "jaen_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "jaen_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "jaen_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "jaen_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "jaen_noviembre_2025", name: "Noviembre 2025", img: "/img/truck4.jpg" },
+  { id: "jaen_enero_2026", name: "Enero 2026", img: "/img/truck1.jpg" },
+  { id: "jaen_marzo_2026", name: "Marzo 2026", img: "/img/truck2.jpg" },
+  { id: "jaen_mayo_2026", name: "Mayo 2026", img: "/img/truck3.jpg" },
+  { id: "jaen_julio_2026", name: "Julio 2026", img: "/img/truck4.jpg" },
+];
+
+const malagaTests: TestMeta[] = [
+  { id: "malaga_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
+  { id: "malaga_marzo_2024", name: "Marzo 2024", img: "/img/truck2.jpg" },
+  { id: "malaga_mayo_2024", name: "Mayo 2024", img: "/img/truck3.jpg" },
+  { id: "malaga_julio_2024", name: "Julio 2024", img: "/img/truck4.jpg" },
+  { id: "malaga_septiembre_2024", name: "Septiembre 2024", img: "/img/truck1.jpg" },
+  { id: "malaga_noviembre_2024", name: "Noviembre 2024", img: "/img/truck2.jpg" },
+  { id: "malaga_enero_2025", name: "Enero 2025", img: "/img/truck3.jpg" },
+  { id: "malaga_marzo_2025", name: "Marzo 2025", img: "/img/truck4.jpg" },
+  { id: "malaga_mayo_2025", name: "Mayo 2025", img: "/img/truck1.jpg" },
+  { id: "malaga_julio_2025", name: "Julio 2025", img: "/img/truck2.jpg" },
+  { id: "malaga_septiembre_2025", name: "Septiembre 2025", img: "/img/truck3.jpg" },
+  { id: "malaga_enero_2026", name: "Enero 2026", img: "/img/truck4.jpg" },
+  { id: "malaga_marzo_2026", name: "Marzo 2026", img: "/img/truck1.jpg" },
+  { id: "malaga_mayo_2026", name: "Mayo 2026", img: "/img/truck2.jpg" },
+  { id: "malaga_julio_2026", name: "Julio 2026", img: "/img/truck3.jpg" },
+];
+
+const sevillaTests: TestMeta[] = [
+  { id: "sevilla_febrero_2023", name: "Febrero 2023", img: "/img/truck1.jpg" },
+  { id: "sevilla_marzo_2023", name: "Marzo 2023", img: "/img/truck2.jpg" },
+  { id: "sevilla_junio_2023", name: "Junio 2023", img: "/img/truck3.jpg" },
+  { id: "sevilla_julio_2023", name: "Julio 2023", img: "/img/truck4.jpg" },
+  { id: "sevilla_septiembre_2023", name: "Septiembre 2023", img: "/img/truck1.jpg" },
+  { id: "sevilla_noviembre_2023", name: "Noviembre 2023", img: "/img/truck2.jpg" },
+  { id: "sevilla_enero_2024", name: "Enero 2024", img: "/img/truck3.jpg" },
+  { id: "sevilla_marzo_2024", name: "Marzo 2024", img: "/img/truck4.jpg" },
+  { id: "sevilla_mayo_2024", name: "Mayo 2024", img: "/img/truck1.jpg" },
+  { id: "sevilla_julio_2024", name: "Julio 2024", img: "/img/truck2.jpg" },
+  { id: "sevilla_septiembre_2024", name: "Septiembre 2024", img: "/img/truck3.jpg" },
+  { id: "sevilla_noviembre_2024", name: "Noviembre 2024", img: "/img/truck4.jpg" },
+  { id: "sevilla_enero_2025", name: "Enero 2025", img: "/img/truck1.jpg" },
+  { id: "sevilla_marzo_2025", name: "Marzo 2025", img: "/img/truck2.jpg" },
+  { id: "sevilla_mayo_2025", name: "Mayo 2025", img: "/img/truck3.jpg" },
+  { id: "sevilla_julio_2025", name: "Julio 2025", img: "/img/truck4.jpg" },
+  { id: "sevilla_septiembre_2025", name: "Septiembre 2025", img: "/img/truck1.jpg" },
+  { id: "sevilla_noviembre_2025", name: "Noviembre 2025", img: "/img/truck2.jpg" },
+  { id: "sevilla_enero_2026", name: "Enero 2026", img: "/img/truck3.jpg" },
+  { id: "sevilla_marzo_2026", name: "Marzo 2026", img: "/img/truck4.jpg" },
+  { id: "sevilla_mayo_2026", name: "Mayo 2026", img: "/img/truck1.jpg" },
 ];
 
 const catalunaTests: TestMeta[] = [
@@ -177,7 +296,21 @@ const galiciaTests: TestMeta[] = [
 
 /** Comunidades autónomas disponibles en el portal del alumno. */
 export const communityRegions: CommunityRegion[] = [
-  { id: "andalucia", name: "Andalucía", tests: andaluciaTests },
+  {
+    id: "andalucia",
+    name: "Andalucía",
+    tests: [],
+    subregions: [
+      { id: "almeria", name: "Almería", tests: almeriaTests },
+      { id: "cadiz", name: "Cádiz", tests: cadizTests },
+      { id: "cordoba", name: "Córdoba", tests: cordobaTests },
+      { id: "granada", name: "Granada", tests: granadaTests },
+      { id: "huelva", name: "Huelva", tests: huelvaTests },
+      { id: "jaen", name: "Jaén", tests: jaenTests },
+      { id: "malaga", name: "Málaga", tests: malagaTests },
+      { id: "sevilla", name: "Sevilla", tests: sevillaTests },
+    ],
+  },
   { id: "cataluna", name: "Cataluña", tests: catalunaTests },
   { id: "valencia", name: "Valencia", tests: valenciaTests },
   { id: "cantabria", name: "Cantabria", tests: cantabriaTests },
@@ -211,48 +344,244 @@ export function regionTestCount(region: CommunityRegion): number {
 }
 
 export const testPdfUrls: Record<string, string> = {
-  febrero_2023:
+  sevilla_febrero_2023:
     "https://web.araba.eus/documents/1247685/1249405/PLANTILLA+MERCANCIAS.pdf/2b3142dd-2c5d-73f1-358d-a72acdefeaab?t=1675426465593",
-  marzo_2023:
+  sevilla_marzo_2023:
     "https://web.araba.eus/documents/1247685/1248559/PlantillaMercancias.pdf/baf75bf5-c8c3-073f-6431-eed78886082c?t=1680260555891",
-  junio_2023:
+  sevilla_junio_2023:
     "https://web.araba.eus/documents/1247685/1249489/PLANTILLA+MERCANCIAS.pdf/a191e2d8-87f9-2d85-3fae-74125e9d2fb9?t=1685704851002",
-  julio_2023:
+  sevilla_julio_2023:
     "https://web.araba.eus/documents/1247685/1249509/Plantilla+Mercancias.pdf/a59274b8-68a2-6ec4-2919-57163c2a1d58?t=1689335365851",
-  septiembre_2023:
+  sevilla_septiembre_2023:
     "https://web.araba.eus/documents/1247685/1249519/20230929+Plantilla+Examen+Mercanc%C3%ADas.pdf/1a4394c5-7a90-674a-a53f-2cf599c22af0?t=1695992158931",
-  noviembre_2023:
+  sevilla_noviembre_2023:
     "https://web.araba.eus/documents/1247685/1249536/20231124+Plantilla+Respuestas+Examen+Mercanc%C3%ADas.pdf/49f865b0-09c3-d3f5-1d86-640f2cec32e9?t=1701076611807",
-  enero_2024:
+  sevilla_enero_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_se_cap1_2024.pdf",
-  marzo_2024:
+  sevilla_marzo_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_se_cap2_2024.pdf",
-  mayo_2024:
+  sevilla_mayo_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen-a_mer_se_cap3_2024.pdf",
-  julio_2024:
+  sevilla_julio_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_se_cap4_2024_modelo%20A.pdf",
-  septiembre_2024:
+  sevilla_septiembre_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_merc-modeloA_se_cap5_2024.pdf",
-  noviembre_2024:
+  sevilla_noviembre_2024:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer-A_se_cap6_2024.pdf",
-  enero_2025:
+  sevilla_enero_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_merc-modeloA_se_cap5_2025_0.pdf",
-  marzo_2025:
+  sevilla_marzo_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_cr_mer_se_mod-a_cap2_2025.pdf",
-  mayo_2025:
+  sevilla_mayo_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_A_se_cap3_2025.pdf",
-  julio_2025:
+  sevilla_julio_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_se_cap4_modeloA.pdf",
-  septiembre_2025:
+  sevilla_septiembre_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_se_cap5_2025_opci%C3%B3n%20A.pdf",
-  noviembre_2025:
+  sevilla_noviembre_2025:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf",
-  enero_2026:
+  sevilla_enero_2026:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf",
-  marzo_2026:
+  sevilla_marzo_2026:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Examen%20con%20respuestas%20mercanc%C3%ADas%20A_0.pdf",
-  mayo_2026:
+  sevilla_mayo_2026:
     "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/Examen%20con%20respuestas%20mercanc%C3%ADas%20b.pdf",
+  almeria_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_al_cap1_2024.pdf",
+  almeria_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_al_cap1_2025%20modelo%20a.pdf.pdf",
+  almeria_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_al_cap1_2026%20MODELO%20A.pdf",
+  almeria_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_mer_al_cap4_2024_mod-A.pdf",
+  almeria_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_al_cap4_2025%20MODELO%20A.pdf",
+  almeria_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_mer_al_cap4_2026_m-A.pdf",
+  almeria_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_al_cap2_modeloA_2024.pdf",
+  almeria_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_mer_al_cap2_2025%20modeloA.pdf",
+  almeria_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_mer_al_cap2_2026%20MODELO%20A.pdf",
+  almeria_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_mer_al_cap3_2024_modelo-a.pdf",
+  almeria_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_al_cap3_2025%20MODELO%20A.pdf",
+  almeria_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_mer_al_cap3_2026%20MODELO%20A.pdf",
+  almeria_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer_al_cap6_2024_mA.pdf",
+  almeria_noviembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_al_cap6_2025%20MODELO%20A.pdf",
+  almeria_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_al_cap5_2024_modelo-A.pdf",
+  almeria_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_al_cap5_2025%20MODELO%20A.pdf",
+  cadiz_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_merc_ca_cap1_2024.pdf",
+  cadiz_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_ca_cap1_2025.pdf.pdf",
+  cadiz_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20corregido%20mercanc%C3%ADas_0.pdf",
+  cadiz_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_ca_cap4_2024.pdf",
+  cadiz_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_ca_cap4_2025.pdf",
+  cadiz_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_mer_ca_cap4_2026_0.pdf",
+  cadiz_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_ca_cap2_2024.pdf",
+  cadiz_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_ca_cap2_2025.pdf.pdf",
+  cadiz_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/RESPUESTAS%20EXAMEN%20CAP%20MERCANCIAS.pdf",
+  cadiz_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_mer_ca_cap3_2024.pdf",
+  cadiz_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_ca_cap3_2025.pdf",
+  cadiz_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/RESPUESTAS%20EXAMEN%20MERCANCIAS.pdf",
+  cadiz_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_mer_ca_cap6_2024.pdf",
+  cadiz_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_mercanc%C3%ADas_ca_cap5_2024.pdf",
+  cadiz_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_ca_cap5_2025.pdf",
+  cordoba_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_co_cap1_2024.pdf",
+  cordoba_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen-c_mer_co_cap1_2025.pdf",
+  cordoba_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_co_cap1_2026.pdf",
+  cordoba_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_mer_co_cap4_2024.pdf",
+  cordoba_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_co_capn%C2%BA4_2025.pdf",
+  cordoba_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_mer_co_cap4_2026.pdf",
+  cordoba_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/plantilla_mer_co_cap2_2024_2.pdf",
+  cordoba_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_co_capn%C2%BA2_2025.pdf",
+  cordoba_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_mer_co_cap2_2026.pdf",
+  cordoba_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/plantilla_%20mer_co_cap3_2024.pdf",
+  cordoba_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_co_capn%C2%BA3_2025.pdf",
+  cordoba_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_mer_co_capn%C2%BA3_2026.pdf",
+  cordoba_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer_co_cap6_2024.pdf",
+  cordoba_noviembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_co_capn%C2%BA6_2025-1_0.pdf",
+  cordoba_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_co_cap5_2024.pdf",
+  cordoba_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_co_cap5_2025_0.pdf",
+  granada_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/mer_examen_gr_cap1_2024.pdf",
+  granada_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_mer_gr_cap1_2025.pdf",
+  granada_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/examen_mer_gr_cap1_2026.pdf",
+  granada_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_gr_cap4_2024.pdf",
+  granada_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_gr_cap4_2025.pdf",
+  granada_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_A_mer_gr_cap4_2026.pdf",
+  granada_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_gr_cap2_2024.pdf",
+  granada_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_mer_gr_cap2_2025.pdf",
+  granada_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/1%20examenA_mer_gr_cap2_2026.pdf",
+  granada_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/mer_examen_gr_cap3_2024.pdf",
+  granada_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_gr_cap3_2025.pdf",
+  granada_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/examenA_mer_gr_cap3_2026.pdf",
+  granada_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_mer_gr_cap6_2024.pdf",
+  granada_noviembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/examen_mer_gr_cap6_2025.pdf",
+  granada_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/mer_examen_gr_cap5_2024.pdf",
+  granada_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_gr_cap5_2025.pdf",
+  huelva_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_hu_cap4_2025.pdf",
+  huelva_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/hu_plantilla_mer_cap4_%202026.pdf",
+  huelva_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_hu_cap3_2025.pdf",
+  huelva_noviembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/mercancias%20plantilla%2022%20noviembre%202025-2.pdf",
+  jaen_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_ja_cap1_2024.pdf",
+  jaen_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_ja_cap1_2025.pdf",
+  jaen_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_ja_cap1_2026.pdf",
+  jaen_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_merc_ja_cap4_2024.pdf",
+  jaen_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_merc_ja_cap4_2025.pdf",
+  jaen_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_merc_ja_cap4_2026.pdf",
+  jaen_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_merc_ja_cap2_2024.pdf",
+  jaen_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_ja_cap2_2025.pdf",
+  jaen_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_merc_ja_cap2_2026.pdf",
+  jaen_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_merc_ja_cap3_2024.pdf",
+  jaen_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_ja_cap3_2025.pdf",
+  jaen_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_merc_ja_cap3_2026-1.pdf",
+  jaen_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/plantilla_merc_ja_cap6_2024.pdf",
+  jaen_noviembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_ja_cap6_2025.pdf",
+  jaen_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_ja_cap5_2024.pdf",
+  jaen_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_ja_cap5_2025_0.pdf",
+  malaga_enero_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_ma_cap1_2024.pdf",
+  malaga_enero_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_merc_ma_cap1_2025.pdf",
+  malaga_enero_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/EXAMEN%20MERCANCIAS%20CON%20RESPUESTAS.pdf",
+  malaga_julio_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_merc_ma_cap4_2024.pdf",
+  malaga_julio_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_ma_cap4_2025.pdf",
+  malaga_julio_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_mer_ma_cap4_2026.pdf",
+  malaga_marzo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_merc_ma_cap2_2024.pdf",
+  malaga_marzo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_merc_ma_cap2_2025.pdf",
+  malaga_marzo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/examen_mercA_ma_cap2_2026.pdf",
+  malaga_mayo_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_merc_ma_cap3_2024.pdf",
+  malaga_mayo_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_ma_cap3_2025.pdf",
+  malaga_mayo_2026:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/examen%20MERCANC%C3%8DAS_0.pdf",
+  malaga_noviembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_merc_ma_cap6_2024.pdf",
+  malaga_septiembre_2024:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_merc_ma_cap5_2024.pdf",
+  malaga_septiembre_2025:
+    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_ma_cap5_2025.pdf",
 };
 
 /**
@@ -260,27 +589,126 @@ export const testPdfUrls: Record<string, string> = {
  * the service worker at install time, so every test also works offline.
  */
 const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
-  febrero_2023: () => import("@/data/exams/febrero_2023.json"),
-  marzo_2023: () => import("@/data/exams/marzo_2023.json"),
-  junio_2023: () => import("@/data/exams/junio_2023.json"),
-  julio_2023: () => import("@/data/exams/julio_2023.json"),
-  septiembre_2023: () => import("@/data/exams/septiembre_2023.json"),
-  noviembre_2023: () => import("@/data/exams/noviembre_2023.json"),
-  enero_2024: () => import("@/data/exams/enero_2024.json"),
-  marzo_2024: () => import("@/data/exams/marzo_2024.json"),
-  mayo_2024: () => import("@/data/exams/mayo_2024.json"),
-  julio_2024: () => import("@/data/exams/julio_2024.json"),
-  septiembre_2024: () => import("@/data/exams/septiembre_2024.json"),
-  noviembre_2024: () => import("@/data/exams/noviembre_2024.json"),
-  enero_2025: () => import("@/data/exams/enero_2025.json"),
-  marzo_2025: () => import("@/data/exams/marzo_2025.json"),
-  mayo_2025: () => import("@/data/exams/mayo_2025.json"),
-  julio_2025: () => import("@/data/exams/julio_2025.json"),
-  septiembre_2025: () => import("@/data/exams/septiembre_2025.json"),
-  noviembre_2025: () => import("@/data/exams/noviembre_2025.json"),
-  enero_2026: () => import("@/data/exams/enero_2026.json"),
-  marzo_2026: () => import("@/data/exams/marzo_2026.json"),
-  mayo_2026: () => import("@/data/exams/mayo_2026.json"),
+  // Andalucía — provincias (mercancías A)
+  sevilla_febrero_2023: () => import("@/data/exams/sevilla_febrero_2023.json"),
+  sevilla_marzo_2023: () => import("@/data/exams/sevilla_marzo_2023.json"),
+  sevilla_junio_2023: () => import("@/data/exams/sevilla_junio_2023.json"),
+  sevilla_julio_2023: () => import("@/data/exams/sevilla_julio_2023.json"),
+  sevilla_septiembre_2023: () => import("@/data/exams/sevilla_septiembre_2023.json"),
+  sevilla_noviembre_2023: () => import("@/data/exams/sevilla_noviembre_2023.json"),
+  sevilla_enero_2024: () => import("@/data/exams/sevilla_enero_2024.json"),
+  sevilla_marzo_2024: () => import("@/data/exams/sevilla_marzo_2024.json"),
+  sevilla_mayo_2024: () => import("@/data/exams/sevilla_mayo_2024.json"),
+  sevilla_julio_2024: () => import("@/data/exams/sevilla_julio_2024.json"),
+  sevilla_septiembre_2024: () => import("@/data/exams/sevilla_septiembre_2024.json"),
+  sevilla_noviembre_2024: () => import("@/data/exams/sevilla_noviembre_2024.json"),
+  sevilla_enero_2025: () => import("@/data/exams/sevilla_enero_2025.json"),
+  sevilla_marzo_2025: () => import("@/data/exams/sevilla_marzo_2025.json"),
+  sevilla_mayo_2025: () => import("@/data/exams/sevilla_mayo_2025.json"),
+  sevilla_julio_2025: () => import("@/data/exams/sevilla_julio_2025.json"),
+  sevilla_septiembre_2025: () => import("@/data/exams/sevilla_septiembre_2025.json"),
+  sevilla_noviembre_2025: () => import("@/data/exams/sevilla_noviembre_2025.json"),
+  sevilla_enero_2026: () => import("@/data/exams/sevilla_enero_2026.json"),
+  sevilla_marzo_2026: () => import("@/data/exams/sevilla_marzo_2026.json"),
+  sevilla_mayo_2026: () => import("@/data/exams/sevilla_mayo_2026.json"),
+  almeria_enero_2024: () => import("@/data/exams/almeria_enero_2024.json"),
+  almeria_enero_2025: () => import("@/data/exams/almeria_enero_2025.json"),
+  almeria_enero_2026: () => import("@/data/exams/almeria_enero_2026.json"),
+  almeria_julio_2024: () => import("@/data/exams/almeria_julio_2024.json"),
+  almeria_julio_2025: () => import("@/data/exams/almeria_julio_2025.json"),
+  almeria_julio_2026: () => import("@/data/exams/almeria_julio_2026.json"),
+  almeria_marzo_2024: () => import("@/data/exams/almeria_marzo_2024.json"),
+  almeria_marzo_2025: () => import("@/data/exams/almeria_marzo_2025.json"),
+  almeria_marzo_2026: () => import("@/data/exams/almeria_marzo_2026.json"),
+  almeria_mayo_2024: () => import("@/data/exams/almeria_mayo_2024.json"),
+  almeria_mayo_2025: () => import("@/data/exams/almeria_mayo_2025.json"),
+  almeria_mayo_2026: () => import("@/data/exams/almeria_mayo_2026.json"),
+  almeria_noviembre_2024: () => import("@/data/exams/almeria_noviembre_2024.json"),
+  almeria_noviembre_2025: () => import("@/data/exams/almeria_noviembre_2025.json"),
+  almeria_septiembre_2024: () => import("@/data/exams/almeria_septiembre_2024.json"),
+  almeria_septiembre_2025: () => import("@/data/exams/almeria_septiembre_2025.json"),
+  cadiz_enero_2024: () => import("@/data/exams/cadiz_enero_2024.json"),
+  cadiz_enero_2025: () => import("@/data/exams/cadiz_enero_2025.json"),
+  cadiz_enero_2026: () => import("@/data/exams/cadiz_enero_2026.json"),
+  cadiz_julio_2024: () => import("@/data/exams/cadiz_julio_2024.json"),
+  cadiz_julio_2025: () => import("@/data/exams/cadiz_julio_2025.json"),
+  cadiz_julio_2026: () => import("@/data/exams/cadiz_julio_2026.json"),
+  cadiz_marzo_2024: () => import("@/data/exams/cadiz_marzo_2024.json"),
+  cadiz_marzo_2025: () => import("@/data/exams/cadiz_marzo_2025.json"),
+  cadiz_marzo_2026: () => import("@/data/exams/cadiz_marzo_2026.json"),
+  cadiz_mayo_2024: () => import("@/data/exams/cadiz_mayo_2024.json"),
+  cadiz_mayo_2025: () => import("@/data/exams/cadiz_mayo_2025.json"),
+  cadiz_mayo_2026: () => import("@/data/exams/cadiz_mayo_2026.json"),
+  cadiz_noviembre_2024: () => import("@/data/exams/cadiz_noviembre_2024.json"),
+  cadiz_septiembre_2024: () => import("@/data/exams/cadiz_septiembre_2024.json"),
+  cadiz_septiembre_2025: () => import("@/data/exams/cadiz_septiembre_2025.json"),
+  cordoba_enero_2024: () => import("@/data/exams/cordoba_enero_2024.json"),
+  cordoba_enero_2025: () => import("@/data/exams/cordoba_enero_2025.json"),
+  cordoba_enero_2026: () => import("@/data/exams/cordoba_enero_2026.json"),
+  cordoba_julio_2024: () => import("@/data/exams/cordoba_julio_2024.json"),
+  cordoba_julio_2025: () => import("@/data/exams/cordoba_julio_2025.json"),
+  cordoba_julio_2026: () => import("@/data/exams/cordoba_julio_2026.json"),
+  cordoba_marzo_2024: () => import("@/data/exams/cordoba_marzo_2024.json"),
+  cordoba_marzo_2025: () => import("@/data/exams/cordoba_marzo_2025.json"),
+  cordoba_marzo_2026: () => import("@/data/exams/cordoba_marzo_2026.json"),
+  cordoba_mayo_2024: () => import("@/data/exams/cordoba_mayo_2024.json"),
+  cordoba_mayo_2025: () => import("@/data/exams/cordoba_mayo_2025.json"),
+  cordoba_mayo_2026: () => import("@/data/exams/cordoba_mayo_2026.json"),
+  cordoba_noviembre_2024: () => import("@/data/exams/cordoba_noviembre_2024.json"),
+  cordoba_noviembre_2025: () => import("@/data/exams/cordoba_noviembre_2025.json"),
+  cordoba_septiembre_2024: () => import("@/data/exams/cordoba_septiembre_2024.json"),
+  cordoba_septiembre_2025: () => import("@/data/exams/cordoba_septiembre_2025.json"),
+  granada_enero_2024: () => import("@/data/exams/granada_enero_2024.json"),
+  granada_enero_2025: () => import("@/data/exams/granada_enero_2025.json"),
+  granada_enero_2026: () => import("@/data/exams/granada_enero_2026.json"),
+  granada_julio_2024: () => import("@/data/exams/granada_julio_2024.json"),
+  granada_julio_2025: () => import("@/data/exams/granada_julio_2025.json"),
+  granada_julio_2026: () => import("@/data/exams/granada_julio_2026.json"),
+  granada_marzo_2024: () => import("@/data/exams/granada_marzo_2024.json"),
+  granada_marzo_2025: () => import("@/data/exams/granada_marzo_2025.json"),
+  granada_marzo_2026: () => import("@/data/exams/granada_marzo_2026.json"),
+  granada_mayo_2024: () => import("@/data/exams/granada_mayo_2024.json"),
+  granada_mayo_2025: () => import("@/data/exams/granada_mayo_2025.json"),
+  granada_mayo_2026: () => import("@/data/exams/granada_mayo_2026.json"),
+  granada_noviembre_2024: () => import("@/data/exams/granada_noviembre_2024.json"),
+  granada_noviembre_2025: () => import("@/data/exams/granada_noviembre_2025.json"),
+  granada_septiembre_2024: () => import("@/data/exams/granada_septiembre_2024.json"),
+  granada_septiembre_2025: () => import("@/data/exams/granada_septiembre_2025.json"),
+  huelva_julio_2025: () => import("@/data/exams/huelva_julio_2025.json"),
+  huelva_julio_2026: () => import("@/data/exams/huelva_julio_2026.json"),
+  huelva_mayo_2025: () => import("@/data/exams/huelva_mayo_2025.json"),
+  huelva_noviembre_2025: () => import("@/data/exams/huelva_noviembre_2025.json"),
+  jaen_enero_2024: () => import("@/data/exams/jaen_enero_2024.json"),
+  jaen_enero_2025: () => import("@/data/exams/jaen_enero_2025.json"),
+  jaen_enero_2026: () => import("@/data/exams/jaen_enero_2026.json"),
+  jaen_julio_2024: () => import("@/data/exams/jaen_julio_2024.json"),
+  jaen_julio_2025: () => import("@/data/exams/jaen_julio_2025.json"),
+  jaen_julio_2026: () => import("@/data/exams/jaen_julio_2026.json"),
+  jaen_marzo_2024: () => import("@/data/exams/jaen_marzo_2024.json"),
+  jaen_marzo_2025: () => import("@/data/exams/jaen_marzo_2025.json"),
+  jaen_marzo_2026: () => import("@/data/exams/jaen_marzo_2026.json"),
+  jaen_mayo_2024: () => import("@/data/exams/jaen_mayo_2024.json"),
+  jaen_mayo_2025: () => import("@/data/exams/jaen_mayo_2025.json"),
+  jaen_mayo_2026: () => import("@/data/exams/jaen_mayo_2026.json"),
+  jaen_noviembre_2024: () => import("@/data/exams/jaen_noviembre_2024.json"),
+  jaen_noviembre_2025: () => import("@/data/exams/jaen_noviembre_2025.json"),
+  jaen_septiembre_2024: () => import("@/data/exams/jaen_septiembre_2024.json"),
+  jaen_septiembre_2025: () => import("@/data/exams/jaen_septiembre_2025.json"),
+  malaga_enero_2024: () => import("@/data/exams/malaga_enero_2024.json"),
+  malaga_enero_2025: () => import("@/data/exams/malaga_enero_2025.json"),
+  malaga_enero_2026: () => import("@/data/exams/malaga_enero_2026.json"),
+  malaga_julio_2024: () => import("@/data/exams/malaga_julio_2024.json"),
+  malaga_julio_2025: () => import("@/data/exams/malaga_julio_2025.json"),
+  malaga_julio_2026: () => import("@/data/exams/malaga_julio_2026.json"),
+  malaga_marzo_2024: () => import("@/data/exams/malaga_marzo_2024.json"),
+  malaga_marzo_2025: () => import("@/data/exams/malaga_marzo_2025.json"),
+  malaga_marzo_2026: () => import("@/data/exams/malaga_marzo_2026.json"),
+  malaga_mayo_2024: () => import("@/data/exams/malaga_mayo_2024.json"),
+  malaga_mayo_2025: () => import("@/data/exams/malaga_mayo_2025.json"),
+  malaga_mayo_2026: () => import("@/data/exams/malaga_mayo_2026.json"),
+  malaga_noviembre_2024: () => import("@/data/exams/malaga_noviembre_2024.json"),
+  malaga_septiembre_2024: () => import("@/data/exams/malaga_septiembre_2024.json"),
+  malaga_septiembre_2025: () => import("@/data/exams/malaga_septiembre_2025.json"),
   // Cataluña — mercancías modelo A (castellano)
   cataluna_marzo_2023: () => import("@/data/exams/cataluna_marzo_2023.json"),
   cataluna_septiembre_2023: () => import("@/data/exams/cataluna_septiembre_2023.json"),

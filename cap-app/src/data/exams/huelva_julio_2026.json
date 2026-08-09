@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "¿Cuál de estas afirmaciones, respecto de las cooperativas de trabajo asociado, es correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resultan de la asociación de varias personas físicas y jurídicas que aportan tanto capital como trabajo."
+      },
+      {
+        "id": "b",
+        "text": "Se constituyen con el objetivo de realizar en común una actividad de producción de bienes o servicios para sus asociados."
+      },
+      {
+        "id": "c",
+        "text": "Nunca pueden proporcionar un puesto de trabajo a sus socios."
+      },
+      {
+        "id": "d",
+        "text": "Deberá contar con un mínimo de tres socios."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "2",
+    "question": "A mayor altura del centro de gravedad, la estabilidad del camión:",
+    "options": [
+      {
+        "id": "a",
+        "text": "disminuye."
+      },
+      {
+        "id": "b",
+        "text": "aumenta."
+      },
+      {
+        "id": "c",
+        "text": "aumenta, siempre que la parte más ligera de la carga permanezca en la base de la caja."
+      },
+      {
+        "id": "d",
+        "text": "no sufre alteraciones."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "3",
+    "question": "¿De qué depende la deriva del neumático de un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De la fuerza termotecnia lateral."
+      },
+      {
+        "id": "b",
+        "text": "De la anchura de la llanta."
+      },
+      {
+        "id": "c",
+        "text": "De la fuerza de molaridad."
+      },
+      {
+        "id": "d",
+        "text": "De la fuerza angular."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "4",
+    "question": "¿Qué es el llamado círculo de Kamm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es un círculo con el que calcular las velocidades del camión, según el cambio de marchas."
+      },
+      {
+        "id": "b",
+        "text": "Es una tabla con acciones preventivas en caso de derrape."
+      },
+      {
+        "id": "c",
+        "text": "Es una representación simplificada de lo que ocurre en una rueda."
+      },
+      {
+        "id": "d",
+        "text": "Es una tabla de consumos en función del peso."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "5",
+    "question": "Si la trayectoria curva es de menor radio que la curva que se pretende describir, el camión se encuentra en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "guiñada."
+      },
+      {
+        "id": "b",
+        "text": "sobreviraje."
+      },
+      {
+        "id": "c",
+        "text": "cabeceo."
+      },
+      {
+        "id": "d",
+        "text": "subviraje."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "6",
+    "question": "¿Qué se entiende por trayectoria real del camión más abierta de la que debería realizar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cabeceo. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      },
+      {
+        "id": "b",
+        "text": "Guiñada."
+      },
+      {
+        "id": "c",
+        "text": "Sobreviraje."
+      },
+      {
+        "id": "d",
+        "text": "Subviraje."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "7",
+    "question": "La distribución incorrecta de la carga:",
+    "options": [
+      {
+        "id": "a",
+        "text": "afecta positivamente a la estabilidad del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "afecta a la maniobrabilidad de los operarios de descarga."
+      },
+      {
+        "id": "c",
+        "text": "reduce considerablemente el riesgo de accidente."
+      },
+      {
+        "id": "d",
+        "text": "afecta negativamente a la estabilidad del vehículo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "8",
+    "question": "¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Planificación de la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Coordinación de la empresa."
+      },
+      {
+        "id": "c",
+        "text": "Adoptar decisiones estratégicas."
+      },
+      {
+        "id": "d",
+        "text": "Planificar los servicios y rutas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "9",
+    "question": "Una cisterna construida con paredes aislantes que permiten limitar los intercambios de calor entre el interior y el exterior es una cisterna:",
+    "options": [
+      {
+        "id": "a",
+        "text": "aislante."
+      },
+      {
+        "id": "b",
+        "text": "isoterma."
+      },
+      {
+        "id": "c",
+        "text": "de temperatura controlada."
+      },
+      {
+        "id": "d",
+        "text": "reforzada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "10",
+    "question": "Las autorizaciones identificadas registralmente con la clave OT habilitan para:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el ejercicio de la actividad de transporte de mercancías por carretera."
+      },
+      {
+        "id": "b",
+        "text": "el ejercicio de actividades de intermediación en el transporte."
+      },
+      {
+        "id": "c",
+        "text": "el alquiler de vehículos sin conductor."
+      },
+      {
+        "id": "d",
+        "text": "establecer una estación de autobuses."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "11",
+    "question": "¿Qué son los transitarios?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Empresas especializadas en organizar transportes de paquetería."
+      },
+      {
+        "id": "b",
+        "text": "Empresas especializadas en organizar la distribución urbana de mercancías. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      },
+      {
+        "id": "c",
+        "text": "Empresas especializadas en organizar transportes internacionales de mercancías."
+      },
+      {
+        "id": "d",
+        "text": "Los encargados de diseñar las rutas de transporte intermodal."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "12",
+    "question": "¿Qué es el convenio CMR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es un acuerdo internacional que estipula las condiciones de realización de los transportes internacionales de mercancías por mar."
+      },
+      {
+        "id": "b",
+        "text": "Es un acuerdo internacional que estipula las condiciones de realización de los transportes internacionales de mercancías por carretera."
+      },
+      {
+        "id": "c",
+        "text": "Es un acuerdo internacional que estipula las condiciones de realización de los transportes internacionales de mercancías por ferrocarril."
+      },
+      {
+        "id": "d",
+        "text": "Este convenio no existe."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "13",
+    "question": "Cuando se realice un transporte privado complementario de mercancías, ¿se podrá facturar a los clientes dicho transporte de modo independiente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "Solo si el volumen transportado supera los 1.000 kg."
+      },
+      {
+        "id": "c",
+        "text": "No."
+      },
+      {
+        "id": "d",
+        "text": "Solo cuando el recorrido sea superior a 100 km."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "14",
+    "question": "¿Cómo se llama el vehículo destinado al transporte a granel de líquidos o de gases licuados?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portacontenedores."
+      },
+      {
+        "id": "b",
+        "text": "Cisterna."
+      },
+      {
+        "id": "c",
+        "text": "Capitoné."
+      },
+      {
+        "id": "d",
+        "text": "Portavehículos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "15",
+    "question": "Para lograr poner en movimiento un camión cargado¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "se requiere un mínimo de esfuerzo."
+      },
+      {
+        "id": "b",
+        "text": "se requiere una fuerza facilitada por el acelerador."
+      },
+      {
+        "id": "c",
+        "text": "la fuerza facilitada por el motor deberá ser superior a la fuerza resistente que opone el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "se requiere una fuerza que es proporcionada por la caja de cambios."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "16",
+    "question": "Cuando la masa del camión es elevada durante la circulación en una pendiente ascendente¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "se requiere más esfuerzo para mover el vehículo y se tendrán que realizar más cambios de marcha. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      },
+      {
+        "id": "b",
+        "text": "se requiere menor esfuerzo para mover el vehículo y se tendrán que realizar más cambios de marcha."
+      },
+      {
+        "id": "c",
+        "text": "se requiere mayor esfuerzo para mover el vehículo y se tendrán que realizar menos cambios de marcha."
+      },
+      {
+        "id": "d",
+        "text": "se requerirá el mismo esfuerzo y la misma utilización de marchas que durante una pendiente descendente."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "17",
+    "question": "¿Cuál de los siguientes efectos es típico de una sobrecarga en el eje trasero del camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El desgaste normal de la banda de rodadura de los neumáticos."
+      },
+      {
+        "id": "b",
+        "text": "Los esfuerzos excesivos para la suspensión trasera."
+      },
+      {
+        "id": "c",
+        "text": "La falta de apoyo en el eje trasero."
+      },
+      {
+        "id": "d",
+        "text": "La dureza en la dirección del vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "18",
+    "question": "¿Qué consideración tiene, a efectos aduaneros, una mercancía obtenida totalmente en Melilla?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se considera mercancía de la Unión, igual a todos los efectos que si hubiera sido obtenida en otro punto del Estado español."
+      },
+      {
+        "id": "b",
+        "text": "Se considera mercancía de la Unión con estatuto especial."
+      },
+      {
+        "id": "c",
+        "text": "Se considera mercancía no perteneciente a la Unión."
+      },
+      {
+        "id": "d",
+        "text": "Depende del tipo de mercancía de que se trate."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "19",
+    "question": "Según las condiciones generales de contratación, en un contrato de transporte de mercancías, en el caso de combustibles para uso doméstico, ¿a quién corresponde efectuar su descarga?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al cargador."
+      },
+      {
+        "id": "b",
+        "text": "Al destinatario."
+      },
+      {
+        "id": "c",
+        "text": "Al porteador."
+      },
+      {
+        "id": "d",
+        "text": "Al expedidor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "20",
+    "question": "Según las condiciones generales de contratación, en un contrato de transporte de mercancías, ¿cuándo tiene el transportista obligación de informar de la posibilidad de incluir en el contrato una declaración del valor de las mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre."
+      },
+      {
+        "id": "b",
+        "text": "Cuando se trate de mercancías especialmente valiosas."
+      },
+      {
+        "id": "c",
+        "text": "Cuando contrate con un consumidor."
+      },
+      {
+        "id": "d",
+        "text": "Es una posibilidad abierta a todos los que contraten un transporte, pero el transportista no está obligado a informar en ningún caso."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "21",
+    "question": "¿Qué estatuto aduanero tienen las mercancías que se encuentran en territorio aduanero de la Unión Europea?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre se consideran mercancías de la Unión."
+      },
+      {
+        "id": "b",
+        "text": "Se consideran mercancías de la Unión, salvo que se demuestre lo contrario."
+      },
+      {
+        "id": "c",
+        "text": "Siempre se consideran mercancías no pertenecientes a la Unión."
+      },
+      {
+        "id": "d",
+        "text": "Se consideran mercancías no pertenecientes a la Unión, salvo que se demuestre lo contrario."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "22",
+    "question": "De los siguientes, ¿qué documento debería llevarse a bordo en el caso de un transporte privado complementario de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Factura de compra de las mercancías."
+      },
+      {
+        "id": "b",
+        "text": "CIF de la empresa."
+      },
+      {
+        "id": "c",
+        "text": "Documento administrativo de control."
+      },
+      {
+        "id": "d",
+        "text": "Carta de porte."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "23",
+    "question": "¿Porqué causas puede la Administración ordenar otro sentido de circulación en una vía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por causas económicas o sociales."
+      },
+      {
+        "id": "b",
+        "text": "Por motivos medioambientales."
+      },
+      {
+        "id": "c",
+        "text": "Por razones de urgencia y oportunidad."
+      },
+      {
+        "id": "d",
+        "text": "Puede realizarlo en cualquier momento sin necesidad de motivación alguna."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "24",
+    "question": "En una sociedad de responsabilidad limitada, ¿qué socios tienen derecho a asistir a la junta general?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos."
+      },
+      {
+        "id": "b",
+        "text": "Dependerá de lo que especifiquen los estatutos."
+      },
+      {
+        "id": "c",
+        "text": "Todos los que tengan un mínimo de 3 participaciones."
+      },
+      {
+        "id": "d",
+        "text": "Los que se especifique en la convocatoria correspondiente."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "25",
+    "question": "¿Cuándo aumenta la cantidad de aire que un camión en movimiento tiene que desplazar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En las pendientes ascendentes."
+      },
+      {
+        "id": "b",
+        "text": "En las pendientes descendentes."
+      },
+      {
+        "id": "c",
+        "text": "Al aumentar la carga transportada."
+      },
+      {
+        "id": "d",
+        "text": "Al aumentar la velocidad."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "26",
+    "question": "¿Cómo debe ser la base del asiento del conductor? EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acorde con el peso de los brazos."
+      },
+      {
+        "id": "b",
+        "text": "No tendrá en cuenta la anchura de las caderas."
+      },
+      {
+        "id": "c",
+        "text": "Tendrá la anchura suficiente para acomodar los hombros."
+      },
+      {
+        "id": "d",
+        "text": "Conforme con la longitud de las piernas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "27",
+    "question": "¿Cómo define la normativa comunitaria el tiempo diario de conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La conducción efectuada en 24 horas."
+      },
+      {
+        "id": "b",
+        "text": "El tiempo acumulado de conducción entre dos descansos diarios o entre un descanso diario y un descanso semanal."
+      },
+      {
+        "id": "c",
+        "text": "La conducción efectuada en un día laboral."
+      },
+      {
+        "id": "d",
+        "text": "La conducción acumulada de toda la semana."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "28",
+    "question": "¿Qué es el consumo específico de un motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El consumo de combustible, en litros, para que el vehículo recorra 100 km."
+      },
+      {
+        "id": "b",
+        "text": "La forma de medir la cantidad de carburante que gasta el motor en relación a la potencia desarrollada."
+      },
+      {
+        "id": "c",
+        "text": "La forma de medir la cantidad de carburante que gasta el motor en relación al par desarrollado."
+      },
+      {
+        "id": "d",
+        "text": "La cantidad de kilómetros que puede recorrer un vehículo con una cantidad determinada de combustible (normalmente 10 litros)."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "29",
+    "question": "¿Qué se debe hacer tras una gran discusión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coger el coche para tranquilizarse conduciendo."
+      },
+      {
+        "id": "b",
+        "text": "Esperar a tranquilizarse para coger el coche y emprender el viaje."
+      },
+      {
+        "id": "c",
+        "text": "Continuar con la discusión por el manos libres mientras se conduce."
+      },
+      {
+        "id": "d",
+        "text": "Poner la radio e intentar olvidar la discusión conduciendo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "30",
+    "question": "En una caja de velocidades de 5 marchas, ¿qué se consigue con la primera velocidad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En esta marcha no hay desmultiplicación, igualándose las r.p.m. del motor, consiguiéndose una velocidad alta, pero poca fuerza."
+      },
+      {
+        "id": "b",
+        "text": "Se reducen en gran medida las r.p.m. del motor, con lo que se pierde en velocidad, pero se gana en fuerza."
+      },
+      {
+        "id": "c",
+        "text": "Se reducen un poco las r.p.m. del motor, lo que permite alcanzar una cierta velocidad para recorridos urbanos."
+      },
+      {
+        "id": "d",
+        "text": "En esta marcha se produce una multiplicación de las revoluciones del motor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "31",
+    "question": "La arena seca proyectada contra el foco de un incendio actúa por:",
+    "options": [
+      {
+        "id": "a",
+        "text": "dilución del oxígeno."
+      },
+      {
+        "id": "b",
+        "text": "sofocación del fuego."
+      },
+      {
+        "id": "c",
+        "text": "enfriamiento de la temperatura."
+      },
+      {
+        "id": "d",
+        "text": "oxigenación."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "32",
+    "question": "La lluvia influye en la pérdida de adherencia de los neumáticos, ¿cuál es el momento en el que hay que tomar más precauciones?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Durante las primeras gotas."
+      },
+      {
+        "id": "b",
+        "text": "Después de lluvias torrenciales."
+      },
+      {
+        "id": "c",
+        "text": "Cuando la lluvia sea de intensidad media."
+      },
+      {
+        "id": "d",
+        "text": "En el final de la tormenta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "33",
+    "question": "Los golpes con herramientas y otros objetos pueden ser consecuencia de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "herramientas apropiadas para la tarea."
+      },
+      {
+        "id": "b",
+        "text": "una posición correcta de trabajo."
+      },
+      {
+        "id": "c",
+        "text": "la utilización de elementos de protección como gafas, guantes y botas."
+      },
+      {
+        "id": "d",
+        "text": "herramientas defectuosas o desgastadas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "34",
+    "question": "En caso de producirse aquaplaning, ¿cómo se debe actuar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pisar el freno a fondo hasta que el coche se frene."
+      },
+      {
+        "id": "b",
+        "text": "Acelerar para pasar cuanto antes la zona encharcada."
+      },
+      {
+        "id": "c",
+        "text": "Girar el volante para tratar de salir cuanto antes de la zona encharcada."
+      },
+      {
+        "id": "d",
+        "text": "No tocar el freno, levantar ligeramente el pie del acelerador y sujetar fuerte el volante."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "35",
+    "question": "¿Cuál de los siguientes accidentes de trabajo relacionados con el transporte es menos frecuente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Golpes con herramientas y otros objetos."
+      },
+      {
+        "id": "b",
+        "text": "Caídas de personas al mismo nivel (en la misma superficie en la que se encuentra)."
+      },
+      {
+        "id": "c",
+        "text": "Sobreesfuerzos."
+      },
+      {
+        "id": "d",
+        "text": "Incendios. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "36",
+    "question": "El ASR es un dispositivo que:",
+    "options": [
+      {
+        "id": "a",
+        "text": "evita la pérdida de tracción de las ruedas propulsoras."
+      },
+      {
+        "id": "b",
+        "text": "permite una aceleración más rápida."
+      },
+      {
+        "id": "c",
+        "text": "aumenta la velocidad."
+      },
+      {
+        "id": "d",
+        "text": "evita el bloqueo de las ruedas al frenar el vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "37",
+    "question": "El dispositivo ABS es una mejora muy importante de la seguridad activa del vehículo porque:",
+    "options": [
+      {
+        "id": "a",
+        "text": "permite rebajar el tiempo de reacción en cualquier supuesto."
+      },
+      {
+        "id": "b",
+        "text": "permite mantener el control sobre la suspensión."
+      },
+      {
+        "id": "c",
+        "text": "rebaja la transferencia de masas en caso de frenada de emergencia."
+      },
+      {
+        "id": "d",
+        "text": "permite reducir la distancia de frenado y mantener el control sobre la dirección."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "38",
+    "question": "¿Cuál es el objetivo del airbag?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obtener una conducción más suave."
+      },
+      {
+        "id": "b",
+        "text": "Detener, en caso de golpe brusco, el cuerpo de los ocupantes de un vehículo lo más suavemente posible."
+      },
+      {
+        "id": "c",
+        "text": "Aumentar la velocidad."
+      },
+      {
+        "id": "d",
+        "text": "Aumenta la aceleración."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "39",
+    "question": "A la cantidad de combustible que necesita un motor para suministrar una determinada unidad de potencia por unidad de tiempo se le llama..",
+    "options": [
+      {
+        "id": "a",
+        "text": "consumo específico."
+      },
+      {
+        "id": "b",
+        "text": "consumo medio."
+      },
+      {
+        "id": "c",
+        "text": "consumo instantáneo."
+      },
+      {
+        "id": "d",
+        "text": "consumo total."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "40",
+    "question": "De los que se indican, ¿qué tipo de motor es el que tiene un menor consumo específico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El motor diésel de inyección directa."
+      },
+      {
+        "id": "b",
+        "text": "El motor diésel de inyección indirecta."
+      },
+      {
+        "id": "c",
+        "text": "El motor de gasolina de inyección directa."
+      },
+      {
+        "id": "d",
+        "text": "El motor de gasolina de inyección indirecta. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "41",
+    "question": "Un motor diésel de inyección indirecta respecto de un motor diésel de inyección directa:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tiene un mayor consumo específico."
+      },
+      {
+        "id": "b",
+        "text": "tiene un menor consumo específico."
+      },
+      {
+        "id": "c",
+        "text": "tiene el mismo consumo específico."
+      },
+      {
+        "id": "d",
+        "text": "siempre tiene un menor par motor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "42",
+    "question": "El tiempo dedicado por un conductor a limpieza y mantenimiento técnico del vehículo, ¿cómo se considera en la normativa laboral española?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiempo de descanso."
+      },
+      {
+        "id": "b",
+        "text": "Tiempo de pausa."
+      },
+      {
+        "id": "c",
+        "text": "Tiempo de trabajo efectivo."
+      },
+      {
+        "id": "d",
+        "text": "Tiempo de presencia."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "43",
+    "question": "¿Comete alguna infracción un conductor que realiza un descanso semanal de 30 horas y a la semana siguiente uno de 45 horas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, nunca."
+      },
+      {
+        "id": "b",
+        "text": "Sí, una infracción grave puesto que siempre hay que descansar 45 horas."
+      },
+      {
+        "id": "c",
+        "text": "No, siempre que recupere las 15 horas que faltan en la primera semana durante las 3 semanas siguientes."
+      },
+      {
+        "id": "d",
+        "text": "Sí, una infracción leve."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "44",
+    "question": "¿En qué elemento de los siguientes conviene que se centre la actividad de una empresa de transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En la conservación de los vehículos."
+      },
+      {
+        "id": "b",
+        "text": "En la modernización de las instalaciones."
+      },
+      {
+        "id": "c",
+        "text": "En la satisfacción del cliente."
+      },
+      {
+        "id": "d",
+        "text": "En conseguir el precio más barato posible para el combustible."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "45",
+    "question": "De las siguientes opciones, ¿cuál no es una pérdida energética del motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pérdidas por evaporación del combustible."
+      },
+      {
+        "id": "b",
+        "text": "Pérdida de calor por el tubo de escape. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      },
+      {
+        "id": "c",
+        "text": "Pérdidas térmicas y mecánicas en forma de calor a través del sistema de refrigeración."
+      },
+      {
+        "id": "d",
+        "text": "Pérdidas mecánicas en la transmisión."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "46",
+    "question": "¿Cuál es el período de vigencia de la tarjeta de cualificación de conductor, una vez se ha superado el examen de cualificación inicial del CAP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tres años, mínimo."
+      },
+      {
+        "id": "b",
+        "text": "Cuatro años, máximo."
+      },
+      {
+        "id": "c",
+        "text": "Cinco años, mínimo."
+      },
+      {
+        "id": "d",
+        "text": "Cinco años, máximo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "47",
+    "question": "¿Qué tipo de lesiones se derivan de una exposición continua a vibraciones?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Traumatismos."
+      },
+      {
+        "id": "b",
+        "text": "Problemas de próstata."
+      },
+      {
+        "id": "c",
+        "text": "Hernias."
+      },
+      {
+        "id": "d",
+        "text": "Desgarros musculares."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "48",
+    "question": "¿Qué circunstancia propicia los atropellos por vehículos y maquinaria auxiliar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dejar el vehículo perfectamente inmovilizado."
+      },
+      {
+        "id": "b",
+        "text": "Trabajar siempre en la zona que se tiene habilitada."
+      },
+      {
+        "id": "c",
+        "text": "Usar la maquinaria asignada de conformidad a las reglas estipuladas."
+      },
+      {
+        "id": "d",
+        "text": "Invasión de zonas de trabajo restringido."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "49",
+    "question": "¿Cuáles son las principales medidas que debemos adoptar en caso de viento fuerte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minorar la velocidad."
+      },
+      {
+        "id": "b",
+        "text": "Sujetar firmemente el volante."
+      },
+      {
+        "id": "c",
+        "text": "Extremar la precaución en los pasos de zonas protegidas a desprotegidas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "50",
+    "question": "¿Cuándo gasta más combustible un vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando el motor da un par bajo."
+      },
+      {
+        "id": "b",
+        "text": "Cuando el motor da su máximo par."
+      },
+      {
+        "id": "c",
+        "text": "Cuando el motor da una potencia intermedia."
+      },
+      {
+        "id": "d",
+        "text": "Cuando el motor da su máxima potencia. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "51",
+    "question": "¿Cuándo se produce el par motor mínimo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A la velocidad máxima."
+      },
+      {
+        "id": "b",
+        "text": "Al ralentí."
+      },
+      {
+        "id": "c",
+        "text": "A la potencia máxima."
+      },
+      {
+        "id": "d",
+        "text": "A la aceleración máxima."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "52",
+    "question": "¿De qué hablamos al referirnos a la desmultiplicación de una caja de cambios?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al número de velocidades."
+      },
+      {
+        "id": "b",
+        "text": "A las revoluciones del motor en relación con el consumo."
+      },
+      {
+        "id": "c",
+        "text": "A la relación entre los engranajes que conectan la velocidad de giro del motor y las ruedas."
+      },
+      {
+        "id": "d",
+        "text": "Del total de piñones que componen cada marcha."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "53",
+    "question": "¿El estilo de conducción del vehículo puede llegar a afectar al consumo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, solo depende del carburante."
+      },
+      {
+        "id": "c",
+        "text": "No, nunca."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero únicamente en pendientes ascendentes."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "54",
+    "question": "¿En cuál de las siguientes situaciones de emergencia será más necesaria la evacuación de los ocupantes del vehículo generalmente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En caso de incendio o amenaza de incendio en el vehículo."
+      },
+      {
+        "id": "b",
+        "text": "En caso de avería en el motor."
+      },
+      {
+        "id": "c",
+        "text": "En caso de rotura de cristales del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Si el vehículo ha quedado detenido en la calzada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "55",
+    "question": "De los siguientes elementos del vehículo, ¿cuál forma parte del retardador hidráulico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El estátor fijo."
+      },
+      {
+        "id": "b",
+        "text": "La válvula de cuatro vías."
+      },
+      {
+        "id": "c",
+        "text": "La válvula de paso."
+      },
+      {
+        "id": "d",
+        "text": "El calderín."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "56",
+    "question": "¿Cuáles son los efectos más comunes que produce la cocaína en la conducción? EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sobrevaloración de los riesgos."
+      },
+      {
+        "id": "b",
+        "text": "Conciencia de los riesgos."
+      },
+      {
+        "id": "c",
+        "text": "Reacción ante los riesgos."
+      },
+      {
+        "id": "d",
+        "text": "Minusvaloración de los riesgos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "57",
+    "question": "¿Qué factor influye en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El porcentaje de anticongelante que posea el líquido del sistema de refrigeración."
+      },
+      {
+        "id": "b",
+        "text": "La carga transportada en el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "La situación de las ruedas motrices."
+      },
+      {
+        "id": "d",
+        "text": "El tipo de freno que monte el vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "58",
+    "question": "Las medidas preventivas que deben tomarse a la hora de conducir con viento son:",
+    "options": [
+      {
+        "id": "a",
+        "text": "minorar la velocidad."
+      },
+      {
+        "id": "b",
+        "text": "sujetar firmemente el volante."
+      },
+      {
+        "id": "c",
+        "text": "extremar la atención en los pasos de zonas protegidas a desprotegidas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "59",
+    "question": "Según la normativa de la Unión Europea, ¿a qué están destinados los equipos de protección individual de la categoría III?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A proteger contra riesgos mínimos."
+      },
+      {
+        "id": "b",
+        "text": "A proteger contra riesgos de grado medio o elevado, pero sin consecuencias mortales o irreversibles."
+      },
+      {
+        "id": "c",
+        "text": "A proteger contra riesgos de consecuencias mortales o irreversibles."
+      },
+      {
+        "id": "d",
+        "text": "No existen equipos de protección individual de la categoría III."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "60",
+    "question": "En el cuentarrevoluciones de un vehículo pesado, la zona económica suele estar marcada de color verde. Cuando se circule en una pendiente ascendente, es conveniente que la aguja del cuentarrevoluciones se encuentre¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "en la zona izquierda de la zona económica."
+      },
+      {
+        "id": "b",
+        "text": "en el centro de la zona económica."
+      },
+      {
+        "id": "c",
+        "text": "en la derecha de la zona económica."
+      },
+      {
+        "id": "d",
+        "text": "fuera de la zona económica."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "61",
+    "question": "Para ahorrar carburante, es conveniente: EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "conocer el material del que está fabricado el motor."
+      },
+      {
+        "id": "b",
+        "text": "conducir con anticipación."
+      },
+      {
+        "id": "c",
+        "text": "conocer con exactitud datos técnicos del vehículo como el coeficiente aerodinámico o la carrera del pistón."
+      },
+      {
+        "id": "d",
+        "text": "conocer el material del que está fabricada la carrocería."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "62",
+    "question": "Una buena medida para reducir el consumo de carburante de un vehículo pesado es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "mantener la velocidad lo más constante posible."
+      },
+      {
+        "id": "b",
+        "text": "no utilizar la inercia del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "frenar inmediatamente después de dejar de acelerar."
+      },
+      {
+        "id": "d",
+        "text": "llevar el motor revolucionado."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "63",
+    "question": "Para aprovechar mejor el carburante que consume el motor de un automóvil es importante conocer las resistencias que intervienen en el movimiento de los vehículos. De las que se citan a continuación, ¿cuál de ellas interviene?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia de la caja de velocidades."
+      },
+      {
+        "id": "b",
+        "text": "La resistencia aerodinámica."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia del movimiento de los pistones."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia del cigüeñal."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "64",
+    "question": "Para facilitar el paso del aire alrededor del vehículo y, por tanto, no aumentar el consumo de carburante, ¿qué es conveniente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circular con los cristales de las ventanillas subidos."
+      },
+      {
+        "id": "b",
+        "text": "Dar más presión a los neumáticos para que la adherencia a la calzada sea menor."
+      },
+      {
+        "id": "c",
+        "text": "Dar más presión a los neumáticos para que la adherencia a la calzada sea mayor."
+      },
+      {
+        "id": "d",
+        "text": "Dar menos presión a los neumáticos para que la adherencia a la calzada sea menor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "65",
+    "question": "En los vehículos actuales, para proceder al arranque de un motor de combustión o diésel, ¿es conveniente hacerlo sin acelerar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, ya que, si se acelera, se consume carburante innecesariamente."
+      },
+      {
+        "id": "b",
+        "text": "No, ya que, si no se acelera, el motor no arranca."
+      },
+      {
+        "id": "c",
+        "text": "No, ya que, aunque el motor arranque, es mejor acelerar porque se facilita el paso del aceite por las tuberías del sistema de lubricación."
+      },
+      {
+        "id": "d",
+        "text": "Depende de si el vehículo está cargado o descargado."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "66",
+    "question": "¿Qué factor influye en el consumo de carburante? EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "La longitud del árbol de levas."
+      },
+      {
+        "id": "b",
+        "text": "La relación de marchas seleccionada."
+      },
+      {
+        "id": "c",
+        "text": "La longitud del pistón."
+      },
+      {
+        "id": "d",
+        "text": "La longitud del cigüeñal."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "67",
+    "question": "¿Qué influye en el consumo de carburante de un vehículo pesado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La presión de los neumáticos y la longitud del pistón."
+      },
+      {
+        "id": "b",
+        "text": "El mantenimiento del vehículo y el voltaje que suministre la batería."
+      },
+      {
+        "id": "c",
+        "text": "El tipo de turbocompresor y la relación de marchas seleccionada."
+      },
+      {
+        "id": "d",
+        "text": "La aerodinámica y la posición del pedal del acelerador."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "68",
+    "question": "¿Qué influye en el consumo de carburante de un vehículo pesado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El tipo de sistema de mando de la distribución."
+      },
+      {
+        "id": "b",
+        "text": "El coeficiente de rozamiento de los neumáticos con calzada"
+      },
+      {
+        "id": "c",
+        "text": "Los modelos de retardadores que monte el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "El tipo de batería: con o sin mantenimiento."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "69",
+    "question": "Dependiendo de la presión que se ejerza sobre el pedal del acelerador, el conductor de un vehículo puede:",
+    "options": [
+      {
+        "id": "a",
+        "text": "reducir el ralentí del motor."
+      },
+      {
+        "id": "b",
+        "text": "aumentar el ralentí del motor."
+      },
+      {
+        "id": "c",
+        "text": "reducir el consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "reducir la relación de compresión."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "70",
+    "question": "¿Qué ventajas presenta conducir utilizando la relación de marchas más alta que sea posible dependiendo de la velocidad a la que se circule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
+      },
+      {
+        "id": "b",
+        "text": "Reducir el coeficiente aerodinámico del vehículo y prolongar la vida del motor."
+      },
+      {
+        "id": "c",
+        "text": "Menor consumo y desgaste mecánico."
+      },
+      {
+        "id": "d",
+        "text": "Reducir la frecuencia de la inspección técnica periódica y aumentar los plazos de mantenimiento del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "71",
+    "question": "Conducir utilizando la relación de marchas más alta que sea posible, dependiendo de la velocidad a la que se circule, tiene como ventaja: EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "una menor contaminación acústica y ambiental, menor consumo y menor desgaste mecánico."
+      },
+      {
+        "id": "b",
+        "text": "no tener que comprobar el nivel del aceite motor ya que conducir de esta manera hace que el consumo de aceite sea nulo."
+      },
+      {
+        "id": "c",
+        "text": "no tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
+      },
+      {
+        "id": "d",
+        "text": "aumentar la frecuencia de la inspección técnica periódica y reducir los plazos de mantenimiento del vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "72",
+    "question": "Reducir la velocidad media de circulación, ¿qué ventajas presenta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Menor consumo, contaminación acústica y desgaste mecánico."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar el coeficiente aerodinámico del vehículo y prolongar la vida del motor."
+      },
+      {
+        "id": "c",
+        "text": "No tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
+      },
+      {
+        "id": "d",
+        "text": "Aumentar la frecuencia de la inspección técnica periódica y reducir los plazos de mantenimiento del vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "73",
+    "question": "¿Qué contiene la marca de homologación de los tacógrafos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La letra \"e\" seguida del número del país que homologó el modelo."
+      },
+      {
+        "id": "b",
+        "text": "Las letras \"UE\" seguidas de número de referencia de la marca."
+      },
+      {
+        "id": "c",
+        "text": "La letra \"T\" seguida del número del país que homologó el modelo."
+      },
+      {
+        "id": "d",
+        "text": "Las letras \"UN\" seguidas de la norma de calidad de la homologación."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "74",
+    "question": "Los elementos de seguridad activa más destacados en los vehículos son:",
+    "options": [
+      {
+        "id": "a",
+        "text": "las ruedas y los frenos."
+      },
+      {
+        "id": "b",
+        "text": "las ruedas delanteras."
+      },
+      {
+        "id": "c",
+        "text": "los reposacabezas."
+      },
+      {
+        "id": "d",
+        "text": "los cinturones de seguridad."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "75",
+    "question": "¿Cuáles de los siguientes elementos del vehículo son de seguridad pasiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El cinturón de seguridad, el airbag y el reposacabezas."
+      },
+      {
+        "id": "b",
+        "text": "Las ruedas y los frenos."
+      },
+      {
+        "id": "c",
+        "text": "Los espejos retrovisores."
+      },
+      {
+        "id": "d",
+        "text": "El ABS y el freno motor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "76",
+    "question": "¿Cuál es el principal objetivo de la conducción preventiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La anticipación a posibles situaciones de peligro, ganando tiempo y espacio de reacción."
+      },
+      {
+        "id": "b",
+        "text": "El máximo ahorro de combustible."
+      },
+      {
+        "id": "c",
+        "text": "La reducción de la distancia de seguridad."
+      },
+      {
+        "id": "d",
+        "text": "La prevención de averías en el vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "77",
+    "question": "En el sector del transporte está reconocida como enfermedad profesional:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la bursitis."
+      },
+      {
+        "id": "b",
+        "text": "la sordera provocada por el ruido."
+      },
+      {
+        "id": "c",
+        "text": "las lesiones de la piel por contacto con hidrocarburos."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "78",
+    "question": "¿Qué se deberá tener en cuenta respecto a la utilización del cinturón de seguridad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que la parte superior de la cinta debe pasar por el cuello."
+      },
+      {
+        "id": "b",
+        "text": "Que debe llevarse correctamente abrochado, bien reglado y ajustado al cuerpo sin holgura."
+      },
+      {
+        "id": "c",
+        "text": "Que la parte superior de la cinta debe pasar por la zona pélvica."
+      },
+      {
+        "id": "d",
+        "text": "Que debe llevarse muy flojo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "79",
+    "question": "Ante un posible impacto contra otro vehículo, ¿cuál sería una maniobra de evasión pasiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La reducción de la velocidad."
+      },
+      {
+        "id": "b",
+        "text": "Accionar el claxon."
+      },
+      {
+        "id": "c",
+        "text": "Girar bruscamente el volante."
+      },
+      {
+        "id": "d",
+        "text": "Frenar."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "80",
+    "question": "El rojo es el color de fondo predominante en la tarjeta de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "conductor."
+      },
+      {
+        "id": "b",
+        "text": "empresa."
+      },
+      {
+        "id": "c",
+        "text": "centro de ensayo."
+      },
+      {
+        "id": "d",
+        "text": "control."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "81",
+    "question": "La curva de potencia a plena carga es¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "la que muestra la potencia que entrega el motor con el acelerador pisado a fondo. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      },
+      {
+        "id": "b",
+        "text": "la que muestra la potencia necesaria para transportar la MMA a diferentes regímenes de giro."
+      },
+      {
+        "id": "c",
+        "text": "la que indica el consumo necesario para mantenerla con el vehículo plenamente cargado."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las anteriores es correcta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "82",
+    "question": "En vehículos cargados y circulando a baja velocidad, la resistencia que requiere mayor energía para ser vencida es la...",
+    "options": [
+      {
+        "id": "a",
+        "text": "resistencia aerodinámica."
+      },
+      {
+        "id": "b",
+        "text": "resistencia por aceleración."
+      },
+      {
+        "id": "c",
+        "text": "resistencia a la rodadura."
+      },
+      {
+        "id": "d",
+        "text": "resistencia de pendiente."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "83",
+    "question": "¿Qué tipo de batería de vehículo eléctrico es la que tiene mayor autonomía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Níquel."
+      },
+      {
+        "id": "b",
+        "text": "Litio."
+      },
+      {
+        "id": "c",
+        "text": "Cadmio."
+      },
+      {
+        "id": "d",
+        "text": "Cobalto."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "84",
+    "question": "¿Qué debe hacerse ante un vehículo que circula unos cuantos vehículos por delante y que comienza a frenar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frenar suave, pero inmediatamente."
+      },
+      {
+        "id": "b",
+        "text": "Reducir inmediatamente la marcha."
+      },
+      {
+        "id": "c",
+        "text": "Levantar el pie del acelerador."
+      },
+      {
+        "id": "d",
+        "text": "Poner el vehículo en punto muerto."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "85",
+    "question": "¿En qué se basa el funcionamiento del dispositivo denominado PCS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detecta si una rueda motriz patina."
+      },
+      {
+        "id": "b",
+        "text": "Calcula la distancia de seguridad en función de la separación con el vehículo que circula delante."
+      },
+      {
+        "id": "c",
+        "text": "Según la rapidez o la fuerza con la que se actúa sobre el pedal de freno, detecta si se ha producido una frenada de emergencia."
+      },
+      {
+        "id": "d",
+        "text": "Detecta el posible bloqueo de una o varias ruedas en función de su velocidad angular."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "86",
+    "question": "Una excesiva concentración de señales en la carretera, ¿es un factor que afecta a la atención y puede producir distracciones? EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, es un factor interno al conductor."
+      },
+      {
+        "id": "b",
+        "text": "Sí, es un factor externo al conductor."
+      },
+      {
+        "id": "c",
+        "text": "Solamente cuando se trate de señales de prohibición."
+      },
+      {
+        "id": "d",
+        "text": "No es un factor que afecte a la conducción."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "87",
+    "question": "¿Cuál es el proceso mediante el cual se realiza una elección entre diversas alternativas en la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toma de decisiones."
+      },
+      {
+        "id": "b",
+        "text": "Percepción del riesgo."
+      },
+      {
+        "id": "c",
+        "text": "Aceptación del riesgo."
+      },
+      {
+        "id": "d",
+        "text": "Mantenimiento de la atención."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "88",
+    "question": "¿Se permite superar en algún caso el tiempo máximo de conducción diaria?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Sí, hasta en una hora, para llegar al lugar de residencia a fin de disfrutar el período de descanso semanal, siempre que no se comprometa la seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Sí, hasta en una hora, para llegar al lugar de residencia a fin de disfrutar el período de descanso diario, siempre que no se comprometa la seguridad."
+      },
+      {
+        "id": "d",
+        "text": "Sí, hasta en treinta minutos, para llegar al lugar de residencia a fin de disfrutar el período de descanso semanal, siempre que no se comprometa la seguridad."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "89",
+    "question": "La normativa española sobre ordenación del tiempo de trabajo de los conductores autónomos:",
+    "options": [
+      {
+        "id": "a",
+        "text": "se aplica a todos los conductores autónomos."
+      },
+      {
+        "id": "b",
+        "text": "se aplica a todos los conductores autónomos que efectúen servicios para más de tres empresas."
+      },
+      {
+        "id": "c",
+        "text": "no se aplica a los conductores autónomos que no estén incluidos en el campo de aplicación del Reglamento (CE) 561/2006 o del AETR."
+      },
+      {
+        "id": "d",
+        "text": "no se aplica a los conductores autónomos cuya edad esté comprendida entre 35 y 55 años."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "90",
+    "question": "Según la normativa española sobre ordenación del tiempo de trabajo de los conductores autónomos, el conductor autónomo tiene obligación de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "registrar diariamente su tiempo de trabajo y conservar los registros durante dos años."
+      },
+      {
+        "id": "b",
+        "text": "registrar diariamente su tiempo de trabajo y conservar los registros durante un año."
+      },
+      {
+        "id": "c",
+        "text": "registrar, al menos, semanalmente su tiempo de trabajo y conservar los registros durante tres años."
+      },
+      {
+        "id": "d",
+        "text": "registrar, al menos, semanalmente su tiempo de trabajo y conservar los registros durante cuatro años. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "91",
+    "question": "¿Comete delito un conductor que se niegue a someterse a pruebas de alcoholemia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En ningún caso."
+      },
+      {
+        "id": "b",
+        "text": "Solo si presenta síntomas de haber consumido alcohol."
+      },
+      {
+        "id": "c",
+        "text": "Solo si ha cometido previamente alguna irregularidad en la conducción."
+      },
+      {
+        "id": "d",
+        "text": "Sí."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "92",
+    "question": "En caso de sufrir estrés, se aconseja:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar ayuda en un especialista."
+      },
+      {
+        "id": "b",
+        "text": "Evitar conducir si es posible."
+      },
+      {
+        "id": "c",
+        "text": "Conducir con más precaución si es necesario hacerlo."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "93",
+    "question": "En relación con un incendio, ¿cómo se conoce al conjunto de combustible, comburente y calor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tetraedro del fuego."
+      },
+      {
+        "id": "b",
+        "text": "Octoedro del fuego."
+      },
+      {
+        "id": "c",
+        "text": "Cuadrado del fuego."
+      },
+      {
+        "id": "d",
+        "text": "Triángulo del fuego."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "94",
+    "question": "El conductor de un camión portavehículos:",
+    "options": [
+      {
+        "id": "a",
+        "text": "debe ocuparse de cargar y sujetar los vehículos."
+      },
+      {
+        "id": "b",
+        "text": "no debe ocuparse de cargar los vehículos ni de sujetarlos."
+      },
+      {
+        "id": "c",
+        "text": "solo debe ocuparse de sujetar los vehículos."
+      },
+      {
+        "id": "d",
+        "text": "solo debe ocuparse de cargar cuando los vehículos puedan moverse por sí mismos."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "95",
+    "question": "En el marco de un modelo de gestión de la calidad de un servicio, a los puntos de contacto del cliente con el servicio se los denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "puntos calientes."
+      },
+      {
+        "id": "b",
+        "text": "elementos atractivos."
+      },
+      {
+        "id": "c",
+        "text": "elementos básicos."
+      },
+      {
+        "id": "d",
+        "text": "evidencias de servicio. EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "96",
+    "question": "Entre los elementos que hay que revisar en un vehículo se encuentran:",
+    "options": [
+      {
+        "id": "a",
+        "text": "las luces."
+      },
+      {
+        "id": "b",
+        "text": "los espejos retrovisores."
+      },
+      {
+        "id": "c",
+        "text": "el cierre de las puertas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "97",
+    "question": "Los cursos de formación continua necesarios para renovar la tarjeta de cualificación de conductor (CAP) deben incluir:",
+    "options": [
+      {
+        "id": "a",
+        "text": "clases presenciales."
+      },
+      {
+        "id": "b",
+        "text": "formación práctica."
+      },
+      {
+        "id": "c",
+        "text": "formación impartida mediante vehículos."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "98",
+    "question": "Con un consumo igual, el nivel de alcohol en sangre que se puede alcanzar es más elevado:",
+    "options": [
+      {
+        "id": "a",
+        "text": "en el varón que en la mujer."
+      },
+      {
+        "id": "b",
+        "text": "si se ingiere con rapidez."
+      },
+      {
+        "id": "c",
+        "text": "si se tiene más peso corporal."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "99",
+    "question": "¿A quién se imputará la infracción por superar el tiempo máximo de conducción diaria, que a su vez represente una falta muy grave de indisciplina del conductor respecto de las instrucciones recibidas de la empresa, si este es objeto de una sanción disciplinaria por la misma consistente en postergación para ascensos en la empresa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al conductor."
+      },
+      {
+        "id": "b",
+        "text": "A la empresa."
+      },
+      {
+        "id": "c",
+        "text": "A la empresa y al conductor a partes iguales."
+      },
+      {
+        "id": "d",
+        "text": "A nadie, dado que sería imputable al conductor, pero este ya ha sido sancionado por la empresa."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "100",
+    "question": "¿Qué elementos inciden directamente en la inercia de un vehículo? EDIFICIO GALILEO GALILEI, CAMPUS EL CARMEN UNIVERSIDAD DE HUELVA, AVENIDA DE LAS FUERZAS ARMADAS S/N, HUELVA, HUELVA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Masa y velocidad."
+      },
+      {
+        "id": "b",
+        "text": "Masa y volumen."
+      },
+      {
+        "id": "c",
+        "text": "Volumen y velocidad."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna respuesta es correcta."
+      }
+    ],
+    "correct": "a"
+  }
+]

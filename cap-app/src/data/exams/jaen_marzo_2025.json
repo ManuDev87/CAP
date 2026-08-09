@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "¿Qué se considera transporte internacional de mercancías por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquel cuyo itinerario discurre, al menos parcialmente, por el territorio de un Estado extranjero."
+      },
+      {
+        "id": "b",
+        "text": "Aquel cuyo itinerario discurre totalmente por el territorio de un Estado extranjero."
+      },
+      {
+        "id": "c",
+        "text": "Aquel cuyo itinerario discurre, al menos, por los territorios de dos Estados."
+      },
+      {
+        "id": "d",
+        "text": "Aquel cuyo itinerario discurre, al menos, por los territorios de tres Estados."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "2",
+    "question": "A bordo de un vehículo que transporta animales debe constar la documentación que acredite:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el origen y el propietario de los animales."
+      },
+      {
+        "id": "b",
+        "text": "la duración exacta del viaje."
+      },
+      {
+        "id": "c",
+        "text": "únicamente la fecha de salida y el lugar de destino."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "3",
+    "question": "Se considera transporte internacional de mercancías aquel cuyo itinerario discurre:",
+    "options": [
+      {
+        "id": "a",
+        "text": "al menos parcialmente por el territorio de dos Estados extranjeros."
+      },
+      {
+        "id": "b",
+        "text": "totalmente por el territorio de un Estado extranjero."
+      },
+      {
+        "id": "c",
+        "text": "al menos parcialmente por el territorio de tres Estados extranjeros."
+      },
+      {
+        "id": "d",
+        "text": "al menos parcialmente por el territorio de un Estado extranjero."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "4",
+    "question": "El deslizamiento de las ruedas motrices de un camión puede darse:",
+    "options": [
+      {
+        "id": "a",
+        "text": "por el cambio a una relación de marchas inferiores."
+      },
+      {
+        "id": "b",
+        "text": "por entrada de impurezas gaseosas."
+      },
+      {
+        "id": "c",
+        "text": "por una reducción paulatina de la velocidad."
+      },
+      {
+        "id": "d",
+        "text": "por una fuerte aceleración o por un frenada excesiva."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "5",
+    "question": "¿De qué factores depende el grado de rozamiento en un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De la fuerza termotecnia lateral."
+      },
+      {
+        "id": "b",
+        "text": "Del peso del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "De la fuerza atemporal."
+      },
+      {
+        "id": "d",
+        "text": "Del balanceo del motor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "6",
+    "question": "Cuanto mayor sea la velocidad del camión¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "mayor será el rozamiento y mayor será la fuerza necesaria para mantenerlo en movimiento."
+      },
+      {
+        "id": "b",
+        "text": "menor será el rozamiento y mayor será la fuerza necesaria para mantenerlo en movimiento. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "menor será el rozamiento y menor será la fuerza necesaria para mantenerlo en movimiento."
+      },
+      {
+        "id": "d",
+        "text": "mayor será el rozamiento y menor será la fuerza necesaria para mantenerlo en movimiento."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "7",
+    "question": "¿Se deben colocar las partes más pesadas de la carga debajo de las partes más ligeras?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "No, porque se incrementa el riesgo en las curvas."
+      },
+      {
+        "id": "c",
+        "text": "Sí, porque se consigue mayor velocidad de crucero."
+      },
+      {
+        "id": "d",
+        "text": "Sí, porque hay menores probabilidades de que se produzca un vuelco."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "8",
+    "question": "Para incrementar la seguridad¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "se debe intentar que la altura de la carga en el vehículo sea lo más alta posible."
+      },
+      {
+        "id": "b",
+        "text": "se deben colocar las partes más ligeras de la carga debajo de las partes más pesadas."
+      },
+      {
+        "id": "c",
+        "text": "se debe distribuir la carga de manera que quede lo más agrupada posible en una misma zona."
+      },
+      {
+        "id": "d",
+        "text": "se deben colocar las partes más pesadas de la carga debajo de las partes más ligeras."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "9",
+    "question": "¿Qué factor puede afectar a la estabilidad del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La masa radial."
+      },
+      {
+        "id": "b",
+        "text": "La masa neta que se puede levantar."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia al balanceo del chasis."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia a la aceleración."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "10",
+    "question": "¿Se puede realizar transporte internacional en el ámbito de la Unión Europea con un vehículo articulado cuya cabeza tractora esté matriculada en un país y el semirremolque en otro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en todos los casos."
+      },
+      {
+        "id": "b",
+        "text": "No, nunca."
+      },
+      {
+        "id": "c",
+        "text": "Solo si se trata de transporte privado complementario."
+      },
+      {
+        "id": "d",
+        "text": "Solo si se trata de transporte público."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "11",
+    "question": "Según el acuerdo ATP, ¿qué es un vehículo identificado con las letras FRC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un vehículo refrigerante reforzado de la clase C."
+      },
+      {
+        "id": "b",
+        "text": "Un vehículo frigorífico normal de la clase C."
+      },
+      {
+        "id": "c",
+        "text": "Un vehículo isotermo reforzado C."
+      },
+      {
+        "id": "d",
+        "text": "Un vehículo frigorífico reforzado de la clase C. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "12",
+    "question": "¿Cuándo se produce un cambio de apoyo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando la curva permite que el camión circule apoyado durante un gran recorrido."
+      },
+      {
+        "id": "b",
+        "text": "Cuando la inclinación que alcanza el camión es la máxima posible."
+      },
+      {
+        "id": "c",
+        "text": "Cuando el apoyo pasa sucesivamente de las ruedas de un lado a las del otro."
+      },
+      {
+        "id": "d",
+        "text": "Cuando el apoyo pasa sucesivamente de las ruedas delanteras a las traseras."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "13",
+    "question": "¿Cómo se denomina al recipiente hecho de cualquier material y de diversas formas, concebido para contener mercancías y destinado a individualizar, dosificar, conservar, presentar y describir unitariamente los objetos que contiene?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embalaje."
+      },
+      {
+        "id": "b",
+        "text": "Bulto."
+      },
+      {
+        "id": "c",
+        "text": "Envase."
+      },
+      {
+        "id": "d",
+        "text": "Cubierta."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "14",
+    "question": "¿Qué fuerza interviene en el movimiento de un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La fuerza segmentarial cónica."
+      },
+      {
+        "id": "b",
+        "text": "La fuerza intermolecular."
+      },
+      {
+        "id": "c",
+        "text": "La fuerza electromotriz."
+      },
+      {
+        "id": "d",
+        "text": "La fuerza de adherencia que resulta de la fricción y de la atracción."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "15",
+    "question": "De las que se citan, ¿cuál constituye una resistencia al avance del camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia al rozamiento."
+      },
+      {
+        "id": "b",
+        "text": "La fuerza de deceleración."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia de la climatología adversa."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia a la potencia."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "16",
+    "question": "¿La autorización CEMT permite realizar transporte entre un país miembro de dicha organización y un país tercero?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Solo en situaciones de emergencia."
+      },
+      {
+        "id": "d",
+        "text": "Solo con vehículos de hasta 3.500 kg de Masa Máxima Autorizada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "17",
+    "question": "En el caso de un transporte sujeto al Convenio CMR, ¿qué menciones debe contener la carta de porte electrónica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nombre y apellidos de las partes intervinientes, domicilio, mercancía transportada y precio del transporte, solamente."
+      },
+      {
+        "id": "b",
+        "text": "Las mismas que la carta de porte expedida en papel."
+      },
+      {
+        "id": "c",
+        "text": "Las mismas que la carta de porte expedida en papel, salvo las que no resulten imprescindibles."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las anteriores respuestas es correcta."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "18",
+    "question": "En un contrato de transporte sujeto al Convenio CMR, en virtud del derecho a disponer de la mercancía, el remitente puede:",
+    "options": [
+      {
+        "id": "a",
+        "text": "detener el transporte, modificar el lugar previsto para la entrega y cambiar el destinatario indicado en la carta de porte."
+      },
+      {
+        "id": "b",
+        "text": "detener el transporte y modificar el lugar previsto para la entrega, pero no cambiar el destinatario indicado en la carta de porte."
+      },
+      {
+        "id": "c",
+        "text": "detener el transporte, pero no modificar el lugar previsto para la entrega ni cambiar el destinatario indicado en la carta de porte."
+      },
+      {
+        "id": "d",
+        "text": "El remitente no puede disponer de la mercancía una vez que se ha iniciado su transporte, pues el derecho pasa al destinatario a partir de ese momento."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "19",
+    "question": "¿Cuál de los siguientes es un sistema de tránsito aduanero utilizado en la Unión Europea?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El Convenio TIR."
+      },
+      {
+        "id": "b",
+        "text": "El Convenio ATA."
+      },
+      {
+        "id": "c",
+        "text": "El régimen de tránsito externo."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "20",
+    "question": "Según las condiciones generales de contratación, salvo pacto previo en contrario, los soportes aportados por el cargador:",
+    "options": [
+      {
+        "id": "a",
+        "text": "forman parte del envío y no pueden ser alquilados al porteador."
+      },
+      {
+        "id": "b",
+        "text": "no forman parte del envío y pueden ser alquilados al porteador a un precio ventajoso para este."
+      },
+      {
+        "id": "c",
+        "text": "pueden formar parte o no del envío, dependiendo del tipo de soporte."
+      },
+      {
+        "id": "d",
+        "text": "pueden formar parte o no del envío, dependiendo del tipo de mercancía."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "21",
+    "question": "Cuando contrate con un consumidor, el transportista está obligado a informarle de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la posibilidad de incluir en el contrato una declaración de valor."
+      },
+      {
+        "id": "b",
+        "text": "la posibilidad de incluir en el contrato una declaración de interés especial en la entrega."
+      },
+      {
+        "id": "c",
+        "text": "la posibilidad de suscribir un seguro. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "22",
+    "question": "Durante un transporte de mercancías peligrosas, ¿qué documento debe llevarse a bordo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un documento de identificación con fotografía por cada miembro de la tripulación."
+      },
+      {
+        "id": "b",
+        "text": "Certificado de aprobación para cada unidad de transporte cuando lo prevea el ADR"
+      },
+      {
+        "id": "c",
+        "text": "Carta de porte relativa a todas las mercancías peligrosas transportadas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "23",
+    "question": "¿Qué transporte permite realizar una autorización CEMT ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transporte entre estados miembros de la CEMT."
+      },
+      {
+        "id": "b",
+        "text": "Transporte entre estados miembros de la CEMT y países terceros."
+      },
+      {
+        "id": "c",
+        "text": "Transporte de cabotaje en estados miembros."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna es correcta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "24",
+    "question": "¿Qué caracteriza a la figura de los transitarios en el transporte por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Son, fundamentalmente, agencias de cargas completas."
+      },
+      {
+        "id": "b",
+        "text": "El el otro nombre que reciben las agencias TIR."
+      },
+      {
+        "id": "c",
+        "text": "Son especialistas en organizar transportes internacionales de mercancías."
+      },
+      {
+        "id": "d",
+        "text": "Son especialistas en organizar transportes intermodales, nacionales o internacionales."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "25",
+    "question": "¿Cuál es el resultado del producto de las dimensiones de longitud, anchura y altura interiores de la caja del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La masa máxima."
+      },
+      {
+        "id": "b",
+        "text": "El volumen útil."
+      },
+      {
+        "id": "c",
+        "text": "La capacidad de carga."
+      },
+      {
+        "id": "d",
+        "text": "El espacio de transporte."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "26",
+    "question": "¿Con qué siglas es conocido el antibloqueo de ruedas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ABP."
+      },
+      {
+        "id": "b",
+        "text": "ABS."
+      },
+      {
+        "id": "c",
+        "text": "BAS."
+      },
+      {
+        "id": "d",
+        "text": "ATP."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "27",
+    "question": "¿Qué recomendación es conveniente seguir para optimizar el consumo de carburante conduciendo en llano?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Presionar poco el pedal de acelerador."
+      },
+      {
+        "id": "b",
+        "text": "Circular en punto muerto siempre que sea posible."
+      },
+      {
+        "id": "c",
+        "text": "Mantener la aguja del tacómetro en la parte derecha de la zona económica, lo más cerca posible del régimen de consumo específico mínimo."
+      },
+      {
+        "id": "d",
+        "text": "Reducir mucho la relación de trasmisión seleccionada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "28",
+    "question": "La resistencia aerodinámica¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "crece de manera inversamente proporcional a la aceleración."
+      },
+      {
+        "id": "b",
+        "text": "crece con el cuadrado de la velocidad."
+      },
+      {
+        "id": "c",
+        "text": "crece con el doble de la velocidad."
+      },
+      {
+        "id": "d",
+        "text": "decrece ligeramente con el incremento de la velocidad."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "29",
+    "question": "Las descargas eléctricas en trabajadores del sector del transporte pueden venir derivadas de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "conexiones inadecuadas."
+      },
+      {
+        "id": "b",
+        "text": "cables y enchufes defectuosos."
+      },
+      {
+        "id": "c",
+        "text": "contacto de la carga del vehículo con tendidos eléctricos."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "30",
+    "question": "En un accidente de circulación, si hay heridos graves, los conductores de otros vehículos que acudan en su auxilio:",
+    "options": [
+      {
+        "id": "a",
+        "text": "deben ejercer movimientos intensos sobre los heridos para que se reanimen."
+      },
+      {
+        "id": "b",
+        "text": "deben trasladar a los heridos urgentemente en sus vehículos al hospital más cercano."
+      },
+      {
+        "id": "c",
+        "text": "no deben mover a los heridos, salvo peligro inminente de incendio, atropello u otra circunstancia similar."
+      },
+      {
+        "id": "d",
+        "text": "deben continuar la marcha para no entorpecer la circulación."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "31",
+    "question": "Ante la previsión de condiciones meteorológicas adversas debidas a la nieve, ¿qué debemos llevar en el vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Poco combustible para ir más rápido."
+      },
+      {
+        "id": "b",
+        "text": "Suplemento de anticongelante."
+      },
+      {
+        "id": "c",
+        "text": "Combustible suficiente para poder contar con más tiempo de calefacción. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "32",
+    "question": "El airbag es un mecanismo de seguridad:",
+    "options": [
+      {
+        "id": "a",
+        "text": "activa."
+      },
+      {
+        "id": "b",
+        "text": "pasiva."
+      },
+      {
+        "id": "c",
+        "text": "tanto activa como pasiva."
+      },
+      {
+        "id": "d",
+        "text": "No es un mecanismo de seguridad sino de emergencia."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "33",
+    "question": "Para que la declaración amistosa de accidente sea válida, ¿por quién tiene que estar firmada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por los conductores y los testigos del accidente."
+      },
+      {
+        "id": "b",
+        "text": "Por los conductores implicados en el accidente."
+      },
+      {
+        "id": "c",
+        "text": "Basta con que la firme el conductor que se declare culpable."
+      },
+      {
+        "id": "d",
+        "text": "Por los titulares de los vehículos implicados o sus representantes."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "34",
+    "question": "Tras un accidente de circulación, si se comprueba que un herido sufre una hemorragia, se deberá:",
+    "options": [
+      {
+        "id": "a",
+        "text": "presionar sobre la herida con un trapo limpio."
+      },
+      {
+        "id": "b",
+        "text": "practicar un masaje cardiaco."
+      },
+      {
+        "id": "c",
+        "text": "refrigerar la herida con agua fría."
+      },
+      {
+        "id": "d",
+        "text": "esperar a que la hemorragia cese por coagulación de la sangre."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "35",
+    "question": "¿Dónde se ha de colocar la placa de instalación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En el motor del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "En la puerta del copiloto donde se vea bien."
+      },
+      {
+        "id": "c",
+        "text": "Debajo del asiento del conductor para que no se vea bien."
+      },
+      {
+        "id": "d",
+        "text": "En el tacógrafo, o junto a él, en lugar visible y de fácil acceso."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "36",
+    "question": "En la actividad de transporte, ¿qué mala práctica está asociada directamente con lesiones oculares?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limpieza de cisternas o de la caja del vehículo en condiciones inadecuadas, sobre todo si han contenido mercancías peligrosas."
+      },
+      {
+        "id": "b",
+        "text": "Posición de trabajo incorrecta."
+      },
+      {
+        "id": "c",
+        "text": "Herramientas poco apropiadas para la tarea. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "d",
+        "text": "Herramientas defectuosas o desgastadas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "37",
+    "question": "El tipo de esfuerzo requerido para el manejo de la carga del vehículo influye en el nivel de riesgo. Así, es más segura la manipulación que exija:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tener que cambiar el punto de agarre de la carga."
+      },
+      {
+        "id": "b",
+        "text": "esfuerzos demasiado frecuentes."
+      },
+      {
+        "id": "c",
+        "text": "esfuerzos manteniendo un ritmo de trabajo elevado."
+      },
+      {
+        "id": "d",
+        "text": "no realizar esfuerzos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "38",
+    "question": "Un autocar que transporta bomberos a otro Estado para ayudar en tareas de salvamento en un terremoto está:",
+    "options": [
+      {
+        "id": "a",
+        "text": "exento de utilizar el tacógrafo."
+      },
+      {
+        "id": "b",
+        "text": "obligado a usar el tacógrafo, puesto que no se puede desconectar."
+      },
+      {
+        "id": "c",
+        "text": "obligado a usar el tacógrafo, puesto que el viaje transcurre por varios países de la Unión Europea."
+      },
+      {
+        "id": "d",
+        "text": "obligado a llevar y utilizar tacógrafo digital."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "39",
+    "question": "¿Cómo se denomina también la declaración amistosa de accidentes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Declaración amistosa de colisión."
+      },
+      {
+        "id": "b",
+        "text": "Parte regional de accidentes."
+      },
+      {
+        "id": "c",
+        "text": "Parte europeo de accidente."
+      },
+      {
+        "id": "d",
+        "text": "Papel amistoso de accidente."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "40",
+    "question": "¿Cuál es la primera precaución que se debe tomar ante una conducción en condiciones adversas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adaptar el tipo de conducción a las condiciones de la vía."
+      },
+      {
+        "id": "b",
+        "text": "Rebasar la velocidad máxima de la carretera por la que se circula."
+      },
+      {
+        "id": "c",
+        "text": "No rebasar la velocidad mínima de la carretera por la que se circula."
+      },
+      {
+        "id": "d",
+        "text": "En ningún caso se debería circular."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "41",
+    "question": "¿Qué distancia de seguridad es necesario dejar respecto del vehículo que nos precede para practicar una conducción preventiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15 metros."
+      },
+      {
+        "id": "b",
+        "text": "20 metros. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "La que nos garantice 10 o 15 segundos de reacción."
+      },
+      {
+        "id": "d",
+        "text": "La que nos garantice, al menos, 2 o 3 segundos de reacción."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "42",
+    "question": "¿Qué tipos de tiempos establece la normativa laboral española para los conductores profesionales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conducción y descanso."
+      },
+      {
+        "id": "b",
+        "text": "Pausa e interrupción."
+      },
+      {
+        "id": "c",
+        "text": "Trabajo efectivo y tiempo de presencia."
+      },
+      {
+        "id": "d",
+        "text": "Ninguno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "43",
+    "question": "De las siguientes opciones, ¿cuál es una ventaja propia de los retardadores?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ayudan a evitar el sobrecalentamiento de los frenos durante frenadas prolongadas."
+      },
+      {
+        "id": "b",
+        "text": "Realizan una función de frenado adicional de los ejes."
+      },
+      {
+        "id": "c",
+        "text": "Están exentos de desgaste."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "44",
+    "question": "¿Cuál de las siguientes es una característica diferenciadora de un servicio de transporte que puede suponer la percepción de un nivel de calidad superior por parte del cliente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La integridad de la carga."
+      },
+      {
+        "id": "b",
+        "text": "La seguridad de los pasajeros."
+      },
+      {
+        "id": "c",
+        "text": "Un seguro complementario de la mercancía."
+      },
+      {
+        "id": "d",
+        "text": "El desarrollo íntegro del trayecto."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "45",
+    "question": "¿Qué objetivo concreto persigue la Ergonomía en el ámbito laboral?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ajustar las exigencias del trabajo a las posibilidades del hombre."
+      },
+      {
+        "id": "b",
+        "text": "Diseñar las máquinas pensando en el mayor rendimiento."
+      },
+      {
+        "id": "c",
+        "text": "Adaptar el entorno del descanso."
+      },
+      {
+        "id": "d",
+        "text": "Configurar los puestos de trabajo de modo que permitan una postura perjudicial para la salud del trabajador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "46",
+    "question": "¿Cuál es la función principal del ABS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitar el bloqueo de las ruedas del vehículo, disminuyendo el riesgo al derrape."
+      },
+      {
+        "id": "b",
+        "text": "Mejorar el seguimiento de la trayectoria del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Aumentar la presión de frenado durante una frenada de urgencia. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "d",
+        "text": "Regular la frenada entre el eje delantero y el trasero."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "47",
+    "question": "¿Cuándo se alcanza la máxima concentración de alcohol en sangre?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos horas después de haberlo ingerido."
+      },
+      {
+        "id": "b",
+        "text": "Media hora después de haberlo ingerido con el estómago vacío y una hora después con comida en el estómago."
+      },
+      {
+        "id": "c",
+        "text": "Una hora después de haberlo ingerido con el estómago vacío y una hora y media después con comida en el estómago."
+      },
+      {
+        "id": "d",
+        "text": "Dos horas después de haberlo ingerido con el estómago vacío y dos horas y media después con comida en el estómago."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "48",
+    "question": "¿Cuántos extintores deberá llevar un camión rígido de más de 20.000 kg de Masa Máxima Autorizada (MMA), de acuerdo con la Orden de 27 de julio de 1999?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uno de la clase 34A/144B."
+      },
+      {
+        "id": "b",
+        "text": "Dos de la clase 34A/144B."
+      },
+      {
+        "id": "c",
+        "text": "Uno de la clase 8A/34B."
+      },
+      {
+        "id": "d",
+        "text": "Uno de la clase 8A/34B y otro de la clase 34A/34B."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "49",
+    "question": "¿En qué modalidades puede obtenerse el certificado de aptitud profesional de conductores acreditativo de la cualificación inicial?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modalidades simple y compuesta."
+      },
+      {
+        "id": "b",
+        "text": "Modalidades sencilla y avanzada."
+      },
+      {
+        "id": "c",
+        "text": "Modalidades específica y genérica."
+      },
+      {
+        "id": "d",
+        "text": "Modalidades ordinaria y acelerada."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "50",
+    "question": "¿Cuál es la función principal del ralentizador eléctrico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reponer la electricidad de la batería cuando está descargada."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar la tensión eléctrica producida por el generador de corriente."
+      },
+      {
+        "id": "c",
+        "text": "Reducir la tensión eléctrica producida por el generador de corriente."
+      },
+      {
+        "id": "d",
+        "text": "Reducir el uso del freno de servicio."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "51",
+    "question": "La elección de la relación de marchas correcta durante la conducción depende, entre otras circunstancias¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "del perfil de la carretera."
+      },
+      {
+        "id": "b",
+        "text": "de la temperatura exterior. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "del carburante utilizado."
+      },
+      {
+        "id": "d",
+        "text": "de lo que indique el manómetro."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "52",
+    "question": "El tiempo de espera en una frontera de un vehículo, ¿qué tipo de tiempo es considerado por la normativa laboral española de cara al conductor profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiempo de trabajo efectivo."
+      },
+      {
+        "id": "b",
+        "text": "Tiempo de espera."
+      },
+      {
+        "id": "c",
+        "text": "Tiempo de pausa."
+      },
+      {
+        "id": "d",
+        "text": "Tiempo de presencia cuando se haya comunicado su duración de antemano."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "53",
+    "question": "¿Cuál de los siguientes no suele ser un cliente difícil de una empresa de transportes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El autoritario."
+      },
+      {
+        "id": "b",
+        "text": "El discutidor."
+      },
+      {
+        "id": "c",
+        "text": "El empático."
+      },
+      {
+        "id": "d",
+        "text": "El altivo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "54",
+    "question": "¿Cambia el modo de funcionamiento del tacógrafo digital dependiendo de las tarjetas que tenga insertadas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Sí, pero solo cambia si insertas una tarjeta no válida."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo cambia cuando insertas una tarjeta caducada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "55",
+    "question": "¿Qué tipo de ralentizador utiliza corrientes magnéticas para el frenado de un vehículo pesado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El freno en el escape."
+      },
+      {
+        "id": "b",
+        "text": "El freno de disco."
+      },
+      {
+        "id": "c",
+        "text": "El retarder."
+      },
+      {
+        "id": "d",
+        "text": "El freno eléctrico."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "56",
+    "question": "¿Qué resistencias intervienen en el movimiento de los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia que oponga la inercia del pistón."
+      },
+      {
+        "id": "b",
+        "text": "La resistencia aerodinámica y a la rodadura."
+      },
+      {
+        "id": "c",
+        "text": "La adherencia del neumático y la aerodinámica de la caja de velocidades."
+      },
+      {
+        "id": "d",
+        "text": "La adherencia del neumático y la inercia aceite utilizado en el sistema de lubricación. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "57",
+    "question": "Si la presión de inflado del neumático es inferior a la recomendada por el fabricante del vehículo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la adherencia es mayor."
+      },
+      {
+        "id": "b",
+        "text": "el consumo aumenta."
+      },
+      {
+        "id": "c",
+        "text": "disminuye la deriva del neumático."
+      },
+      {
+        "id": "d",
+        "text": "disminuye la flexibilidad lateral del neumático."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "58",
+    "question": "La velocidad a la que circule un automóvil, ¿influye en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, a menor velocidad, menor consumo."
+      },
+      {
+        "id": "b",
+        "text": "Sí, a menor velocidad, mayor consumo."
+      },
+      {
+        "id": "c",
+        "text": "Si la relación de marchas es la adecuada, no influye."
+      },
+      {
+        "id": "d",
+        "text": "No."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "59",
+    "question": "Si se circula con un automóvil a 40 kilómetros por hora y se aumenta la velocidad a 80 kilómetros por hora, ¿aumenta el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, el consumo aumenta el doble."
+      },
+      {
+        "id": "b",
+        "text": "Sí, el consumo aumenta más del doble."
+      },
+      {
+        "id": "c",
+        "text": "Depende de la carga que lleve el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero sólo en pendientes ascendentes."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "60",
+    "question": "¿Por qué motivo es necesario que el sistema de distribución esté correctamente reglado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para que el engrase sea el adecuado."
+      },
+      {
+        "id": "b",
+        "text": "Para que la electricidad sea distribuida en cada bujía en el momento preciso."
+      },
+      {
+        "id": "c",
+        "text": "Para que la apertura y cierre de las válvulas sea en el momento oportuno y, con ello, no aumentar el consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "Para que el suministro de carburante en cada inyector sea en el momento adecuado."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "61",
+    "question": "El aceite que se utilice para la lubricación de un motor, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, ya que, si es un aceite de baja densidad, se frena el movimiento de las piezas, aumentando el consumo."
+      },
+      {
+        "id": "b",
+        "text": "Sí, ya que, si es un aceite de baja viscosidad, se frena el movimiento de las piezas, aumentando el consumo."
+      },
+      {
+        "id": "c",
+        "text": "Sí, ya que, si es un aceite de alta calidad, las pérdidas de potencia son menores."
+      },
+      {
+        "id": "d",
+        "text": "No, solo influye en el desgaste de las piezas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "62",
+    "question": "¿Cómo actúa el ralentizador eléctrico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumentando la resistencia aerodinámica."
+      },
+      {
+        "id": "b",
+        "text": "Reduciendo la resistencia aerodinámica."
+      },
+      {
+        "id": "c",
+        "text": "Bloqueando los cilindros o pulmones de freno."
+      },
+      {
+        "id": "d",
+        "text": "Manteniendo las revoluciones de la transmisión en un régimen determinado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "63",
+    "question": "La formación continua es obligatoria para los titulares de los permisos de conducir:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de cualquier tipo."
+      },
+      {
+        "id": "b",
+        "text": "de la clase D o D+E, solamente."
+      },
+      {
+        "id": "c",
+        "text": "de la clase D1 o D1+E, solamente."
+      },
+      {
+        "id": "d",
+        "text": "de las clases D, D+E, D1 y D1+E."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "64",
+    "question": "Un vehículo destinado exclusivamente a trasladar mercancías dentro del recinto de un puerto está:",
+    "options": [
+      {
+        "id": "a",
+        "text": "obligado al uso de tacógrafo digital."
+      },
+      {
+        "id": "b",
+        "text": "obligado al uso de tacógrafo analógico, al menos."
+      },
+      {
+        "id": "c",
+        "text": "exento del uso de tacógrafo siempre que la Masa Máxima Autorizada no supere 12.000 kg."
+      },
+      {
+        "id": "d",
+        "text": "exento del uso de tacógrafo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "65",
+    "question": "En caso de lluvia, ¿qué actuación debemos seguir con el vehículo que tenemos delante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adelantarlo lo más rápidamente posible."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar la velocidad."
+      },
+      {
+        "id": "c",
+        "text": "Disminuir la distancia de seguridad."
+      },
+      {
+        "id": "d",
+        "text": "Aumentar la distancia de seguridad."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "66",
+    "question": "¿Qué es el ABS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un mecanismo que incrementa la potencia del motor."
+      },
+      {
+        "id": "b",
+        "text": "Un freno de emergencia para las ruedas traseras."
+      },
+      {
+        "id": "c",
+        "text": "Un sistema de aviso de bajada de presión en el sistema de frenado."
+      },
+      {
+        "id": "d",
+        "text": "Un sistema que evita el bloqueo de las ruedas en caso de frenada brusca."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "67",
+    "question": "El retardador hidráulico tiene que utilizarse:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de manera progresiva."
+      },
+      {
+        "id": "b",
+        "text": "no más de una vez por hora. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "únicamente en situaciones de emergencia."
+      },
+      {
+        "id": "d",
+        "text": "de manera brusca."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "68",
+    "question": "¿Cuál es el período máximo ininterrumpido que se puede conducir un vehículo que lleva tacógrafo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 horas y media."
+      },
+      {
+        "id": "b",
+        "text": "4 horas."
+      },
+      {
+        "id": "c",
+        "text": "4 horas y media."
+      },
+      {
+        "id": "d",
+        "text": "5 horas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "69",
+    "question": "¿Qué acciones comprende el protocolo de actuación ante emergencias denominado PAS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Parar, avisar y salir."
+      },
+      {
+        "id": "b",
+        "text": "Proteger, alertar y socorrer."
+      },
+      {
+        "id": "c",
+        "text": "Parar, alertar y socorrer."
+      },
+      {
+        "id": "d",
+        "text": "Protección, auxilio y seguridad."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "70",
+    "question": "Una buena forma de ahorrar carburante al conducir un vehículo pesado es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperar con el motor arrancado sin circular hasta que alcance la temperatura adecuada de funcionamiento."
+      },
+      {
+        "id": "b",
+        "text": "bajar las pendientes en punto muerto."
+      },
+      {
+        "id": "c",
+        "text": "circular con una presión de inflado de los neumáticos inferior a la recomendada por el fabricante."
+      },
+      {
+        "id": "d",
+        "text": "mantener la aguja del cuentarrevoluciones del motor en la zona marcada, generalmente, de color verde."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "71",
+    "question": "En el cuentarrevoluciones de un vehículo pesado existe una zona marcada, generalmente, de color verde, ¿qué indica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es la zona de máximo aprovechamiento del turbocompresor."
+      },
+      {
+        "id": "b",
+        "text": "Es la zona de menor consumo."
+      },
+      {
+        "id": "c",
+        "text": "Es la zona en la que el tiempo de inyección se acorta."
+      },
+      {
+        "id": "d",
+        "text": "Es la zona en la que la inyección de carburante es mayor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "72",
+    "question": "Para aprovechar mejor el carburante que consume el motor de un automóvil es importante conocer las resistencias que intervienen en el movimiento de los vehículos. De las que se citan a continuación, ¿cuál de ellas interviene?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia de la caja de velocidades. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "b",
+        "text": "La resistencia aerodinámica."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia del movimiento de los pistones."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia del cigüeñal."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "73",
+    "question": "Relacionado con el coeficiente aerodinámico de un vehículo, ¿qué se debe saber?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que no influye en el consumo ni en la estabilidad del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Que no influye en el consumo, pero sí en la estabilidad del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Que influye en el consumo, pero no en la estabilidad del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Que influye en el consumo y en la estabilidad del vehículo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "74",
+    "question": "Para facilitar el paso del aire alrededor del vehículo y, por tanto, no aumentar el consumo de carburante, ¿qué es conveniente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circular con los cristales de las ventanillas subidos."
+      },
+      {
+        "id": "b",
+        "text": "Dar más presión a los neumáticos para que la adherencia a la calzada sea menor."
+      },
+      {
+        "id": "c",
+        "text": "Dar más presión a los neumáticos para que la adherencia a la calzada sea mayor."
+      },
+      {
+        "id": "d",
+        "text": "Dar menos presión a los neumáticos para que la adherencia a la calzada sea menor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "75",
+    "question": "Para conseguir que no aumente el consumo de carburante, en los motores de combustión es conveniente, por lo general, cambiar a una marcha más alta entre:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.000 y 2.500 revoluciones por minuto."
+      },
+      {
+        "id": "b",
+        "text": "3.000 y 3.500 revoluciones por minuto."
+      },
+      {
+        "id": "c",
+        "text": "3.500 y 4.000 revoluciones por minuto."
+      },
+      {
+        "id": "d",
+        "text": "1.500 y 2.000 revoluciones por minuto."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "76",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del tipo de freno que monte el vehículo."
+      },
+      {
+        "id": "b",
+        "text": "De la situación de las ruedas motrices."
+      },
+      {
+        "id": "c",
+        "text": "Del porcentaje de anticongelante que posea el líquido del sistema de refrigeración."
+      },
+      {
+        "id": "d",
+        "text": "De la relación de marchas seleccionada."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "77",
+    "question": "El mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre otros:",
+    "options": [
+      {
+        "id": "a",
+        "text": "del perfil de la carretera y la presión de los neumáticos."
+      },
+      {
+        "id": "b",
+        "text": "del mantenimiento del vehículo y el voltaje que suministre la batería. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "de la posición del pedal del acelerador y la longitud del cigüeñal."
+      },
+      {
+        "id": "d",
+        "text": "del motor de arranque y del tipo de ralentizador que monte el vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "78",
+    "question": "Entre los factores que influyen en el consumo de carburante de un vehículo pesado se encuentra:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el tipo de batería."
+      },
+      {
+        "id": "b",
+        "text": "el número de bujías"
+      },
+      {
+        "id": "c",
+        "text": "la aerodinámica."
+      },
+      {
+        "id": "d",
+        "text": "el tipo de ralentizador."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "79",
+    "question": "Para reducir el consumo de carburante de un vehículo pesado, ¿qué relación de marchas hay que utilizar mínimamente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La más larga."
+      },
+      {
+        "id": "b",
+        "text": "La primera."
+      },
+      {
+        "id": "c",
+        "text": "La quinta."
+      },
+      {
+        "id": "d",
+        "text": "La octava."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "80",
+    "question": "Para efectuar la respiración boca a boca, el reanimador deberá:",
+    "options": [
+      {
+        "id": "a",
+        "text": "colocarse de rodillas junto al herido."
+      },
+      {
+        "id": "b",
+        "text": "coger aire y soplar en la boca del herido."
+      },
+      {
+        "id": "c",
+        "text": "retirar la boca para que el herido pueda expulsar el aire y repetir la operación."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "81",
+    "question": "Señale la afirmación correcta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "La declaración amistosa de accidente hace que disminuyan los atascos de tráfico."
+      },
+      {
+        "id": "b",
+        "text": "La declaración amistosa de accidente es válida, aunque no se tenga suscrito el seguro de responsabilidad civil obligatorio."
+      },
+      {
+        "id": "c",
+        "text": "Según la Ley de Contrato de Seguro, el plazo máximo para que el tomador comunique al asegurador el acaecimiento de un siniestro es de 20 días."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "82",
+    "question": "¿Cuál es el importe mínimo de las sanciones aplicables a los transportistas que no cumplan con la obligación de devolver al lugar de procedencia a los viajeros respecto de los que corresponda dicha devolución?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.001 euros."
+      },
+      {
+        "id": "b",
+        "text": "5.001 euros. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "c",
+        "text": "10.001 euros."
+      },
+      {
+        "id": "d",
+        "text": "Depende del número de viajeros."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "83",
+    "question": "Entre las medidas adoptadas por los Estados miembros en el marco de la cooperación Schengen cabe mencionar:",
+    "options": [
+      {
+        "id": "a",
+        "text": "crear una terminal común en los aeropuertos para viajeros del ámbito Schengen."
+      },
+      {
+        "id": "b",
+        "text": "evitar que los transportistas tengan que luchar contra la inmigración clandestina."
+      },
+      {
+        "id": "c",
+        "text": "reforzar los controles fronterizos interiores."
+      },
+      {
+        "id": "d",
+        "text": "facilitar el cruce de fronteras interiores sin control sobre las personas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "84",
+    "question": "¿Cuál es el objeto del Sistema de Información de Schengen (SIS)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tener clasificado el ADN de todas las personas que crucen las fronteras."
+      },
+      {
+        "id": "b",
+        "text": "Poder hacer un mapa genético de los ciudadanos europeos."
+      },
+      {
+        "id": "c",
+        "text": "Preservar el orden y la seguridad públicos a la vez que se facilita la circulación de personas."
+      },
+      {
+        "id": "d",
+        "text": "Informatizar los servicios judiciales europeos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "85",
+    "question": "En los últimos años, el mayor número de conductores y pasajeros muertos en accidente de tráfico conducían o viajaban en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "turismos."
+      },
+      {
+        "id": "b",
+        "text": "bicicletas."
+      },
+      {
+        "id": "c",
+        "text": "autobuses urbanos y de corta distancia."
+      },
+      {
+        "id": "d",
+        "text": "autobuses de largo recorrido."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "86",
+    "question": "Ante una situación en la que se tenga que realizar una frenada de emergencia¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "se debe presionar el pedal del freno con fuerza y a fondo."
+      },
+      {
+        "id": "b",
+        "text": "se debe evitar el bloqueo de las ruedas."
+      },
+      {
+        "id": "c",
+        "text": "se deben pisar a la vez los pedales de embrague y de freno cuando el vehículo no disponga de ABS."
+      },
+      {
+        "id": "d",
+        "text": "se debe evitar la frenada progresiva."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "87",
+    "question": "La potencia de los motores se mide en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "amperios."
+      },
+      {
+        "id": "b",
+        "text": "julios."
+      },
+      {
+        "id": "c",
+        "text": "kilovatios. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      },
+      {
+        "id": "d",
+        "text": "kilómetros por hora."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "88",
+    "question": "¿Qué ventaja ofrece el retardador llamado \"intárder\"?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permite que el vehículo carezca de freno de servicio."
+      },
+      {
+        "id": "b",
+        "text": "Permite que el vehículo carezca de freno de estacionamiento."
+      },
+      {
+        "id": "c",
+        "text": "Permite que el vehículo solo necesite sistema de frenado en el eje trasero."
+      },
+      {
+        "id": "d",
+        "text": "Reduce el uso del freno de servicio, evitando su fatiga."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "89",
+    "question": "Si el vehículo ha caído al agua y se encuentra parcialmente sumergido:",
+    "options": [
+      {
+        "id": "a",
+        "text": "solo se debe evacuar de forma inmediata si se trata de un transporte escolar."
+      },
+      {
+        "id": "b",
+        "text": "se debe evacuar inmediatamente."
+      },
+      {
+        "id": "c",
+        "text": "no se debe evacuar hasta que lo decida el personal del cuerpo de bomberos."
+      },
+      {
+        "id": "d",
+        "text": "solo se debe evacuar si, además, las puertas se han bloqueado."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "90",
+    "question": "El segundo conductor, en caso de que seleccione la actividad de descanso en el tacógrafo analógico cuando el vehículo está en movimiento, comete una infracción por:",
+    "options": [
+      {
+        "id": "a",
+        "text": "exceso de velocidad."
+      },
+      {
+        "id": "b",
+        "text": "falta de descanso diario."
+      },
+      {
+        "id": "c",
+        "text": "mal uso del selector de actividad."
+      },
+      {
+        "id": "d",
+        "text": "exceso de conducción."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "91",
+    "question": "¿Qué sistema activa, en todos los ejes, los cilindros del sistema de freno de servicio cuando se acciona el pedal de freno?",
+    "options": [
+      {
+        "id": "a",
+        "text": "FRT."
+      },
+      {
+        "id": "b",
+        "text": "ACU."
+      },
+      {
+        "id": "c",
+        "text": "EBS."
+      },
+      {
+        "id": "d",
+        "text": "ABS."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "92",
+    "question": "¿Qué resistencia es la que requiere mayor energía para ser vencida por un vehículo cargado que circula a baja velocidad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resistencia de pendiente."
+      },
+      {
+        "id": "b",
+        "text": "Resistencia aerodinámica."
+      },
+      {
+        "id": "c",
+        "text": "Resistencia por aceleración."
+      },
+      {
+        "id": "d",
+        "text": "Resistencia a la rodadura. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "93",
+    "question": "¿Qué acciones debe llevar a cabo el conductor en relación con la carga para ahorrar carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fijar bien los toldos"
+      },
+      {
+        "id": "b",
+        "text": "Estibarla correctamente."
+      },
+      {
+        "id": "c",
+        "text": "Protegerla con lonas tensadas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "94",
+    "question": "¿Con qué elemento de seguridad activa del vehículo está relacionado el PCS (pre-collision system)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con el alumbrado."
+      },
+      {
+        "id": "b",
+        "text": "Con la suspensión."
+      },
+      {
+        "id": "c",
+        "text": "Con la dirección."
+      },
+      {
+        "id": "d",
+        "text": "Con los frenos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "95",
+    "question": "El dispositivo de seguridad BAS, ¿qué acción lleva a cabo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mide la distancia con el vehículo que circula delante y calcula la distancia de seguridad."
+      },
+      {
+        "id": "b",
+        "text": "En un frenada de emergencia, corrige la presión de frenado para evitar la colisión."
+      },
+      {
+        "id": "c",
+        "text": "Si capta que se va a producir el bloqueo de una rueda, disminuye la fuerza de frenado sobre ella."
+      },
+      {
+        "id": "d",
+        "text": "Si, al arrancar, una rueda motriz patina, la frena."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "96",
+    "question": "¿En base a qué elige el conductor, principalmente, su nivel de riesgo aceptado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En base a las ganancias y pérdidas esperadas."
+      },
+      {
+        "id": "b",
+        "text": "En base al conocimiento de la carretera."
+      },
+      {
+        "id": "c",
+        "text": "En base al conocimiento del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "En base a la información del entorno."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "97",
+    "question": "Durante la conducción, ¿qué información recibe el conductor proveniente del medio ambiente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tipos de vehículos circulando."
+      },
+      {
+        "id": "b",
+        "text": "Posición del sol."
+      },
+      {
+        "id": "c",
+        "text": "Condiciones de la superficie."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "98",
+    "question": "Cuando la calzada comienza a cubrirse de nieve ¿qué nivel de circulación debe señalizarse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verde."
+      },
+      {
+        "id": "b",
+        "text": "Amarillo."
+      },
+      {
+        "id": "c",
+        "text": "Naranja."
+      },
+      {
+        "id": "d",
+        "text": "Rojo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "99",
+    "question": "Los alumnos que realicen un curso para la obtención de la cualificación inicial de conductores podrán contabilizar como parte de dicha formación la realizada en relación con:",
+    "options": [
+      {
+        "id": "a",
+        "text": "transporte regular."
+      },
+      {
+        "id": "b",
+        "text": "transporte de mercancía paletizada."
+      },
+      {
+        "id": "c",
+        "text": "sensibilización sobre los derechos de los viajeros con discapacidad."
+      },
+      {
+        "id": "d",
+        "text": "transporte escolar y de menores."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "100",
+    "question": "Se presume que existe acuerdo de sometimiento a las Juntas Arbitrales del Transporte cuando la cuantía de la controversia:",
+    "options": [
+      {
+        "id": "a",
+        "text": "no excede de 5.000 euros."
+      },
+      {
+        "id": "b",
+        "text": "excede de 5.000 euros."
+      },
+      {
+        "id": "c",
+        "text": "no excede de 15.000 euros."
+      },
+      {
+        "id": "d",
+        "text": "excede de 15.000 euros."
+      }
+    ],
+    "correct": "c"
+  }
+]

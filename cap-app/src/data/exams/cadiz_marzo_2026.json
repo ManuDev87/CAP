@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "Las empresas de transporte de mercancías que trabajan con vehículos ligeros en España presentan:",
+    "options": [
+      {
+        "id": "a",
+        "text": "alto nivel de concentración empresarial."
+      },
+      {
+        "id": "b",
+        "text": "alto nivel de atomización empresarial."
+      },
+      {
+        "id": "c",
+        "text": "bajo nivel de atomización empresarial."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "2",
+    "question": "El denominado ángulo de deriva está relacionado con:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el deslizamiento del camión cuando se produce un derrape."
+      },
+      {
+        "id": "b",
+        "text": "la adherencia del neumático sobre el pavimento."
+      },
+      {
+        "id": "c",
+        "text": "la capacidad de un camión para conservar su estabilidad."
+      },
+      {
+        "id": "d",
+        "text": "la trayectoria del camión en una curva."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "3",
+    "question": "En el caso de transporte privado complementario de mercancías:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la empresa debe dedicarse, como actividad principal, al transporte de mercancías."
+      },
+      {
+        "id": "b",
+        "text": "las mercancías tendrán su origen o destino en un lugar en el que la empresa desarrolle trabajos relacionados con su actividad principal."
+      },
+      {
+        "id": "c",
+        "text": "el conductor puede tener una relación mercantil con la empresa."
+      },
+      {
+        "id": "d",
+        "text": "la vinculación del vehículo con la empresa no puede basarse en un contrato de alquiler."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "4",
+    "question": "Según el acuerdo ATP, las marcas de identificación de los vehículos de temperatura controlada consisten en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "unos números."
+      },
+      {
+        "id": "b",
+        "text": "unas letras."
+      },
+      {
+        "id": "c",
+        "text": "unos números y unas letras."
+      },
+      {
+        "id": "d",
+        "text": "unos números y unos colores."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "5",
+    "question": "Si observamos en el círculo de Kamm que la fuerza total equivale a la fuerza de frenado:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el camión frena perfectamente."
+      },
+      {
+        "id": "b",
+        "text": "la rueda del camión se bloquea."
+      },
+      {
+        "id": "c",
+        "text": "la rueda del camión no se bloquea."
+      },
+      {
+        "id": "d",
+        "text": "se tiene fuerza de guiado lateral suficiente."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "6",
+    "question": "¿Cómo se denomina el sistema que aumenta o disminuye la guiñada para que el camión se mantenga en la trayectoria que marcan las ruedas? COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control de estabilidad."
+      },
+      {
+        "id": "b",
+        "text": "La anchura del neumático."
+      },
+      {
+        "id": "c",
+        "text": "Sistema de suspensión."
+      },
+      {
+        "id": "d",
+        "text": "El dibujo del neumático."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "7",
+    "question": "Una incorrecta distribución de la carga:",
+    "options": [
+      {
+        "id": "a",
+        "text": "afecta a la aportación de nitrógeno."
+      },
+      {
+        "id": "b",
+        "text": "afecta a la aceleración máxima conseguida."
+      },
+      {
+        "id": "c",
+        "text": "provoca un aumento en el riesgo de accidente."
+      },
+      {
+        "id": "d",
+        "text": "afecta al peso específico de la carga."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "8",
+    "question": "¿Cómo se denomina la junta de una sociedad anónima en la que se aprueban las gestiones de los promotores, los estatutos, el valor de las aportaciones no dinerarias, el nombramiento de las personas encargadas de la administración, etc.?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Junta general."
+      },
+      {
+        "id": "b",
+        "text": "Junta ordinaria."
+      },
+      {
+        "id": "c",
+        "text": "Junta constituyente."
+      },
+      {
+        "id": "d",
+        "text": "Junta extraordinaria."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "9",
+    "question": "Cuando no se solicita la inscripción de la escritura de constitución de una sociedad anónima antes de que transcurra un año de su otorgamiento, la sociedad deviene:",
+    "options": [
+      {
+        "id": "a",
+        "text": "nula."
+      },
+      {
+        "id": "b",
+        "text": "inexistente."
+      },
+      {
+        "id": "c",
+        "text": "viciada."
+      },
+      {
+        "id": "d",
+        "text": "irregular."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "10",
+    "question": "En los transportes realizados en colaboración con otros transportistas, el transportista que contrata con el cargador responderá frente al transportista colaborador como:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargador."
+      },
+      {
+        "id": "b",
+        "text": "operador de transportes."
+      },
+      {
+        "id": "c",
+        "text": "transportista."
+      },
+      {
+        "id": "d",
+        "text": "colaborador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "11",
+    "question": "¿Qué se entiende por subviraje en una curva tomada por un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La trayectoria real es más abierta que la que debería realizar. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "b",
+        "text": "La trayectoria real es más cerrada que la que debería realizar."
+      },
+      {
+        "id": "c",
+        "text": "La trayectoria del camión cuando cambia de carril."
+      },
+      {
+        "id": "d",
+        "text": "El vuelco del camión al tomar la curva frenando."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "12",
+    "question": "Para obtener la licencia comunitaria, es necesario:",
+    "options": [
+      {
+        "id": "a",
+        "text": "disponer de, al menos, dos vehículos pesados autorizados para el transporte interior."
+      },
+      {
+        "id": "b",
+        "text": "disponer de, al menos, cinco vehículos pesados autorizados para el transporte interior."
+      },
+      {
+        "id": "c",
+        "text": "acreditar competencia profesional para el transporte interior e internacional de mercancías."
+      },
+      {
+        "id": "d",
+        "text": "disponer de, al menos, dos vehículos de cualquier capacidad, autorizados para el transporte interior."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "13",
+    "question": "¿Cómo se deben utilizar las cuñas para fijar la carga?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apoyadas en las paredes de la caja del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Fijadas a la parte delantera y trasera de la carga por medio de cables metálicos."
+      },
+      {
+        "id": "c",
+        "text": "Apoyadas en el suelo de la caja del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Las tres respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "14",
+    "question": "¿Cómo afecta a la estabilidad del camión el correcto uso del freno de servicio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumentando la distancia de frenado."
+      },
+      {
+        "id": "b",
+        "text": "Disminuyendo la eficacia de frenado."
+      },
+      {
+        "id": "c",
+        "text": "Evitando el desplazamiento excesivo de la carga."
+      },
+      {
+        "id": "d",
+        "text": "Provocando un desplazamiento excesivo de la carga."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "15",
+    "question": "Cuantos más cambios realice el conductor de un camión durante una subida:",
+    "options": [
+      {
+        "id": "a",
+        "text": "menos veces se perderá velocidad."
+      },
+      {
+        "id": "b",
+        "text": "menos veces se tendrá que recuperar la velocidad."
+      },
+      {
+        "id": "c",
+        "text": "más veces se perderá velocidad."
+      },
+      {
+        "id": "d",
+        "text": "se llegará antes a la cima habiendo consumido menos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "16",
+    "question": "¿Qué particularidad presentan, de cara a su utilización, las autorizaciones CEMT con un sello que contenga un camión de color verde y el símbolo IV encima?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solo pueden usarse con vehículos ecológicos y para un máximo de cuatro viajes."
+      },
+      {
+        "id": "b",
+        "text": "Solo pueden usarse con vehículos ecológicos y para atravesar un máximo de cuatro países. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "c",
+        "text": "Deben usarse en vehículos calificados como EURO IV seguros."
+      },
+      {
+        "id": "d",
+        "text": "No existen este tipo de autorizaciones CEMT."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "17",
+    "question": "¿Cómo se denomina el transporte efectuado a través de un país sin tomar ni dejar mercancías en el mismo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Triangular."
+      },
+      {
+        "id": "b",
+        "text": "Liberalizado."
+      },
+      {
+        "id": "c",
+        "text": "Irregular."
+      },
+      {
+        "id": "d",
+        "text": "En tránsito."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "18",
+    "question": "Los transportes de mercancías que se realicen en recintos cerrados dedicados a actividades distintas del transporte terrestre:",
+    "options": [
+      {
+        "id": "a",
+        "text": "están exentos de autorización."
+      },
+      {
+        "id": "b",
+        "text": "están exentos de autorización en algunos casos, dependiendo de la capacidad de carga del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "necesitan autorización de transporte complementario."
+      },
+      {
+        "id": "d",
+        "text": "necesitan autorización de transporte especial."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "19",
+    "question": "En una empresa de transporte de mercancías, la elaboración de las nóminas es función propia del:",
+    "options": [
+      {
+        "id": "a",
+        "text": "conductor."
+      },
+      {
+        "id": "b",
+        "text": "gerente."
+      },
+      {
+        "id": "c",
+        "text": "administrativo."
+      },
+      {
+        "id": "d",
+        "text": "comercial."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "20",
+    "question": "¿Cuál es el capital mínimo que puede de tener una sociedad de responsabilidad limitada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No hay capital mínimo, la cantidad la determinan libremente los socios."
+      },
+      {
+        "id": "b",
+        "text": "1 euro."
+      },
+      {
+        "id": "c",
+        "text": "3.000 euros."
+      },
+      {
+        "id": "d",
+        "text": "6.000 euros."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "21",
+    "question": "En el ámbito de los procedimientos aduaneros, a la aduana competente respecto del punto de salida o entrada de las mercancías en el territorio aduanero de la Unión, cuando abandonan o entran en dicho territorio en el transcurso de una operación de tránsito, se la denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "aduana de partida."
+      },
+      {
+        "id": "b",
+        "text": "aduana de tránsito. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "c",
+        "text": "aduana de destino."
+      },
+      {
+        "id": "d",
+        "text": "aduana de primera entrada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "22",
+    "question": "En el caso de un transporte efectuado en régimen de tránsito de la Unión, ¿qué se debe presentar en las aduanas de tránsito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El número de registro asignado a la declaración de tránsito por las autoridades aduaneras (MRN)."
+      },
+      {
+        "id": "b",
+        "text": "La declaración de tránsito."
+      },
+      {
+        "id": "c",
+        "text": "El justificante de garantía."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "23",
+    "question": "¿Qué transporte permite realizar una autorización CEMT ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transporte entre estados miembros de la CEMT."
+      },
+      {
+        "id": "b",
+        "text": "Transporte entre estados miembros de la CEMT y países terceros."
+      },
+      {
+        "id": "c",
+        "text": "Transporte de cabotaje en estados miembros."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna es correcta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "24",
+    "question": "En el caso de un camión que está circulando, se habla de apoyos largos...",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuando una curva permite que circule apoyado un gran recorrido."
+      },
+      {
+        "id": "b",
+        "text": "cuando el sistema de suspensión mantiene el contacto de la ruedas con la vía constantemente."
+      },
+      {
+        "id": "c",
+        "text": "si el firme de la carretera facilita el mantenimiento de la trayectoria del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las anteriores es correcta."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "25",
+    "question": "¿Qué puede producir una sobrecarga de mercancías en el eje trasero del camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dureza en la dirección del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Falta de apoyo en el eje trasero."
+      },
+      {
+        "id": "c",
+        "text": "Reducción del tiempo de frenado."
+      },
+      {
+        "id": "d",
+        "text": "Esfuerzos excesivos para la suspensión trasera."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "26",
+    "question": "¿Cómo se llama la situación en la que hay, al menos, dos conductores en el vehículo que participan en la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conducción en serie."
+      },
+      {
+        "id": "b",
+        "text": "Conducción en equipo, aunque en la primera hora haya un solo conductor."
+      },
+      {
+        "id": "c",
+        "text": "Doble conducción de vehículos. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "d",
+        "text": "Conducción solidaria."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "27",
+    "question": "¿Con qué tipo de caja de cambio se puede ahorrar más carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con caja de cambio automática, pero solo en pendientes ascendentes."
+      },
+      {
+        "id": "b",
+        "text": "Con cajas de cambio manual."
+      },
+      {
+        "id": "c",
+        "text": "El tipo de caja de cambio no influye en el consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "Con caja de cambio semiautomática."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "28",
+    "question": "¿Cuál de estas afirmaciones no es correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Debe existir espacio de trabajo suficiente para los movimientos del cuerpo."
+      },
+      {
+        "id": "b",
+        "text": "Los instrumentos de mando estarán en una zona que permita un difícil acceso."
+      },
+      {
+        "id": "c",
+        "text": "Los mangos y empuñaduras se adaptarán a la anatomía de la mano."
+      },
+      {
+        "id": "d",
+        "text": "La mesa sobre la que se trabaja se tiene que diseñar teniendo en cuenta las medidas del cuerpo humano."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "29",
+    "question": "De las siguientes indicaciones, ¿cuál es incorrecta para seleccionar una relación de marchas más alta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tener en cuenta el tipo de material empleado en el motor."
+      },
+      {
+        "id": "b",
+        "text": "Consultar el manual del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Observar el desnivel si hay pendientes."
+      },
+      {
+        "id": "d",
+        "text": "Observar la velocidad del vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "30",
+    "question": "¿Qué documento no es obligatorio llevar a bordo del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permiso de circulación."
+      },
+      {
+        "id": "b",
+        "text": "Ficha técnica (ITV)."
+      },
+      {
+        "id": "c",
+        "text": "Póliza de seguro de responsabilidad civil."
+      },
+      {
+        "id": "d",
+        "text": "Certificado ADR o ATP cuando sean necesarios."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "31",
+    "question": "¿Qué actuación es más recomendable en relación con la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantener una misma postura de conducción fija durante mucho tiempo."
+      },
+      {
+        "id": "b",
+        "text": "No hacer paradas."
+      },
+      {
+        "id": "c",
+        "text": "Hacer paradas, saliendo del vehículo cada dos horas."
+      },
+      {
+        "id": "d",
+        "text": "Se debe seguir conduciendo aunque se empiece a sentir malestar. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "32",
+    "question": "Los golpes con herramientas y otros objetos pueden ser consecuencia de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "herramientas apropiadas para la tarea."
+      },
+      {
+        "id": "b",
+        "text": "una posición correcta de trabajo."
+      },
+      {
+        "id": "c",
+        "text": "la utilización de elementos de protección como gafas, guantes y botas."
+      },
+      {
+        "id": "d",
+        "text": "herramientas defectuosas o desgastadas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "33",
+    "question": "Los usuarios de las vías que se vean implicados en un accidente de tráfico, lo presencien o tengan conocimiento de él:",
+    "options": [
+      {
+        "id": "a",
+        "text": "solamente estarán obligados a prestar su colaboración."
+      },
+      {
+        "id": "b",
+        "text": "estarán obligados a auxiliar o solicitar auxilio para atender a las víctimas si las hubiera."
+      },
+      {
+        "id": "c",
+        "text": "deberán regular el tráfico para poder restablecer la circulación de los vehículos implicados."
+      },
+      {
+        "id": "d",
+        "text": "no estarán obligados a detenerse para auxiliar a las víctimas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "34",
+    "question": "Ante una situación de emergencia, ¿cuál no debería ser uno de los objetivos prioritarios de las actuaciones del conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La preservación del vehículo y de la carga."
+      },
+      {
+        "id": "b",
+        "text": "La seguridad de los pasajeros."
+      },
+      {
+        "id": "c",
+        "text": "La seguridad del tráfico."
+      },
+      {
+        "id": "d",
+        "text": "La comunicación con los servicios de emergencia."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "35",
+    "question": "El cambio de los filtros, aceites y bujías, ¿afecta al consumo de combustible?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, los tres influyen."
+      },
+      {
+        "id": "b",
+        "text": "No, solo influyen los filtros y las bujías."
+      },
+      {
+        "id": "c",
+        "text": "No, solo influyen los filtros y el aceite."
+      },
+      {
+        "id": "d",
+        "text": "No, solo influyen los filtros."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "36",
+    "question": "¿Qué debe hacer constar el conductor en una nueva hoja de registro o disco-diagrama antes de insertarla en el tacógrafo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matrícula del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Número de bastidor."
+      },
+      {
+        "id": "c",
+        "text": "Marca del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Hora UTC. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "37",
+    "question": "Los conductores de bicicletas tienen prioridad de paso respecto a los vehículos de motor:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuando pretendan entrar en una glorieta."
+      },
+      {
+        "id": "b",
+        "text": "circulando en grupo, cuando el primero haya iniciado ya el cruce o haya entrado en una glorieta."
+      },
+      {
+        "id": "c",
+        "text": "cuando circulen por el arcén de una autovía."
+      },
+      {
+        "id": "d",
+        "text": "en todo caso."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "38",
+    "question": "El funcionamiento del motor implica un consumo de carburante que es función de las resistencias que debe vencer el vehículo. ¿Cuál de los siguientes factores no está directamente relacionado con estas resistencias?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El viento frontal."
+      },
+      {
+        "id": "b",
+        "text": "El coeficiente de rozamiento del asfalto."
+      },
+      {
+        "id": "c",
+        "text": "El color del material empleado en el motor."
+      },
+      {
+        "id": "d",
+        "text": "La masa total del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "39",
+    "question": "En el tacógrafo digital, ¿cómo se denomina la acción por la que el aparato de control pasa a ser totalmente operativo y realiza todas sus funciones, incluidas las de seguridad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Calibración."
+      },
+      {
+        "id": "b",
+        "text": "Activación."
+      },
+      {
+        "id": "c",
+        "text": "Autentificación."
+      },
+      {
+        "id": "d",
+        "text": "Comprobación."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "40",
+    "question": "Señale la afirmación correcta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "El ralentizador hidráulico actúa sobre las válvulas de escape."
+      },
+      {
+        "id": "b",
+        "text": "El ralentizador hidráulico nunca es compatible con el sistema de frenos ABS."
+      },
+      {
+        "id": "c",
+        "text": "El ralentizador hidráulico puede actuar combinado con el freno de servicio."
+      },
+      {
+        "id": "d",
+        "text": "El ralentizador hidráulico utiliza aire comprimido como energía."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "41",
+    "question": "¿Se puede saber qué Estado ha homologado un tacógrafo viendo la marca de homologación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, puesto que el número que hay fuera del rectángulo identifica al Estado que concede la homologación."
+      },
+      {
+        "id": "b",
+        "text": "No se puede saber."
+      },
+      {
+        "id": "c",
+        "text": "Sí, puesto que el número que hay dentro del rectángulo identifica al Estado que concede la homologación. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero hay que llevar el tacógrafo a un taller."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "42",
+    "question": "En comparación con el resto de vehículos, ¿qué nivel alcanza la intervención de los autobuses y vehículos de transporte de mercancías en accidentes de tráfico si se tienen en cuenta los kilómetros recorridos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es mucho mayor."
+      },
+      {
+        "id": "b",
+        "text": "Es igual."
+      },
+      {
+        "id": "c",
+        "text": "Es notablemente menor."
+      },
+      {
+        "id": "d",
+        "text": "Es mayor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "43",
+    "question": "La duración de las bajas laborales en el sector del transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "es inferior en un 20 % a la media del total de actividades."
+      },
+      {
+        "id": "b",
+        "text": "supera la media del total de actividades."
+      },
+      {
+        "id": "c",
+        "text": "es inferior en un 10 % a la media del total de actividades."
+      },
+      {
+        "id": "d",
+        "text": "es igual a la media del total de actividades."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "44",
+    "question": "En el sector del transporte, ¿cuál de los siguientes accidentes de trabajo es menos frecuente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sobreesfuerzos."
+      },
+      {
+        "id": "b",
+        "text": "Descargas eléctricas."
+      },
+      {
+        "id": "c",
+        "text": "Exposición continuada a vibraciones."
+      },
+      {
+        "id": "d",
+        "text": "Golpes con herramientas y otros objetos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "45",
+    "question": "Los factores psíquicos son:",
+    "options": [
+      {
+        "id": "a",
+        "text": "factores que no influyen en los accidentes de trabajo."
+      },
+      {
+        "id": "b",
+        "text": "factores que influyen en los accidentes de trabajo, pero exclusivamente en el caso de conductores de autobús."
+      },
+      {
+        "id": "c",
+        "text": "factores que influyen en los accidentes de trabajo, pero exclusivamente en el caso de conductores de camión."
+      },
+      {
+        "id": "d",
+        "text": "factores causantes o, al menos, que inciden en la producción de accidentes de trabajo en el transporte. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "46",
+    "question": "De los siguientes vehículos, ¿cuál registra menos muertos entre sus ocupantes en accidente de tráfico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El camión de más de 3.500 kg."
+      },
+      {
+        "id": "b",
+        "text": "La furgoneta."
+      },
+      {
+        "id": "c",
+        "text": "El autobús de línea regular."
+      },
+      {
+        "id": "d",
+        "text": "El turismo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "47",
+    "question": "Un motor diésel de inyección directa respecto de un motor diésel de inyección indirecta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tiene un mayor consumo específico."
+      },
+      {
+        "id": "b",
+        "text": "tiene un menor consumo específico."
+      },
+      {
+        "id": "c",
+        "text": "tiene el mismo consumo específico."
+      },
+      {
+        "id": "d",
+        "text": "siempre tiene un menor par motor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "48",
+    "question": "¿Cuál es el propósito principal de la declaración amistosa de accidentes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumentar la recaudación de impuestos."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar las ganancias de las compañías aseguradoras."
+      },
+      {
+        "id": "c",
+        "text": "Indemnizar en el menor tiempo posible a los perjudicados."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "49",
+    "question": "Si un conductor no colabora y se niega a entregar la documentación requerida por los agentes encargados de un control en carretera, está cometiendo una infracción:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de obstrucción a la labor inspectora."
+      },
+      {
+        "id": "b",
+        "text": "de colaboración con la empresa."
+      },
+      {
+        "id": "c",
+        "text": "de imprudencia."
+      },
+      {
+        "id": "d",
+        "text": "de descanso diario."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "50",
+    "question": "¿Qué es el Espacio Schengen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incluye a todos los Estados miembros de la Unión Europea."
+      },
+      {
+        "id": "b",
+        "text": "Supone la libre circulación de personas entre continentes."
+      },
+      {
+        "id": "c",
+        "text": "Un territorio sin controles fronterizos internos dentro de Europa."
+      },
+      {
+        "id": "d",
+        "text": "Un espacio publicitario europeo. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "51",
+    "question": "¿Cuál de las siguientes afirmaciones sobre el cliente de una empresa de transportes no es cierta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Su percepción de la calidad del servicio es muy relevante para la empresa."
+      },
+      {
+        "id": "b",
+        "text": "El cliente depende de la empresa y no la empresa del cliente."
+      },
+      {
+        "id": "c",
+        "text": "Es el propósito del trabajo de la empresa."
+      },
+      {
+        "id": "d",
+        "text": "Se deben satisfacer sus necesidades."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "52",
+    "question": "De los elementos técnicos que se citan, ¿cuáles refuerzan la seguridad en la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Las pantallas panorámicas de los monitores."
+      },
+      {
+        "id": "b",
+        "text": "Los sistemas que evitan el cansancio o la somnolencia en el conductor."
+      },
+      {
+        "id": "c",
+        "text": "Los sistemas electrónicos de visión nocturna."
+      },
+      {
+        "id": "d",
+        "text": "Los sensores de ultrasonidos que detectan la presencia de otros usuarios en la vía."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "53",
+    "question": "¿Cuál es el factor que más influye en la imagen de marca de una empresa de transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La calidad de sus servicios."
+      },
+      {
+        "id": "b",
+        "text": "La celeridad de sus servicios."
+      },
+      {
+        "id": "c",
+        "text": "La legalidad."
+      },
+      {
+        "id": "d",
+        "text": "La puntualidad."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "54",
+    "question": "¿Qué circunstancia propicia los atropellos por vehículos y maquinaria auxiliar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dejar el vehículo perfectamente inmovilizado."
+      },
+      {
+        "id": "b",
+        "text": "Trabajar siempre en la zona que se tiene habilitada."
+      },
+      {
+        "id": "c",
+        "text": "Usar la maquinaria asignada de conformidad a las reglas estipuladas."
+      },
+      {
+        "id": "d",
+        "text": "Invasión de zonas de trabajo restringido."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "55",
+    "question": "¿Cuántos extintores debe llevar un vehículo de transporte de mercancías de 18.000 kg de Masa Máxima Autorizada (MMA)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguno."
+      },
+      {
+        "id": "b",
+        "text": "Uno."
+      },
+      {
+        "id": "c",
+        "text": "Dos. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "d",
+        "text": "Tres."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "56",
+    "question": "La combustión se puede definir químicamente como la reacción exotérmica de una sustancia combustible con un:",
+    "options": [
+      {
+        "id": "a",
+        "text": "comburente, generalmente sulfuro."
+      },
+      {
+        "id": "b",
+        "text": "refrigerante, generalmente nitrógeno."
+      },
+      {
+        "id": "c",
+        "text": "antioxidante, generalmente nitrógeno."
+      },
+      {
+        "id": "d",
+        "text": "comburente, generalmente oxígeno."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "57",
+    "question": "¿En cuál de los siguientes lugares se debe entregar la declaración amistosa de accidentes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En la compañía de seguros."
+      },
+      {
+        "id": "b",
+        "text": "En el domicilio del asegurado."
+      },
+      {
+        "id": "c",
+        "text": "En el taller más próximo al lugar del siniestro."
+      },
+      {
+        "id": "d",
+        "text": "En la comisaría de Policía o destacamento de la Guardia Civil de Tráfico."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "58",
+    "question": "El consumo de un vehículo para recorrer 100 km, ¿es algo característico del diseño del motor o depende de la forma y estilo de conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es característico del motor del vehículo, por lo que solo depende de su diseño."
+      },
+      {
+        "id": "b",
+        "text": "Solo depende de la forma y estilo de conducción."
+      },
+      {
+        "id": "c",
+        "text": "Depende tanto de la forma y estilo de conducción como de las características del vehículo y su motor."
+      },
+      {
+        "id": "d",
+        "text": "No depende de ninguno de los dos factores mencionados."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "59",
+    "question": "¿Para qué sirven los reposacabezas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para intentar disminuir la gravedad de las lesiones en el cuello y las vértebras que se producen como consecuencia de un movimiento brusco."
+      },
+      {
+        "id": "b",
+        "text": "Para dar comodidad al conductor."
+      },
+      {
+        "id": "c",
+        "text": "Son un elemento decorativo."
+      },
+      {
+        "id": "d",
+        "text": "No sirven para nada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "60",
+    "question": "¿Por dónde debe pasar la parte inferior del cinturón?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por los muslos."
+      },
+      {
+        "id": "b",
+        "text": "Por el abdomen."
+      },
+      {
+        "id": "c",
+        "text": "Por la pelvis."
+      },
+      {
+        "id": "d",
+        "text": "Es indiferente. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "61",
+    "question": "¿Qué favorece una mejor digestión de los alimentos y reduce la posibilidad de sufrir trastornos digestivos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comer rápido y masticar bien."
+      },
+      {
+        "id": "b",
+        "text": "Comer rápido y masticar deprisa."
+      },
+      {
+        "id": "c",
+        "text": "Comer lento y masticar deprisa."
+      },
+      {
+        "id": "d",
+        "text": "Comer lento y masticar bien."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "62",
+    "question": "El tiempo de espera en una frontera de un vehículo, ¿qué tipo de tiempo es considerado por la normativa laboral española de cara al conductor profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiempo de trabajo efectivo."
+      },
+      {
+        "id": "b",
+        "text": "Tiempo de espera."
+      },
+      {
+        "id": "c",
+        "text": "Tiempo de pausa."
+      },
+      {
+        "id": "d",
+        "text": "Tiempo de presencia cuando se haya comunicado su duración de antemano."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "63",
+    "question": "¿Puede levantarse una inmovilización, después de 45 minutos de pausa, si se impuso por una conducción diaria de 14 horas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, nunca."
+      },
+      {
+        "id": "b",
+        "text": "Sí, pero solo para vehículos nacionales."
+      },
+      {
+        "id": "c",
+        "text": "Sí, puesto que después de la pausa se inicia un nuevo período de conducción diario."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo para vehículos de países terceros."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "64",
+    "question": "¿Qué documentación personal es necesario que lleve a bordo del vehículo su conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Última nómina."
+      },
+      {
+        "id": "b",
+        "text": "Tarjeta para el tacógrafo analógico."
+      },
+      {
+        "id": "c",
+        "text": "Discos-diagrama para el tacógrafo digital."
+      },
+      {
+        "id": "d",
+        "text": "Tarjeta de cualificación profesional."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "65",
+    "question": "Utilizar un aceite de alta calidad para lubricar un motor de combustión, ¿tiene influencia en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, aumentando el consumo al ser un aceite de alta densidad."
+      },
+      {
+        "id": "b",
+        "text": "Sí, aumentando el consumo al ser un aceite de alta viscosidad."
+      },
+      {
+        "id": "c",
+        "text": "Sí, disminuyendo el consumo ya que se reduce el rozamiento de las piezas disminuyendo las pérdidas de potencia."
+      },
+      {
+        "id": "d",
+        "text": "No, solo influye en el desgaste de las piezas. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "66",
+    "question": "El estado en el que se encuentre el filtro del aire del sistema de alimentación de un motor de combustión, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, ya que, si está sucio, aumenta el consumo."
+      },
+      {
+        "id": "b",
+        "text": "No, solo influye en la cantidad de humos blancos que salgan por el escape."
+      },
+      {
+        "id": "c",
+        "text": "No, solo influye en la cantidad de humos negros que salgan por el escape."
+      },
+      {
+        "id": "d",
+        "text": "No, solo influye en la potencia media ponderada del motor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "67",
+    "question": "Para la comparecencia ante una Junta Arbitral del Transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "no es necesaria la presencia de abogado ni la de procurador."
+      },
+      {
+        "id": "b",
+        "text": "es necesaria la presencia de abogado, pero no la de procurador."
+      },
+      {
+        "id": "c",
+        "text": "es necesaria la presencia de un procurador, pero no la presencia de abogado."
+      },
+      {
+        "id": "d",
+        "text": "es necesaria la presencia de abogado y procurador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "68",
+    "question": "El consumo de carburante de un vehículo pesado provisto de un motor de combustión puede ser mayor de lo normal dependiendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "del tipo de bujías que monte: frías o calientes."
+      },
+      {
+        "id": "b",
+        "text": "del tipo de ralentizador que monte el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "del mantenimiento que se realice al vehículo, el perfil de la carretera y el tipo de conducción."
+      },
+      {
+        "id": "d",
+        "text": "del tipo de sistema de frenado que se monte: hidráulico o neumático."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "69",
+    "question": "¿Qué tipo de comportamientos indican la presencia de cansancio en un conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumento de la motorización."
+      },
+      {
+        "id": "b",
+        "text": "Cambios de postura repetidos."
+      },
+      {
+        "id": "c",
+        "text": "Aumento de la concentración ante los estímulos."
+      },
+      {
+        "id": "d",
+        "text": "Atención tranquila a la carretera."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "70",
+    "question": "¿Qué tipo de drogas producen efectos como alteraciones sensitivas, pérdida de la noción de tiempo y espacio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alucinógenos."
+      },
+      {
+        "id": "b",
+        "text": "Estimulantes."
+      },
+      {
+        "id": "c",
+        "text": "Depresoras."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "71",
+    "question": "¿Cuál es el mínimo de horas consecutivas de descanso semanal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "24 horas."
+      },
+      {
+        "id": "b",
+        "text": "20 horas."
+      },
+      {
+        "id": "c",
+        "text": "30 horas."
+      },
+      {
+        "id": "d",
+        "text": "28 horas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "72",
+    "question": "La utilización de la tarjeta de tacógrafo por otro conductor, ¿será motivo de su retirada por los servicios de inspección del transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, salvo que se pruebe su falsificación."
+      },
+      {
+        "id": "c",
+        "text": "No, en ningún caso, ya que la tarjeta es personal."
+      },
+      {
+        "id": "d",
+        "text": "No en España, pero sí en otros países de la Unión Europea."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "73",
+    "question": "¿Qué plazo de validez tiene la tarjeta de conductor para tacógrafo digital?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4 años."
+      },
+      {
+        "id": "b",
+        "text": "5 años."
+      },
+      {
+        "id": "c",
+        "text": "10 años."
+      },
+      {
+        "id": "d",
+        "text": "La misma que su permiso de conducir."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "74",
+    "question": "La materia más utilizada en la extinción de un incendio por enfriamiento es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el oxígeno."
+      },
+      {
+        "id": "b",
+        "text": "el peróxido de carbono."
+      },
+      {
+        "id": "c",
+        "text": "el agua."
+      },
+      {
+        "id": "d",
+        "text": "un gas halógeno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "75",
+    "question": "Relacionado con el coeficiente aerodinámico de un vehículo, ¿qué se debe saber?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que no influye en el consumo ni en la estabilidad del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Que no influye en el consumo, pero sí en la estabilidad del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Que influye en el consumo, pero no en la estabilidad del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Que influye en el consumo y en la estabilidad del vehículo. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "76",
+    "question": "Si para calentar el motor del vehículo se dan fuertes acelerones, ¿es una actuación correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, porque limpia el tubo de escape de residuos."
+      },
+      {
+        "id": "b",
+        "text": "Sí, porque la mayor cantidad de combustible limpia rápidamente las paredes de los cilindros."
+      },
+      {
+        "id": "c",
+        "text": "No, porque aumenta el consumo de combustible y puede dañar los cilindros, cuyas paredes están casi sin aceite."
+      },
+      {
+        "id": "d",
+        "text": "Sí, sobre todo en invierno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "77",
+    "question": "Si circula con un vehículo sobrecargado¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "aumenta el consumo de carburante."
+      },
+      {
+        "id": "b",
+        "text": "disminuye la estabilidad y la distancia de frenado."
+      },
+      {
+        "id": "c",
+        "text": "aumenta la estabilidad y la distancia de frenado."
+      },
+      {
+        "id": "d",
+        "text": "disminuye el tiempo de reacción."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "78",
+    "question": "¿Qué influye en el consumo de carburante de un vehículo pesado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El sistema de mando de la distribución: por correa dentada o por cadena."
+      },
+      {
+        "id": "b",
+        "text": "El tipo de ralentizador que monte el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "El mantenimiento del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "El montaje de frenos de tambor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "79",
+    "question": "¿Qué factor influye en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La longitud del árbol de levas."
+      },
+      {
+        "id": "b",
+        "text": "La relación de marchas seleccionada."
+      },
+      {
+        "id": "c",
+        "text": "La longitud del pistón."
+      },
+      {
+        "id": "d",
+        "text": "La longitud del cigüeñal."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "80",
+    "question": "¿Qué factor no tiene influencia en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El motor de arranque."
+      },
+      {
+        "id": "b",
+        "text": "La presión de los neumáticos."
+      },
+      {
+        "id": "c",
+        "text": "El perfil de la carretera."
+      },
+      {
+        "id": "d",
+        "text": "La posición del pedal del acelerador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "81",
+    "question": "¿Qué ventajas tiene reducir la velocidad media de circulación? COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ",
+    "options": [
+      {
+        "id": "a",
+        "text": "No tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
+      },
+      {
+        "id": "b",
+        "text": "No tener que comprobar la presión de inflado de los neumáticos, salvo en caso de pinchazo."
+      },
+      {
+        "id": "c",
+        "text": "Reducir la frecuencia de la inspección técnica periódica y aumentar los plazos de mantenimiento del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Menor consumo de carburante."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "82",
+    "question": "En la elaboración de las estadísticas de accidentes de tráfico, si no hay colisión, se considera como implicado un vehículo si se produce alguna de las siguientes circunstancias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ha estado detenido ayudando a las víctimas."
+      },
+      {
+        "id": "b",
+        "text": "Ha estado parado en forma peligrosa, de modo que ha constituido uno de los factores del accidente."
+      },
+      {
+        "id": "c",
+        "text": "Ha estado presente en el momento del accidente como testigo."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "83",
+    "question": "¿Qué caracteriza una conducción preventiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El ensayo de rutas en simuladores previo al servicio."
+      },
+      {
+        "id": "b",
+        "text": "El uso de marchas cortas."
+      },
+      {
+        "id": "c",
+        "text": "El evitar asumir riesgos que puedan desencadenar un accidente."
+      },
+      {
+        "id": "d",
+        "text": "El uso constante del freno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "84",
+    "question": "La regulación del Espacio Schengen:",
+    "options": [
+      {
+        "id": "a",
+        "text": "distingue entre fronteras interiores y exteriores."
+      },
+      {
+        "id": "b",
+        "text": "no distingue entre fronteras interiores y exteriores, dado que aplica las mismas normas en ambos casos."
+      },
+      {
+        "id": "c",
+        "text": "suprime todas las fronteras de los países signatarios."
+      },
+      {
+        "id": "d",
+        "text": "Esta regulación no tiene que ver con las fronteras sino con la protección de la salud."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "85",
+    "question": "Generalmente, ¿con qué tipo de caja de velocidades se ahorra más energía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con cajas de velocidades con cambio manual."
+      },
+      {
+        "id": "b",
+        "text": "Con cajas de velocidades con cambio automático."
+      },
+      {
+        "id": "c",
+        "text": "Con cajas de velocidades con convertidor de par."
+      },
+      {
+        "id": "d",
+        "text": "Con cajas de velocidades sin eje secundario."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "86",
+    "question": "En una carretera con aviso de nivel negro de circulación por nevadas, los vehículos pesados:",
+    "options": [
+      {
+        "id": "a",
+        "text": "están obligados a circular con cadenas."
+      },
+      {
+        "id": "b",
+        "text": "no podrán circular ya que la carretera se encuentra cortada."
+      },
+      {
+        "id": "c",
+        "text": "no podrán circular después de la puesta de sol."
+      },
+      {
+        "id": "d",
+        "text": "podrán circular en convoyes y con vehículo de acompañamiento."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "87",
+    "question": "Con un nivel de circulación amarillo por nevada, la calzada:",
+    "options": [
+      {
+        "id": "a",
+        "text": "está húmeda, pero aún no se aprecia nieve."
+      },
+      {
+        "id": "b",
+        "text": "comienza a cubrirse de nieve."
+      },
+      {
+        "id": "c",
+        "text": "está totalmente cubierta de nieve."
+      },
+      {
+        "id": "d",
+        "text": "Los niveles de circulación por nieve son negro, rojo y verde."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "88",
+    "question": "La potencia de un motor¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "aumenta al cambiar a una relación de marchas más larga."
+      },
+      {
+        "id": "b",
+        "text": "disminuye al cambiar a una relación de marchas más corta."
+      },
+      {
+        "id": "c",
+        "text": "no depende de las revoluciones del motor."
+      },
+      {
+        "id": "d",
+        "text": "aumenta al aumentar las revoluciones por minuto del motor."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "89",
+    "question": "¿Qué tecnologías pueden utilizar los sistemas avanzados de ayuda a la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cámara."
+      },
+      {
+        "id": "b",
+        "text": "Radar."
+      },
+      {
+        "id": "c",
+        "text": "Láser."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "90",
+    "question": "¿Qué es recomendable en las incorporaciones a una vía de circulación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Llegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía."
+      },
+      {
+        "id": "b",
+        "text": "Utilizar el acelerador por debajo de 1/2 de su recorrido."
+      },
+      {
+        "id": "c",
+        "text": "Realizar los cambios de marcha en la zona más baja del par motor."
+      },
+      {
+        "id": "d",
+        "text": "En tramos de subida, realizar los cambios en revoluciones de zona de potencia media."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "91",
+    "question": "¿Qué caracteriza a las autopistas, según la normativa estatal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiene preferencia la circulación de los vehículos de transporte público."
+      },
+      {
+        "id": "b",
+        "text": "Pueden tener acceso, excepcionalmente, las propiedades colindantes. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "c",
+        "text": "No pueden cruzar ni ser cruzadas por otras vías."
+      },
+      {
+        "id": "d",
+        "text": "Son vías para la circulación preferente de vehículo ligeros."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "92",
+    "question": "El valor máximo de la densidad de tráfico en una vía es el que se produce cuando¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos los carriles están ocupados por vehículos circulando por debajo de 30 km/h."
+      },
+      {
+        "id": "b",
+        "text": "los vehículos están en fila, parados, sin huecos entre ellos."
+      },
+      {
+        "id": "c",
+        "text": "el número de vehículos/hora iguala el aforo definido para la carretera."
+      },
+      {
+        "id": "d",
+        "text": "el número de vehículos/hora supera el aforo definido para la carretera."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "93",
+    "question": "¿Qué efecto tiene una presión del neumático inferior a la recomendada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perjudica la capacidad de amortiguación."
+      },
+      {
+        "id": "b",
+        "text": "Incrementa en riesgo de reventón."
+      },
+      {
+        "id": "c",
+        "text": "Disminuye la estabilidad del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Incrementa el desgaste en el centro de la banda de rodadura."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "94",
+    "question": "¿En qué período del año se produce el mayor número de fallecidos en accidente de tráfico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En verano."
+      },
+      {
+        "id": "b",
+        "text": "En invierno."
+      },
+      {
+        "id": "c",
+        "text": "En abril y mayo."
+      },
+      {
+        "id": "d",
+        "text": "Todos los meses por igual."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "95",
+    "question": "Un extintor resulta útil:",
+    "options": [
+      {
+        "id": "a",
+        "text": "en fuegos incipientes."
+      },
+      {
+        "id": "b",
+        "text": "en fuegos consolidados y extendidos."
+      },
+      {
+        "id": "c",
+        "text": "en fuegos con mucha llama."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "96",
+    "question": "Señale la afirmación correcta, referida a los elementos básicos de un servicio de transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Su cumplimiento otorga ventajas competitivas."
+      },
+      {
+        "id": "b",
+        "text": "Su incumplimiento apenas afecta a la confianza en el servicio."
+      },
+      {
+        "id": "c",
+        "text": "Su incumplimiento resulta muy insatisfactorio para el cliente. COLEGIO SAN FELIPE NERI. AVDA. ANDALUCÍA, 82 , CADIZ, CADIZ"
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y C son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "97",
+    "question": "Las controversias que se someten a las Juntas Arbitrales del Transporte son resueltas mediante:",
+    "options": [
+      {
+        "id": "a",
+        "text": "una sentencia."
+      },
+      {
+        "id": "b",
+        "text": "una providencia."
+      },
+      {
+        "id": "c",
+        "text": "un laudo arbitral."
+      },
+      {
+        "id": "d",
+        "text": "una orden ejecutiva."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "98",
+    "question": "¿Qué caracteriza al par motor cuando un motor gira a su régimen máximo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que es superior al mínimo, pero inferior al máximo."
+      },
+      {
+        "id": "b",
+        "text": "Que es máximo."
+      },
+      {
+        "id": "c",
+        "text": "Que tiene rango medio."
+      },
+      {
+        "id": "d",
+        "text": "Que tiene tendencia al mínimo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "99",
+    "question": "¿Con qué elemento del vehículo está relacionada una pieza denominada \"rotor\"?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con una válvula de cuatro vías."
+      },
+      {
+        "id": "b",
+        "text": "Con un sistema de freno hidráulico."
+      },
+      {
+        "id": "c",
+        "text": "Con un retardador hidráulico."
+      },
+      {
+        "id": "d",
+        "text": "Con el calderín de refrigeración."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "100",
+    "question": "La norma de que los conductores de vehículos de transporte de mercancías con MMA superior a 7,5 toneladas no pueden participar en las operaciones de descarga del vehículo no se aplica en el caso de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "servicios de paquetería."
+      },
+      {
+        "id": "b",
+        "text": "transportes efectuados en el marco de un contrato de larga duración."
+      },
+      {
+        "id": "c",
+        "text": "transportes internacionales."
+      },
+      {
+        "id": "d",
+        "text": "transportes urgentes."
+      }
+    ],
+    "correct": "a"
+  }
+]

@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "¿Cómo se denomina el movimiento giratorio de la carrocería de un camión sobre su eje longitudinal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cabeceo."
+      },
+      {
+        "id": "b",
+        "text": "Balanceo."
+      },
+      {
+        "id": "c",
+        "text": "Sobreviraje."
+      },
+      {
+        "id": "d",
+        "text": "Subviraje."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "2",
+    "question": "La resistencia del aire o resistencia aerodinámica afectará siempre al camión en sentido:",
+    "options": [
+      {
+        "id": "a",
+        "text": "tangencial a la velocidad."
+      },
+      {
+        "id": "b",
+        "text": "opuesto al movimiento."
+      },
+      {
+        "id": "c",
+        "text": "favorable al movimiento."
+      },
+      {
+        "id": "d",
+        "text": "opuesto o favorable al movimiento, según la dirección del viento."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "3",
+    "question": "En la estiba de un vehículo, ¿para qué sirve un torno?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para rotar la mercancía sobre su eje."
+      },
+      {
+        "id": "b",
+        "text": "Para comprimir una carga a granel."
+      },
+      {
+        "id": "c",
+        "text": "Para subir o bajar la mercancía."
+      },
+      {
+        "id": "d",
+        "text": "Para generar tensión sobre cinchas y cables."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "4",
+    "question": "Si se aumenta la altura de la carga, el centro de gravedad del camión:",
+    "options": [
+      {
+        "id": "a",
+        "text": "se desplaza hacia arriba."
+      },
+      {
+        "id": "b",
+        "text": "se mantiene en el mismo punto."
+      },
+      {
+        "id": "c",
+        "text": "se desplaza hacia atrás."
+      },
+      {
+        "id": "d",
+        "text": "se desplaza hacia abajo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "5",
+    "question": "El grado de rozamiento en un camión depende:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de la fuerza termotecnia lateral."
+      },
+      {
+        "id": "b",
+        "text": "del centro de gravedad."
+      },
+      {
+        "id": "c",
+        "text": "del tipo de neumáticos."
+      },
+      {
+        "id": "d",
+        "text": "del balanceo del motor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "6",
+    "question": "¿Qué supone un incremento de la altura del centro de gravedad del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mejor aceleración. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "Un incremento de la estabilidad del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Disminuye el riesgo en las curvas."
+      },
+      {
+        "id": "d",
+        "text": "Incrementa el riesgo ante la posibilidad de realizar una maniobra brusca para esquivar un peligro."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "7",
+    "question": "La denominación de una sociedad de responsabilidad limitada:",
+    "options": [
+      {
+        "id": "a",
+        "text": "podrá coincidir con el nombre de otra sociedad."
+      },
+      {
+        "id": "b",
+        "text": "no podrá coincidir con el nombre de otra sociedad."
+      },
+      {
+        "id": "c",
+        "text": "no podrá coincidir con el nombre de otra sociedad dentro de la provincia de establecimiento, pero sí con el nombre de otra que esté establecida en una provincia diferente."
+      },
+      {
+        "id": "d",
+        "text": "no podrá coincidir con el nombre de otra sociedad que esté establecida dentro de la misma Comunidad Autónoma, pero sí con el nombre de otra que esté establecida en una Comunidad diferente."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "8",
+    "question": "¿Qué ocurre con el sector del transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Experimenta un aumento con independencia de las situaciones de crisis económicas."
+      },
+      {
+        "id": "b",
+        "text": "Aumenta más en las situaciones de crisis económicas."
+      },
+      {
+        "id": "c",
+        "text": "Se resiente en los momentos de crisis económica."
+      },
+      {
+        "id": "d",
+        "text": "Le son indiferentes las situaciones de crisis económica."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "9",
+    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controlar la selección, formación y rendimiento del personal de la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Realizar funciones de planificación, dirección y coordinación."
+      },
+      {
+        "id": "c",
+        "text": "Elaborar las nóminas."
+      },
+      {
+        "id": "d",
+        "text": "Realizar el seguimiento comercial de los servicios."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "10",
+    "question": "¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar operaciones de transporte para la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Controlar el rendimiento de los conductores."
+      },
+      {
+        "id": "c",
+        "text": "Gestionar la flota."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "11",
+    "question": "La clasificación de los transportes de mercancías por carretera en públicos y privados es una clasificación en función de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "su ámbito."
+      },
+      {
+        "id": "b",
+        "text": "su objeto."
+      },
+      {
+        "id": "c",
+        "text": "la especificidad de su objeto y su régimen jurídico."
+      },
+      {
+        "id": "d",
+        "text": "su naturaleza."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "12",
+    "question": "¿Qué documento sirve para formular declaraciones en aduana cuando no se utilicen técnicas de tratamiento electrónico de datos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El documento único de intercambio (DUI)."
+      },
+      {
+        "id": "b",
+        "text": "El documento de importación y exportación universal (UDEI)."
+      },
+      {
+        "id": "c",
+        "text": "El documento internacional de movimiento de mercancías (MMID)."
+      },
+      {
+        "id": "d",
+        "text": "El documento administrativo único (DUA)."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "13",
+    "question": "¿Qué es el régimen ATA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es un régimen aduanero utilizado para el movimiento de mercancía sensible."
+      },
+      {
+        "id": "b",
+        "text": "Es un régimen aduanero utilizado para el transporte especial."
+      },
+      {
+        "id": "c",
+        "text": "Es un régimen aduanero utilizado para el transporte de material bélico."
+      },
+      {
+        "id": "d",
+        "text": "Es un régimen aduanero utilizado para la importación temporal."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "14",
+    "question": "Para un transporte por carretera, ¿principalmente en qué sentido deben sujetarse los pilares metálicos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En sentido vertical."
+      },
+      {
+        "id": "b",
+        "text": "En sentido transversal."
+      },
+      {
+        "id": "c",
+        "text": "En sentido longitudinal."
+      },
+      {
+        "id": "d",
+        "text": "En sentido horizontal."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "15",
+    "question": "Dentro de la denominación genérica de operadores de transporte de mercancías, ¿se incluye a los almacenistas-distribuidores?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Solo cuando contraten a empresas transportistas para efectuar la distribución."
+      },
+      {
+        "id": "c",
+        "text": "Sí."
+      },
+      {
+        "id": "d",
+        "text": "Solo cuando efectúen la distribución con sus propios vehículos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "16",
+    "question": "¿Qué se considera transporte internacional de mercancías? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquel en el que interviene un transportista extranjero."
+      },
+      {
+        "id": "b",
+        "text": "Aquel cuyo itinerario discurre, al menos parcialmente, por el territorio de un Estado extranjero."
+      },
+      {
+        "id": "c",
+        "text": "Aquel cuyo itinerario discurre, al menos parcialmente, por el territorio de un Estado ajeno a la Unión Europea."
+      },
+      {
+        "id": "d",
+        "text": "Todo transporte realizado con carga de una empresa extranjera."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "17",
+    "question": "Si las señales de daño se perciben en el exterior de los bultos, ¿cuándo debe hacerse la reclamación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dentro de las 24 horas siguientes a la recepción."
+      },
+      {
+        "id": "b",
+        "text": "Dentro de las 48 horas siguientes a la recepción."
+      },
+      {
+        "id": "c",
+        "text": "Dentro de las 12 horas siguientes a la recepción."
+      },
+      {
+        "id": "d",
+        "text": "En el momento de la recepción."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "18",
+    "question": "¿Cómo se deben utilizar las cuñas para fijar la carga?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apoyadas en las paredes de la caja del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Fijadas a la parte delantera y trasera de la carga por medio de cables metálicos."
+      },
+      {
+        "id": "c",
+        "text": "Apoyadas en el suelo de la caja del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Las tres respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "19",
+    "question": "¿Qué se debe comprobar para saber si se puede transportar una determinada cantidad de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La masa de la mercancía usando el teorema de Kant para comprobarlo."
+      },
+      {
+        "id": "b",
+        "text": "Que el vehículo disponga de una carga útil suficiente para la cantidad de mercancías que va"
+      },
+      {
+        "id": "c",
+        "text": "Comprobar, mediante una simulación con paquetes definidos para tal fin, que el vehículo dispone del espacio suficiente."
+      },
+      {
+        "id": "d",
+        "text": "Realizar un cálculo de la masa sustancial de la carga."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "20",
+    "question": "¿Qué efectos produce la carta de porte electrónica en el caso de un transporte sujeto al Convenio CMR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguno."
+      },
+      {
+        "id": "b",
+        "text": "Los mismos que la carta expedida en papel, a la que se considera equivalente."
+      },
+      {
+        "id": "c",
+        "text": "Cuando no vaya acompañada de la carta expedida en papel, solo produce efectos limitados."
+      },
+      {
+        "id": "d",
+        "text": "La carta de porte electrónica no existe."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "21",
+    "question": "Cuando en un transporte sujeto al Convenio CMR se utilice la carta de porte electrónica, el remitente podrá comunicar de forma electrónica al transportista:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuantos documentos estime oportuno, aunque no estén previstos en el Convenio CMR."
+      },
+      {
+        "id": "b",
+        "text": "cuantos documentos estime oportuno, salvo los necesarios para trámites aduaneros."
+      },
+      {
+        "id": "c",
+        "text": "los documentos necesarios para trámites aduaneros, entre otros."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "22",
+    "question": "En el caso de un transporte efectuado en régimen de tránsito de la Unión, ¿en qué plazo deben presentarse las mercancías en la aduana de destino?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En el plazo que fije la aduana de partida."
+      },
+      {
+        "id": "b",
+        "text": "En el plazo que fije la aduana de destino."
+      },
+      {
+        "id": "c",
+        "text": "No hay plazo máximo, pueden presentarse cuando lo decida el operador."
+      },
+      {
+        "id": "d",
+        "text": "En el plazo máximo de diez días."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "23",
+    "question": "¿Para cuánto tiempo se otorgan las autorizaciones de transporte público de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos años."
+      },
+      {
+        "id": "b",
+        "text": "Tres años."
+      },
+      {
+        "id": "c",
+        "text": "Cinco años."
+      },
+      {
+        "id": "d",
+        "text": "Se otorgan sin plazo de duración prefijado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "24",
+    "question": "Según el acuerdo ATP, ¿qué es un vehículo identificado con las letras FNA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un vehículo frigorífico normal de la clase E."
+      },
+      {
+        "id": "b",
+        "text": "Un vehículo refrigerante reforzado de la clase A."
+      },
+      {
+        "id": "c",
+        "text": "Un vehículo frigorífico normal de la clase A."
+      },
+      {
+        "id": "d",
+        "text": "Un vehículo refrigerado normal de la clase A."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "25",
+    "question": "¿Qué estatuto aduanero tienen las mercancías que se encuentran en territorio aduanero de la Unión Europea?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre se consideran mercancías de la Unión."
+      },
+      {
+        "id": "b",
+        "text": "Se consideran mercancías de la Unión, salvo que se demuestre lo contrario."
+      },
+      {
+        "id": "c",
+        "text": "Siempre se consideran mercancías no pertenecientes a la Unión."
+      },
+      {
+        "id": "d",
+        "text": "Se consideran mercancías no pertenecientes a la Unión, salvo que se demuestre lo contrario."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "26",
+    "question": "¿Tiene el conductor la obligación de entregar la documentación relacionada con el tacógrafo o sus elementos a requerimiento de los agentes en un control en carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Sí, pero solo si es un tacógrafo digital."
+      },
+      {
+        "id": "c",
+        "text": "Sí, siempre."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo si es un tacógrafo analógico."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "27",
+    "question": "¿Qué podemos decir de las lesiones traumáticas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que tienen un origen violento."
+      },
+      {
+        "id": "b",
+        "text": "Que tienen como protagonista principal un elemento externo."
+      },
+      {
+        "id": "c",
+        "text": "Que los conductores profesionales están expuestos a ellas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "28",
+    "question": "Las infracciones administrativas en materia de extranjería se sancionan en España con:",
+    "options": [
+      {
+        "id": "a",
+        "text": "pena de prisión."
+      },
+      {
+        "id": "b",
+        "text": "subasta de los medios de transporte."
+      },
+      {
+        "id": "c",
+        "text": "multa."
+      },
+      {
+        "id": "d",
+        "text": "el cierre de la empresa transportista."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "29",
+    "question": "¿Para qué conductores no es necesario el certificado de aptitud profesional (CAP)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para los conductores de vehículos que efectúen transporte privado complementario transportando exclusivamente material o equipos para uso del conductor en el ejercicio de su profesión, siempre que la conducción del vehículo no represente la actividad principal de dicho conductor."
+      },
+      {
+        "id": "b",
+        "text": "Para los conductores de camiones con una MMA > 40.000 kg."
+      },
+      {
+        "id": "c",
+        "text": "Para los conductores de autobuses con más de 55 plazas."
+      },
+      {
+        "id": "d",
+        "text": "Para los conductores con permiso de conducir C1."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "30",
+    "question": "En relación con la cualificación inicial y la formación continua de los conductores, ¿en qué registro se anota la expedición del correspondiente certificado de aptitud profesional (CAP)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En el Registro General del CAP."
+      },
+      {
+        "id": "b",
+        "text": "En el Registro de Empresas y Actividades de Transporte."
+      },
+      {
+        "id": "c",
+        "text": "En el Registro General de Conductores de la Dirección General de Tráfico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "31",
+    "question": "Para que la declaración amistosa de accidente sea válida, ¿por quién tiene que estar firmada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por los conductores y los testigos del accidente."
+      },
+      {
+        "id": "b",
+        "text": "Por los conductores implicados en el accidente."
+      },
+      {
+        "id": "c",
+        "text": "Basta con que la firme el conductor que se declare culpable."
+      },
+      {
+        "id": "d",
+        "text": "Por los titulares de los vehículos implicados o sus representantes."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "32",
+    "question": "¿Un tacógrafo puede estar homologado por cualquier Estado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No necesariamente."
+      },
+      {
+        "id": "c",
+        "text": "Sí, por un Estado miembro de la Unión Europea."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero no puede ser el mismo Estado donde se fabrique."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "33",
+    "question": "Es un elemento imprescindible de un sistema de prevención:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la formación de los trabajadores sobre los riesgos que conlleva su tarea."
+      },
+      {
+        "id": "b",
+        "text": "la información de los trabajadores sobre los riesgos que conlleva su tarea."
+      },
+      {
+        "id": "c",
+        "text": "Las respuestas A y B son incorrectas."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "34",
+    "question": "¿Cuál es la principal causa de siniestralidad laboral para los trabajadores del transporte terrestre?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Las enfermedades profesionales."
+      },
+      {
+        "id": "b",
+        "text": "Los accidentes con forma no traumática."
+      },
+      {
+        "id": "c",
+        "text": "Las enfermedades cardiovasculares."
+      },
+      {
+        "id": "d",
+        "text": "Los accidentes de tráfico."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "35",
+    "question": "¿Puede una empresa de transporte conceder aumentos de sueldo a sus trabajadores en función de la carga que transporten?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, aunque comprometa la seguridad en carretera."
+      },
+      {
+        "id": "b",
+        "text": "No, si dichas primas fueran de tal naturaleza que pudiesen comprometer la seguridad en carretera."
+      },
+      {
+        "id": "c",
+        "text": "No, en ningún caso."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo para transporte de ganado."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "36",
+    "question": "Durante el transporte pueden producirse toda una serie de circunstancias que afectan al normal desarrollo del mismo. ¿Qué circunstancia puede considerarse como un incidente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando la anormalidad en el servicio puede suponer, además, un peligro para las personas."
+      },
+      {
+        "id": "b",
+        "text": "Choque frontal lateral."
+      },
+      {
+        "id": "c",
+        "text": "Cualquier circunstancia de importancia menor que impide que el vehículo pueda proseguir su marcha."
+      },
+      {
+        "id": "d",
+        "text": "Choque frontal."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "37",
+    "question": "Un motor consumirá más combustible si:",
+    "options": [
+      {
+        "id": "a",
+        "text": "se circula con marchas largas."
+      },
+      {
+        "id": "b",
+        "text": "se aprovecha la inercia del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "se circula con marchas cortas."
+      },
+      {
+        "id": "d",
+        "text": "se circula a velocidad moderada."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "38",
+    "question": "En una caja de cambios sincronizada, realizar la operación llamada \"doble embrague\" para reducir la relación de marchas, ¿influye en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, lo aumenta."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Sí, lo disminuye al poner una velocidad más corta ya que aumenta la potencia."
+      },
+      {
+        "id": "d",
+        "text": "Sí, lo disminuye al poner una velocidad más corta ya que disminuye la potencia."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "39",
+    "question": "¿Qué actuación no es una medida preventiva que es necesario realizar con el fin de evitar un incendio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revisar el estado de los frenos."
+      },
+      {
+        "id": "b",
+        "text": "Realizar un adecuado mantenimiento del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Detener el vehículo a la derecha, fuera de la calzada y del arcén si fuera posible."
+      },
+      {
+        "id": "d",
+        "text": "En pendientes pronunciadas que requieran el constante uso del freno eléctrico o de servicio, bajar en marchas cortas aprovechando la retención del motor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "40",
+    "question": "¿Qué debe hacerse en el caso que se aparque el vehículo en una zona con riesgo de nevadas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Utilizarse el freno de mano."
+      },
+      {
+        "id": "b",
+        "text": "Levantar los limpiaparabrisas."
+      },
+      {
+        "id": "c",
+        "text": "Dejar el vehículo en punto muerto."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "41",
+    "question": "Si un conductor trabaja para varias empresas, ¿cómo debe facilitar al empresario los datos de las horas de trabajo efectuadas para otra empresa, según la normativa laboral española?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por escrito."
+      },
+      {
+        "id": "b",
+        "text": "No tiene que facilitarlos."
+      },
+      {
+        "id": "c",
+        "text": "Solo por teléfono."
+      },
+      {
+        "id": "d",
+        "text": "Por cualquier medio."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "42",
+    "question": "¿Cuántos puntos se pierden en el permiso de conducir por minorar los tiempos de descanso obligatorios para un conductor en más de un 50 %?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos."
+      },
+      {
+        "id": "b",
+        "text": "Cuatro."
+      },
+      {
+        "id": "c",
+        "text": "Seis."
+      },
+      {
+        "id": "d",
+        "text": "Ninguno, pues la responsable de las infracciones a la normativa de transportes es la empresa transportista."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "43",
+    "question": "Con el fin de permitir la libre circulación de personas entre los países signatarios del Acuerdo de Schengen, sin perturbar el orden público:",
+    "options": [
+      {
+        "id": "a",
+        "text": "se ha adoptado la obligación del visado y control en todas las fronteras interiores."
+      },
+      {
+        "id": "b",
+        "text": "se han adoptado algunas normas comunes en las fronteras externas (visado, derecho de asilo y control)."
+      },
+      {
+        "id": "c",
+        "text": "No pueden suprimirse los controles en las fronteras interiores."
+      },
+      {
+        "id": "d",
+        "text": "La libre circulación de personas no tiene nada que ver con ese tratado."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "44",
+    "question": "¿Sirve cualquier tipo de hoja de registro para todos los tacógrafos analógicos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, aunque no estén homologadas."
+      },
+      {
+        "id": "b",
+        "text": "No, las hojas deben indicar para qué modelos de tacógrafo están homologadas."
+      },
+      {
+        "id": "c",
+        "text": "Sí, cualquier hoja, una vez homologada, debe servir para todos los modelos."
+      },
+      {
+        "id": "d",
+        "text": "Sí, incluso para el tacógrafo digital."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "45",
+    "question": "¿Cuándo se produce el par motor mínimo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A la velocidad máxima."
+      },
+      {
+        "id": "b",
+        "text": "Al ralentí."
+      },
+      {
+        "id": "c",
+        "text": "A la potencia máxima."
+      },
+      {
+        "id": "d",
+        "text": "A la aceleración máxima."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "46",
+    "question": "¿Para cuál de las siguientes aplicaciones no tiene utilidad conocer las curvas de par, potencia y consumo específico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para identificar la zona de utilización óptima del cuentarrevoluciones."
+      },
+      {
+        "id": "b",
+        "text": "Para obtener los márgenes de velocidad de las cajas de cambio de velocidades."
+      },
+      {
+        "id": "c",
+        "text": "Para mejorar la seguridad pasiva del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Para obtener mayor rendimiento del motor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "47",
+    "question": "¿Qué consecuencias tiene la somnolencia sobre la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disminución del tiempo de reacción."
+      },
+      {
+        "id": "b",
+        "text": "Aumento de la concentración."
+      },
+      {
+        "id": "c",
+        "text": "Alteración de las funciones sensoriales."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "48",
+    "question": "Según la Ley de responsabilidad civil y seguro en la circulación de vehículos a motor, se considera que un vehículo tiene su estacionamiento habitual en España:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cualquiera que sea el país de matriculación del vehículo si su propietario reside en España más de 183 días al año."
+      },
+      {
+        "id": "b",
+        "text": "cuando tiene matrícula española."
+      },
+      {
+        "id": "c",
+        "text": "cuando tiene matrícula de un Estado de la UE y su propietario reside la mayor parte del tiempo en España."
+      },
+      {
+        "id": "d",
+        "text": "cualquiera que sea el país de matriculación del vehículo si su propietario es español."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "49",
+    "question": "¿Qué efectos pueden provocar los fármacos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somnolencia."
+      },
+      {
+        "id": "b",
+        "text": "Fatiga muscular."
+      },
+      {
+        "id": "c",
+        "text": "Mareos."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "50",
+    "question": "El tiempo de espera en una frontera de un vehículo, ¿qué tipo de tiempo es considerado por la normativa laboral española de cara al conductor profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiempo de trabajo efectivo."
+      },
+      {
+        "id": "b",
+        "text": "Tiempo de espera."
+      },
+      {
+        "id": "c",
+        "text": "Tiempo de pausa."
+      },
+      {
+        "id": "d",
+        "text": "Tiempo de presencia cuando se haya comunicado su duración de antemano. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "51",
+    "question": "¿Dónde se registra la velocidad en un disco-diagrama u hoja de registro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En la zona exterior del reverso."
+      },
+      {
+        "id": "b",
+        "text": "En la zona más exterior del anverso."
+      },
+      {
+        "id": "c",
+        "text": "En la zona más interior del anverso."
+      },
+      {
+        "id": "d",
+        "text": "En la zona más interior del reverso."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "52",
+    "question": "¿Cambia el modo de funcionamiento del tacógrafo digital dependiendo de las tarjetas que tenga insertadas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Sí, pero solo cambia si insertas una tarjeta no válida."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo cambia cuando insertas una tarjeta caducada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "53",
+    "question": "¿Pueden transferirse desde el tacógrafo los datos registrados en una tarjeta de conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, pero es necesario que la tarjeta esté insertada en el tacógrafo."
+      },
+      {
+        "id": "b",
+        "text": "No, aunque esté insertada en el tacógrafo."
+      },
+      {
+        "id": "c",
+        "text": "Solo en determinadas marcas de tacógrafo."
+      },
+      {
+        "id": "d",
+        "text": "Solo si se tiene la clave de acceso."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "54",
+    "question": "Al calentar los elementos frenantes del sistema de frenado por una utilización excesiva, ¿qué fenómeno se produce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El fenómeno \"fading\"."
+      },
+      {
+        "id": "b",
+        "text": "El fenómeno aquaplaning."
+      },
+      {
+        "id": "c",
+        "text": "El fenómeno tubeless."
+      },
+      {
+        "id": "d",
+        "text": "El fenómeno \"reinforced\"."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "55",
+    "question": "Conducir en la zona de revoluciones de mayor par motor, ¿es conveniente como medida de ahorro de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, porque en esa zona el consumo es menor."
+      },
+      {
+        "id": "b",
+        "text": "No, porque en esa zona el consumo es mayor."
+      },
+      {
+        "id": "c",
+        "text": "Esta circunstancia no influye en el consumo, solo influye en la potencia."
+      },
+      {
+        "id": "d",
+        "text": "Esta circunstancia no influye en el consumo, solo influye en la aceleración."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "56",
+    "question": "La calidad del aceite del sistema de lubricación que se utilice en los motores, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, solo influye en el desgaste de las piezas."
+      },
+      {
+        "id": "b",
+        "text": "No, solo influye en que el motor se gripe o no."
+      },
+      {
+        "id": "c",
+        "text": "Solo en aquellos motores que utilizan un sistema de lubricación por mezcla."
+      },
+      {
+        "id": "d",
+        "text": "Sí, ya que puede reducir el rozamiento de las piezas y, por tanto, las pérdidas de potencia."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "57",
+    "question": "Cuando un vehículo está en movimiento, posee una energía cinética que será menor:",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuanto mayor sea su masa."
+      },
+      {
+        "id": "b",
+        "text": "cuanto menor sea su masa."
+      },
+      {
+        "id": "c",
+        "text": "cuanto mayor sea su altura."
+      },
+      {
+        "id": "d",
+        "text": "cuanto menor sea su altura."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "58",
+    "question": "¿Cómo actúa el TCS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En caso de derrape, hace actuar los frenos."
+      },
+      {
+        "id": "b",
+        "text": "Sincronizado del sistema de frenos en todas las ruedas."
+      },
+      {
+        "id": "c",
+        "text": "Avisa al conductor si se sale de la trayectoria del carril por el que circula."
+      },
+      {
+        "id": "d",
+        "text": "Reduce la fuerza del motor si las ruedas motrices pierden adherencia."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "59",
+    "question": "Para la comparecencia ante una Junta Arbitral del Transporte:",
+    "options": [
+      {
+        "id": "a",
+        "text": "no es necesaria la presencia de abogado ni la de procurador."
+      },
+      {
+        "id": "b",
+        "text": "es necesaria la presencia de abogado, pero no la de procurador."
+      },
+      {
+        "id": "c",
+        "text": "es necesaria la presencia de un procurador, pero no la presencia de abogado."
+      },
+      {
+        "id": "d",
+        "text": "es necesaria la presencia de abogado y procurador."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "60",
+    "question": "¿Cómo hay que colocar al herido para practicarle la respiración boca a boca?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boca abajo."
+      },
+      {
+        "id": "b",
+        "text": "Boca arriba."
+      },
+      {
+        "id": "c",
+        "text": "De lado."
+      },
+      {
+        "id": "d",
+        "text": "En posición de defensa."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "61",
+    "question": "¿En qué consiste una maniobra de evasión pasiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En frenar el vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "En efectuar giros en la dirección."
+      },
+      {
+        "id": "c",
+        "text": "En realizar alguna actuación para evitar el impacto."
+      },
+      {
+        "id": "d",
+        "text": "En Intentar provocar una actuación en el otro conductor implicado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "62",
+    "question": "¿Cuál de las siguientes medidas de prevención de riesgos laborales es obligación del trabajador?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitar riesgos laborables."
+      },
+      {
+        "id": "b",
+        "text": "Formar e informar."
+      },
+      {
+        "id": "c",
+        "text": "Adoptar medidas de protección."
+      },
+      {
+        "id": "d",
+        "text": "Utilizar los equipos de protección."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "63",
+    "question": "¿Qué tipo de comportamientos indican la presencia de cansancio en un conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumento de la motorización."
+      },
+      {
+        "id": "b",
+        "text": "Cambios de postura repetidos."
+      },
+      {
+        "id": "c",
+        "text": "Aumento de la concentración ante los estímulos."
+      },
+      {
+        "id": "d",
+        "text": "Atención tranquila a la carretera."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "64",
+    "question": "¿Qué consecuencias no se derivan de la fatiga del conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disminución de la atención."
+      },
+      {
+        "id": "b",
+        "text": "Disminución de la concentración."
+      },
+      {
+        "id": "c",
+        "text": "Disminución de la somnolencia."
+      },
+      {
+        "id": "d",
+        "text": "Disminución de los reflejos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "65",
+    "question": "¿Qué vehículos de transporte de mercancías están obligados a utilizar tacógrafo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los de más de 3,5 toneladas de Masa Máxima Autorizada."
+      },
+      {
+        "id": "b",
+        "text": "Los de más de 5 toneladas de Masa Máxima Autorizada únicamente."
+      },
+      {
+        "id": "c",
+        "text": "Los de más de 2 toneladas de Masa Máxima Autorizada."
+      },
+      {
+        "id": "d",
+        "text": "Los de más de 1,5 toneladas de Masa Máxima Autorizada."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "66",
+    "question": "¿En qué momento está obligado el conductor a llevar consigo la tarjeta de cualificación profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre."
+      },
+      {
+        "id": "b",
+        "text": "Nunca."
+      },
+      {
+        "id": "c",
+        "text": "Cuando conduzca el vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "Cuando se encuentre en las instalaciones de la empresa."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "67",
+    "question": "¿Qué resistencias intervienen en el movimiento de los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura y la resistencia a la pendiente."
+      },
+      {
+        "id": "b",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura y la resistencia de la transmisión."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia aerodinámica, la resistencia a la pendiente y la resistencia de la transmisión."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura, la resistencia de la transmisión y la resistencia a la pendiente."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "68",
+    "question": "El sistema BAS tiene como función:",
+    "options": [
+      {
+        "id": "a",
+        "text": "avisar de la baja presión en el sistema de frenos."
+      },
+      {
+        "id": "b",
+        "text": "aumentar la presión de frenado durante una frenada de urgencia."
+      },
+      {
+        "id": "c",
+        "text": "indicar el déficit de frenada en alguna de las ruedas."
+      },
+      {
+        "id": "d",
+        "text": "equilibrar la fuerza de frenado entre los diferentes ejes."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "69",
+    "question": "En el cuentarrevoluciones, la zona de máxima eficiencia del motor está indicada en color:",
+    "options": [
+      {
+        "id": "a",
+        "text": "rojo."
+      },
+      {
+        "id": "b",
+        "text": "naranja."
+      },
+      {
+        "id": "c",
+        "text": "amarillo."
+      },
+      {
+        "id": "d",
+        "text": "verde."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "70",
+    "question": "En la relación de un conductor con los clientes de su empresa, la cortesía es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "una conducta innecesaria."
+      },
+      {
+        "id": "b",
+        "text": "un rasgo fundamental."
+      },
+      {
+        "id": "c",
+        "text": "una muestra de hipocresía."
+      },
+      {
+        "id": "d",
+        "text": "una habilidad superflua."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "71",
+    "question": "Si circula con un vehículo sobrecargado¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "aumenta el consumo de carburante."
+      },
+      {
+        "id": "b",
+        "text": "disminuye la estabilidad y la distancia de frenado."
+      },
+      {
+        "id": "c",
+        "text": "aumenta la estabilidad y la distancia de frenado."
+      },
+      {
+        "id": "d",
+        "text": "disminuye el tiempo de reacción. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "72",
+    "question": "La utilización adecuada de la caja de velocidades:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ahorra carburante, pero hace que aumente el desgaste de la transmisión."
+      },
+      {
+        "id": "b",
+        "text": "eleva la energía potencial."
+      },
+      {
+        "id": "c",
+        "text": "debe permitir que el motor gire siempre dentro de la zona económica."
+      },
+      {
+        "id": "d",
+        "text": "ahorra carburante, pero hace que disminuya la velocidad."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "73",
+    "question": "En los motores de los automóviles actuales, cuando el vehículo circula, para que el consumo sea nulo, será necesario no acelerar y, además¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "tener pisado el pedal del embrague y la palanca del cambio en punto muerto."
+      },
+      {
+        "id": "b",
+        "text": "tener pisado el pedal del embrague y una relación de marchas seleccionada en la caja de velocidades."
+      },
+      {
+        "id": "c",
+        "text": "tener pisado el pedal del embrague, se tenga o no seleccionada una relación de marchas en la caja de velocidades."
+      },
+      {
+        "id": "d",
+        "text": "no pisar el pedal del embrague y tener seleccionada una relación de marchas en la caja de velocidades."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "74",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del ángulo del cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "De la longitud del árbol de levas."
+      },
+      {
+        "id": "c",
+        "text": "De la carga que lleve el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "De la longitud del pistón."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "75",
+    "question": "El mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre otros:",
+    "options": [
+      {
+        "id": "a",
+        "text": "del número de revoluciones por minuto del motor y la posición del pedal del acelerador."
+      },
+      {
+        "id": "b",
+        "text": "del tipo de batería y de la relación de marchas seleccionada."
+      },
+      {
+        "id": "c",
+        "text": "del motor de arranque y del tipo de ralentizador que monte el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "de la presión de los neumáticos y la longitud del pistón."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "76",
+    "question": "El mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre otros:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de las revoluciones por minuto del motor y de la mayor o menor refrigeración de los frenos."
+      },
+      {
+        "id": "b",
+        "text": "de los ralentizadores que monte el vehículo y del mantenimiento del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "de la posición del pedal del acelerador y del estado en el que se encuentre el filtro del aire del sistema de alimentación. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "del perfil de la carretera y de si posee o no suspensión neumática."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "77",
+    "question": "El consumo de carburante de un automóvil se ve afectado por varios factores, entre ellos se encuentra:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la presión de inflado de los neumáticos."
+      },
+      {
+        "id": "b",
+        "text": "el montaje de frenos de disco."
+      },
+      {
+        "id": "c",
+        "text": "el material del que esté construido el sistema de dirección."
+      },
+      {
+        "id": "d",
+        "text": "el montaje de frenos de tambor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "78",
+    "question": "Conducir utilizando la relación de marchas más alta que sea posible dependiendo de la velocidad a la que se circule, ¿qué ventajas presenta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No tener que comprobar el nivel del líquido refrigerante ya que conducir de esta manera hace que el consumo de refrigerante sea nulo."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar el coeficiente aerodinámico del vehículo y prolongar la vida del motor."
+      },
+      {
+        "id": "c",
+        "text": "Mayor seguridad en la circulación y menor consumo y contaminación ambiental."
+      },
+      {
+        "id": "d",
+        "text": "Aumentar la frecuencia de la inspección técnica periódica y reducir los plazos de mantenimiento del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "79",
+    "question": "Una buena forma de ahorrar carburante al conducir un vehículo pesado es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "bajar las pendientes con el motor parado."
+      },
+      {
+        "id": "b",
+        "text": "esperar con el motor arrancado sin circular hasta que alcance la temperatura adecuada de funcionamiento."
+      },
+      {
+        "id": "c",
+        "text": "circular con una presión de inflado de los neumáticos inferior a la recomendada por el fabricante."
+      },
+      {
+        "id": "d",
+        "text": "comprobar frecuentemente la presión de inflado de los neumáticos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "80",
+    "question": "En el caso de trabajo nocturno efectuado por trabajadores móviles del transporte por carretera que no tienen la consideración de trabajador nocturno, la jornada de trabajo por cada período de veinticuatro horas no podrá exceder de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "doce horas."
+      },
+      {
+        "id": "b",
+        "text": "ocho horas."
+      },
+      {
+        "id": "c",
+        "text": "diez horas."
+      },
+      {
+        "id": "d",
+        "text": "nueve horas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "81",
+    "question": "Podrá procederse a la inmovilización de un vehículo en una inspección de transporte en carretera si:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el conductor supera en un 5 % el límite de velocidad. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "falta el título habilitante para el transporte."
+      },
+      {
+        "id": "c",
+        "text": "el conductor colabora con los agentes encargados del control."
+      },
+      {
+        "id": "d",
+        "text": "Nunca puede procederse a la inmovilización de un vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "82",
+    "question": "Los cursos de formación continua necesarios para renovar la tarjeta de cualificación de conductor se deben realizar en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "centros públicos de formación profesional."
+      },
+      {
+        "id": "b",
+        "text": "cualquier centro que acredite experiencia en formación de conductores."
+      },
+      {
+        "id": "c",
+        "text": "la empresa de transporte en la que se esté trabajando."
+      },
+      {
+        "id": "d",
+        "text": "centros de empresas CAP autorizadas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "83",
+    "question": "¿De qué forma se puede aprovechar mejor la inercia de un vehículo para ahorrar carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Utilizando cuanto antes los frenos convencionales."
+      },
+      {
+        "id": "b",
+        "text": "Utilizando cuanto antes los ralentizadores."
+      },
+      {
+        "id": "c",
+        "text": "Reduciendo a una marcha más corta cuanto antes."
+      },
+      {
+        "id": "d",
+        "text": "Dejando de acelerar con suficiente antelación, sin pisar el pedal del embrague y manteniendo la marcha engranada."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "84",
+    "question": "¿Cuál de las siguientes funciones corresponde a un sistema IVMS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alerta de salida de carril."
+      },
+      {
+        "id": "b",
+        "text": "Estimación de los tiempos de entrega de las mercancías."
+      },
+      {
+        "id": "c",
+        "text": "Aviso de obstáculos en la calzada."
+      },
+      {
+        "id": "d",
+        "text": "Análisis de la velocidad angular de cada rueda."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "85",
+    "question": "¿A qué sistema de ayuda a la conducción corresponden las siglas ACC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al de control de crucero adaptativo."
+      },
+      {
+        "id": "b",
+        "text": "Al de control del sistema de alumbrado."
+      },
+      {
+        "id": "c",
+        "text": "Al de alerta de colisión con peatones y ciclistas."
+      },
+      {
+        "id": "d",
+        "text": "Al de control de ángulo muerto."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "86",
+    "question": "¿Qué pérdidas de energía se producen en el motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gases de escape a elevada temperatura."
+      },
+      {
+        "id": "b",
+        "text": "Calor disipado a través del sistema de refrigeración."
+      },
+      {
+        "id": "c",
+        "text": "Rozamientos de piezas del motor. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "87",
+    "question": "¿Qué son los Sistemas de Transporte Inteligente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los que define la Comisión Europea como tales."
+      },
+      {
+        "id": "b",
+        "text": "Los que definen una estructura empresarial más eficiente."
+      },
+      {
+        "id": "c",
+        "text": "Un conjunto de aplicaciones informáticas y de comunicaciones destinadas a mejorar la productividad y seguridad del transporte."
+      },
+      {
+        "id": "d",
+        "text": "El conjunto de aplicaciones y medios físicos implementados por las Administraciones para mejorar la movilidad."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "88",
+    "question": "Algunos elementos de seguridad activa requieren¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "permisos especiales para su uso."
+      },
+      {
+        "id": "b",
+        "text": "revisiones de ITV especiales."
+      },
+      {
+        "id": "c",
+        "text": "existencia de un impacto para iniciar su funcionamiento."
+      },
+      {
+        "id": "d",
+        "text": "una acción física por parte del conductor."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "89",
+    "question": "¿Cómo actúan los elementos de seguridad pasiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Algunos requieren una acción física por parte del conductor."
+      },
+      {
+        "id": "b",
+        "text": "Automáticamente si se produce el suceso que inicie su funcionamiento."
+      },
+      {
+        "id": "c",
+        "text": "Necesitan la previa activación por parte del conductor."
+      },
+      {
+        "id": "d",
+        "text": "Necesitan la previa activación por parte de alguno de los ocupantes del vehículo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "90",
+    "question": "Cualquier incidencia meteorológica, ¿cómo afecta a la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disminuyendo de la visibilidad e incrementando la fatiga de los sistemas del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Incrementando la fatiga de los sistemas del vehículo, especialmente de la dirección."
+      },
+      {
+        "id": "c",
+        "text": "Disminuyendo la visibilidad y la adherencia entre neumáticos y calzada."
+      },
+      {
+        "id": "d",
+        "text": "Incrementando la fatiga de sistema de frenado."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "91",
+    "question": "¿A quién se denomina peatón tecnológico\"?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al que circula utilizando elementos como el móvil o reproductores digitales, por ejemplo."
+      },
+      {
+        "id": "b",
+        "text": "Al que define su ruta en base a la información aportada por las nuevas tecnologías."
+      },
+      {
+        "id": "c",
+        "text": "A aquel que utiliza medios eléctricos, que no son considerados automóvil, para sus desplazamientos."
+      },
+      {
+        "id": "d",
+        "text": "No existe este concepto. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "92",
+    "question": "La minoración superior al 50 % sobre los períodos de descanso semanales obligatorios, ¿qué tipo de infracción se considera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leve."
+      },
+      {
+        "id": "b",
+        "text": "Muy grave."
+      },
+      {
+        "id": "c",
+        "text": "Grave."
+      },
+      {
+        "id": "d",
+        "text": "No se considera infracción."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "93",
+    "question": "¿Qué situaciones personales, causantes de estrés, se relacionan más con la accidentalidad en carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fallecimiento de familiares."
+      },
+      {
+        "id": "b",
+        "text": "Problemas conyugales."
+      },
+      {
+        "id": "c",
+        "text": "Dificultades económicas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "94",
+    "question": "La omisión de socorro a los afectados por un accidente de tráfico que se encuentren en peligro manifiesto y grave, cuando no suponga riesgo para nosotros ni para terceros:",
+    "options": [
+      {
+        "id": "a",
+        "text": "es una infracción administrativa."
+      },
+      {
+        "id": "b",
+        "text": "es un delito, pero solo cuando en el accidente se han producido muertos."
+      },
+      {
+        "id": "c",
+        "text": "es un delito."
+      },
+      {
+        "id": "d",
+        "text": "no constituye delito ni infracción alguna en ningún caso, pues la ayuda siempre tiene carácter voluntario."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "95",
+    "question": "Un extintor resulta útil:",
+    "options": [
+      {
+        "id": "a",
+        "text": "en fuegos incipientes."
+      },
+      {
+        "id": "b",
+        "text": "en fuegos consolidados y extendidos."
+      },
+      {
+        "id": "c",
+        "text": "en fuegos con mucha llama."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "96",
+    "question": "Es una norma de uso de los extintores:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comprobar, antes de utilizarlo, que el agente extintor es adecuado al tipo de fuego."
+      },
+      {
+        "id": "b",
+        "text": "Utilizarlo rápidamente sin comprobar nada, pues cualquier extintor es útil en un incendio."
+      },
+      {
+        "id": "c",
+        "text": "Colocarse de cara al viento cuando se vaya a utilizar. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas B y C son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "97",
+    "question": "Señale la afirmación correcta, referida a los elementos de un servicio de transporte calificados como proporcionales:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No entran dentro de lo que se considera un servicio normal, son elementos diferenciadores."
+      },
+      {
+        "id": "b",
+        "text": "Su cumplimiento aumenta el nivel de calidad percibido por el cliente, pero su incumplimiento no afecta a la satisfacción del cliente."
+      },
+      {
+        "id": "c",
+        "text": "Su cumplimiento aumenta la satisfacción del cliente y su incumplimiento genera insatisfacción."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y C son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "98",
+    "question": "¿Pueden los agentes de control obligar a trasladar un vehículo a un taller autorizado en sentido contrario a su marcha?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, pero solo hasta 100 km."
+      },
+      {
+        "id": "b",
+        "text": "Sí, pero solo hasta 30 km, como máximo."
+      },
+      {
+        "id": "c",
+        "text": "No, nunca."
+      },
+      {
+        "id": "d",
+        "text": "Sí, como máximo 1 km."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "99",
+    "question": "¿En qué condiciones deben efectuar la formación continua los conductores que realicen simultáneamente transporte de viajeros en autocar y transporte de mercancías con vehículos cuya conducción requiere estar en posesión del certificado de aptitud profesional (CAP)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta con que realicen un curso para una de las dos categorías de permisos."
+      },
+      {
+        "id": "b",
+        "text": "Deben realizar un curso diferenciado para cada una de las dos categorías de permisos."
+      },
+      {
+        "id": "c",
+        "text": "Deben realizar un curso de doble duración que incluya las materias específicas de cada una de las dos categorías."
+      },
+      {
+        "id": "d",
+        "text": "Deben realizar el curso correspondiente a la categoría de permisos con la que efectúan más horas de conducción."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "100",
+    "question": "Un vehículo que transporta varios turismos averiados entre su base y una ciudad que se encuentra",
+    "options": [
+      {
+        "id": "a",
+        "text": "200 km está:"
+      },
+      {
+        "id": "b",
+        "text": "obligado a usar tacógrafo digital."
+      },
+      {
+        "id": "c",
+        "text": "exento de usar tacógrafo."
+      },
+      {
+        "id": "d",
+        "text": "obligado a usar tacógrafo analógico."
+      }
+    ],
+    "correct": "a"
+  }
+]

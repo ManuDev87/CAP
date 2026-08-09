@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "¿Cuál de estas afirmaciones no es correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los transportistas autónomos trabajan mayoritariamente para empresas más grandes."
+      },
+      {
+        "id": "b",
+        "text": "Las empresas grandes suelen usar la subcontratación de otras de menor dimensión para complementar su capacidad de carga."
+      },
+      {
+        "id": "c",
+        "text": "Una buena gestión comercial disminuye los ingresos por vehículo y por kilómetro recorrido, reduciendo los recorridos en vacío."
+      },
+      {
+        "id": "d",
+        "text": "La capacidad comercial es decisiva para la rentabilidad de la empresa de transporte, dada su influencia sobre la productividad."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "2",
+    "question": "Cuando el conductor de un camión frene en una pendiente descendente, ¿qué ocurrirá con la mercancía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tenderá a desplazarse en sentido opuesto a la marcha del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Tenderá a desplazarse en el mismo sentido de la marcha del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Tenderá a desplazarse hacia el lateral del vehículo que soporte más peso."
+      },
+      {
+        "id": "d",
+        "text": "No tenderá a desplazarse hacia ninguna parte."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "3",
+    "question": "El sistema de suspensión de un camión:",
+    "options": [
+      {
+        "id": "a",
+        "text": "regula la presión de inflado."
+      },
+      {
+        "id": "b",
+        "text": "evita que la rueda sufra un cierto deslizamiento."
+      },
+      {
+        "id": "c",
+        "text": "evita que todas las imperfecciones del terreno se transmitan dentro del habitáculo."
+      },
+      {
+        "id": "d",
+        "text": "controla el movimiento del vehículo en caso de aquaplaning."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "4",
+    "question": "¿Cuándo se habla de apoyos fuertes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando el intervalo entre girar la dirección y el apoyo es pequeño."
+      },
+      {
+        "id": "b",
+        "text": "Cuando la inclinación que alcanza el camión es la mínima posible."
+      },
+      {
+        "id": "c",
+        "text": "Cuando la inclinación que alcanza el camión es la máxima posible o cercana a la máxima."
+      },
+      {
+        "id": "d",
+        "text": "Cuando la curva permite que el camión circule apoyado durante un gran recorrido."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "5",
+    "question": "¿De qué factores depende el grado de rozamiento en un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De la velocidad."
+      },
+      {
+        "id": "b",
+        "text": "Del desplazamiento de masas lineales."
+      },
+      {
+        "id": "c",
+        "text": "De la fuerza de molaridad."
+      },
+      {
+        "id": "d",
+        "text": "De la fuerza atemporal."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "6",
+    "question": "¿Qué es la distribución de la carga en el vehículo? FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA",
+    "options": [
+      {
+        "id": "a",
+        "text": "La parte del peso total que cada eje soporta."
+      },
+      {
+        "id": "b",
+        "text": "El peso específico de la carga."
+      },
+      {
+        "id": "c",
+        "text": "La fuerza termotecnia lateral."
+      },
+      {
+        "id": "d",
+        "text": "Es lo mismo que calcular el centro de gravedad de la carga."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "7",
+    "question": "¿Cuál de las siguientes fuerzas intervienen en el movimiento de un camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La fuerza mayor."
+      },
+      {
+        "id": "b",
+        "text": "La fuerza menor."
+      },
+      {
+        "id": "c",
+        "text": "La fuerza motriz."
+      },
+      {
+        "id": "d",
+        "text": "La fuerza nula."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "8",
+    "question": "¿Se puede realizar transporte internacional en el ámbito de la Unión Europea con un vehículo articulado cuya cabeza tractora esté matriculada en un país y el semirremolque en otro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en todos los casos."
+      },
+      {
+        "id": "b",
+        "text": "No, nunca."
+      },
+      {
+        "id": "c",
+        "text": "Solo si se trata de transporte privado complementario."
+      },
+      {
+        "id": "d",
+        "text": "Solo si se trata de transporte público."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "9",
+    "question": "Salvo disposición contraria de los estatutos, ¿cómo podrán transmitirse las participaciones sociales de una sociedad de responsabilidad limitada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Libremente entre socios."
+      },
+      {
+        "id": "b",
+        "text": "Libremente a cualquier persona."
+      },
+      {
+        "id": "c",
+        "text": "Solo se pueden transmitir a la sociedad con la previa autorización de los socios."
+      },
+      {
+        "id": "d",
+        "text": "Solo se pueden transmitir mortis causa."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "10",
+    "question": "¿Para qué conductores es necesario un certificado de conductor de tercer país?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para todos los que no sean españoles."
+      },
+      {
+        "id": "b",
+        "text": "Solo para todos los conductores extranjeros que no hayan convalidado su permiso de conducir."
+      },
+      {
+        "id": "c",
+        "text": "Para los conductores que no tengan nacionalidad de un estado de la Unión Europea o del Espacio Económico Europeo cuando no tengan residencia de larga duración-UE."
+      },
+      {
+        "id": "d",
+        "text": "Solamente para los conductores extranjeros que no hayan convalidado el CAP obtenido fuera de España."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "11",
+    "question": "¿Qué clases de autorizaciones administrativas se otorgan para realizar transporte público interior de mercancías? FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA",
+    "options": [
+      {
+        "id": "a",
+        "text": "La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada no superior a 3,5 toneladas y la que habilita para efectuarlo con vehículos de Masa Máxima Autorizada superior a 3,5 toneladas."
+      },
+      {
+        "id": "b",
+        "text": "La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada no superior a 2 toneladas y la que habilita para efectuarlo con vehículos de Masa Máxima Autorizada superior a 2 toneladas."
+      },
+      {
+        "id": "c",
+        "text": "La que habilita para efectuar transporte con vehículos de Masa Máxima Autorizada superior"
+      },
+      {
+        "id": "d",
+        "text": "La autorización para empresarios individuales (autónomos) y la autorización para sociedades."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "12",
+    "question": "¿Cuántas autorizaciones administrativas de transporte público de mercancías se otorgan por empresa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Una por cada vehículo que posea la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Una para le empresa y una para cada vehículo del que acredite su vinculación a la misma."
+      },
+      {
+        "id": "c",
+        "text": "Una para efectuar transporte público con vehículos ligeros y una para efectuar transporte púbico con vehículos pesado, si acredita su posesión."
+      },
+      {
+        "id": "d",
+        "text": "Una, que habilita para realizar transporte con los vehículos que se le hayan vinculado."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "13",
+    "question": "En transporte internacional de mercancías, ¿qué permite la autorización bilateral de tránsito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transitar por un país y dejar mercancías."
+      },
+      {
+        "id": "b",
+        "text": "Transitar por un país y recoger mercancías."
+      },
+      {
+        "id": "c",
+        "text": "Solo permite transitar por un país."
+      },
+      {
+        "id": "d",
+        "text": "Solo permite dejar mercancías en un país."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "14",
+    "question": "El acuerdo internacional que reglamenta las condiciones de transporte de las distintas mercancías perecederas y los requisitos de los vehículos utilizados se denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ALP."
+      },
+      {
+        "id": "b",
+        "text": "NBA."
+      },
+      {
+        "id": "c",
+        "text": "ATD."
+      },
+      {
+        "id": "d",
+        "text": "ATP."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "15",
+    "question": "La sobrecarga del eje de un camión¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "puede tener efectos negativos al frenar."
+      },
+      {
+        "id": "b",
+        "text": "afecta considerablemente a la fuerza termotecnia lateral."
+      },
+      {
+        "id": "c",
+        "text": "acrecienta el efecto positivo de una pendiente ascendente."
+      },
+      {
+        "id": "d",
+        "text": "puede tener efectos positivos para controlar la velocidad. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "16",
+    "question": "¿Las autorizaciones CEMT específicas para mudanzas se expiden en número limitado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Sí, pero están exentos de dicha limitación los transportistas que ya las hubieran tenido en los últimos cinco años ininterrumpidamente."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero están exentos de dicha limitación los transportistas que ya las hubieran tenido en los últimos diez años ininterrumpidamente."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "17",
+    "question": "¿Qué efectos produce la carta de porte electrónica en el caso de un transporte sujeto al Convenio CMR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguno."
+      },
+      {
+        "id": "b",
+        "text": "Los mismos que la carta expedida en papel, a la que se considera equivalente."
+      },
+      {
+        "id": "c",
+        "text": "Cuando no vaya acompañada de la carta expedida en papel, solo produce efectos limitados."
+      },
+      {
+        "id": "d",
+        "text": "La carta de porte electrónica no existe."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "18",
+    "question": "En el caso de un transporte sujeto al Convenio CMR, ¿qué documentos se pueden emitir por medios electrónicos con plenos efectos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La carta de porte electrónica."
+      },
+      {
+        "id": "b",
+        "text": "El permiso de circulación del vehículo con el que se efectúa el transporte."
+      },
+      {
+        "id": "c",
+        "text": "Ninguno."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "19",
+    "question": "¿Cuál de las siguientes se considera mercancía no perteneciente a la Unión a efectos aduaneros?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La importada de territorios que no forman parte del territorio aduanero de la Unión y despachada a libre práctica."
+      },
+      {
+        "id": "b",
+        "text": "La obtenida totalmente en el territorio aduanero de la Unión, sin agregación de mercancías importadas."
+      },
+      {
+        "id": "c",
+        "text": "La mercancía de la Unión que salga del territorio aduanero de esta."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y C son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "20",
+    "question": "¿Para cuánto tiempo se otorgan las autorizaciones de transporte público de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos años."
+      },
+      {
+        "id": "b",
+        "text": "Tres años."
+      },
+      {
+        "id": "c",
+        "text": "Cinco años."
+      },
+      {
+        "id": "d",
+        "text": "Se otorgan sin plazo de duración prefijado. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "21",
+    "question": "Salvo prueba en contrario, ¿cuál de los siguientes se considerará precio usual de un servicio de transporte de mercancías?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El coste medio calculado por el Instituto Nacional de Estadística a partir de las estadísticas de transporte."
+      },
+      {
+        "id": "b",
+        "text": "El coste medio calculado por la Comunidad Autónoma donde tiene su origen el transporte."
+      },
+      {
+        "id": "c",
+        "text": "El coste medio recogido para ese tipo de transporte en el Observatorio de Costes."
+      },
+      {
+        "id": "d",
+        "text": "Cualquiera de los anteriores, a elección del transportista."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "22",
+    "question": "¿Cuándo podrá el titular de una autorización de transporte público de mercancías intermediar en la contratación de transporte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En todo momento, la autorización de transporte público habilita también para la intermediación en el mismo."
+      },
+      {
+        "id": "b",
+        "text": "Cuando no exista, en un radio de 100 Km, un operador logístico autorizado."
+      },
+      {
+        "id": "c",
+        "text": "Siempre que lo considere oportuno, sin ningún tipo de condición ni limitación."
+      },
+      {
+        "id": "d",
+        "text": "Cuando haya acreditado para su obtención requisitos iguales o superiores a los exigidos para obtener la autorización de operador de transporte."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "23",
+    "question": "¿Cómo actúan los pares de viraje sobre un vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incrementan su carga de inercia lateral."
+      },
+      {
+        "id": "b",
+        "text": "Hacen que su velocidad tienda a incrementarse."
+      },
+      {
+        "id": "c",
+        "text": "Lo hacen girar sobre su eje geométrico horizontal."
+      },
+      {
+        "id": "d",
+        "text": "Lo hacen girar sobre su eje geométrico vertical."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "24",
+    "question": "Debido a la irregularidad de la carga, durante la estiba pueden utilizarse ciertos materiales para rellenar los huecos entre los bultos. ¿Cuál de los siguientes materiales es una buena opción para esa tarea?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Madera."
+      },
+      {
+        "id": "b",
+        "text": "Bolsas de aire."
+      },
+      {
+        "id": "c",
+        "text": "Espuma de poliuretano."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "25",
+    "question": "¿Qué puede producir una sobrecarga de mercancías en el eje trasero del camión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dureza en la dirección del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Falta de apoyo en el eje trasero."
+      },
+      {
+        "id": "c",
+        "text": "Reducción del tiempo de frenado. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "Esfuerzos excesivos para la suspensión trasera."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "26",
+    "question": "¿A qué se deben principalmente las pérdidas energéticas que se producen en la transmisión?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A la temperatura ambiente."
+      },
+      {
+        "id": "b",
+        "text": "Al rozamiento de sus elementos."
+      },
+      {
+        "id": "c",
+        "text": "A la aerodinámica del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "A la humedad del ambiente."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "27",
+    "question": "El par motor está relacionado con:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la longitud del cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "el diámetro del embrague."
+      },
+      {
+        "id": "c",
+        "text": "la expansión de los gases quemados en el interior del cilindro."
+      },
+      {
+        "id": "d",
+        "text": "el número de velocidades de la caja de cambios."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "28",
+    "question": "En relación con la atención al cliente, ¿cuál de estas afirmaciones es correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mientras se atiende al cliente, se puede uno distraer."
+      },
+      {
+        "id": "b",
+        "text": "No hay que esperar que el cliente termine de hablar antes de formular la respuesta."
+      },
+      {
+        "id": "c",
+        "text": "Se puede contestar apresuradamente."
+      },
+      {
+        "id": "d",
+        "text": "Se debe evitar interrumpir."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "29",
+    "question": "¿Cuál de estas afirmaciones es incorrecta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al efectuar las revisiones periódicas del vehículo, conviene supervisar el sistema de climatización."
+      },
+      {
+        "id": "b",
+        "text": "El diseño del habitáculo de conducción debe ser tal que, en caso de accidente, se maximicen los daños del conductor al impactar con el mismo."
+      },
+      {
+        "id": "c",
+        "text": "No interesa dejar objetos sueltos en el habitáculo de conducción."
+      },
+      {
+        "id": "d",
+        "text": "Es necesario asegurar la renovación del aire en el habitáculo de conducción."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "30",
+    "question": "Al prestar ayuda en un accidente de circulación, ¿qué se debe hacer antes de socorrer a los heridos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Llamar la atención del resto de conductores para solicitar su ayuda."
+      },
+      {
+        "id": "b",
+        "text": "Acudir al puesto de socorro más próximo para solicitar ayuda."
+      },
+      {
+        "id": "c",
+        "text": "Proteger y señalizar el lugar del accidente. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "Retirar los vehículos accidentados de la calzada."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "31",
+    "question": "Conducción semanal es el tiempo acumulado total de conducción durante una semana. ¿A partir de qué momento se contabiliza ese tiempo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desde el inicio del período de conducción hasta transcurridos 6 períodos más."
+      },
+      {
+        "id": "b",
+        "text": "Desde las cero horas del día en que empieza a conducir hasta las 24 horas del séptimo día posterior."
+      },
+      {
+        "id": "c",
+        "text": "Desde las cero horas del lunes hasta las 24 horas del domingo."
+      },
+      {
+        "id": "d",
+        "text": "Desde las cero horas del lunes hasta que se produzca un descanso semanal."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "32",
+    "question": "Después de un período de conducción de 4 horas y media, el conductor debe efectuar una pausa de, al menos:",
+    "options": [
+      {
+        "id": "a",
+        "text": "35 minutos."
+      },
+      {
+        "id": "b",
+        "text": "45 minutos."
+      },
+      {
+        "id": "c",
+        "text": "25 minutos."
+      },
+      {
+        "id": "d",
+        "text": "40 minutos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "33",
+    "question": "El tacógrafo digital cambiará de modo de funcionamiento según:",
+    "options": [
+      {
+        "id": "a",
+        "text": "demande el agente de control actuante."
+      },
+      {
+        "id": "b",
+        "text": "las tarjetas de tacógrafo válidas que se inserten en los dispositivos de interfaz."
+      },
+      {
+        "id": "c",
+        "text": "actúe el conductor sobre el conmutador de actividades."
+      },
+      {
+        "id": "d",
+        "text": "se realice un calibrado con tarjeta de empresa."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "34",
+    "question": "El asiento de la cabina se colocará a la altura necesaria para que las caderas y las rodillas formen un ángulo de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "45 grados."
+      },
+      {
+        "id": "b",
+        "text": "60 grados."
+      },
+      {
+        "id": "c",
+        "text": "75 grados."
+      },
+      {
+        "id": "d",
+        "text": "90 grados."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "35",
+    "question": "El transporte por carretera es una actividad productiva caracterizada por el trabajo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "a ritmos acelerados."
+      },
+      {
+        "id": "b",
+        "text": "sometido a múltiples circunstancias favorables."
+      },
+      {
+        "id": "c",
+        "text": "sometido a excesos de responsabilidad. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y C son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "36",
+    "question": "En el modelo oficial de la declaración amistosa de accidentes debe anotarse:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el lugar del accidente."
+      },
+      {
+        "id": "b",
+        "text": "los datos de las compañías de seguros de los titulares de los vehículos implicados."
+      },
+      {
+        "id": "c",
+        "text": "los daños apreciados en cada uno de los vehículos implicados en el accidente."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "37",
+    "question": "En función de por dónde se circule, se recomiendan unas técnicas indicadas para optimizar el consumo de carburante. ¿Qué se recomienda en pendientes ascendentes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circular a velocidad constante pisando más acelerador si fuera necesario."
+      },
+      {
+        "id": "b",
+        "text": "Mantener la aguja del tacómetro en la parte derecha de la zona económica."
+      },
+      {
+        "id": "c",
+        "text": "Mantener el pedal acelerador poco pisado."
+      },
+      {
+        "id": "d",
+        "text": "Circular a velocidad creciente hasta llegar a un número de revoluciones por encima de la zona verde del cuentarrevoluciones."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "38",
+    "question": "Los transportes realizados para la recogida y eliminación de residuos domésticos a domicilio, íntegramente comprendidos en un radio de 50 kilómetros alrededor del centro de explotación de la empresa titular:",
+    "options": [
+      {
+        "id": "a",
+        "text": "están exentos de tacógrafo solo si el vehículo es de propiedad municipal."
+      },
+      {
+        "id": "b",
+        "text": "deben llevar instalado un tacógrafo, pero no es necesario que esté calibrado."
+      },
+      {
+        "id": "c",
+        "text": "están exentos de tacógrafo solo si en las condiciones de la concesión municipal se especifica."
+      },
+      {
+        "id": "d",
+        "text": "están exentos del uso del tacógrafo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "39",
+    "question": "Señale la afirmación falsa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "El efecto \"fading\" se produce al aumentar la temperatura en los frenos."
+      },
+      {
+        "id": "b",
+        "text": "El efecto \"fading\" provoca que los forros se cristalicen."
+      },
+      {
+        "id": "c",
+        "text": "El efecto \"fading\" provoca que disminuya el coeficiente de rozamiento entre los forros."
+      },
+      {
+        "id": "d",
+        "text": "El efecto \"fading\" provoca que automáticamente disminuya la velocidad."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "40",
+    "question": "Señale la respuesta correcta respecto a la conducción con niebla.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es necesario disminuir la distancia de seguridad ya que así podemos aprovechar la luz del vehículo que va delante. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "b",
+        "text": "No hay que atender a las marcas viales ya que no se ven."
+      },
+      {
+        "id": "c",
+        "text": "Es recomendable adelantar ya que así pasamos antes la zona de niebla."
+      },
+      {
+        "id": "d",
+        "text": "Conectar las luces de cruce y las de antiniebla."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "41",
+    "question": "Un vehículo de transporte de mercancías con una MMA de 3 toneladas:",
+    "options": [
+      {
+        "id": "a",
+        "text": "debe llevar instalado tacógrafo."
+      },
+      {
+        "id": "b",
+        "text": "debe llevar instalado tacógrafo si se destina al transporte público."
+      },
+      {
+        "id": "c",
+        "text": "está exento de llevar instalado tacógrafo."
+      },
+      {
+        "id": "d",
+        "text": "debe utilizar tacógrafo en transporte internacional."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "42",
+    "question": "¿Qué es una luxación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La salida del hueso de su articulación."
+      },
+      {
+        "id": "b",
+        "text": "La rotura de un músculo."
+      },
+      {
+        "id": "c",
+        "text": "El estiramiento anormal de un músculo."
+      },
+      {
+        "id": "d",
+        "text": "La rotura de un tendón."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "43",
+    "question": "¿Cuál de las siguientes respuestas no constituye un objetivo de la Ergonomía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ajustar las exigencias del trabajo a las posibilidades del hombre."
+      },
+      {
+        "id": "b",
+        "text": "Diseñar las máquinas, equipos e instalaciones pensando en la mayor seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Configurar los puestos de trabajo de modo que permitan una postura no perjudicial para la salud del trabajador."
+      },
+      {
+        "id": "d",
+        "text": "Modificar las herramientas de trabajo tratando que cada vez se trabaje menos y así disminuir las enfermedades."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "44",
+    "question": "Si el filtro del aire del motor de un automóvil está sucio, el humo que saldrá por el tubo de escape será:",
+    "options": [
+      {
+        "id": "a",
+        "text": "de color negro."
+      },
+      {
+        "id": "b",
+        "text": "de color blanco."
+      },
+      {
+        "id": "c",
+        "text": "de color azulado."
+      },
+      {
+        "id": "d",
+        "text": "incoloro."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "45",
+    "question": "El ABS es un dispositivo que: FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA",
+    "options": [
+      {
+        "id": "a",
+        "text": "evita el bloqueo de las ruedas al frenar el vehículo."
+      },
+      {
+        "id": "b",
+        "text": "aumenta la aceleración de manera constante."
+      },
+      {
+        "id": "c",
+        "text": "evita la pérdida de tracción de las ruedas propulsoras."
+      },
+      {
+        "id": "d",
+        "text": "corrige los efectos de subviraje."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "46",
+    "question": "Cuando se habla de \"par en rueda\" se hace referencia al esfuerzo de giro:",
+    "options": [
+      {
+        "id": "a",
+        "text": "que aplica el pistón sobre el cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "que aplica el pistón sobre la biela."
+      },
+      {
+        "id": "c",
+        "text": "que llega a las ruedas motrices."
+      },
+      {
+        "id": "d",
+        "text": "que aplica el piñón de ataque del árbol de transmisión sobre la corona dentada del grupo cónico."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "47",
+    "question": "Circulando por una calzada nevada o helada, ¿se puede ver afectado peligrosamente el control de la dirección del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en todo caso."
+      },
+      {
+        "id": "b",
+        "text": "Sí, pero solo cuando el pavimento está mojado."
+      },
+      {
+        "id": "c",
+        "text": "Sí, al circular por un lado sobre suelo seco y por el otro sobre nieve o hielo."
+      },
+      {
+        "id": "d",
+        "text": "No, en ningún caso."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "48",
+    "question": "¿En qué hora deben grabarse las actividades en el disco-diagrama u hoja de registro de un tacógrafo analógico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En hora UTC."
+      },
+      {
+        "id": "b",
+        "text": "En la hora del país de matriculación del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "En la hora local de cada país por el que se circule."
+      },
+      {
+        "id": "d",
+        "text": "En hora UTC más 2 horas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "49",
+    "question": "Cuando se produce la inmovilización de un vehículo de transporte por la autoridad competente, ¿de quién es la responsabilidad de la custodia del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del juez de guardia."
+      },
+      {
+        "id": "b",
+        "text": "De la Policía local del lugar más cercano."
+      },
+      {
+        "id": "c",
+        "text": "De la autoridad que ordena la inmovilización."
+      },
+      {
+        "id": "d",
+        "text": "Del transportista."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "50",
+    "question": "¿En qué caso debe presentar un conductor un certificado de actividades a los agentes de control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En un control en carretera en todo caso. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "b",
+        "text": "En un control en carretera para justificar una baja por enfermedad que se produjo hace 2 meses."
+      },
+      {
+        "id": "c",
+        "text": "En un control en carretera para justificar una baja por enfermedad dentro del período de los últimos 28 días."
+      },
+      {
+        "id": "d",
+        "text": "En ningún caso."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "51",
+    "question": "La utilización de un tacógrafo no homologado equivale a una infracción de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "obstrucción a la actuación inspectora."
+      },
+      {
+        "id": "b",
+        "text": "tiempos de conducción."
+      },
+      {
+        "id": "c",
+        "text": "seguridad vial."
+      },
+      {
+        "id": "d",
+        "text": "carencia de aparato de control."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "52",
+    "question": "¿Cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitar el viento trasero."
+      },
+      {
+        "id": "b",
+        "text": "Reducir el régimen de revoluciones."
+      },
+      {
+        "id": "c",
+        "text": "Circular en punto muerto siempre que sea posible."
+      },
+      {
+        "id": "d",
+        "text": "Usar un adecuado asistente de la dirección."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "53",
+    "question": "¿Cuáles son equipos de protección individual de pies y piernas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equipos filtrantes."
+      },
+      {
+        "id": "b",
+        "text": "Dediles."
+      },
+      {
+        "id": "c",
+        "text": "Equipos aislantes."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "54",
+    "question": "¿Cuántas veces se podrá interrumpir, para llevar a cabo otras actividades, el período de descanso diario normal cuando se acompañe un vehículo transportado por trasbordador o tren?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El período de descanso diario normal nunca puede interrumpirse."
+      },
+      {
+        "id": "b",
+        "text": "Se podrá interrumpir un máximo de tres veces, siempre que no excedan en total de una hora."
+      },
+      {
+        "id": "c",
+        "text": "Se podrá interrumpir un máximo de dos veces, siempre que no excedan en total de dos horas."
+      },
+      {
+        "id": "d",
+        "text": "Se podrá interrumpir un máximo de dos veces, siempre que no excedan en total de una hora."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "55",
+    "question": "¿El retardador hidráulico es compatible con el sistema ABS de frenos? FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No."
+      },
+      {
+        "id": "c",
+        "text": "Solo para velocidades por debajo de 100 km/hora."
+      },
+      {
+        "id": "d",
+        "text": "Solo para velocidades por encima de 100 km/hora."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "56",
+    "question": "En la declaración amistosa de accidentes, ¿se podrán hacer constar las observaciones particulares de los conductores?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, salvo que hubiera heridos."
+      },
+      {
+        "id": "c",
+        "text": "No, salvo que estos fueran a la vez agentes de la autoridad."
+      },
+      {
+        "id": "d",
+        "text": "No, en ningún caso."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "57",
+    "question": "¿Por qué denominación es conocido el programa electrónico de estabilidad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Electronically controlled brake system (ECS)."
+      },
+      {
+        "id": "b",
+        "text": "Electronic stability program (ESP)."
+      },
+      {
+        "id": "c",
+        "text": "Brake assistance system (BAS)."
+      },
+      {
+        "id": "d",
+        "text": "Electronic brake variation (EBV)."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "58",
+    "question": "Para evitar que aparezca el efecto \"fading\", al bajar pendientes descendentes, ¿qué se deberá hacer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantener pisado fuertemente el pedal del freno."
+      },
+      {
+        "id": "b",
+        "text": "Poner punto muerto."
+      },
+      {
+        "id": "c",
+        "text": "Parar el motor."
+      },
+      {
+        "id": "d",
+        "text": "Hacer uso del ralentizador."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "59",
+    "question": "La elección de la relación de marchas correcta durante la conducción depende, entre otras circunstancias, ¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "de la masa del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "de la temperatura exterior."
+      },
+      {
+        "id": "c",
+        "text": "del carburante utilizado."
+      },
+      {
+        "id": "d",
+        "text": "del número de revoluciones de la caja de velocidades."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "60",
+    "question": "¿Dónde se deben colocar las cadenas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En las cuatro ruedas. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "b",
+        "text": "En las ruedas delanteras."
+      },
+      {
+        "id": "c",
+        "text": "En las ruedas traseras."
+      },
+      {
+        "id": "d",
+        "text": "En las ruedas motrices."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "61",
+    "question": "¿Cómo se refleja el modo de funcionamiento del tacógrafo digital en la pantalla?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No se refleja."
+      },
+      {
+        "id": "b",
+        "text": "Se refleja con un pictograma que nos indica el modo en el que funciona en ese momento."
+      },
+      {
+        "id": "c",
+        "text": "Con un incidente."
+      },
+      {
+        "id": "d",
+        "text": "Con un fallo que nos indica el modo en el que funciona en ese momento."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "62",
+    "question": "Entre otras ventajas, ¿qué supone una correcta presión de inflado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Circular a una velocidad elevada sin riesgo alguno."
+      },
+      {
+        "id": "b",
+        "text": "Economía de carburante."
+      },
+      {
+        "id": "c",
+        "text": "Tener la misma presión con el neumático frío que caliente."
+      },
+      {
+        "id": "d",
+        "text": "Que la rueda no se bloquee por un exceso de frenada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "63",
+    "question": "El tipo de caja de velocidades que monte un automóvil, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, con una caja de velocidades con cambio manual el consumo es mayor."
+      },
+      {
+        "id": "b",
+        "text": "Sí, con una caja de velocidades con cambio manual el consumo es menor."
+      },
+      {
+        "id": "c",
+        "text": "No, salvo cuando el vehículo circula por una pendiente ascendente."
+      },
+      {
+        "id": "d",
+        "text": "No, el consumo no depende del tipo de caja de velocidades."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "64",
+    "question": "¿Qué característica no influye a la hora de determinar en el cuentarrevoluciones de un automóvil la zona de menor consumo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La potencia."
+      },
+      {
+        "id": "b",
+        "text": "El par motor máximo."
+      },
+      {
+        "id": "c",
+        "text": "El consumo específico."
+      },
+      {
+        "id": "d",
+        "text": "El tamaño del cigüeñal."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "65",
+    "question": "Un adecuado funcionamiento del sistema de lubricación, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, solo influye en el engrase de las piezas. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "b",
+        "text": "No, solo puede influir en el gripado o no del motor."
+      },
+      {
+        "id": "c",
+        "text": "Sí, ya que, al disminuirse el rozamiento de las piezas, se reducen las pérdidas de potencia."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo en los motores de dos tiempos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "66",
+    "question": "El ralentizador hidrodinámico funciona por:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el rozamiento entre piezas de la transmisión."
+      },
+      {
+        "id": "b",
+        "text": "la energía de un aceite."
+      },
+      {
+        "id": "c",
+        "text": "los campos magnéticos generados por una corriente eléctrica."
+      },
+      {
+        "id": "d",
+        "text": "la obstrucción parcial del tubo de escape."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "67",
+    "question": "El conductor de un vehículo se aproxima a una glorieta, por lo que deja de acelerar antes de llegar. ¿Este comportamiento puede provocar deterioros mecánicos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en el sistema de frenado."
+      },
+      {
+        "id": "b",
+        "text": "Sí, en el sistema de escape."
+      },
+      {
+        "id": "c",
+        "text": "Sí, en el sistema de refrigeración."
+      },
+      {
+        "id": "d",
+        "text": "No, y además es conveniente porque aprovecha la inercia del vehículo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "68",
+    "question": "Entre los factores que influyen en el consumo de carburante de un vehículo pesado provisto de un motor de combustión se encuentra:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el tipo de bujías que monte: frías o calientes."
+      },
+      {
+        "id": "b",
+        "text": "el mantenimiento que se realice al vehículo, el perfil de la carretera y la aerodinámica del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "el material del que esté construida la carrocería."
+      },
+      {
+        "id": "d",
+        "text": "el tipo de bomba de alimentación: de membrana o de émbolo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "69",
+    "question": "Conducir de forma que se reduzca la velocidad media de circulación tiene como ventaja:",
+    "options": [
+      {
+        "id": "a",
+        "text": "no tener que comprobar el nivel de aceite del motor ya que, conducir de esta manera, hace que el consumo de aceite sea nulo."
+      },
+      {
+        "id": "b",
+        "text": "un menor consumo y nivel de ruidos."
+      },
+      {
+        "id": "c",
+        "text": "aumentar la frecuencia de la inspección técnica periódica y reducir los plazos de mantenimiento del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "aumentar el coeficiente aerodinámico del vehículo y prolongar la vida del motor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "70",
+    "question": "¿Qué resistencias intervienen en el movimiento de los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia a la rodadura. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "b",
+        "text": "La resistencia de la distribución."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia de la transmisión."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia al frenado."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "71",
+    "question": "¿Pueden seguir los cursos de cualificación inicial los conductores que no posean el permiso de conducir correspondiente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Sí."
+      },
+      {
+        "id": "c",
+        "text": "Sí, pero solo para vehículos de viajeros."
+      },
+      {
+        "id": "d",
+        "text": "Sí, pero solo para vehículos de mercancías."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "72",
+    "question": "¿En qué momento hay que extremar la precaución en caso de viento fuerte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al entrar en un túnel."
+      },
+      {
+        "id": "b",
+        "text": "Circulando por ciudad."
+      },
+      {
+        "id": "c",
+        "text": "Al cruzarse con un ciclomotor."
+      },
+      {
+        "id": "d",
+        "text": "Al cruzarse con un vehículo de gran tonelaje."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "73",
+    "question": "¿Qué duración deben tener los cursos posteriores a la formación inicial para mantener la vigencia del certificado de aptitud profesional (CAP)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "35 horas."
+      },
+      {
+        "id": "b",
+        "text": "30 horas."
+      },
+      {
+        "id": "c",
+        "text": "25 horas."
+      },
+      {
+        "id": "d",
+        "text": "20 horas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "74",
+    "question": "¿Qué actividad es considerada tiempo de trabajo efectivo para un conductor profesional, según la normativa laboral española?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El tiempo empleado en comer en ruta."
+      },
+      {
+        "id": "b",
+        "text": "La asistencia a los pasajeros en la subida o bajada del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Los períodos de copiloto cuando el vehículo lo está conduciendo el compañero."
+      },
+      {
+        "id": "d",
+        "text": "El tiempo de descanso en el domicilio del conductor."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "75",
+    "question": "El sistema ESP¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "es un sistema neumático de frenos."
+      },
+      {
+        "id": "b",
+        "text": "mejora activamente el seguimiento de la trayectoria por parte del vehículo. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "c",
+        "text": "es un sistema electrónico de control de la presión de las ruedas."
+      },
+      {
+        "id": "d",
+        "text": "es un programa de control de velocidad y consumo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "76",
+    "question": "Las medidas preventivas que deben tomarse a la hora de conducir con nieve son:",
+    "options": [
+      {
+        "id": "a",
+        "text": "mantener en perfectas condiciones cristales, luces y limpiaparabrisas."
+      },
+      {
+        "id": "b",
+        "text": "mantener la misma adherencia en todos los neumáticos."
+      },
+      {
+        "id": "c",
+        "text": "evitar aceleraciones bruscas."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "77",
+    "question": "¿Qué plazo de validez tiene la tarjeta de conductor para tacógrafo digital?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4 años."
+      },
+      {
+        "id": "b",
+        "text": "5 años."
+      },
+      {
+        "id": "c",
+        "text": "10 años."
+      },
+      {
+        "id": "d",
+        "text": "La misma que su permiso de conducir."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "78",
+    "question": "Para el levantamiento en posición de pie y en condiciones ideales de trabajo, la cifra máxima aconsejada, según el Instituto Nacional de Seguridad e Higiene, en el trabajo es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depende del estado físico."
+      },
+      {
+        "id": "b",
+        "text": "5 kg."
+      },
+      {
+        "id": "c",
+        "text": "25 kg."
+      },
+      {
+        "id": "d",
+        "text": "40 kg."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "79",
+    "question": "Para reducir el consumo de carburante de un vehículo pesado, es conveniente que la aguja del cuentarrevoluciones se encuentre:",
+    "options": [
+      {
+        "id": "a",
+        "text": "por debajo de la zona marcada de color verde en el cuentarrevoluciones."
+      },
+      {
+        "id": "b",
+        "text": "por encima de la zona marcada de color verde en el cuentarrevoluciones."
+      },
+      {
+        "id": "c",
+        "text": "en la zona marcada de color verde en el cuentarrevoluciones."
+      },
+      {
+        "id": "d",
+        "text": "fuera de la zona marcada de color verde en el cuentarrevoluciones."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "80",
+    "question": "La potencia de un motor¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "aumenta al cambiar a una relación de marchas más larga."
+      },
+      {
+        "id": "b",
+        "text": "disminuye al cambiar a una relación de marchas más corta. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "c",
+        "text": "no depende de las revoluciones del motor."
+      },
+      {
+        "id": "d",
+        "text": "aumenta al aumentar las revoluciones por minuto del motor."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "81",
+    "question": "¿Qué resistencias intervienen en el movimiento de los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia a la rodadura y la resistencia a la pendiente."
+      },
+      {
+        "id": "b",
+        "text": "La resistencia que opone el pistón cuando desciende del punto muerto superior al punto muerto inferior."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia que opone el pistón cuando asciende del punto muerto inferior al punto muerto superior."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia del volante de inercia."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "82",
+    "question": "Si para calentar el motor del vehículo se dan fuertes acelerones, ¿es una actuación correcta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, porque limpia el tubo de escape de residuos."
+      },
+      {
+        "id": "b",
+        "text": "Sí, porque la mayor cantidad de combustible limpia rápidamente las paredes de los cilindros."
+      },
+      {
+        "id": "c",
+        "text": "No, porque aumenta el consumo de combustible y puede dañar los cilindros, cuyas paredes están casi sin aceite."
+      },
+      {
+        "id": "d",
+        "text": "Sí, sobre todo en invierno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "83",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del ángulo del cigüeñal."
+      },
+      {
+        "id": "b",
+        "text": "De la longitud del árbol de levas."
+      },
+      {
+        "id": "c",
+        "text": "De la carga que lleve el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "De la longitud del pistón."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "84",
+    "question": "¿Qué ventajas tiene reducir la velocidad media de circulación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumentar el coeficiente aerodinámico del vehículo y prolongar la vida del motor."
+      },
+      {
+        "id": "b",
+        "text": "No tener que comprobar la presión de inflado de los neumáticos, salvo en caso de pinchazo."
+      },
+      {
+        "id": "c",
+        "text": "Menor consumo de carburante."
+      },
+      {
+        "id": "d",
+        "text": "Aumentar la frecuencia de la inspección técnica periódica y reducir los plazos de mantenimiento del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "85",
+    "question": "¿Qué factores pueden producir estrés en el conductor profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cumplir los tiempos de conducción y descanso."
+      },
+      {
+        "id": "b",
+        "text": "El uso del limitador de velocidad."
+      },
+      {
+        "id": "c",
+        "text": "La necesidad de cumplir los horarios preestablecidos. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "86",
+    "question": "En las estadísticas de accidentes de circulación, el índice de gravedad hace referencia:",
+    "options": [
+      {
+        "id": "a",
+        "text": "al número de fallecidos respecto del número de kilómetros recorridos."
+      },
+      {
+        "id": "b",
+        "text": "al número de accidentes con víctimas respecto del número de kilómetros recorridos."
+      },
+      {
+        "id": "c",
+        "text": "a indicadores que comparan el número de fallecidos con el número de accidentes."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "87",
+    "question": "Generalmente, ¿con qué tipo de caja de velocidades se ahorra más energía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con cajas de velocidades con cambio manual."
+      },
+      {
+        "id": "b",
+        "text": "Con cajas de velocidades con cambio automático."
+      },
+      {
+        "id": "c",
+        "text": "Con cajas de velocidades con convertidor de par."
+      },
+      {
+        "id": "d",
+        "text": "Con cajas de velocidades sin eje secundario."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "88",
+    "question": "Según la Ley de responsabilidad civil y seguro en la circulación de vehículo a motor, si se incumple la obligación de asegurar, el vehículo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "no puede circular."
+      },
+      {
+        "id": "b",
+        "text": "puede ser precintado."
+      },
+      {
+        "id": "c",
+        "text": "puede ser depositado en el domicilio del propietario."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "89",
+    "question": "La energía que posee un vehículo en movimiento¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "es independiente de la velocidad a la que circule."
+      },
+      {
+        "id": "b",
+        "text": "es menor cuanto mayor sea la velocidad a la que circule."
+      },
+      {
+        "id": "c",
+        "text": "solo depende de la masa del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "es mayor cuanto mayor sea la velocidad a la que circule."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "90",
+    "question": "Se considera delito de contrabando la importación y exportación de mercancías de lícito comercio, incumpliendo las obligaciones aduaneras, siempre que su valor sea igual o superior a:",
+    "options": [
+      {
+        "id": "a",
+        "text": "18.000 euros."
+      },
+      {
+        "id": "b",
+        "text": "50.000 euros."
+      },
+      {
+        "id": "c",
+        "text": "100.000 euros. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "150.000 euros."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "91",
+    "question": "¿De qué depende la inercia de un vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De su masa y volumen."
+      },
+      {
+        "id": "b",
+        "text": "De su velocidad y volumen."
+      },
+      {
+        "id": "c",
+        "text": "De su masa y de su velocidad."
+      },
+      {
+        "id": "d",
+        "text": "De su masa, velocidad y volumen."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "92",
+    "question": "¿Qué es recomendable en la salida de una vía de circulación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comenzar a reducir la velocidad con bastante antelación a la incorporación al carril de deceleración"
+      },
+      {
+        "id": "b",
+        "text": "Reducir la velocidad pisando el freno con la intensidad necesaria."
+      },
+      {
+        "id": "c",
+        "text": "Comenzar a reducir la velocidad durante la incorporación al carril de deceleración."
+      },
+      {
+        "id": "d",
+        "text": "Pisar el embrague para ayudar a la reducción de velocidad."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "93",
+    "question": "¿Qué variables existen para definir el tráfico existente en una carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tensión del tráfico."
+      },
+      {
+        "id": "b",
+        "text": "Densidad del tráfico."
+      },
+      {
+        "id": "c",
+        "text": "Presión del tráfico."
+      },
+      {
+        "id": "d",
+        "text": "Variabilidad del tráfico."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "94",
+    "question": "¿La sanción por exceder los tiempos de conducción conlleva pérdida de puntos en el permiso de conducir?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, cuando el exceso es superior al 50 %."
+      },
+      {
+        "id": "b",
+        "text": "Sí, cuando el exceso es superior al 40 %."
+      },
+      {
+        "id": "c",
+        "text": "Sí, cuando el exceso es superior al 25 %."
+      },
+      {
+        "id": "d",
+        "text": "No, solo se impone una sanción económica."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "95",
+    "question": "¿Se permite superar en algún caso el tiempo máximo de conducción semanal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No."
+      },
+      {
+        "id": "b",
+        "text": "Sí, hasta en una hora, para llegar al lugar de residencia a fin de disfrutar el período de descanso semanal, siempre que no se comprometa la seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Sí, hasta en una hora, para llegar al lugar de residencia a fin de disfrutar el período de descanso diario, siempre que no se comprometa la seguridad. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      },
+      {
+        "id": "d",
+        "text": "Sí, hasta en treinta minutos, para llegar al lugar de residencia a fin de disfrutar el período de descanso semanal, siempre que no se comprometa la seguridad."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "96",
+    "question": "Los accidentes en los que están implicados vehículos pesados de transporte de mercancías:",
+    "options": [
+      {
+        "id": "a",
+        "text": "se producen mayoritariamente en zonas urbanas."
+      },
+      {
+        "id": "b",
+        "text": "se producen mayoritariamente en autovías."
+      },
+      {
+        "id": "c",
+        "text": "se producen mayoritariamente en autopistas."
+      },
+      {
+        "id": "d",
+        "text": "se producen mayoritariamente en carreteras convencionales."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "97",
+    "question": "El estrés es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "una situación siempre negativa."
+      },
+      {
+        "id": "b",
+        "text": "una situación siempre positiva."
+      },
+      {
+        "id": "c",
+        "text": "una respuesta frente a situaciones que se perciben como amenaza."
+      },
+      {
+        "id": "d",
+        "text": "un comportamiento siempre inadecuado."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "98",
+    "question": "Un fuego es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "una combustión lenta con emisión de mucho calor."
+      },
+      {
+        "id": "b",
+        "text": "una combustión lenta con emisión de poco calor."
+      },
+      {
+        "id": "c",
+        "text": "una combustión rápida con emisión de mucho calor."
+      },
+      {
+        "id": "d",
+        "text": "una combustión rápida con emisión de poco calor."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "99",
+    "question": "¿Qué elemento es el comburente habitual en los fuegos en vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El gasóleo."
+      },
+      {
+        "id": "b",
+        "text": "El aceite de refrigeración del motor."
+      },
+      {
+        "id": "c",
+        "text": "El oxígeno del aire."
+      },
+      {
+        "id": "d",
+        "text": "El gas del sistema de climatización."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "100",
+    "question": "¿Qué sistema de ayuda a la conducción tiene como función reducir el riesgo de derrape evitando el bloqueo de las ruedas del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "EBS."
+      },
+      {
+        "id": "b",
+        "text": "ESP."
+      },
+      {
+        "id": "c",
+        "text": "ABS."
+      },
+      {
+        "id": "d",
+        "text": "TCS. FACULTAD DE CIENCIAS. EDIF. MECENAS. C/DOCTOR SEVERO OCHOA, S/N CAMPUS UN. FUENTE NUEVA, GRANADA, GRANADA"
+      }
+    ],
+    "correct": "c"
+  }
+]

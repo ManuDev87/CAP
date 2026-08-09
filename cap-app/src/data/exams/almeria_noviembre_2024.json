@@ -1,0 +1,2302 @@
+[
+  {
+    "num": "1",
+    "question": "Respecto de los neumáticos de un camión, ¿cómo se puede describir el fenómeno de la histéresis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El mecanismo de seguridad por el que se aumenta la presión de los neumáticos."
+      },
+      {
+        "id": "b",
+        "text": "El mecanismo físico por el que el neumático supera su límite de presión."
+      },
+      {
+        "id": "c",
+        "text": "El mecanismo físico por el que el neumático desarrolla su adherencia."
+      },
+      {
+        "id": "d",
+        "text": "El mecanismo físico por el que el movimiento del vehículo se interrumpe."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "2",
+    "question": "¿Qué es la resistencia aerodinámica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es la resistencia que se produce al subir un camión de un nivel a otro."
+      },
+      {
+        "id": "b",
+        "text": "Es la fuerza que se opone al movimiento de un camión a través del aire."
+      },
+      {
+        "id": "c",
+        "text": "Es la resistencia que se produce al acelerar o frenar el camión debido a la inercia de su masa."
+      },
+      {
+        "id": "d",
+        "text": "Es la cantidad de masa que percibe para el correcto trabajo de adherencia, dirección y frenado."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "3",
+    "question": "La forma en que la inclinación del terreno en forma de pendiente afecta al movimiento de un camión se denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "fuerza termotecnia lateral."
+      },
+      {
+        "id": "b",
+        "text": "balanceo."
+      },
+      {
+        "id": "c",
+        "text": "resistencia a la aceleración."
+      },
+      {
+        "id": "d",
+        "text": "resistencia a la pendiente."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "4",
+    "question": "El grado de rozamiento en un camión depende:",
+    "options": [
+      {
+        "id": "a",
+        "text": "del desplazamiento de masas transversales."
+      },
+      {
+        "id": "b",
+        "text": "del estado de los frenos."
+      },
+      {
+        "id": "c",
+        "text": "del porcentaje de nitrógeno."
+      },
+      {
+        "id": "d",
+        "text": "del grado de dilución."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "5",
+    "question": "Según el acuerdo ATP, ¿qué es un vehículo identificado con las letras RRA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un vehículo refrigerante reforzado de la clase A."
+      },
+      {
+        "id": "b",
+        "text": "Un vehículo isotermo reforzado de la clase A."
+      },
+      {
+        "id": "c",
+        "text": "Un vehículo frigorífico reforzado de la clase A."
+      },
+      {
+        "id": "d",
+        "text": "Un vehículo calorífico reforzado de la clase A."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "6",
+    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controlar la selección, formación y rendimiento del personal de la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Realizar funciones de planificación, dirección y coordinación."
+      },
+      {
+        "id": "c",
+        "text": "Elaborar las nóminas."
+      },
+      {
+        "id": "d",
+        "text": "Realizar el seguimiento comercial de los servicios."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "7",
+    "question": "¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Representar a la empresa."
+      },
+      {
+        "id": "b",
+        "text": "Decidir la renovación y ampliación de la flota de vehículos y la forma de su financiación."
+      },
+      {
+        "id": "c",
+        "text": "Realizar el seguimiento comercial de los servicios."
+      },
+      {
+        "id": "d",
+        "text": "Vigilar el cumplimiento de las normas relacionadas con el transporte."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "8",
+    "question": "El transporte de animales vivos¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "no requiere en ningún caso autorización genérica de transporte, pues este tipo de transporte ya está controlado por las autoridades sanitarias por sus implicaciones en la salud pública."
+      },
+      {
+        "id": "b",
+        "text": "solo se puede efectuar en régimen de transporte privado complementario, previa autorización del Ministerio de Sanidad."
+      },
+      {
+        "id": "c",
+        "text": "solo se puede efectuar con un vehículo adscrito a autorización de transporte MDPE."
+      },
+      {
+        "id": "d",
+        "text": "requiere, además de la autorización genérica de transporte en los casos en los que resulte preceptiva, una autorización específica del órgano competente en materia de sanidad animal."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "9",
+    "question": "La clasificación de los transportes de mercancías por carretera en públicos y privados es una clasificación en función de:",
+    "options": [
+      {
+        "id": "a",
+        "text": "su ámbito."
+      },
+      {
+        "id": "b",
+        "text": "su objeto."
+      },
+      {
+        "id": "c",
+        "text": "la especificidad de su objeto y su régimen jurídico."
+      },
+      {
+        "id": "d",
+        "text": "su naturaleza."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "10",
+    "question": "¿Qué son los transitarios?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Empresas especializadas en organizar transportes de ámbito nacional."
+      },
+      {
+        "id": "b",
+        "text": "Los encargados de la seguridad de la mercancía."
+      },
+      {
+        "id": "c",
+        "text": "Empresas especializadas en organizar transportes internacionales de mercancías."
+      },
+      {
+        "id": "d",
+        "text": "Los encargados de diseñar las rutas del transporte."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "11",
+    "question": "Las mercancías de la Unión que sean reintroducidas en el territorio aduanero de la Unión Europea después de haber sido exportadas, ¿se seguirán considerando como tales a efectos aduaneros?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "Sí, solo si no han transcurrido más de treinta días desde su salida."
+      },
+      {
+        "id": "c",
+        "text": "No."
+      },
+      {
+        "id": "d",
+        "text": "Depende del tipo de mercancía."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "12",
+    "question": "Las personas que hayan obtenido el permiso de conducir de las clases C1, C1+E, C o C+E a partir de 11 de septiembre de 2009 deben obtener además:",
+    "options": [
+      {
+        "id": "a",
+        "text": "el Certificado de Conducción Completa (CCC)."
+      },
+      {
+        "id": "b",
+        "text": "el Certificado de Conducción Profesional (CCP)."
+      },
+      {
+        "id": "c",
+        "text": "el Certificado Profesional (CP)."
+      },
+      {
+        "id": "d",
+        "text": "el Certificado de Aptitud Profesional (CAP)."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "13",
+    "question": "¿Cómo se denomina al conjunto de técnicas que permiten cargar camiones sobre un tren?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transroutage."
+      },
+      {
+        "id": "b",
+        "text": "Transroulage."
+      },
+      {
+        "id": "c",
+        "text": "Ferroutage."
+      },
+      {
+        "id": "d",
+        "text": "Trenoutage."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "14",
+    "question": "¿Cuál de los siguientes factores puede hacer variar el grado de rozamiento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El estado y superficie de las zapatas."
+      },
+      {
+        "id": "b",
+        "text": "La distancia de frenado."
+      },
+      {
+        "id": "c",
+        "text": "El peso del camión."
+      },
+      {
+        "id": "d",
+        "text": "La velocidad de trasferencia de masas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "15",
+    "question": "¿Qué plazo de validez tienen las autorizaciones CEMT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Las hay de un año y de quince días"
+      },
+      {
+        "id": "b",
+        "text": "Las hay de un año y de treinta días."
+      },
+      {
+        "id": "c",
+        "text": "Las hay de dos años y de quince días."
+      },
+      {
+        "id": "d",
+        "text": "Las hay de dos años y de treinta días."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "16",
+    "question": "El transporte internacional de mercancías entre países integrados en el sistema de autorizaciones CEMT está liberalizado si se realiza con vehículos cuya carga útil autorizada no supere:",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 toneladas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "3,5 toneladas."
+      },
+      {
+        "id": "c",
+        "text": "5 toneladas."
+      },
+      {
+        "id": "d",
+        "text": "10 toneladas."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "17",
+    "question": "El transporte funerario realizado por prestadores de servicios funerarios:",
+    "options": [
+      {
+        "id": "a",
+        "text": "necesita autorización de transporte funerario (tarjeta VF)."
+      },
+      {
+        "id": "b",
+        "text": "necesita autorización de transporte privado complementario de mercancías (tarjeta MPCE)."
+      },
+      {
+        "id": "c",
+        "text": "necesita autorización de transporte público de mercancías (tarjeta MDLE)."
+      },
+      {
+        "id": "d",
+        "text": "está exento de autorización."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "18",
+    "question": "Una de las condiciones que debe cumplir el transporte privado complementario de mercancías es que:",
+    "options": [
+      {
+        "id": "a",
+        "text": "los vehículos utilizados han de hallarse integrados en la organización de la empresa."
+      },
+      {
+        "id": "b",
+        "text": "se podrá facturar a los clientes por este concepto de modo independiente."
+      },
+      {
+        "id": "c",
+        "text": "los conductores no pueden pertenecer a la plantilla de la empresa."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "19",
+    "question": "En el ámbito de los procedimientos aduaneros, a la aduana competente respecto del punto de salida o entrada de las mercancías en el territorio aduanero de la Unión, cuando abandonan o entran en dicho territorio en el transcurso de una operación de tránsito, se la denomina:",
+    "options": [
+      {
+        "id": "a",
+        "text": "aduana de partida."
+      },
+      {
+        "id": "b",
+        "text": "aduana de tránsito."
+      },
+      {
+        "id": "c",
+        "text": "aduana de destino."
+      },
+      {
+        "id": "d",
+        "text": "aduana de primera entrada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "20",
+    "question": "Para comprobar la exactitud de una declaración en aduana, las autoridades aduaneras podrán:",
+    "options": [
+      {
+        "id": "a",
+        "text": "exigir otros documentos al declarante."
+      },
+      {
+        "id": "b",
+        "text": "examinar las mercancías."
+      },
+      {
+        "id": "c",
+        "text": "exigir información al consignatario del envío."
+      },
+      {
+        "id": "d",
+        "text": "Las respuestas A y B son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "21",
+    "question": "¿Cuánto tiempo se debe conservar la documentación relativa a procedimientos aduaneros con el fin de posibilitar los controles aduaneros?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un año."
+      },
+      {
+        "id": "b",
+        "text": "Tres años. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "c",
+        "text": "Cinco años."
+      },
+      {
+        "id": "d",
+        "text": "Hasta que se venda o destruya la mercancía en cuestión."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "22",
+    "question": "¿Qué debe accionar el conductor, en un vehículo con sistema de transmisión automática, para cambiar de marcha?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Únicamente pisar el pedal del embrague."
+      },
+      {
+        "id": "b",
+        "text": "Únicamente accionar la palanca de cambio."
+      },
+      {
+        "id": "c",
+        "text": "Únicamente presionar el pulsador de cambio."
+      },
+      {
+        "id": "d",
+        "text": "Nada, todo el proceso de cambio se realiza automáticamente."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "23",
+    "question": "¿Qué conductores de vehículos de transporte de mercancías deben llevar a bordo su tarjeta de cualificación profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Únicamente los que realicen transporte público."
+      },
+      {
+        "id": "b",
+        "text": "Únicamente los que lleven a cabo transporte de mercancías peligrosas."
+      },
+      {
+        "id": "c",
+        "text": "Los que tengan que estar en posesión del certificado de aptitud profesional."
+      },
+      {
+        "id": "d",
+        "text": "Todos los que realicen un transporte público o privado."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "24",
+    "question": "¿Qué plazo de validez tiene el certificado de conductor de tercer país?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 año."
+      },
+      {
+        "id": "b",
+        "text": "2 años."
+      },
+      {
+        "id": "c",
+        "text": "4 años."
+      },
+      {
+        "id": "d",
+        "text": "5 años."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "25",
+    "question": "¿Qué entienden por carga indivisible las normas de circulación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La que es objeto de un único contrato de transporte."
+      },
+      {
+        "id": "b",
+        "text": "La que debe ser transportada en un único envío por motivos económicos."
+      },
+      {
+        "id": "c",
+        "text": "La que no puede dividirse sin coste o riesgo de daños."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas"
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "26",
+    "question": "El tacógrafo analógico registra datos acerca del conductor y del vehículo en:",
+    "options": [
+      {
+        "id": "a",
+        "text": "hojas para las averías del tacógrafo."
+      },
+      {
+        "id": "b",
+        "text": "cuadros-diagrama de trabajo."
+      },
+      {
+        "id": "c",
+        "text": "hojas de ruta."
+      },
+      {
+        "id": "d",
+        "text": "hojas de registro o discos-diagrama. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "27",
+    "question": "¿Quién es la persona designada por el asegurado como receptor de las prestaciones e indemnizaciones contratadas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Asegurador."
+      },
+      {
+        "id": "b",
+        "text": "Tomador."
+      },
+      {
+        "id": "c",
+        "text": "Contratista."
+      },
+      {
+        "id": "d",
+        "text": "Beneficiario."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "28",
+    "question": "La posición lateral de defensa:",
+    "options": [
+      {
+        "id": "a",
+        "text": "evita que el herido vomite."
+      },
+      {
+        "id": "b",
+        "text": "evita la obstrucción de las vías respiratorias."
+      },
+      {
+        "id": "c",
+        "text": "inmoviliza al herido."
+      },
+      {
+        "id": "d",
+        "text": "ayuda a recuperar la consciencia."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "29",
+    "question": "Para evitar que aparezca el efecto fading\":\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "se debe abrir la válvula de 3 vías."
+      },
+      {
+        "id": "b",
+        "text": "no se debe hacer nada."
+      },
+      {
+        "id": "c",
+        "text": "se debe actuar sobre los ralentizadores de que disponga el vehículo."
+      },
+      {
+        "id": "d",
+        "text": "se debe mantener la velocidad constante."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "30",
+    "question": "Para que la declaración amistosa de accidente sea válida, ¿por quién tiene que estar firmada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por los conductores y los testigos del accidente."
+      },
+      {
+        "id": "b",
+        "text": "Por los conductores implicados en el accidente."
+      },
+      {
+        "id": "c",
+        "text": "Basta con que la firme el conductor que se declare culpable."
+      },
+      {
+        "id": "d",
+        "text": "Por los titulares de los vehículos implicados o sus representantes."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "31",
+    "question": "¿La fatiga y el sueño pueden incidir en el tiempo de reacción durante la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nunca."
+      },
+      {
+        "id": "b",
+        "text": "Sí, lo aumentan."
+      },
+      {
+        "id": "c",
+        "text": "Sí, lo disminuyen."
+      },
+      {
+        "id": "d",
+        "text": "La fatiga sí, el sueño no."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "32",
+    "question": "¿Qué puede experimentar un conductor alérgico bajo los efectos de antihistamínicos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumento de la capacidad de atención."
+      },
+      {
+        "id": "b",
+        "text": "Aumento en la coordinación."
+      },
+      {
+        "id": "c",
+        "text": "Somnolencia."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son incorrectas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "33",
+    "question": "Una postura inadecuada mantenida durante un período de tiempo largo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "puede provocar daños psíquicos."
+      },
+      {
+        "id": "b",
+        "text": "puede provocar daños físicos."
+      },
+      {
+        "id": "c",
+        "text": "no incide en el estado físico del conductor."
+      },
+      {
+        "id": "d",
+        "text": "ayuda a conseguir una conducción menos cansada."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "34",
+    "question": "En la actividad de transporte, ¿qué lesión, causada por la falta de barandillas en las plataformas superiores de almacenes y muelles de carga, es más frecuente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lumbalgias, cervicalgias y todo tipo de molestias en la espalda."
+      },
+      {
+        "id": "b",
+        "text": "Hernias discales."
+      },
+      {
+        "id": "c",
+        "text": "Fracturas de huesos."
+      },
+      {
+        "id": "d",
+        "text": "Problemas de circulación sanguínea."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "35",
+    "question": "¿En qué lugar debe estar colocada la placa descriptiva de un tacógrafo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "En cualquier lugar del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "En el aparato de control."
+      },
+      {
+        "id": "c",
+        "text": "En la caja de cambios."
+      },
+      {
+        "id": "d",
+        "text": "No es necesario que lleve placa descriptiva."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "36",
+    "question": "¿Cuáles son los elementos de seguridad pasiva más habituales en los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Los pretensores de frenada y los sistemas de antibloqueo de la dirección."
+      },
+      {
+        "id": "b",
+        "text": "Los sistemas aviso al conductor de posible impacto frontal."
+      },
+      {
+        "id": "c",
+        "text": "El apoyabrazos del conductor y las lunas reforzadas."
+      },
+      {
+        "id": "d",
+        "text": "El cinturón de seguridad, los airbag y los reposacabezas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "37",
+    "question": "El ASR es un dispositivo que:",
+    "options": [
+      {
+        "id": "a",
+        "text": "evita la pérdida de tracción de las ruedas propulsoras. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "permite una aceleración más rápida."
+      },
+      {
+        "id": "c",
+        "text": "aumenta la velocidad."
+      },
+      {
+        "id": "d",
+        "text": "evita el bloqueo de las ruedas al frenar el vehículo."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "38",
+    "question": "Ante una situación de emergencia, ¿cuál debería ser uno de los criterios de actuación del conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Siempre se debe conservar la calma."
+      },
+      {
+        "id": "b",
+        "text": "Las actuaciones deben tener como primer objetivo la preservación de la seguridad de todas aquellas personas que puedan verse afectadas (pasajeros, resto de usuarios de la vía...)."
+      },
+      {
+        "id": "c",
+        "text": "Las actuaciones no pueden incrementar el desconcierto y la angustia de los afectados."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "39",
+    "question": "El máximo par motor coincide:",
+    "options": [
+      {
+        "id": "a",
+        "text": "con el máximo de revoluciones del motor."
+      },
+      {
+        "id": "b",
+        "text": "con el mínimo de revoluciones del motor."
+      },
+      {
+        "id": "c",
+        "text": "con un régimen medio de revoluciones del motor."
+      },
+      {
+        "id": "d",
+        "text": "con las revoluciones de máximo consumo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "40",
+    "question": "Circulando por una calzada nevada o helada, ¿se puede ver afectado peligrosamente el control de la dirección del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, en todo caso."
+      },
+      {
+        "id": "b",
+        "text": "Sí, pero solo cuando el pavimento está mojado."
+      },
+      {
+        "id": "c",
+        "text": "Sí, al circular por un lado sobre suelo seco y por el otro sobre nieve o hielo."
+      },
+      {
+        "id": "d",
+        "text": "No, en ningún caso."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "41",
+    "question": "¿Qué se entiende por competencia\" en la prestación de un servicio de transporte?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Experiencia y contactos."
+      },
+      {
+        "id": "b",
+        "text": "Capacidad para enmascarar un mal servicio."
+      },
+      {
+        "id": "c",
+        "text": "Conocimiento y habilidades necesarias para llevarlo a cabo correctamente."
+      },
+      {
+        "id": "d",
+        "text": "Transporte sin riesgos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "42",
+    "question": "¿Qué tipos de tiempos establece la normativa laboral española para los conductores profesionales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conducción y descanso. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "Pausa e interrupción."
+      },
+      {
+        "id": "c",
+        "text": "Trabajo efectivo y tiempo de presencia."
+      },
+      {
+        "id": "d",
+        "text": "Ninguno."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "43",
+    "question": "En caso de trabajo nocturno, efectuado por trabajadores móviles del transporte por carretera que no tienen la consideración de trabajador nocturno, según normativa laboral española, la jornada de trabajo diaria:",
+    "options": [
+      {
+        "id": "a",
+        "text": "será de 15 horas máximo."
+      },
+      {
+        "id": "b",
+        "text": "no podrá exceder de 10 horas por período de 24 horas."
+      },
+      {
+        "id": "c",
+        "text": "será de 12 horas al menos."
+      },
+      {
+        "id": "d",
+        "text": "será de 3 horas máximo."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "44",
+    "question": "¿Cuál de los siguientes no es un elemento básico en un servicio de transporte por lo que se refiere",
+    "options": [
+      {
+        "id": "a",
+        "text": "su influencia en la percepción de calidad por parte de los clientes?"
+      },
+      {
+        "id": "b",
+        "text": "Trato correcto del conductor."
+      },
+      {
+        "id": "c",
+        "text": "Seguridad del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "Tipo de lubricante que usan los vehículos."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "45",
+    "question": "De los elementos técnicos que se citan, ¿cuáles refuerzan la seguridad en la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Las pantallas panorámicas de los monitores."
+      },
+      {
+        "id": "b",
+        "text": "Los sistemas que evitan el cansancio o la somnolencia en el conductor."
+      },
+      {
+        "id": "c",
+        "text": "Los sistemas electrónicos de visión nocturna."
+      },
+      {
+        "id": "d",
+        "text": "Los sensores de ultrasonidos que detectan la presencia de otros usuarios en la vía."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "46",
+    "question": "¿Cuál de los siguientes elementos del vehículo forma parte del retardador hidráulico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El cilindro de amortiguación."
+      },
+      {
+        "id": "b",
+        "text": "El calderín secador."
+      },
+      {
+        "id": "c",
+        "text": "El estátor fijo."
+      },
+      {
+        "id": "d",
+        "text": "La válvula de aceleración."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "47",
+    "question": "¿Cuál es el orden de las actuaciones que hay que desarrollar al prestar ayuda en caso de accidente de tráfico?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proteger, alertar y socorrer. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "Socorrer, proteger y alertar."
+      },
+      {
+        "id": "c",
+        "text": "Proteger, socorrer y alertar."
+      },
+      {
+        "id": "d",
+        "text": "Alertar, proteger y socorrer."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "48",
+    "question": "El dispositivo electrónico de estabilidad ESP:",
+    "options": [
+      {
+        "id": "a",
+        "text": "actúa sobre las ruedas que tienen más adherencia."
+      },
+      {
+        "id": "b",
+        "text": "actúa sobre las ruedas que tienen menos adherencia."
+      },
+      {
+        "id": "c",
+        "text": "actúa sobre todas las ruedas."
+      },
+      {
+        "id": "d",
+        "text": "mejora activamente el seguimiento de la trayectoria y la dirección por parte del vehículo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "49",
+    "question": "Una mala alimentación, ¿puede producir mareos y desvanecimientos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, lo único que influye es la cantidad de alimentos tomados."
+      },
+      {
+        "id": "b",
+        "text": "Sí."
+      },
+      {
+        "id": "c",
+        "text": "Solo puede llegar a producir mareos."
+      },
+      {
+        "id": "d",
+        "text": "Solo puede llegar a producir desvanecimientos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "50",
+    "question": "¿Cuál es la capacidad mínima de registro de un disco-diagrama u hoja de registro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 horas."
+      },
+      {
+        "id": "b",
+        "text": "20 horas."
+      },
+      {
+        "id": "c",
+        "text": "24 horas."
+      },
+      {
+        "id": "d",
+        "text": "48 horas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "51",
+    "question": "¿Cómo registra las actividades el tacógrafo analógico en el caso de que participen dos conductores en la conducción?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cada conductor en su disco."
+      },
+      {
+        "id": "b",
+        "text": "A los dos en el mismo disco y después ellos, a mano, tienen que marcar cada uno las suyas."
+      },
+      {
+        "id": "c",
+        "text": "Solo registra las actividades de uno de ellos."
+      },
+      {
+        "id": "d",
+        "text": "En el mismo disco, unas en el anverso y otras en el reverso."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "52",
+    "question": "Si el vehículo que conduce está dotado de un sistema de frenado ABS, ¿cómo actúa durante una frenada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deteniendo inmediatamente el vehículo, incluso si la vía está mojada."
+      },
+      {
+        "id": "b",
+        "text": "Deteniendo inmediatamente el vehículo, incluso si la vía tiene nieve. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "c",
+        "text": "Evitando el bloqueo de las ruedas, únicamente si la vía por donde se circula está mojada."
+      },
+      {
+        "id": "d",
+        "text": "Evitando que las ruedas se bloqueen, cualquiera que sea el estado de la vía."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "53",
+    "question": "¿Qué factor no influye en el consumo de carburante de un vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El perfil de la carretera."
+      },
+      {
+        "id": "b",
+        "text": "El grado de concentración de anticongelante en el líquido refrigerante."
+      },
+      {
+        "id": "c",
+        "text": "El número de revoluciones por minuto del motor."
+      },
+      {
+        "id": "d",
+        "text": "La presión de los neumáticos."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "54",
+    "question": "¿Qué característica no influye a la hora de determinar en el cuentarrevoluciones de un automóvil la zona de menor consumo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El par motor máximo."
+      },
+      {
+        "id": "b",
+        "text": "El consumo específico."
+      },
+      {
+        "id": "c",
+        "text": "La potencia."
+      },
+      {
+        "id": "d",
+        "text": "La longitud del vehículo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "55",
+    "question": "Si el motor de un vehículo tiene un ralentí demasiado alto, ¿influye en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, porque al girar el motor más deprisa consume más."
+      },
+      {
+        "id": "b",
+        "text": "Sí, porque consume menos carburante."
+      },
+      {
+        "id": "c",
+        "text": "Sí, pero tal circunstancia solo aumenta el consumo a altas revoluciones."
+      },
+      {
+        "id": "d",
+        "text": "No, no influye."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "56",
+    "question": "El uso que se realice de la caja de velocidades de un automóvil, ¿puede influir en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, el consumo solo depende de la velocidad."
+      },
+      {
+        "id": "c",
+        "text": "No, el consumo solo depende de la aerodinámica del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "No, el consumo solo depende de la cilindrada del motor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "57",
+    "question": "Cuando se utiliza un aceite de baja calidad para lubricar un motor:",
+    "options": [
+      {
+        "id": "a",
+        "text": "aumenta el desgaste de las piezas, aunque se reduce su corrosión."
+      },
+      {
+        "id": "b",
+        "text": "aumenta la corrosión de las piezas, aunque se reduce su desgaste."
+      },
+      {
+        "id": "c",
+        "text": "aumenta el desgaste de las piezas sin que se vea afectado el consumo de carburante en ningún caso. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "puede aumentar el consumo de carburante al aumentar el rozamiento de las piezas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "58",
+    "question": "¿Cuál es el objetivo del airbag?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguno, ya que es un elemento decorativo."
+      },
+      {
+        "id": "b",
+        "text": "Impide que un cuerpo salga despedido por la parte trasera del vehículo."
+      },
+      {
+        "id": "c",
+        "text": "Detener el cuerpo de los ocupantes de un vehículo lo más suavemente posible."
+      },
+      {
+        "id": "d",
+        "text": "Detener el cuerpo de los ocupantes de un vehículo lo más fuerte posible."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "59",
+    "question": "La resistencia a la rodadura de un neumático, ¿depende del rozamiento del aire en la rueda?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "No, el rozamiento producido por el aire solo influye en la resistencia aerodinámica."
+      },
+      {
+        "id": "c",
+        "text": "Solo cuando se trata de neumáticos de perfil bajo."
+      },
+      {
+        "id": "d",
+        "text": "Solo cuando se trata de neumáticos sin cámara."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "60",
+    "question": "Según la Ley de responsabilidad civil y seguro en la circulación de vehículos a motor, ¿la cobertura del seguro de suscripción obligatoria alcanzará a los daños materiales ocasionados al tomador del seguro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solo cuando el tomador no sea el conductor del vehículo causante del accidente."
+      },
+      {
+        "id": "b",
+        "text": "Solo cuando el tomador no sea a la vez el asegurado."
+      },
+      {
+        "id": "c",
+        "text": "No, en ningún caso."
+      },
+      {
+        "id": "d",
+        "text": "Siempre estarán cubiertos."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "61",
+    "question": "En la respiración boca a boca, ¿por qué hay que abrir la vía aérea al herido mediante la maniobra frente-mentón?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para que respire mejor."
+      },
+      {
+        "id": "b",
+        "text": "Para que entre el aire en los riñones."
+      },
+      {
+        "id": "c",
+        "text": "Para facilitar la entrada del aire en los pulmones."
+      },
+      {
+        "id": "d",
+        "text": "Para que no se ahogue."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "62",
+    "question": "Al planificar un viaje, el conductor del vehículo debe verificar que lleva:",
+    "options": [
+      {
+        "id": "a",
+        "text": "la documentación del conductor."
+      },
+      {
+        "id": "b",
+        "text": "la documentación del vehículo, solo cuando el viaje sea al extranjero."
+      },
+      {
+        "id": "c",
+        "text": "la documentación de la carga, pero solo si el peso es superior a 10 toneladas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "la declaración de la renta del destinatario."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "63",
+    "question": "El consumo de carburante de un vehículo pesado puede ser mayor de lo normal dependiendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "del mantenimiento que se realice al vehículo, el perfil de la carretera y la presión de los neumáticos."
+      },
+      {
+        "id": "b",
+        "text": "del tipo de ralentizador que monte el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "del montaje de frenos de disco."
+      },
+      {
+        "id": "d",
+        "text": "del montaje de frenos de tambor."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "64",
+    "question": "¿Qué tipo de suelo es capaz de absorber y amortiguar parte del peso del cuerpo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cemento."
+      },
+      {
+        "id": "b",
+        "text": "Moqueta."
+      },
+      {
+        "id": "c",
+        "text": "Asfalto."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "65",
+    "question": "¿Qué actuación es correcta para reducir el consumo de carburante de un automóvil?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pisar el freno inmediatamente después de dejar de acelerar."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar el número de revoluciones del motor utilizando para ello una relación de marchas adecuada."
+      },
+      {
+        "id": "c",
+        "text": "Utilizar la relación de marchas más alta posible de forma que la aguja del cuentarrevoluciones se mantenga en la zona de máxima eficiencia del motor, generalmente una zona marcada de color verde."
+      },
+      {
+        "id": "d",
+        "text": "Dar aceleraciones rápidas para alcanzar la velocidad adecuada en el menor tiempo posible."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "66",
+    "question": "Para evitar el cansancio en la conducción se recomienda realizar paradas cada:",
+    "options": [
+      {
+        "id": "a",
+        "text": "300 km."
+      },
+      {
+        "id": "b",
+        "text": "100 km - 150 km."
+      },
+      {
+        "id": "c",
+        "text": "150 km - 200 km."
+      },
+      {
+        "id": "d",
+        "text": "200 km - 250 km."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "67",
+    "question": "Los cursos de formación para la obtención del CAP, impartidos por una empresa autorizada, deben estar:",
+    "options": [
+      {
+        "id": "a",
+        "text": "homologados por el órgano administrativo que le haya otorgado la autorización."
+      },
+      {
+        "id": "b",
+        "text": "homologados por cualquier Administración local."
+      },
+      {
+        "id": "c",
+        "text": "homologados por la Jefatura de Tráfico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "concertados con el Gobierno regional para que los pueda homologar la Administración local."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "68",
+    "question": "¿Qué resistencias intervienen en el movimiento de los vehículos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura y la resistencia a la pendiente."
+      },
+      {
+        "id": "b",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura y la resistencia de la transmisión."
+      },
+      {
+        "id": "c",
+        "text": "La resistencia aerodinámica, la resistencia a la pendiente y la resistencia de la transmisión."
+      },
+      {
+        "id": "d",
+        "text": "La resistencia aerodinámica, la resistencia a la rodadura, la resistencia de la transmisión y la resistencia a la pendiente."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "69",
+    "question": "De las siguientes opciones, ¿cuál no es una pérdida energética del motor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pérdidas por evaporación del combustible."
+      },
+      {
+        "id": "b",
+        "text": "Pérdida de calor por el tubo de escape."
+      },
+      {
+        "id": "c",
+        "text": "Pérdidas térmicas y mecánicas en forma de calor a través del sistema de refrigeración."
+      },
+      {
+        "id": "d",
+        "text": "Pérdidas mecánicas en la transmisión."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "70",
+    "question": "Una buena forma de ahorrar carburante al conducir un vehículo pesado es:",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperar con el motor arrancado, sin circular, hasta que alcance la temperatura adecuada de funcionamiento."
+      },
+      {
+        "id": "b",
+        "text": "dejar de acelerar con suficiente antelación."
+      },
+      {
+        "id": "c",
+        "text": "circular con una presión de inflado de los neumáticos inferior a la recomendada por el fabricante."
+      },
+      {
+        "id": "d",
+        "text": "acelerar en vacío cuando se arranca el motor para que este alcance la temperatura adecuada en el menor tiempo posible."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "71",
+    "question": "Al aproximarse a un semáforo en rojo, poner la palanca del cambio en punto muerto y dejar rodar el vehículo una larga distancia hasta que se detiene, ¿es una buena medida de ahorro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí, ya que en punto muerto el consumo es mínimo."
+      },
+      {
+        "id": "b",
+        "text": "Sí, ya que, en los motores actuales de inyección electrónica, en punto muerto el consumo es nulo."
+      },
+      {
+        "id": "c",
+        "text": "Esta actuación no influye en el consumo."
+      },
+      {
+        "id": "d",
+        "text": "No."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "72",
+    "question": "¿Qué dato tiene influencia en el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La presión del sistema neumático de frenos."
+      },
+      {
+        "id": "b",
+        "text": "El nivel de carga de la batería. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "c",
+        "text": "El número de revoluciones del motor."
+      },
+      {
+        "id": "d",
+        "text": "El tipo de neumático montado: con cámara o sin cámara."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "73",
+    "question": "En el cuentarrevoluciones de un vehículo pesado existe una zona marcada, generalmente, de color verde, ¿qué indica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Es la zona en la que la cantidad de aire que entra en el cilindro es menor."
+      },
+      {
+        "id": "b",
+        "text": "Es la zona de utilización del turbocompresor."
+      },
+      {
+        "id": "c",
+        "text": "Es la zona en la que el turbocompresor no funciona."
+      },
+      {
+        "id": "d",
+        "text": "Es la zona de menor consumo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "74",
+    "question": "En los motores de los automóviles actuales, si el vehículo circula a más de 20 km/h, no se pisa el pedal del embrague ni del acelerador y hay engranada una velocidad en la caja de cambios, el consumo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "será menor si la velocidad engranada es más corta."
+      },
+      {
+        "id": "b",
+        "text": "será menor si la velocidad engranada es más larga."
+      },
+      {
+        "id": "c",
+        "text": "equivaldrá al consumo al ralentí."
+      },
+      {
+        "id": "d",
+        "text": "será nulo."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "75",
+    "question": "¿Qué influye en el consumo de carburante de un vehículo pesado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La aerodinámica del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "El tipo de ralentizador que monte el vehículo."
+      },
+      {
+        "id": "c",
+        "text": "El tipo de bomba de alimentación: de membrana o de émbolo."
+      },
+      {
+        "id": "d",
+        "text": "El montaje de frenos de disco."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "76",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "De la situación de las ruedas motrices."
+      },
+      {
+        "id": "b",
+        "text": "Del tipo de líquido del sistema de refrigeración."
+      },
+      {
+        "id": "c",
+        "text": "De la presión en el sistema del vehículo."
+      },
+      {
+        "id": "d",
+        "text": "De la posición del pedal del acelerador."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "77",
+    "question": "Entre otros factores, ¿de qué depende el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Del tipo de freno que monte el vehículo."
+      },
+      {
+        "id": "b",
+        "text": "De la situación de las ruedas motrices."
+      },
+      {
+        "id": "c",
+        "text": "Del porcentaje de anticongelante que posea el líquido del sistema de refrigeración. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "De la relación de marchas seleccionada."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "78",
+    "question": "¿Con qué tipo de caja de velocidades el consumo de carburante es mayor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Con las cajas con cambio sincronizado."
+      },
+      {
+        "id": "b",
+        "text": "Con las cajas de toma constante."
+      },
+      {
+        "id": "c",
+        "text": "Con las cajas de toma variable."
+      },
+      {
+        "id": "d",
+        "text": "Con las cajas de cambio automático."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "79",
+    "question": "La utilización de una relación de marchas alta y la reducción de las revoluciones por minuto del motor de un vehículo pesado, ¿permite reducir el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sí."
+      },
+      {
+        "id": "b",
+        "text": "Sí, utilizar una relación de marchas alta, pero no la reducción de las revoluciones por minuto del motor."
+      },
+      {
+        "id": "c",
+        "text": "Sí, reducir las revoluciones por minuto del motor, pero no el utilizar una relación de marchas más alta."
+      },
+      {
+        "id": "d",
+        "text": "No."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "80",
+    "question": "¿Qué factores pueden producir estrés en el conductor profesional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cumplir los tiempos de conducción y descanso."
+      },
+      {
+        "id": "b",
+        "text": "El uso del limitador de velocidad."
+      },
+      {
+        "id": "c",
+        "text": "La necesidad de cumplir los horarios preestablecidos."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "81",
+    "question": "El exceso de alcohol en la sangre incide en la conducción porque:",
+    "options": [
+      {
+        "id": "a",
+        "text": "disminuye la capacidad de reacción."
+      },
+      {
+        "id": "b",
+        "text": "aumenta las funciones sensoriales."
+      },
+      {
+        "id": "c",
+        "text": "aumenta la seguridad en el conductor."
+      },
+      {
+        "id": "d",
+        "text": "aumenta la atención."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "82",
+    "question": "¿Cómo se llaman unos dispositivos hidráulicos que incorporan algunas cajas de velocidades para aminorar las revoluciones que llegan a las ruedas y realizan una función de frenado adicional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frenos de emergencia."
+      },
+      {
+        "id": "b",
+        "text": "Retardadores."
+      },
+      {
+        "id": "c",
+        "text": "Frenos hidráulicos. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "d",
+        "text": "Sincronizadores."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "83",
+    "question": "En un vehículo dotado de tacógrafo, el tiempo de conducción diaria no podrá superar en ningún caso:",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 horas."
+      },
+      {
+        "id": "b",
+        "text": "10 horas y treinta minutos."
+      },
+      {
+        "id": "c",
+        "text": "9 horas."
+      },
+      {
+        "id": "d",
+        "text": "11 horas."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "84",
+    "question": "Los tiempos de conducción diaria incluyen:",
+    "options": [
+      {
+        "id": "a",
+        "text": "solo las conducciones efectuadas dentro de la Unión Europea."
+      },
+      {
+        "id": "b",
+        "text": "las conducciones efectuadas dentro de los países firmantes del acuerdo AETR."
+      },
+      {
+        "id": "c",
+        "text": "las conducciones efectuadas dentro de la Unión Europea y en los países firmantes del convenio CMR."
+      },
+      {
+        "id": "d",
+        "text": "las conducciones efectuadas dentro de la Unión Europea y en cualquier país tercero."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "85",
+    "question": "¿Cuál de las siguientes circunstancias aumenta el consumo de carburante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Planificar la ruta."
+      },
+      {
+        "id": "b",
+        "text": "El uso de aire acondicionado."
+      },
+      {
+        "id": "c",
+        "text": "Llevar las ventanillas subidas."
+      },
+      {
+        "id": "d",
+        "text": "Evitar períodos de tiempo en los que el motor esté al ralentí."
+      }
+    ],
+    "correct": "b"
+  },
+  {
+    "num": "86",
+    "question": "¿Qué debe hacerse si el vehículo coge velocidad en una bajada prolongada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pisar el embrague y reducirse una marcha."
+      },
+      {
+        "id": "b",
+        "text": "Activar el ralentizador de emergencia."
+      },
+      {
+        "id": "c",
+        "text": "Pisar de forma progresiva el freno de servicio."
+      },
+      {
+        "id": "d",
+        "text": "Activar el bloqueo de ruedas."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "87",
+    "question": "¿En qué momento entra en acción el sistema EBS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuando se detecta un obstáculo en la trayectoria del vehículo."
+      },
+      {
+        "id": "b",
+        "text": "Al accionar los retardadores hidráulicos."
+      },
+      {
+        "id": "c",
+        "text": "Al pisar el pedal del freno."
+      },
+      {
+        "id": "d",
+        "text": "Al producirse un cambio brusco en la dirección del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "88",
+    "question": "¿Cuál de las siguientes funciones corresponde a un sistema IVMS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aviso de obstáculos en la calzada."
+      },
+      {
+        "id": "b",
+        "text": "Identificación de fugas en el sistema de frenado."
+      },
+      {
+        "id": "c",
+        "text": "Control de la flota de vehículos a través de la geolocalización."
+      },
+      {
+        "id": "d",
+        "text": "Detección de bloqueo de una rueda."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "89",
+    "question": "¿Qué sistema registra el consumo de combustible para su posterior análisis por la empresa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "IVMS."
+      },
+      {
+        "id": "b",
+        "text": "VBAS."
+      },
+      {
+        "id": "c",
+        "text": "ESPH."
+      },
+      {
+        "id": "d",
+        "text": "AEBS."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "90",
+    "question": "El sistema de ayuda a la conducción denominado IHC, ¿cómo actúa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al detectar fallos en la suspensión de cualquier rueda reduce la velocidad automáticamente."
+      },
+      {
+        "id": "b",
+        "text": "En función de la velocidad del vehículo con el precedente, adapta la velocidad manteniendo la distancia de seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Respondiendo a los faros de otros conductores, activa o desactiva las luces de carretera."
+      },
+      {
+        "id": "d",
+        "text": "Cuando se produce un cambio brusco de dirección a alta velocidad, corrige la trayectoria del vehículo."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "91",
+    "question": "¿Qué tipo de batería de vehículo eléctrico es la que tiene menor peso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vanadio."
+      },
+      {
+        "id": "b",
+        "text": "Cromo."
+      },
+      {
+        "id": "c",
+        "text": "Litio."
+      },
+      {
+        "id": "d",
+        "text": "Níquel."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "92",
+    "question": "En caso de condiciones meteorológicas adversas por nieve, ¿qué se recomienda hacer si el nivel de circulación es negro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Continuar la marcha."
+      },
+      {
+        "id": "b",
+        "text": "Abandonar el vehículo en todo caso."
+      },
+      {
+        "id": "c",
+        "text": "No abandonar el vehículo si no se está seguro de encontrar un refugio."
+      },
+      {
+        "id": "d",
+        "text": "Ninguna de las respuestas anteriores es correcta."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "93",
+    "question": "Las señales de balizamiento se utilizan para¿",
+    "options": [
+      {
+        "id": "a",
+        "text": "indicar que la carretera está en obras. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "b",
+        "text": "indicar que la carretera está cortada."
+      },
+      {
+        "id": "c",
+        "text": "orientar al tráfico o indicar lugares de peligro."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "94",
+    "question": "El sistema BAS (brake assist system) es un elemento de seguridad...",
+    "options": [
+      {
+        "id": "a",
+        "text": "No se considera elemento de seguridad al no ser obligatoria su instalación en los vehículos."
+      },
+      {
+        "id": "b",
+        "text": "activa y pasiva."
+      },
+      {
+        "id": "c",
+        "text": "activa."
+      },
+      {
+        "id": "d",
+        "text": "pasiva."
+      }
+    ],
+    "correct": "c"
+  },
+  {
+    "num": "95",
+    "question": "El dispositivo de seguridad EBS, ¿qué acción lleva a cabo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Si capta que se va a producir el bloqueo de una rueda, disminuye la fuerza de frenado sobre ella."
+      },
+      {
+        "id": "b",
+        "text": "Mide la distancia con el vehículo que circula delante y calcula la distancia de seguridad."
+      },
+      {
+        "id": "c",
+        "text": "Cambia el alumbrado de carretera a cruce y viceversa automáticamente."
+      },
+      {
+        "id": "d",
+        "text": "Sincroniza el funcionamiento del frenado en todas las ruedas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "96",
+    "question": "¿Qué puede producir un derrape del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El uso brusco e inadecuado de los frenos."
+      },
+      {
+        "id": "b",
+        "text": "Un mal estado de la amortiguación."
+      },
+      {
+        "id": "c",
+        "text": "Una presión de los neumáticos inferior a la aconsejada."
+      },
+      {
+        "id": "d",
+        "text": "El mal uso de los retardadores."
+      }
+    ],
+    "correct": "a"
+  },
+  {
+    "num": "97",
+    "question": "¿Quién está obligado a suministrar datos sobre un accidente de tráfico, de cara a la elaboración de estadísticas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos los implicados en el accidente."
+      },
+      {
+        "id": "b",
+        "text": "Los agentes de tráfico."
+      },
+      {
+        "id": "c",
+        "text": "Los centros sanitarios."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "98",
+    "question": "En relación con un incendio, ¿cómo se conoce al conjunto de combustible, comburente y calor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tetraedro del fuego."
+      },
+      {
+        "id": "b",
+        "text": "Octoedro del fuego. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+      },
+      {
+        "id": "c",
+        "text": "Cuadrado del fuego."
+      },
+      {
+        "id": "d",
+        "text": "Triángulo del fuego."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "99",
+    "question": "¿Qué depende del buen estado del vehículo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La seguridad del conductor."
+      },
+      {
+        "id": "b",
+        "text": "La seguridad de los pasajeros (en caso de transporte de viajeros)."
+      },
+      {
+        "id": "c",
+        "text": "La seguridad del resto de los usuarios de las carreteras."
+      },
+      {
+        "id": "d",
+        "text": "Todas las respuestas anteriores son correctas."
+      }
+    ],
+    "correct": "d"
+  },
+  {
+    "num": "100",
+    "question": "¿En qué condiciones los alumnos que realicen un curso para la obtención de la cualificación inicial de conductores podrán contabilizar como parte de dicha formación la realizada en relación con transporte de mercancías peligrosas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sólo si la formación sobre transporte de mercancías peligrosas se ha recibido en los doce meses anteriores al inicio del curso CAP."
+      },
+      {
+        "id": "b",
+        "text": "Sólo si la formación sobre transporte de mercancías peligrosas se ha recibido en los seis meses anteriores al inicio del curso CAP."
+      },
+      {
+        "id": "c",
+        "text": "Sólo si la formación sobre transporte de mercancías peligrosas se recibe de modo simultáneo a la realización del curso CAP."
+      },
+      {
+        "id": "d",
+        "text": "Sólo si la formación sobre transporte de mercancías peligrosas ha sido impartida por el mismo centro que imparte el curso CAP."
+      }
+    ],
+    "correct": "a"
+  }
+]
