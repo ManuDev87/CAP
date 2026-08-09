@@ -70,12 +70,12 @@ export default function LoginScreen() {
     <div className="screen-overlay gradient-auth z-5000 flex items-center justify-center">
       <div className="auth-card">
         <div className="auth-brand">
+          <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
           <div className="auth-brand-logo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/logo.png" alt="Logo Grupo CAP" className="junta-logo" />
           </div>
           <div className="brand-badge">Grupo CAP</div>
-          <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
         </div>
         <h2 className="mb-5 text-2xl font-bold text-ink-900">Iniciar Sesión</h2>
         <form onSubmit={handleLogin} className="flex flex-col gap-4">

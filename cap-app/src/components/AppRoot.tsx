@@ -15,10 +15,10 @@ import StatsScreen from "@/components/screens/StatsScreen";
 function Splash({ portal }: { portal: Portal }) {
   return (
     <div className="screen-overlay gradient-auth z-5000 flex flex-col items-center justify-center gap-5">
+      <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/img/logo.png" alt="Logo Grupo CAP" className="splash-logo" />
       <div className="brand-badge">Grupo CAP</div>
-      <div className="portal-badge">{PORTAL_LABELS[portal]}</div>
     </div>
   );
 }
