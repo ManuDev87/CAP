@@ -718,6 +718,17 @@ def convert_pair(pair: dict) -> list[dict]:
         answers = parse_answer_key_valencia_filled(pair["key_pdf"])
     else:
         answers = parse_answer_key(pdf_text(pair["key_pdf"]))
+    # Plantillas escaneadas (sin vectores/texto): usar clave OCR en scripts/answer_keys/
+    if len(answers) < 90:
+        sidecar = ROOT / "scripts" / "answer_keys" / f"{pair['id']}.json"
+        if sidecar.exists():
+            payload = json.loads(sidecar.read_text(encoding="utf-8"))
+            answers = {
+                str(k): str(v).lower()
+                for k, v in (payload.get("answers") or payload).items()
+                if str(v).lower() in "abcd"
+            }
+            print(f"  usando answer_keys/{sidecar.name} ({len(answers)} respuestas)")
     if len(answers) < 90:
         raise ValueError(
             f"{pair['id']}: plantilla con solo {len(answers)} respuestas"
@@ -727,15 +738,64 @@ def convert_pair(pair: dict) -> list[dict]:
     return exam
 
 
+def exam_signature(exam: list[dict]) -> dict[str, dict]:
+    """Index by question num for comparison."""
+    return {str(q["num"]): q for q in exam}
+
+
+def diff_exams(saved: list[dict], fresh: list[dict]) -> list[str]:
+    """Return human-readable diffs; empty if identical for practical purposes."""
+    a = exam_signature(saved)
+    b = exam_signature(fresh)
+    msgs: list[str] = []
+    only_a = sorted(set(a) - set(b), key=lambda x: int(x))
+    only_b = sorted(set(b) - set(a), key=lambda x: int(x))
+    if only_a:
+        msgs.append(f"  solo en JSON guardado: {', '.join(only_a)}")
+    if only_b:
+        msgs.append(f"  solo en reextracción: {', '.join(only_b)}")
+    for num in sorted(set(a) & set(b), key=lambda x: int(x)):
+        qa, qb = a[num], b[num]
+        if qa.get("correct") != qb.get("correct"):
+            msgs.append(
+                f"  Q{num} correct: JSON={qa.get('correct')} vs PDF={qb.get('correct')}"
+            )
+        if qa.get("question") != qb.get("question"):
+            msgs.append(
+                f"  Q{num} enunciado distinto"
+                f"\n    JSON: {qa.get('question', '')[:120]}"
+                f"\n    PDF:  {qb.get('question', '')[:120]}"
+            )
+        opts_a = {o["id"]: o["text"] for o in qa.get("options", [])}
+        opts_b = {o["id"]: o["text"] for o in qb.get("options", [])}
+        if set(opts_a) != set(opts_b):
+            msgs.append(
+                f"  Q{num} opciones ids: JSON={sorted(opts_a)} vs PDF={sorted(opts_b)}"
+            )
+        for oid in sorted(set(opts_a) & set(opts_b)):
+            if opts_a[oid] != opts_b[oid]:
+                msgs.append(
+                    f"  Q{num} opción {oid} texto distinto"
+                    f"\n    JSON: {opts_a[oid][:100]}"
+                    f"\n    PDF:  {opts_b[oid][:100]}"
+                )
+    return msgs
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--region",
-        choices=("cataluna", "valencia", "extremadura", "cantabria", "alava"),
+        choices=("cataluna", "valencia", "extremadura", "cantabria", "alava", "all"),
         default="cataluna",
     )
     ap.add_argument("--limit", type=int, default=0, help="Solo N primeros pares")
     ap.add_argument("--id", type=str, default="", help="Solo este exam id")
+    ap.add_argument(
+        "--audit",
+        action="store_true",
+        help="Reextrae y compara con JSON existentes; NO escribe ni modifica nada",
+    )
     args = ap.parse_args()
 
     finders = {
@@ -745,6 +805,52 @@ def main() -> None:
         "cantabria": find_cantabria_pairs,
         "alava": find_alava_pairs,
     }
+    regions = list(finders) if args.region == "all" else [args.region]
+
+    if args.audit:
+        print("=== AUDITORÍA (solo lectura; no se modifica ningún JSON) ===\n")
+        total_ok = total_diff = total_fail = total_missing = 0
+        for region in regions:
+            pairs = finders[region]()
+            if args.id:
+                pairs = [p for p in pairs if p["id"] == args.id]
+            if args.limit:
+                pairs = pairs[: args.limit]
+            print(f"--- {region}: {len(pairs)} pares ---")
+            for pair in pairs:
+                out = OUT_DIR / f"{pair['id']}.json"
+                if not out.exists():
+                    print(f"MISSING {pair['id']}: no hay JSON en app")
+                    total_missing += 1
+                    continue
+                try:
+                    fresh = convert_pair(pair)
+                    saved = json.loads(out.read_text(encoding="utf-8"))
+                    diffs = diff_exams(saved, fresh)
+                    if not diffs:
+                        print(f"OK {pair['id']}: idéntico ({len(saved)} preguntas)")
+                        total_ok += 1
+                    else:
+                        print(f"DIFF {pair['id']}: {len(diffs)} diferencia(s)")
+                        for m in diffs[:40]:
+                            print(m)
+                        if len(diffs) > 40:
+                            print(f"  ... y {len(diffs) - 40} más")
+                        total_diff += 1
+                except Exception as e:
+                    print(f"FAIL {pair['id']}: {e}")
+                    total_fail += 1
+            print()
+        print(
+            f"Resumen: OK={total_ok} DIFF={total_diff} FAIL={total_fail} "
+            f"MISSING={total_missing}"
+        )
+        print("Ningún archivo ha sido modificado.")
+        return
+
+    if args.region == "all":
+        sys.exit("Para escribir usa --region concreta (no 'all'). Para revisar: --audit --region all")
+
     pairs = finders[args.region]()
 
     print(f"Pares {args.region} mercancías: {len(pairs)}")

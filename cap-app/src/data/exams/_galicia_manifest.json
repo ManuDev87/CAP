@@ -1,0 +1,346 @@
+[
+  {
+    "id": "galicia_enero_2023",
+    "name": "Enero 2023",
+    "date": "20230101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\1ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\1ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_marzo_2023",
+    "name": "Marzo 2023",
+    "date": "20230301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\2ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\2ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_junio_2023",
+    "name": "Junio 2023",
+    "date": "20230601",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\4ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\4ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2023",
+    "name": "Julio 2023",
+    "date": "20230701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\5ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\5ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2023_1000",
+    "name": "Septiembre 2023 (10:00)",
+    "date": "20230901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\6ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\6ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2023_1615",
+    "name": "Septiembre 2023 (16:15)",
+    "date": "20230901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\6ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\6ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_octubre_2023",
+    "name": "Octubre 2023",
+    "date": "20231001",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\7ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\7ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2023_1000",
+    "name": "Noviembre 2023 (10:00)",
+    "date": "20231101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\8ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\8ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2023_1615",
+    "name": "Noviembre 2023 (16:15)",
+    "date": "20231101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2023\\8ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2023\\8ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_enero_2024",
+    "name": "Enero 2024",
+    "date": "20240101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\1ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\1ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_marzo_2024",
+    "name": "Marzo 2024",
+    "date": "20240301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\2ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\2ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_mayo_2024",
+    "name": "Mayo 2024",
+    "date": "20240501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\3ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\3ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_junio_2024_1000",
+    "name": "Junio 2024 (10:00)",
+    "date": "20240601",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\4ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\4ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_junio_2024_1615",
+    "name": "Junio 2024 (16:15)",
+    "date": "20240601",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\4ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\4ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2024_1000",
+    "name": "Julio 2024 (10:00)",
+    "date": "20240701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\5ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\5ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2024_1600",
+    "name": "Julio 2024 (16:00)",
+    "date": "20240701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\5ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\5ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2024_1000",
+    "name": "Septiembre 2024 (10:00)",
+    "date": "20240901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\6ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\6ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2024_1600",
+    "name": "Septiembre 2024 (16:00)",
+    "date": "20240901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\6ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\6ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2024_1000",
+    "name": "Noviembre 2024 (10:00)",
+    "date": "20241101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\8ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\8ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2024_1615",
+    "name": "Noviembre 2024 (16:15)",
+    "date": "20241101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2024\\8ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2024\\8ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_enero_2025_1000",
+    "name": "Enero 2025 (10:00)",
+    "date": "20250101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\1ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\1ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_enero_2025_1615",
+    "name": "Enero 2025 (16:15)",
+    "date": "20250101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\1ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\1ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_marzo_2025",
+    "name": "Marzo 2025",
+    "date": "20250301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\2ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\2ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_mayo_2025_1000",
+    "name": "Mayo 2025 (10:00)",
+    "date": "20250501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\3ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\3ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_mayo_2025_1615",
+    "name": "Mayo 2025 (16:15)",
+    "date": "20250501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\3ª convocatoria\\Mercadorías_16.15_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\3ª convocatoria\\PlantillaRespuestasMercadorías_16.15_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2025_1000",
+    "name": "Julio 2025 (10:00)",
+    "date": "20250701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\5ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\5ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2025_1600",
+    "name": "Julio 2025 (16:00)",
+    "date": "20250701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\5ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\5ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2025",
+    "name": "Septiembre 2025",
+    "date": "20250901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\6ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\6ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_octubre_2025",
+    "name": "Octubre 2025",
+    "date": "20251001",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\7ª convocatoria\\Mercadorías_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\7ª convocatoria\\PlantillaRespuestasMercadorías_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2025_1000",
+    "name": "Noviembre 2025 (10:00)",
+    "date": "20251101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\8ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\8ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_noviembre_2025_1600",
+    "name": "Noviembre 2025 (16:00)",
+    "date": "20251101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2025\\8ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2025\\8ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_enero_2026_1000",
+    "name": "Enero 2026 (10:00)",
+    "date": "20260101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\1ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\1ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_enero_2026_1600",
+    "name": "Enero 2026 (16:00)",
+    "date": "20260101",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\1ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\1ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_marzo_2026_1000",
+    "name": "Marzo 2026 (10:00)",
+    "date": "20260301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\2ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\2ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_marzo_2026_1600",
+    "name": "Marzo 2026 (16:00)",
+    "date": "20260301",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\2ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\2ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_mayo_2026_1000",
+    "name": "Mayo 2026 (10:00)",
+    "date": "20260501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\3ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\3ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_mayo_2026_1600",
+    "name": "Mayo 2026 (16:00)",
+    "date": "20260501",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\3ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\3ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_junio_2026_1000",
+    "name": "Junio 2026 (10:00)",
+    "date": "20260601",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\4ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\4ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_junio_2026_1600",
+    "name": "Junio 2026 (16:00)",
+    "date": "20260601",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\4ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\4ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2026_1000",
+    "name": "Julio 2026 (10:00)",
+    "date": "20260701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\5ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\5ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_julio_2026_1600",
+    "name": "Julio 2026 (16:00)",
+    "date": "20260701",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\5ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\5ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2026_1000",
+    "name": "Septiembre 2026 (10:00)",
+    "date": "20260901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\6ª convocatoria\\Mercadorías_10.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\6ª convocatoria\\PlantillaRespuestasMercadorías_10.00_A.pdf"
+  },
+  {
+    "id": "galicia_septiembre_2026_1600",
+    "name": "Septiembre 2026 (16:00)",
+    "date": "20260901",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Galicia\\2026\\6ª convocatoria\\Mercadorías_16.00_A.pdf.pdf",
+    "key_pdf": "Examenes CAP\\Galicia\\2026\\6ª convocatoria\\PlantillaRespuestasMercadorías_16.00_A.pdf"
+  }
+]

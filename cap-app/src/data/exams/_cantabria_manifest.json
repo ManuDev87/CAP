@@ -40,6 +40,14 @@
     "key_pdf": "Examenes CAP\\Cantabria\\2025\\5ª convocatoria\\PLANTILLA MERCANCIAS 2 OCTUBRE 2025.pdf"
   },
   {
+    "id": "cantabria_diciembre_2025",
+    "name": "Diciembre 2025",
+    "date": "20251204",
+    "questions": 100,
+    "exam_pdf": "Examenes CAP\\Cantabria\\2025\\6ª convocatoria\\EXAMEN MERCANCIAS CAP 4 DIC 2025.pdf",
+    "key_pdf": "Examenes CAP\\Cantabria\\2025\\6ª convocatoria\\PLANTILLA EXAMEN MERCANCIAS CAP 4 DIC 2025.pdf"
+  },
+  {
     "id": "cantabria_febrero_2026",
     "name": "Febrero 2026",
     "date": "20260203",
