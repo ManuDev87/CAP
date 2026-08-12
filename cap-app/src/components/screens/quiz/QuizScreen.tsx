@@ -285,7 +285,7 @@ export default function QuizScreen() {
               {exam.name} - CAP Mercancías
             </span>
             <span className="truncate text-sm font-bold uppercase max-md:text-[9px]">
-              GRUPO PERSONAL LINEROS
+              GRUPO PERSONAL CAP
             </span>
           </div>
         </div>

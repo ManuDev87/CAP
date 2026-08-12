@@ -14,7 +14,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Portal del Alumno - Examen CAP",
   description:
-    "Tests de preparación para el examen CAP de mercancías. Grupo CAP - Grupo Personal Lineros.",
+    "Tests de preparación para el examen CAP de mercancías. Grupo CAP - Grupo Personal CAP.",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
