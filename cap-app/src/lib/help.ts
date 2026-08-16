@@ -1,6 +1,6 @@
 import helpBankJson from "@/data/help-bank.json";
 import type { Question, QuestionHelp } from "./types";
-import { composeStudentExplanation, discardedOptionsText } from "./helpExplain";
+import { composeStudentExplanation } from "./helpExplain";
 
 type BankEntry = {
   explanation: string;
@@ -33,7 +33,6 @@ export function correctOptionText(q: Question): string {
 export function getQuestionHelp(q: Question): QuestionHelp {
   const correctText = correctOptionText(q);
   const entry = helpBank[helpKey(q.question, correctText)];
-  const others = discardedOptionsText(q);
 
   if (!entry) {
     return {
@@ -44,14 +43,9 @@ export function getQuestionHelp(q: Question): QuestionHelp {
     };
   }
 
-  const withOthers =
-    others && !entry.explanation.includes("Las otras opciones")
-      ? `${entry.explanation}\n\n${others}`
-      : entry.explanation;
-
   return {
     correctText,
-    explanation: withOthers,
+    explanation: entry.explanation,
     source: entry.source,
     sourceUrl: entry.sourceUrl || undefined,
     origin: entry.origin,
