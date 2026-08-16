@@ -10,8 +10,11 @@ import {
   type UserListEntry,
 } from "@/lib/db";
 import type { ScoreRecord } from "@/lib/types";
+import { computeErrorTopicStats } from "@/lib/errorTopicStats";
+import type { ErrorTopicStat } from "@/lib/errorTopicStats";
 import RankingList from "@/components/stats/RankingList";
 import StatsChart from "@/components/stats/StatsChart";
+import ErrorTopicList from "@/components/stats/ErrorTopicList";
 import {
   IconArrowLeft,
   IconChart,
@@ -38,6 +41,9 @@ export default function TeacherScreen() {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
   const [statsLoading, setStatsLoading] = useState(false);
   const [filter, setFilter] = useState("all");
+  const [errorTopics, setErrorTopics] = useState<ErrorTopicStat[]>([]);
+  const [errorTotal, setErrorTotal] = useState(0);
+  const [errorTopicsLoading, setErrorTopicsLoading] = useState(false);
 
   const refreshStudents = useCallback(async () => {
     if (!teacherId) return;
@@ -118,14 +124,26 @@ export default function TeacherScreen() {
     setSelected(student);
     setFilter("all");
     setStatsLoading(true);
+    setErrorTopicsLoading(true);
+    setErrorTopics([]);
+    setErrorTotal(0);
     try {
-      setRecords(await loadScoreRecords(student.username));
+      const [scoreRecords, topicStats] = await Promise.all([
+        loadScoreRecords(student.username),
+        computeErrorTopicStats(student.username),
+      ]);
+      setRecords(scoreRecords);
+      setErrorTopics(topicStats.topics);
+      setErrorTotal(topicStats.total);
     } catch (err) {
       console.error(err);
       setRecords([]);
+      setErrorTopics([]);
+      setErrorTotal(0);
       alert("No se pudieron cargar las estadísticas del alumno.");
     } finally {
       setStatsLoading(false);
+      setErrorTopicsLoading(false);
     }
   }
 
@@ -186,6 +204,18 @@ export default function TeacherScreen() {
                   </select>
                 </div>
                 <StatsChart records={records} filterTestId={filter} />
+
+                <div className="mt-8">
+                  <h3 className="panel-heading text-base">
+                    Estadísticas de fallos
+                  </h3>
+                  <ErrorTopicList
+                    total={errorTotal}
+                    topics={errorTopics}
+                    loading={errorTopicsLoading}
+                    emptyMessage="Este alumno aún no tiene preguntas falladas registradas."
+                  />
+                </div>
               </div>
             </div>
           )}

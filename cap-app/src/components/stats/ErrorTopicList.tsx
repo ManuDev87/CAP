@@ -6,10 +6,12 @@ export default function ErrorTopicList({
   total,
   topics,
   loading,
+  emptyMessage = "Cuando falles preguntas en los exámenes, aquí verás en qué temas te equivocas más.",
 }: {
   total: number;
   topics: ErrorTopicStat[];
   loading: boolean;
+  emptyMessage?: string;
 }) {
   if (loading) {
     return (
@@ -22,8 +24,7 @@ export default function ErrorTopicList({
   if (total === 0) {
     return (
       <p className="px-1 py-6 text-sm leading-relaxed text-ink-400">
-        Cuando falles preguntas en los exámenes, aquí verás en qué temas te
-        equivocas más.
+        {emptyMessage}
       </p>
     );
   }
