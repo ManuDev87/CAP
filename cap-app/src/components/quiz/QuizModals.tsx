@@ -1,8 +1,14 @@
 "use client";
 
 import { PASS_THRESHOLD, formatScore } from "@/lib/scoring";
-import type { ScoreBreakdown } from "@/lib/types";
-import { IconPauseCircle, IconSpinner, IconWarning } from "@/components/icons";
+import type { QuestionHelp, ScoreBreakdown } from "@/lib/types";
+import {
+  IconExternalLink,
+  IconPauseCircle,
+  IconSpinner,
+  IconWarning,
+  IconX,
+} from "@/components/icons";
 
 /* ---------- Confirm finish ---------- */
 
@@ -159,6 +165,85 @@ export function ResultModal({
             Volver al menú
           </button>
         </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- Answer help (fundamento) ---------- */
+
+interface HelpModalProps {
+  help: QuestionHelp;
+  onClose: () => void;
+}
+
+export function HelpModal({ help, onClose }: HelpModalProps) {
+  const badge = help.verified
+    ? help.origin === "official-ref"
+      ? "Cita del examen de referencia"
+      : "Normativa / temario oficial"
+    : "Según plantilla oficial";
+
+  return (
+    <div className="modal-overlay" onClick={onClose} role="presentation">
+      <div
+        className="help-modal"
+        role="dialog"
+        aria-labelledby="help-modal-title"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="mb-4 flex items-start justify-between gap-3">
+          <div>
+            <p className="help-badge">{badge}</p>
+            <h2
+              id="help-modal-title"
+              className="mt-2 text-left text-[20px] font-bold text-ink-900"
+            >
+              ¿Por qué es correcta?
+            </h2>
+          </div>
+          <button
+            className="help-close"
+            onClick={onClose}
+            aria-label="Cerrar ayuda"
+          >
+            <IconX />
+          </button>
+        </div>
+
+        <p className="help-correct-label">Respuesta correcta</p>
+        <p className="help-correct-text">{help.correctText}</p>
+
+        <div className="help-body">
+          {help.explanation.split("\n").map((line, i) =>
+            line ? <p key={i}>{line}</p> : <br key={i} />
+          )}
+        </div>
+
+        {help.source && (
+          <div className="help-source">
+            <p className="help-correct-label">Fuente</p>
+            {help.sourceUrl ? (
+              <a
+                href={help.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="help-source-link"
+              >
+                {help.source}
+                <IconExternalLink className="text-sm" />
+              </a>
+            ) : (
+              <p className="text-sm leading-relaxed text-ink-700">
+                {help.source}
+              </p>
+            )}
+          </div>
+        )}
+
+        <button className="btn-primary mt-6 w-full" onClick={onClose}>
+          Entendido
+        </button>
       </div>
     </div>
   );

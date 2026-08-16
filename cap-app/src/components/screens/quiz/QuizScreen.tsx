@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useApp } from "@/context/AppContext";
 import { testPdfUrls } from "@/lib/tests";
 import { calculateScore } from "@/lib/scoring";
+import { getQuestionHelp } from "@/lib/help";
 import {
   clearPausedState,
   loadPausedState,
@@ -17,6 +18,7 @@ import { ERRORS_EXAM_ID } from "@/lib/types";
 import OptionRow, { type OptionVisualState } from "@/components/quiz/OptionRow";
 import {
   ConfirmFinishModal,
+  HelpModal,
   PauseModal,
   ResultModal,
 } from "@/components/quiz/QuizModals";
@@ -31,7 +33,7 @@ import {
   IconLogout,
 } from "@/components/icons";
 
-type QuizModal = "confirm" | "pause" | "result" | null;
+type QuizModal = "confirm" | "pause" | "result" | "help" | null;
 
 function formatTime(totalSeconds: number): string {
   const mins = Math.floor(totalSeconds / 60)
@@ -140,6 +142,16 @@ export default function QuizScreen() {
 
   const q = questions[currentIndex];
   const questionAnsweredInAyuda = mode === "ayuda" && hasAnswered[currentIndex];
+  const help = q ? getQuestionHelp(q) : null;
+  const helpUnlocked =
+    isReviewMode || (mode === "ayuda" && Boolean(hasAnswered[currentIndex]));
+  const helpTitle = isReviewMode
+    ? "Ver por qué es correcta"
+    : mode === "examen"
+      ? "La ayuda se activa al revisar el test"
+      : hasAnswered[currentIndex]
+        ? "Ver por qué es correcta"
+        : "Contesta primero para ver por qué es correcta";
 
   function optionState(optId: string): OptionVisualState {
     if (isReviewMode) {
@@ -316,10 +328,19 @@ export default function QuizScreen() {
         <div className="flex min-h-0 flex-1 overflow-hidden">
           {/* Sidebar */}
           <aside className="flex w-37.5 shrink-0 flex-col gap-2.5 border-r-4 border-brand-500 bg-white px-2.5 py-5 max-md:hidden">
-            <button className="side-btn">
+            <button
+              className={`side-btn ${helpUnlocked ? "side-btn-ready" : ""}`}
+              disabled={!helpUnlocked}
+              title={helpTitle}
+              onClick={() => setModal("help")}
+            >
               <IconHelp className="text-base" /> Ayuda
             </button>
-            <button className="side-btn">
+            <button
+              className="side-btn"
+              disabled
+              title="Los comentarios estarán disponibles próximamente"
+            >
               <IconComment className="text-base" /> Comentario
             </button>
           </aside>
@@ -350,6 +371,19 @@ export default function QuizScreen() {
                   />
                 ))}
               </div>
+
+              {helpUnlocked && (
+                <button
+                  className="side-btn side-btn-ready mt-6 md:hidden"
+                  title={helpTitle}
+                  onClick={() => setModal("help")}
+                >
+                  <IconHelp className="text-base" />
+                  {help?.verified
+                    ? "Ver fundamento normativo"
+                    : "Ver por qué es correcta"}
+                </button>
+              )}
             </div>
 
             {/* Prev / Next navigation */}
@@ -441,6 +475,9 @@ export default function QuizScreen() {
           onReview={enterReviewMode}
           onRestart={goToTestSelection}
         />
+      )}
+      {modal === "help" && help && (
+        <HelpModal help={help} onClose={() => setModal(null)} />
       )}
     </div>
   );
