@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/context/AppContext";
 import { communityRegions, regionTestCount } from "@/lib/tests";
-import { loadAllResultStats, loadPausedMap } from "@/lib/db";
+import { loadAllResultStats, loadPausedMap, countWrongQuestions } from "@/lib/db";
 import type { ExamMode, TestMeta, TestResultStats } from "@/lib/types";
 import {
   IconChart,
@@ -12,10 +12,11 @@ import {
   IconLogout,
   IconPdf,
   IconSpinner,
+  IconWarning,
 } from "@/components/icons";
 
 export default function TestSelectionScreen() {
-  const { user, selectTest, openStats, logout } = useApp();
+  const { user, selectTest, openStats, logout, startErrorTest } = useApp();
 
   const [pausedMap, setPausedMap] = useState<Map<string, ExamMode>>(new Map());
   const [statsMap, setStatsMap] = useState<Map<string, TestResultStats>>(
@@ -23,6 +24,8 @@ export default function TestSelectionScreen() {
   );
   const [loadingTest, setLoadingTest] = useState<string | null>(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [errorCount, setErrorCount] = useState(0);
+  const [startingErrors, setStartingErrors] = useState(false);
   const [regionId, setRegionId] = useState(communityRegions[0]?.id ?? "andalucia");
   const [subregionId, setSubregionId] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -61,13 +64,15 @@ export default function TestSelectionScreen() {
     let cancelled = false;
     (async () => {
       try {
-        const [paused, stats] = await Promise.all([
+        const [paused, stats, wrongCount] = await Promise.all([
           loadPausedMap(user.username),
           loadAllResultStats(user.username),
+          countWrongQuestions(user.username),
         ]);
         if (!cancelled) {
           setPausedMap(paused);
           setStatsMap(stats);
+          setErrorCount(wrongCount);
         }
       } catch (err) {
         console.error("Error cargando datos de tests", err);
@@ -99,6 +104,26 @@ export default function TestSelectionScreen() {
       console.error(err);
       alert("Base de datos no encontrada para este test.");
       setLoadingTest(null);
+    }
+  }
+
+  async function handleErrorTest() {
+    if (errorCount === 0 || startingErrors) return;
+    setStartingErrors(true);
+    setDropdownOpen(false);
+    try {
+      const n = await startErrorTest();
+      if (n === 0) {
+        setErrorCount(0);
+        alert(
+          "No hay preguntas de error disponibles. Completa algún examen y falla alguna pregunta para ir acumulándolas."
+        );
+      }
+    } catch (err) {
+      console.error(err);
+      alert("No se pudo iniciar el test de errores.");
+    } finally {
+      setStartingErrors(false);
     }
   }
 
@@ -146,6 +171,24 @@ export default function TestSelectionScreen() {
                 >
                   <IconChart className="w-5 text-center text-lg" />
                   Estadísticas
+                </button>
+                <button
+                  className="dropdown-item dropdown-errors"
+                  disabled={errorCount === 0 || startingErrors}
+                  title={
+                    errorCount === 0
+                      ? "Aún no hay preguntas falladas guardadas"
+                      : `Practicar ${errorCount} pregunta${errorCount === 1 ? "" : "s"} fallada${errorCount === 1 ? "" : "s"}`
+                  }
+                  onClick={handleErrorTest}
+                >
+                  {startingErrors ? (
+                    <IconSpinner className="w-5 text-center text-lg" />
+                  ) : (
+                    <IconWarning className="w-5 text-center text-lg" />
+                  )}
+                  Test de errores
+                  <span className="dropdown-errors-count">{errorCount}</span>
                 </button>
                 <button
                   className="dropdown-item dropdown-logout"
