@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Grupo CAP — Aprueba el examen CAP a la primera</title>
-<meta name="description" content="Portal del Alumno de Grupo CAP: +2.100 preguntas de convocatorias reales, modo examen, modo ayuda, estadísticas y ranking. Aprueba el CAP de mercancías a la primera." />
+<meta name="description" content="Portal del Alumno de Grupo CAP: CAP mercancías y CAP viajeros, preguntas de convocatorias reales, modo examen, modo ayuda, estadísticas y ranking." />
 <meta name="theme-color" content="#0A8442" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A8442'/%3E%3Cpath d='M18 33l10 10 18-22' stroke='white' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -198,7 +198,8 @@ button { border: 0; font: inherit; }
 .hero-copy.show > *:nth-child(1) { transition-delay: 0.05s; }
 .hero-copy.show > *:nth-child(2) { transition-delay: 0.15s; }
 .hero-copy.show > *:nth-child(3) { transition-delay: 0.25s; }
-.hero-copy.show > *:nth-child(4) { transition-delay: 0.35s; }
+.hero-copy.show > *:nth-child(4) { transition-delay: 0.32s; }
+.hero-copy.show > *:nth-child(5) { transition-delay: 0.4s; }
 .hero-copy .hero-brand {
   font-family: var(--font-display);
   font-size: clamp(34px, 8vw, 72px);
@@ -231,9 +232,35 @@ button { border: 0; font: inherit; }
   font-size: clamp(14px, 3.6vw, 18px);
   line-height: 1.55;
   color: rgb(236 245 240 / 0.92);
-  max-width: 40ch;
-  margin-bottom: 20px;
+  max-width: 42ch;
+  margin-bottom: 16px;
   text-shadow: 0 3px 18px rgb(0 0 0 / 0.5);
+}
+.track-pills {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 18px;
+}
+.track-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.track-pill svg { width: 16px; height: 16px; flex-shrink: 0; }
+.track-pill--mercancias {
+  background: rgb(10 132 66 / 0.92);
+  border-color: rgb(180 236 204 / 0.55);
+  box-shadow: 0 6px 18px rgb(6 78 41 / 0.35);
+}
+.track-pill--viajeros {
+  background: rgb(0 55 90 / 0.92);
+  border-color: rgb(168 206 232 / 0.55);
+  box-shadow: 0 6px 18px rgb(0 30 50 / 0.4);
 }
 .hero-ctas {
   display: flex; flex-wrap: wrap; gap: 10px;
@@ -261,6 +288,50 @@ button { border: 0; font: inherit; }
   background: #ffd9ad; display: inline-block;
 }
 @keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ---------- Dual tracks (mercancías / viajeros) ---------- */
+.tracks-strip {
+  max-width: 1120px;
+  margin: -8px auto 0;
+  padding: 28px clamp(20px, 5vw, 56px) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.track-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--surface);
+  border: 3px solid var(--line);
+  border-radius: 22px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s var(--ease);
+}
+.track-card:hover {
+  border-color: rgb(10 132 66 / 0.32);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+.track-card .ico {
+  width: 52px; height: 52px; border-radius: 16px; flex-shrink: 0;
+  display: grid; place-items: center;
+  border: 2px solid rgb(10 132 66 / 0.2);
+  color: var(--brand);
+  background: linear-gradient(160deg, #f3faf6, var(--brand-soft));
+}
+.track-card--viajeros .ico {
+  color: var(--navy);
+  border-color: rgb(0 55 90 / 0.18);
+  background: linear-gradient(160deg, #f2f7fb, #e4eef5);
+}
+.track-card .ico svg { width: 26px; height: 26px; }
+.track-card h3 {
+  font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+.track-card p {
+  color: var(--muted); font-size: 14px; line-height: 1.45; font-weight: 600;
+}
 
 /* ---------- Sections ---------- */
 .section {
@@ -453,6 +524,12 @@ footer .f-right { text-align: right; }
     padding: 12px 16px;
     font-size: 14px;
   }
+  .tracks-strip {
+    padding: 20px 20px 0;
+    gap: 12px;
+  }
+  .track-card { padding: 14px 14px; border-radius: 18px; gap: 12px; }
+  .track-card .ico { width: 44px; height: 44px; border-radius: 14px; }
   .section {
     padding: 72px 20px;
   }
@@ -490,12 +567,18 @@ footer .f-right { text-align: right; }
   .btn-sm { padding: 9px 14px; font-size: 13px; }
   .hero-copy .hero-brand { margin-bottom: 10px; }
   .hero-copy h1 { max-width: none; margin-bottom: 10px; }
-  .hero-copy .lead { margin-bottom: 16px; }
+  .hero-copy .lead { margin-bottom: 12px; }
+  .track-pills { margin-bottom: 14px; }
+  .track-pill { padding: 7px 12px; font-size: 11px; }
   .hero-ctas {
     flex-direction: column;
     align-items: stretch;
   }
   .hero-ctas .btn { width: 100%; justify-content: center; }
+  .tracks-strip { padding: 16px 16px 0; gap: 10px; }
+  .track-card { border-width: 2px; padding: 12px; }
+  .track-card h3 { font-size: 15px; }
+  .track-card p { font-size: 12px; }
   .stats { gap: 10px; }
   .stat { padding: 18px 10px; border-width: 2px; }
   .feature { border-width: 2px; }
@@ -514,6 +597,7 @@ footer .f-right { text-align: right; }
   .hero-copy .hero-brand { font-size: clamp(28px, 7vw, 40px); margin-bottom: 8px; }
   .hero-copy h1 { font-size: clamp(18px, 4.5vw, 24px); }
   .hero-copy .lead { display: none; }
+  .track-pills { margin-bottom: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -560,8 +644,18 @@ footer .f-right { text-align: right; }
       <p class="hero-brand"><span>Portal del Alumno</span>Grupo CAP</p>
       <h1>Aprueba el examen CAP a la primera.</h1>
     <p class="lead">
-        +2.100 preguntas de convocatorias reales, corrección al instante y estadísticas de tu progreso.
+        CAP mercancías y CAP viajeros: convocatorias reales, corrección al instante y estadísticas de tu progreso.
     </p>
+    <div class="track-pills" role="list" aria-label="Modalidades CAP">
+      <span class="track-pill track-pill--mercancias" role="listitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17V7h11v10"/><path d="M14 10h4l3 3v4h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        Mercancías
+      </span>
+      <span class="track-pill track-pill--viajeros" role="listitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="10" rx="2"/><path d="M7 16v2"/><path d="M17 16v2"/><circle cx="7.5" cy="11" r="1"/><circle cx="12" cy="11" r="1"/><circle cx="16.5" cy="11" r="1"/></svg>
+        Viajeros
+      </span>
+    </div>
     <div class="hero-ctas">
         <a class="btn btn-primary" href="https://testexamencap.info">Empieza a practicar <span class="arrow">→</span></a>
       <a class="btn btn-ghost" href="#como-funciona">Ver cómo funciona</a>
@@ -572,25 +666,47 @@ footer .f-right { text-align: right; }
 
 <div class="band" aria-hidden="true">
   <div class="band-track" id="marquee">
-    <span>+2.100 PREGUNTAS REALES <i></i></span>
+    <span>CAP MERCANCÍAS <i></i></span>
+    <span>CAP VIAJEROS <i></i></span>
+    <span>+40.000 PREGUNTAS REALES <i></i></span>
     <span>MODO EXAMEN <i></i></span>
     <span>MODO AYUDA <i></i></span>
     <span>CORRECCIÓN AL INSTANTE <i></i></span>
     <span>ESTADÍSTICAS Y RANKING <i></i></span>
     <span>TEST DE ERRORES <i></i></span>
-    <span>21 CONVOCATORIAS <i></i></span>
   </div>
 </div>
+
+<section class="tracks-strip" aria-label="Modalidades del CAP">
+  <article class="track-card" data-reveal>
+    <div class="ico" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17V7h11v10"/><path d="M14 10h4l3 3v4h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+    </div>
+    <div>
+      <h3>CAP Mercancías</h3>
+      <p>Camión, carga y transporte de mercancías.</p>
+    </div>
+  </article>
+  <article class="track-card track-card--viajeros" data-reveal style="--d:.08s">
+    <div class="ico" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="10" rx="2"/><path d="M7 16v2"/><path d="M17 16v2"/><circle cx="7.5" cy="11" r="1"/><circle cx="12" cy="11" r="1"/><circle cx="16.5" cy="11" r="1"/></svg>
+    </div>
+    <div>
+      <h3>CAP Viajeros</h3>
+      <p>Autobús, autocar y transporte de pasajeros.</p>
+    </div>
+  </article>
+</section>
 
 <section class="section stats-wrap" id="cifras">
   <div class="stats">
     <div class="stat" data-reveal style="--d:0s">
-      <div class="num"><span data-count="2100">0</span>+</div>
+      <div class="num"><span data-count="40000">0</span>+</div>
       <div class="lbl">Preguntas reales</div>
     </div>
     <div class="stat" data-reveal style="--d:.06s">
-      <div class="num"><span data-count="21">0</span></div>
-      <div class="lbl">Convocatorias</div>
+      <div class="num"><span data-count="2">0</span></div>
+      <div class="lbl">Modalidades CAP</div>
     </div>
     <div class="stat" data-reveal style="--d:.12s">
       <div class="num"><span data-count="2">0</span></div>
@@ -607,7 +723,7 @@ footer .f-right { text-align: right; }
   <div class="section-head" data-reveal>
     <span class="kicker">Todo lo que necesitas</span>
     <h2>Diseñado para que apruebes, no para que repitas</h2>
-    <p>La plataforma reproduce el examen oficial y se adapta a tu forma de estudiar.</p>
+    <p>La plataforma reproduce el examen oficial de mercancías y de viajeros, y se adapta a tu forma de estudiar.</p>
   </div>
 
   <div class="features-grid">
@@ -655,8 +771,8 @@ footer .f-right { text-align: right; }
   <div class="steps">
     <div class="step" data-reveal style="--d:0s">
       <div class="n">01</div>
-      <h3>Elige tu convocatoria</h3>
-      <p>Exámenes oficiales por mes y comunidad autónoma. Siempre actualizados.</p>
+      <h3>Elige modalidad y convocatoria</h3>
+      <p>CAP mercancías o viajeros, por mes y comunidad autónoma. Siempre actualizados.</p>
     </div>
     <div class="step" data-reveal style="--d:.08s">
       <div class="n">02</div>
@@ -674,7 +790,7 @@ footer .f-right { text-align: right; }
 <section class="section" id="acceso">
   <div class="cta-panel" data-reveal>
     <h2>¿Listo para sacarte el CAP?</h2>
-    <p>Entra al Portal del Alumno y empieza hoy a practicar con exámenes reales.</p>
+    <p>Entra al Portal del Alumno y practica hoy con exámenes reales de mercancías y viajeros.</p>
     <div class="cta-actions">
       <a class="btn btn-primary" href="https://testexamencap.info">Entrar al Portal del Alumno <span class="arrow">→</span></a>
       <a class="btn btn-accent" href="#caracteristicas">Ver características</a>
@@ -686,7 +802,7 @@ footer .f-right { text-align: right; }
 <footer>
   <div class="f-brand">
     <span class="brand-mark">CAP</span>
-    <p><strong>Grupo CAP</strong> · Grupo Personal CAP<br />Preparación para el examen CAP de mercancías</p>
+    <p><strong>Grupo CAP</strong> · Grupo Personal CAP<br />Preparación para el examen CAP de mercancías y viajeros</p>
   </div>
   <p class="f-right">© <span id="year">2026</span> Grupo CAP. Todos los derechos reservados.</p>
 </footer>
