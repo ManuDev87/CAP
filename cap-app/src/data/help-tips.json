@@ -1,0 +1,1695 @@
+{
+  "tips": [
+    {
+      "text": "En el tacógrafo digital hay cuatro tarjetas: conductor, empresa, centro de ensayo (taller autorizado) y control (inspectores). No existe tarjeta de descarga, de visita ni de emergencia.",
+      "any": [
+        "tipos de tarjetas",
+        "tipos diferentes pueden ser las tarjetas"
+      ],
+      "answer": [
+        "centro de ensayo"
+      ]
+    },
+    {
+      "text": "Las tarjetas de conductor, empresa y control valen 5 años. La de centro de ensayo (taller) vale 1 año, porque se usa para instalar, calibrar y comprobar el aparato.",
+      "any": [
+        "per[ií]odo de validez",
+        "validez tienen las tarjetas"
+      ],
+      "answer": [
+        "cinco a[nñ]os",
+        "centro de ensayo que tiene uno"
+      ]
+    },
+    {
+      "text": "La tarjeta de centro de ensayo es la del taller autorizado: identifica al titular y sirve para probar, activar, calibrar y transferir datos del tacógrafo. No es la del conductor ni la de la empresa.",
+      "any": [
+        "probar, activar, calibrar",
+        "calibrar y activar",
+        "permite calibrar"
+      ],
+      "answer": [
+        "centro de ensayo"
+      ]
+    },
+    {
+      "text": "El tacógrafo digital se activa la primera vez que se inserta una tarjeta de centro de ensayo (en el taller homologado), no al darle corriente ni con la tarjeta de empresa.",
+      "any": [
+        "se activa autom[aá]ticamente"
+      ],
+      "answer": [
+        "centro de ensayo"
+      ]
+    },
+    {
+      "text": "El fondo rojo identifica la tarjeta de centro de ensayo (taller). Conductor: clara/blanca; empresa: amarilla; control: azul.",
+      "all": [
+        "rojo",
+        "tarjeta"
+      ],
+      "answer": [
+        "centro de ensayo"
+      ]
+    },
+    {
+      "text": "Da igual que trabaje para varias empresas o conduzca varios vehículos: el conductor tiene una sola tarjeta de conductor, personal e intransferible.",
+      "any": [
+        "cu[aá]ntas tarjetas de conductor"
+      ],
+      "answer": [
+        "^una\\.?$"
+      ]
+    },
+    {
+      "text": "En el tacógrafo analógico los datos van en la hoja de registro (disco-diagrama). Si hay dos conductores, cada uno usa su disco.",
+      "any": [
+        "hojas de registro",
+        "disco"
+      ],
+      "answer": [
+        "hojas de registro",
+        "su disco",
+        "cada conductor"
+      ]
+    },
+    {
+      "text": "El tacógrafo analógico lleva siempre indicador de velocidad (y de km). Es un dato visible en el frontal del aparato.",
+      "all": [
+        "indicador de velocidad",
+        "anal[oó]gico"
+      ]
+    },
+    {
+      "text": "Están obligados a tacógrafo, en general, los vehículos de mercancías de más de 3,5 t de MMA. Hay exenciones (reparto corto, puerto, etc.).",
+      "any": [
+        "obligados a utilizar tac[oó]grafo",
+        "uso de tac[oó]grafo"
+      ],
+      "answer": [
+        "3,5",
+        "exento"
+      ]
+    },
+    {
+      "text": "Un vehículo que solo mueve mercancía dentro del recinto de un puerto está exento de tacógrafo.",
+      "all": [
+        "puerto"
+      ],
+      "answer": [
+        "exento"
+      ]
+    },
+    {
+      "text": "A efectos de tiempos de conducción, la «semana» va de 00:00 del lunes a 24:00 del domingo.",
+      "any": [
+        "00:00 del lunes",
+        "24:00 del domingo"
+      ],
+      "answer": [
+        "semana"
+      ]
+    },
+    {
+      "text": "Sin una pausa, el máximo de conducción seguida es 4 h 30 min. Después, 45 minutos de pausa (o 15+30).",
+      "any": [
+        "sin hacer una interrupci[oó]n",
+        "4 horas y 30"
+      ],
+      "answer": [
+        "4 horas y 30",
+        "4 h"
+      ]
+    },
+    {
+      "text": "La conducción semanal máxima es 56 horas. Si ya lleva 50, le quedan 6 esa semana.",
+      "any": [
+        "50 horas de conducci[oó]n"
+      ],
+      "answer": [
+        "6 horas"
+      ]
+    },
+    {
+      "text": "El tacógrafo digital registra de forma automática la actividad del conductor (conducción, descanso, disponibilidad, otros trabajos).",
+      "any": [
+        "datos registra obligatoriamente un tac[oó]grafo digital"
+      ],
+      "answer": [
+        "actividad"
+      ]
+    },
+    {
+      "text": "La zona verde del cuentarrevoluciones es el régimen económico (menor consumo específico). Circular por encima de esa zona sube el consumo: el motor gira más alto de lo necesario.",
+      "any": [
+        "zona marcada.*verde",
+        "por encima de esa zona",
+        "revoluciones superior"
+      ],
+      "answer": [
+        "mayor consumo",
+        "aumenta"
+      ]
+    },
+    {
+      "text": "Para ahorrar carburante hay que mirar el cuentarrevoluciones y cambiar en la zona verde, con la marcha más larga posible.",
+      "any": [
+        "ahorrar carburante",
+        "observar el cuentarrevoluciones"
+      ],
+      "answer": [
+        "cuentarrevoluciones",
+        "zona.*verde"
+      ]
+    },
+    {
+      "text": "La aerodinámica influye mucho en el consumo: a más velocidad, más aire que desplazar. Deflectores bien regulados y lona/carga bien colocada bajan la resistencia.",
+      "any": [
+        "factor influye en el consumo",
+        "aerodin[aá]mica"
+      ],
+      "answer": [
+        "aerodin[aá]mica"
+      ]
+    },
+    {
+      "text": "La carga transportada aumenta la masa y las resistencias (rodadura, pendiente): por eso sube el consumo.",
+      "any": [
+        "factor influye en el consumo"
+      ],
+      "answer": [
+        "carga"
+      ]
+    },
+    {
+      "text": "El consumo a los 100 km depende del vehículo y del estilo de conducción (rpm, anticipación, velocidad), no solo del diseño del motor.",
+      "any": [
+        "recorrer 100 km",
+        "estilo de conducci[oó]n"
+      ],
+      "answer": [
+        "estilo de conducci[oó]n"
+      ]
+    },
+    {
+      "text": "En llano, acelerador poco pisado (poca carga de bomba) y marcha larga: menos consumo. Pisar a fondo en marcha corta gasta más.",
+      "any": [
+        "pedal del acelerador",
+        "poco presionado",
+        "poco pisado"
+      ]
+    },
+    {
+      "text": "Marchas cortas = más rpm para la misma velocidad = más consumo. Conviene la relación más larga que permita el par.",
+      "any": [
+        "aumenta con marchas cortas",
+        "relaci[oó]n de marchas m[aá]s alta"
+      ]
+    },
+    {
+      "text": "Reducir de marchas lo más tarde posible (sin calar) mantiene rpm bajas. Reducir pronto sube el régimen y el consumo.",
+      "any": [
+        "reducir de marchas lo m[aá]s pronto"
+      ],
+      "answer": [
+        "^no"
+      ]
+    },
+    {
+      "text": "Para gastar menos se circula en la zona de par alto (zona verde), no en la de potencia máxima: ahí el consumo se dispara.",
+      "any": [
+        "mayor par motor",
+        "potencia m[aá]xima"
+      ],
+      "answer": [
+        "par motor",
+        "consumos son muy elevados"
+      ]
+    },
+    {
+      "text": "El béndix es del motor de arranque: no interviene en el consumo de carburante en marcha.",
+      "any": [
+        "b[eé]ndix"
+      ]
+    },
+    {
+      "text": "El color de la carrocería no es una resistencia al avance ni un factor de consumo.",
+      "any": [
+        "color de la carrocer[ií]a"
+      ]
+    },
+    {
+      "text": "Ventanillas bajadas a velocidad de carretera empeoran la aerodinámica y suben el consumo. Mejor climatizador o ventanillas subidas.",
+      "any": [
+        "cristales de las ventanillas"
+      ]
+    },
+    {
+      "text": "El cambio automático suele gastar más que uno manual bien usado, porque el motor no siempre va en el régimen más económico.",
+      "any": [
+        "cajas de cambio autom[aá]tico"
+      ]
+    },
+    {
+      "text": "Duplicar la velocidad (p. ej. 40 a 80 km/h) más que duplica el consumo: la resistencia del aire crece con el cuadrado de la velocidad.",
+      "any": [
+        "40 kil[oó]metros",
+        "80 kil[oó]metros"
+      ]
+    },
+    {
+      "text": "Aceite de calidad reduce rozamientos internos del motor y puede bajar un poco el consumo.",
+      "any": [
+        "aceite de alta calidad"
+      ]
+    },
+    {
+      "text": "En frío, circular suave hasta que el motor coja temperatura: acelerones en frío gastan y desgastan.",
+      "any": [
+        "arrancar en fr[ií]o"
+      ]
+    },
+    {
+      "text": "La caja de velocidades hay que usarla para que el motor gire en zona económica (verde), no al límite de potencia.",
+      "any": [
+        "utilizaci[oó]n adecuada de la caja"
+      ],
+      "answer": [
+        "zona econ[oó]mica"
+      ]
+    },
+    {
+      "text": "Al cambiar de marcha en una rampa se pisa el embrague: un instante sin par en las ruedas. El camión pierde empuje y reduce velocidad. Esa pérdida depende de la inclinación y de la masa: a más rampa o más peso, más se nota.",
+      "any": [
+        "cambio durante la subida",
+        "cambio de marcha durante la subida",
+        "m[aá]s cambios realice",
+        "pierde potencia",
+        "p[eé]rdidas de potencia"
+      ]
+    },
+    {
+      "text": "Para reducir la resistencia a la pendiente conviene perder el menor tiempo posible sin tracción: menos cambios, marchas adecuadas, no embragar de más.",
+      "any": [
+        "reducir la resistencia a la pendiente"
+      ],
+      "answer": [
+        "n[uú]mero de cambios"
+      ]
+    },
+    {
+      "text": "La marcha adecuada depende sobre todo del perfil de la carretera (rampa, llano, bajada) y de la carga, no de un número fijo de marchas.",
+      "any": [
+        "relaci[oó]n correcta de la caja",
+        "perfil de la carretera"
+      ]
+    },
+    {
+      "text": "La caja de cambios transmite el par del motor hacia las ruedas y permite elegir la relación de marchas. En el temario se marca que conecta el motor con el sistema de transmisión (el embrague es quien acopla/desacopla).",
+      "any": [
+        "caja de cambios o caja de velocidades",
+        "caja de velocidades es el elemento"
+      ],
+      "answer": [
+        "conectar el motor"
+      ]
+    },
+    {
+      "text": "Las rpm del motor y las de las ruedas no son iguales: la caja de cambios (y el diferencial) multiplican o reducen el régimen.",
+      "any": [
+        "revoluciones del motor y de las ruedas"
+      ],
+      "answer": [
+        "^no"
+      ]
+    },
+    {
+      "text": "Un motor es elástico cuando da un par alto en un margen amplio de rpm: permite menos cambios y más holgura en rampa.",
+      "any": [
+        "motor es el[aá]stico"
+      ]
+    },
+    {
+      "text": "El par máximo es la mayor fuerza de giro que puede dar el motor (N·m), en un régimen medio; la potencia máxima (kW) llega a más rpm.",
+      "any": [
+        "par m[aá]ximo de un motor",
+        "par motor se mide"
+      ]
+    },
+    {
+      "text": "La potencia se expresa en kilovatios (kW); el par, en newton·metro (N·m).",
+      "any": [
+        "unidades se mide la potencia"
+      ],
+      "answer": [
+        "kilovatios",
+        "\\bkW\\b"
+      ]
+    },
+    {
+      "text": "Diésel de inyección directa: mejor rendimiento y menor consumo específico que uno de inyección indirecta.",
+      "any": [
+        "inyecci[oó]n directa"
+      ],
+      "answer": [
+        "menor consumo"
+      ]
+    },
+    {
+      "text": "La resistencia del aire siempre va en sentido contrario al movimiento y crece mucho con la velocidad. Deflectores y carga bien colocada la reducen.",
+      "any": [
+        "resistencia del aire",
+        "resistencia aerodin[aá]mica"
+      ]
+    },
+    {
+      "text": "Rozamiento o resistencia a la rodadura: la fuerza que se opone al avance por el contacto neumático-calzada. Sube con masa, baja presión y firme blando.",
+      "any": [
+        "resistencia por rozamiento",
+        "resistencia al rozamiento",
+        "grado de rozamiento"
+      ]
+    },
+    {
+      "text": "Si la fuerza motriz es menor que la suma de resistencias, el motor no puede mantener el movimiento y se cala.",
+      "any": [
+        "fuerza disponible.*inferior",
+        "el motor se calar"
+      ]
+    },
+    {
+      "text": "La fuerza motriz es la que el motor transmite a las ruedas para vencer las resistencias y mover el camión.",
+      "any": [
+        "fuerzas intervienen en el movimiento"
+      ],
+      "answer": [
+        "fuerza motriz"
+      ]
+    },
+    {
+      "text": "La gravedad (atracción terrestre) es la fuerza más evidente: actúa siempre y, en rampa, genera la resistencia a la pendiente.",
+      "any": [
+        "fuerza m[aá]s conocida",
+        "atracci[oó]n terrestre"
+      ]
+    },
+    {
+      "text": "Energía cinética: la que tiene el vehículo por estar en movimiento (½·m·v²). Depende de la masa y, al cuadrado, de la velocidad. Al frenar hay que disiparla.",
+      "any": [
+        "energ[ií]a que tiene un veh[ií]culo",
+        "energ[ií]a cin[eé]tica"
+      ],
+      "answer": [
+        "cin[eé]tica"
+      ]
+    },
+    {
+      "text": "Al frenar, parte de la masa que carga el eje trasero pasa al delantero: desplazamiento de masas. Por eso el eje de dirección se carga más al frenar.",
+      "any": [
+        "desplazamiento de masas",
+        "peso que soporta el eje trasero"
+      ]
+    },
+    {
+      "text": "Hay deslizamiento cuando la velocidad de giro de la rueda no coincide con la lineal del camión (bloqueo al frenar o patinazo al acelerar).",
+      "any": [
+        "deslizamiento",
+        "velocidad angular o de giro"
+      ]
+    },
+    {
+      "text": "Fuerzas son las acciones que cambian el reposo o el movimiento. Si la suma de fuerzas y pares no es cero, el camión acelera, frena o gira.",
+      "any": [
+        "modifican el estado de movimiento",
+        "suma de las fuerzas"
+      ]
+    },
+    {
+      "text": "Resistencia a la aceleración (inercia): al acelerar o frenar, la masa se resiste al cambio de velocidad.",
+      "any": [
+        "resistencia a la aceleraci[oó]n"
+      ]
+    },
+    {
+      "text": "Inercia dinámica del vehículo en movimiento: función de masa y velocidad.",
+      "any": [
+        "inercia din[aá]mica"
+      ]
+    },
+    {
+      "text": "Cabeceo: rotación sobre el eje transversal (morro arriba/abajo) al acelerar o frenar. Balanceo: sobre el longitudinal (se inclina a un lado).",
+      "any": [
+        "cabeceo"
+      ]
+    },
+    {
+      "text": "El ASR evita que las ruedas motrices patinen al acelerar (control de tracción). El ABS evita que se bloqueen al frenar.",
+      "any": [
+        "\\bASR\\b"
+      ]
+    },
+    {
+      "text": "El ABS es seguridad activa: ayuda a no perder el control antes del accidente (no bloquea las ruedas al frenar).",
+      "any": [
+        "\\bABS\\b",
+        "antiblock",
+        "antibloqueo"
+      ],
+      "answer": [
+        "activa",
+        "ABS"
+      ]
+    },
+    {
+      "text": "El fading es la pérdida de frenada por sobrecalentamiento del freno de servicio. El ralentizador (eléctrico, hidráulico, de motor) retiene en bajadas y evita el fading.",
+      "any": [
+        "fading",
+        "ralentizador el[eé]ctrico"
+      ]
+    },
+    {
+      "text": "En bajadas largas se usa el ralentizador (retárder) para no calentar el freno de servicio.",
+      "any": [
+        "bajar una fuerte pendiente"
+      ],
+      "answer": [
+        "ralentizador"
+      ]
+    },
+    {
+      "text": "Retárder = ralentizador hidrodinámico (aceite). Su potencia de frenado depende de la energía del aceite. Se usa de forma progresiva y es compatible con el ABS.",
+      "any": [
+        "ret[aá]rder",
+        "retardador hidr[aá]ulico",
+        "ralentizador del tipo"
+      ]
+    },
+    {
+      "text": "El freno-motor cierra en parte la salida de gases (válvula en el escape) y retiene. Para usarlo bien se elige una marcha más corta.",
+      "any": [
+        "v[aá]lvula que cierra parcialmente",
+        "freno en el motor",
+        "freno motor"
+      ]
+    },
+    {
+      "text": "Si el freno no evacua el calor, pierde eficacia o deja de frenar (fading). El de estacionamiento neumático no debe accionarse con los frenos muy calientes.",
+      "any": [
+        "incapaz de evacuar el calor",
+        "freno de estacionamiento"
+      ]
+    },
+    {
+      "text": "Estiba es colocar y sujetar la carga para que viaje segura, sin dañarse ni desestabilizar el vehículo. Lo pesado abajo y bien repartido; lo ligero arriba.",
+      "any": [
+        "qu[eé] es la estiba",
+        "buena estiba",
+        "incrementar la seguridad"
+      ],
+      "answer": [
+        "colocar la carga",
+        "m[aá]s pesadas",
+        "desperfectos"
+      ]
+    },
+    {
+      "text": "Carga útil = MMA − tara: lo que puede transportar el camión. El volumen útil es el espacio de la caja destinado a la mercancía.",
+      "any": [
+        "carga [uú]til",
+        "restar la TARA",
+        "volumen [uú]til"
+      ]
+    },
+    {
+      "text": "Sobrecargar un eje empeora el control de la velocidad, daña eje y neumáticos y, en el de dirección, hace la conducción pesada. También sobrecalienta neumáticos.",
+      "any": [
+        "sobrecarga del eje",
+        "sobrecarga del eje de direcci[oó]n",
+        "sobrecalentamiento de los neum[aá]ticos"
+      ]
+    },
+    {
+      "text": "El contenedor permite transbordar la mercancía sin ruptura de carga (sin abrir ni reestibar bulto a bulto).",
+      "any": [
+        "contenedor se caracteriza"
+      ]
+    },
+    {
+      "text": "Envase: recipiente que individualiza y protege la unidad de producto. Embalaje: medio que protege la mercancía para expedición o almacén.",
+      "any": [
+        "individualizar, dosificar",
+        "se puede describir el embalaje"
+      ]
+    },
+    {
+      "text": "Para rellenar huecos en la estiba no se usan comburentes (alimentan el fuego). Se usan materiales inertes, bolsas, maderas adecuadas, etc.",
+      "any": [
+        "rellenar los huecos"
+      ],
+      "answer": [
+        "comburentes"
+      ]
+    },
+    {
+      "text": "El ATP regula el transporte internacional de mercancías perecederas y los vehículos de temperatura controlada (isotermos, refrigerantes, frigoríficos, caloríficos). Una cisterna genérica no es una categoría ATP.",
+      "any": [
+        "\\bATP\\b",
+        "pereceder"
+      ]
+    },
+    {
+      "text": "Marcas ATP: letras. CRA = calorífico reforzado clase A. RNA = refrigerante normal clase A. RRA = refrigerante reforzado clase A.",
+      "any": [
+        "\\bCRA\\b",
+        "\\bRNA\\b",
+        "\\bRRA\\b",
+        "marca de identificaci[oó]n"
+      ]
+    },
+    {
+      "text": "MDLE: transporte público de mercancías con vehículos de MMA no superior a 3,5 t (ligeros). MDPE: más de 3,5 t. MPCE: privado complementario. OT: intermediación (operador/agencia).",
+      "any": [
+        "\\bMDLE\\b",
+        "\\bMDPE\\b",
+        "\\bMPCE\\b",
+        "clave OT"
+      ]
+    },
+    {
+      "text": "El arrendamiento de vehículos sin conductor para transporte público de mercancías no necesita autorización de transporte (el que hace el transporte sí, si procede).",
+      "any": [
+        "arrendamiento de veh[ií]culos sin conductor"
+      ],
+      "answer": [
+        "no la necesitar"
+      ]
+    },
+    {
+      "text": "Vehículos oficiales y transportes de carácter oficial suelen estar exentos de autorización de transporte.",
+      "any": [
+        "car[aá]cter oficial",
+        "veh[ií]culos oficiales"
+      ],
+      "answer": [
+        "exent"
+      ]
+    },
+    {
+      "text": "El privado complementario exige que la mercancía sea de la empresa y tenga origen o destino en un centro donde desarrolla su actividad principal. La autorización depende de la MMA. No exige capacidad financiera como el público.",
+      "any": [
+        "privado complementario"
+      ]
+    },
+    {
+      "text": "Las autorizaciones de transporte público de mercancías se otorgan a la empresa (no «al camión» suelto). Se pueden adscribir más vehículos si hay capacidad financiera bastante.",
+      "any": [
+        "autorizaci[oó]n de empresa",
+        "ampliar el n[uú]mero de veh[ií]culos"
+      ]
+    },
+    {
+      "text": "El operador logístico, para intermediar, necesita autorización de operador de transporte (clave OT).",
+      "any": [
+        "operador log[ií]stico"
+      ]
+    },
+    {
+      "text": "Transporte público hasta 2 t de MMA está exento de autorización administrativa de transporte.",
+      "any": [
+        "hasta 2 toneladas"
+      ]
+    },
+    {
+      "text": "Interiores e internacionales: clasificación por el ámbito geográfico. Públicos y privados: por la naturaleza (cuenta ajena o propia).",
+      "any": [
+        "seg[uú]n el [aá]mbito",
+        "en funci[oó]n de",
+        "su naturaleza"
+      ],
+      "answer": [
+        "interiores e internacionales",
+        "naturaleza"
+      ]
+    },
+    {
+      "text": "Es internacional el transporte cuyo itinerario pasa, aunque sea en parte, por un Estado extranjero (p. ej. Gerona–San Sebastián por Francia).",
+      "any": [
+        "transporte internacional"
+      ],
+      "answer": [
+        "estado extranjero",
+        "extranjero"
+      ]
+    },
+    {
+      "text": "Licencia comunitaria: documento UE que autoriza transporte internacional de mercancías entre Estados miembros. Validez hasta 10 años.",
+      "any": [
+        "licencia comunitaria"
+      ]
+    },
+    {
+      "text": "Autorización bilateral: acuerdo entre dos países. La de tránsito solo permite cruzar el país, no cargar/descargar en él. CEMT: multilateral entre estados CEMT.",
+      "any": [
+        "bilateral",
+        "\\bCEMT\\b"
+      ]
+    },
+    {
+      "text": "La atomización (muchas empresas muy pequeñas) dificulta formación, inversión y negociación: en el temario se ve como un problema.",
+      "any": [
+        "atomizaci[oó]n"
+      ]
+    },
+    {
+      "text": "Sociedad anónima: capital social mínimo 60.000 €. Junta ordinaria: en los 6 primeros meses, para aprobar cuentas.",
+      "any": [
+        "sociedad an[oó]nima",
+        "capital social"
+      ],
+      "answer": [
+        "60\\.000",
+        "60.000",
+        "junta ordinaria"
+      ]
+    },
+    {
+      "text": "En la SL los socios no responden personalmente de las deudas sociales (solo con lo aportado).",
+      "any": [
+        "sociedad de responsabilidad limitada",
+        "deudas sociales"
+      ]
+    },
+    {
+      "text": "Cooperativas: de primer y segundo grado. Primer grado: mínimo tres socios. Las de transportistas se inscriben en el Registro de Sociedades Cooperativas.",
+      "any": [
+        "cooperativ"
+      ]
+    },
+    {
+      "text": "Sociedades laborales: normalmente mínimo tres socios y más del 50 % del capital en manos de los trabajadores.",
+      "any": [
+        "sociedades laborales"
+      ]
+    },
+    {
+      "text": "Exportación: salida del territorio aduanero de la Unión de mercancías de la Unión. Ese es el régimen de exportación.",
+      "any": [
+        "exportaci[oó]n",
+        "r[eé]gimen aduanero"
+      ],
+      "answer": [
+        "salida del territorio",
+        "exportaci[oó]n"
+      ]
+    },
+    {
+      "text": "El Espacio Schengen es un territorio europeo sin controles fronterizos internos habituales entre Estados adheridos.",
+      "any": [
+        "espacio schengen",
+        "schengen"
+      ]
+    },
+    {
+      "text": "El certificado de origen acredita el país de origen de la mercancía en el tráfico internacional.",
+      "any": [
+        "certificados de origen"
+      ]
+    },
+    {
+      "text": "La declaración amistosa (parte europeo) sirve para tramitar el siniestro entre aseguradoras. La firman los conductores, se entrega a la compañía, puede llevar croquis y observaciones. No reduce el consumo ni garantiza más indemnización.",
+      "any": [
+        "declaraci[oó]n amistosa"
+      ]
+    },
+    {
+      "text": "Ante un incidente (avería, pinchazo): lo primero es que el vehículo no sea un obstáculo (apartarlo, señalizar). PAS: proteger, avisar, socorrer, en ese orden. No dar de comer ni beber a heridos.",
+      "any": [
+        "convierta en un obst[aá]culo",
+        "\\bPAS\\b",
+        "proteger, avisar",
+        "proteger, 2",
+        "alertar",
+        "segundo objetivo",
+        "dar comida"
+      ]
+    },
+    {
+      "text": "Niebla: atención a las marcas viales (eje y bordes). Lluvia: más peligro con las primeras gotas (película de grasa) y más distancia. Hielo: pérdida de adherencia, sobre todo en sombras y si un lado está seco y el otro no.",
+      "any": [
+        "niebla",
+        "primeras gotas",
+        "hielo",
+        "lloviendo",
+        "distancia de seguridad"
+      ]
+    },
+    {
+      "text": "En atasco o ciudad conviene anticipar acelerones y frenadas. No pegarse al de delante: no queda margen. En incorporaciones, cambiar en zona alta de par.",
+      "any": [
+        "congesti[oó]n",
+        "pegarse al veh[ií]culo",
+        "incorporaciones"
+      ]
+    },
+    {
+      "text": "Circunstancias de la vía (trazado, firme, clima, tráfico, señales) condicionan la actitud del conductor: el temario las da todas por relevantes.",
+      "any": [
+        "circunstancias de la v[ií]a"
+      ],
+      "answer": [
+        "todas las respuestas"
+      ]
+    },
+    {
+      "text": "El ruido continuo no es «bueno»: el puesto de trabajo debe tener condiciones adecuadas de espacio, luz y ruido. El silencio no es un riesgo.",
+      "any": [
+        "siempre haya ruido"
+      ]
+    },
+    {
+      "text": "Sin EPI (gafas, guantes, botas) el accidente más típico en taller/carga son golpes con herramientas y objetos. Riesgos fuertes: carga/descarga y mantenimiento.",
+      "any": [
+        "elementos de protecci[oó]n",
+        "principales riesgos asociados"
+      ]
+    },
+    {
+      "text": "La prevención obliga al empresario y al trabajador. La manipulación manual de carga hay que evitarla en lo posible. Enfermedad profesional: la incluida en el cuadro oficial.",
+      "any": [
+        "prevenci[oó]n de riesgos",
+        "manipulaci[oó]n manual",
+        "enfermedad profesional"
+      ]
+    },
+    {
+      "text": "Falta de sueño: nerviosismo y agresividad, peor control. Un adulto suele necesitar 7–9 h. Parar cada 2 h o 200 km; salir del vehículo. Cansancio: cambios de postura, trayectos desconocidos, nocturnos.",
+      "any": [
+        "falta de sue[nñ]o",
+        "sue[nñ]o diario",
+        "cansancio",
+        "cada dos horas",
+        "200 km"
+      ]
+    },
+    {
+      "text": "Encender un cigarrillo, el móvil o el alcohol restan atención (factor interno). La cocaína hace minusvalorar riesgos; la morfina da somnolencia; el café en exceso, ansiedad.",
+      "any": [
+        "cigarrillo",
+        "coca[ií]na",
+        "morfina",
+        "caf[eé]",
+        "f[aá]rmacos"
+      ]
+    },
+    {
+      "text": "Arena seca sobre el fuego: sofocación (quita el oxígeno). Enfriar es bajar la temperatura del combustible. Cada clase de fuego tiene su agente.",
+      "any": [
+        "arena seca",
+        "enfriamiento",
+        "sofocaci[oó]n"
+      ]
+    },
+    {
+      "text": "El seguro obligatorio cubre daños a terceros. En bienes, el límite típico que pregunta el test es 15 millones de euros por siniestro. No cubre ciertos daños materiales propios o del causante.",
+      "any": [
+        "seguro obligatorio",
+        "15 millones"
+      ]
+    },
+    {
+      "text": "Tomador: quien suscribe la póliza y paga las primas. Siniestro: el suceso que causa los daños cubiertos.",
+      "any": [
+        "tomador",
+        "siniestro"
+      ],
+      "answer": [
+        "tomador",
+        "siniestro"
+      ]
+    },
+    {
+      "text": "Ante la Junta Arbitral del Transporte no hace falta abogado ni procurador. Resuelve controversias mercantiles de contratos de transporte.",
+      "any": [
+        "juntas? arbitral"
+      ]
+    },
+    {
+      "text": "Si inmovilizan el vehículo, la custodia es responsabilidad del transportista. Contrabando: legislación de contrabando, no «solo» tráfico.",
+      "any": [
+        "custodia del veh[ií]culo",
+        "contrabando"
+      ]
+    },
+    {
+      "text": "Infracciones de extranjería: sanción típica de multa. Medidas contra tráfico de personas/contrabando: no llevar extraños, revisar carga, denunciar; el test suele marcar que todas las cautelas valen.",
+      "any": [
+        "extranjer[ií]a",
+        "tr[aá]fico de personas"
+      ]
+    },
+    {
+      "text": "El CAP se mantiene con formación continua de 35 horas (cursos posteriores a la inicial). Hay formación inicial y continua.",
+      "any": [
+        "35 horas",
+        "formaci[oó]n inicial y continua"
+      ]
+    },
+    {
+      "text": "Tiempo de presencia: estar a disposición de la empresa sin trabajo efectivo de conducción. Tiempo diario de conducción: lo acumulado entre dos descansos diarios.",
+      "any": [
+        "tiempo de presencia",
+        "tiempo diario de conducci[oó]n"
+      ]
+    },
+    {
+      "text": "El administrativo hace contabilidad y nóminas. El conductor, además de conducir, vigila el vehículo. En empresas pequeñas el empresario a menudo conduce.",
+      "any": [
+        "administrativo",
+        "funciones propias de un conductor",
+        "empresas peque[nñ]as"
+      ]
+    },
+    {
+      "text": "Una buena gestión comercial no disminuye ingresos: busca lo contrario (menos vacíos, más ocupación).",
+      "any": [
+        "gesti[oó]n comercial disminuye"
+      ]
+    },
+    {
+      "text": "SIT de túneles: gestión integral (ventilación, incendios, tráfico, comunicaciones). El test marca que pueden tener todas esas funciones.",
+      "any": [
+        "\\bSIT\\b",
+        "t[uú]neles"
+      ],
+      "answer": [
+        "todas las respuestas"
+      ]
+    },
+    {
+      "text": "Transporte sucesivo: un solo contrato con el cargador y varios porteadores uno detrás de otro.",
+      "any": [
+        "transporte:\\s*sucesivo",
+        "varios porteadores"
+      ],
+      "answer": [
+        "sucesivo"
+      ]
+    },
+    {
+      "text": "Pinzas en el cinturón: nunca, restan eficacia. El cinturón va abrochado, regulado y sin holgura. Brazos ligeramente flexionados al volante.",
+      "any": [
+        "pinzas",
+        "cintur[oó]n de seguridad",
+        "brazos no han de estar"
+      ]
+    },
+    {
+      "text": "Viento fuerte: marcha más corta para tener más par y control. Carga en caja abierta lo más centrada para no empeorar el aire.",
+      "any": [
+        "viento fuerte",
+        "caja abierta"
+      ]
+    },
+    {
+      "text": "La carretera es el modo que más empleo genera y el más relevante para mercancías en España.",
+      "any": [
+        "genera m[aá]s empleo",
+        "m[aá]s relevante en Espa[nñ]a"
+      ]
+    },
+    {
+      "text": "Ergonomía: adaptar el trabajo a la persona (postura, mandos al alcance, zona lumbar apoyada) para quitar riesgos físicos.",
+      "any": [
+        "ergon[oó]m"
+      ]
+    },
+    {
+      "text": "Subviraje: el camión «no entra» (trayectoria más abierta); el volante pesa menos de lo normal. Sobreviraje: se va de tren trasero (más cerrada).",
+      "any": [
+        "se nota el subviraje",
+        "subviraje"
+      ]
+    },
+    {
+      "text": "Presión del neumático: la que indica el fabricante. De más: desgaste al centro. Correcta: menos consumo y mejor estabilidad. La deriva también depende de la presión.",
+      "any": [
+        "presi[oó]n de inflado",
+        "presi[oó]n del neum[aá]tico"
+      ]
+    },
+    {
+      "text": "Alcohol en sangre: no hay truco casero fiable para bajarlo rápido (café, ducha, chicle). El test marca que esas recetas no valen.",
+      "any": [
+        "disminuir el nivel de alcohol"
+      ],
+      "answer": [
+        "incorrectas"
+      ]
+    },
+    {
+      "text": "Delito contra la seguridad vial: conducir bajo drogas (u otras conductas graves del Código Penal), no un simple defecto administrativo.",
+      "any": [
+        "delito contra la seguridad vial"
+      ]
+    },
+    {
+      "text": "Animales con y sin cuernos se transportan separados (Reglamento CE 1/2005).",
+      "any": [
+        "animales se manipular[aá]n"
+      ]
+    },
+    {
+      "text": "El CMR es el convenio del contrato de transporte internacional de mercancías por carretera. Si el porteador alega una exención, la prueba es suya.",
+      "any": [
+        "convenio CMR",
+        "\\bCMR\\b"
+      ]
+    },
+    {
+      "text": "Aprovechar la inercia (p. ej. dejar de acelerar al ver el rojo) ahorra carburante si se anticipa. No es «ir a tope y frenar al final».",
+      "any": [
+        "sem[aá]foro que se encuentra en rojo",
+        "aprovecha la inercia"
+      ]
+    },
+    {
+      "text": "En el temario, saltar marchas al reducir (p. ej. 8ª a 6ª) puede ser correcto según pendiente y rpm.",
+      "any": [
+        "saltar de marchas"
+      ]
+    },
+    {
+      "text": "Mandos del vehículo: donde el conductor los alcance con seguridad, no «en cualquier sitio» sin más; el test admite cualquier sitio accesible.",
+      "any": [
+        "mandos del veh[ií]culo"
+      ],
+      "answer": [
+        "accesible"
+      ]
+    },
+    {
+      "text": "El conductor profesional vive de conducir. No necesita saber el uso final de la mercancía para hacer el viaje.",
+      "any": [
+        "conductor profesional",
+        "uso que se va a dar"
+      ]
+    },
+    {
+      "text": "Al caer carga a la calzada: apartar, señalizar y, si se puede, retirar o apartar lo derramado.",
+      "any": [
+        "ca[ií]da de la carga"
+      ]
+    },
+    {
+      "text": "Instalaciones y vehículos: conservación y limpieza (calidad que percibe el cliente, también el trato del conductor).",
+      "any": [
+        "conservaci[oó]n y limpieza",
+        "trato que recibe"
+      ]
+    },
+    {
+      "text": "Lo pesado abajo y lo ligero arriba baja el centro de gravedad y reduce el riesgo de vuelco.",
+      "any": [
+        "m[aá]s pesadas de la carga debajo",
+        "partes m[aá]s pesadas"
+      ],
+      "answer": [
+        "vuelco",
+        "s[ií]"
+      ]
+    },
+    {
+      "text": "Medidas básicas de conducción segura: respetar las normas, adaptar la velocidad al tráfico y dejar margen. Sin normas no hay margen de reacción.",
+      "any": [
+        "medidas preventivas b[aá]sicas",
+        "maniobras con seguridad"
+      ],
+      "answer": [
+        "normas de circulaci[oó]n",
+        "adaptar la velocidad"
+      ]
+    },
+    {
+      "text": "Marcha alta y pocas rpm: el motor trabaja en zona económica y baja el consumo. Sí, es una de las claves de la conducción eficiente.",
+      "any": [
+        "relaci[oó]n de marchas alta",
+        "reducci[oó]n de las revoluciones"
+      ],
+      "answer": [
+        "^s[ií]"
+      ]
+    },
+    {
+      "text": "Descargas eléctricas en transporte: cables, taller, humedad, operaciones de mantenimiento. El temario las contempla todas como posibles orígenes.",
+      "any": [
+        "descargas el[eé]ctricas"
+      ]
+    },
+    {
+      "text": "La fatiga sube con la conducción nocturna, los trayectos poco conocidos, las horas de sueño de menos y la monotonía.",
+      "any": [
+        "fatiga",
+        "factor puede producir fatiga"
+      ],
+      "answer": [
+        "nocturna",
+        "poco conocidos"
+      ]
+    },
+    {
+      "text": "A más velocidad, más turbulencias y más resistencia del aire (crece con el cuadrado de la velocidad): el consumo se dispara.",
+      "any": [
+        "aumenta la velocidad",
+        "turbulencias"
+      ],
+      "answer": [
+        "turbulencias",
+        "m[aá]s cantidad de aire"
+      ]
+    },
+    {
+      "text": "Cabina: visibilidad, climatización, asiento regulable, mandos al alcance. El test suele dar por válidas todas esas condiciones.",
+      "any": [
+        "cabina de conducci[oó]n"
+      ],
+      "answer": [
+        "todas las respuestas"
+      ]
+    },
+    {
+      "text": "Un incidente es un imprevisto que altera el viaje sin ser necesariamente un accidente grave: pinchazo, reventón, avería.",
+      "any": [
+        "pinchazo o revent[oó]n",
+        "considerarse como un incidente"
+      ]
+    },
+    {
+      "text": "Cargas estables, fáciles de agarrar y que no se desequilibran alivian el riesgo. Las difíciles de sujetar lo agravan.",
+      "any": [
+        "riesgos asociados a su manipulaci[oó]n"
+      ]
+    },
+    {
+      "text": "Aprovechar la inercia: anticipar, no acelerar para frenar enseguida, usar el freno motor. El temario da por buenas esas prácticas a la vez.",
+      "any": [
+        "aprovechar mejor la inercia"
+      ],
+      "answer": [
+        "todas las respuestas"
+      ]
+    },
+    {
+      "text": "El estilo de conducción (rpm, anticipación, velocidad, cambios) cambia el consumo tanto o más que el propio vehículo.",
+      "any": [
+        "estilo de conducci[oó]n"
+      ],
+      "answer": [
+        "^s[ií]"
+      ]
+    },
+    {
+      "text": "En un accidente laboral de transporte casi nunca hay una sola causa: coinciden vehículo, vía, carga y persona.",
+      "any": [
+        "accidentes laborales"
+      ],
+      "answer": [
+        "varias causas"
+      ]
+    },
+    {
+      "text": "Menor consumo específico: diésel de inyección directa, luego diésel indirecta, luego gasolina (peor rendimiento).",
+      "any": [
+        "menor a mayor consumo espec[ií]fico",
+        "consumo espec[ií]fico"
+      ],
+      "answer": [
+        "inyecci[oó]n directa"
+      ]
+    },
+    {
+      "text": "Tras cruzar un charco o zona inundada hay que comprobar los frenos: el agua baja la eficacia hasta que se secan.",
+      "any": [
+        "zona inundada",
+        "zonas inundadas"
+      ]
+    },
+    {
+      "text": "El EDS (diferencial electrónico) trabaja con los frenos para que no patine una rueda motriz: es seguridad activa, ligada al ABS/ASR.",
+      "any": [
+        "\\bEDS\\b"
+      ]
+    },
+    {
+      "text": "Tormenta eléctrica: detenerse, motor parado, lejos de árboles y vías del tren; el vehículo cerrado aísla mejor que estar fuera.",
+      "any": [
+        "tormenta",
+        "aparato el[eé]ctrico"
+      ]
+    },
+    {
+      "text": "Mercancías a temperatura regulada para consumo humano (ATP y normas sanitarias) tienen regulación especial, no van como carga seca genérica.",
+      "any": [
+        "temperatura regulada"
+      ]
+    },
+    {
+      "text": "Acuerdo multilateral: más de dos países pactan autorizaciones y condiciones (p. ej. CEMT). El bilateral es solo entre dos.",
+      "any": [
+        "acuerdo multilateral"
+      ]
+    },
+    {
+      "text": "El alcohol resta atención y aumenta el tiempo de reacción: es un factor interno de distracción.",
+      "any": [
+        "p[eé]rdida de atenci[oó]n"
+      ],
+      "answer": [
+        "alcohol"
+      ]
+    },
+    {
+      "text": "La gripe A no está en el cuadro de enfermedades profesionales del transporte. Sí lo están, en su caso, las ligadas a vibraciones, sordera, etc.",
+      "any": [
+        "enfermedades profesionales"
+      ],
+      "answer": [
+        "gripe"
+      ]
+    },
+    {
+      "text": "El consumo de carburante sube con marchas cortas, rpm altas, mala aerodinámica, sobrecarga y velocidad. Bajar rpm y alargar marcha ahorra.",
+      "any": [
+        "consumo de carburante",
+        "consumo de combustible",
+        "ahorrar carburante",
+        "menos combustible"
+      ]
+    },
+    {
+      "text": "La caja manual, bien usada (zona verde, marcha larga), suele gastar menos que el automático.",
+      "any": [
+        "caja de cambio"
+      ],
+      "answer": [
+        "manual"
+      ]
+    },
+    {
+      "text": "Jaula: vehículo para animales vivos. No es para granel ni para ADR.",
+      "any": [
+        "veh[ií]culo jaula",
+        "jaula es el normalmente"
+      ]
+    },
+    {
+      "text": "El transporte privado particular (no complementario) está exento de autorización de transporte.",
+      "any": [
+        "privado particular"
+      ],
+      "answer": [
+        "exent"
+      ]
+    },
+    {
+      "text": "Pares de viraje: tienden a girar el camión alrededor del eje vertical (guiñada).",
+      "any": [
+        "pares de viraje",
+        "eje geom[eé]trico vertical"
+      ]
+    },
+    {
+      "text": "Transportes liberalizados: internacionales que no exigen autorización especial (algunos de ayuda urgente, etc.).",
+      "any": [
+        "transportes liberaliz"
+      ]
+    },
+    {
+      "text": "Tras vacaciones el conductor no tiene que llevar un documento extra de «vacaciones»; lleva la documentación habitual del vehículo y del conductor.",
+      "any": [
+        "per[ií]odo de vacaciones"
+      ]
+    },
+    {
+      "text": "EPI de pies: calzado de seguridad (y cubrecalzado contra el frío si procede). De cabeza: casco contra impactos.",
+      "any": [
+        "protecci[oó]n individual de pies",
+        "protecci[oó]n individual de la cabeza"
+      ]
+    },
+    {
+      "text": "La falta de uniforme no inmoviliza el vehículo en una inspección de transporte. Tampoco se lleva al conductor al juez por eso.",
+      "any": [
+        "inmovilizaci[oó]n de un veh[ií]culo"
+      ]
+    },
+    {
+      "text": "Mercancía no comunitaria despachada a libre práctica adquiere el estatuto de mercancía de la Unión.",
+      "any": [
+        "estatuto aduanero",
+        "despachadas a"
+      ]
+    },
+    {
+      "text": "Cualquier meteorología adversa (lluvia, nieve, hielo) baja la adherencia del neumático.",
+      "any": [
+        "meteorolog[ií]a adversa"
+      ]
+    },
+    {
+      "text": "Sensores de ultrasonidos (y similares) avisan de otros usuarios: refuerzan la seguridad activa.",
+      "any": [
+        "sensores de ultrasonidos"
+      ]
+    },
+    {
+      "text": "Para no invadir el espacio de detrás: frenar con tiempo y progresivo, no de golpe.",
+      "any": [
+        "espacio posterior"
+      ]
+    },
+    {
+      "text": "Fiabilidad del transporte: cumplir lo prometido (plazo, integridad, condiciones). Un sector potente y fiable ayuda a retener actividad económica.",
+      "any": [
+        "fiabilidad de un transporte",
+        "sector de transporte potente"
+      ]
+    },
+    {
+      "text": "Si no hay pulso: masaje cardíaco (RCP) junto con ventilación; no solo «esperar». El temario asocia la RCP a esas maniobras.",
+      "any": [
+        "no tiene pulso",
+        "masaje card"
+      ]
+    },
+    {
+      "text": "Bajar del vehículo sin mirar es un riesgo grave para peatones/ocupantes: atropello.",
+      "any": [
+        "riesgo de los peatones",
+        "abandonar el veh[ií]culo"
+      ]
+    },
+    {
+      "text": "Sentado: lumbar contra el respaldo y pies bien apoyados en el suelo (ergonomía básica).",
+      "any": [
+        "trabajar sentado"
+      ]
+    },
+    {
+      "text": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos, no como meros representantes.",
+      "any": [
+        "agencias? de transporte",
+        "almacenistas?-distribuidores",
+        "transitari"
+      ],
+      "answer": [
+        "nombre propio"
+      ]
+    },
+    {
+      "text": "El transitario organiza por cuenta ajena transportes internacionales: contrata en nombre propio, hace trámites aduaneros y coordina transbordos. No es «interregional» ni un aduanero.",
+      "any": [
+        "transitari"
+      ],
+      "answer": [
+        "internacionales",
+        "aduaneros",
+        "interregionales"
+      ]
+    },
+    {
+      "text": "El visado es la comprobación periódica de la Administración de que el titular sigue cumpliendo los requisitos de la autorización. No es la ITV.",
+      "all": [
+        "visado"
+      ]
+    },
+    {
+      "text": "Por cuenta ajena (público) se presta el servicio a terceros a cambio de precio. Por cuenta propia se mueve mercancía de la propia empresa.",
+      "all": [
+        "cuenta ajena"
+      ],
+      "answer": [
+        "terceros",
+        "p[uú]blico"
+      ]
+    },
+    {
+      "text": "TEU: contenedor de 20 pies. Uno de 40 pies son 2 TEU.",
+      "any": [
+        "\\bTEU\\b"
+      ],
+      "answer": [
+        "20 pies"
+      ]
+    },
+    {
+      "text": "Tras 4 h 30 min de conducción, pausa de 45 min (o 15+30 intercalados).",
+      "all": [
+        "pausa",
+        "45"
+      ]
+    },
+    {
+      "text": "Descanso diario normal: 11 h consecutivas (reducible a 9 h, máximo tres veces entre dos semanales).",
+      "any": [
+        "descanso diari"
+      ]
+    },
+    {
+      "text": "En dos semanas: dos descansos semanales normales (45 h) o uno normal y uno reducido de al menos 24 h, compensando.",
+      "any": [
+        "descanso semanal"
+      ]
+    },
+    {
+      "text": "Conducción diaria máxima: 9 h, ampliables a 10 h como máximo dos veces por semana.",
+      "any": [
+        "conducci[oó]n diari"
+      ]
+    },
+    {
+      "text": "La tarjeta de tacógrafo identifica al conductor ante el aparato. Nunca sustituye al permiso de conducir.",
+      "any": [
+        "tac[oó]grafo"
+      ],
+      "answer": [
+        "no, nunca",
+        "no sustituye"
+      ]
+    },
+    {
+      "text": "Cuanto más alto el centro de gravedad, menos estable el camión y más riesgo de vuelco.",
+      "any": [
+        "centro de gravedad"
+      ]
+    },
+    {
+      "text": "Sobrevirar: trayectoria más cerrada que la del volante (se va de atrás). Subvirar: más abierta (se va de morro).",
+      "any": [
+        "sobrevir",
+        "subvir"
+      ]
+    },
+    {
+      "text": "Alcoholemia: alcohol en sangre (g/l) o en aire espirado, no la graduación de la copa.",
+      "any": [
+        "alcoholemia"
+      ]
+    },
+    {
+      "text": "El reposacabezas limita el latigazo cervical: a la altura de la cabeza.",
+      "any": [
+        "reposacabezas"
+      ]
+    },
+    {
+      "text": "Accidente in itinere: de casa al trabajo o vuelta, en el trayecto habitual.",
+      "any": [
+        "in itinere"
+      ]
+    },
+    {
+      "text": "ADR: mercancías peligrosas. Un vertido en la carga lo gestiona, en principio, el cargador.",
+      "any": [
+        "\\bADR\\b",
+        "mercanc[ií]as peligrosas"
+      ]
+    },
+    {
+      "text": "Cabotaje: transporte interior en un país distinto del de establecimiento del transportista, con los límites UE.",
+      "any": [
+        "cabotaje"
+      ]
+    },
+    {
+      "text": "Ferroutage: camión o semirremolque sobre un tren (carretera-ferrocarril).",
+      "any": [
+        "ferroutage",
+        "ferroutaje"
+      ]
+    },
+    {
+      "text": "Rompeolas de cisterna: cortan el oleaje del líquido para no desestabilizar al frenar o en curva.",
+      "any": [
+        "rompeolas"
+      ]
+    },
+    {
+      "text": "Vehículo batería: conjunto de botellas o pequeñas cisternas unidas por un colector.",
+      "any": [
+        "veh[ií]culo bater[ií]a"
+      ]
+    },
+    {
+      "text": "Luxación: el hueso sale de la articulación. No se «mete» en carretera: inmovilizar y esperar sanitarios.",
+      "any": [
+        "luxaci[oó]n"
+      ]
+    },
+    {
+      "text": "El seguro obligatorio cubre a terceros, no el propio vehículo del causante (eso iría en el voluntario).",
+      "any": [
+        "responsabilidad civil"
+      ]
+    },
+    {
+      "text": "CAP: cualificación del conductor. No hace falta tener ya el permiso para la inicial. Exclusiones (FF.AA., etc.). Faltar a un 5 % o más de horas excluye del curso.",
+      "any": [
+        "\\bCAP\\b",
+        "cualificaci[oó]n inicial"
+      ],
+      "answer": [
+        "no es necesario",
+        "fuerzas armadas",
+        "5 por"
+      ]
+    },
+    {
+      "text": "Fuego: agente según clase (A sólidos, B líquidos, C gases, D metales). El agua no va a metales. La luz de emergencia señaliza, no apaga.",
+      "any": [
+        "extintor",
+        "fuego de clase",
+        "incendio"
+      ]
+    },
+    {
+      "text": "Jefe de tráfico: rutas, turnos, vehículos y cumplimiento normativo. El comercial capta clientes; administración, nóminas y facturas.",
+      "any": [
+        "jefe de tr[aá]fico",
+        "funciones propias de un comercial"
+      ]
+    },
+    {
+      "text": "Deriva del neumático: el flanco se deforma y el camión no sigue exactamente la dirección de la rueda. Influyen carga, velocidad, presión y llanta.",
+      "any": [
+        "deriva del neum[aá]tico"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "text": "La tarjeta de centro de ensayo es la del taller autorizado del tacógrafo: instala, activa, calibra y comprueba el aparato. Fondo rojo y validez de 1 año; conductor, empresa y control duran 5 años.",
+      "any": [
+        "centro de ensayo"
+      ]
+    },
+    {
+      "text": "MDPE: autorización de transporte público de mercancías con vehículos de MMA > 3,5 t. MPCE es privado complementario; MDLE, públicos ligeros (≤ 3,5 t).",
+      "any": [
+        "\\bMDPE\\b"
+      ]
+    },
+    {
+      "text": "MPCE: clave del transporte privado complementario de mercancías (cuenta propia de quien no tiene el transporte como actividad principal).",
+      "any": [
+        "\\bMPCE\\b"
+      ]
+    },
+    {
+      "text": "OT: autorización de intermediación (agencias, operadores de transporte, transitarios según el caso).",
+      "any": [
+        "\\bOT\\b",
+        "operador de transporte"
+      ]
+    },
+    {
+      "text": "El visado comprueba cada cierto tiempo que se siguen cumpliendo los requisitos de la autorización de transporte.",
+      "any": [
+        "visado"
+      ]
+    },
+    {
+      "text": "TEU: unidad equivalente a un contenedor de 20 pies.",
+      "any": [
+        "\\bTEU\\b"
+      ]
+    },
+    {
+      "text": "Fading: los frenos de servicio pierden eficacia al calentarse. Se evita usando el ralentizador en bajadas largas.",
+      "any": [
+        "fading"
+      ]
+    },
+    {
+      "text": "PAS: proteger, avisar, socorrer. Ese es el orden ante un accidente.",
+      "any": [
+        "\\bPAS\\b"
+      ]
+    },
+    {
+      "text": "ATP: acuerdo de mercancías perecederas y vehículos de temperatura controlada (isotermo, refrigerante, frigorífico, calorífico).",
+      "any": [
+        "\\bATP\\b"
+      ]
+    },
+    {
+      "text": "ADR: acuerdo europeo de mercancías peligrosas (bultos, vehículo, documentos, formación).",
+      "any": [
+        "\\bADR\\b"
+      ]
+    },
+    {
+      "text": "CMR: contrato de transporte internacional de mercancías por carretera (carta de porte y responsabilidad del porteador).",
+      "any": [
+        "\\bCMR\\b"
+      ]
+    },
+    {
+      "text": "Licencia comunitaria: título UE para transporte internacional de mercancías entre Estados miembros.",
+      "any": [
+        "licencia comunitaria"
+      ]
+    },
+    {
+      "text": "Schengen: espacio sin controles fronterizos internos habituales entre los Estados que forman parte.",
+      "any": [
+        "schengen"
+      ]
+    },
+    {
+      "text": "Tara: masa del vehículo vacío. MMA: masa máxima autorizada. Carga útil: MMA menos tara.",
+      "any": [
+        "\\btara\\b",
+        "carga [uú]til",
+        "\\bMMA\\b"
+      ]
+    },
+    {
+      "text": "Retárder: ralentizador hidráulico (aceite) que retiene el vehículo sin gastar tanto el freno de servicio.",
+      "any": [
+        "ret[aá]rder",
+        "retardador"
+      ]
+    },
+    {
+      "text": "ABS: antibloqueo de frenos (seguridad activa). ASR: antipatinaje / control de tracción al acelerar.",
+      "any": [
+        "\\bABS\\b",
+        "\\bASR\\b"
+      ]
+    },
+    {
+      "text": "Cabotaje: transportes interiores en un país donde el transportista no está establecido.",
+      "any": [
+        "cabotaje"
+      ]
+    },
+    {
+      "text": "Transitario: organiza transportes internacionales por cuenta ajena, con aduana y transbordos, contratando en nombre propio.",
+      "any": [
+        "transitari"
+      ]
+    },
+    {
+      "text": "Alcoholemia: concentración de alcohol en sangre o en aire espirado.",
+      "any": [
+        "alcoholemia"
+      ]
+    },
+    {
+      "text": "Energía cinética: ½·m·v², la del vehículo en movimiento. Más masa o más velocidad (al cuadrado), más energía al frenar.",
+      "any": [
+        "energ[ií]a cin[eé]tica"
+      ]
+    },
+    {
+      "text": "Estiba: colocar y trincar la carga para que no se mueva y el vehículo siga estable.",
+      "any": [
+        "estiba"
+      ]
+    },
+    {
+      "text": "Junta Arbitral del Transporte: resuelve reclamaciones mercantiles de transporte; no exige abogado.",
+      "any": [
+        "juntas? arbitral"
+      ]
+    },
+    {
+      "text": "Tiempo de presencia: el conductor está a disposición de la empresa pero no conduce ni hace otro trabajo efectivo.",
+      "any": [
+        "tiempo de presencia"
+      ]
+    },
+    {
+      "text": "Formación CAP continua: 35 horas periódicas para mantener el certificado.",
+      "any": [
+        "formaci[oó]n continua",
+        "35 horas"
+      ]
+    },
+    {
+      "text": "Sociedad anónima: capital mínimo 60.000 euros. Junta ordinaria: aprobación de cuentas en los seis primeros meses.",
+      "any": [
+        "sociedad an[oó]nima"
+      ]
+    },
+    {
+      "text": "Cooperativa de primer grado: mínimo tres socios. Registro de Sociedades Cooperativas.",
+      "any": [
+        "cooperativ"
+      ]
+    },
+    {
+      "text": "Exportación aduanera: la mercancía de la Unión sale del territorio aduanero de la UE.",
+      "any": [
+        "exportaci[oó]n"
+      ]
+    },
+    {
+      "text": "Declaración amistosa: parte europeo del accidente, firmado por los conductores, para las aseguradoras. No cambia el consumo ni «aumenta» la indemnización por sí sola.",
+      "any": [
+        "declaraci[oó]n amistosa"
+      ]
+    },
+    {
+      "text": "Zona verde del cuentarrevoluciones: régimen de menor consumo. Por encima, el motor gasta más.",
+      "any": [
+        "zona.*verde",
+        "cuentarrevoluciones"
+      ]
+    },
+    {
+      "text": "Caja de cambios: elige la relación de transmisión entre motor y ruedas según pendiente y carga.",
+      "any": [
+        "caja de (cambios|velocidades)"
+      ]
+    },
+    {
+      "text": "Ralentizador: sistema de retención (eléctrico, hidráulico o de motor) para bajadas, ahorrando el freno de servicio.",
+      "any": [
+        "ralentizador"
+      ]
+    },
+    {
+      "text": "Centro de gravedad alto o carga mal repartida: más vuelco y peor frenada. Pesado abajo, ligero arriba.",
+      "any": [
+        "centro de gravedad",
+        "distribuci[oó]n de la carga"
+      ]
+    },
+    {
+      "text": "Tacógrafo: aparato que registra tiempos de conducción y actividad. Analógico en disco; digital en memoria y tarjeta.",
+      "any": [
+        "tac[oó]grafo"
+      ]
+    }
+  ]
+}
