@@ -205,3 +205,18 @@ export const IconSpinner = (p: IconProps) => (
     <path d="M21 12a9 9 0 1 1-6.219-8.56" />
   </svg>
 );
+
+export const IconX = (p: IconProps) => (
+  <StrokeIcon {...p}>
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
+  </StrokeIcon>
+);
+
+export const IconExternalLink = (p: IconProps) => (
+  <StrokeIcon {...p}>
+    <path d="M15 3h6v6" />
+    <path d="M10 14 21 3" />
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+  </StrokeIcon>
+);

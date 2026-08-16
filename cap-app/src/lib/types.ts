@@ -14,6 +14,19 @@ export interface Question {
   sourceTestId?: string;
 }
 
+export type HelpOrigin = "catalog" | "official-ref" | "plantilla";
+
+/** Explanation shown by the quiz Ayuda button. */
+export interface QuestionHelp {
+  explanation: string;
+  source?: string;
+  sourceUrl?: string;
+  origin: HelpOrigin;
+  correctText: string;
+  /** True when the text is tied to a curated official citation. */
+  verified: boolean;
+}
+
 export type ExamMode = "examen" | "ayuda";
 
 export interface TestMeta {

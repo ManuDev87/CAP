@@ -305,6 +305,37 @@
   .side-btn {
     @apply flex w-full cursor-pointer items-center gap-2 rounded-lg bg-muted-state px-3 py-2.5 text-[13px] font-medium text-white transition-all duration-150 hover:bg-ink-600 hover:shadow-sm active:scale-[0.98];
   }
+  .side-btn:disabled {
+    @apply cursor-not-allowed opacity-55 hover:bg-muted-state hover:shadow-none active:scale-100;
+  }
+  .side-btn-ready {
+    @apply bg-brand-500 hover:bg-brand-600;
+  }
+
+  .help-modal {
+    @apply animate-pop-in max-h-[min(88vh,40rem)] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-6 text-left shadow-pop ring-1 ring-black/5 sm:p-8;
+  }
+  .help-badge {
+    @apply inline-flex rounded-full bg-brand-50 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-brand-700;
+  }
+  .help-close {
+    @apply flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-full text-ink-600 transition-colors hover:bg-line hover:text-ink-900;
+  }
+  .help-correct-label {
+    @apply mb-1 text-[11px] font-bold uppercase tracking-wide text-ink-400;
+  }
+  .help-correct-text {
+    @apply mb-4 rounded-xl bg-ok-50 px-3.5 py-2.5 text-[15px] font-semibold leading-snug text-ok-700;
+  }
+  .help-body {
+    @apply space-y-3 text-[15px] leading-relaxed text-ink-700;
+  }
+  .help-source {
+    @apply mt-5 rounded-xl border border-line bg-appbg px-3.5 py-3;
+  }
+  .help-source-link {
+    @apply inline-flex items-start gap-1.5 text-sm font-semibold leading-snug text-brand-700 underline-offset-2 hover:text-brand-800 hover:underline;
+  }
 
   /* Options */
   .option-row {

@@ -64,8 +64,8 @@ export default function ModeSelectScreen() {
               Modo Ayuda
             </h3>
             <p className="text-sm leading-relaxed text-ink-600 max-md:text-xs">
-              Ideal para practicar. Te mostrará los aciertos y fallos en el
-              momento.
+              Ideal para practicar. Te muestra aciertos y fallos al momento y,
+              al contestar, activa la ayuda con el fundamento de la respuesta.
             </p>
           </button>
         </div>
