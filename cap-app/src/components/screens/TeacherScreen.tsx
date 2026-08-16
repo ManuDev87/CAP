@@ -134,7 +134,7 @@ export default function TeacherScreen() {
     try {
       const [scoreRecords, topicStats] = await Promise.all([
         loadScoreRecords(student.username),
-        computeErrorTopicStats(student.username),
+        computeErrorTopicStats(student.username, student.capTrack),
       ]);
       setRecords(scoreRecords);
       setErrorTopics(topicStats.topics);

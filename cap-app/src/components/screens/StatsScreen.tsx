@@ -10,7 +10,7 @@ import {
 } from "@/lib/db";
 import { computeErrorTopicStats } from "@/lib/errorTopicStats";
 import type { ErrorTopicStat } from "@/lib/errorTopicStats";
-import type { ScoreRecord } from "@/lib/types";
+import { normalizeCapTrack, type ScoreRecord } from "@/lib/types";
 import RankingList from "@/components/stats/RankingList";
 import StatsChart from "@/components/stats/StatsChart";
 import ErrorTopicList from "@/components/stats/ErrorTopicList";
@@ -23,7 +23,7 @@ import {
 } from "@/components/icons";
 
 export default function StatsScreen() {
-  const { user, goToTestSelection } = useApp();
+  const { user, goToTestSelection, selectedTrack } = useApp();
 
   const [records, setRecords] = useState<ScoreRecord[]>([]);
   const [canSeeSeed, setCanSeeSeed] = useState(false);
@@ -34,13 +34,14 @@ export default function StatsScreen() {
   const [errorTopicsLoading, setErrorTopicsLoading] = useState(true);
 
   const username = user && user.role === "student" ? user.username : null;
+  const statsTrack = selectedTrack ?? normalizeCapTrack(user?.capTrack);
 
   const reload = useCallback(async () => {
     if (!username) return;
     try {
       const [scoreRecords, topicStats] = await Promise.all([
         loadScoreRecords(username),
-        computeErrorTopicStats(username),
+        computeErrorTopicStats(username, statsTrack),
       ]);
       setRecords(scoreRecords);
       setErrorTopics(topicStats.topics);
@@ -50,7 +51,7 @@ export default function StatsScreen() {
     } finally {
       setErrorTopicsLoading(false);
     }
-  }, [username]);
+  }, [username, statsTrack]);
 
   useEffect(() => {
     if (!username) return;

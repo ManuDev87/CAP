@@ -17,6 +17,7 @@ import {
   type Portal,
 } from "@/lib/portal";
 import { loadExam } from "@/lib/tests";
+import { isViajerosTestId } from "@/lib/questionTopics";
 import type { CapTrack, ExamMode, Question, SessionUser, TestMeta } from "@/lib/types";
 import { ERRORS_EXAM_ID, normalizeCapTrack } from "@/lib/types";
 
@@ -272,10 +273,14 @@ export function AppProvider({
   const startErrorTest = useCallback(async () => {
     if (!user || user.role !== "student") return 0;
     const refs = await loadWrongQuestions(user.username);
-    if (refs.length === 0) return 0;
+    const track = selectedTrack ?? normalizeCapTrack(user.capTrack);
+    const forTrack = refs.filter((ref) =>
+      track === "viajeros" ? isViajerosTestId(ref.testId) : !isViajerosTestId(ref.testId)
+    );
+    if (forTrack.length === 0) return 0;
 
     const byTest = new Map<string, Set<string>>();
-    for (const ref of refs) {
+    for (const ref of forTrack) {
       if (!byTest.has(ref.testId)) byTest.set(ref.testId, new Set());
       byTest.get(ref.testId)!.add(ref.questionNum);
     }
@@ -304,7 +309,7 @@ export function AppProvider({
     setQuizMode(null);
     setScreen("mode-select");
     return questions.length;
-  }, [user]);
+  }, [user, selectedTrack]);
 
   const chooseMode = useCallback((mode: ExamMode) => {
     setQuizMode(mode);

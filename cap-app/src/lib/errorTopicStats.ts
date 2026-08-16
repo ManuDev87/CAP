@@ -2,9 +2,11 @@ import { loadWrongQuestions } from "@/lib/db";
 import { loadExam } from "@/lib/tests";
 import {
   classifyQuestionText,
+  isViajerosTestId,
   topicName,
   type CapTopicId,
 } from "@/lib/questionTopics";
+import type { CapTrack } from "@/lib/types";
 
 export interface ErrorTopicStat {
   id: CapTopicId;
@@ -19,13 +21,17 @@ export interface ErrorTopicStatsResult {
 }
 
 export async function computeErrorTopicStats(
-  username: string
+  username: string,
+  track: CapTrack = "mercancias"
 ): Promise<ErrorTopicStatsResult> {
   const refs = await loadWrongQuestions(username);
-  if (refs.length === 0) return { total: 0, topics: [] };
+  const forTrack = refs.filter((ref) =>
+    track === "viajeros" ? isViajerosTestId(ref.testId) : !isViajerosTestId(ref.testId)
+  );
+  if (forTrack.length === 0) return { total: 0, topics: [] };
 
   const byTest = new Map<string, Set<string>>();
-  for (const ref of refs) {
+  for (const ref of forTrack) {
     if (!byTest.has(ref.testId)) byTest.set(ref.testId, new Set());
     byTest.get(ref.testId)!.add(ref.questionNum);
   }
@@ -39,7 +45,7 @@ export async function computeErrorTopicStats(
       for (const q of exam) {
         if (!nums.has(q.num)) continue;
         const optionsText = q.options.map((o) => o.text).join(" ");
-        const topic = classifyQuestionText(q.question, optionsText);
+        const topic = classifyQuestionText(q.question, optionsText, track);
         counts.set(topic, (counts.get(topic) ?? 0) + 1);
         classified += 1;
       }
@@ -53,7 +59,7 @@ export async function computeErrorTopicStats(
   const topics = Array.from(counts.entries())
     .map(([id, count]) => ({
       id,
-      name: topicName(id),
+      name: topicName(id, track),
       count,
       percent: Math.round((count / classified) * 100),
     }))
