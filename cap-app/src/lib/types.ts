@@ -14,7 +14,7 @@ export interface Question {
   sourceTestId?: string;
 }
 
-export type HelpOrigin = "catalog" | "official-ref" | "plantilla";
+export type HelpOrigin = "catalog" | "official-ref" | "plantilla" | "temario";
 
 /** Explanation shown by the quiz Ayuda button. */
 export interface QuestionHelp {

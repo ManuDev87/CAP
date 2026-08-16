@@ -223,6 +223,11 @@ def self_check() -> None:
             "La cantidad de alcohol presente en la sangre.",
             "alcohol_sangre",
         ),
+        (
+            "Las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán:",
+            "siempre en nombre propio.",
+            "agencias_nombre_propio",
+        ),
     ]
     failed = 0
     for q, a, expected in cases:

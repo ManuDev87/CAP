@@ -336,6 +336,9 @@
   .help-source-link {
     @apply inline-flex items-start gap-1.5 text-sm font-semibold leading-snug text-brand-700 underline-offset-2 hover:text-brand-800 hover:underline;
   }
+  .help-reliability {
+    @apply mt-3.5 border-t border-dashed border-line pt-3 text-[12.5px] leading-snug text-ink-400;
+  }
 
   /* Options */
   .option-row {
