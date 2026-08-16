@@ -323,11 +323,5 @@ function becauseLead(question: string, correct: string): string {
 /** Explicación para el alumno cuando no hay ficha del catálogo. */
 export function composeStudentExplanation(q: Question): string {
   const correct = correctOptionText(q);
-  const tip = knowledgeTip(q.question, correct);
-  const lead = becauseLead(q.question, correct);
-  const parts = [tip || lead];
-  if (tip) {
-    parts.push(`En el test eso corresponde a: «${correct.trim()}».`);
-  }
-  return parts.join("\n\n");
+  return knowledgeTip(q.question, correct) || becauseLead(q.question, correct);
 }
