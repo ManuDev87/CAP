@@ -182,7 +182,7 @@ export function HelpModal({ help, onClose }: HelpModalProps) {
     ? help.origin === "official-ref"
       ? "Cita del examen de referencia"
       : "Normativa / temario oficial"
-    : "Según plantilla oficial";
+    : "Temario CAP";
 
   return (
     <div className="modal-overlay" onClick={onClose} role="presentation">

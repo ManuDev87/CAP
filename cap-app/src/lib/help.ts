@@ -1,5 +1,6 @@
 import helpBankJson from "@/data/help-bank.json";
 import type { Question, QuestionHelp } from "./types";
+import { composeStudentExplanation, discardedOptionsText } from "./helpExplain";
 
 type BankEntry = {
   explanation: string;
@@ -29,26 +30,28 @@ export function correctOptionText(q: Question): string {
   return q.options.find((o) => o.id.toLowerCase() === letter)?.text ?? "";
 }
 
-function plantillaHelp(correctText: string): QuestionHelp {
-  return {
-    correctText,
-    origin: "plantilla",
-    verified: false,
-    explanation:
-      "La plantilla oficial de este examen marca como correcta la opción resaltada en verde.\n\n" +
-      `«${correctText.trim()}»\n\n` +
-      "No añadimos un artículo legal automático cuando no hemos podido verificarlo en el BOE, EUR-Lex o el programa oficial CAP (RD 284/2021). Así evitamos citar normativa inventada o desactualizada.",
-  };
-}
-
 export function getQuestionHelp(q: Question): QuestionHelp {
   const correctText = correctOptionText(q);
   const entry = helpBank[helpKey(q.question, correctText)];
-  if (!entry) return plantillaHelp(correctText);
+  const others = discardedOptionsText(q);
+
+  if (!entry) {
+    return {
+      correctText,
+      origin: "temario",
+      verified: false,
+      explanation: composeStudentExplanation(q),
+    };
+  }
+
+  const withOthers =
+    others && !entry.explanation.includes("Las otras opciones")
+      ? `${entry.explanation}\n\n${others}`
+      : entry.explanation;
 
   return {
     correctText,
-    explanation: entry.explanation,
+    explanation: withOthers,
     source: entry.source,
     sourceUrl: entry.sourceUrl || undefined,
     origin: entry.origin,
