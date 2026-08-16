@@ -970,8 +970,9 @@ def write_catalog(ids: list[str] | None = None) -> None:
     def tests_block(var: str, items: list[tuple[str, str]]) -> str:
         items = sorted(items, key=sort_key)
         lines = [f"const {var}: TestMeta[] = ["]
-        for eid, name in items:
-            lines.append(f'  {{ id: "{eid}", name: "{name}", img: "/img/bus1.jpg" }},')
+        for i, (eid, name) in enumerate(items):
+            img = f"/img/bus{(i % 4) + 1}.jpg"
+            lines.append(f'  {{ id: "{eid}", name: "{name}", img: "{img}" }},')
         lines.append("];")
         return "\n".join(lines)
 
