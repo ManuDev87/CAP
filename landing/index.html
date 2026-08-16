@@ -200,6 +200,7 @@ button { border: 0; font: inherit; }
 .hero-copy.show > *:nth-child(3) { transition-delay: 0.25s; }
 .hero-copy.show > *:nth-child(4) { transition-delay: 0.32s; }
 .hero-copy.show > *:nth-child(5) { transition-delay: 0.4s; }
+.hero-copy.show > *:nth-child(6) { transition-delay: 0.46s; }
 .hero-copy .hero-brand {
   font-family: var(--font-display);
   font-size: clamp(34px, 8vw, 72px);
@@ -235,6 +236,22 @@ button { border: 0; font: inherit; }
   max-width: 42ch;
   margin-bottom: 16px;
   text-shadow: 0 3px 18px rgb(0 0 0 / 0.5);
+}
+.hero-copy .hero-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: rgb(10 132 66 / 0.88);
+  border: 2px solid rgb(180 236 204 / 0.55);
+  box-shadow: 0 8px 22px rgb(6 78 41 / 0.35);
 }
 .track-pills {
   display: flex; flex-wrap: wrap; gap: 8px;
@@ -568,6 +585,7 @@ footer .f-right { text-align: right; }
   .hero-copy .hero-brand { margin-bottom: 10px; }
   .hero-copy h1 { max-width: none; margin-bottom: 10px; }
   .hero-copy .lead { margin-bottom: 12px; }
+  .hero-copy .hero-proof { font-size: 12px; padding: 6px 12px; margin-bottom: 12px; }
   .track-pills { margin-bottom: 14px; }
   .track-pill { padding: 7px 12px; font-size: 11px; }
   .hero-ctas {
@@ -643,6 +661,7 @@ footer .f-right { text-align: right; }
     <div class="hero-copy" id="hero-copy">
       <p class="hero-brand"><span>Portal del Alumno</span>Grupo CAP</p>
       <h1>Practica con los exámenes originales.</h1>
+      <p class="hero-proof">El 98% de los alumnos aprueban con nosotros</p>
     <p class="lead">
         Olvídate de imprimir los exámenes en papel. CAP mercancías y viajeros, en el móvil o el ordenador, como el día de la prueba.
     </p>
@@ -669,6 +688,7 @@ footer .f-right { text-align: right; }
     <span>CAP MERCANCÍAS <i></i></span>
     <span>CAP VIAJEROS <i></i></span>
     <span>468 CONVOCATORIAS <i></i></span>
+    <span>98% APRUEBAN CON NOSOTROS <i></i></span>
     <span>MODO EXAMEN <i></i></span>
     <span>MODO AYUDA <i></i></span>
     <span>CORRECCIÓN AL INSTANTE <i></i></span>

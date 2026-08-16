@@ -330,8 +330,8 @@ export default function TestSelectionScreen() {
             );
           })}
 
-          {/* Plantilla CAP PDF — only with Andalucía for now */}
-          {regionId === "andalucia" && selectedTrack !== "viajeros" && (
+          {/* Plantilla CAP PDF — Andalucía (mercancías y viajeros) */}
+          {regionId === "andalucia" && (
             <div
               className="test-card group border-2 border-dashed border-brand-500 !bg-white"
               onClick={() => window.open("/Plantilla_Cap.pdf", "_blank")}
