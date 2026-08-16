@@ -74,14 +74,6 @@ export const IconHelp = (p: IconProps) => (
   </StrokeIcon>
 );
 
-export const IconInfo = (p: IconProps) => (
-  <StrokeIcon {...p}>
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 16v-4" />
-    <path d="M12 8h.01" />
-  </StrokeIcon>
-);
-
 export const IconComment = (p: IconProps) => (
   <StrokeIcon {...p}>
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />

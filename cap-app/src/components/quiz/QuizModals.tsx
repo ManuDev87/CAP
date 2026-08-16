@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { PASS_THRESHOLD, formatScore } from "@/lib/scoring";
 import type { QuestionHelp, ScoreBreakdown } from "@/lib/types";
 import {
@@ -176,38 +174,27 @@ export function ResultModal({
 
 interface HelpModalProps {
   help: QuestionHelp;
-  locked?: boolean;
   onClose: () => void;
 }
 
-export function HelpModal({ help, locked = false, onClose }: HelpModalProps) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
+export function HelpModal({ help, onClose }: HelpModalProps) {
   const badge = help.verified
     ? help.origin === "official-ref"
       ? "Cita del examen de referencia"
       : "Normativa / temario oficial"
     : "Según plantilla oficial";
 
-  if (!mounted) return null;
-
-  return createPortal(
-    <div
-      className="help-overlay"
-      onClick={onClose}
-      role="presentation"
-    >
+  return (
+    <div className="modal-overlay" onClick={onClose} role="presentation">
       <div
         className="help-modal"
         role="dialog"
-        aria-modal="true"
         aria-labelledby="help-modal-title"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mb-4 flex items-start justify-between gap-3">
           <div>
-            <p className="help-badge">{locked ? "Modo examen" : badge}</p>
+            <p className="help-badge">{badge}</p>
             <h2
               id="help-modal-title"
               className="mt-2 text-left text-[20px] font-bold text-ink-900"
@@ -216,7 +203,6 @@ export function HelpModal({ help, locked = false, onClose }: HelpModalProps) {
             </h2>
           </div>
           <button
-            type="button"
             className="help-close"
             onClick={onClose}
             aria-label="Cerrar ayuda"
@@ -225,58 +211,40 @@ export function HelpModal({ help, locked = false, onClose }: HelpModalProps) {
           </button>
         </div>
 
-        {locked ? (
-          <div className="help-body">
-            <p>
-              En modo examen la ayuda se muestra al terminar, para no destripar
-              el simulacro.
-            </p>
-            <p>
-              Pulsa <strong>Finalizar test</strong> y luego{" "}
-              <strong>Revisar respuestas</strong>, o entra en{" "}
-              <strong>Modo Ayuda</strong> para ver el fundamento en cada
-              pregunta.
-            </p>
-          </div>
-        ) : (
-          <>
-            <p className="help-correct-label">Respuesta correcta</p>
-            <p className="help-correct-text">{help.correctText}</p>
+        <p className="help-correct-label">Respuesta correcta</p>
+        <p className="help-correct-text">{help.correctText}</p>
 
-            <div className="help-body">
-              {help.explanation.split("\n").map((line, i) =>
-                line ? <p key={i}>{line}</p> : <br key={i} />
-              )}
-            </div>
+        <div className="help-body">
+          {help.explanation.split("\n").map((line, i) =>
+            line ? <p key={i}>{line}</p> : <br key={i} />
+          )}
+        </div>
 
-            {help.source && (
-              <div className="help-source">
-                <p className="help-correct-label">Fuente</p>
-                {help.sourceUrl ? (
-                  <a
-                    href={help.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="help-source-link"
-                  >
-                    {help.source}
-                    <IconExternalLink className="text-sm" />
-                  </a>
-                ) : (
-                  <p className="text-sm leading-relaxed text-ink-700">
-                    {help.source}
-                  </p>
-                )}
-              </div>
+        {help.source && (
+          <div className="help-source">
+            <p className="help-correct-label">Fuente</p>
+            {help.sourceUrl ? (
+              <a
+                href={help.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="help-source-link"
+              >
+                {help.source}
+                <IconExternalLink className="text-sm" />
+              </a>
+            ) : (
+              <p className="text-sm leading-relaxed text-ink-700">
+                {help.source}
+              </p>
             )}
-          </>
+          </div>
         )}
 
-        <button type="button" className="btn-primary mt-6 w-full" onClick={onClose}>
+        <button className="btn-primary mt-6 w-full" onClick={onClose}>
           Entendido
         </button>
       </div>
-    </div>,
-    document.body
+    </div>
   );
 }
