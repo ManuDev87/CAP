@@ -241,6 +241,12 @@ export function HelpModal({ help, onClose }: HelpModalProps) {
           </div>
         )}
 
+        <p className="help-reliability">
+          {help.verified
+            ? "La opción correcta sale de la plantilla oficial. La explicación cita normativa o el programa CAP."
+            : "La opción correcta sale de la plantilla oficial del examen. La explicación es del temario CAP para entender el concepto: no es un artículo concreto del BOE."}
+        </p>
+
         <button className="btn-primary mt-6 w-full" onClick={onClose}>
           Entendido
         </button>
