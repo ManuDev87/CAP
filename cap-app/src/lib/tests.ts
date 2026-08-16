@@ -1,4 +1,10 @@
 import type { CommunityRegion, Question, TestMeta } from "./types";
+import {
+  viajerosCommunityRegions,
+  viajerosExamLoaders,
+} from "./viajerosCatalog";
+
+export { viajerosCommunityRegions };
 
 const almeriaTests: TestMeta[] = [
   { id: "almeria_enero_2024", name: "Enero 2024", img: "/img/truck1.jpg" },
@@ -337,55 +343,14 @@ function regionTestsFlat(region: CommunityRegion): TestMeta[] {
 }
 
 /** Flat list of all tests (compat for loaders / stats / getTestMeta). */
-export const availableTests: TestMeta[] = communityRegions.flatMap(regionTestsFlat);
+export const availableTests: TestMeta[] = [
+  ...communityRegions.flatMap(regionTestsFlat),
+  ...viajerosCommunityRegions.flatMap(regionTestsFlat),
+];
 
 export function regionTestCount(region: CommunityRegion): number {
   return regionTestsFlat(region).length;
 }
-
-const viajerosSevillaTests: TestMeta[] = [
-  {
-    id: "viajeros_sevilla_enero_2026",
-    name: "Enero 2026",
-    img: "/img/bus1.jpg",
-    placeholder: true,
-  },
-];
-
-/** CAP viajeros — same layout as mercancías; exams will be ingested later. */
-export const viajerosCommunityRegions: CommunityRegion[] = [
-  {
-    id: "andalucia",
-    name: "Andalucía",
-    tests: [],
-    subregions: [
-      { id: "almeria", name: "Almería", tests: [] },
-      { id: "cadiz", name: "Cádiz", tests: [] },
-      { id: "cordoba", name: "Córdoba", tests: [] },
-      { id: "granada", name: "Granada", tests: [] },
-      { id: "huelva", name: "Huelva", tests: [] },
-      { id: "jaen", name: "Jaén", tests: [] },
-      { id: "malaga", name: "Málaga", tests: [] },
-      { id: "sevilla", name: "Sevilla", tests: viajerosSevillaTests },
-    ],
-  },
-  { id: "cataluna", name: "Cataluña", tests: [] },
-  { id: "valencia", name: "Valencia", tests: [] },
-  { id: "cantabria", name: "Cantabria", tests: [] },
-  {
-    id: "pais_vasco",
-    name: "País Vasco",
-    tests: [],
-    subregions: [
-      { id: "alava", name: "Álava", tests: [] },
-      { id: "guipuzkoa", name: "Guipúzcoa", tests: [] },
-      { id: "vizcaya", name: "Vizcaya", tests: [] },
-    ],
-  },
-  { id: "galicia", name: "Galicia", tests: [] },
-  { id: "extremadura", name: "Extremadura", tests: [] },
-  { id: "murcia", name: "Murcia", tests: [] },
-];
 
 export function regionsForTrack(track: "mercancias" | "viajeros"): CommunityRegion[] {
   return track === "viajeros" ? viajerosCommunityRegions : communityRegions;
@@ -637,6 +602,7 @@ export const testPdfUrls: Record<string, string> = {
  * the service worker at install time, so every test also works offline.
  */
 const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
+  ...viajerosExamLoaders,
   // Andalucía — provincias (mercancías A)
   sevilla_febrero_2023: () => import("@/data/exams/sevilla_febrero_2023.json"),
   sevilla_marzo_2023: () => import("@/data/exams/sevilla_marzo_2023.json"),
