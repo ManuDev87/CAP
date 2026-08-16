@@ -4,51 +4,46 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useApp } from "@/context/AppContext";
 import {
   clearTestData,
+  countWrongQuestions,
   getShowSeedBtn,
   loadScoreRecords,
   seedTestData,
 } from "@/lib/db";
-import { computeErrorTopicStats } from "@/lib/errorTopicStats";
-import type { ErrorTopicStat } from "@/lib/errorTopicStats";
 import type { ScoreRecord } from "@/lib/types";
 import RankingList from "@/components/stats/RankingList";
 import StatsChart from "@/components/stats/StatsChart";
-import ErrorTopicList from "@/components/stats/ErrorTopicList";
 import {
   IconArrowLeft,
   IconChart,
   IconFlask,
   IconSpinner,
   IconTrash,
+  IconWarning,
 } from "@/components/icons";
 
 export default function StatsScreen() {
-  const { user, goToTestSelection } = useApp();
+  const { user, goToTestSelection, startErrorTest } = useApp();
 
   const [records, setRecords] = useState<ScoreRecord[]>([]);
   const [canSeeSeed, setCanSeeSeed] = useState(false);
   const [filter, setFilter] = useState("all");
   const [busy, setBusy] = useState(false);
-  const [errorTopics, setErrorTopics] = useState<ErrorTopicStat[]>([]);
-  const [errorTotal, setErrorTotal] = useState(0);
-  const [errorTopicsLoading, setErrorTopicsLoading] = useState(true);
+  const [errorCount, setErrorCount] = useState(0);
+  const [startingErrors, setStartingErrors] = useState(false);
 
   const username = user && user.role === "student" ? user.username : null;
 
   const reload = useCallback(async () => {
     if (!username) return;
     try {
-      const [scoreRecords, topicStats] = await Promise.all([
+      const [scoreRecords, wrongCount] = await Promise.all([
         loadScoreRecords(username),
-        computeErrorTopicStats(username),
+        countWrongQuestions(username),
       ]);
       setRecords(scoreRecords);
-      setErrorTopics(topicStats.topics);
-      setErrorTotal(topicStats.total);
+      setErrorCount(wrongCount);
     } catch (err) {
       console.error("Error cargando registros de puntuación", err);
-    } finally {
-      setErrorTopicsLoading(false);
     }
   }, [username]);
 
@@ -95,6 +90,25 @@ export default function StatsScreen() {
       alert("Error: " + (err as Error).message);
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function handleErrorTest() {
+    if (errorCount === 0 || startingErrors) return;
+    setStartingErrors(true);
+    try {
+      const n = await startErrorTest();
+      if (n === 0) {
+        alert(
+          "No hay preguntas de error disponibles. Completa algún examen y falla alguna pregunta para ir acumulándolas."
+        );
+        await reload();
+      }
+    } catch (err) {
+      console.error(err);
+      alert("No se pudo iniciar el test de errores.");
+    } finally {
+      setStartingErrors(false);
     }
   }
 
@@ -173,15 +187,32 @@ export default function StatsScreen() {
             </div>
             <StatsChart records={records} filterTestId={filter} />
 
-            <div className="mt-8">
-              <h3 className="panel-heading text-base">
-                Estadísticas de fallos
-              </h3>
-              <ErrorTopicList
-                total={errorTotal}
-                topics={errorTopics}
-                loading={errorTopicsLoading}
-              />
+            <div className="mt-5 flex flex-col items-stretch gap-2 sm:items-start">
+              <button
+                type="button"
+                className="errors-test-btn"
+                disabled={errorCount === 0 || startingErrors}
+                onClick={handleErrorTest}
+                title={
+                  errorCount === 0
+                    ? "Aún no hay preguntas falladas guardadas"
+                    : `Practicar ${errorCount} pregunta${errorCount === 1 ? "" : "s"} fallada${errorCount === 1 ? "" : "s"}`
+                }
+              >
+                {startingErrors ? (
+                  <IconSpinner className="text-base" />
+                ) : (
+                  <IconWarning className="text-lg" />
+                )}
+                <span>Test de errores</span>
+                <span className="errors-test-count">
+                  {errorCount}
+                </span>
+              </button>
+              <p className="text-xs text-ink-400">
+                Acumula las preguntas que falles en los exámenes. Al pulsar,
+                eliges modo Examen o Ayuda solo con esos fallos.
+              </p>
             </div>
           </div>
         </div>
