@@ -1,5 +1,6 @@
-import type { Question } from "./types";
+import type { CapTrack, Question } from "./types";
 import tipsPack from "@/data/help-tips.json";
+import tipsViajerosPack from "@/data/help-tips-viajeros.json";
 
 function correctOptionText(q: Question): string {
   const letter = (q.correct || "").toLowerCase();
@@ -31,6 +32,10 @@ function compileTip(raw: RawTip): Tip {
 
 const TIPS: Tip[] = (tipsPack.tips as RawTip[]).map(compileTip);
 const GLOSSARY: Tip[] = (tipsPack.glossary as RawTip[]).map(compileTip);
+const TIPS_VIAJEROS: Tip[] = (tipsViajerosPack.tips as RawTip[]).map(compileTip);
+const GLOSSARY_VIAJEROS: Tip[] = (tipsViajerosPack.glossary as RawTip[]).map(
+  compileTip
+);
 
 function blobOf(question: string, correct: string): string {
   return `${question}\n${correct}`;
@@ -52,7 +57,17 @@ function firstTip(question: string, correct: string, list: Tip[]): string | null
   return null;
 }
 
-export function knowledgeTip(question: string, correct: string): string | null {
+export function knowledgeTip(
+  question: string,
+  correct: string,
+  track: CapTrack = "mercancias"
+): string | null {
+  if (track === "viajeros") {
+    return (
+      firstTip(question, correct, TIPS_VIAJEROS) ||
+      firstTip(question, correct, GLOSSARY_VIAJEROS)
+    );
+  }
   return firstTip(question, correct, TIPS) || firstTip(question, correct, GLOSSARY);
 }
 
@@ -132,7 +147,13 @@ function explainFromStem(question: string, correct: string): string {
 }
 
 /** Explicación para el alumno cuando no hay ficha del catálogo normativo. */
-export function composeStudentExplanation(q: Question): string {
+export function composeStudentExplanation(
+  q: Question,
+  track: CapTrack = "mercancias"
+): string {
   const correct = correctOptionText(q);
-  return knowledgeTip(q.question, correct) || explainFromStem(q.question, correct);
+  return (
+    knowledgeTip(q.question, correct, track) ||
+    explainFromStem(q.question, correct)
+  );
 }
