@@ -12,6 +12,8 @@ import {
   type UserListEntry,
 } from "@/lib/db";
 import { IconLogout, IconSpinner, IconTrash } from "@/components/icons";
+import type { CapTrack } from "@/lib/types";
+import { CAP_TRACK_LABELS } from "@/lib/types";
 
 export default function BackofficeScreen() {
   const { logout } = useApp();
@@ -34,6 +36,7 @@ export default function BackofficeScreen() {
   const [sPassword, setSPassword] = useState("");
   const [sNoPwd, setSNoPwd] = useState(false);
   const [sTeacherId, setSTeacherId] = useState("");
+  const [sCapTrack, setSCapTrack] = useState<CapTrack>("mercancias");
   const [sBusy, setSBusy] = useState(false);
   const [sSuccess, setSSuccess] = useState(false);
 
@@ -114,6 +117,7 @@ export default function BackofficeScreen() {
         password,
         role: "student",
         teacherId: sTeacherId,
+        capTrack: sCapTrack,
       });
       if (!created) {
         alert("Ese nombre de usuario ya existe.");
@@ -123,6 +127,7 @@ export default function BackofficeScreen() {
       setSUsername("");
       setSPassword("");
       setSNoPwd(false);
+      setSCapTrack("mercancias");
       setSSuccess(true);
       setTimeout(() => setSSuccess(false), 3000);
       await refresh();
@@ -301,6 +306,32 @@ export default function BackofficeScreen() {
                   </option>
                 ))}
               </select>
+              <fieldset className="mb-1">
+                <legend className="mb-2 text-sm font-semibold text-ink-600">
+                  Modalidad CAP
+                </legend>
+                <div className="flex gap-2">
+                  {(["mercancias", "viajeros"] as const).map((track) => (
+                    <label
+                      key={track}
+                      className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl border px-3 py-2.5 text-sm font-bold transition-colors ${
+                        sCapTrack === track
+                          ? "border-brand-500 bg-brand-50 text-brand-700"
+                          : "border-line bg-white text-ink-600"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        className="sr-only"
+                        name="sCapTrack"
+                        checked={sCapTrack === track}
+                        onChange={() => setSCapTrack(track)}
+                      />
+                      {CAP_TRACK_LABELS[track]}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
               <input
                 type="password"
                 className="input"
@@ -363,7 +394,7 @@ export default function BackofficeScreen() {
                         {u.name}
                       </span>
                       <span className="text-[13px] text-ink-400">
-                        Usuario: {u.username}
+                        Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
                       </span>
                       <span
                         className={`text-[12px] ${

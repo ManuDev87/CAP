@@ -9,7 +9,8 @@ import {
   loadScoreRecords,
   type UserListEntry,
 } from "@/lib/db";
-import type { ScoreRecord } from "@/lib/types";
+import type { CapTrack, ScoreRecord } from "@/lib/types";
+import { CAP_TRACK_LABELS } from "@/lib/types";
 import { computeErrorTopicStats } from "@/lib/errorTopicStats";
 import type { ErrorTopicStat } from "@/lib/errorTopicStats";
 import RankingList from "@/components/stats/RankingList";
@@ -34,6 +35,7 @@ export default function TeacherScreen() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [noPwd, setNoPwd] = useState(false);
+  const [capTrack, setCapTrack] = useState<CapTrack>("mercancias");
   const [busy, setBusy] = useState(false);
   const [successMsg, setSuccessMsg] = useState(false);
 
@@ -90,6 +92,7 @@ export default function TeacherScreen() {
         password: p,
         role: "student",
         teacherId,
+        capTrack,
       });
       if (!created) {
         alert("Ese nombre de usuario ya existe.");
@@ -99,6 +102,7 @@ export default function TeacherScreen() {
       setUsername("");
       setPassword("");
       setNoPwd(false);
+      setCapTrack("mercancias");
       setSuccessMsg(true);
       setTimeout(() => setSuccessMsg(false), 3000);
       await refreshStudents();
@@ -271,6 +275,32 @@ export default function TeacherScreen() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+              <fieldset className="mb-1">
+                <legend className="mb-2 text-sm font-semibold text-ink-600">
+                  Modalidad CAP
+                </legend>
+                <div className="flex gap-2">
+                  {(["mercancias", "viajeros"] as const).map((track) => (
+                    <label
+                      key={track}
+                      className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl border px-3 py-2.5 text-sm font-bold transition-colors ${
+                        capTrack === track
+                          ? "border-brand-500 bg-brand-50 text-brand-700"
+                          : "border-line bg-white text-ink-600"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        className="sr-only"
+                        name="capTrack"
+                        checked={capTrack === track}
+                        onChange={() => setCapTrack(track)}
+                      />
+                      {CAP_TRACK_LABELS[track]}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
               <label className="mb-1 flex items-center gap-2 text-sm text-ink-600">
                 <input
                   type="checkbox"
@@ -319,7 +349,7 @@ export default function TeacherScreen() {
                       {u.name}
                     </span>
                     <span className="text-[13px] text-ink-400">
-                      Usuario: {u.username}
+                      Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
                     </span>
                   </div>
                   <div className="flex shrink-0 items-center gap-2">

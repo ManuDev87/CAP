@@ -15,6 +15,7 @@ import {
 } from "firebase/firestore";
 import { db } from "./firebase";
 import type {
+  CapTrack,
   ExamMode,
   PausedState,
   ScoreRecord,
@@ -23,6 +24,7 @@ import type {
   UserRole,
   WrongQuestionRef,
 } from "./types";
+import { normalizeCapTrack } from "./types";
 
 /**
  * Firestore data layer. Mirrors the legacy app's data model exactly, so all
@@ -55,6 +57,7 @@ export interface CreateUserInput {
   role: UserRole;
   teacherId?: string;
   schoolName?: string;
+  capTrack?: CapTrack;
 }
 
 /** Returns false if the username already exists. */
@@ -71,6 +74,7 @@ export async function createUser(input: CreateUserInput): Promise<boolean> {
   };
   if (input.role === "student" && input.teacherId) {
     data.teacherId = input.teacherId;
+    data.capTrack = normalizeCapTrack(input.capTrack);
   }
   if (input.role === "teacher" && input.schoolName) {
     data.schoolName = input.schoolName.trim();
@@ -86,6 +90,7 @@ export interface UserListEntry {
   teacherId?: string;
   schoolName?: string;
   showSeedBtn: boolean;
+  capTrack: CapTrack;
 }
 
 function toListEntry(id: string, data: UserDoc): UserListEntry {
@@ -96,6 +101,7 @@ function toListEntry(id: string, data: UserDoc): UserListEntry {
     teacherId: data.teacherId,
     schoolName: data.schoolName,
     showSeedBtn: data.showSeedBtn === true,
+    capTrack: normalizeCapTrack(data.capTrack),
   };
 }
 

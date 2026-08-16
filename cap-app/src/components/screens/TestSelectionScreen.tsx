@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/context/AppContext";
-import { communityRegions, regionTestCount } from "@/lib/tests";
+import { regionsForTrack, regionTestCount } from "@/lib/tests";
 import { loadAllResultStats, loadPausedMap, countWrongQuestions } from "@/lib/db";
+import { CAP_TRACK_LABELS } from "@/lib/types";
 import type { ExamMode, TestMeta, TestResultStats } from "@/lib/types";
 import {
   IconChart,
@@ -16,7 +17,9 @@ import {
 } from "@/components/icons";
 
 export default function TestSelectionScreen() {
-  const { user, selectTest, openStats, logout, startErrorTest } = useApp();
+  const { user, selectTest, openStats, logout, startErrorTest, selectedTrack, goToTrackSelect } =
+    useApp();
+  const communityRegions = regionsForTrack(selectedTrack ?? "mercancias");
 
   const [pausedMap, setPausedMap] = useState<Map<string, ExamMode>>(new Map());
   const [statsMap, setStatsMap] = useState<Map<string, TestResultStats>>(
@@ -39,7 +42,10 @@ export default function TestSelectionScreen() {
   const activeSubregion = useMemo(() => {
     if (!subregions?.length) return null;
     return (
-      subregions.find((s) => s.id === subregionId) ?? subregions[0] ?? null
+      subregions.find((s) => s.id === subregionId) ??
+      subregions.find((s) => s.tests.length > 0) ??
+      subregions[0] ??
+      null
     );
   }, [subregions, subregionId]);
   const regionTests = activeSubregion
@@ -48,11 +54,11 @@ export default function TestSelectionScreen() {
 
   useEffect(() => {
     if (subregions?.length) {
-      setSubregionId((prev) =>
-        prev && subregions.some((s) => s.id === prev)
-          ? prev
-          : subregions[0]?.id ?? null
-      );
+      setSubregionId((prev) => {
+        if (prev && subregions.some((s) => s.id === prev)) return prev;
+        const withTests = subregions.find((s) => s.tests.length > 0);
+        return withTests?.id ?? subregions[0]?.id ?? null;
+      });
     } else {
       setSubregionId(null);
     }
@@ -135,7 +141,9 @@ export default function TestSelectionScreen() {
           <div className="selection-heading">
             <span className="selection-heading-bar" aria-hidden="true" />
             <div>
-              <p className="selection-heading-kicker">Portal del alumno</p>
+              <p className="selection-heading-kicker">
+                Portal del alumno · {CAP_TRACK_LABELS[selectedTrack ?? "mercancias"]}
+              </p>
               <h2 className="selection-heading-title">Selecciona un test</h2>
             </div>
           </div>
@@ -162,6 +170,16 @@ export default function TestSelectionScreen() {
             </button>
             {dropdownOpen && (
               <div className="user-dropdown">
+                <button
+                  className="dropdown-item dropdown-stats"
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    goToTrackSelect();
+                  }}
+                >
+                  <IconLogout className="w-5 rotate-180 text-center text-lg" />
+                  Cambiar CAP
+                </button>
                 <button
                   className="dropdown-item dropdown-stats"
                   onClick={() => {
@@ -313,7 +331,7 @@ export default function TestSelectionScreen() {
           })}
 
           {/* Plantilla CAP PDF — only with Andalucía for now */}
-          {regionId === "andalucia" && (
+          {regionId === "andalucia" && selectedTrack !== "viajeros" && (
             <div
               className="test-card group border-2 border-dashed border-brand-500 !bg-white"
               onClick={() => window.open("/Plantilla_Cap.pdf", "_blank")}

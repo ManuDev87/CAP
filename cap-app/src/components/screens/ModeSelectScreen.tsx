@@ -1,10 +1,11 @@
 "use client";
 
 import { useApp } from "@/context/AppContext";
+import { logoForTrack } from "@/lib/capTrack";
 import { IconFileSign, IconTeacher } from "@/components/icons";
 
 export default function ModeSelectScreen() {
-  const { activeExam, chooseMode, goToTestSelection } = useApp();
+  const { activeExam, chooseMode, goToTestSelection, selectedTrack } = useApp();
 
   return (
     <div className="screen-overlay z-2000 flex items-center justify-center bg-brand-500">
@@ -13,7 +14,7 @@ export default function ModeSelectScreen() {
           <div className="auth-brand-logo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/img/logo.png"
+              src={logoForTrack(selectedTrack)}
               alt="Logo Grupo CAP"
               className="junta-logo"
             />

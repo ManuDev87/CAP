@@ -31,6 +31,10 @@ export default function SetPasswordScreen() {
         username: pendingPwdUser.username,
         name: pendingPwdUser.name,
         role: pendingPwdUser.role === "teacher" ? "teacher" : "student",
+        capTrack:
+          pendingPwdUser.role === "teacher"
+            ? undefined
+            : pendingPwdUser.capTrack,
       });
     } catch (err) {
       console.error("Set password error", err);

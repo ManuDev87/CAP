@@ -7,6 +7,7 @@ import LoginScreen from "@/components/screens/LoginScreen";
 import SetPasswordScreen from "@/components/screens/SetPasswordScreen";
 import BackofficeScreen from "@/components/screens/BackofficeScreen";
 import TeacherScreen from "@/components/screens/TeacherScreen";
+import TrackSelectScreen from "@/components/screens/TrackSelectScreen";
 import TestSelectionScreen from "@/components/screens/TestSelectionScreen";
 import ModeSelectScreen from "@/components/screens/ModeSelectScreen";
 import QuizScreen from "@/components/screens/quiz/QuizScreen";
@@ -37,6 +38,8 @@ function Screens({ portal }: { portal: Portal }) {
       return <BackofficeScreen />;
     case "teacher":
       return <TeacherScreen />;
+    case "track-select":
+      return <TrackSelectScreen />;
     case "test-selection":
       return <TestSelectionScreen />;
     case "mode-select":

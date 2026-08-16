@@ -29,10 +29,23 @@ export interface QuestionHelp {
 
 export type ExamMode = "examen" | "ayuda";
 
+export type CapTrack = "mercancias" | "viajeros";
+
+export const CAP_TRACK_LABELS: Record<CapTrack, string> = {
+  mercancias: "Mercancías",
+  viajeros: "Viajeros",
+};
+
+export function normalizeCapTrack(value: unknown): CapTrack {
+  return value === "viajeros" ? "viajeros" : "mercancias";
+}
+
 export interface TestMeta {
   id: string;
   name: string;
   img: string;
+  /** Visual-only card until the exam JSON is ingested. */
+  placeholder?: boolean;
 }
 
 export interface CommunitySubregion {
@@ -55,6 +68,8 @@ export interface SessionUser {
   username: string;
   name: string;
   role: "root" | UserRole;
+  /** Students only. Missing/legacy accounts count as mercancías. */
+  capTrack?: CapTrack;
 }
 
 /** Answer maps are keyed by question index (as in the legacy app). */
@@ -106,4 +121,6 @@ export interface UserDoc {
   /** Teacher only: driving-school / class label. */
   schoolName?: string;
   showSeedBtn?: boolean;
+  /** Student only: CAP mercancías or viajeros. Legacy docs without it are mercancías. */
+  capTrack?: CapTrack;
 }

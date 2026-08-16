@@ -9,6 +9,7 @@ import {
   wrongPortalMessage,
 } from "@/lib/portal";
 import type { SessionUser } from "@/lib/types";
+import { normalizeCapTrack } from "@/lib/types";
 import { IconSpinner } from "@/components/icons";
 
 export default function LoginScreen() {
@@ -50,11 +51,21 @@ export default function LoginScreen() {
       }
 
       if (!data.password || data.password === "") {
-        requestSetPassword(user, data.name, role);
+        requestSetPassword(
+          user,
+          data.name,
+          role,
+          role === "student" ? normalizeCapTrack(data.capTrack) : undefined
+        );
         return;
       }
       if (data.password === pass) {
-        loginAs({ username: user, name: data.name, role });
+        loginAs({
+          username: user,
+          name: data.name,
+          role,
+          capTrack: role === "student" ? normalizeCapTrack(data.capTrack) : undefined,
+        });
       } else {
         setError("Credenciales incorrectas");
       }
