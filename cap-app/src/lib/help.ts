@@ -1,5 +1,6 @@
 import helpBankJson from "@/data/help-bank.json";
-import type { Question, QuestionHelp } from "./types";
+import helpBankViajerosJson from "@/data/help-bank-viajeros.json";
+import type { CapTrack, Question, QuestionHelp } from "./types";
 import { composeStudentExplanation } from "./helpExplain";
 
 type BankEntry = {
@@ -11,6 +12,16 @@ type BankEntry = {
 };
 
 const helpBank = helpBankJson as Record<string, BankEntry>;
+const helpBankViajeros = helpBankViajerosJson as Record<string, BankEntry>;
+
+export function trackFromExamId(
+  examId: string | undefined,
+  fallback?: CapTrack | null
+): CapTrack {
+  if (examId?.startsWith("viajeros_")) return "viajeros";
+  if (fallback === "viajeros") return "viajeros";
+  return "mercancias";
+}
 
 /** Must stay in sync with scripts/help_key.py */
 export function normText(s: string): string {
@@ -30,16 +41,20 @@ export function correctOptionText(q: Question): string {
   return q.options.find((o) => o.id.toLowerCase() === letter)?.text ?? "";
 }
 
-export function getQuestionHelp(q: Question): QuestionHelp {
+export function getQuestionHelp(
+  q: Question,
+  track: CapTrack = "mercancias"
+): QuestionHelp {
   const correctText = correctOptionText(q);
-  const entry = helpBank[helpKey(q.question, correctText)];
+  const bank = track === "viajeros" ? helpBankViajeros : helpBank;
+  const entry = bank[helpKey(q.question, correctText)];
 
   if (!entry) {
     return {
       correctText,
       origin: "temario",
       verified: false,
-      explanation: composeStudentExplanation(q),
+      explanation: composeStudentExplanation(q, track),
     };
   }
 

@@ -1063,6 +1063,8 @@ def coverage() -> None:
 
     pairs: dict[str, dict] = {}
     for path in sorted(EXAM_DIR.glob("*.json")):
+        if path.name.startswith("viajeros_"):
+            continue
         data = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(data, list) or not data or "question" not in data[0]:
             continue

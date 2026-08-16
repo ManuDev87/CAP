@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useApp } from "@/context/AppContext";
 import { testPdfUrls } from "@/lib/tests";
 import { calculateScore } from "@/lib/scoring";
-import { getQuestionHelp } from "@/lib/help";
+import { getQuestionHelp, trackFromExamId } from "@/lib/help";
 import {
   clearPausedState,
   loadPausedState,
@@ -48,6 +48,7 @@ export default function QuizScreen() {
     activeExam: exam,
     quizMode: mode,
     user,
+    selectedTrack,
     goToTestSelection,
     goToModeSelect,
   } = useApp();
@@ -142,7 +143,8 @@ export default function QuizScreen() {
 
   const q = questions[currentIndex];
   const questionAnsweredInAyuda = mode === "ayuda" && hasAnswered[currentIndex];
-  const help = q ? getQuestionHelp(q) : null;
+  const helpTrack = trackFromExamId(exam.id, selectedTrack ?? user?.capTrack);
+  const help = q ? getQuestionHelp(q, helpTrack) : null;
   const helpUnlocked =
     isReviewMode || (mode === "ayuda" && Boolean(hasAnswered[currentIndex]));
   const helpTitle = isReviewMode

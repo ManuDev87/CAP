@@ -15,11 +15,13 @@ import sys
 from pathlib import Path
 
 from help_catalog import REFERENCE_URLS, RULES, Rule
+from help_catalog_viajeros import RULES as VIAJEROS_RULES
 from help_key import correct_text_of, help_key, norm_text
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAM_DIR = ROOT / "cap-app" / "src" / "data" / "exams"
 OUT_PATH = ROOT / "cap-app" / "src" / "data" / "help-bank.json"
+OUT_PATH_VIAJEROS = ROOT / "cap-app" / "src" / "data" / "help-bank-viajeros.json"
 
 COMPILED: list[tuple[Rule, dict[str, list[re.Pattern[str]]]]] = []
 
@@ -28,9 +30,10 @@ def _compile_list(patterns: list[str]) -> list[re.Pattern[str]]:
     return [re.compile(p, re.IGNORECASE) for p in patterns]
 
 
-def compile_rules() -> None:
+def compile_rules(rules: list[Rule] | None = None) -> None:
+    src = rules if rules is not None else RULES
     COMPILED.clear()
-    for rule in RULES:
+    for rule in src:
         COMPILED.append(
             (
                 rule,
@@ -85,10 +88,13 @@ def url_for_reference(ref: str) -> str | None:
     return None
 
 
-def load_exams() -> list[tuple[str, list[dict]]]:
+def load_exams(*, viajeros: bool) -> list[tuple[str, list[dict]]]:
     out: list[tuple[str, list[dict]]] = []
     for path in sorted(EXAM_DIR.glob("*.json")):
         if path.name.startswith("_") or path.name == "help-bank.json":
+            continue
+        is_v = path.name.startswith("viajeros_")
+        if is_v != viajeros:
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(data, list) or not data or "question" not in data[0]:
@@ -97,9 +103,9 @@ def load_exams() -> list[tuple[str, list[dict]]]:
     return out
 
 
-def build() -> dict[str, dict]:
-    compile_rules()
-    exams = load_exams()
+def build(*, viajeros: bool = False) -> dict[str, dict]:
+    compile_rules(VIAJEROS_RULES if viajeros else RULES)
+    exams = load_exams(viajeros=viajeros)
 
     # Official references from the one exam that already carries them.
     inherited: dict[str, str] = {}
@@ -175,6 +181,7 @@ def build() -> dict[str, dict]:
     print(
         json.dumps(
             {
+                "track": "viajeros" if viajeros else "mercancias",
                 "unique_pairs": stats["pairs"],
                 "bank_entries": len(bank),
                 "catalog_entries": stats["catalog"],
@@ -241,14 +248,57 @@ def self_check() -> None:
     print("self-check: ok")
 
 
+def self_check_viajeros() -> None:
+    compile_rules(VIAJEROS_RULES)
+    cases = [
+        (
+            "La autorización de transporte público de viajeros en autobús se identifica registralmente con la clave:",
+            "VDE.",
+            "vde_clave",
+        ),
+        (
+            "¿Con qué clave se identifican registralmente las autorizaciones de transporte privado complementario de viajeros en autobús?",
+            "VPCE.",
+            "vpce_clave",
+        ),
+        (
+            "Los transportes efectuados mediante vehículos destinados al transporte regular de viajeros en trayectos que no superen 50 km:",
+            "están exentos del uso del tacógrafo.",
+            "tacografo_regular_50km",
+        ),
+        (
+            "¿Puede un conductor, que realiza un único viaje de transporte discrecional de viajeros, posponer el descanso semanal hasta 12 días, desde el final del descanso anterior, si efectúa después dos descansos semanales normales consecutivos?",
+            "Sí, pero solo si parte de un descaso semanal previo de 45 horas.",
+            "r561_12_dias_discrecional",
+        ),
+    ]
+    failed = 0
+    for q, a, expected in cases:
+        rule = match_rule(q, a)
+        got = rule.id if rule else None
+        if got != expected:
+            print(f"FAIL viajeros {expected}: got {got}\n  Q={q[:80]}\n  A={a}", file=sys.stderr)
+            failed += 1
+    if failed:
+        raise SystemExit(f"viajeros self-check failed: {failed} case(s)")
+    print("viajeros catalog self-check: ok")
+
+
 def main() -> None:
     self_check()
-    bank = build()
+    self_check_viajeros()
+    bank = build(viajeros=False)
     OUT_PATH.write_text(
         json.dumps(bank, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     print(f"wrote {OUT_PATH} ({OUT_PATH.stat().st_size} bytes)")
+    vbank = build(viajeros=True)
+    OUT_PATH_VIAJEROS.write_text(
+        json.dumps(vbank, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"wrote {OUT_PATH_VIAJEROS} ({OUT_PATH_VIAJEROS.stat().st_size} bytes)")
 
 
 if __name__ == "__main__":
