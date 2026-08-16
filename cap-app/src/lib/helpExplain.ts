@@ -298,16 +298,6 @@ function isFalseQuestion(question: string): boolean {
   );
 }
 
-export function discardedOptionsText(q: Question): string {
-  const wrongs = q.options
-    .filter((o) => o.id.toLowerCase() !== (q.correct || "").toLowerCase())
-    .map((o) => o.text.replace(/\s+/g, " ").trim())
-    .filter(Boolean);
-  if (!wrongs.length) return "";
-  const lines = wrongs.map((w) => `• ${w}`).join("\n");
-  return `Las otras opciones se descartan porque no responden a lo que pide el enunciado:\n${lines}`;
-}
-
 function becauseLead(question: string, correct: string): string {
   const q = question;
   const c = correct.trim().replace(/\.$/, "");
@@ -335,11 +325,9 @@ export function composeStudentExplanation(q: Question): string {
   const correct = correctOptionText(q);
   const tip = knowledgeTip(q.question, correct);
   const lead = becauseLead(q.question, correct);
-  const discarded = discardedOptionsText(q);
   const parts = [tip || lead];
   if (tip) {
     parts.push(`En el test eso corresponde a: «${correct.trim()}».`);
   }
-  if (discarded) parts.push(discarded);
   return parts.join("\n\n");
 }
