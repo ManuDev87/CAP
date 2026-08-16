@@ -263,6 +263,13 @@
     "origin": "catalog",
     "ruleId": "carga_pendiente_acelera"
   },
+  "las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán\tsiempre en nombre propio": {
+    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
+    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
+    "origin": "catalog",
+    "ruleId": "agencias_nombre_propio"
+  },
   "la clasificación de los transportes en viajeros y mercancías es una clasificación en función de\tsu objeto": {
     "explanation": "La distinción entre transporte de viajeros y de mercancías es una clasificación en función del objeto del transporte.",
     "source": "Ley 16/1987, de Ordenación de los Transportes Terrestres, artículo 63",
@@ -1250,6 +1257,13 @@
     "sourceUrl": "https://www.transportes.gob.es/",
     "origin": "catalog",
     "ruleId": "teu_20"
+  },
+  "las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán: universidad almeria. aulario i. c/cañada san urbano. campus universitario, almeria, almeria\tsiempre en nombre propio": {
+    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
+    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
+    "origin": "catalog",
+    "ruleId": "agencias_nombre_propio"
   },
   "en el caso de un transporte sujeto al convenio cmr, qué requisitos debe reunir una firma electrónica para que se considere fiable a efectos de la certificación de la carta de porte electrónica\tque permita identificar al firmante": {
     "explanation": "En un transporte sujeto al CMR, la carta de porte acredita el contrato y debe contener las indicaciones previstas en el convenio (partes, mercancía, lugares de carga y descarga, etc.).",
@@ -2311,6 +2325,13 @@
     "origin": "catalog",
     "ruleId": "consumo_marchas_rpm"
   },
+  "los almacenistas-distribuidores, al contratar el transporte para la distribución de las mercancías que tienen en depósito, lo harán\tsiempre en nombre propio": {
+    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
+    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
+    "origin": "catalog",
+    "ruleId": "agencias_nombre_propio"
+  },
   "según el acuerdo atp, un vehículo identificado con las letras frf es\tun vehículo frigorífico reforzado de la clase f": {
     "explanation": "El ATP identifica las clases de vehículos frigoríficos e isotermos mediante siglas (F = frigorífico, I = isotermo, R = refrigerante; N/R = normal/reforzado; la tercera letra indica la clase de temperatura).",
     "source": "Acuerdo ATP, anejo 1, apéndice 4",
@@ -2787,6 +2808,13 @@
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
   },
+  "los almacenistas-distribuidores, al contratar el transporte para la distribución de las mercancías que tienen en depósito, lo harán: ftad ciencias univ. granada. edif mecenas c/ profesor adolfo rancaño s/n. campus univ. fuente nueva, granada, granada\tsiempre en nombre propio": {
+    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
+    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
+    "origin": "catalog",
+    "ruleId": "agencias_nombre_propio"
+  },
   "en el caso de un transporte sujeto al convenio cmr, qué documentos se pueden emitir por medios electrónicos con plenos efectos\tla carta de porte electrónica": {
     "explanation": "En un transporte sujeto al CMR, la carta de porte acredita el contrato y debe contener las indicaciones previstas en el convenio (partes, mercancía, lugares de carga y descarga, etc.).",
     "source": "Convenio CMR, artículos 4 a 6",
@@ -3162,6 +3190,13 @@
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
+  },
+  "las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán\ten nombre propio solo cuando utilicen camiones de su propiedad o de los que dispongan en leasing o renting": {
+    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
+    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
+    "origin": "catalog",
+    "ruleId": "agencias_nombre_propio"
   },
   "cuántas veces puede un conductor realizar un periodo de descanso diario reducido (de 9 horas y 30 minutos), según la reglamentación social europea\t3 veces entre dos periodos de descanso semanales, como máximo": {
     "explanation": "En dos semanas consecutivas el conductor debe tomar al menos dos periodos de descanso semanal normal (45 h) o uno normal y uno reducido de al menos 24 horas. El descanso reducido se compensa.",

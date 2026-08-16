@@ -436,6 +436,21 @@ RULES: list[Rule] = [
         priority=12,
     ),
     Rule(
+        id="agencias_nombre_propio",
+        q_any=[r"agencias de transporte", r"almacenistas-distribuidores", r"transitari"],
+        a_any=[r"nombre propio"],
+        explanation=(
+            "Las agencias de transporte, los transitarios y los almacenistas-distribuidores "
+            "contratan siempre en nombre propio: se obligan ellos mismos con el cargador "
+            "y con el transportista. No son meros representantes. Por eso no vale "
+            "«en nombre de quien haya requerido sus servicios» ni limitar el nombre "
+            "propio a cuando usan camiones propios, leasing o renting."
+        ),
+        source="Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
+        source_url=URL_LOTT,
+        priority=16,
+    ),
+    Rule(
         id="exento_menos_3_ruedas",
         q_all=[r"menos de tres ruedas"],
         a_all=[r"exentos de autorizaci[oó]n"],
