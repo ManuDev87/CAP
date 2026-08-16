@@ -30,6 +30,7 @@ import {
   IconChevronUp,
   IconComment,
   IconHelp,
+  IconInfo,
   IconLogout,
 } from "@/components/icons";
 
@@ -143,15 +144,11 @@ export default function QuizScreen() {
   const q = questions[currentIndex];
   const questionAnsweredInAyuda = mode === "ayuda" && hasAnswered[currentIndex];
   const help = q ? getQuestionHelp(q) : null;
-  const helpUnlocked =
-    isReviewMode || (mode === "ayuda" && Boolean(hasAnswered[currentIndex]));
-  const helpTitle = isReviewMode
-    ? "Ver por qué es correcta"
-    : mode === "examen"
-      ? "La ayuda se activa al revisar el test"
-      : hasAnswered[currentIndex]
-        ? "Ver por qué es correcta"
-        : "Contesta primero para ver por qué es correcta";
+  const helpLocked = mode === "examen" && !isReviewMode;
+
+  function openHelp() {
+    setModal("help");
+  }
 
   function optionState(optId: string): OptionVisualState {
     if (isReviewMode) {
@@ -329,14 +326,15 @@ export default function QuizScreen() {
           {/* Sidebar */}
           <aside className="flex w-37.5 shrink-0 flex-col gap-2.5 border-r-4 border-brand-500 bg-white px-2.5 py-5 max-md:hidden">
             <button
-              className={`side-btn ${helpUnlocked ? "side-btn-ready" : ""}`}
-              disabled={!helpUnlocked}
-              title={helpTitle}
-              onClick={() => setModal("help")}
+              type="button"
+              className="side-btn side-btn-ready"
+              title="Ver por qué es correcta"
+              onClick={openHelp}
             >
               <IconHelp className="text-base" /> Ayuda
             </button>
             <button
+              type="button"
               className="side-btn"
               disabled
               title="Los comentarios estarán disponibles próximamente"
@@ -372,18 +370,14 @@ export default function QuizScreen() {
                 ))}
               </div>
 
-              {helpUnlocked && (
-                <button
-                  className="side-btn side-btn-ready mt-6 md:hidden"
-                  title={helpTitle}
-                  onClick={() => setModal("help")}
-                >
-                  <IconHelp className="text-base" />
-                  {help?.verified
-                    ? "Ver fundamento normativo"
-                    : "Ver por qué es correcta"}
-                </button>
-              )}
+              <button
+                type="button"
+                className="help-cta"
+                onClick={openHelp}
+              >
+                <IconInfo className="text-lg" />
+                ¿Por qué es correcta?
+              </button>
             </div>
 
             {/* Prev / Next navigation */}
@@ -416,8 +410,17 @@ export default function QuizScreen() {
 
         {/* Bottom pagination panel */}
         <div className="z-100 flex shrink-0 flex-col bg-line/70 max-md:border-t-[3px] max-md:border-brand-500">
-          <div className="flex items-center justify-center border-y border-line bg-panelbg px-4 py-1.5">
+          <div className="quiz-utility-bar">
             <button
+              type="button"
+              className="quiz-info-btn"
+              onClick={openHelp}
+              aria-label="Ayuda: por qué es correcta"
+            >
+              <IconInfo />
+            </button>
+            <button
+              type="button"
               className="toggle-panel-btn"
               onClick={() => setPanelCollapsed((v) => !v)}
             >
@@ -477,7 +480,11 @@ export default function QuizScreen() {
         />
       )}
       {modal === "help" && help && (
-        <HelpModal help={help} onClose={() => setModal(null)} />
+        <HelpModal
+          help={help}
+          locked={helpLocked}
+          onClose={() => setModal(null)}
+        />
       )}
     </div>
   );
