@@ -24,10 +24,40 @@ import StaffShell, {
 } from "@/components/staff/StaffShell";
 import type { CapTrack } from "@/lib/types";
 import { CAP_TRACK_LABELS } from "@/lib/types";
+import {
+  TRIAL_MONTH_OPTIONS,
+  addTrialMonths,
+  formatTrialLabel,
+  remainingTrialDays,
+  trialTone,
+} from "@/lib/trial";
 
 type AdminSection = "resumen" | "profesores" | "alumnos";
 
 const NEW_SCHOOL = "__new__";
+
+function schoolTrialEndsAt(
+  teachers: UserListEntry[] | null,
+  school: string
+): number | undefined {
+  const dates = (teachers ?? [])
+    .filter((t) => t.schoolName?.trim() === school && t.trialEndsAt)
+    .map((t) => t.trialEndsAt as number);
+  if (!dates.length) return undefined;
+  return Math.min(...dates);
+}
+
+function TrialBadge({ endsAt }: { endsAt?: number }) {
+  if (!endsAt) {
+    return <span className="staff-trial">Sin periodo</span>;
+  }
+  const days = remainingTrialDays(endsAt);
+  return (
+    <span className={`staff-trial ${trialTone(days)}`}>
+      {formatTrialLabel(days)}
+    </span>
+  );
+}
 
 export default function BackofficeScreen() {
   const { logout, user } = useApp();
@@ -42,6 +72,7 @@ export default function BackofficeScreen() {
   const [tPassword, setTPassword] = useState("");
   const [tSchool, setTSchool] = useState("");
   const [tSchoolChoice, setTSchoolChoice] = useState("");
+  const [tTrialMonths, setTTrialMonths] = useState<number>(2);
   const [tBusy, setTBusy] = useState(false);
   const [tSuccess, setTSuccess] = useState(false);
 
@@ -154,6 +185,9 @@ export default function BackofficeScreen() {
         password,
         role: "teacher",
         schoolName,
+        trialEndsAt: creatingNewSchool
+          ? addTrialMonths(new Date(), tTrialMonths).getTime()
+          : schoolTrialEndsAt(teachers, schoolName),
       });
       if (!created) {
         alert("Ese nombre de usuario ya existe.");
@@ -164,6 +198,7 @@ export default function BackofficeScreen() {
       setTPassword("");
       setTSchool("");
       setTSchoolChoice("");
+      setTTrialMonths(2);
       setTSuccess(true);
       setTimeout(() => setTSuccess(false), 3000);
       await refresh();
@@ -314,6 +349,22 @@ export default function BackofficeScreen() {
         </div>
       )}
 
+      {section === "resumen" && teachers !== null && schoolNames.length > 0 && (
+        <div className="staff-card mt-6">
+          <h3 className="panel-heading">Periodo de prueba</h3>
+          <ul className="staff-list">
+            {schoolNames.map((school) => (
+              <li key={school} className="staff-list-item">
+                <span className="min-w-0 truncate font-bold text-ink-900">
+                  {school}
+                </span>
+                <TrialBadge endsAt={schoolTrialEndsAt(teachers, school)} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {section === "resumen" && query.trim() && (
         <div className="staff-grid mt-6">
           <div className="staff-card">
@@ -341,9 +392,14 @@ export default function BackofficeScreen() {
                       <span className="block truncate font-bold text-ink-900">
                         {school}
                       </span>
-                      <span className="text-[13px] text-ink-400">
-                        {staff.length}{" "}
-                        {staff.length === 1 ? "profesor" : "profesores"}
+                      <span className="flex flex-wrap items-center gap-x-2 text-[13px] text-ink-400">
+                        <span>
+                          {staff.length}{" "}
+                          {staff.length === 1 ? "profesor" : "profesores"}
+                        </span>
+                        <TrialBadge
+                          endsAt={schoolTrialEndsAt(teachers, school)}
+                        />
                       </span>
                     </button>
                   </li>
@@ -430,18 +486,46 @@ export default function BackofficeScreen() {
                 </select>
               )}
               {creatingNewSchool && (
-                <input
-                  type="text"
-                  className="input"
-                  placeholder={
-                    schoolNames.length === 0
-                      ? "Nombre de la autoescuela"
-                      : "Nombre de la nueva autoescuela"
-                  }
-                  required
-                  value={tSchool}
-                  onChange={(e) => setTSchool(e.target.value)}
-                />
+                <>
+                  <input
+                    type="text"
+                    className="input"
+                    placeholder={
+                      schoolNames.length === 0
+                        ? "Nombre de la autoescuela"
+                        : "Nombre de la nueva autoescuela"
+                    }
+                    required
+                    value={tSchool}
+                    onChange={(e) => setTSchool(e.target.value)}
+                  />
+                  <select
+                    className="input"
+                    required
+                    value={tTrialMonths}
+                    onChange={(e) => setTTrialMonths(Number(e.target.value))}
+                    aria-label="Periodo de prueba"
+                  >
+                    {TRIAL_MONTH_OPTIONS.map((months) => (
+                      <option key={months} value={months}>
+                        Periodo de prueba: {months}{" "}
+                        {months === 1 ? "mes" : "meses"}
+                      </option>
+                    ))}
+                  </select>
+                  <p className="text-xs font-medium text-ink-400">
+                    El recuento de días empieza al registrar la autoescuela.
+                    Solo lo ves tú en este panel.
+                  </p>
+                </>
+              )}
+              {!creatingNewSchool && tSchoolChoice && (
+                <p className="flex items-center gap-2 px-1 text-sm">
+                  <span className="text-ink-400">Prueba de esta autoescuela:</span>
+                  <TrialBadge
+                    endsAt={schoolTrialEndsAt(teachers, tSchoolChoice)}
+                  />
+                </p>
               )}
               <input
                 type="password"
@@ -483,6 +567,11 @@ export default function BackofficeScreen() {
                     <span className="truncate text-[13px] text-ink-400">
                       {u.schoolName || "Sin autoescuela"} · {u.username}
                     </span>
+                    {u.schoolName ? (
+                      <TrialBadge
+                        endsAt={schoolTrialEndsAt(teachers, u.schoolName)}
+                      />
+                    ) : null}
                   </div>
                   <button
                     className="btn-danger-soft shrink-0"

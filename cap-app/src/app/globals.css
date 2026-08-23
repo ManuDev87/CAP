@@ -245,6 +245,18 @@
   .staff-search-field {
     @apply py-2.5 pl-10 pr-3 text-sm;
   }
+  .staff-trial {
+    @apply text-[12px] font-bold;
+  }
+  .staff-trial.is-ok {
+    @apply text-brand-600;
+  }
+  .staff-trial.is-warn {
+    @apply text-accent-500;
+  }
+  .staff-trial.is-expired {
+    @apply text-danger-500;
+  }
   .staff-logout {
     @apply btn justify-center bg-white text-sm font-semibold text-ink-700 ring-1 ring-line hover:bg-danger-50 hover:text-danger-600;
   }

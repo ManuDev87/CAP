@@ -120,6 +120,8 @@ export interface UserDoc {
   teacherId?: string;
   /** Teacher only: driving-school / class label. */
   schoolName?: string;
+  /** Teacher only: when the autoescuela trial ends (Firestore Timestamp or epoch ms). */
+  trialEndsAt?: unknown;
   showSeedBtn?: boolean;
   /** Student only: CAP mercancías or viajeros. Legacy docs without it are mercancías. */
   capTrack?: CapTrack;

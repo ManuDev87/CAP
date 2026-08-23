@@ -29,7 +29,7 @@ import { normalizeCapTrack } from "./types";
 /**
  * Firestore data layer. Mirrors the legacy app's data model exactly, so all
  * existing data keeps working:
- *  - users/{username}            { name, password, role, teacherId?, schoolName?, showSeedBtn? }
+ *  - users/{username}            { name, password, role, teacherId?, schoolName?, trialEndsAt?, showSeedBtn? }
  *  - paused_tests/{user}_{testId}_{mode}  { userAnswers/hasAnswered as JSON strings, ... }
  *  - test_results/{user}_{testId}         { passes, fails }
  *  - score_records/{autoId}               { user, testId, testName, score, passed, timestamp }
@@ -58,6 +58,8 @@ export interface CreateUserInput {
   teacherId?: string;
   schoolName?: string;
   capTrack?: CapTrack;
+  /** Epoch ms. Set only when registering a new autoescuela (admin chooses 1–6 months). */
+  trialEndsAt?: number;
 }
 
 /** Returns false if the username already exists. */
@@ -78,6 +80,9 @@ export async function createUser(input: CreateUserInput): Promise<boolean> {
   }
   if (input.role === "teacher" && input.schoolName) {
     data.schoolName = input.schoolName.trim();
+    if (typeof input.trialEndsAt === "number") {
+      data.trialEndsAt = Timestamp.fromMillis(input.trialEndsAt);
+    }
   }
   await setDoc(ref, data);
   return true;
@@ -91,6 +96,22 @@ export interface UserListEntry {
   schoolName?: string;
   showSeedBtn: boolean;
   capTrack: CapTrack;
+  trialEndsAt?: number;
+}
+
+function parseTrialEndsAt(value: unknown): number | undefined {
+  if (value == null) return undefined;
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (value instanceof Timestamp) return value.toMillis();
+  if (typeof value === "object" && value !== null && "seconds" in value) {
+    const seconds = Number((value as { seconds: unknown }).seconds);
+    if (Number.isFinite(seconds)) return seconds * 1000;
+  }
+  if (typeof value === "string") {
+    const parsed = Date.parse(value);
+    return Number.isNaN(parsed) ? undefined : parsed;
+  }
+  return undefined;
 }
 
 function toListEntry(id: string, data: UserDoc): UserListEntry {
@@ -102,6 +123,7 @@ function toListEntry(id: string, data: UserDoc): UserListEntry {
     schoolName: data.schoolName,
     showSeedBtn: data.showSeedBtn === true,
     capTrack: normalizeCapTrack(data.capTrack),
+    trialEndsAt: parseTrialEndsAt(data.trialEndsAt),
   };
 }
 
