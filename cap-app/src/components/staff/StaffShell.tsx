@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { IconLogout } from "@/components/icons";
+import { IconLogout, IconSearch } from "@/components/icons";
 
 export type StaffNavItem = {
   id: string;
@@ -9,10 +9,47 @@ export type StaffNavItem = {
   icon: ReactNode;
 };
 
+export function matchesStaffQuery(
+  query: string,
+  ...parts: Array<string | undefined>
+): boolean {
+  const needle = query.trim().toLowerCase();
+  if (!needle) return true;
+  return parts.some((part) => (part ?? "").toLowerCase().includes(needle));
+}
+
+export function StaffSearch({
+  value,
+  onChange,
+  placeholder,
+  label,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+  placeholder: string;
+  label: string;
+}) {
+  return (
+    <label className="staff-search">
+      <span className="sr-only">{label}</span>
+      <IconSearch className="staff-search-icon" />
+      <input
+        type="search"
+        className="input staff-search-field"
+        placeholder={placeholder}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        autoComplete="off"
+      />
+    </label>
+  );
+}
+
 type StaffShellProps = {
   brand: string;
   eyebrow: string;
   userName?: string;
+  userRole?: string;
   items: StaffNavItem[];
   activeId: string;
   onSelect: (id: string) => void;
@@ -27,6 +64,7 @@ export default function StaffShell({
   brand,
   eyebrow,
   userName,
+  userRole,
   items,
   activeId,
   onSelect,
@@ -60,7 +98,12 @@ export default function StaffShell({
           ))}
         </nav>
         <div className="staff-sidebar-foot">
-          {userName ? <p className="staff-user">{userName}</p> : null}
+          {(userName || userRole) && (
+            <div className="staff-user">
+              {userName ? <p className="staff-user-name">{userName}</p> : null}
+              {userRole ? <p className="staff-user-role">{userRole}</p> : null}
+            </div>
+          )}
           <button type="button" className="staff-logout" onClick={onLogout}>
             <IconLogout className="text-base" /> Salir
           </button>
@@ -88,6 +131,12 @@ export default function StaffShell({
           </div>
           <div className="flex shrink-0 items-center gap-3">
             {headerAction}
+            {(userName || userRole) && (
+              <div className="staff-user staff-user-top md:hidden">
+                {userName ? <p className="staff-user-name">{userName}</p> : null}
+                {userRole ? <p className="staff-user-role">{userRole}</p> : null}
+              </div>
+            )}
             <button
               type="button"
               className="staff-logout md:hidden"

@@ -221,6 +221,13 @@ export const IconExternalLink = (p: IconProps) => (
   </StrokeIcon>
 );
 
+export const IconSearch = (p: IconProps) => (
+  <StrokeIcon {...p}>
+    <circle cx="11" cy="11" r="8" />
+    <path d="m21 21-4.3-4.3" />
+  </StrokeIcon>
+);
+
 export const IconUsers = (p: IconProps) => (
   <StrokeIcon {...p}>
     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />

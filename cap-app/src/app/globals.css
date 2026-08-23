@@ -225,7 +225,25 @@
     @apply mt-4 border-t border-line pt-4 px-1;
   }
   .staff-user {
-    @apply mb-3 truncate px-2 text-xs font-medium text-ink-400;
+    @apply mb-3 px-2;
+  }
+  .staff-user-name {
+    @apply truncate text-sm font-bold text-ink-900;
+  }
+  .staff-user-role {
+    @apply mt-0.5 truncate text-[11px] font-bold uppercase tracking-wide text-brand-600;
+  }
+  .staff-user-top {
+    @apply mb-0 text-right;
+  }
+  .staff-search {
+    @apply relative block max-w-md;
+  }
+  .staff-search-icon {
+    @apply pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-base text-ink-400;
+  }
+  .staff-search-field {
+    @apply py-2.5 pl-10 pr-3 text-sm;
   }
   .staff-logout {
     @apply btn justify-center bg-white text-sm font-semibold text-ink-700 ring-1 ring-line hover:bg-danger-50 hover:text-danger-600;

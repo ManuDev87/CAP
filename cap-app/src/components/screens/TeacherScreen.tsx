@@ -16,7 +16,10 @@ import type { ErrorTopicStat } from "@/lib/errorTopicStats";
 import RankingList from "@/components/stats/RankingList";
 import StatsChart from "@/components/stats/StatsChart";
 import ErrorTopicList from "@/components/stats/ErrorTopicList";
-import StaffShell from "@/components/staff/StaffShell";
+import StaffShell, {
+  StaffSearch,
+  matchesStaffQuery,
+} from "@/components/staff/StaffShell";
 import {
   IconArrowLeft,
   IconChart,
@@ -51,6 +54,7 @@ export default function TeacherScreen() {
   const [errorTopics, setErrorTopics] = useState<ErrorTopicStat[]>([]);
   const [errorTotal, setErrorTotal] = useState(0);
   const [errorTopicsLoading, setErrorTopicsLoading] = useState(false);
+  const [studentQuery, setStudentQuery] = useState("");
 
   const refreshStudents = useCallback(async () => {
     if (!teacherId) return;
@@ -87,6 +91,18 @@ export default function TeacherScreen() {
       students?.filter((u) => u.capTrack === "viajeros").length ?? 0;
     return { total, mercancias, viajeros };
   }, [students]);
+
+  const filteredStudents = useMemo(() => {
+    if (!students) return null;
+    return students.filter((u) =>
+      matchesStaffQuery(
+        studentQuery,
+        u.name,
+        u.username,
+        CAP_TRACK_LABELS[u.capTrack]
+      )
+    );
+  }, [students, studentQuery]);
 
   async function handleAddStudent(e: FormEvent) {
     e.preventDefault();
@@ -201,6 +217,7 @@ export default function TeacherScreen() {
       brand="Grupo CAP"
       eyebrow="Portal profesor"
       userName={user?.name}
+      userRole="Profesor"
       items={navItems}
       activeId={section}
       onSelect={(id) => {
@@ -225,6 +242,14 @@ export default function TeacherScreen() {
     >
       {section === "alumnos" && (
         <>
+          <div className="mb-6">
+            <StaffSearch
+              value={studentQuery}
+              onChange={setStudentQuery}
+              label="Buscar alumno"
+              placeholder="Buscar alumno…"
+            />
+          </div>
           <div className="mb-6 grid gap-5 sm:grid-cols-3">
             <article className="staff-stat is-accent">
               <p className="staff-stat-label">Alumnos</p>
@@ -248,7 +273,7 @@ export default function TeacherScreen() {
           <div className="staff-card">
             <h3 className="panel-heading">Listado</h3>
             <ul className="staff-list">
-              {students === null && !loadError && (
+              {filteredStudents === null && !loadError && (
                 <li className="py-3 text-sm text-ink-600">Cargando alumnos...</li>
               )}
               {loadError && (
@@ -256,12 +281,14 @@ export default function TeacherScreen() {
                   Error al cargar alumnos.
                 </li>
               )}
-              {students !== null && students.length === 0 && (
+              {filteredStudents !== null && filteredStudents.length === 0 && (
                 <li className="py-3 text-sm text-ink-600">
-                  Aún no tienes alumnos. Usa Alta alumno para crear el primero.
+                  {studentQuery.trim()
+                    ? "Ningún alumno coincide con la búsqueda."
+                    : "Aún no tienes alumnos. Usa Alta alumno para crear el primero."}
                 </li>
               )}
-              {students?.map((u) => (
+              {filteredStudents?.map((u) => (
                 <li key={u.username} className="staff-list-item flex-wrap">
                   <div className="flex min-w-0 flex-1 flex-col px-1">
                     <span className="truncate font-bold text-ink-900">

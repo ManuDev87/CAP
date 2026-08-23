@@ -18,11 +18,16 @@ import {
   IconTrash,
   IconUsers,
 } from "@/components/icons";
-import StaffShell from "@/components/staff/StaffShell";
+import StaffShell, {
+  StaffSearch,
+  matchesStaffQuery,
+} from "@/components/staff/StaffShell";
 import type { CapTrack } from "@/lib/types";
 import { CAP_TRACK_LABELS } from "@/lib/types";
 
 type AdminSection = "resumen" | "profesores" | "alumnos";
+
+const NEW_SCHOOL = "__new__";
 
 export default function BackofficeScreen() {
   const { logout, user } = useApp();
@@ -36,8 +41,11 @@ export default function BackofficeScreen() {
   const [tUsername, setTUsername] = useState("");
   const [tPassword, setTPassword] = useState("");
   const [tSchool, setTSchool] = useState("");
+  const [tSchoolChoice, setTSchoolChoice] = useState("");
   const [tBusy, setTBusy] = useState(false);
   const [tSuccess, setTSuccess] = useState(false);
+
+  const [query, setQuery] = useState("");
 
   const [sName, setSName] = useState("");
   const [sUsername, setSUsername] = useState("");
@@ -76,6 +84,51 @@ export default function BackofficeScreen() {
     return { t, s, mercancias, viajeros };
   }, [teachers, students]);
 
+  const schoolNames = useMemo(() => {
+    const names = new Set<string>();
+    for (const t of teachers ?? []) {
+      const name = t.schoolName?.trim();
+      if (name) names.add(name);
+    }
+    return [...names].sort((a, b) => a.localeCompare(b, "es"));
+  }, [teachers]);
+
+  const creatingNewSchool =
+    schoolNames.length === 0 || tSchoolChoice === NEW_SCHOOL;
+
+  const filteredTeachers = useMemo(() => {
+    if (!teachers) return null;
+    return teachers.filter((t) =>
+      matchesStaffQuery(query, t.name, t.username, t.schoolName)
+    );
+  }, [teachers, query]);
+
+  const filteredStudents = useMemo(() => {
+    if (!students) return null;
+    return students.filter((u) => {
+      const teacher = teachers?.find((t) => t.username === u.teacherId);
+      return matchesStaffQuery(
+        query,
+        u.name,
+        u.username,
+        CAP_TRACK_LABELS[u.capTrack],
+        teacher?.name,
+        teacher?.schoolName
+      );
+    });
+  }, [students, teachers, query]);
+
+  const filteredSchools = useMemo(() => {
+    return schoolNames.filter((school) => {
+      if (matchesStaffQuery(query, school)) return true;
+      return (teachers ?? []).some(
+        (t) =>
+          t.schoolName?.trim() === school &&
+          matchesStaffQuery(query, t.name, t.username)
+      );
+    });
+  }, [schoolNames, teachers, query]);
+
   function teacherLabel(username?: string): string {
     if (!username) return "Sin profesor";
     const t = teachers?.find((x) => x.username === username);
@@ -88,7 +141,9 @@ export default function BackofficeScreen() {
     const name = tName.trim();
     const username = tUsername.trim().toLowerCase();
     const password = tPassword.trim();
-    const schoolName = tSchool.trim();
+    const schoolName = creatingNewSchool
+      ? tSchool.trim()
+      : tSchoolChoice.trim();
     if (!name || !username || !password || !schoolName) return;
 
     setTBusy(true);
@@ -108,6 +163,7 @@ export default function BackofficeScreen() {
       setTUsername("");
       setTPassword("");
       setTSchool("");
+      setTSchoolChoice("");
       setTSuccess(true);
       setTimeout(() => setTSuccess(false), 3000);
       await refresh();
@@ -204,6 +260,7 @@ export default function BackofficeScreen() {
       brand="Grupo CAP"
       eyebrow="Administración"
       userName={user?.name}
+      userRole="Administrador"
       items={[
         { id: "resumen", label: "Resumen", icon: <IconLayoutDashboard /> },
         { id: "profesores", label: "Profesores", icon: <IconTeacher /> },
@@ -218,6 +275,15 @@ export default function BackofficeScreen() {
       {loadError && (
         <p className="mb-6 text-sm text-danger-500">Error al cargar usuarios.</p>
       )}
+
+      <div className="mb-6">
+        <StaffSearch
+          value={query}
+          onChange={setQuery}
+          label="Buscar autoescuela o alumno"
+          placeholder="Buscar autoescuela o alumno…"
+        />
+      </div>
 
       {section === "resumen" && (
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
@@ -248,6 +314,78 @@ export default function BackofficeScreen() {
         </div>
       )}
 
+      {section === "resumen" && query.trim() && (
+        <div className="staff-grid mt-6">
+          <div className="staff-card">
+            <h3 className="panel-heading">Autoescuelas</h3>
+            <ul className="staff-list">
+              {filteredSchools.length === 0 && (
+                <li className="py-3 text-sm text-ink-600">
+                  Ninguna autoescuela coincide.
+                </li>
+              )}
+              {filteredSchools.map((school) => {
+                const staff = (teachers ?? []).filter(
+                  (t) => t.schoolName?.trim() === school
+                );
+                return (
+                  <li key={school} className="staff-list-item">
+                    <button
+                      type="button"
+                      className="min-w-0 flex-1 text-left"
+                      onClick={() => {
+                        setQuery(school);
+                        setSection("profesores");
+                      }}
+                    >
+                      <span className="block truncate font-bold text-ink-900">
+                        {school}
+                      </span>
+                      <span className="text-[13px] text-ink-400">
+                        {staff.length}{" "}
+                        {staff.length === 1 ? "profesor" : "profesores"}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="staff-card">
+            <h3 className="panel-heading">Alumnos</h3>
+            <ul className="staff-list">
+              {filteredStudents === null && (
+                <li className="py-3 text-sm text-ink-600">Cargando...</li>
+              )}
+              {filteredStudents !== null && filteredStudents.length === 0 && (
+                <li className="py-3 text-sm text-ink-600">
+                  Ningún alumno coincide.
+                </li>
+              )}
+              {filteredStudents?.map((u) => (
+                <li key={u.username} className="staff-list-item">
+                  <button
+                    type="button"
+                    className="min-w-0 flex-1 text-left"
+                    onClick={() => {
+                      setQuery(u.name);
+                      setSection("alumnos");
+                    }}
+                  >
+                    <span className="block truncate font-bold text-ink-900">
+                      {u.name}
+                    </span>
+                    <span className="truncate text-[13px] text-ink-400">
+                      {u.username} · {teacherLabel(u.teacherId)}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
       {section === "profesores" && (
         <div className="staff-grid">
           <div className="staff-card">
@@ -269,14 +407,42 @@ export default function BackofficeScreen() {
                 value={tUsername}
                 onChange={(e) => setTUsername(e.target.value)}
               />
-              <input
-                type="text"
-                className="input"
-                placeholder="Nombre de la autoescuela"
-                required
-                value={tSchool}
-                onChange={(e) => setTSchool(e.target.value)}
-              />
+              {schoolNames.length > 0 && (
+                <select
+                  className="input"
+                  required
+                  value={tSchoolChoice}
+                  onChange={(e) => {
+                    const next = e.target.value;
+                    setTSchoolChoice(next);
+                    if (next !== NEW_SCHOOL) setTSchool("");
+                  }}
+                >
+                  <option value="" disabled>
+                    Autoescuela
+                  </option>
+                  {schoolNames.map((school) => (
+                    <option key={school} value={school}>
+                      {school}
+                    </option>
+                  ))}
+                  <option value={NEW_SCHOOL}>Nueva autoescuela…</option>
+                </select>
+              )}
+              {creatingNewSchool && (
+                <input
+                  type="text"
+                  className="input"
+                  placeholder={
+                    schoolNames.length === 0
+                      ? "Nombre de la autoescuela"
+                      : "Nombre de la nueva autoescuela"
+                  }
+                  required
+                  value={tSchool}
+                  onChange={(e) => setTSchool(e.target.value)}
+                />
+              )}
               <input
                 type="password"
                 className="input"
@@ -298,15 +464,17 @@ export default function BackofficeScreen() {
           <div className="staff-card">
             <h3 className="panel-heading">Profesores registrados</h3>
             <ul className="staff-list">
-              {teachers === null && !loadError && (
+              {filteredTeachers === null && !loadError && (
                 <li className="py-3 text-sm text-ink-600">Cargando...</li>
               )}
-              {teachers !== null && teachers.length === 0 && (
+              {filteredTeachers !== null && filteredTeachers.length === 0 && (
                 <li className="py-3 text-sm text-ink-600">
-                  No hay profesores registrados.
+                  {query.trim()
+                    ? "Ningún profesor o autoescuela coincide."
+                    : "No hay profesores registrados."}
                 </li>
               )}
-              {teachers?.map((u) => (
+              {filteredTeachers?.map((u) => (
                 <li key={u.username} className="staff-list-item">
                   <div className="flex min-w-0 flex-col">
                     <span className="truncate font-bold text-ink-900">
@@ -437,15 +605,17 @@ export default function BackofficeScreen() {
           <div className="staff-card">
             <h3 className="panel-heading">Alumnos registrados</h3>
             <ul className="staff-list">
-              {students === null && !loadError && (
+              {filteredStudents === null && !loadError && (
                 <li className="py-3 text-sm text-ink-600">Cargando alumnos...</li>
               )}
-              {students !== null && students.length === 0 && (
+              {filteredStudents !== null && filteredStudents.length === 0 && (
                 <li className="py-3 text-sm text-ink-600">
-                  No hay alumnos registrados.
+                  {query.trim()
+                    ? "Ningún alumno o autoescuela coincide."
+                    : "No hay alumnos registrados."}
                 </li>
               )}
-              {students?.map((u) => (
+              {filteredStudents?.map((u) => (
                 <li
                   key={u.username}
                   className="flex flex-col gap-2 border-b border-line py-4 last:border-b-0"
