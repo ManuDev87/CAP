@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Nota para socios — Producto y marco legal CAP</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 20mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #1a2330;
+    margin: 0;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #00375a;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: 13pt;
+    color: #0a8442;
+    border-bottom: 2px solid #0a8442;
+    padding-bottom: 3px;
+    margin: 22px 0 10px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11pt;
+    color: #00375a;
+    margin: 14px 0 6px;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 8px; }
+  .meta { color: #5b6775; font-size: 9.5pt; margin-bottom: 14px; }
+  .box {
+    background: #e6f4ec;
+    border-left: 5px solid #0a8442;
+    padding: 10px 14px;
+    margin: 12px 0 16px;
+  }
+  .warn {
+    background: #fff6e8;
+    border-left: 5px solid #c47a12;
+    padding: 10px 14px;
+    margin: 12px 0 16px;
+  }
+  .disclaimer {
+    background: #f3f6f8;
+    border: 1px solid #d5dee6;
+    padding: 10px 14px;
+    font-size: 9.5pt;
+    margin: 12px 0 18px;
+  }
+  a { color: #0a8442; word-break: break-all; }
+  ul, ol { margin: 4px 0 10px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+    margin: 8px 0 14px;
+  }
+  th {
+    background: #00375a;
+    color: #fff;
+    text-align: left;
+    padding: 7px 8px;
+    font-weight: 600;
+  }
+  td {
+    border: 1px solid #d5dee6;
+    padding: 7px 8px;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f7faf8; }
+  .footer-note { font-size: 8.5pt; color: #5b6775; margin-top: 24px; }
+  .kicker {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0a8442;
+    margin-bottom: 4px;
+  }
+  code { font-size: 9pt; background: #f0f3f5; padding: 1px 4px; }
+</style>
+</head>
+<body>
+
+<p class="kicker">Grupo CAP · Documento interno para socios</p>
+<h1>Producto, landing y marco legal de los exámenes CAP</h1>
+<p class="meta">
+  16 de agosto de 2026 · Uso interno · Recoge la conversación sobre la Plantilla CAP / landing
+  y la investigación jurídica de reutilización comercial.
+</p>
+
+<div class="disclaimer">
+  <strong>Esto no es un dictamen jurídico.</strong> Es un resumen de normas y avisos legales públicos
+  (BOE, Junta de Andalucía, Generalitat de Catalunya, Ministerio de Transportes, País Vasco).
+  Conviene que un abogado de propiedad intelectual / sector público lo revise antes de escalar ventas.
+</div>
+
+<h2>1. Cambios de producto ya hechos</h2>
+<p>
+  Estos cambios están en <code>main</code> (commit <code>5daacec</code>):
+  <em>«Muestra la plantilla CAP también en viajeros y el 98% de aprobados en la landing.»</em>
+</p>
+<ul>
+  <li><strong>Plantilla CAP en viajeros (Andalucía).</strong> En la pantalla de selección de tests, la tarjeta de PDF
+    «Plantilla CAP» (borde verde discontinuo, icono PDF) ya no está limitada a mercancías.
+    Sale en Andalucía tanto en CAP mercancías como en CAP viajeros. El archivo es el mismo:
+    <code>/Plantilla_Cap.pdf</code>.</li>
+  <li><strong>Landing — 98%.</strong> Debajo del titular «Practica con los exámenes originales» hay una pastilla:
+    «El 98% de los alumnos aprueban con nosotros». El mismo mensaje aparece en la cinta del banner.</li>
+  <li>La landing ya no usa el reclamo de «40.000 preguntas». Lo sustituye por <strong>468 convocatorias</strong>
+    (246 mercancías + 222 viajeros) y el texto de no imprimir en papel.</li>
+</ul>
+
+<h2>2. Pregunta de negocio</h2>
+<p>
+  ¿Es legal usar los exámenes CAP que las administraciones ya publicaron en internet
+  y vender esta app a autoescuelas por una mensualidad (Cataluña, Andalucía y resto de CCAA)?
+</p>
+
+<div class="box">
+  <strong>Conclusión.</strong> En el marco español actual, usar exámenes CAP ya publicados por la Administración
+  y vender una app de pago a autoescuelas es, <strong>en principio, legal</strong>.
+  Lo que se cobra es el servicio (plataforma, estadísticas, ranking, seguimiento, modo ayuda),
+  no un monopolio sobre las preguntas. El modelo encaja en la reutilización comercial de información del sector público.
+</div>
+
+<h2>3. Norma principal</h2>
+<p>
+  <strong>Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público</strong><br />
+  <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814">https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814</a>
+</p>
+<ul>
+  <li><strong>Artículo 3.1.</strong> Reutilización = uso de documentos públicos con fines <em>comerciales o no comerciales</em>, distinto del fin original de servicio público.</li>
+  <li><strong>Artículo 4.1</strong> (reforma 2021). Esos documentos <em>serán reutilizables</em> para usos comerciales o no comerciales.</li>
+  <li><strong>Artículo 6.</strong> Prohíbe derechos exclusivos: aunque otra academia ya use los mismos exámenes, otra empresa también puede.</li>
+  <li><strong>Artículo 8.</strong> Suele exigir: no alterar el contenido, no desnaturalizar el sentido, citar la fuente e indicar la fecha de actualización.</li>
+  <li><strong>Artículo 3.3.e.</strong> Excluye documentos con derechos de <em>terceros</em> (editoriales, otras apps privadas). No cubre copiar un manual comercial.</li>
+  <li><strong>Artículo 11</strong> (sanciones, ámbito AGE): falta de cita de fuente (leve) hasta desnaturalizar la información (muy grave, hasta 100.000 €).<br />
+    <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814#a11">https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814#a11</a></li>
+</ul>
+<p>
+  La ley estatal es <strong>básica</strong> (art. 149.1.18 CE). Las comunidades pueden poner condiciones
+  (citar fuente, no falsear), pero no aparece una prohibición general de uso comercial de esos PDFs publicados.
+</p>
+
+<h2>4. Propiedad intelectual (zona gris, no bloqueo)</h2>
+<p>
+  <strong>Real Decreto Legislativo 1/1996 (Ley de Propiedad Intelectual), artículo 13</strong><br />
+  <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930">https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930</a><br />
+  Texto del art. 13:
+  <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930#a13">https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930#a13</a>
+</p>
+<p>
+  El art. 13 deja fuera de copyright leyes, sentencias y «actos, acuerdos, deliberaciones y dictámenes de los organismos públicos».
+  Un cuestionario de examen es <strong>zona gris</strong> (¿acto administrativo o texto original?).
+  Aunque hubiera derechos, los ostenta la Administración, y la Ley 37/2007 obliga a ejercerlos
+  <strong>para facilitar la reutilización</strong>, no para bloquearla.
+</p>
+
+<h2>5. Por comunidad / órgano (con URL)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Órgano</th>
+      <th>Qué dice</th>
+      <th>Uso comercial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Andalucía</strong></td>
+      <td>Creative Commons Reconocimiento 3.0: copiar, comunicar, uso comercial y obras derivadas. Citar: «Información obtenida del Portal de la Junta de Andalucía». No usar escudos ni sugerir patrocinio.</td>
+      <td>Sí, con atribución</td>
+    </tr>
+    <tr>
+      <td><strong>Cataluña</strong></td>
+      <td>Reutilización comercial o no: copia, difusión, modificación, adaptación, extracción. Citar fuente, fecha, no desnaturalizar, no usar logotipos.</td>
+      <td>Sí, con atribución</td>
+    </tr>
+    <tr>
+      <td><strong>País Vasco</strong></td>
+      <td>Licencias abiertas (p. ej. CC-BY 4.0). Redistribución y aprovechamiento comercial.</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td><strong>Ministerio de Transportes</strong></td>
+      <td>Licencia de datos abiertos: comercial y no comercial. Productos de valor añadido permitidos. Atribución específica (ver abajo).</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td><strong>C. Valenciana</strong></td>
+      <td>Portal Dades Obertes amparado en Ley 37/2007 y Ley 1/2022 de transparencia autonómica.</td>
+      <td>Sí (condiciones generales)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Andalucía — URLs</h3>
+<ul>
+  <li>Aviso legal Junta: <a href="https://www.juntadeandalucia.es/informacion/legal.html">https://www.juntadeandalucia.es/informacion/legal.html</a></li>
+  <li>Portal CAP: <a href="https://www.juntadeandalucia.es/organismos/fomentoarticulaciondelterritorioyvivienda/areas/servicios-transporte/servicios-transportista/paginas/gestion-formacion-cap.html">https://www.juntadeandalucia.es/organismos/fomentoarticulaciondelterritorioyvivienda/areas/servicios-transporte/servicios-transportista/paginas/gestion-formacion-cap.html</a></li>
+</ul>
+
+<h3>Cataluña — URLs</h3>
+<ul>
+  <li>Aviso legal Gencat: <a href="https://web.gencat.cat/es/avis-legal">https://web.gencat.cat/es/avis-legal</a></li>
+  <li>Licencias datos abiertos: <a href="https://web.gencat.cat/es/generalitat/dades-indicadors/dades-obertes/llicencies">https://web.gencat.cat/es/generalitat/dades-indicadors/dades-obertes/llicencies</a></li>
+  <li>Ejemplo de cuestionario publicado: <a href="https://territori.gencat.cat/web/.content/home/03_infraestructures_i_mobilitat/03_activitats_i_professionals_del_transport/competencia_professional_i_formacio/certificat-aptitud-conductors-professionals-CAP/models-questionaris/proves-20230517/20230517-questionari-CAP-mercaderies-model-B-ESP.pdf">https://territori.gencat.cat/.../20230517-questionari-CAP-mercaderies-model-B-ESP.pdf</a></li>
+</ul>
+
+<h3>País Vasco — URLs</h3>
+<ul>
+  <li>Cómo reutilizar: <a href="https://opendata.euskadi.eus/como-utilizar-datos/">https://opendata.euskadi.eus/como-utilizar-datos/</a></li>
+  <li>Aviso legal Open Data: <a href="https://opendata.euskadi.eus/general/-/informacion-legal-opendata/">https://opendata.euskadi.eus/general/-/informacion-legal-opendata/</a></li>
+  <li>Informe jurídico (PDF): <a href="https://opendata.euskadi.eus/contenidos/informacion/reutilizar_datos/es_def/adjuntos/informe_juridico_opendata_v3.pdf">https://opendata.euskadi.eus/.../informe_juridico_opendata_v3.pdf</a></li>
+</ul>
+
+<h3>Ministerio de Transportes — URLs</h3>
+<ul>
+  <li>Licencia de datos abiertos: <a href="https://www.transportes.gob.es/el-ministerio/buen-gobierno/licencia_datos">https://www.transportes.gob.es/el-ministerio/buen-gobierno/licencia_datos</a></li>
+  <li>FAQ CAP: <a href="https://www.transportes.gob.es/transporte-terrestre/preguntas-frecuentes-faq/cap">https://www.transportes.gob.es/transporte-terrestre/preguntas-frecuentes-faq/cap</a></li>
+  <li>Portal: <a href="https://www.transportes.gob.es/">https://www.transportes.gob.es/</a></li>
+</ul>
+<p>
+  Atribución pedida por el Ministerio:
+</p>
+<ul>
+  <li>Datos en bruto: «Datos abiertos Ministerio de Transportes y Movilidad Sostenible»</li>
+  <li>Datos explotados (la app): «Basado en datos abiertos Ministerio de Transportes y Movilidad Sostenible» + enlace al portal</li>
+</ul>
+<p>El Ministerio mantiene un banco público de preguntas CAP pensado para alumnos y centros de formación.</p>
+
+<h3>Otras URLs</h3>
+<ul>
+  <li>C. Valenciana, Dades Obertes: <a href="https://portaldadesobertes.gva.es/es/contacte">https://portaldadesobertes.gva.es/es/contacte</a></li>
+  <li>Portal Transparencia (Estado): <a href="https://transparencia.gob.es/utilidades/aviso-legal/reutilizacion">https://transparencia.gob.es/utilidades/aviso-legal/reutilizacion</a></li>
+</ul>
+
+<h2>6. Qué se puede vender a las autoescuelas</h2>
+<p>El cobro mensual es por:</p>
+<ul>
+  <li>software, hosting y mantenimiento;</li>
+  <li>seguimiento del alumno, estadísticas y ranking;</li>
+  <li>experiencia de examen (modo examen / modo ayuda).</li>
+</ul>
+<p>
+  <strong>No se venden los derechos de las preguntas.</strong> Las preguntas siguen siendo documentos públicos.
+  Las autoescuelas son centros privados; no hay norma que les impida practicar con convocatorias ya publicadas.
+</p>
+<p>
+  Lo que sí es de la empresa: código, marca, diseño y la base de datos de resultados de <em>nuestros</em> alumnos.
+</p>
+
+<h2>7. Lo que no está cubierto (riesgo real)</h2>
+<ol>
+  <li><strong>Exámenes no publicados</strong> (filtrados, fotocopiados en el aula, PDFs de un particular). Eso no es reutilización de información pública.</li>
+  <li><strong>Copiar de un manual o app privada</strong> (otra academia, editorial). Ahí hay copyright de un tercero.</li>
+  <li>Presentar la app como <strong>examen oficial</strong> o como si la empresa fuera la Administración.</li>
+  <li>Incluir <strong>datos personales</strong> de listados de admitidos/aprobados.</li>
+  <li>El reclamo <strong>«el 98% de los alumnos aprueban»</strong>: es publicidad, no copyright. Tiene que poder sostenerse (Ley de competencia desleal). Si no hay base, el riesgo es publicidad engañosa, no el uso de los exámenes.</li>
+</ol>
+
+<h2>8. La ayuda de la app («por qué es correcta la X»)</h2>
+<p>
+  Pregunta de seguimiento: ¿el hecho de haber metido en la app una ayuda para ver el significado de por qué X es correcta cambia algo?
+</p>
+<div class="box">
+  <strong>No lo vuelve ilegal.</strong> Al contrario: es el valor añadido que la Ley 37/2007 anima a vender.
+  El riesgo aquí no es de copyright de los exámenes; es de calidad (que la explicación sea fiel)
+  y de no venderla como si fuera la justificación oficial de la Junta.
+</div>
+<p>En el código hay dos capas:</p>
+<ol>
+  <li><strong>Banco curado</strong> (<code>help-bank.json</code> / viajeros): texto propio + cita a norma (LOTT, RD 284/2021, BOE, reglamentos UE). Origen <code>catalog</code> o <code>official-ref</code>.</li>
+  <li><strong>Si no hay ficha:</strong> se genera una frase de temario a partir del enunciado y de la opción correcta. Origen <code>temario</code>, no verificada.</li>
+</ol>
+<p>Eso es comentario pedagógico sobre un documento público, no «el examen oficial con sello de la Administración».</p>
+<ul>
+  <li>Reutilizar incluye modificar, adaptar y combinar información pública para un producto comercial. Explicar la respuesta es exactamente eso.</li>
+  <li>Las leyes y reglamentos no tienen copyright (art. 13 LPI). Citar el BOE es lo más limpio.</li>
+  <li>El texto de la ayuda es obra original de la empresa. Eso sí se puede vender en la mensualidad.</li>
+  <li>Las autoescuelas ya explican en clase por qué sale la B. Pasarlo a la app no cambia el régimen.</li>
+</ul>
+<h3>Riesgos propios de la ayuda</h3>
+<ol>
+  <li>Copiar explicaciones de otro (manual de editorial, otra app). Eso sí sería copyright de un tercero.</li>
+  <li>Venderlas como «la explicación oficial» de la Junta, la Generalitat o el Ministerio. Ellos publican pregunta + plantilla; casi nunca el «por qué». Debe decirse <em>basado en</em> la norma, no <em>dictado por</em> el BOE.</li>
+  <li>Explicación incorrecta (OCR o temario automático). Es más responsabilidad civil / calidad del servicio. «No desnaturalizar» también aplica a la norma citada.</li>
+  <li>Capa <code>temario</code> no verificada: legalmente sigue siendo obra docente; comercialmente conviene un aviso de «ayuda orientativa».</li>
+</ol>
+
+<h2>9. Condiciones prácticas si se comercializa</h2>
+<ol>
+  <li>Página legal / créditos con fuente por comunidad (Junta, Generalitat, Ministerio…).</li>
+  <li>Dejar claro en la landing que <strong>no es un organismo oficial</strong>.</li>
+  <li>Cuidar el OCR: un enunciado o una clave cambiada puede desnaturalizar la información.</li>
+  <li>No usar escudos ni logotipos oficiales.</li>
+  <li>El reclamo del 98% debe poder documentarse (datos internos de aprobados).</li>
+  <li>Revisión de un abogado antes de facturar a escala.</li>
+</ol>
+
+<div class="warn">
+  <strong>Resumen para el socio.</strong> Con exámenes bajados de webs oficiales ya publicadas,
+  vender la app por mensualidad a autoescuelas encaja en la reutilización comercial prevista por ley
+  en Andalucía, Cataluña, País Vasco y el Ministerio. Las preguntas publicadas se reutilizan;
+  la ayuda es producto propio (comentario + cita legal). El riesgo no es «usar el CAP publicado».
+  El riesgo es usar material no oficial, falsear preguntas o venderlo como si fuéramos la Administración.
+</div>
+
+<p class="footer-note">
+  Documento generado para uso interno de Grupo CAP a partir de la investigación de fuentes oficiales
+  (agosto 2026). No sustituye asesoramiento letrado. URLs comprobadas en la fecha del documento.
+</p>
+
+</body>
+</html>

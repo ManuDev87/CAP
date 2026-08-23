@@ -175,6 +175,12 @@
   .portal-badge {
     @apply relative z-10 -mt-5 mb-5 inline-block min-w-44 rounded-md bg-brand-500/90 px-6 py-1.5 text-[13px] font-bold tracking-[0.5px] text-white shadow-md;
   }
+  .auth-legal {
+    @apply mt-5 text-[12px] leading-snug text-ink-400;
+  }
+  .auth-legal a {
+    @apply font-semibold text-brand-600 underline-offset-2 hover:underline;
+  }
 
   /* ---------- Cards & panels ---------- */
   .panel-card {

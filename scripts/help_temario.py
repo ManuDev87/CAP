@@ -89,6 +89,11 @@ TIPS: list[dict] = [
         answer=[r"exento"],
     ),
     tip(
+        "En cursos de aprendizaje de la conducción o del CAP, el vehículo lleva tacógrafo instalado, pero no hace falta que esté calibrado.",
+        all=[r"aprendizaje", r"tac[oó]grafo"],
+        answer=[r"calibr"],
+    ),
+    tip(
         "A efectos de tiempos de conducción, la «semana» va de 00:00 del lunes a 24:00 del domingo.",
         any=[r"00:00 del lunes", r"24:00 del domingo"],
         answer=[r"semana"],
@@ -173,8 +178,9 @@ TIPS: list[dict] = [
         any=[r"40 kil[oó]metros", r"80 kil[oó]metros"],
     ),
     tip(
-        "Aceite de calidad reduce rozamientos internos del motor y puede bajar un poco el consumo.",
-        any=[r"aceite de alta calidad"],
+        "Un aceite de calidad reduce el rozamiento entre piezas y, con ello, las pérdidas de potencia: el motor gasta menos carburante.",
+        any=[r"aceite de alta calidad", r"calidad del aceite", r"aceite del sistema de lubricaci"],
+        answer=[r"rozamiento", r"p[eé]rdidas de potencia", r"^s[ií]", r"consumo"],
     ),
     tip(
         "En frío, circular suave hasta que el motor coja temperatura: acelerones en frío gastan y desgastan.",
@@ -193,7 +199,6 @@ TIPS: list[dict] = [
             r"cambio de marcha durante la subida",
             r"m[aá]s cambios realice",
             r"pierde potencia",
-            r"p[eé]rdidas de potencia",
         ],
     ),
     tip(
@@ -407,6 +412,16 @@ TIPS: list[dict] = [
     ),
     # Sociedades
     tip(
+        "Si el domicilio registral no coincide con el de la administración o la explotación principal, los terceros pueden tomar como domicilio cualquiera de los dos.",
+        any=[r"domicilio de una sociedad", r"domicilio registral", r"cu[aá]l ser[aá] el domicilio"],
+        answer=[r"terceros", r"discrepancia", r"cualquiera de ellos"],
+    ),
+    tip(
+        "Sociedad anónima: al constituirla hay que desembolsar al menos el 25 % del capital (mínimo 60.000 €).",
+        all=[r"sociedad(es)? an[oó]nimas?", r"desembols"],
+        answer=[r"25"],
+    ),
+    tip(
         "Sociedad anónima: capital social mínimo 60.000 €. Junta ordinaria: en los 6 primeros meses, para aprobar cuentas.",
         any=[r"sociedad an[oó]nima", r"capital social"],
         answer=[r"60\.000", r"60.000", r"junta ordinaria"],
@@ -426,12 +441,17 @@ TIPS: list[dict] = [
     # Aduanas / Schengen
     tip(
         "Exportación: salida del territorio aduanero de la Unión de mercancías de la Unión. Ese es el régimen de exportación.",
-        any=[r"exportaci[oó]n", r"r[eé]gimen aduanero"],
-        answer=[r"salida del territorio", r"exportaci[oó]n"],
+        any=[r"(?<!re)exportaci[oó]n", r"r[eé]gimen aduanero"],
+        answer=[r"salida del territorio", r"(?<!re)exportaci[oó]n"],
     ),
     tip(
-        "El Espacio Schengen es un territorio europeo sin controles fronterizos internos habituales entre Estados adheridos.",
+        "No todos los países de la cooperación Schengen tienen que ser miembros del Espacio Schengen: el Tratado de Ámsterdam integró esa cooperación en la UE.",
+        all=[r"schengen", r"[aá]msterdam"],
+    ),
+    tip(
+        "El Espacio Schengen es un territorio europeo sin controles fronterizos internos habituales entre Estados adheridos. Distingue fronteras interiores y exteriores.",
         any=[r"espacio schengen", r"schengen"],
+        answer=[r"fronter", r"controles", r"espacio schengen", r"estados adher"],
     ),
     tip(
         "El certificado de origen acredita el país de origen de la mercancía en el tráfico internacional.",
@@ -448,7 +468,17 @@ TIPS: list[dict] = [
     ),
     tip(
         "Niebla: atención a las marcas viales (eje y bordes). Lluvia: más peligro con las primeras gotas (película de grasa) y más distancia. Hielo: pérdida de adherencia, sobre todo en sombras y si un lado está seco y el otro no.",
-        any=[r"niebla", r"primeras gotas", r"hielo", r"lloviendo", r"distancia de seguridad"],
+        any=[r"\bniebla\b", r"primeras gotas"],
+    ),
+    tip(
+        "Con lluvia hay que aumentar la distancia de seguridad: el asfalto está más resbaladizo y la frenada se alarga.",
+        any=[r"lluvia", r"lloviendo"],
+        answer=[r"distancia de seguridad", r"aumentar la distancia"],
+    ),
+    tip(
+        "El hielo reduce la adherencia. Aparece sobre todo en zonas de sombra y a primera hora de la mañana.",
+        any=[r"hielo", r"calzada nevada", r"calzada helada"],
+        answer=[r"adherencia", r"sombr", r"primera hora", r"suelo seco", r"un lado"],
     ),
     tip(
         "En atasco o ciudad conviene anticipar acelerones y frenadas. No pegarse al de delante: no queda margen. En incorporaciones, cambiar en zona alta de par.",
@@ -482,8 +512,14 @@ TIPS: list[dict] = [
     ),
     # Fuego
     tip(
-        "Arena seca sobre el fuego: sofocación (quita el oxígeno). Enfriar es bajar la temperatura del combustible. Cada clase de fuego tiene su agente.",
-        any=[r"arena seca", r"enfriamiento", r"sofocaci[oó]n"],
+        "Enfriamiento: método de extinción que consiste en bajar la temperatura del combustible.",
+        any=[r"temperatura del combustible", r"m[eé]todo de extinci[oó]n"],
+        answer=[r"enfriamiento"],
+    ),
+    tip(
+        "Arena seca sobre el fuego: sofocación (quita el oxígeno). No se confunde con enfriar (bajar la temperatura).",
+        any=[r"arena seca", r"sofocaci[oó]n"],
+        answer=[r"sofocaci", r"arena", r"ox[ií]geno"],
     ),
     # Seguro / jurídico
     tip(
@@ -519,7 +555,7 @@ TIPS: list[dict] = [
     # Roles empresa
     tip(
         "El administrativo hace contabilidad y nóminas. El conductor, además de conducir, vigila el vehículo. En empresas pequeñas el empresario a menudo conduce.",
-        any=[r"administrativo", r"funciones propias de un conductor", r"empresas peque[nñ]as"],
+        any=[r"elaboraci[oó]n de las n[oó]minas", r"funciones propias de un administrativo", r"funciones propias de un conductor", r"empresas peque[nñ]as"],
     ),
     tip(
         "Una buena gestión comercial no disminuye ingresos: busca lo contrario (menos vacíos, más ocupación).",
@@ -528,7 +564,7 @@ TIPS: list[dict] = [
     # Varios temario
     tip(
         "SIT de túneles: gestión integral (ventilación, incendios, tráfico, comunicaciones). El test marca que pueden tener todas esas funciones.",
-        any=[r"\bSIT\b", r"t[uú]neles"],
+        any=[r"\bSIT\b"],
         answer=[r"todas las respuestas"],
     ),
     tip(
@@ -681,6 +717,11 @@ TIPS: list[dict] = [
         any=[r"temperatura regulada"],
     ),
     tip(
+        "Según la capacidad de enfriamiento, el temario distingue cuatro clases de vehículos refrigerantes.",
+        all=[r"refrigerantes", r"enfriamiento"],
+        answer=[r"cuatro", r"^4"],
+    ),
+    tip(
         "Acuerdo multilateral: más de dos países pactan autorizaciones y condiciones (p. ej. CEMT). El bilateral es solo entre dos.",
         any=[r"acuerdo multilateral"],
     ),
@@ -697,6 +738,7 @@ TIPS: list[dict] = [
     tip(
         "El consumo de carburante sube con marchas cortas, rpm altas, mala aerodinámica, sobrecarga y velocidad. Bajar rpm y alargar marcha ahorra.",
         any=[r"consumo de carburante", r"consumo de combustible", r"ahorrar carburante", r"menos combustible"],
+        answer=[r"marchas", r"revoluciones", r"aerodin", r"velocidad", r"sobrecarga", r"rpm", r"todas las respuestas"],
     ),
     tip(
         "La caja manual, bien usada (zona verde, marcha larga), suele gastar menos que el automático.",
@@ -798,7 +840,7 @@ TIPS: list[dict] = [
     ),
     tip(
         "En dos semanas: dos descansos semanales normales (45 h) o uno normal y uno reducido de al menos 24 h, compensando.",
-        any=[r"descanso semanal"],
+        all=[r"descanso semanal", r"dos semanas"],
     ),
     tip(
         "Conducción diaria máxima: 9 h, ampliables a 10 h como máximo dos veces por semana.",
@@ -859,12 +901,12 @@ TIPS: list[dict] = [
     ),
     tip(
         "CAP: cualificación del conductor. No hace falta tener ya el permiso para la inicial. Exclusiones (FF.AA., etc.). Faltar a un 5 % o más de horas excluye del curso.",
-        any=[r"\bCAP\b", r"cualificaci[oó]n inicial"],
-        answer=[r"no es necesario", r"fuerzas armadas", r"5 por"],
+        any=[r"cualificaci[oó]n inicial", r"curso CAP", r"certificado de aptitud profesional"],
+        answer=[r"no es necesario.*permiso", r"no es necesario tener", r"fuerzas armadas", r"5 por"],
     ),
     tip(
         "Fuego: agente según clase (A sólidos, B líquidos, C gases, D metales). El agua no va a metales. La luz de emergencia señaliza, no apaga.",
-        any=[r"extintor", r"fuego de clase", r"incendio"],
+        any=[r"fuego de clase", r"clases de fuego", r"agente extintor", r"extintor.*clase"],
     ),
     tip(
         "Jefe de tráfico: rutas, turnos, vehículos y cumplimiento normativo. El comercial capta clientes; administración, nóminas y facturas.",
@@ -926,12 +968,13 @@ GLOSSARY: list[dict] = [
         any=[r"licencia comunitaria"],
     ),
     tip(
-        "Schengen: espacio sin controles fronterizos internos habituales entre los Estados que forman parte.",
+        "Schengen: espacio sin controles fronterizos internos habituales entre los Estados que forman parte. Distingue fronteras interiores y exteriores.",
         any=[r"schengen"],
+        answer=[r"fronter", r"controles", r"espacio schengen", r"estados adher"],
     ),
     tip(
         "Tara: masa del vehículo vacío. MMA: masa máxima autorizada. Carga útil: MMA menos tara.",
-        any=[r"\btara\b", r"carga [uú]til", r"\bMMA\b"],
+        any=[r"\btara\b", r"carga [uú]til"],
     ),
     tip(
         "Retárder: ralentizador hidráulico (aceite) que retiene el vehículo sin gastar tanto el freno de servicio.",
@@ -975,7 +1018,8 @@ GLOSSARY: list[dict] = [
     ),
     tip(
         "Sociedad anónima: capital mínimo 60.000 euros. Junta ordinaria: aprobación de cuentas en los seis primeros meses.",
-        any=[r"sociedad an[oó]nima"],
+        all=[r"sociedad(es)? an[oó]nimas?"],
+        any=[r"60\.000", r"capital", r"junta ordinaria", r"desembols"],
     ),
     tip(
         "Cooperativa de primer grado: mínimo tres socios. Registro de Sociedades Cooperativas.",
@@ -983,7 +1027,7 @@ GLOSSARY: list[dict] = [
     ),
     tip(
         "Exportación aduanera: la mercancía de la Unión sale del territorio aduanero de la UE.",
-        any=[r"exportaci[oó]n"],
+        any=[r"(?<!re)exportaci[oó]n"],
     ),
     tip(
         "Declaración amistosa: parte europeo del accidente, firmado por los conductores, para las aseguradoras. No cambia el consumo ni «aumenta» la indemnización por sí sola.",
@@ -1002,12 +1046,17 @@ GLOSSARY: list[dict] = [
         any=[r"ralentizador"],
     ),
     tip(
+        "En curva, velocidad y carga (masa alta o centro de gravedad alto) aumentan la fuerza centrífuga y el riesgo de vuelco.",
+        any=[r"riesgo de vuelco", r"puede volcar", r"volcar[aá]"],
+        answer=[r"volcar", r"vuelco", r"centr[ií]fug"],
+    ),
+    tip(
         "Centro de gravedad alto o carga mal repartida: más vuelco y peor frenada. Pesado abajo, ligero arriba.",
         any=[r"centro de gravedad", r"distribuci[oó]n de la carga"],
     ),
     tip(
         "Tacógrafo: aparato que registra tiempos de conducción y actividad. Analógico en disco; digital en memoria y tarjeta.",
-        any=[r"tac[oó]grafo"],
+        any=[r"qu[eé] es el tac[oó]grafo", r"qu[eé] es un tac[oó]grafo", r"para qu[eé] sirve el tac[oó]grafo"],
     ),
 ]
 
@@ -1031,6 +1080,63 @@ def _ok(text: str, alls: list[re.Pattern[str]], anys: list[re.Pattern[str]]) -> 
     return True
 
 
+_STOP = {
+    "para", "como", "esta", "este", "esto", "esos", "esas",
+    "todo", "toda", "todos", "todas", "sobre", "entre", "desde", "hasta",
+    "cuando", "donde", "cual", "cuales", "quien", "porque", "segun",
+    "hacia", "ante", "bajo", "durante", "mediante", "contra",
+    "respuesta", "respuestas", "correcta", "correctas", "incorrecta",
+    "afirmacion", "siguiente", "siguientes", "anterior", "anteriores",
+    "debe", "deben", "puede", "pueden", "sera", "seran",
+    "tiene", "tienen", "hace", "caso", "forma", "parte", "tipo", "tipos",
+    "tambien", "ademas", "mismo", "misma", "otros", "otras", "solo",
+    "ningun", "ninguna", "cualquier", "cualquiera", "siempre", "nunca",
+    "articulo", "normativa", "temario", "oficial", "examen", "opcion",
+    "enunciado", "pregunta", "conductor", "conductores",
+    "vehiculo", "vehiculos", "transporte", "empresa", "empresas",
+}
+
+_ACCENT = str.maketrans("áéíóúüñàèìòù", "aeiouunaeiou")
+
+
+def _fold(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower().translate(_ACCENT))
+
+
+def _tok(s: str) -> set[str]:
+    out: set[str] = set()
+    for w in _fold(s).split():
+        if len(w) < 4 or w in _STOP or w.isdigit():
+            continue
+        out.add(w)
+    return out
+
+
+def _hits(src: set[str], dst: set[str]) -> int:
+    n = 0
+    for x in src:
+        for y in dst:
+            if x == y or (len(x) >= 5 and len(y) >= 5 and (x in y or y in x)):
+                n += 1
+                break
+    return n
+
+
+def explanation_matches_item(expl: str, question: str, answer: str) -> bool:
+    """Drop a generic tip if it talks about a different concept than Q+A."""
+    te, tq, ta = _tok(expl), _tok(question), _tok(answer)
+    tqa = tq | ta
+    h_e = _hits(te, tqa)
+    h_a = _hits(ta, te) if ta else 0
+    if h_e >= 3 or h_a >= 2 or (h_e >= 2 and h_a >= 1):
+        return True
+    nums_a = set(re.findall(r"\d+(?:[.,]\d+)?", _fold(answer)))
+    nums_e = set(re.findall(r"\d+(?:[.,]\d+)?", _fold(expl)))
+    if nums_a and nums_a & nums_e and h_e >= 1:
+        return True
+    return False
+
+
 def match_tip(question: str, answer: str, compiled: list[dict]) -> str | None:
     blob = f"{question}\n{answer}"
     for t in compiled:
@@ -1039,6 +1145,8 @@ def match_tip(question: str, answer: str, compiled: list[dict]) -> str | None:
         if t["answer"] and not any(p.search(answer) for p in t["answer"]):
             continue
         if not t["all"] and not t["any"]:
+            continue
+        if not t["answer"] and not explanation_matches_item(t["text"], question, answer):
             continue
         return t["text"]
     return None
@@ -1138,12 +1246,60 @@ def self_check() -> None:
             "Un mayor consumo.",
             "zona verde",
         ),
+        (
+            "Según la capacidad de enfriamiento, ¿cuántas clases de vehículos refrigerantes existen?",
+            "Cuatro.",
+            "cuatro clases",
+        ),
+        (
+            "La calidad del aceite del sistema de lubricación que se utilice en los motores, ¿puede influir en el consumo de carburante?",
+            "Sí, ya que puede reducir el rozamiento de las piezas y, por tanto, las pérdidas de potencia.",
+            "rozamiento",
+        ),
+        (
+            "En caso de lluvia, ¿qué actuación debemos seguir con el vehículo que tenemos delante?",
+            "Aumentar la distancia de seguridad.",
+            "distancia de seguridad",
+        ),
+        (
+            "El capital social de una sociedad anónima debe estar desembolsado, por lo menos, en un:",
+            "25 %.",
+            "25",
+        ),
+        (
+            "¿Todos los países que participan en la cooperación Schengen deben ser miembros del Espacio Schengen?",
+            "No es necesario porque el Tratado de Ámsterdam integró la cooperación de Schengen en el marco de la Unión Europea.",
+            "Schengen",
+        ),
+        (
+            "Los transportes realizados en el desarrollo de cursos de aprendizaje de la conducción o del certificado de aptitud profesional en vehículos equipados para ello:",
+            "deben llevar instalado un tacógrafo, pero no es necesario que esté calibrado.",
+            "calibr",
+        ),
+        (
+            "¿Cómo se denomina el método de extinción de un incendio consistente en reducir la temperatura del combustible?",
+            "Enfriamiento.",
+            "temperatura del combustible",
+        ),
     ]
     failed = 0
     for q, a, needle in cases:
         text = explanation_for(q, a) or ""
         if needle.lower() not in text.lower():
-            print(f"FAIL {needle!r}\n  Q={q[:80]}\n  got={text[:120]!r}", file=sys.stderr)
+            print(f"FAIL {needle!r}\n  Q={q[:80]}\n  got={text[:160]!r}", file=sys.stderr)
+            failed += 1
+        if re.search(
+            r"rampa|embrague|sofocaci[oó]n|Arena seca|clase A s[oó]lidos",
+            text,
+            re.I,
+        ) and "Ámsterdam" not in a:
+            print(f"FAIL off-topic help\n  Q={q[:80]}\n  got={text[:160]!r}", file=sys.stderr)
+            failed += 1
+        if "Ámsterdam" in a and re.search(r"cualificaci[oó]n del conductor", text, re.I):
+            print(f"FAIL Schengen <- CAP: {text[:160]!r}", file=sys.stderr)
+            failed += 1
+        if "calibrado" in a and re.search(r"cualificaci[oó]n del conductor", text, re.I):
+            print(f"FAIL CAP course tachograph <- CAP permit: {text[:160]!r}", file=sys.stderr)
             failed += 1
     if failed:
         raise SystemExit(f"self-check failed: {failed}")

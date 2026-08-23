@@ -2063,13 +2063,6 @@
     "origin": "catalog",
     "ruleId": "marcha_mas_alta"
   },
-  "cuál de las actuaciones indicadas es más correcta para optimizar el consumo de carburante\tevitar períodos de tiempo en los que el motor esté al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
-  },
   "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante\tevitar la práctica de una conducción basada en continuas aceleraciones. ciudad transporte , santander, cantabria": {
     "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
     "source": "Guía de conducción eficiente IDAE",
@@ -2104,13 +2097,6 @@
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
     "origin": "catalog",
     "ruleId": "marcha_mas_alta"
-  },
-  "cuál de las acciones indicadas es más correcta para optimizar el consumo de carburante ciudad del transporte.., santander, cantabria\tevitar los períodos de tiempo con el vehículo parado y el motor al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
   },
   "el mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre otros\tdel mantenimiento del vehículo, la posición del pedal del acelerador y la aerodinámica del vehículo": {
     "explanation": "El mantenimiento (filtros, presión de neumáticos, geometría, etc.), la posición del acelerador y el estado de la vía influyen de forma directa en el consumo.",
@@ -2731,13 +2717,6 @@
     "origin": "catalog",
     "ruleId": "ejercicio_conductores"
   },
-  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante\tevitar los períodos de tiempo con el vehículo parado y el motor al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
-  },
   "se recomienda emplear el agua en fuego de metales\tno, ya que puede provocar explosiones. examen de obtención del cap": {
     "explanation": "No se debe usar agua en fuegos de metales (clase D): puede provocar reacciones violentas o explosiones. Se usan polvos especiales.",
     "source": "Fichas NTP del Instituto Nacional de Seguridad y Salud en el Trabajo",
@@ -2765,13 +2744,6 @@
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
     "origin": "catalog",
     "ruleId": "r561_descanso_diario"
-  },
-  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante\tevitar períodos de tiempo en los que el motor esté al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
   },
   "cuál es el capital mínimo que puede tener una sociedad de responsabilidad limitada\t1 euro": {
     "explanation": "La sociedad de responsabilidad limitada tiene un capital social mínimo legal (tras la reforma, puede constituirse con 1 euro, con reglas especiales de reserva; el régimen clásico del temario CAP sigue preguntando el mínimo de 3.000 euros en convocatorias antiguas).",
@@ -2828,13 +2800,6 @@
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
     "origin": "catalog",
     "ruleId": "resistencia_rodadura"
-  },
-  "cuál de las acciones indicadas es más correcta para optimizar el consumo de carburante\tevitar los períodos de tiempo con el vehículo parado y el motor al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
   },
   "en caso de liquidación forzosa de una sociedad de responsabilidad limitada, si el capital social es inferior a 3.000 , tienen alguna responsabilidad los socios\tsi, responden solidariamente de la diferencia entre el importe de 3.000 y la cifra del capital suscrito": {
     "explanation": "La sociedad de responsabilidad limitada tiene un capital social mínimo legal (tras la reforma, puede constituirse con 1 euro, con reglas especiales de reserva; el régimen clásico del temario CAP sigue preguntando el mínimo de 3.000 euros en convocatorias antiguas).",
@@ -3371,11 +3336,10 @@
     "ruleId": "r165_indicadores_analogico"
   },
   "cuál técnica es más correcta para optimizar el consumo\tevitar períodos de tiempo con motor al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
+    "explanation": "La plantilla oficial marca como correcta:\n\n«Evitar períodos de tiempo con motor al ralentí.»\n\nFundamento recogido en el examen de referencia: Manual de conducción eficiente. IDAE.",
+    "source": "Manual de conducción eficiente. IDAE",
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
+    "origin": "official-ref"
   },
   "en el caso de avería del autobús y necesidad de trasbordo\tlos pasajeros permanecerán fuera de la calzada": {
     "explanation": "La plantilla oficial marca como correcta:\n\n«los pasajeros permanecerán fuera de la calzada.»\n\nFundamento recogido en el examen de referencia: Instrucciones de la Generalitat Valenciana.",

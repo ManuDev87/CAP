@@ -117,7 +117,8 @@ VIAJEROS_TIPS: list[dict] = [
     ),
     tip(
         "Transporte escolar/menores en discrecional: normas especiales si los menores de 16 años son tres cuartas partes o más. Entonces hace falta acompañante.",
-        any=[r"transporte escolar", r"menores en autob[uú]s", r"tres cuartas partes"],
+        any=[r"transporte escolar", r"transporte de menores", r"menores en autob[uú]s", r"tres cuartas partes"],
+        answer=[r"16", r"tres cuartas", r"acompa[nñ]ante", r"3/4"],
     ),
     tip(
         "Municipio de 25.000 habitantes: el ayuntamiento no está obligado por esa sola cifra a implantar un urbano regular.",
@@ -210,8 +211,19 @@ VIAJEROS_TIPS: list[dict] = [
         any=[r"director general o gerente"],
     ),
     tip(
+        "Si el domicilio registral no coincide con el de la administración o la explotación principal, los terceros pueden tomar como domicilio cualquiera de los dos.",
+        any=[r"domicilio de una sociedad", r"domicilio registral", r"cu[aá]l ser[aá] el domicilio"],
+        answer=[r"terceros", r"discrepancia", r"cualquiera de ellos"],
+    ),
+    tip(
+        "Sociedad anónima: puede constituirse con un solo socio (sociedad unipersonal).",
+        all=[r"n[uú]mero m[ií]nimo de socios", r"sociedad(es)? an[oó]nimas?"],
+        answer=[r"^uno", r"un socio", r"^1\b"],
+    ),
+    tip(
         "Sociedad anónima: puede constituirse con un socio; el capital se desembolsa al menos en un 25 % al constituirla (mínimo 60.000 €).",
-        any=[r"sociedad an[oó]nima", r"n[uú]mero m[ií]nimo de socios", r"desembolsado en un 25"],
+        all=[r"sociedad(es)? an[oó]nimas?"],
+        any=[r"desembolsado en un 25", r"capital", r"60\.000"],
     ),
     tip(
         "Renovación del permiso: el temario agrupa requisitos médicos y administrativos; si el enunciado los cita todos, se marcan todas.",
@@ -256,7 +268,7 @@ VIAJEROS_TIPS: list[dict] = [
     ),
     tip(
         "Schengen: el transportista debe asegurarse de que el extranjero tiene los documentos de viaje exigidos.",
-        any=[r"schengen", r"extranjero est[aá] en posesi[oó]n"],
+        any=[r"extranjero est[aá] en posesi[oó]n", r"documentos de viaje exigidos"],
     ),
     tip(
         "Impresión sin tarjeta de conductor: el conductor se identifica y firma en el ticket.",
@@ -325,7 +337,7 @@ VIAJEROS_TIPS: list[dict] = [
     ),
     tip(
         "El CAP de viajeros se exige, en general, para autobuses/autocares de más de 45 km/h de velocidad máxima autorizada.",
-        any=[r"certificado de aptitud profesional", r"45 kil[oó]metros por hor"],
+        any=[r"45 kil[oó]metros por hor", r"m[aá]s de 45 km"],
     ),
     tip(
         "ESP: control electrónico de estabilidad; corrige la trayectoria y ayuda a no perder la dirección.",
@@ -380,7 +392,7 @@ VIAJEROS_GLOSSARY: list[dict] = [
     ),
     tip(
         "Tacógrafo: registra conducción y descanso. Exención típica: regular de viajeros ≤ 50 km.",
-        any=[r"tac[oó]grafo"],
+        any=[r"qu[eé] es el tac[oó]grafo", r"para qu[eé] sirve el tac[oó]grafo", r"regular.*50 km"],
     ),
     tip(
         "12 días: en un discrecional ocasional de viajeros se puede aplazar el semanal si se parte de 45 h de descanso normal y luego se compensan dos normales.",
@@ -493,6 +505,16 @@ def self_check() -> None:
             "Sí, pero solo si parte de un descaso semanal previo de 45 horas.",
             "45",
         ),
+        (
+            "¿Cuál será el domicilio de una sociedad anónima española?",
+            "En caso de discrepancia entre el domicilio registral y el lugar donde radique su principal explotación, los terceros podrán considerar como domicilio cualquiera de ellos.",
+            "terceros",
+        ),
+        (
+            "La formación continua del CAP de viajeros tiene una duración de:",
+            "35 horas.",
+            "35",
+        ),
     ]
     failed = 0
     for q, a, needle in cases:
@@ -502,6 +524,9 @@ def self_check() -> None:
             failed += 1
         if re.search(r"cami[oó]n", text, re.I):
             print(f"FAIL camión in viajeros text: {text[:120]!r}", file=sys.stderr)
+            failed += 1
+        if "35 horas" in a and re.search(r"45 km", text, re.I):
+            print(f"FAIL CAP 35h <- 45 km/h: {text[:120]!r}", file=sys.stderr)
             failed += 1
     if failed:
         raise SystemExit(f"self-check failed: {failed}")

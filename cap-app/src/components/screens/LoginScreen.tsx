@@ -113,6 +113,10 @@ export default function LoginScreen() {
             {busy ? "Comprobando..." : "Entrar"}
           </button>
         </form>
+        <p className="auth-legal">
+          Este portal no es un organismo oficial.{" "}
+          <a href="/aviso-legal.html">Aviso legal y fuentes</a>
+        </p>
       </div>
     </div>
   );

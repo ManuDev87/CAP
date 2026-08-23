@@ -47,11 +47,142 @@ function matches(text: string, all?: RegExp[], any?: RegExp[]): boolean {
   return Boolean(all?.length || any?.length);
 }
 
+const TIP_STOP = new Set([
+  "para",
+  "como",
+  "esta",
+  "este",
+  "esto",
+  "esos",
+  "esas",
+  "todo",
+  "toda",
+  "todos",
+  "todas",
+  "sobre",
+  "entre",
+  "desde",
+  "hasta",
+  "cuando",
+  "donde",
+  "cual",
+  "cuales",
+  "quien",
+  "porque",
+  "segun",
+  "hacia",
+  "ante",
+  "bajo",
+  "durante",
+  "mediante",
+  "contra",
+  "respuesta",
+  "respuestas",
+  "correcta",
+  "correctas",
+  "incorrecta",
+  "afirmacion",
+  "siguiente",
+  "siguientes",
+  "anterior",
+  "anteriores",
+  "debe",
+  "deben",
+  "puede",
+  "pueden",
+  "sera",
+  "seran",
+  "tiene",
+  "tienen",
+  "hace",
+  "caso",
+  "forma",
+  "parte",
+  "tipo",
+  "tipos",
+  "tambien",
+  "ademas",
+  "mismo",
+  "misma",
+  "otros",
+  "otras",
+  "solo",
+  "ningun",
+  "ninguna",
+  "cualquier",
+  "cualquiera",
+  "siempre",
+  "nunca",
+  "articulo",
+  "normativa",
+  "temario",
+  "oficial",
+  "examen",
+  "opcion",
+  "enunciado",
+  "pregunta",
+  "conductor",
+  "conductores",
+  "vehiculo",
+  "vehiculos",
+  "transporte",
+  "empresa",
+  "empresas",
+]);
+
+function foldHelp(s: string): string {
+  return (s || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ");
+}
+
+function tipTokens(s: string): Set<string> {
+  const out = new Set<string>();
+  for (const w of foldHelp(s).split(" ").filter(Boolean)) {
+    if (w.length < 4 || TIP_STOP.has(w) || /^\d+$/.test(w)) continue;
+    out.add(w);
+  }
+  return out;
+}
+
+function tipHits(src: Set<string>, dst: Set<string>): number {
+  let n = 0;
+  for (const x of src) {
+    for (const y of dst) {
+      if (x === y || (x.length >= 5 && y.length >= 5 && (x.includes(y) || y.includes(x)))) {
+        n += 1;
+        break;
+      }
+    }
+  }
+  return n;
+}
+
+/** Skip a generic tip if it explains a different concept than the item. */
+function explanationMatchesItem(expl: string, question: string, answer: string): boolean {
+  const te = tipTokens(expl);
+  const tq = tipTokens(question);
+  const ta = tipTokens(answer);
+  const tqa = new Set([...tq, ...ta]);
+  const hE = tipHits(te, tqa);
+  const hA = ta.size ? tipHits(ta, te) : 0;
+  if (hE >= 3 || hA >= 2 || (hE >= 2 && hA >= 1)) return true;
+  const numsA = new Set(foldHelp(answer).match(/\d+(?:[.,]\d+)?/g) ?? []);
+  const numsE = new Set(foldHelp(expl).match(/\d+(?:[.,]\d+)?/g) ?? []);
+  if (numsA.size && [...numsA].some((n) => numsE.has(n)) && hE >= 1) return true;
+  return false;
+}
+
 function firstTip(question: string, correct: string, list: Tip[]): string | null {
   const blob = blobOf(question, correct);
   for (const tip of list) {
     if (!matches(blob, tip.all, tip.any)) continue;
     if (tip.answer?.length && !tip.answer.some((r) => r.test(correct))) continue;
+    if (!tip.answer?.length && !explanationMatchesItem(tip.text, question, correct)) {
+      continue;
+    }
     return tip.text;
   }
   return null;

@@ -179,7 +179,7 @@ interface HelpModalProps {
 
 function helpFooterLabel(help: QuestionHelp): string {
   const blob = `${help.sourceUrl || ""} ${help.source || ""}`;
-  if (/boe\.es|\bBOE\b/i.test(blob)) return "Explicación del BOE";
+  if (/boe\.es|\bBOE\b/i.test(blob)) return "Basado en la norma (BOE)";
   return "Explicación del temario CAP";
 }
 

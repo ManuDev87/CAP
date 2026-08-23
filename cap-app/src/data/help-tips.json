@@ -100,6 +100,16 @@
       ]
     },
     {
+      "text": "En cursos de aprendizaje de la conducción o del CAP, el vehículo lleva tacógrafo instalado, pero no hace falta que esté calibrado.",
+      "all": [
+        "aprendizaje",
+        "tac[oó]grafo"
+      ],
+      "answer": [
+        "calibr"
+      ]
+    },
+    {
       "text": "A efectos de tiempos de conducción, la «semana» va de 00:00 del lunes a 24:00 del domingo.",
       "any": [
         "00:00 del lunes",
@@ -257,9 +267,17 @@
       ]
     },
     {
-      "text": "Aceite de calidad reduce rozamientos internos del motor y puede bajar un poco el consumo.",
+      "text": "Un aceite de calidad reduce el rozamiento entre piezas y, con ello, las pérdidas de potencia: el motor gasta menos carburante.",
       "any": [
-        "aceite de alta calidad"
+        "aceite de alta calidad",
+        "calidad del aceite",
+        "aceite del sistema de lubricaci"
+      ],
+      "answer": [
+        "rozamiento",
+        "p[eé]rdidas de potencia",
+        "^s[ií]",
+        "consumo"
       ]
     },
     {
@@ -283,8 +301,7 @@
         "cambio durante la subida",
         "cambio de marcha durante la subida",
         "m[aá]s cambios realice",
-        "pierde potencia",
-        "p[eé]rdidas de potencia"
+        "pierde potencia"
       ]
     },
     {
@@ -660,6 +677,29 @@
       ]
     },
     {
+      "text": "Si el domicilio registral no coincide con el de la administración o la explotación principal, los terceros pueden tomar como domicilio cualquiera de los dos.",
+      "any": [
+        "domicilio de una sociedad",
+        "domicilio registral",
+        "cu[aá]l ser[aá] el domicilio"
+      ],
+      "answer": [
+        "terceros",
+        "discrepancia",
+        "cualquiera de ellos"
+      ]
+    },
+    {
+      "text": "Sociedad anónima: al constituirla hay que desembolsar al menos el 25 % del capital (mínimo 60.000 €).",
+      "all": [
+        "sociedad(es)? an[oó]nimas?",
+        "desembols"
+      ],
+      "answer": [
+        "25"
+      ]
+    },
+    {
       "text": "Sociedad anónima: capital social mínimo 60.000 €. Junta ordinaria: en los 6 primeros meses, para aprobar cuentas.",
       "any": [
         "sociedad an[oó]nima",
@@ -693,19 +733,32 @@
     {
       "text": "Exportación: salida del territorio aduanero de la Unión de mercancías de la Unión. Ese es el régimen de exportación.",
       "any": [
-        "exportaci[oó]n",
+        "(?<!re)exportaci[oó]n",
         "r[eé]gimen aduanero"
       ],
       "answer": [
         "salida del territorio",
-        "exportaci[oó]n"
+        "(?<!re)exportaci[oó]n"
       ]
     },
     {
-      "text": "El Espacio Schengen es un territorio europeo sin controles fronterizos internos habituales entre Estados adheridos.",
+      "text": "No todos los países de la cooperación Schengen tienen que ser miembros del Espacio Schengen: el Tratado de Ámsterdam integró esa cooperación en la UE.",
+      "all": [
+        "schengen",
+        "[aá]msterdam"
+      ]
+    },
+    {
+      "text": "El Espacio Schengen es un territorio europeo sin controles fronterizos internos habituales entre Estados adheridos. Distingue fronteras interiores y exteriores.",
       "any": [
         "espacio schengen",
         "schengen"
+      ],
+      "answer": [
+        "fronter",
+        "controles",
+        "espacio schengen",
+        "estados adher"
       ]
     },
     {
@@ -735,11 +788,34 @@
     {
       "text": "Niebla: atención a las marcas viales (eje y bordes). Lluvia: más peligro con las primeras gotas (película de grasa) y más distancia. Hielo: pérdida de adherencia, sobre todo en sombras y si un lado está seco y el otro no.",
       "any": [
-        "niebla",
-        "primeras gotas",
+        "\\bniebla\\b",
+        "primeras gotas"
+      ]
+    },
+    {
+      "text": "Con lluvia hay que aumentar la distancia de seguridad: el asfalto está más resbaladizo y la frenada se alarga.",
+      "any": [
+        "lluvia",
+        "lloviendo"
+      ],
+      "answer": [
+        "distancia de seguridad",
+        "aumentar la distancia"
+      ]
+    },
+    {
+      "text": "El hielo reduce la adherencia. Aparece sobre todo en zonas de sombra y a primera hora de la mañana.",
+      "any": [
         "hielo",
-        "lloviendo",
-        "distancia de seguridad"
+        "calzada nevada",
+        "calzada helada"
+      ],
+      "answer": [
+        "adherencia",
+        "sombr",
+        "primera hora",
+        "suelo seco",
+        "un lado"
       ]
     },
     {
@@ -801,11 +877,25 @@
       ]
     },
     {
-      "text": "Arena seca sobre el fuego: sofocación (quita el oxígeno). Enfriar es bajar la temperatura del combustible. Cada clase de fuego tiene su agente.",
+      "text": "Enfriamiento: método de extinción que consiste en bajar la temperatura del combustible.",
+      "any": [
+        "temperatura del combustible",
+        "m[eé]todo de extinci[oó]n"
+      ],
+      "answer": [
+        "enfriamiento"
+      ]
+    },
+    {
+      "text": "Arena seca sobre el fuego: sofocación (quita el oxígeno). No se confunde con enfriar (bajar la temperatura).",
       "any": [
         "arena seca",
-        "enfriamiento",
         "sofocaci[oó]n"
+      ],
+      "answer": [
+        "sofocaci",
+        "arena",
+        "ox[ií]geno"
       ]
     },
     {
@@ -863,7 +953,8 @@
     {
       "text": "El administrativo hace contabilidad y nóminas. El conductor, además de conducir, vigila el vehículo. En empresas pequeñas el empresario a menudo conduce.",
       "any": [
-        "administrativo",
+        "elaboraci[oó]n de las n[oó]minas",
+        "funciones propias de un administrativo",
         "funciones propias de un conductor",
         "empresas peque[nñ]as"
       ]
@@ -877,8 +968,7 @@
     {
       "text": "SIT de túneles: gestión integral (ventilación, incendios, tráfico, comunicaciones). El test marca que pueden tener todas esas funciones.",
       "any": [
-        "\\bSIT\\b",
-        "t[uú]neles"
+        "\\bSIT\\b"
       ],
       "answer": [
         "todas las respuestas"
@@ -1152,6 +1242,17 @@
       ]
     },
     {
+      "text": "Según la capacidad de enfriamiento, el temario distingue cuatro clases de vehículos refrigerantes.",
+      "all": [
+        "refrigerantes",
+        "enfriamiento"
+      ],
+      "answer": [
+        "cuatro",
+        "^4"
+      ]
+    },
+    {
       "text": "Acuerdo multilateral: más de dos países pactan autorizaciones y condiciones (p. ej. CEMT). El bilateral es solo entre dos.",
       "any": [
         "acuerdo multilateral"
@@ -1182,6 +1283,15 @@
         "consumo de combustible",
         "ahorrar carburante",
         "menos combustible"
+      ],
+      "answer": [
+        "marchas",
+        "revoluciones",
+        "aerodin",
+        "velocidad",
+        "sobrecarga",
+        "rpm",
+        "todas las respuestas"
       ]
     },
     {
@@ -1355,8 +1465,9 @@
     },
     {
       "text": "En dos semanas: dos descansos semanales normales (45 h) o uno normal y uno reducido de al menos 24 h, compensando.",
-      "any": [
-        "descanso semanal"
+      "all": [
+        "descanso semanal",
+        "dos semanas"
       ]
     },
     {
@@ -1453,11 +1564,13 @@
     {
       "text": "CAP: cualificación del conductor. No hace falta tener ya el permiso para la inicial. Exclusiones (FF.AA., etc.). Faltar a un 5 % o más de horas excluye del curso.",
       "any": [
-        "\\bCAP\\b",
-        "cualificaci[oó]n inicial"
+        "cualificaci[oó]n inicial",
+        "curso CAP",
+        "certificado de aptitud profesional"
       ],
       "answer": [
-        "no es necesario",
+        "no es necesario.*permiso",
+        "no es necesario tener",
         "fuerzas armadas",
         "5 por"
       ]
@@ -1465,9 +1578,10 @@
     {
       "text": "Fuego: agente según clase (A sólidos, B líquidos, C gases, D metales). El agua no va a metales. La luz de emergencia señaliza, no apaga.",
       "any": [
-        "extintor",
         "fuego de clase",
-        "incendio"
+        "clases de fuego",
+        "agente extintor",
+        "extintor.*clase"
       ]
     },
     {
@@ -1559,17 +1673,22 @@
       ]
     },
     {
-      "text": "Schengen: espacio sin controles fronterizos internos habituales entre los Estados que forman parte.",
+      "text": "Schengen: espacio sin controles fronterizos internos habituales entre los Estados que forman parte. Distingue fronteras interiores y exteriores.",
       "any": [
         "schengen"
+      ],
+      "answer": [
+        "fronter",
+        "controles",
+        "espacio schengen",
+        "estados adher"
       ]
     },
     {
       "text": "Tara: masa del vehículo vacío. MMA: masa máxima autorizada. Carga útil: MMA menos tara.",
       "any": [
         "\\btara\\b",
-        "carga [uú]til",
-        "\\bMMA\\b"
+        "carga [uú]til"
       ]
     },
     {
@@ -1637,8 +1756,14 @@
     },
     {
       "text": "Sociedad anónima: capital mínimo 60.000 euros. Junta ordinaria: aprobación de cuentas en los seis primeros meses.",
+      "all": [
+        "sociedad(es)? an[oó]nimas?"
+      ],
       "any": [
-        "sociedad an[oó]nima"
+        "60\\.000",
+        "capital",
+        "junta ordinaria",
+        "desembols"
       ]
     },
     {
@@ -1650,7 +1775,7 @@
     {
       "text": "Exportación aduanera: la mercancía de la Unión sale del territorio aduanero de la UE.",
       "any": [
-        "exportaci[oó]n"
+        "(?<!re)exportaci[oó]n"
       ]
     },
     {
@@ -1679,6 +1804,19 @@
       ]
     },
     {
+      "text": "En curva, velocidad y carga (masa alta o centro de gravedad alto) aumentan la fuerza centrífuga y el riesgo de vuelco.",
+      "any": [
+        "riesgo de vuelco",
+        "puede volcar",
+        "volcar[aá]"
+      ],
+      "answer": [
+        "volcar",
+        "vuelco",
+        "centr[ií]fug"
+      ]
+    },
+    {
       "text": "Centro de gravedad alto o carga mal repartida: más vuelco y peor frenada. Pesado abajo, ligero arriba.",
       "any": [
         "centro de gravedad",
@@ -1688,7 +1826,9 @@
     {
       "text": "Tacógrafo: aparato que registra tiempos de conducción y actividad. Analógico en disco; digital en memoria y tarjeta.",
       "any": [
-        "tac[oó]grafo"
+        "qu[eé] es el tac[oó]grafo",
+        "qu[eé] es un tac[oó]grafo",
+        "para qu[eé] sirve el tac[oó]grafo"
       ]
     }
   ]

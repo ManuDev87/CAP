@@ -512,7 +512,13 @@ footer {
 footer .f-brand { display: flex; align-items: center; gap: 12px; }
 footer p { color: var(--muted); font-size: 14px; line-height: 1.55; }
 footer strong { color: var(--navy); }
-footer .f-right { text-align: right; }
+footer .f-right { text-align: right; max-width: 420px; }
+footer .f-disclaimer { font-size: 13px; margin-bottom: 8px; }
+footer .f-links { display: flex; flex-wrap: wrap; gap: 8px 14px; justify-content: flex-end; margin-bottom: 8px; }
+footer .f-links a {
+  color: var(--navy); font-weight: 700; font-size: 13px; text-decoration: none;
+}
+footer .f-links a:hover { color: var(--brand); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
@@ -575,7 +581,8 @@ footer .f-right { text-align: right; }
     padding: 32px 20px;
   }
   footer .f-brand { flex-direction: column; text-align: center; }
-  footer .f-right { text-align: center; }
+  footer .f-right { text-align: center; max-width: none; }
+  footer .f-links { justify-content: center; }
 }
 
 @media (max-width: 480px) {
@@ -661,7 +668,7 @@ footer .f-right { text-align: right; }
     <div class="hero-copy" id="hero-copy">
       <p class="hero-brand"><span>Portal del Alumno</span>Grupo CAP</p>
       <h1>Practica con los exámenes originales.</h1>
-      <p class="hero-proof">El 98% de los alumnos aprueban con nosotros</p>
+      <p class="hero-proof">El 98% de los alumnos aprueban con nosotros <a href="aviso-legal.html#indicadores" style="color:inherit;text-decoration:none" title="Indicador interno, no estadística oficial">*</a></p>
     <p class="lead">
         Olvídate de imprimir los exámenes en papel. CAP mercancías y viajeros, en el móvil o el ordenador, como el día de la prueba.
     </p>
@@ -824,7 +831,14 @@ footer .f-right { text-align: right; }
     <span class="brand-mark">CAP</span>
     <p><strong>Grupo CAP</strong> · Grupo Personal CAP<br />Preparación para el examen CAP de mercancías y viajeros</p>
   </div>
-  <p class="f-right">© <span id="year">2026</span> Grupo CAP. Todos los derechos reservados.</p>
+  <div class="f-right">
+    <p class="f-disclaimer">Grupo CAP no es un organismo de la Administración. Los exámenes proceden de convocatorias públicas ya publicadas.</p>
+    <nav class="f-links" aria-label="Información legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="aviso-legal.html#fuentes">Fuentes</a>
+    </nav>
+    <p>© <span id="year">2026</span> Grupo CAP. Todos los derechos reservados.</p>
+  </div>
 </footer>
 
 <script>

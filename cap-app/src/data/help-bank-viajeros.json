@@ -300,13 +300,6 @@
     "origin": "catalog",
     "ruleId": "consumo_aerodinamica_mantenimiento"
   },
-  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante\tevitar los períodos de tiempo con el vehículo parado y el motor al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
-  },
   "qué es recomendable en las incorporaciones a una vía de circulación\tllegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía": {
     "explanation": "En una incorporación hay que llegar a una velocidad próxima a la del tráfico de la vía principal para no obligar a frenar a los demás.",
     "source": "Reglamento General de Circulación (incorporaciones) y manual DGT",
@@ -811,13 +804,6 @@
     "origin": "catalog",
     "ruleId": "cinturon_altura"
   },
-  "cuál de las actuaciones indicadas es más correcta para optimizar el consumo de carburante\tevitar períodos de tiempo en los que el motor esté al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
-  },
   "en zonas urbanas o con congestión del tráfico, es conveniente\tconducir con bastante anticipación": {
     "explanation": "En ciudad o en tráfico denso conviene conducir con anticipación: permite frenar menos, gastar menos y reducir riesgos.",
     "source": "Guía de conducción eficiente IDAE y conducción preventiva DGT",
@@ -1104,6 +1090,13 @@
     "sourceUrl": "https://www.dgt.es/muevete-con-seguridad/evita-conductas-de-riesgo/",
     "origin": "catalog",
     "ruleId": "reposacabezas"
+  },
+  "cuál será el domicilio de una sociedad anónima española\ten caso de discrepancia entre el domicilio registral y el lugar donde radique su principal explotación, los terceros podrán considerar como domicilio cualquiera de ellos": {
+    "explanation": "Si el domicilio inscrito en el Registro no coincide con el lugar de la administración efectiva o de la explotación principal, los terceros pueden considerar como domicilio cualquiera de los dos.",
+    "source": "Real Decreto Legislativo 1/2010 (Ley de Sociedades de Capital), artículo 10",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544",
+    "origin": "catalog",
+    "ruleId": "lsc_domicilio_terceros"
   },
   "cómo puede ser el período de descanso semanal\tordinario (todo período ininterrumpido de descanso de, al menos, 45 horas) o reducido (todo período ininterrumpido de descanso de, al menos, 24 horas consecutivas)": {
     "explanation": "En dos semanas consecutivas el conductor debe tomar al menos dos periodos de descanso semanal normal (45 h) o uno normal y uno reducido de al menos 24 horas. El descanso reducido se compensa.",
@@ -1580,13 +1573,6 @@
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
     "origin": "catalog",
     "ruleId": "r561_conduccion_bisemanal"
-  },
-  "cuál de las actuaciones indicadas es más correcta para optimizar el consumo de carburante\tevitar períodos de tiempo en los que el motor esté al ralentí. viajeros a ciudad del transporte, santander, cantabria": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
   },
   "el período de conducción bisemanal no puede exceder de\t90 horas. viajeros a ciudad del transporte, santander, cantabria": {
     "explanation": "El tiempo de conducción acumulado durante dos semanas consecutivas no debe superar las 90 horas.",
@@ -2154,13 +2140,6 @@
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
     "origin": "catalog",
     "ruleId": "estilo_conduccion_consumo"
-  },
-  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante\tevitar períodos de tiempo en los que el motor esté al ralentí": {
-    "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "evitar_aceleraciones"
   },
   "ante la negativa de un transportista a aceptar la reserva de una persona con discapacidad en un transporte regular con un recorrido de 250 km, si esta designa un acompañante para prestarle la asistencia necesaria, qué debe hacer el transportista viajeros a facultad de ciencias ugra. edif. mecenas. c/doctor severo ochoa, s/n campus u. fuente nueva, granada, granada\taceptar que dicho acompañante viaje gratuitamente": {
     "explanation": "Si el transportista exige que la persona con discapacidad o movilidad reducida vaya acompañada, esa persona de asistencia viaja sin pagar.",

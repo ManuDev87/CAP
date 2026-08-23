@@ -825,6 +825,27 @@ RULES: list[Rule] = [
         source_url=URL_LSC,
         priority=14,
     ),
+    Rule(
+        id="lsc_domicilio_terceros",
+        q_any=[
+            r"domicilio de una sociedad",
+            r"cu[aá]l ser[aá] el domicilio",
+            r"domicilio registral",
+        ],
+        a_any=[
+            r"terceros podr[aá]n considerar",
+            r"discrepancia entre el domicilio",
+            r"cualquiera de ellos",
+        ],
+        explanation=(
+            "Si el domicilio inscrito en el Registro no coincide con el lugar de la "
+            "administración efectiva o de la explotación principal, los terceros "
+            "pueden considerar como domicilio cualquiera de los dos."
+        ),
+        source="Real Decreto Legislativo 1/2010 (Ley de Sociedades de Capital), artículo 10",
+        source_url=URL_LSC,
+        priority=24,
+    ),
     # ----- PRL / laboral -----
     Rule(
         id="prl_empresario_conductor",
@@ -1294,7 +1315,7 @@ RULES: list[Rule] = [
     Rule(
         id="evitar_aceleraciones",
         q_all=[r"optimizar el consumo"],
-        a_any=[r"evitar", r"aceleraciones"],
+        a_any=[r"acelerones", r"aceleraciones"],
         explanation=(
             "La conducción a base de acelerones y frenazos es la que más carburante "
             "gasta. Lo correcto es anticipar y mantener una velocidad lo más estable "
