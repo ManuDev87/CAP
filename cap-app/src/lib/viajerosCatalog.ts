@@ -264,12 +264,6 @@ const viajerosGaliciaTests: TestMeta[] = [
   { id: "viajeros_galicia_septiembre_2026", name: "Septiembre 2026", img: "/img/bus3.jpg" },
 ];
 
-const viajerosExtremaduraTests: TestMeta[] = [
-];
-
-const viajerosMurciaTests: TestMeta[] = [
-];
-
 export const viajerosCommunityRegions: CommunityRegion[] = [
   {
     id: "andalucia",
@@ -296,12 +290,9 @@ export const viajerosCommunityRegions: CommunityRegion[] = [
     subregions: [
       { id: "alava", name: "Álava", tests: viajerosAlavaTests },
       { id: "guipuzkoa", name: "Guipúzcoa", tests: viajerosGuipuzkoaTests },
-      { id: "vizcaya", name: "Vizcaya", tests: [] },
     ],
   },
   { id: "galicia", name: "Galicia", tests: viajerosGaliciaTests },
-  { id: "extremadura", name: "Extremadura", tests: viajerosExtremaduraTests },
-  { id: "murcia", name: "Murcia", tests: viajerosMurciaTests },
 ];
 
 export const viajerosExamLoaders: Record<

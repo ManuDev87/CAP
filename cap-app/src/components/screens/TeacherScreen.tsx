@@ -16,17 +16,22 @@ import type { ErrorTopicStat } from "@/lib/errorTopicStats";
 import RankingList from "@/components/stats/RankingList";
 import StatsChart from "@/components/stats/StatsChart";
 import ErrorTopicList from "@/components/stats/ErrorTopicList";
+import StaffShell from "@/components/staff/StaffShell";
 import {
   IconArrowLeft,
   IconChart,
-  IconLogout,
   IconSpinner,
   IconTrash,
+  IconUserPlus,
+  IconUsers,
 } from "@/components/icons";
+
+type TeacherSection = "alumnos" | "alta" | "seguimiento";
 
 export default function TeacherScreen() {
   const { user, logout } = useApp();
   const teacherId = user?.username ?? "";
+  const [section, setSection] = useState<TeacherSection>("alumnos");
 
   const [students, setStudents] = useState<UserListEntry[] | null>(null);
   const [loadError, setLoadError] = useState(false);
@@ -74,6 +79,15 @@ export default function TeacherScreen() {
     return options;
   }, [records]);
 
+  const counts = useMemo(() => {
+    const total = students?.length ?? 0;
+    const mercancias =
+      students?.filter((u) => u.capTrack === "mercancias").length ?? 0;
+    const viajeros =
+      students?.filter((u) => u.capTrack === "viajeros").length ?? 0;
+    return { total, mercancias, viajeros };
+  }, [students]);
+
   async function handleAddStudent(e: FormEvent) {
     e.preventDefault();
     if (!teacherId) return;
@@ -106,6 +120,7 @@ export default function TeacherScreen() {
       setSuccessMsg(true);
       setTimeout(() => setSuccessMsg(false), 3000);
       await refreshStudents();
+      setSection("alumnos");
     } catch (err) {
       alert("Error al conectar: " + (err as Error).message);
     } finally {
@@ -117,7 +132,10 @@ export default function TeacherScreen() {
     if (!confirm(`¿Seguro que quieres borrar al alumno ${u}?`)) return;
     try {
       await deleteUser(u);
-      if (selected?.username === u) setSelected(null);
+      if (selected?.username === u) {
+        setSelected(null);
+        setSection("alumnos");
+      }
       await refreshStudents();
     } catch (err) {
       alert("Error al borrar: " + (err as Error).message);
@@ -126,6 +144,7 @@ export default function TeacherScreen() {
 
   async function openStudent(student: UserListEntry) {
     setSelected(student);
+    setSection("seguimiento");
     setFilter("all");
     setStatsLoading(true);
     setErrorTopicsLoading(true);
@@ -151,104 +170,134 @@ export default function TeacherScreen() {
     }
   }
 
-  if (selected) {
-    return (
-      <div className="screen-overlay z-4000 bg-appbg px-5 py-10 max-md:px-2.5 max-md:py-4">
-        <div className="panel-card mx-auto max-w-275 overflow-hidden">
-          <div
-            className="flex flex-wrap items-center justify-between gap-3 px-7 py-5 text-white max-md:px-4"
-            style={{
-              background: "linear-gradient(135deg, #0A8442 0%, #064e29 100%)",
-            }}
-          >
-            <h2 className="flex items-center gap-2.5 text-[22px] font-bold max-md:text-lg">
-              <IconChart className="text-2xl" />
-              Seguimiento · {selected.name}
-            </h2>
-            <button
-              onClick={() => setSelected(null)}
-              className="btn rounded-full border-none bg-white px-4.5 py-2 text-sm font-bold text-brand-600 shadow-md hover:-translate-y-0.5 hover:bg-appbg"
-            >
-              <IconArrowLeft /> Volver a mis alumnos
-            </button>
-          </div>
-
-          <div className="border-b border-line bg-white px-7 py-3 text-sm text-ink-600 max-md:px-4">
-            Usuario: <strong className="text-ink-900">{selected.username}</strong>
-          </div>
-
-          {statsLoading ? (
-            <div className="flex items-center justify-center gap-2 p-16 text-ink-600">
-              <IconSpinner className="text-xl" /> Cargando estadísticas…
-            </div>
-          ) : (
-            <div className="grid min-h-125 md:grid-cols-[320px_minmax(0,1fr)]">
-              <div className="min-w-0 overflow-y-auto border-line p-7 max-md:border-b md:border-r">
-                <h3 className="panel-heading text-base">
-                  Ranking de Mejores Puntuaciones
-                </h3>
-                <RankingList records={records} />
-              </div>
-              <div className="min-w-0 p-7">
-                <div className="mb-4 flex flex-wrap items-center justify-between gap-2.5">
-                  <h3 className="panel-heading !mb-0 text-base">
-                    Evolución de Resultados
-                  </h3>
-                  <select
-                    className="chart-select"
-                    value={filter}
-                    onChange={(e) => setFilter(e.target.value)}
-                  >
-                    <option value="all">Todos los exámenes</option>
-                    {filterOptions.map((o) => (
-                      <option key={o.id} value={o.id}>
-                        {o.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <StatsChart records={records} filterTestId={filter} />
-
-                <div className="mt-8">
-                  <h3 className="panel-heading text-base">
-                    Estadísticas de fallos
-                  </h3>
-                  <ErrorTopicList
-                    total={errorTotal}
-                    topics={errorTopics}
-                    loading={errorTopicsLoading}
-                    emptyMessage="Este alumno aún no tiene preguntas falladas registradas."
-                  />
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    );
+  function backToStudents() {
+    setSelected(null);
+    setSection("alumnos");
   }
 
-  return (
-    <div className="screen-overlay z-4000 bg-appbg px-5 py-10 max-md:px-2.5 max-md:py-4">
-      <div className="panel-card mx-auto max-w-275 overflow-hidden">
-        <div className="flex flex-wrap items-center justify-between gap-3 bg-navy-700 px-7 py-5 text-white max-md:px-4">
-          <div>
-            <h2 className="text-xl font-medium max-md:text-lg">
-              Panel del Profesor
-            </h2>
-            <p className="mt-0.5 text-sm text-white/80">
-              {user?.name}
-              {user ? " · tus alumnos" : ""}
-            </p>
-          </div>
-          <button onClick={logout} className="btn-ghost-light">
-            <IconLogout className="text-base" /> Salir
-          </button>
-        </div>
+  const navItems = [
+    { id: "alumnos", label: "Mis alumnos", icon: <IconUsers /> },
+    { id: "alta", label: "Alta alumno", icon: <IconUserPlus /> },
+    ...(selected
+      ? [{ id: "seguimiento", label: "Seguimiento", icon: <IconChart /> }]
+      : []),
+  ];
 
-        <div className="grid gap-7 p-7 md:grid-cols-2 max-md:p-4">
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Añadir Nuevo Alumno</h3>
+  const heading =
+    section === "alta"
+      ? { title: "Alta de alumno", subtitle: "Crea un acceso para tu autoescuela" }
+      : section === "seguimiento" && selected
+        ? {
+            title: `Seguimiento · ${selected.name}`,
+            subtitle: `Usuario ${selected.username} · ${CAP_TRACK_LABELS[selected.capTrack]}`,
+          }
+        : {
+            title: "Mis alumnos",
+            subtitle: user?.name ? `${user.name} · tu grupo` : "Tu grupo",
+          };
+
+  return (
+    <StaffShell
+      brand="Grupo CAP"
+      eyebrow="Portal profesor"
+      userName={user?.name}
+      items={navItems}
+      activeId={section}
+      onSelect={(id) => {
+        const next = id as TeacherSection;
+        if (next !== "seguimiento") setSelected(null);
+        setSection(next);
+      }}
+      onLogout={logout}
+      title={heading.title}
+      subtitle={heading.subtitle}
+      headerAction={
+        section === "seguimiento" ? (
+          <button
+            type="button"
+            className="btn-ghost-brand !px-3.5 !py-2 !text-sm"
+            onClick={backToStudents}
+          >
+            <IconArrowLeft /> Volver
+          </button>
+        ) : null
+      }
+    >
+      {section === "alumnos" && (
+        <>
+          <div className="mb-6 grid gap-5 sm:grid-cols-3">
+            <article className="staff-stat is-accent">
+              <p className="staff-stat-label">Alumnos</p>
+              <p className="staff-stat-value">
+                {students === null ? "—" : counts.total}
+              </p>
+            </article>
+            <article className="staff-stat">
+              <p className="staff-stat-label">Mercancías</p>
+              <p className="staff-stat-value">
+                {students === null ? "—" : counts.mercancias}
+              </p>
+            </article>
+            <article className="staff-stat">
+              <p className="staff-stat-label">Viajeros</p>
+              <p className="staff-stat-value">
+                {students === null ? "—" : counts.viajeros}
+              </p>
+            </article>
+          </div>
+          <div className="staff-card">
+            <h3 className="panel-heading">Listado</h3>
+            <ul className="staff-list">
+              {students === null && !loadError && (
+                <li className="py-3 text-sm text-ink-600">Cargando alumnos...</li>
+              )}
+              {loadError && (
+                <li className="py-3 text-sm text-danger-500">
+                  Error al cargar alumnos.
+                </li>
+              )}
+              {students !== null && students.length === 0 && (
+                <li className="py-3 text-sm text-ink-600">
+                  Aún no tienes alumnos. Usa Alta alumno para crear el primero.
+                </li>
+              )}
+              {students?.map((u) => (
+                <li key={u.username} className="staff-list-item flex-wrap">
+                  <div className="flex min-w-0 flex-1 flex-col px-1">
+                    <span className="truncate font-bold text-ink-900">
+                      {u.name}
+                    </span>
+                    <span className="text-[13px] text-ink-400">
+                      Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
+                    </span>
+                  </div>
+                  <div className="flex shrink-0 items-center gap-2">
+                    <button
+                      type="button"
+                      className="btn-ghost-brand !px-3 !py-1.5 !text-[13px]"
+                      onClick={() => openStudent(u)}
+                      title="Ver seguimiento"
+                    >
+                      <IconChart className="text-sm" /> Ver estadísticas
+                    </button>
+                    <button
+                      className="btn-danger-soft"
+                      onClick={() => handleDelete(u.username)}
+                    >
+                      Eliminar <IconTrash className="text-sm" />
+                    </button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
+
+      {section === "alta" && (
+        <div className="mx-auto max-w-xl">
+          <div className="staff-card">
+            <h3 className="panel-heading">Nuevo alumno</h3>
             <form onSubmit={handleAddStudent} className="flex flex-col gap-3">
               <input
                 type="text"
@@ -315,65 +364,65 @@ export default function TeacherScreen() {
               </label>
               <button type="submit" className="btn-primary" disabled={busy}>
                 {busy && <IconSpinner className="text-base" />}
-                Crear Alumno
+                Crear alumno
               </button>
               {successMsg && (
                 <p className="success-text">Alumno creado con éxito</p>
               )}
             </form>
           </div>
-
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Mis Alumnos</h3>
-            <ul className="max-h-100 list-none overflow-y-auto">
-              {students === null && !loadError && (
-                <li className="py-3 text-sm text-ink-600">Cargando alumnos...</li>
-              )}
-              {loadError && (
-                <li className="py-3 text-sm text-danger-500">
-                  Error al cargar alumnos.
-                </li>
-              )}
-              {students !== null && students.length === 0 && (
-                <li className="py-3 text-sm text-ink-600">
-                  Aún no tienes alumnos. Añade el primero.
-                </li>
-              )}
-              {students?.map((u) => (
-                <li
-                  key={u.username}
-                  className="flex flex-wrap items-center justify-between gap-2 border-b border-line py-3 last:border-b-0"
-                >
-                  <div className="flex min-w-0 flex-1 flex-col px-1">
-                    <span className="truncate font-bold text-ink-900">
-                      {u.name}
-                    </span>
-                    <span className="text-[13px] text-ink-400">
-                      Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
-                    </span>
-                  </div>
-                  <div className="flex shrink-0 items-center gap-2">
-                    <button
-                      type="button"
-                      className="btn-ghost-brand !px-3 !py-1.5 !text-[13px]"
-                      onClick={() => openStudent(u)}
-                      title="Ver seguimiento"
-                    >
-                      <IconChart className="text-sm" /> Ver estadísticas
-                    </button>
-                    <button
-                      className="btn-danger-soft"
-                      onClick={() => handleDelete(u.username)}
-                    >
-                      Eliminar <IconTrash className="text-sm" />
-                    </button>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
+      )}
+
+      {section === "seguimiento" && selected && (
+        <div className="staff-card overflow-hidden p-0">
+          {statsLoading ? (
+            <div className="flex items-center justify-center gap-2 p-16 text-ink-600">
+              <IconSpinner className="text-xl" /> Cargando estadísticas…
+            </div>
+          ) : (
+            <div className="grid min-h-125 md:grid-cols-[320px_minmax(0,1fr)]">
+              <div className="min-w-0 overflow-y-auto border-line p-7 max-md:border-b md:border-r">
+                <h3 className="panel-heading text-base">
+                  Ranking de mejores puntuaciones
+                </h3>
+                <RankingList records={records} />
+              </div>
+              <div className="min-w-0 p-7">
+                <div className="mb-4 flex flex-wrap items-center justify-between gap-2.5">
+                  <h3 className="panel-heading !mb-0 text-base">
+                    Evolución de resultados
+                  </h3>
+                  <select
+                    className="chart-select"
+                    value={filter}
+                    onChange={(e) => setFilter(e.target.value)}
+                  >
+                    <option value="all">Todos los exámenes</option>
+                    {filterOptions.map((o) => (
+                      <option key={o.id} value={o.id}>
+                        {o.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <StatsChart records={records} filterTestId={filter} />
+                <div className="mt-8">
+                  <h3 className="panel-heading text-base">
+                    Estadísticas de fallos
+                  </h3>
+                  <ErrorTopicList
+                    total={errorTotal}
+                    topics={errorTopics}
+                    loading={errorTopicsLoading}
+                    emptyMessage="Este alumno aún no tiene preguntas falladas registradas."
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </StaffShell>
   );
 }

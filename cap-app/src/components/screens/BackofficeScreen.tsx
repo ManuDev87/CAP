@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, type FormEvent } from "react";
+import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
 import {
   assignStudentToTeacher,
@@ -11,18 +11,27 @@ import {
   setShowSeedBtn,
   type UserListEntry,
 } from "@/lib/db";
-import { IconLogout, IconSpinner, IconTrash } from "@/components/icons";
+import {
+  IconLayoutDashboard,
+  IconSpinner,
+  IconTeacher,
+  IconTrash,
+  IconUsers,
+} from "@/components/icons";
+import StaffShell from "@/components/staff/StaffShell";
 import type { CapTrack } from "@/lib/types";
 import { CAP_TRACK_LABELS } from "@/lib/types";
 
+type AdminSection = "resumen" | "profesores" | "alumnos";
+
 export default function BackofficeScreen() {
-  const { logout } = useApp();
+  const { logout, user } = useApp();
+  const [section, setSection] = useState<AdminSection>("resumen");
 
   const [teachers, setTeachers] = useState<UserListEntry[] | null>(null);
   const [students, setStudents] = useState<UserListEntry[] | null>(null);
   const [loadError, setLoadError] = useState(false);
 
-  // Teacher form
   const [tName, setTName] = useState("");
   const [tUsername, setTUsername] = useState("");
   const [tPassword, setTPassword] = useState("");
@@ -30,7 +39,6 @@ export default function BackofficeScreen() {
   const [tBusy, setTBusy] = useState(false);
   const [tSuccess, setTSuccess] = useState(false);
 
-  // Student form
   const [sName, setSName] = useState("");
   const [sUsername, setSUsername] = useState("");
   const [sPassword, setSPassword] = useState("");
@@ -57,6 +65,16 @@ export default function BackofficeScreen() {
     refresh();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const counts = useMemo(() => {
+    const t = teachers?.length ?? 0;
+    const s = students?.length ?? 0;
+    const mercancias =
+      students?.filter((u) => u.capTrack === "mercancias").length ?? 0;
+    const viajeros =
+      students?.filter((u) => u.capTrack === "viajeros").length ?? 0;
+    return { t, s, mercancias, viajeros };
+  }, [teachers, students]);
 
   function teacherLabel(username?: string): string {
     if (!username) return "Sin profesor";
@@ -166,28 +184,74 @@ export default function BackofficeScreen() {
     }
   }
 
+  const titles: Record<AdminSection, { title: string; subtitle: string }> = {
+    resumen: {
+      title: "Resumen",
+      subtitle: "Vista general de profesores y alumnos",
+    },
+    profesores: {
+      title: "Profesores",
+      subtitle: "Altas de autoescuela y listado",
+    },
+    alumnos: {
+      title: "Alumnos",
+      subtitle: "Altas, asignación y modalidad CAP",
+    },
+  };
+
   return (
-    <div className="screen-overlay z-4000 bg-appbg px-5 py-10 max-md:px-2.5 max-md:py-4">
-      <div className="panel-card mx-auto max-w-275 overflow-hidden">
-        <div className="flex items-center justify-between bg-navy-700 px-7 py-5 text-white max-md:px-4">
-          <h2 className="text-xl font-medium max-md:text-lg">
-            Panel de Administración
-          </h2>
-          <button onClick={logout} className="btn-ghost-light">
-            <IconLogout className="text-base" /> Salir
-          </button>
+    <StaffShell
+      brand="Grupo CAP"
+      eyebrow="Administración"
+      userName={user?.name}
+      items={[
+        { id: "resumen", label: "Resumen", icon: <IconLayoutDashboard /> },
+        { id: "profesores", label: "Profesores", icon: <IconTeacher /> },
+        { id: "alumnos", label: "Alumnos", icon: <IconUsers /> },
+      ]}
+      activeId={section}
+      onSelect={(id) => setSection(id as AdminSection)}
+      onLogout={logout}
+      title={titles[section].title}
+      subtitle={titles[section].subtitle}
+    >
+      {loadError && (
+        <p className="mb-6 text-sm text-danger-500">Error al cargar usuarios.</p>
+      )}
+
+      {section === "resumen" && (
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <article className="staff-stat">
+            <p className="staff-stat-label">Profesores</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.t}
+            </p>
+          </article>
+          <article className="staff-stat is-accent">
+            <p className="staff-stat-label">Alumnos</p>
+            <p className="staff-stat-value">
+              {students === null ? "—" : counts.s}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">CAP Mercancías</p>
+            <p className="staff-stat-value">
+              {students === null ? "—" : counts.mercancias}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">CAP Viajeros</p>
+            <p className="staff-stat-value">
+              {students === null ? "—" : counts.viajeros}
+            </p>
+          </article>
         </div>
+      )}
 
-        {loadError && (
-          <p className="px-7 pt-5 text-sm text-danger-500">
-            Error al cargar usuarios.
-          </p>
-        )}
-
-        {/* Teachers */}
-        <div className="grid gap-7 border-b border-line p-7 md:grid-cols-2 max-md:p-4">
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Añadir Profesor / Autoescuela</h3>
+      {section === "profesores" && (
+        <div className="staff-grid">
+          <div className="staff-card">
+            <h3 className="panel-heading">Añadir profesor / autoescuela</h3>
             <form onSubmit={handleAddTeacher} className="flex flex-col gap-3">
               <input
                 type="text"
@@ -223,7 +287,7 @@ export default function BackofficeScreen() {
               />
               <button type="submit" className="btn-primary" disabled={tBusy}>
                 {tBusy && <IconSpinner className="text-base" />}
-                Crear Profesor
+                Crear profesor
               </button>
               {tSuccess && (
                 <p className="success-text">Profesor creado con éxito</p>
@@ -231,9 +295,9 @@ export default function BackofficeScreen() {
             </form>
           </div>
 
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Profesores Registrados</h3>
-            <ul className="max-h-75 list-none overflow-y-auto">
+          <div className="staff-card">
+            <h3 className="panel-heading">Profesores registrados</h3>
+            <ul className="staff-list">
               {teachers === null && !loadError && (
                 <li className="py-3 text-sm text-ink-600">Cargando...</li>
               )}
@@ -243,10 +307,7 @@ export default function BackofficeScreen() {
                 </li>
               )}
               {teachers?.map((u) => (
-                <li
-                  key={u.username}
-                  className="flex items-center justify-between gap-2 border-b border-line py-3 last:border-b-0"
-                >
+                <li key={u.username} className="staff-list-item">
                   <div className="flex min-w-0 flex-col">
                     <span className="truncate font-bold text-ink-900">
                       {u.name}
@@ -266,11 +327,12 @@ export default function BackofficeScreen() {
             </ul>
           </div>
         </div>
+      )}
 
-        {/* Students */}
-        <div className="grid gap-7 p-7 md:grid-cols-2 max-md:p-4">
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Añadir Nuevo Alumno</h3>
+      {section === "alumnos" && (
+        <div className="staff-grid">
+          <div className="staff-card">
+            <h3 className="panel-heading">Añadir alumno</h3>
             <form onSubmit={handleAddStudent} className="flex flex-col gap-3">
               <input
                 type="text"
@@ -359,7 +421,7 @@ export default function BackofficeScreen() {
                 disabled={sBusy || !(teachers && teachers.length > 0)}
               >
                 {sBusy && <IconSpinner className="text-base" />}
-                Crear Alumno
+                Crear alumno
               </button>
               {!(teachers && teachers.length > 0) && (
                 <p className="text-sm text-ink-400">
@@ -372,9 +434,9 @@ export default function BackofficeScreen() {
             </form>
           </div>
 
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <h3 className="panel-heading">Alumnos Registrados</h3>
-            <ul className="max-h-100 list-none overflow-y-auto">
+          <div className="staff-card">
+            <h3 className="panel-heading">Alumnos registrados</h3>
+            <ul className="staff-list">
               {students === null && !loadError && (
                 <li className="py-3 text-sm text-ink-600">Cargando alumnos...</li>
               )}
@@ -386,7 +448,7 @@ export default function BackofficeScreen() {
               {students?.map((u) => (
                 <li
                   key={u.username}
-                  className="flex flex-col gap-2 border-b border-line py-3 last:border-b-0"
+                  className="flex flex-col gap-2 border-b border-line py-4 last:border-b-0"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex min-w-0 flex-col">
@@ -451,7 +513,7 @@ export default function BackofficeScreen() {
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      )}
+    </StaffShell>
   );
 }

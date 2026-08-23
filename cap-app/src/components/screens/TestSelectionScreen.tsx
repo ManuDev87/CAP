@@ -36,8 +36,15 @@ export default function TestSelectionScreen() {
   const activeRegion = useMemo(
     () =>
       communityRegions.find((r) => r.id === regionId) ?? communityRegions[0],
-    [regionId]
+    [communityRegions, regionId]
   );
+
+  useEffect(() => {
+    if (!communityRegions.some((r) => r.id === regionId)) {
+      setRegionId(communityRegions[0]?.id ?? "andalucia");
+    }
+  }, [communityRegions, regionId]);
+
   const subregions = activeRegion?.subregions;
   const activeSubregion = useMemo(() => {
     if (!subregions?.length) return null;

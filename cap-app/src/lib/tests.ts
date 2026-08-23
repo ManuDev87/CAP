@@ -1,4 +1,5 @@
 import type { CommunityRegion, Question, TestMeta } from "./types";
+import originalPdfMap from "@/data/exam-original-pdfs.json";
 import {
   viajerosCommunityRegions,
   viajerosExamLoaders,
@@ -126,12 +127,6 @@ const malagaTests: TestMeta[] = [
 ];
 
 const sevillaTests: TestMeta[] = [
-  { id: "sevilla_febrero_2023", name: "Febrero 2023", img: "/img/truck1.jpg" },
-  { id: "sevilla_marzo_2023", name: "Marzo 2023", img: "/img/truck2.jpg" },
-  { id: "sevilla_junio_2023", name: "Junio 2023", img: "/img/truck3.jpg" },
-  { id: "sevilla_julio_2023", name: "Julio 2023", img: "/img/truck4.jpg" },
-  { id: "sevilla_septiembre_2023", name: "Septiembre 2023", img: "/img/truck1.jpg" },
-  { id: "sevilla_noviembre_2023", name: "Noviembre 2023", img: "/img/truck2.jpg" },
   { id: "sevilla_enero_2024", name: "Enero 2024", img: "/img/truck3.jpg" },
   { id: "sevilla_marzo_2024", name: "Marzo 2024", img: "/img/truck4.jpg" },
   { id: "sevilla_mayo_2024", name: "Mayo 2024", img: "/img/truck1.jpg" },
@@ -327,7 +322,6 @@ export const communityRegions: CommunityRegion[] = [
     subregions: [
       { id: "alava", name: "Álava", tests: alavaTests },
       { id: "guipuzkoa", name: "Guipúzcoa", tests: guipuzkoaTests },
-      { id: "vizcaya", name: "Vizcaya", tests: [] },
     ],
   },
   { id: "galicia", name: "Galicia", tests: galiciaTests },
@@ -352,250 +346,29 @@ export function regionTestCount(region: CommunityRegion): number {
   return regionTestsFlat(region).length;
 }
 
-export function regionsForTrack(track: "mercancias" | "viajeros"): CommunityRegion[] {
-  return track === "viajeros" ? viajerosCommunityRegions : communityRegions;
+function pruneEmptyRegions(regions: CommunityRegion[]): CommunityRegion[] {
+  return regions
+    .map((region) => {
+      if (!region.subregions?.length) return region;
+      return {
+        ...region,
+        subregions: region.subregions.filter((sub) => sub.tests.length > 0),
+      };
+    })
+    .filter((region) => regionTestCount(region) > 0);
 }
 
-export const testPdfUrls: Record<string, string> = {
-  sevilla_febrero_2023:
-    "https://web.araba.eus/documents/1247685/1249405/PLANTILLA+MERCANCIAS.pdf/2b3142dd-2c5d-73f1-358d-a72acdefeaab?t=1675426465593",
-  sevilla_marzo_2023:
-    "https://web.araba.eus/documents/1247685/1248559/PlantillaMercancias.pdf/baf75bf5-c8c3-073f-6431-eed78886082c?t=1680260555891",
-  sevilla_junio_2023:
-    "https://web.araba.eus/documents/1247685/1249489/PLANTILLA+MERCANCIAS.pdf/a191e2d8-87f9-2d85-3fae-74125e9d2fb9?t=1685704851002",
-  sevilla_julio_2023:
-    "https://web.araba.eus/documents/1247685/1249509/Plantilla+Mercancias.pdf/a59274b8-68a2-6ec4-2919-57163c2a1d58?t=1689335365851",
-  sevilla_septiembre_2023:
-    "https://web.araba.eus/documents/1247685/1249519/20230929+Plantilla+Examen+Mercanc%C3%ADas.pdf/1a4394c5-7a90-674a-a53f-2cf599c22af0?t=1695992158931",
-  sevilla_noviembre_2023:
-    "https://web.araba.eus/documents/1247685/1249536/20231124+Plantilla+Respuestas+Examen+Mercanc%C3%ADas.pdf/49f865b0-09c3-d3f5-1d86-640f2cec32e9?t=1701076611807",
-  sevilla_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_se_cap1_2024.pdf",
-  sevilla_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_se_cap2_2024.pdf",
-  sevilla_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen-a_mer_se_cap3_2024.pdf",
-  sevilla_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_se_cap4_2024_modelo%20A.pdf",
-  sevilla_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_merc-modeloA_se_cap5_2024.pdf",
-  sevilla_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer-A_se_cap6_2024.pdf",
-  sevilla_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_merc-modeloA_se_cap5_2025_0.pdf",
-  sevilla_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_cr_mer_se_mod-a_cap2_2025.pdf",
-  sevilla_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_A_se_cap3_2025.pdf",
-  sevilla_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_se_cap4_modeloA.pdf",
-  sevilla_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_se_cap5_2025_opci%C3%B3n%20A.pdf",
-  sevilla_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf",
-  sevilla_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20con%20respuestas%20mercanc%C3%ADas%20A.pdf",
-  sevilla_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Examen%20con%20respuestas%20mercanc%C3%ADas%20A_0.pdf",
-  sevilla_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/Examen%20con%20respuestas%20mercanc%C3%ADas%20b.pdf",
-  almeria_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_al_cap1_2024.pdf",
-  almeria_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_al_cap1_2025%20modelo%20a.pdf.pdf",
-  almeria_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_al_cap1_2026%20MODELO%20A.pdf",
-  almeria_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_mer_al_cap4_2024_mod-A.pdf",
-  almeria_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_al_cap4_2025%20MODELO%20A.pdf",
-  almeria_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_mer_al_cap4_2026_m-A.pdf",
-  almeria_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_al_cap2_modeloA_2024.pdf",
-  almeria_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_mer_al_cap2_2025%20modeloA.pdf",
-  almeria_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_mer_al_cap2_2026%20MODELO%20A.pdf",
-  almeria_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_mer_al_cap3_2024_modelo-a.pdf",
-  almeria_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_al_cap3_2025%20MODELO%20A.pdf",
-  almeria_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_mer_al_cap3_2026%20MODELO%20A.pdf",
-  almeria_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer_al_cap6_2024_mA.pdf",
-  almeria_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_al_cap6_2025%20MODELO%20A.pdf",
-  almeria_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_al_cap5_2024_modelo-A.pdf",
-  almeria_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_al_cap5_2025%20MODELO%20A.pdf",
-  cadiz_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_merc_ca_cap1_2024.pdf",
-  cadiz_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_ca_cap1_2025.pdf.pdf",
-  cadiz_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/Examen%20corregido%20mercanc%C3%ADas_0.pdf",
-  cadiz_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_ca_cap4_2024.pdf",
-  cadiz_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_ca_cap4_2025.pdf",
-  cadiz_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_mer_ca_cap4_2026_0.pdf",
-  cadiz_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_ca_cap2_2024.pdf",
-  cadiz_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_ca_cap2_2025.pdf.pdf",
-  cadiz_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/RESPUESTAS%20EXAMEN%20CAP%20MERCANCIAS.pdf",
-  cadiz_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_mer_ca_cap3_2024.pdf",
-  cadiz_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_ca_cap3_2025.pdf",
-  cadiz_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/RESPUESTAS%20EXAMEN%20MERCANCIAS.pdf",
-  cadiz_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_mer_ca_cap6_2024.pdf",
-  cadiz_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_mercanc%C3%ADas_ca_cap5_2024.pdf",
-  cadiz_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_ca_cap5_2025.pdf",
-  cordoba_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_co_cap1_2024.pdf",
-  cordoba_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen-c_mer_co_cap1_2025.pdf",
-  cordoba_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_co_cap1_2026.pdf",
-  cordoba_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_mer_co_cap4_2024.pdf",
-  cordoba_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_co_capn%C2%BA4_2025.pdf",
-  cordoba_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_mer_co_cap4_2026.pdf",
-  cordoba_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/plantilla_mer_co_cap2_2024_2.pdf",
-  cordoba_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_co_capn%C2%BA2_2025.pdf",
-  cordoba_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_mer_co_cap2_2026.pdf",
-  cordoba_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/plantilla_%20mer_co_cap3_2024.pdf",
-  cordoba_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_co_capn%C2%BA3_2025.pdf",
-  cordoba_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_mer_co_capn%C2%BA3_2026.pdf",
-  cordoba_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen-r_mer_co_cap6_2024.pdf",
-  cordoba_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_co_capn%C2%BA6_2025-1_0.pdf",
-  cordoba_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_co_cap5_2024.pdf",
-  cordoba_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_co_cap5_2025_0.pdf",
-  granada_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/mer_examen_gr_cap1_2024.pdf",
-  granada_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_mer_gr_cap1_2025.pdf",
-  granada_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/examen_mer_gr_cap1_2026.pdf",
-  granada_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_mer_gr_cap4_2024.pdf",
-  granada_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_gr_cap4_2025.pdf",
-  granada_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_A_mer_gr_cap4_2026.pdf",
-  granada_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_mer_gr_cap2_2024.pdf",
-  granada_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_mer_gr_cap2_2025.pdf",
-  granada_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/1%20examenA_mer_gr_cap2_2026.pdf",
-  granada_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/mer_examen_gr_cap3_2024.pdf",
-  granada_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_gr_cap3_2025.pdf",
-  granada_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/examenA_mer_gr_cap3_2026.pdf",
-  granada_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_mer_gr_cap6_2024.pdf",
-  granada_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/examen_mer_gr_cap6_2025.pdf",
-  granada_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/mer_examen_gr_cap5_2024.pdf",
-  granada_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_gr_cap5_2025.pdf",
-  huelva_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_mer_hu_cap4_2025.pdf",
-  huelva_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/hu_plantilla_mer_cap4_%202026.pdf",
-  huelva_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_hu_cap3_2025.pdf",
-  huelva_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/mercancias%20plantilla%2022%20noviembre%202025-2.pdf",
-  jaen_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/plantilla_mer_ja_cap1_2024.pdf",
-  jaen_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/plantilla_mer_ja_cap1_2025.pdf",
-  jaen_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/plantilla_mer_ja_cap1_2026.pdf",
-  jaen_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/plantilla_merc_ja_cap4_2024.pdf",
-  jaen_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/plantilla_merc_ja_cap4_2025.pdf",
-  jaen_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/plantilla_merc_ja_cap4_2026.pdf",
-  jaen_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_merc_ja_cap2_2024.pdf",
-  jaen_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/plantilla_mer_ja_cap2_2025.pdf",
-  jaen_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/plantilla_merc_ja_cap2_2026.pdf",
-  jaen_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_merc_ja_cap3_2024.pdf",
-  jaen_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/plantilla_mer_ja_cap3_2025.pdf",
-  jaen_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/plantilla_merc_ja_cap3_2026-1.pdf",
-  jaen_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/plantilla_merc_ja_cap6_2024.pdf",
-  jaen_noviembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/11/plantilla_mer_ja_cap6_2025.pdf",
-  jaen_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/plantilla_mer_ja_cap5_2024.pdf",
-  jaen_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/plantilla_mer_ja_cap5_2025_0.pdf",
-  malaga_enero_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/01/examen_merc_ma_cap1_2024.pdf",
-  malaga_enero_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/01/examen_merc_ma_cap1_2025.pdf",
-  malaga_enero_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/01/EXAMEN%20MERCANCIAS%20CON%20RESPUESTAS.pdf",
-  malaga_julio_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/07/examen_merc_ma_cap4_2024.pdf",
-  malaga_julio_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/07/examen_mer_ma_cap4_2025.pdf",
-  malaga_julio_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/07/examen_mer_ma_cap4_2026.pdf",
-  malaga_marzo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/examen_merc_ma_cap2_2024.pdf",
-  malaga_marzo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/03/examen_merc_ma_cap2_2025.pdf",
-  malaga_marzo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/examen_mercA_ma_cap2_2026.pdf",
-  malaga_mayo_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/05/examen_merc_ma_cap3_2024.pdf",
-  malaga_mayo_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/05/examen_mer_ma_cap3_2025.pdf",
-  malaga_mayo_2026:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/examen%20MERCANC%C3%8DAS_0.pdf",
-  malaga_noviembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/11/examen_merc_ma_cap6_2024.pdf",
-  malaga_septiembre_2024:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/examen_merc_ma_cap5_2024.pdf",
-  malaga_septiembre_2025:
-    "https://www.juntadeandalucia.es/sites/default/files/inline-files/2025/09/examen_mer_ma_cap5_2025.pdf",
+export function regionsForTrack(track: "mercancias" | "viajeros"): CommunityRegion[] {
+  const src = track === "viajeros" ? viajerosCommunityRegions : communityRegions;
+  return pruneEmptyRegions(src);
+}
+
+export type OriginalExamPdfs = {
+  questions?: string;
+  answers?: string;
 };
+
+export const originalExamPdfs = originalPdfMap as Record<string, OriginalExamPdfs>;
 
 /**
  * Lazy loaders — one code-split chunk per exam. All chunks are precached by
@@ -604,12 +377,6 @@ export const testPdfUrls: Record<string, string> = {
 const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
   ...viajerosExamLoaders,
   // Andalucía — provincias (mercancías A)
-  sevilla_febrero_2023: () => import("@/data/exams/sevilla_febrero_2023.json"),
-  sevilla_marzo_2023: () => import("@/data/exams/sevilla_marzo_2023.json"),
-  sevilla_junio_2023: () => import("@/data/exams/sevilla_junio_2023.json"),
-  sevilla_julio_2023: () => import("@/data/exams/sevilla_julio_2023.json"),
-  sevilla_septiembre_2023: () => import("@/data/exams/sevilla_septiembre_2023.json"),
-  sevilla_noviembre_2023: () => import("@/data/exams/sevilla_noviembre_2023.json"),
   sevilla_enero_2024: () => import("@/data/exams/sevilla_enero_2024.json"),
   sevilla_marzo_2024: () => import("@/data/exams/sevilla_marzo_2024.json"),
   sevilla_mayo_2024: () => import("@/data/exams/sevilla_mayo_2024.json"),

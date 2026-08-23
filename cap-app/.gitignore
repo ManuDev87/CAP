@@ -23,3 +23,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original exam PDFs copied by scripts/build_original_pdfs.py
+/public/originales/

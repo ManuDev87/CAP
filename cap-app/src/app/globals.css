@@ -190,6 +190,104 @@
     @apply mb-5 inline-block border-b-2 border-brand-500 pb-2.5 text-lg font-bold text-ink-900;
   }
 
+  /* ---------- Staff / CRM shell (profesor + admin) ---------- */
+  .staff-shell {
+    @apply flex h-dvh min-h-0 overflow-hidden bg-appbg;
+  }
+  .staff-sidebar {
+    @apply flex w-60 shrink-0 flex-col border-r border-line bg-[#f4f7f5] px-3 py-5 max-md:hidden;
+  }
+  .staff-brand {
+    @apply mb-6 flex items-center gap-3 px-2;
+  }
+  .staff-brand-mark {
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-500 text-sm font-bold tracking-wide text-white shadow-btn-brand;
+  }
+  .staff-brand-name {
+    @apply truncate text-[15px] font-bold text-ink-900;
+  }
+  .staff-brand-sub {
+    @apply truncate text-xs font-medium text-ink-400;
+  }
+  .staff-nav {
+    @apply flex min-h-0 flex-1 flex-col gap-1.5 overflow-y-auto;
+  }
+  .staff-nav-btn {
+    @apply flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-semibold text-ink-600 transition-colors hover:bg-white hover:text-ink-900;
+  }
+  .staff-nav-btn.is-active {
+    @apply bg-brand-500 text-white shadow-btn-brand hover:bg-brand-500 hover:text-white;
+  }
+  .staff-nav-icon {
+    @apply text-lg;
+  }
+  .staff-sidebar-foot {
+    @apply mt-4 border-t border-line pt-4 px-1;
+  }
+  .staff-user {
+    @apply mb-3 truncate px-2 text-xs font-medium text-ink-400;
+  }
+  .staff-logout {
+    @apply btn justify-center bg-white text-sm font-semibold text-ink-700 ring-1 ring-line hover:bg-danger-50 hover:text-danger-600;
+  }
+  .staff-sidebar-foot .staff-logout {
+    @apply w-full;
+  }
+  .staff-main {
+    @apply flex min-w-0 flex-1 flex-col;
+  }
+  .staff-mobile-nav {
+    @apply flex gap-1 overflow-x-auto border-b border-line bg-white px-3 py-2 md:hidden;
+  }
+  .staff-mobile-btn {
+    @apply flex shrink-0 items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-bold text-ink-600;
+  }
+  .staff-mobile-btn.is-active {
+    @apply bg-brand-500 text-white;
+  }
+  .staff-topbar {
+    @apply flex items-center justify-between gap-4 border-b border-line bg-white px-8 py-5 max-md:px-4 max-md:py-4;
+  }
+  .staff-title {
+    @apply text-2xl font-bold tracking-tight text-ink-900 max-md:text-lg;
+  }
+  .staff-subtitle {
+    @apply mt-1 text-sm text-ink-400;
+  }
+  .staff-content {
+    @apply min-h-0 flex-1 overflow-y-auto p-8 max-md:p-4;
+  }
+  .staff-grid {
+    @apply grid gap-6 md:grid-cols-2;
+  }
+  .staff-card {
+    @apply rounded-2xl border border-line bg-white p-6 shadow-card;
+  }
+  .staff-stat {
+    @apply rounded-2xl border border-line bg-white p-5 shadow-card;
+  }
+  .staff-stat-label {
+    @apply text-sm font-semibold text-ink-400;
+  }
+  .staff-stat-value {
+    @apply mt-2 text-3xl font-bold tabular-nums text-ink-900;
+  }
+  .staff-stat.is-accent {
+    @apply border-transparent bg-brand-500 text-white shadow-btn-brand;
+  }
+  .staff-stat.is-accent .staff-stat-label {
+    @apply text-white/80;
+  }
+  .staff-stat.is-accent .staff-stat-value {
+    @apply text-white;
+  }
+  .staff-list {
+    @apply max-h-[min(70vh,36rem)] list-none divide-y divide-line overflow-y-auto;
+  }
+  .staff-list-item {
+    @apply flex items-center justify-between gap-3 py-4 first:pt-0 last:pb-0;
+  }
+
   /* ---------- Modals ---------- */
   .modal-overlay {
     @apply fixed inset-0 z-1000 flex animate-fade-in items-center justify-center bg-black/55 p-4 backdrop-blur-[2px];
@@ -325,6 +423,9 @@
   }
   .quiz-header {
     @apply z-10 flex shrink-0 items-center bg-brand-500 px-5 py-2.5 text-white shadow-md;
+  }
+  .header-pdf-btns {
+    @apply flex shrink-0 items-center gap-1.5;
   }
   .header-avatar {
     @apply flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-md border-2 border-white bg-appbg text-[26px] font-black text-[#007bff] shadow-sm transition-transform duration-150 hover:scale-105;

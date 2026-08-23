@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useApp } from "@/context/AppContext";
-import { testPdfUrls } from "@/lib/tests";
+import { originalExamPdfs } from "@/lib/tests";
 import { calculateScore } from "@/lib/scoring";
 import { getQuestionHelp, trackFromExamId } from "@/lib/help";
 import {
@@ -14,7 +14,7 @@ import {
   saveResultStats,
 } from "@/lib/db";
 import type { AnsweredMap, AnswerMap, WrongQuestionRef } from "@/lib/types";
-import { ERRORS_EXAM_ID } from "@/lib/types";
+import { CAP_TRACK_LABELS, ERRORS_EXAM_ID } from "@/lib/types";
 import OptionRow, { type OptionVisualState } from "@/components/quiz/OptionRow";
 import {
   ConfirmFinishModal,
@@ -273,9 +273,14 @@ export default function QuizScreen() {
     setCurrentIndex(0);
   }
 
-  function openPdf() {
-    const url = testPdfUrls[examId];
-    if (url) window.open(url, "_blank");
+  const originalPdfs = originalExamPdfs[examId];
+  const questionsPdf = originalPdfs?.questions;
+  const answersPdf = originalPdfs?.answers;
+  const splitOriginals = Boolean(questionsPdf && answersPdf);
+  const combinedPdf = answersPdf ?? questionsPdf;
+
+  function openPdf(url?: string) {
+    if (url) window.open(url, "_blank", "noopener,noreferrer");
     else alert("El PDF original de este examen aún no está disponible.");
   }
 
@@ -287,16 +292,42 @@ export default function QuizScreen() {
       {/* Header */}
       <header className="quiz-header">
         <div className="flex min-w-0 items-center gap-3.5 max-md:gap-2">
-          <button
-            className="header-avatar"
-            title="Abrir examen original PDF"
-            onClick={openPdf}
-          >
-            R
-          </button>
+          {examId !== ERRORS_EXAM_ID && (
+            <div className="header-pdf-btns">
+              {splitOriginals ? (
+                <>
+                  <button
+                    type="button"
+                    className="header-avatar"
+                    title="Abrir PDF de preguntas"
+                    onClick={() => openPdf(questionsPdf)}
+                  >
+                    P
+                  </button>
+                  <button
+                    type="button"
+                    className="header-avatar"
+                    title="Abrir PDF de respuestas correctas"
+                    onClick={() => openPdf(answersPdf)}
+                  >
+                    R
+                  </button>
+                </>
+              ) : (
+                <button
+                  type="button"
+                  className="header-avatar"
+                  title="Abrir examen original PDF"
+                  onClick={() => openPdf(combinedPdf)}
+                >
+                  R
+                </button>
+              )}
+            </div>
+          )}
           <div className="flex min-w-0 flex-col">
             <span className="truncate text-sm opacity-90 max-md:text-[10px]">
-              {exam.name} - CAP Mercancías
+              {exam.name} - CAP {CAP_TRACK_LABELS[helpTrack]}
             </span>
             <span className="truncate text-sm font-bold uppercase max-md:text-[9px]">
               GRUPO PERSONAL CAP
