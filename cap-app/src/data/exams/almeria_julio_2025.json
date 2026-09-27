@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "Según el ATP, ¿a qué temperatura máxima deben transportarse los productos congelados? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "Según el ATP, ¿a qué temperatura máxima deben transportarse los productos congelados?",
     "options": [
       {
         "id": "a",
@@ -235,7 +235,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Al menos un 20 %. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Al menos un 20 %."
       },
       {
         "id": "b",
@@ -354,7 +354,7 @@
       },
       {
         "id": "b",
-        "text": "Entre estados limítrofes. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Entre estados limítrofes."
       },
       {
         "id": "c",
@@ -473,7 +473,7 @@
       },
       {
         "id": "c",
-        "text": "Uno si se trata de un vehículo de hasta 3,5 toneladas de MMA y tres si se trata de vehículos pesados. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Uno si se trata de un vehículo de hasta 3,5 toneladas de MMA y tres si se trata de vehículos pesados."
       },
       {
         "id": "d",
@@ -599,7 +599,7 @@
   },
   {
     "num": "27",
-    "question": "¿Un uso correcto del vehículo puede llegar a reducir el consumo? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "¿Un uso correcto del vehículo puede llegar a reducir el consumo?",
     "options": [
       {
         "id": "a",
@@ -714,7 +714,7 @@
   },
   {
     "num": "32",
-    "question": "El tacógrafo instalado en un vehículo obligado a llevarlo tiene que: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "El tacógrafo instalado en un vehículo obligado a llevarlo tiene que:",
     "options": [
       {
         "id": "a",
@@ -1159,7 +1159,7 @@
       },
       {
         "id": "b",
-        "text": "la tarjeta de conductor. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "la tarjeta de conductor."
       },
       {
         "id": "c",
@@ -1274,7 +1274,7 @@
       },
       {
         "id": "b",
-        "text": "dejar de acelerar con suficiente antelación. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "dejar de acelerar con suficiente antelación."
       },
       {
         "id": "c",
@@ -1393,7 +1393,7 @@
       },
       {
         "id": "c",
-        "text": "Utilizar los equipos de trabajo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Utilizar los equipos de trabajo."
       },
       {
         "id": "d",
@@ -1512,7 +1512,7 @@
       },
       {
         "id": "d",
-        "text": "una habilidad superflua. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "una habilidad superflua."
       }
     ],
     "correct": "b"
@@ -1615,7 +1615,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Es la zona de mayor consumo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Es la zona de mayor consumo."
       },
       {
         "id": "b",
@@ -1738,7 +1738,7 @@
       },
       {
         "id": "c",
-        "text": "Reducir la velocidad media a la que se circule. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Reducir la velocidad media a la que se circule."
       },
       {
         "id": "d",
@@ -1841,7 +1841,7 @@
   },
   {
     "num": "81",
-    "question": "Al socorrer a un herido en un accidente de circulación, debemos evitar: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "Al socorrer a un herido en un accidente de circulación, debemos evitar:",
     "options": [
       {
         "id": "a",
@@ -1968,7 +1968,7 @@
       },
       {
         "id": "c",
-        "text": "Rodar aprovechando la inercia con una marcha engranada. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Rodar aprovechando la inercia con una marcha engranada."
       },
       {
         "id": "d",
@@ -2087,7 +2087,7 @@
       },
       {
         "id": "d",
-        "text": "Extremar la atención en los pasos de zonas protegidas a desprotegidas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Extremar la atención en los pasos de zonas protegidas a desprotegidas."
       }
     ],
     "correct": "d"
@@ -2198,7 +2198,7 @@
       },
       {
         "id": "c",
-        "text": "El derrape del vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "El derrape del vehículo."
       },
       {
         "id": "d",

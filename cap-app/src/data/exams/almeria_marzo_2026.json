@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "¿Cómo se denomina uno de los efectos que provoca la resistencia del aire y que hace que el camión tenga que realizar un esfuerzo para avanzar? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿Cómo se denomina uno de los efectos que provoca la resistencia del aire y que hace que el camión tenga que realizar un esfuerzo para avanzar?",
     "options": [
       {
         "id": "a",
@@ -231,7 +231,7 @@
   },
   {
     "num": "11",
-    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera?",
     "options": [
       {
         "id": "a",
@@ -346,7 +346,7 @@
   },
   {
     "num": "16",
-    "question": "Dentro de la denominación genérica de operadores de transporte de mercancías, ¿se incluye a los almacenistas-distribuidores? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "Dentro de la denominación genérica de operadores de transporte de mercancías, ¿se incluye a los almacenistas-distribuidores?",
     "options": [
       {
         "id": "a",
@@ -461,7 +461,7 @@
   },
   {
     "num": "21",
-    "question": "¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿Cuáles son las funciones propias del jefe de tráfico de una empresa de transporte de mercancías por carretera?",
     "options": [
       {
         "id": "a",
@@ -576,7 +576,7 @@
   },
   {
     "num": "26",
-    "question": "¿Cómo no debe ser la presentación personal de un trabajador de una empresa de transporte? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿Cómo no debe ser la presentación personal de un trabajador de una empresa de transporte?",
     "options": [
       {
         "id": "a",
@@ -695,7 +695,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Marruecos. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Marruecos."
       },
       {
         "id": "b",
@@ -925,7 +925,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "No."
       },
       {
         "id": "b",
@@ -1040,7 +1040,7 @@
     "options": [
       {
         "id": "a",
-        "text": "cumplan las normas de tiempos de conducción y descanso. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "cumplan las normas de tiempos de conducción y descanso."
       },
       {
         "id": "b",
@@ -1159,7 +1159,7 @@
       },
       {
         "id": "b",
-        "text": "tiene un menor consumo específico. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "tiene un menor consumo específico."
       },
       {
         "id": "c",
@@ -1274,7 +1274,7 @@
       },
       {
         "id": "b",
-        "text": "puede esperar hasta seis meses para devolverlo. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "puede esperar hasta seis meses para devolverlo."
       },
       {
         "id": "c",
@@ -1393,7 +1393,7 @@
       },
       {
         "id": "c",
-        "text": "Tres, porque pueden ir tres conductores en un vehículo. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Tres, porque pueden ir tres conductores en un vehículo."
       },
       {
         "id": "d",
@@ -1627,7 +1627,7 @@
       },
       {
         "id": "d",
-        "text": "Evitar aceleraciones y frenazos bruscos. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Evitar aceleraciones y frenazos bruscos."
       }
     ],
     "correct": "b"
@@ -1868,7 +1868,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Cuando se detecte que la tarjeta ha sido falsificada. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Cuando se detecte que la tarjeta ha sido falsificada."
       },
       {
         "id": "b",
@@ -1991,7 +1991,7 @@
       },
       {
         "id": "c",
-        "text": "puede circular, pero solo hasta la puesta de sol. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "puede circular, pero solo hasta la puesta de sol."
       },
       {
         "id": "d",
@@ -2221,7 +2221,7 @@
       },
       {
         "id": "c",
-        "text": "Sí, deben homologarlos previamente en todo caso. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Sí, deben homologarlos previamente en todo caso."
       },
       {
         "id": "d",

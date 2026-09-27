@@ -120,7 +120,7 @@
     "options": [
       {
         "id": "a",
-        "text": "con espacios de, al menos, cuatro centímetros entre los bultos. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "con espacios de, al menos, cuatro centímetros entre los bultos."
       },
       {
         "id": "b",
@@ -243,7 +243,7 @@
       },
       {
         "id": "c",
-        "text": "Las sociedades de responsabilidad limitada. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Las sociedades de responsabilidad limitada."
       },
       {
         "id": "d",
@@ -362,7 +362,7 @@
       },
       {
         "id": "d",
-        "text": "No tienen que estar inscritas en ningún Registro distinto del que corresponde a cualquier sociedad mercantil. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "No tienen que estar inscritas en ningún Registro distinto del que corresponde a cualquier sociedad mercantil."
       }
     ],
     "correct": "b"
@@ -477,7 +477,7 @@
       },
       {
         "id": "d",
-        "text": "La aduana de entrada en el territorio aduanero comunitario. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "La aduana de entrada en el territorio aduanero comunitario."
       }
     ],
     "correct": "b"
@@ -592,7 +592,7 @@
       },
       {
         "id": "d",
-        "text": "El ejercicio físico. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "El ejercicio físico."
       }
     ],
     "correct": "d"
@@ -699,7 +699,7 @@
       },
       {
         "id": "b",
-        "text": "Para que un motor entregue una potencia dada, existe una sola combinación de la caja de velocidades, aunque pueden existir varias posiciones del acelerador. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Para que un motor entregue una potencia dada, existe una sola combinación de la caja de velocidades, aunque pueden existir varias posiciones del acelerador."
       },
       {
         "id": "c",
@@ -810,7 +810,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Solo en épocas de mucho trabajo. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Solo en épocas de mucho trabajo."
       },
       {
         "id": "b",
@@ -925,7 +925,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Las pantallas panorámicas de los monitores. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Las pantallas panorámicas de los monitores."
       },
       {
         "id": "b",
@@ -1048,7 +1048,7 @@
       },
       {
         "id": "c",
-        "text": "De la energía del vapor circulando. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "De la energía del vapor circulando."
       },
       {
         "id": "d",
@@ -1163,7 +1163,7 @@
       },
       {
         "id": "c",
-        "text": "a un tipo de freno de compresión. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "a un tipo de freno de compresión."
       },
       {
         "id": "d",
@@ -1282,7 +1282,7 @@
       },
       {
         "id": "d",
-        "text": "Sí, pero solo mientras se está renovando el permiso. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sí, pero solo mientras se está renovando el permiso."
       }
     ],
     "correct": "a"
@@ -1397,7 +1397,7 @@
       },
       {
         "id": "d",
-        "text": "formación única y discontinua. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "formación única y discontinua."
       }
     ],
     "correct": "a"
@@ -1523,7 +1523,7 @@
     "options": [
       {
         "id": "a",
-        "text": "la actividad que desarrolla se denomina: UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "la actividad que desarrolla se denomina:"
       },
       {
         "id": "b",
@@ -1642,7 +1642,7 @@
       },
       {
         "id": "b",
-        "text": "de la presión de los neumáticos y la posición del pedal del acelerador. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "de la presión de los neumáticos y la posición del pedal del acelerador."
       },
       {
         "id": "c",
@@ -1753,7 +1753,7 @@
     "options": [
       {
         "id": "a",
-        "text": "En todos los destinados al transporte de mercancías cuando su MMA, incluida la de cualquier remolque o semirremolque, sea superior a 4,5 toneladas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "En todos los destinados al transporte de mercancías cuando su MMA, incluida la de cualquier remolque o semirremolque, sea superior a 4,5 toneladas."
       },
       {
         "id": "b",
@@ -1864,7 +1864,7 @@
   },
   {
     "num": "82",
-    "question": "¿Qué es recomendable en las incorporaciones a una vía de circulación? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Qué es recomendable en las incorporaciones a una vía de circulación?",
     "options": [
       {
         "id": "a",
@@ -1987,7 +1987,7 @@
       },
       {
         "id": "b",
-        "text": "Sí, es un factor interno al conductor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sí, es un factor interno al conductor."
       },
       {
         "id": "c",
@@ -2098,7 +2098,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Puede llegar a constituir delito de contrabando. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Puede llegar a constituir delito de contrabando."
       },
       {
         "id": "b",
@@ -2202,7 +2202,7 @@
       },
       {
         "id": "d",
-        "text": "evidencias de servicio. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "evidencias de servicio."
       }
     ],
     "correct": "d"

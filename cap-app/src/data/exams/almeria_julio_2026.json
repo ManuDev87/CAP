@@ -335,7 +335,7 @@
       },
       {
         "id": "c",
-        "text": "Solo en la Comunidad Autónoma de residencia. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Solo en la Comunidad Autónoma de residencia."
       },
       {
         "id": "d",
@@ -446,7 +446,7 @@
       },
       {
         "id": "b",
-        "text": "las Comunidades Autónomas. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "las Comunidades Autónomas."
       },
       {
         "id": "c",
@@ -557,7 +557,7 @@
     "options": [
       {
         "id": "a",
-        "text": "La suma de las fuerzas y los pares de fuerzas aplicadas al mismo es cero. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "La suma de las fuerzas y los pares de fuerzas aplicadas al mismo es cero."
       },
       {
         "id": "b",
@@ -661,7 +661,7 @@
       },
       {
         "id": "d",
-        "text": "Solo puede hacerlo cuatro veces al mes. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Solo puede hacerlo cuatro veces al mes."
       }
     ],
     "correct": "b"
@@ -772,7 +772,7 @@
       },
       {
         "id": "c",
-        "text": "los datos de los vehículos implicados en el accidente. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "los datos de los vehículos implicados en el accidente."
       },
       {
         "id": "d",
@@ -883,7 +883,7 @@
       },
       {
         "id": "b",
-        "text": "Magnéticos y digitales. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Magnéticos y digitales."
       },
       {
         "id": "c",
@@ -1006,7 +1006,7 @@
       },
       {
         "id": "d",
-        "text": "mayor fuerza transmitirá el motor al embrague. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "mayor fuerza transmitirá el motor al embrague."
       }
     ],
     "correct": "b"
@@ -1358,7 +1358,7 @@
   },
   {
     "num": "60",
-    "question": "¿Qué sistema de frenado actúa sobre el árbol de transmisión a la salida del eje secundario de la caja de velocidades? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿Qué sistema de frenado actúa sobre el árbol de transmisión a la salida del eje secundario de la caja de velocidades?",
     "options": [
       {
         "id": "a",
@@ -1481,7 +1481,7 @@
       },
       {
         "id": "b",
-        "text": "Bursitis. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Bursitis."
       },
       {
         "id": "c",
@@ -1596,7 +1596,7 @@
       },
       {
         "id": "b",
-        "text": "Un sistema de control de la inyección de combustible ante un fallo de los frenos. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Un sistema de control de la inyección de combustible ante un fallo de los frenos."
       },
       {
         "id": "c",
@@ -1711,7 +1711,7 @@
       },
       {
         "id": "b",
-        "text": "De la longitud del árbol de levas. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "De la longitud del árbol de levas."
       },
       {
         "id": "c",
@@ -1830,7 +1830,7 @@
       },
       {
         "id": "c",
-        "text": "la empresa depende de él. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "la empresa depende de él."
       },
       {
         "id": "d",
@@ -1945,7 +1945,7 @@
       },
       {
         "id": "c",
-        "text": "Energía cinética del cigüeñal. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Energía cinética del cigüeñal."
       },
       {
         "id": "d",
@@ -2064,7 +2064,7 @@
       },
       {
         "id": "d",
-        "text": "Es un elemento de la formación de la percepción del riesgo. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Es un elemento de la formación de la percepción del riesgo."
       }
     ],
     "correct": "b"
@@ -2186,7 +2186,7 @@
   },
   {
     "num": "96",
-    "question": "Es función del conductor de un vehículo cisterna: UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "Es función del conductor de un vehículo cisterna:",
     "options": [
       {
         "id": "a",

@@ -224,7 +224,7 @@
       },
       {
         "id": "d",
-        "text": "Representar a la empresa. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Representar a la empresa."
       }
     ],
     "correct": "a"
@@ -335,7 +335,7 @@
       },
       {
         "id": "c",
-        "text": "Entre 10 y 12. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Entre 10 y 12."
       },
       {
         "id": "d",
@@ -450,7 +450,7 @@
       },
       {
         "id": "c",
-        "text": "conductor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "conductor."
       },
       {
         "id": "d",
@@ -565,7 +565,7 @@
       },
       {
         "id": "c",
-        "text": "En dos horas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "En dos horas."
       },
       {
         "id": "d",
@@ -684,7 +684,7 @@
       },
       {
         "id": "d",
-        "text": "Disminuye la carga de esfuerzo sobre los músculos de la espalda. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Disminuye la carga de esfuerzo sobre los músculos de la espalda."
       }
     ],
     "correct": "b"
@@ -791,7 +791,7 @@
       },
       {
         "id": "b",
-        "text": "las tarjetas de tacógrafo válidas que se inserten en los dispositivos de interfaz. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "las tarjetas de tacógrafo válidas que se inserten en los dispositivos de interfaz."
       },
       {
         "id": "c",
@@ -902,7 +902,7 @@
     "options": [
       {
         "id": "a",
-        "text": "mejorar la seguridad en carretera. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "mejorar la seguridad en carretera."
       },
       {
         "id": "b",
@@ -1013,7 +1013,7 @@
   },
   {
     "num": "45",
-    "question": "¿Cuál de las siguientes conductas no es recomendable para el trabajo de pie? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Cuál de las siguientes conductas no es recomendable para el trabajo de pie?",
     "options": [
       {
         "id": "a",
@@ -1128,7 +1128,7 @@
   },
   {
     "num": "50",
-    "question": "En una inspección de transporte en carretera, ¿puede ordenarse el traslado del vehículo a un taller? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "En una inspección de transporte en carretera, ¿puede ordenarse el traslado del vehículo a un taller?",
     "options": [
       {
         "id": "a",
@@ -1236,7 +1236,7 @@
       },
       {
         "id": "d",
-        "text": "No tienen obligaciones porque el peligro lo tienen los trabajadores. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "No tienen obligaciones porque el peligro lo tienen los trabajadores."
       }
     ],
     "correct": "c"
@@ -1581,7 +1581,7 @@
       },
       {
         "id": "d",
-        "text": "Zonas inundadas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Zonas inundadas."
       }
     ],
     "correct": "a"
@@ -1696,7 +1696,7 @@
       },
       {
         "id": "d",
-        "text": "acelerar en vacío cuando se arranca el motor para que este alcance la temperatura adecuada en el menor tiempo posible. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "acelerar en vacío cuando se arranca el motor para que este alcance la temperatura adecuada en el menor tiempo posible."
       }
     ],
     "correct": "b"
@@ -1811,7 +1811,7 @@
       },
       {
         "id": "d",
-        "text": "del mantenimiento del vehículo, la posición del pedal del acelerador y las revoluciones por minuto del motor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "del mantenimiento del vehículo, la posición del pedal del acelerador y las revoluciones por minuto del motor."
       }
     ],
     "correct": "d"
@@ -1926,7 +1926,7 @@
       },
       {
         "id": "d",
-        "text": "Las respuestas A y B son correctas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Las respuestas A y B son correctas."
       }
     ],
     "correct": "d"
@@ -2041,7 +2041,7 @@
       },
       {
         "id": "d",
-        "text": "realiza una frenada de emergencia cuando la colisión frontal es inminente. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "realiza una frenada de emergencia cuando la colisión frontal es inminente."
       }
     ],
     "correct": "d"
@@ -2163,7 +2163,7 @@
   },
   {
     "num": "95",
-    "question": "¿Cuál es un indicio de mal estado de los amortiguadores? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Cuál es un indicio de mal estado de los amortiguadores?",
     "options": [
       {
         "id": "a",
@@ -2282,7 +2282,7 @@
     "options": [
       {
         "id": "a",
-        "text": "5.000 euros. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "5.000 euros."
       },
       {
         "id": "b",

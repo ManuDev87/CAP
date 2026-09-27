@@ -576,7 +576,7 @@
   },
   {
     "num": "26",
-    "question": "¿Cómo consigue principalmente el BAS (asistente a la frenada de urgencia) cumplir sus funciones? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Cómo consigue principalmente el BAS (asistente a la frenada de urgencia) cumplir sus funciones?",
     "options": [
       {
         "id": "a",
@@ -684,7 +684,7 @@
       },
       {
         "id": "d",
-        "text": "Todas las respuestas anteriores son correctas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Todas las respuestas anteriores son correctas."
       }
     ],
     "correct": "d"
@@ -799,7 +799,7 @@
       },
       {
         "id": "d",
-        "text": "la velocidad del vehículo en el momento de activar los frenos. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "la velocidad del vehículo en el momento de activar los frenos."
       }
     ],
     "correct": "a"
@@ -902,7 +902,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sí, siempre que se fabrique conjuntamente en ambos. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sí, siempre que se fabrique conjuntamente en ambos."
       },
       {
         "id": "b",
@@ -1021,7 +1021,7 @@
       },
       {
         "id": "b",
-        "text": "No, solo indica cómo es su par motor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "No, solo indica cómo es su par motor."
       },
       {
         "id": "c",
@@ -1136,7 +1136,7 @@
       },
       {
         "id": "b",
-        "text": "90 horas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "90 horas."
       },
       {
         "id": "c",
@@ -1247,7 +1247,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Falta de autorización de transporte. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Falta de autorización de transporte."
       },
       {
         "id": "b",
@@ -1370,7 +1370,7 @@
       },
       {
         "id": "c",
-        "text": "Sobre el diferencial. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sobre el diferencial."
       },
       {
         "id": "d",
@@ -1489,7 +1489,7 @@
       },
       {
         "id": "d",
-        "text": "Antihistamínicos. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Antihistamínicos."
       }
     ],
     "correct": "a"
@@ -1604,7 +1604,7 @@
       },
       {
         "id": "d",
-        "text": "la averiguación de sus verdaderas intenciones. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "la averiguación de sus verdaderas intenciones."
       }
     ],
     "correct": "c"
@@ -1715,7 +1715,7 @@
       },
       {
         "id": "c",
-        "text": "las autoridades policiales. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "las autoridades policiales."
       },
       {
         "id": "d",
@@ -1937,7 +1937,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Vanadio. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Vanadio."
       },
       {
         "id": "b",
@@ -2056,7 +2056,7 @@
       },
       {
         "id": "b",
-        "text": "en la clase B. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "en la clase B."
       },
       {
         "id": "c",
@@ -2163,7 +2163,7 @@
   },
   {
     "num": "95",
-    "question": "Se presume que existe acuerdo de sometimiento a las Juntas Arbitrales del Transporte cuando la cuantía de la controversia: UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "Se presume que existe acuerdo de sometimiento a las Juntas Arbitrales del Transporte cuando la cuantía de la controversia:",
     "options": [
       {
         "id": "a",
@@ -2286,7 +2286,7 @@
       },
       {
         "id": "b",
-        "text": "No sujetar firmemente el volante. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "No sujetar firmemente el volante."
       },
       {
         "id": "c",

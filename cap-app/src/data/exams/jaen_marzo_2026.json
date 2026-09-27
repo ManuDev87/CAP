@@ -120,7 +120,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Se aprovecha al mínimo el empuje del motor. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Se aprovecha al mínimo el empuje del motor."
       },
       {
         "id": "b",
@@ -350,7 +350,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No hay capital mínimo, la cantidad la determinan libremente los socios. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "No hay capital mínimo, la cantidad la determinan libremente los socios."
       },
       {
         "id": "b",
@@ -465,7 +465,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "No."
       },
       {
         "id": "b",
@@ -584,7 +584,7 @@
       },
       {
         "id": "b",
-        "text": "Elástico. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Elástico."
       },
       {
         "id": "c",
@@ -699,7 +699,7 @@
       },
       {
         "id": "b",
-        "text": "Un dispositivo que realiza una función de frenado de los ejes, aminorando las revoluciones que llegan a las ruedas. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Un dispositivo que realiza una función de frenado de los ejes, aminorando las revoluciones que llegan a las ruedas."
       },
       {
         "id": "c",
@@ -810,7 +810,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sí, siempre. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Sí, siempre."
       },
       {
         "id": "b",
@@ -933,7 +933,7 @@
       },
       {
         "id": "c",
-        "text": "cuando el motor gira a un régimen medio de revoluciones. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "cuando el motor gira a un régimen medio de revoluciones."
       },
       {
         "id": "d",
@@ -1048,7 +1048,7 @@
       },
       {
         "id": "c",
-        "text": "Circular en punto muerto siempre que sea posible. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Circular en punto muerto siempre que sea posible."
       },
       {
         "id": "d",
@@ -1159,7 +1159,7 @@
       },
       {
         "id": "b",
-        "text": "Juios (J). UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Juios (J)."
       },
       {
         "id": "c",
@@ -1278,7 +1278,7 @@
       },
       {
         "id": "c",
-        "text": "Mantenimiento del estado de vigilia. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Mantenimiento del estado de vigilia."
       },
       {
         "id": "d",
@@ -1393,7 +1393,7 @@
       },
       {
         "id": "c",
-        "text": "El retarder. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "El retarder."
       },
       {
         "id": "d",
@@ -1634,7 +1634,7 @@
   },
   {
     "num": "72",
-    "question": "¿Qué pretende la formación continua de los conductores profesionales? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN",
+    "question": "¿Qué pretende la formación continua de los conductores profesionales?",
     "options": [
       {
         "id": "a",
@@ -1753,7 +1753,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sí, ya que en punto muerto el consumo es mínimo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Sí, ya que en punto muerto el consumo es mínimo."
       },
       {
         "id": "b",
@@ -1868,7 +1868,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Se contamina acústicamente menos. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "Se contamina acústicamente menos."
       },
       {
         "id": "b",
@@ -1983,7 +1983,7 @@
     "options": [
       {
         "id": "a",
-        "text": "la puntualidad. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN"
+        "text": "la puntualidad."
       },
       {
         "id": "b",
@@ -2094,7 +2094,7 @@
   },
   {
     "num": "92",
-    "question": "¿En qué porcentaje reducen el consumo de combustible los deflectores en techo? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N. , JAEN, JAEN",
+    "question": "¿En qué porcentaje reducen el consumo de combustible los deflectores en techo?",
     "options": [
       {
         "id": "a",

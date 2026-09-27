@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "De las siguientes fuerzas, ¿cuál interviene en el movimiento de un camión? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "De las siguientes fuerzas, ¿cuál interviene en el movimiento de un camión?",
     "options": [
       {
         "id": "a",
@@ -231,7 +231,7 @@
   },
   {
     "num": "11",
-    "question": "A efectos de obligaciones aduaneras, cuando nos referimos a exportación hablamos de: UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "A efectos de obligaciones aduaneras, cuando nos referimos a exportación hablamos de:",
     "options": [
       {
         "id": "a",
@@ -461,7 +461,7 @@
   },
   {
     "num": "21",
-    "question": "En el caso de transportes efectuados en régimen de tránsito de la Unión, ¿qué se considera aduana de partida? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "En el caso de transportes efectuados en régimen de tránsito de la Unión, ¿qué se considera aduana de partida?",
     "options": [
       {
         "id": "a",
@@ -580,7 +580,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Regulando la presión hidráulica o neumática que llega a los elementos frenantes. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Regulando la presión hidráulica o neumática que llega a los elementos frenantes."
       },
       {
         "id": "b",
@@ -691,7 +691,7 @@
   },
   {
     "num": "31",
-    "question": "A altas revoluciones, la cantidad de combustible que se inyecta es mucha, pero no hay suficiente aire para que pueda mezclarse y quemarse. ¿Por qué es poca la cantidad de aire? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "A altas revoluciones, la cantidad de combustible que se inyecta es mucha, pero no hay suficiente aire para que pueda mezclarse y quemarse. ¿Por qué es poca la cantidad de aire?",
     "options": [
       {
         "id": "a",
@@ -810,7 +810,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A, A1, B, B1. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "A, A1, B, B1."
       },
       {
         "id": "b",
@@ -933,7 +933,7 @@
       },
       {
         "id": "c",
-        "text": "Basta con que la firme el conductor que se declare culpable. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Basta con que la firme el conductor que se declare culpable."
       },
       {
         "id": "d",
@@ -1293,7 +1293,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Carencia de autorización de transporte. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Carencia de autorización de transporte."
       },
       {
         "id": "b",
@@ -1408,7 +1408,7 @@
     "options": [
       {
         "id": "a",
-        "text": "que se debe pasar de un conductor a otro. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "que se debe pasar de un conductor a otro."
       },
       {
         "id": "b",
@@ -1527,7 +1527,7 @@
       },
       {
         "id": "b",
-        "text": "se utilizará preferentemente el freno de servicio para retener el vehículo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "se utilizará preferentemente el freno de servicio para retener el vehículo."
       },
       {
         "id": "c",
@@ -1646,7 +1646,7 @@
       },
       {
         "id": "c",
-        "text": "se roza lateralmente el neumático contra los bordillos de las aceras. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "se roza lateralmente el neumático contra los bordillos de las aceras."
       },
       {
         "id": "d",
@@ -1761,7 +1761,7 @@
       },
       {
         "id": "c",
-        "text": "En uno de cada tres. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "En uno de cada tres."
       },
       {
         "id": "d",
@@ -1876,7 +1876,7 @@
       },
       {
         "id": "c",
-        "text": "Sí, en cualquier caso. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sí, en cualquier caso."
       },
       {
         "id": "d",
@@ -1995,7 +1995,7 @@
       },
       {
         "id": "d",
-        "text": "10 km/h por debajo de la que se considere segura para la conducción. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "10 km/h por debajo de la que se considere segura para la conducción."
       }
     ],
     "correct": "b"
@@ -2221,7 +2221,7 @@
       },
       {
         "id": "c",
-        "text": "El reclamante, pero solo cuando sus demandas sean desestimadas en el laudo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "El reclamante, pero solo cuando sus demandas sean desestimadas en el laudo."
       },
       {
         "id": "d",

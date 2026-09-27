@@ -120,7 +120,7 @@
     "options": [
       {
         "id": "a",
-        "text": "la fuerza termotecnia lateral. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "la fuerza termotecnia lateral."
       },
       {
         "id": "b",
@@ -243,7 +243,7 @@
       },
       {
         "id": "c",
-        "text": "frigorífica. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "frigorífica."
       },
       {
         "id": "d",
@@ -354,7 +354,7 @@
       },
       {
         "id": "b",
-        "text": "Puede si los nuevos vehículos no superan los cinco años de antigüedad. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Puede si los nuevos vehículos no superan los cinco años de antigüedad."
       },
       {
         "id": "c",
@@ -473,7 +473,7 @@
       },
       {
         "id": "c",
-        "text": "La forma de conducir. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "La forma de conducir."
       },
       {
         "id": "d",
@@ -707,7 +707,7 @@
       },
       {
         "id": "d",
-        "text": "La forma en que varía la velocidad en función del consumo del vehículo. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "La forma en que varía la velocidad en función del consumo del vehículo."
       }
     ],
     "correct": "b"
@@ -829,7 +829,7 @@
   },
   {
     "num": "37",
-    "question": "La utilización del motor como freno requiere¿ UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "La utilización del motor como freno requiere¿",
     "options": [
       {
         "id": "a",
@@ -948,7 +948,7 @@
     "options": [
       {
         "id": "a",
-        "text": "el lugar del accidente. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "el lugar del accidente."
       },
       {
         "id": "b",
@@ -1059,7 +1059,7 @@
   },
   {
     "num": "47",
-    "question": "La aplicación de los conocimientos ergonómicos al ámbito del trabajo es fundamental para: UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "La aplicación de los conocimientos ergonómicos al ámbito del trabajo es fundamental para:",
     "options": [
       {
         "id": "a",
@@ -1178,7 +1178,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Una circunstancia de tráfico que no supone un peligro grave para las personas. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Una circunstancia de tráfico que no supone un peligro grave para las personas."
       },
       {
         "id": "b",
@@ -1293,7 +1293,7 @@
     "options": [
       {
         "id": "a",
-        "text": "se estableció el visado obligatorio en todas las fronteras interiores. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "se estableció el visado obligatorio en todas las fronteras interiores."
       },
       {
         "id": "b",
@@ -1412,7 +1412,7 @@
       },
       {
         "id": "b",
-        "text": "Facilita los reflejos. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Facilita los reflejos."
       },
       {
         "id": "c",
@@ -1535,7 +1535,7 @@
       },
       {
         "id": "d",
-        "text": "El ASR. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "El ASR."
       }
     ],
     "correct": "a"
@@ -1646,7 +1646,7 @@
       },
       {
         "id": "c",
-        "text": "Los de más de 2 toneladas de Masa Máxima Autorizada. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Los de más de 2 toneladas de Masa Máxima Autorizada."
       },
       {
         "id": "d",
@@ -2121,7 +2121,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Llegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía. UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA"
+        "text": "Llegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía."
       },
       {
         "id": "b",
@@ -2232,7 +2232,7 @@
   },
   {
     "num": "98",
-    "question": "¿En qué condiciones deben efectuar la formación continua los conductores que realicen simultáneamente transporte de viajeros en autocar y transporte de mercancías con vehículos cuya conducción requiere estar en posesión del certificado de aptitud profesional (CAP)? UNIVERSIDAD ALMERÍA. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO, ALMERIA, ALMERIA",
+    "question": "¿En qué condiciones deben efectuar la formación continua los conductores que realicen simultáneamente transporte de viajeros en autocar y transporte de mercancías con vehículos cuya conducción requiere estar en posesión del certificado de aptitud profesional (CAP)?",
     "options": [
       {
         "id": "a",

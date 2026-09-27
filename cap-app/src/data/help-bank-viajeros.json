@@ -1035,7 +1035,7 @@
     "origin": "catalog",
     "ruleId": "r165_datos_automaticos"
   },
-  "en relación con el auxilio a los heridos de un accidente de tráfico, señale cuál de las siguientes afirmaciones es incorrecta\tlas actuaciones que se produzcan a partir del segundo día del accidente son las más importantes. viajeros a universidad almeria. aulario iii. c/cañada san urbano, campus universitario., almeria, almeria": {
+  "en relación con el auxilio a los heridos de un accidente de tráfico, señale cuál de las siguientes afirmaciones es incorrecta\tlas actuaciones que se produzcan a partir del segundo día del accidente son las más importantes. viajeros a": {
     "explanation": "Es falso que las actuaciones a partir del segundo día sean las más importantes. En el auxilio inmediato (PAS: proteger, avisar, socorrer) los primeros minutos son críticos.",
     "source": "Protocolo PAS y temario CAP de primeros auxilios (RD 284/2021, anexo I)",
     "sourceUrl": "https://www.dgt.es/muevete-con-seguridad/evita-conductas-de-riesgo/",
@@ -1168,7 +1168,7 @@
     "origin": "catalog",
     "ruleId": "reposacabezas"
   },
-  "el tacógrafo analógico tiene en el frontal, entre los elementos indicadores visibles para el conductor\tun reloj. viajeros a universidad almeria. aulario iii. c/cañada de san urbano. campus universitario., almeria, almeria": {
+  "el tacógrafo analógico tiene en el frontal, entre los elementos indicadores visibles para el conductor\tun reloj. viajeros a": {
     "explanation": "En el frontal de un tacógrafo analógico son visibles el indicador de velocidad, el totalizador de kilómetros y el tiempo (reloj).",
     "source": "Reglamento (UE) n.º 165/2014, anexo I",
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32014R0165",
@@ -2281,7 +2281,7 @@
     "origin": "catalog",
     "ruleId": "evitar_aceleraciones"
   },
-  "qué sucede cada vez que se realiza un cambio de marcha en un autobús que circula en una pendiente ascendente\tque pierde potencia. viajeros a universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
+  "qué sucede cada vez que se realiza un cambio de marcha en un autobús que circula en una pendiente ascendente\tque pierde potencia. viajeros a": {
     "explanation": "Cada vez que se pisa el embrague para cambiar de marcha en una subida se interrumpe la transmisión de par a las ruedas: el vehículo pierde potencia efectiva y reduce velocidad durante ese instante.",
     "source": "Programa oficial CAP, RD 284/2021, anexo I (uso de la caja de velocidades)",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
@@ -2295,7 +2295,7 @@
     "origin": "catalog",
     "ruleId": "par_motor_regimen_medio"
   },
-  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante viajeros a universidad de jaén. paraje las lagunillas, s/n, jaen, jaen\tevitar la práctica de una conducción basada en continuas aceleraciones": {
+  "cuál de las siguientes técnicas indicadas es más correcta para optimizar el consumo de carburante viajeros a\tevitar la práctica de una conducción basada en continuas aceleraciones": {
     "explanation": "La conducción a base de acelerones y frenazos es la que más carburante gasta. Lo correcto es anticipar y mantener una velocidad lo más estable posible.",
     "source": "Guía de conducción eficiente IDAE",
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
@@ -2309,7 +2309,7 @@
     "origin": "catalog",
     "ruleId": "cap_privado_particular"
   },
-  "en un transporte regular con un recorrido de 350 km, qué puede hacer una persona con movilidad reducida ante la negativa del transportista a aceptar su reserva viajeros a universidad de jaén. paraje las lagunillas, s/n. 23009 , jaen, jaen\tsolicitar ir acompañada por otra persona de su elección capaz de prestarle la asistencia necesaria": {
+  "en un transporte regular con un recorrido de 350 km, qué puede hacer una persona con movilidad reducida ante la negativa del transportista a aceptar su reserva viajeros a\tsolicitar ir acompañada por otra persona de su elección capaz de prestarle la asistencia necesaria": {
     "explanation": "Si el transportista exige que la persona con discapacidad o movilidad reducida vaya acompañada, esa persona de asistencia viaja sin pagar.",
     "source": "Reglamento (UE) n.º 181/2011, derechos de los viajeros de autobús y autocar",
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32011R0181",
@@ -2337,7 +2337,7 @@
     "origin": "catalog",
     "ruleId": "r561_pausa_45"
   },
-  "en caso de aplicar una sanción por una infracción relacionada con la normativa de tiempos de conducción y descanso, qué se debe entregar al conductor\tjustificación escrita de las pruebas de la infracción. viajeros a universidad de jaén. paraje las lagunillas, s/n, jaen, jaen": {
+  "en caso de aplicar una sanción por una infracción relacionada con la normativa de tiempos de conducción y descanso, qué se debe entregar al conductor\tjustificación escrita de las pruebas de la infracción. viajeros a": {
     "explanation": "Cuando se aplique una sanción por tiempos de conducción, debe entregarse al conductor una justificación escrita de las pruebas de la infracción.",
     "source": "Reglamento (CE) n.º 561/2006, artículo 19.3",
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
@@ -2351,26 +2351,19 @@
     "origin": "catalog",
     "ruleId": "mma75_adelantamiento"
   },
-  "para que una dolencia sea considerada enfermedad profesional: viajeros a universidad jaen. paraje las lagunillas, s/n, jaen, jaen\tdebe estar expresamente reconocida por las autoridades sanitarias": {
+  "para que una dolencia sea considerada enfermedad profesional: viajeros a\tdebe estar expresamente reconocida por las autoridades sanitarias": {
     "explanation": "Para que una dolencia se considere enfermedad profesional debe estar expresamente reconocida como tal por las autoridades sanitarias (cuadro oficial de enfermedades profesionales).",
     "source": "RD 1299/2006 (cuadro de enfermedades profesionales) y LGSS",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-22169",
     "origin": "catalog",
     "ruleId": "enfermedad_profesional_reconocida"
   },
-  "qué itinerario debe seguir un conductor para llevar a cabo el transporte que tenga encomendado\tel que le hayan fijado. viajeros a universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
+  "qué itinerario debe seguir un conductor para llevar a cabo el transporte que tenga encomendado\tel que le hayan fijado. viajeros a": {
     "explanation": "El conductor debe seguir el itinerario que le hayan fijado (empresa / cargador), no el que él considere más corto por su cuenta.",
     "source": "II Acuerdo general para las empresas de transporte de mercancías y LOTT",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
     "origin": "catalog",
     "ruleId": "itinerario_fijado"
-  },
-  "para que una dolencia sea considerada enfermedad profesional: viajeros a universidad de jaén. paraje las lagunillas, s/n, jaen, jaen\tdebe estar expresamente reconocida por las autoridades sanitarias": {
-    "explanation": "Para que una dolencia se considere enfermedad profesional debe estar expresamente reconocida como tal por las autoridades sanitarias (cuadro oficial de enfermedades profesionales).",
-    "source": "RD 1299/2006 (cuadro de enfermedades profesionales) y LGSS",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-22169",
-    "origin": "catalog",
-    "ruleId": "enfermedad_profesional_reconocida"
   },
   "en caso de liquidación voluntaria de una sociedad de responsabilidad limitada, si el capital social es inferior a 3.000 eur., tienen alguna responsabilidad los socios\tsi, responden solidariamente de la diferencia entre el importe de 3.000 eur. y la cifra del capital suscrito": {
     "explanation": "La sociedad de responsabilidad limitada tiene un capital social mínimo legal (tras la reforma, puede constituirse con 1 euro, con reglas especiales de reserva; el régimen clásico del temario CAP sigue preguntando el mínimo de 3.000 euros en convocatorias antiguas).",

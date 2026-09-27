@@ -64,6 +64,37 @@ HEADER_RE = re.compile(
     r")$",
     re.I,
 )
+# Cabecera/pie de sede (Junta) que PyMuPDF pega a mitad de pregunta u opción.
+PDF_CHROME_RE = re.compile(
+    r"(?:"
+    r"UNIVERSIDAD(?:\s+DE)?\s+"
+    r"(?:ALMER[IÍ]A|GRANADA|JA[EÉ]N|SEVILLA|C[AÁ]DIZ|C[OÓ]RDOBA|"
+    r"M[AÁ]LAGA|HUELVA|ALMERIA)\b"
+    r"|UNIVERSIDAD NACIONAL EDUCACI[OÓ]N A DISTANCIA\b"
+    r"|UNED(?:\s|[-/,])"
+    r"|EXAMEN OBTENCI[OÓ]N DEL CAP\b"
+    r"|P[aá]gina\s+\d+\s+de\s+\d+\b"
+    r"|AULARIO\s+[IVX0-9]+\b"
+    r"|CAMPUS UNIVERSITARIO\b"
+    r"|C/CA[NÑ]ADA(?:\s+DE)?\s+SAN URBANO\b"
+    r"|C/JERIC[OÓ]\b"
+    r"|C/\s*PEDRO DE ASUA\b"
+    r"|PARAJE LAS LAGUNILLAS\b"
+    r")",
+    re.I,
+)
+REF_TAIL_RE = re.compile(r"\s+Referencia(?:\s+Legal)?:\s.*$")
+
+
+def strip_pdf_chrome(text: str) -> str:
+    """Quita sede, paginación y 'Referencia Legal:' pegados al enunciado u opción."""
+    if not text:
+        return text
+    m = PDF_CHROME_RE.search(text)
+    if m:
+        text = text[: m.start()]
+    text = REF_TAIL_RE.sub("", text)
+    return re.sub(r"\s+", " ", text).strip()
 # Cabeceras Extremadura / restos de Referencia entre preguntas
 SKIP_LINE_RE = re.compile(
     r"^("
@@ -278,6 +309,8 @@ def clean_join(parts: list[str]) -> str:
 def is_junk_line(s: str) -> bool:
     if HEADER_RE.match(s) or SKIP_LINE_RE.match(s):
         return True
+    if PDF_CHROME_RE.match(s.strip()):
+        return True
     if PAGE_NUM_ONLY.match(s) and len(s) <= 2:
         return True
     return False
@@ -340,11 +373,11 @@ def parse_questions(text: str) -> list[dict]:
                         i += 1
                 if starred_mark:
                     correct = oid
-                options.append({"id": oid, "text": clean_join(o_parts)})
+                options.append({"id": oid, "text": strip_pdf_chrome(clean_join(o_parts))})
             if i < len(lines) and REF_LINE_RE.match(lines[i]):
                 break
 
-        question_text = clean_join(q_parts)
+        question_text = strip_pdf_chrome(clean_join(q_parts))
         if not question_text or len(options) < 2:
             continue
         seen: set[str] = set()
@@ -375,6 +408,13 @@ def parse_questions(text: str) -> list[dict]:
                 continue
             seen.add(o["id"])
             options.append(o)
+        if len(options) < 2:
+            continue
+        options = [
+            {"id": o["id"], "text": strip_pdf_chrome(o["text"])}
+            for o in options
+            if strip_pdf_chrome(o.get("text") or "")
+        ]
         if len(options) < 2:
             continue
         item: dict = {

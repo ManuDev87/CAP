@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "Para incrementar la seguridad¿ UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "Para incrementar la seguridad¿",
     "options": [
       {
         "id": "a",
@@ -346,7 +346,7 @@
   },
   {
     "num": "16",
-    "question": "Para lograr poner en movimiento un camión cargado¿ UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "Para lograr poner en movimiento un camión cargado¿",
     "options": [
       {
         "id": "a",
@@ -684,7 +684,7 @@
       },
       {
         "id": "d",
-        "text": "depende fundamentalmente de la MMA por eje. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "depende fundamentalmente de la MMA por eje."
       }
     ],
     "correct": "c"
@@ -799,7 +799,7 @@
       },
       {
         "id": "d",
-        "text": "Buscar una solución negociada. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Buscar una solución negociada."
       }
     ],
     "correct": "b"
@@ -910,7 +910,7 @@
       },
       {
         "id": "c",
-        "text": "Externos. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Externos."
       },
       {
         "id": "d",
@@ -1025,7 +1025,7 @@
       },
       {
         "id": "c",
-        "text": "Funcionamiento de vehículos en recintos cerrados sin ventilación. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Funcionamiento de vehículos en recintos cerrados sin ventilación."
       },
       {
         "id": "d",
@@ -1140,7 +1140,7 @@
       },
       {
         "id": "c",
-        "text": "Concentrar la observación en el punto final de la maniobra. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Concentrar la observación en el punto final de la maniobra."
       },
       {
         "id": "d",
@@ -1259,7 +1259,7 @@
       },
       {
         "id": "d",
-        "text": "56 horas. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "56 horas."
       }
     ],
     "correct": "d"
@@ -1385,7 +1385,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Contrato. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Contrato."
       },
       {
         "id": "b",
@@ -1504,7 +1504,7 @@
       },
       {
         "id": "b",
-        "text": "El consumo específico. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "El consumo específico."
       },
       {
         "id": "c",
@@ -1619,7 +1619,7 @@
       },
       {
         "id": "b",
-        "text": "Con palmaditas en la cara. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Con palmaditas en la cara."
       },
       {
         "id": "c",
@@ -1730,7 +1730,7 @@
     "options": [
       {
         "id": "a",
-        "text": "rojo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "rojo."
       },
       {
         "id": "b",
@@ -1834,7 +1834,7 @@
       },
       {
         "id": "d",
-        "text": "esperar con el motor arrancado sin circular hasta que alcance la temperatura adecuada de funcionamiento. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "esperar con el motor arrancado sin circular hasta que alcance la temperatura adecuada de funcionamiento."
       }
     ],
     "correct": "a"
@@ -1949,7 +1949,7 @@
       },
       {
         "id": "d",
-        "text": "De la relación de marchas seleccionada. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "De la relación de marchas seleccionada."
       }
     ],
     "correct": "d"
@@ -2064,7 +2064,7 @@
       },
       {
         "id": "d",
-        "text": "Registrar la actividad del conductor y la velocidad del vehículo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Registrar la actividad del conductor y la velocidad del vehículo."
       }
     ],
     "correct": "a"
@@ -2186,7 +2186,7 @@
   },
   {
     "num": "96",
-    "question": "¿Qué elemento no es condicionante de la toma de decisiones en la conducción? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Qué elemento no es condicionante de la toma de decisiones en la conducción?",
     "options": [
       {
         "id": "a",

@@ -120,7 +120,7 @@
     "options": [
       {
         "id": "a",
-        "text": "se debe intentar que la altura de la carga en el vehículo sea lo más alta posible. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "se debe intentar que la altura de la carga en el vehículo sea lo más alta posible."
       },
       {
         "id": "b",
@@ -235,7 +235,7 @@
     "options": [
       {
         "id": "a",
-        "text": "servicios de carácter público. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "servicios de carácter público."
       },
       {
         "id": "b",
@@ -354,7 +354,7 @@
       },
       {
         "id": "b",
-        "text": "Cisterna. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Cisterna."
       },
       {
         "id": "c",
@@ -473,7 +473,7 @@
       },
       {
         "id": "c",
-        "text": "el transportista debe solicitar instrucciones a quien tenga derecho a disponer de la mercancía. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "el transportista debe solicitar instrucciones a quien tenga derecho a disponer de la mercancía."
       },
       {
         "id": "d",
@@ -584,7 +584,7 @@
       },
       {
         "id": "b",
-        "text": "Tarjeta de empresa. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Tarjeta de empresa."
       },
       {
         "id": "c",
@@ -703,7 +703,7 @@
       },
       {
         "id": "c",
-        "text": "150 km - 200 km. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "150 km - 200 km."
       },
       {
         "id": "d",
@@ -822,7 +822,7 @@
       },
       {
         "id": "d",
-        "text": "inclinaciones del cuerpo o torciéndolo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "inclinaciones del cuerpo o torciéndolo."
       }
     ],
     "correct": "a"
@@ -1059,7 +1059,7 @@
   },
   {
     "num": "47",
-    "question": "En la planificación de la ruta, ¿qué debe tener en cuenta el conductor de un vehículo de transporte? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "En la planificación de la ruta, ¿qué debe tener en cuenta el conductor de un vehículo de transporte?",
     "options": [
       {
         "id": "a",
@@ -1186,7 +1186,7 @@
       },
       {
         "id": "c",
-        "text": "a un tipo de sistema antibloqueo de frenos. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "a un tipo de sistema antibloqueo de frenos."
       },
       {
         "id": "d",
@@ -1297,7 +1297,7 @@
       },
       {
         "id": "b",
-        "text": "Evitar el fenómeno \"fading\". UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Evitar el fenómeno \"fading\"."
       },
       {
         "id": "c",
@@ -1408,7 +1408,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Un estado semejante a la embriaguez, en el cual disminuye la apreciación del riesgo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Un estado semejante a la embriaguez, en el cual disminuye la apreciación del riesgo."
       },
       {
         "id": "b",
@@ -1523,7 +1523,7 @@
     "options": [
       {
         "id": "a",
-        "text": "la anchura de los neumáticos. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "la anchura de los neumáticos."
       },
       {
         "id": "b",
@@ -1642,7 +1642,7 @@
       },
       {
         "id": "b",
-        "text": "de la presión de los neumáticos y la posición del pedal del acelerador. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "de la presión de los neumáticos y la posición del pedal del acelerador."
       },
       {
         "id": "c",
@@ -1757,7 +1757,7 @@
       },
       {
         "id": "b",
-        "text": "Sí, disminuye. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Sí, disminuye."
       },
       {
         "id": "c",
@@ -1876,7 +1876,7 @@
       },
       {
         "id": "c",
-        "text": "de la organización operativa de la empresa. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "de la organización operativa de la empresa."
       },
       {
         "id": "d",
@@ -1987,7 +1987,7 @@
       },
       {
         "id": "b",
-        "text": "En condiciones ambientales que disminuyan sensiblemente la visibilidad. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En condiciones ambientales que disminuyan sensiblemente la visibilidad."
       },
       {
         "id": "c",
@@ -2106,7 +2106,7 @@
       },
       {
         "id": "c",
-        "text": "Minimización de las consecuencias de un accidente. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Minimización de las consecuencias de un accidente."
       },
       {
         "id": "d",
@@ -2213,7 +2213,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Protocolo médico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Protocolo médico."
       },
       {
         "id": "b",

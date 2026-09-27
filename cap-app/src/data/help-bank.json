@@ -347,6 +347,11 @@
     "origin": "catalog",
     "ruleId": "oficiales_exentos"
   },
+  "el transporte de animales vivos\trequiere, además de la autorización genérica de transporte en los casos en los que resulte preceptiva, una autorización específica del órgano competente en materia de sanidad animal": {
+    "explanation": "La plantilla oficial marca como correcta:\n\n«requiere, además de la autorización genérica de transporte en los casos en los que resulte preceptiva, una autorización específica del órgano competente en materia de sanidad animal.»\n\nFundamento recogido en el examen de referencia: 990/2022, RD, 5.",
+    "source": "990/2022, RD, 5",
+    "origin": "official-ref"
+  },
   "qué es el régimen ata\tes un régimen aduanero utilizado para la importación temporal": {
     "explanation": "El régimen ATA (cuaderno ATA) se utiliza para la importación temporal de mercancías (exposiciones, ferias, material profesional) entre los países firmantes del Convenio ATA.",
     "source": "Convenio ATA relativo a la importación temporal",
@@ -494,6 +499,12 @@
     "origin": "catalog",
     "ruleId": "calidad_percibida"
   },
+  "los bloques de tiempos de las actividades del conductor\taparecen reflejados en una zona del disco-diagrama del tacógrafo analógico": {
+    "explanation": "La plantilla oficial marca como correcta:\n\n«aparecen reflejados en una zona del disco-diagrama del tacógrafo analógico.»\n\nFundamento recogido en el examen de referencia: (UE) 165/2014, Anexo I.",
+    "source": "(UE) 165/2014, Anexo I",
+    "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32014R0165",
+    "origin": "official-ref"
+  },
   "qué actuación es correcta para reducir el consumo de carburante de un automóvil\tutilizar la relación de marchas más alta posible de forma que la aguja del cuentarrevoluciones se mantenga en la zona de máxima eficiencia del motor, generalmente una zona marcada de color verde": {
     "explanation": "La zona verde del cuentarrevoluciones indica el régimen de máxima eficiencia / menor consumo específico. Conviene circular en esa zona con la marcha más larga posible.",
     "source": "Guía de conducción eficiente IDAE",
@@ -618,7 +629,7 @@
     "origin": "catalog",
     "ruleId": "caja_velocidades_funcion"
   },
-  "de qué factores depende el grado de rozamiento en un camión\tde las condiciones climatológicas. uned c/ pedro de asua 2, vitoria-gasteiz, alava": {
+  "de qué factores depende el grado de rozamiento en un camión\tde las condiciones climatológicas": {
     "explanation": "El grado de rozamiento entre neumático y calzada depende de las condiciones de la superficie y de la climatología (agua, hielo, nieve), además del tipo de neumático y del estado del asfalto.",
     "source": "Programa oficial CAP, RD 284/2021, anexo I (adherencia y seguridad)",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
@@ -1258,19 +1269,18 @@
     "origin": "catalog",
     "ruleId": "teu_20"
   },
-  "las agencias de transporte de mercancías y los almacenistas-distribuidores contratarán: universidad almeria. aulario i. c/cañada san urbano. campus universitario, almeria, almeria\tsiempre en nombre propio": {
-    "explanation": "Las agencias de transporte, los transitarios y los almacenistas-distribuidores contratan siempre en nombre propio: se obligan ellos mismos con el cargador y con el transportista. No son meros representantes. Por eso no vale «en nombre de quien haya requerido sus servicios» ni limitar el nombre propio a cuando usan camiones propios, leasing o renting.",
-    "source": "Ley 16/1987 (LOTT), actividades auxiliares y complementarias del transporte",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
-    "origin": "catalog",
-    "ruleId": "agencias_nombre_propio"
-  },
   "en el caso de un transporte sujeto al convenio cmr, qué requisitos debe reunir una firma electrónica para que se considere fiable a efectos de la certificación de la carta de porte electrónica\tque permita identificar al firmante": {
     "explanation": "En un transporte sujeto al CMR, la carta de porte acredita el contrato y debe contener las indicaciones previstas en el convenio (partes, mercancía, lugares de carga y descarga, etc.).",
     "source": "Convenio CMR, artículos 4 a 6",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
+  },
+  "señale la opción que no es acorde con el mantenimiento de unas buenas condiciones de trabajo\tno se debe descansar antes de haber transcurrido 3 horas de trabajo para aumentar la eficacia": {
+    "explanation": "La plantilla oficial marca como correcta:\n\n«No se debe descansar antes de haber transcurrido 3 horas de trabajo para aumentar la eficacia.»\n\nFundamento recogido en el examen de referencia: Ergonomía. OIT.",
+    "source": "Ergonomía. OIT",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
+    "origin": "official-ref"
   },
   "el filtro del aire del sistema de alimentación de un motor de combustión debe sustituirse periódicamente, qué sucedería si no se hiciera\taumentaría el consumo de carburante": {
     "explanation": "Un filtro de aire sucio ahoga la admisión y aumenta el consumo de carburante. Debe sustituirse según el fabricante.",
@@ -1334,13 +1344,6 @@
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
     "origin": "catalog",
     "ruleId": "consumo_aerodinamica_mantenimiento"
-  },
-  "qué es recomendable en las incorporaciones a una vía de circulación\tllegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía. universidad almería. c/cañada de san urbano. campus universitario, almeria, almeria": {
-    "explanation": "En una incorporación hay que llegar a una velocidad próxima a la del tráfico de la vía principal para no obligar a frenar a los demás.",
-    "source": "Reglamento General de Circulación (incorporaciones) y manual DGT",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23514",
-    "origin": "catalog",
-    "ruleId": "incorporacion_velocidad"
   },
   "qué itinerario debe seguir un conductor para llevar a cabo el transporte que tenga encomendado\tel que le hayan fijado": {
     "explanation": "El conductor debe seguir el itinerario que le hayan fijado (empresa / cargador), no el que él considere más corto por su cuenta.",
@@ -1451,13 +1454,6 @@
     "source": "Manual de estiba de la mercancía. CEFTRAL",
     "origin": "official-ref"
   },
-  "el funcionamiento del motor implica un consumo de carburante que es función de las resistencias que debe vencer el vehículo. cuál de los siguientes factores no está directamente relacionado con estas resistencias\tel tipo de material empleado en el motor. universidad almeria. aulario i. c/cañada san urbano, campus universitario., almeria, almeria": {
-    "explanation": "El tipo de material del motor no es un factor de consumo en marcha. Sí lo son las resistencias al avance, las rpm, la carga y el estilo de conducción. Si la pregunta pide la opción incorrecta, esa es ella.",
-    "source": "Guía de conducción eficiente IDAE",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "material_motor_no_consumo"
-  },
   "si se produce un vertido durante la carga de mercancía peligrosa en un vehículo, quién debe efectuar su limpieza\tel cargador": {
     "explanation": "Si se produce un vertido durante la carga de mercancía peligrosa, corresponde al cargador la limpieza, salvo pacto o norma específica en contrario.",
     "source": "Real Decreto 97/2014, artículo 40 (operaciones de carga)",
@@ -1471,13 +1467,6 @@
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
     "origin": "catalog",
     "ruleId": "suspension_confort"
-  },
-  "cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera universidad almería. c/cañada de san urbano. campus universitario, almeria, almeria\trealizar estadísticas comerciales": {
-    "explanation": "En el organigrama típico de una empresa de transporte, al comercial le corresponde la relación con clientes y las estadísticas comerciales, no la planificación de rutas (tráfico) ni las nóminas (administración).",
-    "source": "Programa oficial CAP, RD 284/2021, anexo I (entorno del transporte de mercancías)",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
-    "origin": "catalog",
-    "ruleId": "comercial_estadisticas"
   },
   "el consumo específico de un motor, indica cómo es su rendimiento\tsí, a menor consumo específico mayor rendimiento del motor": {
     "explanation": "El consumo específico (gramos de combustible por kWh) mide el rendimiento: a menor consumo específico, mayor rendimiento del motor.",
@@ -1563,7 +1552,7 @@
     "origin": "catalog",
     "ruleId": "precaucion_carga_descarga"
   },
-  "para sustituir la pausa de 45 minutos, en un período de conducción de 4 horas y media de conducción el conductor de un vehículo de mercancías debe efectuar una pausa de, al menos: universidad almería. c/cañada de san urbano. campus universitario, almeria, almeria\t15 minutos, seguida de otra de, al menos, 30 minutos, intercaladas en dicho período de conducción": {
+  "para sustituir la pausa de 45 minutos, en un período de conducción de 4 horas y media de conducción el conductor de un vehículo de mercancías debe efectuar una pausa de, al menos\t15 minutos, seguida de otra de, al menos, 30 minutos, intercaladas en dicho período de conducción": {
     "explanation": "Tras 4 horas y media de conducción el conductor debe hacer una pausa ininterrumpida de al menos 45 minutos, salvo que tome un descanso. Esa pausa puede sustituirse por una de al menos 15 minutos seguida de otra de al menos 30 minutos, intercaladas en el periodo de conducción.",
     "source": "Reglamento (CE) n.º 561/2006, artículo 7 (texto consolidado)",
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
@@ -1673,19 +1662,12 @@
     "origin": "catalog",
     "ruleId": "somnolencia_permiso"
   },
-  "en un contrato de transporte sujeto al convenio cmr, el transportista quedará libre de responsabilidad cuando pruebe que el daño de la mercancía ha podido derivar: universidad almeria. aulario iii. c/cañada san urbano, campus universitario., almeria, almeria\tde la inexactitud de las marcas de los bultos": {
+  "en un contrato de transporte sujeto al convenio cmr, el transportista quedará libre de responsabilidad cuando pruebe que el daño de la mercancía ha podido derivar\tde la inexactitud de las marcas de los bultos": {
     "explanation": "El transportista puede quedar exento de responsabilidad si prueba que el daño deriva de la inexactitud o insuficiencia de las marcas o números de los bultos, entre otras causas del artículo 17.",
     "source": "Convenio CMR, artículos 17 y 18",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
     "origin": "catalog",
     "ruleId": "cmr_responsabilidad_marcas"
-  },
-  "los accidentes in itinere son aquellos que: universidad almeria. aulario iii. c/cañada san urbano, campus universitario., almeria, almeria\tocurren en los desplazamientos de ida y vuelta al lugar de trabajo": {
-    "explanation": "El accidente in itinere es el ocurrido en el desplazamiento de ida o vuelta entre el domicilio y el lugar de trabajo.",
-    "source": "Real Decreto Legislativo 8/2015 (Ley General de la Seguridad Social), accidente de trabajo",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
-    "origin": "catalog",
-    "ruleId": "in_itinere"
   },
   "para que una dolencia sea considerada enfermedad profesional\tdebe estar expresamente reconocida como tal por las autoridades sanitarias": {
     "explanation": "Para que una dolencia se considere enfermedad profesional debe estar expresamente reconocida como tal por las autoridades sanitarias (cuadro oficial de enfermedades profesionales).",
@@ -2367,13 +2349,6 @@
     "origin": "catalog",
     "ruleId": "reducir_velocidad_media"
   },
-  "de qué factores depende el grado de rozamiento en un camión\tde las condiciones climatológicas": {
-    "explanation": "El grado de rozamiento entre neumático y calzada depende de las condiciones de la superficie y de la climatología (agua, hielo, nieve), además del tipo de neumático y del estado del asfalto.",
-    "source": "Programa oficial CAP, RD 284/2021, anexo I (adherencia y seguridad)",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
-    "origin": "catalog",
-    "ruleId": "rozamiento_clima"
-  },
   "a quién impone obligaciones la normativa de prevención de riesgos laborales\tal empresario y al conductor": {
     "explanation": "La normativa de prevención de riesgos laborales impone obligaciones tanto al empresario como a los trabajadores (el conductor).",
     "source": "Ley 31/1995, de prevención de riesgos laborales, artículos 2 y 29",
@@ -2422,13 +2397,6 @@
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23514",
     "origin": "catalog",
     "ruleId": "mma75_adelantamiento"
-  },
-  "en un contrato de transporte sujeto al convenio cmr, el transportista quedará libre de responsabilidad cuando pruebe que el daño de la mercancía ha podido derivar\tde la inexactitud de las marcas de los bultos": {
-    "explanation": "El transportista puede quedar exento de responsabilidad si prueba que el daño deriva de la inexactitud o insuficiencia de las marcas o números de los bultos, entre otras causas del artículo 17.",
-    "source": "Convenio CMR, artículos 17 y 18",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
-    "origin": "catalog",
-    "ruleId": "cmr_responsabilidad_marcas"
   },
   "qué caracteriza a la figura de los transitarios en el transporte por carretera\tson especialistas en organizar transportes internacionales de mercancías": {
     "explanation": "Los transitarios son empresas especializadas en organizar, por cuenta ajena, transportes internacionales y en realizar los trámites aduaneros y la coordinación intermodal. Contratan en nombre propio con cargador y transportista.",
@@ -2808,7 +2776,7 @@
     "origin": "catalog",
     "ruleId": "sl_capital"
   },
-  "en un vehículo dotado de tacógrafo, el tiempo de conducción diaria no podrá superar en ningún caso\t10 horas. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n. campus universitario fuente nueva, granada, granada": {
+  "en un vehículo dotado de tacógrafo, el tiempo de conducción diaria no podrá superar en ningún caso\t10 horas. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n": {
     "explanation": "El tiempo de conducción diario no debe superar las 9 horas, aunque puede extenderse a 10 horas no más de dos veces por semana.",
     "source": "Reglamento (CE) n.º 561/2006, artículo 6.1",
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
@@ -2835,13 +2803,6 @@
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
-  },
-  "para sustituir la pausa de 45 minutos, en un período de conducción de 4 horas y media de conducción el conductor de un vehículo de mercancías debe efectuar una pausa de, al menos\t15 minutos, seguida de otra de, al menos, 30 minutos, intercaladas en dicho período de conducción": {
-    "explanation": "Tras 4 horas y media de conducción el conductor debe hacer una pausa ininterrumpida de al menos 45 minutos, salvo que tome un descanso. Esa pausa puede sustituirse por una de al menos 15 minutos seguida de otra de al menos 30 minutos, intercaladas en el periodo de conducción.",
-    "source": "Reglamento (CE) n.º 561/2006, artículo 7 (texto consolidado)",
-    "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
-    "origin": "catalog",
-    "ruleId": "r561_pausa_45"
   },
   "qué factor influye en el consumo de carburante ftad. ciencias u. granada. ed.mecenas c/ profesor adolfo rancaño s/n. campus u. fuente nueva , granada, granada\tla presión de inflado de los neumáticos": {
     "explanation": "Una presión de inflado incorrecta aumenta la resistencia a la rodadura y, con ella, el consumo de carburante.",
@@ -2870,7 +2831,7 @@
     "origin": "catalog",
     "ruleId": "consumo_mantenimiento"
   },
-  "qué itinerario debe seguir un conductor para llevar a cabo el transporte que tenga encomendado\tel que le hayan fijado. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n. campus universitario fuente nueva, granada, granada": {
+  "qué itinerario debe seguir un conductor para llevar a cabo el transporte que tenga encomendado\tel que le hayan fijado. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n": {
     "explanation": "El conductor debe seguir el itinerario que le hayan fijado (empresa / cargador), no el que él considere más corto por su cuenta.",
     "source": "II Acuerdo general para las empresas de transporte de mercancías y LOTT",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
@@ -2884,7 +2845,7 @@
     "origin": "catalog",
     "ruleId": "resistencia_rodadura"
   },
-  "el capital de una sociedad de responsabilidad limitada se encuentra dividido en\tparticipaciones. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n. campus universitario fuente nueva, granada, granada": {
+  "el capital de una sociedad de responsabilidad limitada se encuentra dividido en\tparticipaciones. facultad ciencias. edif. mecenas. c/doctor severo ochoa, s/n": {
     "explanation": "La sociedad de responsabilidad limitada tiene un capital social mínimo legal (tras la reforma, puede constituirse con 1 euro, con reglas especiales de reserva; el régimen clásico del temario CAP sigue preguntando el mínimo de 3.000 euros en convocatorias antiguas).",
     "source": "Real Decreto Legislativo 1/2010, artículos 4 y 23 (vigente) — comprobar la convocatoria del examen",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544",
@@ -2974,14 +2935,14 @@
     "origin": "catalog",
     "ruleId": "cmr_responsabilidad_marcas"
   },
-  "cuando la masa del camión es elevada durante la circulación en una pendiente ascendente\tse requiere más esfuerzo para mover el vehículo y se tendrán que realizar más cambios de marcha. edificio galileo galilei, campus el carmen universidad de huelva, avenida de las fuerzas armadas s/n, huelva, huelva": {
+  "cuando la masa del camión es elevada durante la circulación en una pendiente ascendente\tse requiere más esfuerzo para mover el vehículo y se tendrán que realizar más cambios de marcha. edificio galileo galilei, campus el carmen": {
     "explanation": "A mayor masa, mayor componente de resistencia a la pendiente: hace falta más esfuerzo (más par) y suelen necesitarse más cambios de marcha.",
     "source": "Programa oficial CAP, RD 284/2021, anexo I",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
     "origin": "catalog",
     "ruleId": "pendiente_masa_esfuerzo"
   },
-  "conducir utilizando la relación de marchas más alta que sea posible, dependiendo de la velocidad a la que se circule, tiene como ventaja: edificio galileo galilei, campus el carmen universidad de huelva, avenida de las fuerzas armadas s/n, huelva, huelva\tuna menor contaminación acústica y ambiental, menor consumo y menor desgaste mecánico": {
+  "conducir utilizando la relación de marchas más alta que sea posible, dependiendo de la velocidad a la que se circule, tiene como ventaja: edificio galileo galilei, campus el carmen\tuna menor contaminación acústica y ambiental, menor consumo y menor desgaste mecánico": {
     "explanation": "Circular con la marcha más larga posible a la velocidad dada mantiene el motor en zona verde: menos rpm, menos consumo y menos ruido.",
     "source": "Guía de conducción eficiente IDAE",
     "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
@@ -2995,26 +2956,12 @@
     "origin": "catalog",
     "ruleId": "clasificacion_objeto"
   },
-  "qué es recomendable en las incorporaciones a una vía de circulación universidad jaen. paraje las lagunillas, s/n, jaen, jaen\tllegar al tramo de incorporación a una velocidad muy cercana a la del tráfico de la vía": {
-    "explanation": "En una incorporación hay que llegar a una velocidad próxima a la del tráfico de la vía principal para no obligar a frenar a los demás.",
-    "source": "Reglamento General de Circulación (incorporaciones) y manual DGT",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23514",
-    "origin": "catalog",
-    "ruleId": "incorporacion_velocidad"
-  },
   "qué resistencias intervienen en el movimiento de los vehículos\tla resistencia aerodinámica y a la rodadura": {
     "explanation": "En el movimiento del vehículo intervienen, entre otras, la resistencia a la rodadura (contacto neumático-calzada), la resistencia del aire y la resistencia a la pendiente. La opción correcta de esta pregunta es la resistencia a la rodadura.",
     "source": "Programa oficial CAP, RD 284/2021, anexo I (mecánica y dinámica del vehículo)",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
     "origin": "catalog",
     "ruleId": "resistencia_rodadura"
-  },
-  "el transporte funerario realizado por prestadores de servicios funerarios\testá exento de autorización. universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
-    "explanation": "El transporte funerario realizado por prestadores de servicios funerarios está exento de autorización de transporte de mercancías.",
-    "source": "Reglamento de la LOTT (RD 1211/1990), exenciones del artículo 33 y ss.",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20151",
-    "origin": "catalog",
-    "ruleId": "exento_funerario"
   },
   "qué resistencias intervienen en el movimiento de los vehículos\tla resistencia a la rodadura y la resistencia aerodinámica": {
     "explanation": "En el movimiento del vehículo intervienen, entre otras, la resistencia a la rodadura (contacto neumático-calzada), la resistencia del aire y la resistencia a la pendiente. La opción correcta de esta pregunta es la resistencia a la rodadura.",
@@ -3023,13 +2970,6 @@
     "origin": "catalog",
     "ruleId": "resistencia_rodadura"
   },
-  "según el acuerdo atp, qué es un vehículo identificado con las letras frc\tun vehículo frigorífico reforzado de la clase c. universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
-    "explanation": "El ATP identifica las clases de vehículos frigoríficos e isotermos mediante siglas (F = frigorífico, I = isotermo, R = refrigerante; N/R = normal/reforzado; la tercera letra indica la clase de temperatura).",
-    "source": "Acuerdo ATP, anejo 1, apéndice 4",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1976-24916",
-    "origin": "catalog",
-    "ruleId": "atp_frigorifico_letras"
-  },
   "en un contrato de transporte sujeto al convenio cmr, en virtud del derecho a disponer de la mercancía, el remitente puede\tdetener el transporte, modificar el lugar previsto para la entrega y cambiar el destinatario indicado en la carta de porte": {
     "explanation": "En un transporte sujeto al CMR, la carta de porte acredita el contrato y debe contener las indicaciones previstas en el convenio (partes, mercancía, lugares de carga y descarga, etc.).",
     "source": "Convenio CMR, artículos 4 a 6",
@@ -3037,26 +2977,12 @@
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
   },
-  "en un motor de combustión, el par motor máximo se consigue\tcuando el motor gira a un régimen medio de revoluciones. universidad de jaén. paraje las lagunillas, s/n. , jaen, jaen": {
-    "explanation": "El par motor máximo se obtiene en un régimen medio de revoluciones, no en el régimen máximo de potencia ni al ralentí.",
-    "source": "Programa oficial CAP, RD 284/2021, anexo I (curvas de motor)",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
-    "origin": "catalog",
-    "ruleId": "par_motor_regimen_medio"
-  },
-  "en un contrato de transporte sujeto al convenio cmr, qué indicaciones debe contener la carta de porte\tcantidad de mercancía transportada (peso). universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
+  "en un contrato de transporte sujeto al convenio cmr, qué indicaciones debe contener la carta de porte\tcantidad de mercancía transportada (peso)": {
     "explanation": "En un transporte sujeto al CMR, la carta de porte acredita el contrato y debe contener las indicaciones previstas en el convenio (partes, mercancía, lugares de carga y descarga, etc.).",
     "source": "Convenio CMR, artículos 4 a 6",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1974-824",
     "origin": "catalog",
     "ruleId": "cmr_carta_porte"
-  },
-  "el mayor o menor consumo de carburante de un vehículo pesado depende de varios factores, entre otros\tdel mantenimiento del vehículo, la posición del pedal del acelerador y las revoluciones por minuto del motor. universidad jaen. paraje las lagunillas, s/n, jaen, jaen": {
-    "explanation": "El mantenimiento (filtros, presión de neumáticos, geometría, etc.), la posición del acelerador y el estado de la vía influyen de forma directa en el consumo.",
-    "source": "Guía de conducción eficiente IDAE y programa oficial CAP, anexo I",
-    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
-    "origin": "catalog",
-    "ruleId": "consumo_mantenimiento"
   },
   "el consumo de carburante de un vehículo pesado puede ser mayor de lo normal dependiendo\tdel mantenimiento que se realice al vehículo, el perfil de la carretera y las revoluciones por minuto del motor": {
     "explanation": "En un pesado el consumo sube si empeora la aerodinámica (lonas, deflectores, carga mal cubierta) o el mantenimiento (filtros, neumáticos, geometría).",
@@ -3170,13 +3096,6 @@
     "origin": "catalog",
     "ruleId": "r561_descanso_semanal"
   },
-  "el transporte de animales vivos\trequiere, además de la autorización genérica, una autorización específica de sanidad animal": {
-    "explanation": "El transporte de animales vivos requiere, además de la autorización genérica de transporte cuando proceda, la autorización específica de sanidad animal.",
-    "source": "Reglamento (CE) n.º 1/2005 y normativa española de sanidad animal (RD 990/2022 y concordantes)",
-    "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32005R0001",
-    "origin": "catalog",
-    "ruleId": "animales_autorizacion_sanidad"
-  },
   "las autoridades aduaneras pueden disponer la destrucción de las mercancías\tsí, corriendo los costes de la destrucción a cargo del titular de las mercancías": {
     "explanation": "Las autoridades aduaneras pueden disponer la destrucción de las mercancías; los costes corren a cargo del titular.",
     "source": "Reglamento (UE) n.º 952/2013, artículo 197",
@@ -3197,12 +3116,6 @@
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02006R0561-20200820",
     "origin": "catalog",
     "ruleId": "r561_pausa_45"
-  },
-  "señale la opción que no es acorde con el mantenimiento de unas buenas condiciones de trabajo\tno se debe descansar antes de haber transcurrido 3 horas": {
-    "explanation": "La plantilla oficial marca como correcta:\n\n«No se debe descansar antes de haber transcurrido 3 horas.»\n\nFundamento recogido en el examen de referencia: Ergonomía. OIT.",
-    "source": "Ergonomía. OIT",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292",
-    "origin": "official-ref"
   },
   "en caso de aplicar una sanción relacionada con la normativa de tiempos de conducción, qué se debe entregar al conductor\tjustificación escrita de las pruebas de la infracción": {
     "explanation": "Cuando se aplique una sanción por tiempos de conducción, debe entregarse al conductor una justificación escrita de las pruebas de la infracción.",
@@ -3246,13 +3159,6 @@
     "origin": "catalog",
     "ruleId": "responsabilidad_administrativa_empresa"
   },
-  "en una inspección de transporte en carretera, un conductor\tdebe permitir la inspección de la carga y control de pasajeros": {
-    "explanation": "En una inspección en carretera el conductor debe permitir la inspección de la mercancía y, en su caso, el control de pasajeros, y facilitar la documentación exigida.",
-    "source": "Ley 16/1987 (LOTT), artículo 33",
-    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-8807",
-    "origin": "catalog",
-    "ruleId": "inspeccion_carga"
-  },
   "es necesario poseer permiso de conducción para seguir los cursos cap de cualificación inicial acelerada\tno es necesario": {
     "explanation": "Para seguir los cursos de cualificación inicial (ordinaria o acelerada) no es necesario estar ya en posesión del permiso de conducción correspondiente.",
     "source": "Real Decreto 284/2021, artículo 6",
@@ -3260,25 +3166,12 @@
     "origin": "catalog",
     "ruleId": "cap_no_permiso_inicial"
   },
-  "para qué sirven los reposacabezas\tpara intentar disminuir la gravedad de las lesiones en el cuello": {
-    "explanation": "El reposacabezas reduce la gravedad del latigazo cervical en un alcance; no es un elemento de confort o decorativo.",
-    "source": "Manual de seguridad vial DGT",
-    "sourceUrl": "https://www.dgt.es/muevete-con-seguridad/evita-conductas-de-riesgo/",
-    "origin": "catalog",
-    "ruleId": "reposacabezas"
-  },
   "el efecto 'fading'\tdisminuye la capacidad de frenado": {
     "explanation": "El fading es la pérdida de eficacia de los frenos por sobrecalentamiento de las superficies de fricción: disminuye la capacidad de frenado.",
     "source": "Programa oficial CAP, RD 284/2021, anexo I (sistemas de frenado)",
     "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6712",
     "origin": "catalog",
     "ruleId": "fading"
-  },
-  "los bloques de tiempos de las actividades del conductor\taparecen reflejados en una zona del disco del tacógrafo analógico": {
-    "explanation": "La plantilla oficial marca como correcta:\n\n«aparecen reflejados en una zona del disco del tacógrafo analógico.»\n\nFundamento recogido en el examen de referencia: (UE) 165/2014, Anexo I.",
-    "source": "(UE) 165/2014, Anexo I",
-    "sourceUrl": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32014R0165",
-    "origin": "official-ref"
   },
   "qué se entiende por control fronterizo en la regulación del espacio schengen\tel control realizado por la intención de cruzar la frontera": {
     "explanation": "La plantilla oficial marca como correcta:\n\n«El control realizado por la intención de cruzar la frontera.»\n\nFundamento recogido en el examen de referencia: Aplicación del Acuerdo de Schengen, Convenio, Art.1.",

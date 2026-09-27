@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "¿Qué es la guiñada? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Qué es la guiñada?",
     "options": [
       {
         "id": "a",
@@ -235,7 +235,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Representar a la empresa. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Representar a la empresa."
       },
       {
         "id": "b",
@@ -350,7 +350,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Que el centro de gravedad esté lo más bajo posible. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Que el centro de gravedad esté lo más bajo posible."
       },
       {
         "id": "b",
@@ -461,7 +461,7 @@
   },
   {
     "num": "21",
-    "question": "Un transporte realizado en régimen de tránsito de la Unión, ¿se debe efectuar siguiendo un itinerario obligatorio? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "Un transporte realizado en régimen de tránsito de la Unión, ¿se debe efectuar siguiendo un itinerario obligatorio?",
     "options": [
       {
         "id": "a",
@@ -580,7 +580,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Riesgo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Riesgo."
       },
       {
         "id": "b",
@@ -699,7 +699,7 @@
       },
       {
         "id": "b",
-        "text": "Una visibilidad parcial de la carretera. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Una visibilidad parcial de la carretera."
       },
       {
         "id": "c",
@@ -806,7 +806,7 @@
   },
   {
     "num": "36",
-    "question": "Las ruedas del vehículo constituyen un elemento: UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "Las ruedas del vehículo constituyen un elemento:",
     "options": [
       {
         "id": "a",
@@ -925,7 +925,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Si hay que inclinarse, se flexionarán las rodillas. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Si hay que inclinarse, se flexionarán las rodillas."
       },
       {
         "id": "b",
@@ -1048,7 +1048,7 @@
       },
       {
         "id": "c",
-        "text": "aprovechando la inercia del vehículo. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "aprovechando la inercia del vehículo."
       },
       {
         "id": "d",
@@ -1167,7 +1167,7 @@
       },
       {
         "id": "d",
-        "text": "Los reposacabezas. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Los reposacabezas."
       }
     ],
     "correct": "a"
@@ -1282,7 +1282,7 @@
       },
       {
         "id": "d",
-        "text": "No sirven para nada. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "No sirven para nada."
       }
     ],
     "correct": "a"
@@ -1397,7 +1397,7 @@
       },
       {
         "id": "d",
-        "text": "La potencia. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "La potencia."
       }
     ],
     "correct": "c"
@@ -1519,7 +1519,7 @@
   },
   {
     "num": "67",
-    "question": "De las siguientes acciones, ¿cuál favorece la ausencia de accidentes? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "De las siguientes acciones, ¿cuál favorece la ausencia de accidentes?",
     "options": [
       {
         "id": "a",
@@ -1972,7 +1972,7 @@
       },
       {
         "id": "d",
-        "text": "Calentamiento excesivo de los frenos. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Calentamiento excesivo de los frenos."
       }
     ],
     "correct": "d"
@@ -2094,7 +2094,7 @@
   },
   {
     "num": "92",
-    "question": "¿Cuáles de las siguientes funciones corresponde a un sistema IVMS? UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "¿Cuáles de las siguientes funciones corresponde a un sistema IVMS?",
     "options": [
       {
         "id": "a",
@@ -2217,7 +2217,7 @@
       },
       {
         "id": "b",
-        "text": "El trazado. UNIVERSIDAD DE JAÉN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "El trazado."
       },
       {
         "id": "c",

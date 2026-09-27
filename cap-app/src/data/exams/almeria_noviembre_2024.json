@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "¿Cuáles son las funciones propias de un comercial en una empresa de transporte de mercancías por carretera?",
     "options": [
       {
         "id": "a",
@@ -350,7 +350,7 @@
     "options": [
       {
         "id": "a",
-        "text": "2 toneladas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "2 toneladas."
       },
       {
         "id": "b",
@@ -469,7 +469,7 @@
       },
       {
         "id": "b",
-        "text": "Tres años. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Tres años."
       },
       {
         "id": "c",
@@ -592,7 +592,7 @@
       },
       {
         "id": "d",
-        "text": "hojas de registro o discos-diagrama. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "hojas de registro o discos-diagrama."
       }
     ],
     "correct": "d"
@@ -833,7 +833,7 @@
     "options": [
       {
         "id": "a",
-        "text": "evita la pérdida de tracción de las ruedas propulsoras. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "evita la pérdida de tracción de las ruedas propulsoras."
       },
       {
         "id": "b",
@@ -948,7 +948,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Conducción y descanso. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Conducción y descanso."
       },
       {
         "id": "b",
@@ -1063,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Proteger, alertar y socorrer. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Proteger, alertar y socorrer."
       },
       {
         "id": "b",
@@ -1182,7 +1182,7 @@
       },
       {
         "id": "b",
-        "text": "Deteniendo inmediatamente el vehículo, incluso si la vía tiene nieve. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Deteniendo inmediatamente el vehículo, incluso si la vía tiene nieve."
       },
       {
         "id": "c",
@@ -1301,7 +1301,7 @@
       },
       {
         "id": "c",
-        "text": "aumenta el desgaste de las piezas sin que se vea afectado el consumo de carburante en ningún caso. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "aumenta el desgaste de las piezas sin que se vea afectado el consumo de carburante en ningún caso."
       },
       {
         "id": "d",
@@ -1416,7 +1416,7 @@
       },
       {
         "id": "c",
-        "text": "la documentación de la carga, pero solo si el peso es superior a 10 toneladas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "la documentación de la carga, pero solo si el peso es superior a 10 toneladas."
       },
       {
         "id": "d",
@@ -1531,7 +1531,7 @@
       },
       {
         "id": "c",
-        "text": "homologados por la Jefatura de Tráfico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "homologados por la Jefatura de Tráfico."
       },
       {
         "id": "d",
@@ -1642,7 +1642,7 @@
       },
       {
         "id": "b",
-        "text": "El nivel de carga de la batería. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "El nivel de carga de la batería."
       },
       {
         "id": "c",
@@ -1761,7 +1761,7 @@
       },
       {
         "id": "c",
-        "text": "Del porcentaje de anticongelante que posea el líquido del sistema de refrigeración. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Del porcentaje de anticongelante que posea el líquido del sistema de refrigeración."
       },
       {
         "id": "d",
@@ -1876,7 +1876,7 @@
       },
       {
         "id": "c",
-        "text": "Frenos hidráulicos. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Frenos hidráulicos."
       },
       {
         "id": "d",
@@ -2121,7 +2121,7 @@
     "options": [
       {
         "id": "a",
-        "text": "indicar que la carretera está en obras. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "indicar que la carretera está en obras."
       },
       {
         "id": "b",
@@ -2240,7 +2240,7 @@
       },
       {
         "id": "b",
-        "text": "Octoedro del fuego. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Octoedro del fuego."
       },
       {
         "id": "c",

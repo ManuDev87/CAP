@@ -120,7 +120,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Mejor aceleración. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Mejor aceleración."
       },
       {
         "id": "b",
@@ -346,7 +346,7 @@
   },
   {
     "num": "16",
-    "question": "¿Qué se considera transporte internacional de mercancías? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "¿Qué se considera transporte internacional de mercancías?",
     "options": [
       {
         "id": "a",
@@ -680,7 +680,7 @@
       },
       {
         "id": "c",
-        "text": "En el Registro General de Conductores de la Dirección General de Tráfico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En el Registro General de Conductores de la Dirección General de Tráfico."
       },
       {
         "id": "d",
@@ -1144,7 +1144,7 @@
       },
       {
         "id": "d",
-        "text": "Tiempo de presencia cuando se haya comunicado su duración de antemano. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Tiempo de presencia cuando se haya comunicado su duración de antemano."
       }
     ],
     "correct": "d"
@@ -1385,7 +1385,7 @@
     "options": [
       {
         "id": "a",
-        "text": "En frenar el vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En frenar el vehículo."
       },
       {
         "id": "b",
@@ -1508,7 +1508,7 @@
       },
       {
         "id": "c",
-        "text": "Cuando conduzca el vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Cuando conduzca el vehículo."
       },
       {
         "id": "d",
@@ -1627,7 +1627,7 @@
       },
       {
         "id": "d",
-        "text": "disminuye el tiempo de reacción. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "disminuye el tiempo de reacción."
       }
     ],
     "correct": "a"
@@ -1738,7 +1738,7 @@
       },
       {
         "id": "c",
-        "text": "de la posición del pedal del acelerador y del estado en el que se encuentre el filtro del aire del sistema de alimentación. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "de la posición del pedal del acelerador y del estado en el que se encuentre el filtro del aire del sistema de alimentación."
       },
       {
         "id": "d",
@@ -1845,7 +1845,7 @@
     "options": [
       {
         "id": "a",
-        "text": "el conductor supera en un 5 % el límite de velocidad. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "el conductor supera en un 5 % el límite de velocidad."
       },
       {
         "id": "b",
@@ -1968,7 +1968,7 @@
       },
       {
         "id": "c",
-        "text": "Rozamientos de piezas del motor. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Rozamientos de piezas del motor."
       },
       {
         "id": "d",
@@ -2087,7 +2087,7 @@
       },
       {
         "id": "d",
-        "text": "No existe este concepto. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "No existe este concepto."
       }
     ],
     "correct": "a"
@@ -2198,7 +2198,7 @@
       },
       {
         "id": "c",
-        "text": "Colocarse de cara al viento cuando se vaya a utilizar. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Colocarse de cara al viento cuando se vaya a utilizar."
       },
       {
         "id": "d",

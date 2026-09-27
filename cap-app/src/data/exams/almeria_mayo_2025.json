@@ -235,7 +235,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Puede hacer demasiado ligera la conducción. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Puede hacer demasiado ligera la conducción."
       },
       {
         "id": "b",
@@ -354,7 +354,7 @@
       },
       {
         "id": "b",
-        "text": "Los trámites administrativos. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Los trámites administrativos."
       },
       {
         "id": "c",
@@ -473,7 +473,7 @@
       },
       {
         "id": "c",
-        "text": "La justificativa de la contratación del servicio en el que está incluido el transporte. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "La justificativa de la contratación del servicio en el que está incluido el transporte."
       },
       {
         "id": "d",
@@ -592,7 +592,7 @@
       },
       {
         "id": "d",
-        "text": "Fiabilidad. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Fiabilidad."
       }
     ],
     "correct": "c"
@@ -703,7 +703,7 @@
       },
       {
         "id": "c",
-        "text": "tanto activa como pasiva. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "tanto activa como pasiva."
       },
       {
         "id": "d",
@@ -818,7 +818,7 @@
       },
       {
         "id": "c",
-        "text": "exclusivamente en el lugar de trabajo o al ir a trabajar. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "exclusivamente en el lugar de trabajo o al ir a trabajar."
       },
       {
         "id": "d",
@@ -937,7 +937,7 @@
       },
       {
         "id": "d",
-        "text": "acerca de la marcha del vehículo y los bloques de tiempos de los conductores. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "acerca de la marcha del vehículo y los bloques de tiempos de los conductores."
       }
     ],
     "correct": "d"
@@ -1052,7 +1052,7 @@
       },
       {
         "id": "d",
-        "text": "no se admiten los fines de semana. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "no se admiten los fines de semana."
       }
     ],
     "correct": "c"
@@ -1167,7 +1167,7 @@
       },
       {
         "id": "d",
-        "text": "Las respuestas A y B son correctas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Las respuestas A y B son correctas."
       }
     ],
     "correct": "b"
@@ -1282,7 +1282,7 @@
       },
       {
         "id": "d",
-        "text": "tiene como función aumentar la presión en el pedal de freno en caso de emergencia. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "tiene como función aumentar la presión en el pedal de freno en caso de emergencia."
       }
     ],
     "correct": "b"
@@ -1523,7 +1523,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Cruzar la vía por zonas indicadas para ello. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Cruzar la vía por zonas indicadas para ello."
       },
       {
         "id": "b",
@@ -1638,7 +1638,7 @@
     "options": [
       {
         "id": "a",
-        "text": "El uso del climatizador. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "El uso del climatizador."
       },
       {
         "id": "b",
@@ -1757,7 +1757,7 @@
       },
       {
         "id": "b",
-        "text": "La carga del árbol de levas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "La carga del árbol de levas."
       },
       {
         "id": "c",
@@ -1876,7 +1876,7 @@
       },
       {
         "id": "c",
-        "text": "Son los documentos donde se registran las inspecciones realizadas al tacógrafo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Son los documentos donde se registran las inspecciones realizadas al tacógrafo."
       },
       {
         "id": "d",
@@ -1995,7 +1995,7 @@
       },
       {
         "id": "d",
-        "text": "AEH. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "AEH."
       }
     ],
     "correct": "c"
@@ -2117,7 +2117,7 @@
   },
   {
     "num": "93",
-    "question": "¿Qué caracteriza a las autovías, según la normativa estatal? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "¿Qué caracteriza a las autovías, según la normativa estatal?",
     "options": [
       {
         "id": "a",
@@ -2232,7 +2232,7 @@
   },
   {
     "num": "98",
-    "question": "¿Qué incidencia sobre la conducción tienen los medicamentos incluidos en la categoría 0? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "¿Qué incidencia sobre la conducción tienen los medicamentos incluidos en la categoría 0?",
     "options": [
       {
         "id": "a",

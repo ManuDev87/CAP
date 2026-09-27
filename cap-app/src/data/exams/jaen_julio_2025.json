@@ -339,7 +339,7 @@
       },
       {
         "id": "d",
-        "text": "Los centros de transporte y logística de mercancías no están contemplados en la Ley de Ordenación de los Transportes Terrestres (LOTT). UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Los centros de transporte y logística de mercancías no están contemplados en la Ley de Ordenación de los Transportes Terrestres (LOTT)."
       }
     ],
     "correct": "a"
@@ -454,7 +454,7 @@
       },
       {
         "id": "d",
-        "text": "está exento de autorización. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "está exento de autorización."
       }
     ],
     "correct": "d"
@@ -795,7 +795,7 @@
       },
       {
         "id": "c",
-        "text": "Es recomendable adelantar ya que así pasamos antes la zona de niebla. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Es recomendable adelantar ya que así pasamos antes la zona de niebla."
       },
       {
         "id": "d",
@@ -914,7 +914,7 @@
       },
       {
         "id": "d",
-        "text": "Comercio al por menor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Comercio al por menor."
       }
     ],
     "correct": "c"
@@ -1021,7 +1021,7 @@
       },
       {
         "id": "b",
-        "text": "en newtons. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "en newtons."
       },
       {
         "id": "c",
@@ -1136,7 +1136,7 @@
       },
       {
         "id": "b",
-        "text": "no está haciendo correctamente la interrupción, puesto que debería hacer 45 minutos de pausa al final. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "no está haciendo correctamente la interrupción, puesto que debería hacer 45 minutos de pausa al final."
       },
       {
         "id": "c",
@@ -1259,7 +1259,7 @@
       },
       {
         "id": "d",
-        "text": "Aumentar la sensación de cansancio. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Aumentar la sensación de cansancio."
       }
     ],
     "correct": "c"
@@ -1496,7 +1496,7 @@
   },
   {
     "num": "66",
-    "question": "En caso de condiciones meteorológicas adversas por nieve, ¿qué se recomienda hacer si el nivel de circulación es rojo? UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN",
+    "question": "En caso de condiciones meteorológicas adversas por nieve, ¿qué se recomienda hacer si el nivel de circulación es rojo?",
     "options": [
       {
         "id": "a",
@@ -1619,7 +1619,7 @@
       },
       {
         "id": "b",
-        "text": "Sí. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Sí."
       },
       {
         "id": "c",
@@ -1730,7 +1730,7 @@
     "options": [
       {
         "id": "a",
-        "text": "El número de revoluciones por minuto del motor. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "El número de revoluciones por minuto del motor."
       },
       {
         "id": "b",
@@ -1845,7 +1845,7 @@
     "options": [
       {
         "id": "a",
-        "text": "ayudas técnicas. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "ayudas técnicas."
       },
       {
         "id": "b",
@@ -1968,7 +1968,7 @@
       },
       {
         "id": "c",
-        "text": "Comenzar a acelerar antes de cambiar de carril. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "Comenzar a acelerar antes de cambiar de carril."
       },
       {
         "id": "d",
@@ -2083,7 +2083,7 @@
       },
       {
         "id": "c",
-        "text": "el número de fallecidos con el número de accidentes. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "el número de fallecidos con el número de accidentes."
       },
       {
         "id": "d",
@@ -2198,7 +2198,7 @@
       },
       {
         "id": "c",
-        "text": "transporte de mercancías a temperatura regulada. UNIVERSIDAD JAEN. PARAJE LAS LAGUNILLAS, S/N, JAEN, JAEN"
+        "text": "transporte de mercancías a temperatura regulada."
       },
       {
         "id": "d",

@@ -105,7 +105,7 @@
       },
       {
         "id": "c",
-        "text": "la fuerza de guiado lateral disminuye. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "la fuerza de guiado lateral disminuye."
       },
       {
         "id": "d",
@@ -461,7 +461,7 @@
   },
   {
     "num": "21",
-    "question": "En un contrato de transporte sujeto al Convenio CMR, el transportista quedará libre de responsabilidad cuando pruebe que el daño de la mercancía ha podido derivar: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "En un contrato de transporte sujeto al Convenio CMR, el transportista quedará libre de responsabilidad cuando pruebe que el daño de la mercancía ha podido derivar:",
     "options": [
       {
         "id": "a",
@@ -580,7 +580,7 @@
     "options": [
       {
         "id": "a",
-        "text": "En el impreso de la declaración amistosa de accidente es imprescindible hacer constar siempre la fecha y la hora del accidente. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En el impreso de la declaración amistosa de accidente es imprescindible hacer constar siempre la fecha y la hora del accidente."
       },
       {
         "id": "b",
@@ -691,7 +691,7 @@
   },
   {
     "num": "31",
-    "question": "El control de tracción conocido como ASR (automatic stability control) es un dispositivo: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "El control de tracción conocido como ASR (automatic stability control) es un dispositivo:",
     "options": [
       {
         "id": "a",
@@ -806,7 +806,7 @@
   },
   {
     "num": "36",
-    "question": "Los accidentes in itinere son aquellos que: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA",
+    "question": "Los accidentes in itinere son aquellos que:",
     "options": [
       {
         "id": "a",
@@ -925,7 +925,7 @@
     "options": [
       {
         "id": "a",
-        "text": "una pausa de, al menos, 30 minutos, seguida de otra de, al menos, 15 minutos, intercaladas en el período de conducción. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "una pausa de, al menos, 30 minutos, seguida de otra de, al menos, 15 minutos, intercaladas en el período de conducción."
       },
       {
         "id": "b",
@@ -1044,7 +1044,7 @@
       },
       {
         "id": "b",
-        "text": "la concentración. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "la concentración."
       },
       {
         "id": "c",
@@ -1163,7 +1163,7 @@
       },
       {
         "id": "c",
-        "text": "No, siempre que recupere las 15 horas que faltan en la primera semana durante las 3 semanas siguientes. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "No, siempre que recupere las 15 horas que faltan en la primera semana durante las 3 semanas siguientes."
       },
       {
         "id": "d",
@@ -1274,7 +1274,7 @@
       },
       {
         "id": "b",
-        "text": "Utilizar los intermitentes de emergencia y frenar bruscamente para detener el vehículo. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Utilizar los intermitentes de emergencia y frenar bruscamente para detener el vehículo."
       },
       {
         "id": "c",
@@ -1389,7 +1389,7 @@
       },
       {
         "id": "b",
-        "text": "En las ruedas delanteras. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En las ruedas delanteras."
       },
       {
         "id": "c",
@@ -1500,7 +1500,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sí. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "Sí."
       },
       {
         "id": "b",
@@ -1619,7 +1619,7 @@
       },
       {
         "id": "b",
-        "text": "No, el consumo depende solo de la cilindrada del motor. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "No, el consumo depende solo de la cilindrada del motor."
       },
       {
         "id": "c",
@@ -1742,7 +1742,7 @@
       },
       {
         "id": "d",
-        "text": "La resistencia del volante de inercia. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "La resistencia del volante de inercia."
       }
     ],
     "correct": "c"
@@ -1857,7 +1857,7 @@
       },
       {
         "id": "d",
-        "text": "7 horas. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "7 horas."
       }
     ],
     "correct": "b"
@@ -1968,7 +1968,7 @@
       },
       {
         "id": "c",
-        "text": "En el mes siguiente al accidente. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA SAN URBANO, CAMPUS UNIVERSITARIO., ALMERIA, ALMERIA"
+        "text": "En el mes siguiente al accidente."
       },
       {
         "id": "d",

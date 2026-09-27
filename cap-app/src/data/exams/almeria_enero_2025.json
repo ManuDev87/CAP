@@ -116,7 +116,7 @@
   },
   {
     "num": "6",
-    "question": "Si la trayectoria curva es de menor radio que la curva que se pretende describir, el camión se encuentra en: UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA",
+    "question": "Si la trayectoria curva es de menor radio que la curva que se pretende describir, el camión se encuentra en:",
     "options": [
       {
         "id": "a",
@@ -235,7 +235,7 @@
     "options": [
       {
         "id": "a",
-        "text": "30.000 euros. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "30.000 euros."
       },
       {
         "id": "b",
@@ -350,7 +350,7 @@
     "options": [
       {
         "id": "a",
-        "text": "La fuerza motriz y la fuerza de frenado. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "La fuerza motriz y la fuerza de frenado."
       },
       {
         "id": "b",
@@ -473,7 +473,7 @@
       },
       {
         "id": "c",
-        "text": "con escolta policial. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "con escolta policial."
       },
       {
         "id": "d",
@@ -592,7 +592,7 @@
       },
       {
         "id": "d",
-        "text": "Libretas de conducción. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "Libretas de conducción."
       }
     ],
     "correct": "a"
@@ -703,7 +703,7 @@
       },
       {
         "id": "c",
-        "text": "la cantidad de electricidad suministrada por la batería. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "la cantidad de electricidad suministrada por la batería."
       },
       {
         "id": "d",
@@ -937,7 +937,7 @@
       },
       {
         "id": "d",
-        "text": "Sí, cuando se hayan descubierto en su territorio y dichas infracciones no hayan sido sancionadas anteriormente. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "Sí, cuando se hayan descubierto en su territorio y dichas infracciones no hayan sido sancionadas anteriormente."
       }
     ],
     "correct": "d"
@@ -1059,7 +1059,7 @@
   },
   {
     "num": "47",
-    "question": "¿Cuál es el factor que más influye en la potencia de un motor? UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA",
+    "question": "¿Cuál es el factor que más influye en la potencia de un motor?",
     "options": [
       {
         "id": "a",
@@ -1182,7 +1182,7 @@
       },
       {
         "id": "b",
-        "text": "En un control en carretera para justificar una baja por enfermedad que se produjo hace 2 meses. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "En un control en carretera para justificar una baja por enfermedad que se produjo hace 2 meses."
       },
       {
         "id": "c",
@@ -1293,7 +1293,7 @@
     "options": [
       {
         "id": "a",
-        "text": "En la última hora de conducción de la jornada laboral. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "En la última hora de conducción de la jornada laboral."
       },
       {
         "id": "b",
@@ -1408,7 +1408,7 @@
     "options": [
       {
         "id": "a",
-        "text": "La carrera del pistón. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "La carrera del pistón."
       },
       {
         "id": "b",
@@ -1531,7 +1531,7 @@
       },
       {
         "id": "c",
-        "text": "No, aunque se gana en la seguridad de la circulación. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "No, aunque se gana en la seguridad de la circulación."
       },
       {
         "id": "d",
@@ -1642,7 +1642,7 @@
       },
       {
         "id": "b",
-        "text": "en el centro de la zona económica. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "en el centro de la zona económica."
       },
       {
         "id": "c",
@@ -1761,7 +1761,7 @@
       },
       {
         "id": "c",
-        "text": "tiene el mismo consumo específico. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "tiene el mismo consumo específico."
       },
       {
         "id": "d",
@@ -1880,7 +1880,7 @@
       },
       {
         "id": "d",
-        "text": "acelerar cuando se arranca. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "acelerar cuando se arranca."
       }
     ],
     "correct": "b"
@@ -1991,7 +1991,7 @@
       },
       {
         "id": "c",
-        "text": "Evitar la subida de la temperatura por encima de los 50 ºC. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "Evitar la subida de la temperatura por encima de los 50 ºC."
       },
       {
         "id": "d",
@@ -2106,7 +2106,7 @@
       },
       {
         "id": "c",
-        "text": "Sodio UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "Sodio"
       },
       {
         "id": "d",
@@ -2225,7 +2225,7 @@
       },
       {
         "id": "d",
-        "text": "Calcula la presión del sistema de frenado en cada rueda. UNIVERSIDAD ALMERIA. AULARIO III. C/CAÑADA DE SAN URBANO. CAMPUS UNIVERSITARIO , ALMERIA, ALMERIA"
+        "text": "Calcula la presión del sistema de frenado en cada rueda."
       }
     ],
     "correct": "b"
