@@ -3096,6 +3096,13 @@
     "origin": "catalog",
     "ruleId": "r561_descanso_semanal"
   },
+  "entre los factores que influyen en el consumo de carburante de un vehículo pesado dotado de un motor de combustión se encuentra\tel mantenimiento del vehículo, la presión de los neumáticos y la posición del pedal del acelerador": {
+    "explanation": "En un pesado el consumo sube si empeora la aerodinámica (lonas, deflectores, carga mal cubierta) o el mantenimiento (filtros, neumáticos, geometría).",
+    "source": "Guía de conducción eficiente IDAE",
+    "sourceUrl": "https://www.idae.es/ahorro-y-eficiencia-energetica/movilidad-y-transporte",
+    "origin": "catalog",
+    "ruleId": "consumo_aerodinamica_mantenimiento"
+  },
   "las autoridades aduaneras pueden disponer la destrucción de las mercancías\tsí, corriendo los costes de la destrucción a cargo del titular de las mercancías": {
     "explanation": "Las autoridades aduaneras pueden disponer la destrucción de las mercancías; los costes corren a cargo del titular.",
     "source": "Reglamento (UE) n.º 952/2013, artículo 197",

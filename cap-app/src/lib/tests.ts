@@ -142,6 +142,8 @@ const sevillaTests: TestMeta[] = [
   { id: "sevilla_enero_2026", name: "Enero 2026", img: "/img/truck3.jpg" },
   { id: "sevilla_marzo_2026", name: "Marzo 2026", img: "/img/truck4.jpg" },
   { id: "sevilla_mayo_2026", name: "Mayo 2026", img: "/img/truck1.jpg" },
+  { id: "sevilla_julio_2026", name: "Julio 2026", img: "/img/truck2.jpg" },
+  { id: "sevilla_septiembre_2026", name: "Septiembre 2026", img: "/img/truck3.jpg" },
 ];
 
 const catalunaTests: TestMeta[] = [
@@ -392,6 +394,8 @@ const examLoaders: Record<string, () => Promise<{ default: Question[] }>> = {
   sevilla_enero_2026: () => import("@/data/exams/sevilla_enero_2026.json"),
   sevilla_marzo_2026: () => import("@/data/exams/sevilla_marzo_2026.json"),
   sevilla_mayo_2026: () => import("@/data/exams/sevilla_mayo_2026.json"),
+  sevilla_julio_2026: () => import("@/data/exams/sevilla_julio_2026.json"),
+  sevilla_septiembre_2026: () => import("@/data/exams/sevilla_septiembre_2026.json"),
   almeria_enero_2024: () => import("@/data/exams/almeria_enero_2024.json"),
   almeria_enero_2025: () => import("@/data/exams/almeria_enero_2025.json"),
   almeria_enero_2026: () => import("@/data/exams/almeria_enero_2026.json"),
