@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase-admin/app";
 import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
-import { getAuth } from "firebase-admin/auth";
 import { onRequest, type Request } from "firebase-functions/v2/https";
 import { defineSecret, defineString } from "firebase-functions/params";
 import { logger } from "firebase-functions";
@@ -9,7 +8,6 @@ import Stripe from "stripe";
 
 initializeApp();
 const db = getFirestore();
-const auth = getAuth();
 
 const stripeSecret = defineSecret("STRIPE_SECRET_KEY");
 const stripeWebhookSecret = defineSecret("STRIPE_WEBHOOK_SECRET");
@@ -31,6 +29,7 @@ const MAX_SEATS = 200;
 const CORS_ORIGINS = [
   "https://testexamencap.info",
   "https://www.testexamencap.info",
+  "https://cap-dtx.pages.dev",
   "http://localhost:3000",
 ];
 
@@ -136,21 +135,12 @@ async function uniqueSchoolCode(schoolName: string): Promise<string> {
 }
 
 async function mintToken(
-  username: string,
-  role: Role,
-  extra: { teacherId?: string; schoolCode?: string } = {}
+  _username: string,
+  _role: Role,
+  _extra: { teacherId?: string; schoolCode?: string } = {}
 ): Promise<string> {
-  const claims: Record<string, string> = { role };
-  if (extra.teacherId) claims.teacherId = extra.teacherId;
-  if (extra.schoolCode) claims.schoolCode = extra.schoolCode;
-  await auth.setCustomUserClaims(username, claims);
-  try {
-    await auth.getUser(username);
-  } catch {
-    await auth.createUser({ uid: username });
-    await auth.setCustomUserClaims(username, claims);
-  }
-  return auth.createCustomToken(username, claims);
+  // Contraseñas en Firestore; el proyecto no usa Firebase Auth.
+  return "";
 }
 
 function publicUser(id: string, data: Record<string, unknown>) {
@@ -527,8 +517,13 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
     };
   }
 
-  const session = await stripeClient().checkout.sessions.create(params);
-  json(res, 200, { url: session.url, months, amountCents: STUDENT_MONTH_CENTS * months });
+  try {
+    const session = await stripeClient().checkout.sessions.create(params);
+    json(res, 200, { url: session.url, months, amountCents: STUDENT_MONTH_CENTS * months });
+  } catch (err) {
+    logger.error("createCheckoutSession failed", err);
+    json(res, 502, { error: "No se pudo abrir el pago. Inténtalo de nuevo." });
+  }
 });
 
 export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) => {
@@ -558,21 +553,14 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
 
   const origin = appUrl.value();
   const quantity = seats * months;
-  const session = await stripeClient().checkout.sessions.create({
-    mode: "payment",
-    success_url: `${origin}/profesor?pack=1`,
-    cancel_url: `${origin}/profesor?pack=0`,
-    client_reference_id: username,
-    line_items: [{ price: stripePriceId.value(), quantity }],
-    invoice_creation: { enabled: true },
-    metadata: {
-      kind: "school_pack",
-      username,
-      schoolCode,
-      seats: String(seats),
-      months: String(months),
-    },
-    payment_intent_data: {
+  try {
+    const session = await stripeClient().checkout.sessions.create({
+      mode: "payment",
+      success_url: `${origin}/profesor?pack=1`,
+      cancel_url: `${origin}/profesor?pack=0`,
+      client_reference_id: username,
+      line_items: [{ price: stripePriceId.value(), quantity }],
+      invoice_creation: { enabled: true },
       metadata: {
         kind: "school_pack",
         username,
@@ -580,14 +568,26 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
         seats: String(seats),
         months: String(months),
       },
-    },
-  });
-  json(res, 200, {
-    url: session.url,
-    seats,
-    months,
-    amountCents: STUDENT_MONTH_CENTS * quantity,
-  });
+      payment_intent_data: {
+        metadata: {
+          kind: "school_pack",
+          username,
+          schoolCode,
+          seats: String(seats),
+          months: String(months),
+        },
+      },
+    });
+    json(res, 200, {
+      url: session.url,
+      seats,
+      months,
+      amountCents: STUDENT_MONTH_CENTS * quantity,
+    });
+  } catch (err) {
+    logger.error("createSchoolPackCheckout failed", err);
+    json(res, 502, { error: "No se pudo abrir el pago. Inténtalo de nuevo." });
+  }
 });
 
 export const stripeWebhook = onRequest(
@@ -812,33 +812,38 @@ export const connectOnboard = onRequest(httpsOpts, async (req, res) => {
   const centerSnap = await centerRef.get();
   let accountId = centerSnap.data()?.stripeAccountId as string | undefined;
   const stripe = stripeClient();
-  if (!accountId) {
-    const account = await stripe.accounts.create({
-      type: "express",
-      country: "ES",
-      capabilities: {
-        card_payments: { requested: true },
-        transfers: { requested: true },
-      },
-      metadata: { teacherId: username, schoolCode },
+  try {
+    if (!accountId) {
+      const account = await stripe.accounts.create({
+        type: "express",
+        country: "ES",
+        capabilities: {
+          card_payments: { requested: true },
+          transfers: { requested: true },
+        },
+        metadata: { teacherId: username, schoolCode },
+      });
+      accountId = account.id;
+      await centerRef.set(
+        {
+          stripeAccountId: accountId,
+          connectStatus: "onboarding",
+          teacherId: username,
+          schoolName: userSnap.data()?.schoolName ?? "",
+        },
+        { merge: true }
+      );
+    }
+    const origin = appUrl.value();
+    const link = await stripe.accountLinks.create({
+      account: accountId,
+      refresh_url: `${origin}/profesor?connect=refresh`,
+      return_url: `${origin}/profesor?connect=return`,
+      type: "account_onboarding",
     });
-    accountId = account.id;
-    await centerRef.set(
-      {
-        stripeAccountId: accountId,
-        connectStatus: "onboarding",
-        teacherId: username,
-        schoolName: userSnap.data()?.schoolName ?? "",
-      },
-      { merge: true }
-    );
+    json(res, 200, { url: link.url, accountId });
+  } catch (err) {
+    logger.error("connectOnboard failed", err);
+    json(res, 502, { error: "No se pudo abrir Stripe Connect. Inténtalo de nuevo." });
   }
-  const origin = appUrl.value();
-  const link = await stripe.accountLinks.create({
-    account: accountId,
-    refresh_url: `${origin}/profesor?connect=refresh`,
-    return_url: `${origin}/profesor?connect=return`,
-    type: "account_onboarding",
-  });
-  json(res, 200, { url: link.url, accountId });
 });
