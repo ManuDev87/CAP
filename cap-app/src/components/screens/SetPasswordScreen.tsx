@@ -2,7 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
-import { setUserPassword } from "@/lib/db";
+import { getUserDoc, setUserPassword } from "@/lib/db";
+import { parsePaidUntil } from "@/lib/billing";
 import { PORTAL_LABELS } from "@/lib/portal";
 import { IconSpinner } from "@/components/icons";
 
@@ -27,14 +28,22 @@ export default function SetPasswordScreen() {
     setBusy(true);
     try {
       await setUserPassword(pendingPwdUser.username, p1);
+      const doc = await getUserDoc(pendingPwdUser.username);
+      const role =
+        pendingPwdUser.role === "teacher" || doc?.role === "teacher"
+          ? "teacher"
+          : "student";
       loginAs({
         username: pendingPwdUser.username,
         name: pendingPwdUser.name,
-        role: pendingPwdUser.role === "teacher" ? "teacher" : "student",
-        capTrack:
-          pendingPwdUser.role === "teacher"
-            ? undefined
-            : pendingPwdUser.capTrack,
+        role,
+        capTrack: role === "teacher" ? undefined : pendingPwdUser.capTrack,
+        billing:
+          doc?.billing === "prepaid" || doc?.billing === "school"
+            ? doc.billing
+            : undefined,
+        paidUntil: parsePaidUntil(doc?.paidUntil),
+        schoolCode: doc?.schoolCode,
       });
     } catch (err) {
       console.error("Set password error", err);

@@ -25,6 +25,7 @@ import type {
   WrongQuestionRef,
 } from "./types";
 import { normalizeCapTrack } from "./types";
+import { parsePaidUntil } from "./billing";
 
 /**
  * Firestore data layer. Mirrors the legacy app's data model exactly, so all
@@ -97,6 +98,9 @@ export interface UserListEntry {
   showSeedBtn: boolean;
   capTrack: CapTrack;
   trialEndsAt?: number;
+  schoolCode?: string;
+  billing?: "school" | "prepaid";
+  paidUntil?: number;
 }
 
 function parseTrialEndsAt(value: unknown): number | undefined {
@@ -124,6 +128,9 @@ function toListEntry(id: string, data: UserDoc): UserListEntry {
     showSeedBtn: data.showSeedBtn === true,
     capTrack: normalizeCapTrack(data.capTrack),
     trialEndsAt: parseTrialEndsAt(data.trialEndsAt),
+    schoolCode: data.schoolCode,
+    billing: data.billing === "prepaid" || data.billing === "school" ? data.billing : undefined,
+    paidUntil: parsePaidUntil(data.paidUntil),
   };
 }
 
@@ -172,6 +179,42 @@ export async function setShowSeedBtn(
   enabled: boolean
 ): Promise<void> {
   await updateDoc(doc(db, "users", username), { showSeedBtn: enabled });
+}
+
+export async function setTeacherTrialEndsAt(
+  username: string,
+  trialEndsAt: number
+): Promise<void> {
+  await updateDoc(doc(db, "users", username), {
+    trialEndsAt: Timestamp.fromMillis(trialEndsAt),
+  });
+}
+
+export type CenterListEntry = {
+  schoolCode: string;
+  teacherId: string;
+  schoolName: string;
+  seatsPurchased: number;
+  seatsUsed: number;
+  packPaidUntil?: number;
+};
+
+export async function listCenters(): Promise<CenterListEntry[]> {
+  const snap = await getDocs(collection(db, "centers"));
+  const centers: CenterListEntry[] = [];
+  snap.forEach((d) => {
+    const data = d.data();
+    const packPaidUntil = parsePaidUntil(data.packPaidUntil);
+    centers.push({
+      schoolCode: d.id,
+      teacherId: String(data.teacherId ?? ""),
+      schoolName: String(data.schoolName ?? ""),
+      seatsPurchased: Number(data.seatsPurchased ?? 0),
+      seatsUsed: Number(data.seatsUsed ?? 0),
+      packPaidUntil,
+    });
+  });
+  return centers;
 }
 
 export async function getShowSeedBtn(username: string): Promise<boolean> {

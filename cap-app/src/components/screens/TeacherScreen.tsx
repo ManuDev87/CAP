@@ -3,7 +3,26 @@
 import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
 import {
-  createUser,
+  ApiError,
+  addStudentByTeacherRemote,
+  connectOnboardRemote,
+  createSchoolPackRemote,
+  ensureCenterRemote,
+  type CenterInfo,
+} from "@/lib/api";
+import {
+  EURO_PER_MONTH,
+  MAX_PAID_SEATS,
+  PAID_MONTH_OPTIONS,
+  PAID_SEAT_OPTIONS,
+  formatPaidUntil,
+  packTotal,
+} from "@/lib/billing";
+import {
+  formatTrialLabel,
+  remainingTrialDays,
+} from "@/lib/trial";
+import {
   deleteUser,
   listStudentsByTeacher,
   loadScoreRecords,
@@ -25,11 +44,13 @@ import {
   IconChart,
   IconSpinner,
   IconTrash,
+  IconFileSign,
+  IconQr,
   IconUserPlus,
   IconUsers,
 } from "@/components/icons";
 
-type TeacherSection = "alumnos" | "alta" | "seguimiento";
+type TeacherSection = "alumnos" | "licencias" | "alta" | "seguimiento";
 
 export default function TeacherScreen() {
   const { user, logout } = useApp();
@@ -55,6 +76,20 @@ export default function TeacherScreen() {
   const [errorTotal, setErrorTotal] = useState(0);
   const [errorTopicsLoading, setErrorTopicsLoading] = useState(false);
   const [studentQuery, setStudentQuery] = useState("");
+  const [schoolCode, setSchoolCode] = useState(user?.schoolCode ?? "");
+  const [inviteUrl, setInviteUrl] = useState("");
+  const [centerBusy, setCenterBusy] = useState(false);
+  const [seatsPurchased, setSeatsPurchased] = useState(0);
+  const [seatsUsed, setSeatsUsed] = useState(0);
+  const [seatsLeft, setSeatsLeft] = useState(0);
+  const [packPaidUntil, setPackPaidUntil] = useState<number | null>(null);
+  const [packActive, setPackActive] = useState(false);
+  const [packSeats, setPackSeats] = useState(12);
+  const [packMonths, setPackMonths] = useState(1);
+  const [packCustomSeats, setPackCustomSeats] = useState("");
+  const [packBusy, setPackBusy] = useState(false);
+  const [packMsg, setPackMsg] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   const refreshStudents = useCallback(async () => {
     if (!teacherId) return;
@@ -70,6 +105,50 @@ export default function TeacherScreen() {
   useEffect(() => {
     refreshStudents();
   }, [refreshStudents]);
+
+  const applyCenter = useCallback((data: CenterInfo) => {
+    setSchoolCode(data.schoolCode);
+    setInviteUrl(data.inviteUrl);
+    setSeatsPurchased(data.seatsPurchased);
+    setSeatsUsed(data.seatsUsed);
+    setSeatsLeft(data.seatsLeft);
+    setPackPaidUntil(data.packPaidUntil);
+    setPackActive(data.packActive);
+  }, []);
+
+  useEffect(() => {
+    if (!teacherId) return;
+    let cancelled = false;
+    async function load() {
+      try {
+        const data = await ensureCenterRemote(teacherId);
+        if (cancelled) return;
+        applyCenter(data);
+      } catch (err) {
+        console.warn("No se pudo cargar el código de centro", err);
+      }
+    }
+    void load();
+    const params = new URLSearchParams(window.location.search);
+    const pack = params.get("pack");
+    if (pack === "1") {
+      setSection("licencias");
+      setPackMsg(
+        "Pago recibido. Las plazas se actualizan cuando Stripe confirma (unos segundos)."
+      );
+      const t = window.setTimeout(() => {
+        void load();
+      }, 2500);
+      return () => {
+        cancelled = true;
+        window.clearTimeout(t);
+      };
+    }
+    if (pack === "0") setSection("licencias");
+    return () => {
+      cancelled = true;
+    };
+  }, [teacherId, applyCenter]);
 
   const filterOptions = useMemo(() => {
     const seen = new Set<string>();
@@ -116,18 +195,14 @@ export default function TeacherScreen() {
 
     setBusy(true);
     try {
-      const created = await createUser({
+      const result = await addStudentByTeacherRemote({
+        teacherUsername: teacherId,
         username: u,
         name: n,
         password: p,
-        role: "student",
-        teacherId,
         capTrack,
       });
-      if (!created) {
-        alert("Ese nombre de usuario ya existe.");
-        return;
-      }
+      setSeatsLeft(result.seatsLeft);
       setName("");
       setUsername("");
       setPassword("");
@@ -138,9 +213,57 @@ export default function TeacherScreen() {
       await refreshStudents();
       setSection("alumnos");
     } catch (err) {
-      alert("Error al conectar: " + (err as Error).message);
+      if (err instanceof ApiError && err.status === 402) {
+        setSection("licencias");
+        setPackMsg(
+          "Sin plazas. Compra un pack o envía el enlace para que pague el alumno."
+        );
+        return;
+      }
+      alert(err instanceof ApiError ? err.message : "Error al conectar");
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function copyInvite() {
+    const text = inviteUrl || schoolCode;
+    if (!text) return;
+    await navigator.clipboard.writeText(text);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 2000);
+  }
+
+  async function buyPack() {
+    if (!teacherId) return;
+    setPackBusy(true);
+    try {
+      const { url } = await createSchoolPackRemote(
+        teacherId,
+        selectedSeats,
+        packMonths
+      );
+      if (!url) throw new ApiError("No se pudo abrir el pago", 500);
+      window.location.href = url;
+    } catch (err) {
+      alert(err instanceof ApiError ? err.message : "No se pudo abrir el pago");
+      setPackBusy(false);
+    }
+  }
+
+  async function openConnect() {
+    if (!teacherId) return;
+    setCenterBusy(true);
+    try {
+      const { url } = await connectOnboardRemote(teacherId);
+      window.location.href = url;
+    } catch (err) {
+      alert(
+        err instanceof ApiError
+          ? err.message
+          : "No se pudo abrir Stripe Connect"
+      );
+      setCenterBusy(false);
     }
   }
 
@@ -191,8 +314,22 @@ export default function TeacherScreen() {
     setSection("alumnos");
   }
 
+  const selectedSeats = useMemo(() => {
+    const n = Number(packCustomSeats);
+    if (Number.isInteger(n) && n >= 1 && n <= MAX_PAID_SEATS) return n;
+    return packSeats;
+  }, [packCustomSeats, packSeats]);
+
+  const trialDays =
+    user?.trialEndsAt != null ? remainingTrialDays(user.trialEndsAt) : null;
+
+  const qrSrc = inviteUrl
+    ? `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(inviteUrl)}`
+    : "";
+
   const navItems = [
     { id: "alumnos", label: "Mis alumnos", icon: <IconUsers /> },
+    { id: "licencias", label: "Licencias", icon: <IconFileSign /> },
     { id: "alta", label: "Alta alumno", icon: <IconUserPlus /> },
     ...(selected
       ? [{ id: "seguimiento", label: "Seguimiento", icon: <IconChart /> }]
@@ -202,15 +339,20 @@ export default function TeacherScreen() {
   const heading =
     section === "alta"
       ? { title: "Alta de alumno", subtitle: "Crea un acceso para tu autoescuela" }
-      : section === "seguimiento" && selected
+      : section === "licencias"
         ? {
-            title: `Seguimiento · ${selected.name}`,
-            subtitle: `Usuario ${selected.username} · ${CAP_TRACK_LABELS[selected.capTrack]}`,
+            title: "Licencias",
+            subtitle: "Compra plazas o envía el enlace para que pague el alumno",
           }
-        : {
-            title: "Mis alumnos",
-            subtitle: user?.name ? `${user.name} · tu grupo` : "Tu grupo",
-          };
+        : section === "seguimiento" && selected
+          ? {
+              title: `Seguimiento · ${selected.name}`,
+              subtitle: `Usuario ${selected.username} · ${CAP_TRACK_LABELS[selected.capTrack]}`,
+            }
+          : {
+              title: "Mis alumnos",
+              subtitle: user?.name ? `${user.name} · tu grupo` : "Tu grupo",
+            };
 
   return (
     <StaffShell
@@ -240,8 +382,44 @@ export default function TeacherScreen() {
         ) : null
       }
     >
+      {trialDays != null && !packActive ? (
+        <div className="staff-card mb-6">
+          <p className="text-sm font-semibold text-ink-700">
+            {trialDays >= 0
+              ? `Prueba gratis · ${formatTrialLabel(trialDays)}`
+              : "La prueba gratuita ha caducado"}
+          </p>
+          <p className="mt-1 text-sm text-ink-500">
+            Puedes ver la plataforma. Para meter alumnos compra un pack de
+            plazas o envía el enlace/QR para que paguen ellos.
+          </p>
+        </div>
+      ) : null}
+
       {section === "alumnos" && (
         <>
+          {schoolCode ? (
+            <div className="staff-card mb-6 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold text-ink-500">Código de centro</p>
+                <p className="font-mono text-xl font-bold tracking-wide text-brand-700">
+                  {schoolCode}
+                </p>
+                <p className="mt-1 text-sm text-ink-500">
+                  {packActive
+                    ? `${seatsLeft} plaza${seatsLeft === 1 ? "" : "s"} libre${seatsLeft === 1 ? "" : "s"}`
+                    : "Sin pack activo: el alumno paga al registrarse"}
+                </p>
+              </div>
+              <button
+                type="button"
+                className="btn-ghost-brand !px-3.5 !py-2 !text-sm"
+                onClick={() => setSection("licencias")}
+              >
+                Comprar plazas o enviar QR
+              </button>
+            </div>
+          ) : null}
           <div className="mb-6">
             <StaffSearch
               value={studentQuery}
@@ -285,7 +463,7 @@ export default function TeacherScreen() {
                 <li className="py-3 text-sm text-ink-600">
                   {studentQuery.trim()
                     ? "Ningún alumno coincide con la búsqueda."
-                    : "Aún no tienes alumnos. Usa Alta alumno para crear el primero."}
+                    : "Aún no tienes alumnos. Compra plazas o envía el enlace en Licencias."}
                 </li>
               )}
               {filteredStudents?.map((u) => (
@@ -321,10 +499,177 @@ export default function TeacherScreen() {
         </>
       )}
 
+      {section === "licencias" && (
+        <div className="grid gap-6 lg:grid-cols-2">
+          <div className="staff-card">
+            <h3 className="panel-heading">Comprar plazas</h3>
+            <p className="mb-4 text-sm text-ink-500">
+              Tú pagas {EURO_PER_MONTH} € × plaza × mes. El alumno entra con tu
+              código y no paga. Un solo cobro, no es suscripción.
+            </p>
+            {packActive ? (
+              <p className="mb-4 text-sm font-semibold text-brand-700">
+                {seatsLeft} de {seatsPurchased} plazas libres
+                {packPaidUntil
+                  ? ` · hasta ${formatPaidUntil(packPaidUntil)}`
+                  : ""}
+                {seatsUsed ? ` · ${seatsUsed} en uso` : ""}
+              </p>
+            ) : (
+              <p className="mb-4 text-sm font-semibold text-ink-600">
+                Sin pack activo
+              </p>
+            )}
+            <p className="mb-2 text-sm font-semibold text-ink-600">Plazas</p>
+            <div className="mb-4 grid grid-cols-3 gap-2">
+              {PAID_SEAT_OPTIONS.map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`rounded-xl border-2 px-2 py-3 text-sm font-bold transition ${
+                    selectedSeats === n && !packCustomSeats
+                      ? "border-brand-500 bg-brand-50 text-brand-700"
+                      : "border-ink-900/15 text-ink-700 hover:border-brand-400"
+                  }`}
+                  onClick={() => {
+                    setPackSeats(n);
+                    setPackCustomSeats("");
+                  }}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+            <label className="mb-4 block text-sm font-medium text-ink-600">
+              Otra cantidad (1–{MAX_PAID_SEATS})
+              <input
+                type="number"
+                min={1}
+                max={MAX_PAID_SEATS}
+                className="input mt-1"
+                placeholder="Plazas"
+                value={packCustomSeats}
+                onChange={(e) => setPackCustomSeats(e.target.value)}
+              />
+            </label>
+            <p className="mb-2 text-sm font-semibold text-ink-600">Meses</p>
+            <div className="mb-4 grid grid-cols-5 gap-2">
+              {PAID_MONTH_OPTIONS.map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`rounded-xl border-2 px-2 py-3 text-sm font-bold transition ${
+                    packMonths === n
+                      ? "border-brand-500 bg-brand-50 text-brand-700"
+                      : "border-ink-900/15 text-ink-700 hover:border-brand-400"
+                  }`}
+                  onClick={() => setPackMonths(n)}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+            <p className="mb-4 text-lg font-bold text-ink-900">
+              {packTotal(selectedSeats, packMonths)} € · {selectedSeats} plazas
+              · {packMonths} {packMonths === 1 ? "mes" : "meses"}
+            </p>
+            {packMsg ? (
+              <p className="mb-3 text-sm font-medium text-brand-700">{packMsg}</p>
+            ) : null}
+            <button
+              type="button"
+              className="btn-primary w-full"
+              disabled={packBusy}
+              onClick={() => void buyPack()}
+            >
+              {packBusy && <IconSpinner className="text-base" />}
+              {packBusy ? "Abriendo pago..." : "Pagar pack"}
+            </button>
+          </div>
+
+          <div className="staff-card">
+            <h3 className="panel-heading">Que pague el alumno</h3>
+            <p className="mb-4 text-sm text-ink-500">
+              Envía el enlace o el QR. El alumno se registra con tu código y
+              paga {EURO_PER_MONTH} € × los meses que elija. Tú cobras 1 € por
+              mes si activas Stripe Connect.
+            </p>
+            {schoolCode ? (
+              <p className="mb-2 font-mono text-2xl font-bold tracking-wide text-brand-700">
+                {schoolCode}
+              </p>
+            ) : null}
+            {inviteUrl ? (
+              <p className="mb-3 break-all text-sm font-medium text-ink-600">
+                {inviteUrl}
+              </p>
+            ) : null}
+            {qrSrc ? (
+              <div className="mb-4 flex justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={qrSrc}
+                  alt="QR de alta de alumno"
+                  width={220}
+                  height={220}
+                  className="rounded-xl border border-line bg-white p-2"
+                />
+              </div>
+            ) : null}
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                className="btn-ghost-brand !px-3.5 !py-2 !text-sm"
+                onClick={() => void copyInvite()}
+              >
+                {copied ? "Copiado" : "Copiar enlace"}
+              </button>
+              <button
+                type="button"
+                className="btn-ghost-brand !px-3.5 !py-2 !text-sm"
+                disabled={centerBusy}
+                onClick={() => void openConnect()}
+              >
+                {centerBusy && <IconSpinner className="text-base" />}
+                Cobrar 1 € automático
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {section === "alta" && (
         <div className="mx-auto max-w-xl">
+          {!packActive || seatsLeft < 1 ? (
+            <div className="staff-card">
+              <h3 className="panel-heading">Para meter alumnos</h3>
+              <p className="mb-4 text-sm text-ink-500">
+                La prueba sirve para ver la plataforma. Un alumno entra con una
+                plaza de pack o pagando él.
+              </p>
+              <div className="flex flex-col gap-2">
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={() => setSection("licencias")}
+                >
+                  Comprar pack de plazas
+                </button>
+                <button
+                  type="button"
+                  className="btn-ghost-brand"
+                  onClick={() => setSection("licencias")}
+                >
+                  <IconQr className="text-base" /> Enviar enlace o QR
+                </button>
+              </div>
+            </div>
+          ) : (
           <div className="staff-card">
             <h3 className="panel-heading">Nuevo alumno</h3>
+            <p className="mb-3 text-sm text-ink-500">
+              Esta alta usa 1 plaza del pack ({seatsLeft} libres).
+            </p>
             <form onSubmit={handleAddStudent} className="flex flex-col gap-3">
               <input
                 type="text"
@@ -398,6 +743,7 @@ export default function TeacherScreen() {
               )}
             </form>
           </div>
+          )}
         </div>
       )}
 

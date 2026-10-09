@@ -1,4 +1,6 @@
 export const TRIAL_MONTH_OPTIONS = [1, 2, 3, 4, 5, 6] as const;
+/** Self-signup from email marketing: one free month to look around. */
+export const SELF_SIGNUP_TRIAL_MONTHS = 1;
 
 function startOfLocalDay(date: Date): Date {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());

@@ -11,6 +11,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 import { getUserDoc, loadWrongQuestions } from "@/lib/db";
+import { parsePaidUntil, studentNeedsPaywall } from "@/lib/billing";
 import {
   PORTAL_PATHS,
   portalForRole,
@@ -18,11 +19,13 @@ import {
 } from "@/lib/portal";
 import { loadExam } from "@/lib/tests";
 import { isViajerosTestId } from "@/lib/questionTopics";
-import type { CapTrack, ExamMode, Question, SessionUser, TestMeta } from "@/lib/types";
+import type { CapTrack, ExamMode, Question, SessionUser, TestMeta, UserDoc } from "@/lib/types";
 import { ERRORS_EXAM_ID, normalizeCapTrack } from "@/lib/types";
 
 export type Screen =
   | "login"
+  | "signup"
+  | "paywall"
   | "set-password"
   | "backoffice"
   | "teacher"
@@ -49,6 +52,33 @@ function screenForRole(role: SessionUser["role"]): Screen {
   return "track-select";
 }
 
+function sessionFromDoc(
+  username: string,
+  doc: UserDoc,
+  fallbackName?: string
+): SessionUser {
+  const role: SessionUser["role"] =
+    doc.role === "teacher" ? "teacher" : "student";
+  return {
+    username,
+    name: doc.name || fallbackName || username,
+    role,
+    capTrack: role === "student" ? normalizeCapTrack(doc.capTrack) : undefined,
+    billing:
+      doc.billing === "prepaid" || doc.billing === "school"
+        ? doc.billing
+        : undefined,
+    paidUntil: parsePaidUntil(doc.paidUntil),
+    schoolCode: doc.schoolCode,
+    trialEndsAt: parsePaidUntil(doc.trialEndsAt),
+  };
+}
+
+function screenForUser(u: SessionUser): Screen {
+  if (studentNeedsPaywall(u)) return "paywall";
+  return screenForRole(u.role);
+}
+
 interface AppContextValue {
   hydrated: boolean;
   portal: Portal;
@@ -63,6 +93,7 @@ interface AppContextValue {
     role?: SessionUser["role"];
     capTrack?: CapTrack;
   } | null;
+  schoolCodeFromUrl: string;
 
   loginAs: (user: SessionUser) => void;
   requestSetPassword: (
@@ -73,6 +104,7 @@ interface AppContextValue {
   ) => void;
   logout: () => void;
   showLogin: () => void;
+  showSignup: () => void;
   chooseTrack: (track: CapTrack) => void;
   goToTrackSelect: () => void;
   selectTest: (test: TestMeta, pausedMode: ExamMode | null) => Promise<void>;
@@ -105,14 +137,24 @@ export function AppProvider({
     role?: SessionUser["role"];
     capTrack?: CapTrack;
   } | null>(null);
+  const [schoolCodeFromUrl, setSchoolCodeFromUrl] = useState("");
 
   // Restore the cached session on first load
   useEffect(() => {
     let cancelled = false;
     (async () => {
+      const params = new URLSearchParams(window.location.search);
+      const code = (params.get("code") ?? "").trim().toUpperCase();
+      const forcePaywall = params.get("pay") === "1";
+      const justPaid = params.get("paid") === "1";
+      if (code) setSchoolCodeFromUrl(code);
+
       const username = localStorage.getItem(USER_KEY);
       if (!username) {
-        if (!cancelled) setHydrated(true);
+        if (!cancelled) {
+          if (code && portal === "alumno") setScreen("signup");
+          setHydrated(true);
+        }
         return;
       }
 
@@ -125,7 +167,9 @@ export function AppProvider({
         setUser(u);
         localStorage.setItem(USER_NAME_KEY, u.name);
         localStorage.setItem(USER_ROLE_KEY, u.role);
-        if (u.role === "student") {
+        if (studentNeedsPaywall(u) || (forcePaywall && u.role === "student")) {
+          setScreen("paywall");
+        } else if (u.role === "student") {
           const saved = localStorage.getItem(TRACK_KEY);
           const allowed = normalizeCapTrack(u.capTrack);
           if (saved === allowed) {
@@ -158,17 +202,19 @@ export function AppProvider({
           localStorage.removeItem(USER_KEY);
           localStorage.removeItem(USER_NAME_KEY);
           localStorage.removeItem(USER_ROLE_KEY);
+          if (code && portal === "alumno") setScreen("signup");
           setHydrated(true);
           return;
         }
-        const role: SessionUser["role"] =
-          doc.role === "teacher" ? "teacher" : "student";
-        applySession({
-          username,
-          name: doc.name || cachedName,
-          role,
-          capTrack: role === "student" ? normalizeCapTrack(doc.capTrack) : undefined,
-        });
+        const session = sessionFromDoc(username, doc, cachedName);
+        if (justPaid && session.role === "student") {
+          applySession({
+            ...session,
+            billing: session.billing ?? "prepaid",
+          });
+          return;
+        }
+        applySession(session);
       } catch {
         if (cancelled) return;
         const role: SessionUser["role"] =
@@ -199,7 +245,7 @@ export function AppProvider({
         router.replace(PORTAL_PATHS[home]);
         return;
       }
-      setScreen(screenForRole(u.role));
+      setScreen(screenForUser(u));
     },
     [portal, router]
   );
@@ -219,6 +265,11 @@ export function AppProvider({
 
   const showLogin = useCallback(() => {
     setScreen("login");
+    setPendingPwdUser(null);
+  }, []);
+
+  const showSignup = useCallback(() => {
+    setScreen("signup");
     setPendingPwdUser(null);
   }, []);
 
@@ -330,10 +381,12 @@ export function AppProvider({
       activeExam,
       quizMode,
       pendingPwdUser,
+      schoolCodeFromUrl,
       loginAs,
       requestSetPassword,
       logout,
       showLogin,
+      showSignup,
       chooseTrack,
       goToTrackSelect,
       selectTest,
@@ -352,10 +405,12 @@ export function AppProvider({
       activeExam,
       quizMode,
       pendingPwdUser,
+      schoolCodeFromUrl,
       loginAs,
       requestSetPassword,
       logout,
       showLogin,
+      showSignup,
       chooseTrack,
       goToTrackSelect,
       selectTest,

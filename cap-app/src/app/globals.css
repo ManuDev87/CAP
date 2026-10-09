@@ -257,6 +257,24 @@
   .staff-trial.is-expired {
     @apply text-danger-500;
   }
+  .staff-pay {
+    @apply rounded-full px-2 py-0.5 text-[11px] font-bold;
+  }
+  .staff-pay.is-pack {
+    @apply bg-brand-50 text-brand-700;
+  }
+  .staff-pay.is-trial {
+    @apply bg-answered-50 text-accent-600;
+  }
+  .staff-pay.is-unpaid {
+    @apply bg-danger-50 text-danger-600;
+  }
+  .staff-pay.is-paid {
+    @apply bg-brand-50 text-brand-700;
+  }
+  .staff-pay.is-pending {
+    @apply bg-answered-50 text-accent-600;
+  }
   .staff-logout {
     @apply btn justify-center bg-white text-sm font-semibold text-ink-700 ring-1 ring-line hover:bg-danger-50 hover:text-danger-600;
   }

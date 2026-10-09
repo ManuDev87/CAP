@@ -8,12 +8,14 @@ import {
   roleMatchesPortal,
   wrongPortalMessage,
 } from "@/lib/portal";
+import { ApiError, loginRemote } from "@/lib/api";
+import { parsePaidUntil } from "@/lib/billing";
 import type { SessionUser } from "@/lib/types";
 import { normalizeCapTrack } from "@/lib/types";
 import { IconSpinner } from "@/components/icons";
 
 export default function LoginScreen() {
-  const { loginAs, requestSetPassword, portal } = useApp();
+  const { loginAs, requestSetPassword, portal, showSignup } = useApp();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -36,6 +38,33 @@ export default function LoginScreen() {
 
     setBusy(true);
     try {
+      if (pass) {
+        try {
+          const remote = await loginRemote(user, pass);
+          if (!roleMatchesPortal(remote.user.role, portal)) {
+            setError(wrongPortalMessage(portal));
+            return;
+          }
+          loginAs({
+            username: remote.user.username,
+            name: remote.user.name,
+            role: remote.user.role,
+            capTrack:
+              remote.user.role === "student" ? remote.user.capTrack : undefined,
+            billing: remote.user.billing ?? undefined,
+            paidUntil: remote.user.paidUntil ?? undefined,
+            schoolCode: remote.user.schoolCode ?? undefined,
+            trialEndsAt: remote.user.trialEndsAt ?? undefined,
+          });
+          return;
+        } catch (err) {
+          if (err instanceof ApiError && err.status === 401) {
+            setError(err.message);
+            return;
+          }
+        }
+      }
+
       const data = await getUserDoc(user);
       if (!data) {
         setError("Usuario no encontrado");
@@ -65,6 +94,13 @@ export default function LoginScreen() {
           name: data.name,
           role,
           capTrack: role === "student" ? normalizeCapTrack(data.capTrack) : undefined,
+          billing:
+            data.billing === "prepaid" || data.billing === "school"
+              ? data.billing
+              : undefined,
+          paidUntil: parsePaidUntil(data.paidUntil),
+          schoolCode: data.schoolCode,
+          trialEndsAt: parsePaidUntil(data.trialEndsAt),
         });
       } else {
         setError("Credenciales incorrectas");
@@ -113,6 +149,17 @@ export default function LoginScreen() {
             {busy ? "Comprobando..." : "Entrar"}
           </button>
         </form>
+        {portal !== "admin" && (
+          <button
+            type="button"
+            className="mt-4 text-sm font-semibold text-brand-600"
+            onClick={showSignup}
+          >
+            {portal === "profesor"
+              ? "Alta gratuita de autoescuela"
+              : "Crear cuenta con código de autoescuela"}
+          </button>
+        )}
         <p className="auth-legal">
           Este portal no es un organismo oficial.{" "}
           <a href="/aviso-legal.html">Aviso legal y fuentes</a>

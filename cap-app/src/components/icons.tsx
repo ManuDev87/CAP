@@ -237,6 +237,19 @@ export const IconUsers = (p: IconProps) => (
   </StrokeIcon>
 );
 
+export const IconQr = (p: IconProps) => (
+  <StrokeIcon {...p}>
+    <rect width="5" height="5" x="3" y="3" rx="1" />
+    <rect width="5" height="5" x="16" y="3" rx="1" />
+    <rect width="5" height="5" x="3" y="16" rx="1" />
+    <path d="M21 16h-3v3h3z" />
+    <path d="M21 21h-6" />
+    <path d="M13 13h2v2h-2z" />
+    <path d="M16 13h2" />
+    <path d="M13 16h2" />
+  </StrokeIcon>
+);
+
 export const IconUserPlus = (p: IconProps) => (
   <StrokeIcon {...p}>
     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />

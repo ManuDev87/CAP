@@ -70,6 +70,13 @@ export interface SessionUser {
   role: "root" | UserRole;
   /** Students only. Missing/legacy accounts count as mercancías. */
   capTrack?: CapTrack;
+  /** school = plaza de pack; prepaid = el alumno paga 1–N meses. */
+  billing?: "school" | "prepaid";
+  /** Epoch ms. Access ends here; then paywall until they buy again. */
+  paidUntil?: number;
+  schoolCode?: string;
+  /** Teacher only: when the free look-around trial ends. */
+  trialEndsAt?: number;
 }
 
 /** Answer maps are keyed by question index (as in the legacy app). */
@@ -122,6 +129,9 @@ export interface UserDoc {
   schoolName?: string;
   /** Teacher only: when the autoescuela trial ends (Firestore Timestamp or epoch ms). */
   trialEndsAt?: unknown;
+  schoolCode?: string;
+  billing?: "school" | "prepaid";
+  paidUntil?: unknown;
   showSeedBtn?: boolean;
   /** Student only: CAP mercancías or viajeros. Legacy docs without it are mercancías. */
   capTrack?: CapTrack;

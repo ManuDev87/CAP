@@ -7,11 +7,22 @@ import {
   createUser,
   deleteUser,
   listAllStudents,
+  listCenters,
   listTeachers,
   setShowSeedBtn,
+  setTeacherTrialEndsAt,
+  type CenterListEntry,
   type UserListEntry,
 } from "@/lib/db";
 import {
+  SCHOOL_PAY_LABELS,
+  hasPaidAccess,
+  schoolPayStatus,
+  studentPayLabel,
+  type SchoolPayStatus,
+} from "@/lib/billing";
+import {
+  IconFileSign,
   IconLayoutDashboard,
   IconSpinner,
   IconTeacher,
@@ -32,7 +43,7 @@ import {
   trialTone,
 } from "@/lib/trial";
 
-type AdminSection = "resumen" | "profesores" | "alumnos";
+type AdminSection = "resumen" | "cobros" | "profesores" | "alumnos";
 
 const NEW_SCHOOL = "__new__";
 
@@ -59,13 +70,37 @@ function TrialBadge({ endsAt }: { endsAt?: number }) {
   );
 }
 
+function PayBadge({ status }: { status: SchoolPayStatus }) {
+  return (
+    <span className={`staff-pay is-${status}`}>{SCHOOL_PAY_LABELS[status]}</span>
+  );
+}
+
+function StudentPayBadge({
+  billing,
+  paidUntil,
+}: {
+  billing?: UserListEntry["billing"];
+  paidUntil?: number;
+}) {
+  const label = studentPayLabel({ billing, paidUntil });
+  const paid = hasPaidAccess(paidUntil);
+  return (
+    <span className={`staff-pay ${paid ? "is-paid" : "is-pending"}`}>
+      {label}
+    </span>
+  );
+}
+
 export default function BackofficeScreen() {
   const { logout, user } = useApp();
   const [section, setSection] = useState<AdminSection>("resumen");
 
   const [teachers, setTeachers] = useState<UserListEntry[] | null>(null);
   const [students, setStudents] = useState<UserListEntry[] | null>(null);
+  const [centers, setCenters] = useState<CenterListEntry[]>([]);
   const [loadError, setLoadError] = useState(false);
+  const [extendMonths, setExtendMonths] = useState(1);
 
   const [tName, setTName] = useState("");
   const [tUsername, setTUsername] = useState("");
@@ -90,9 +125,14 @@ export default function BackofficeScreen() {
   const refresh = useCallback(async () => {
     setLoadError(false);
     try {
-      const [t, s] = await Promise.all([listTeachers(), listAllStudents()]);
+      const [t, s, c] = await Promise.all([
+        listTeachers(),
+        listAllStudents(),
+        listCenters().catch(() => [] as CenterListEntry[]),
+      ]);
       setTeachers(t);
       setStudents(s);
+      setCenters(c);
       setSTeacherId((prev) => prev || (t[0]?.username ?? ""));
     } catch (err) {
       console.error(err);
@@ -105,6 +145,22 @@ export default function BackofficeScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  function centerForTeacher(teacher: UserListEntry): CenterListEntry | undefined {
+    if (teacher.schoolCode) {
+      const byCode = centers.find((c) => c.schoolCode === teacher.schoolCode);
+      if (byCode) return byCode;
+    }
+    return centers.find((c) => c.teacherId === teacher.username);
+  }
+
+  function statusForTeacher(teacher: UserListEntry): SchoolPayStatus {
+    const center = centerForTeacher(teacher);
+    return schoolPayStatus({
+      trialEndsAt: teacher.trialEndsAt,
+      packPaidUntil: center?.packPaidUntil,
+    });
+  }
+
   const counts = useMemo(() => {
     const t = teachers?.length ?? 0;
     const s = students?.length ?? 0;
@@ -112,8 +168,24 @@ export default function BackofficeScreen() {
       students?.filter((u) => u.capTrack === "mercancias").length ?? 0;
     const viajeros =
       students?.filter((u) => u.capTrack === "viajeros").length ?? 0;
-    return { t, s, mercancias, viajeros };
-  }, [teachers, students]);
+    const pack = (teachers ?? []).filter((x) => statusForTeacher(x) === "pack").length;
+    const trial = (teachers ?? []).filter((x) => statusForTeacher(x) === "trial").length;
+    const unpaid = (teachers ?? []).filter((x) => statusForTeacher(x) === "unpaid").length;
+    const studentsPaid = (students ?? []).filter((u) => hasPaidAccess(u.paidUntil)).length;
+    const studentsPending = s - studentsPaid;
+    return {
+      t,
+      s,
+      mercancias,
+      viajeros,
+      pack,
+      trial,
+      unpaid,
+      studentsPaid,
+      studentsPending,
+    };
+    // centerForTeacher/statusForTeacher close over centers
+  }, [teachers, students, centers]);
 
   const schoolNames = useMemo(() => {
     const names = new Set<string>();
@@ -275,10 +347,28 @@ export default function BackofficeScreen() {
     }
   }
 
+  async function handleExtendTrial(teacher: UserListEntry) {
+    const from =
+      teacher.trialEndsAt && remainingTrialDays(teacher.trialEndsAt) >= 0
+        ? new Date(teacher.trialEndsAt)
+        : new Date();
+    const next = addTrialMonths(from, extendMonths).getTime();
+    try {
+      await setTeacherTrialEndsAt(teacher.username, next);
+      await refresh();
+    } catch (err) {
+      alert("Error al ampliar la prueba: " + (err as Error).message);
+    }
+  }
+
   const titles: Record<AdminSection, { title: string; subtitle: string }> = {
     resumen: {
       title: "Resumen",
       subtitle: "Vista general de profesores y alumnos",
+    },
+    cobros: {
+      title: "Cobros",
+      subtitle: "Quién ha pagado, quién está en prueba y quién no",
     },
     profesores: {
       title: "Profesores",
@@ -298,6 +388,7 @@ export default function BackofficeScreen() {
       userRole="Administrador"
       items={[
         { id: "resumen", label: "Resumen", icon: <IconLayoutDashboard /> },
+        { id: "cobros", label: "Cobros", icon: <IconFileSign /> },
         { id: "profesores", label: "Profesores", icon: <IconTeacher /> },
         { id: "alumnos", label: "Alumnos", icon: <IconUsers /> },
       ]}
@@ -344,6 +435,30 @@ export default function BackofficeScreen() {
             <p className="staff-stat-label">CAP Viajeros</p>
             <p className="staff-stat-value">
               {students === null ? "—" : counts.viajeros}
+            </p>
+          </article>
+          <article className="staff-stat is-accent">
+            <p className="staff-stat-label">Packs pagados</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.pack}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">En prueba</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.trial}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">Sin pago</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.unpaid}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">Alumnos al día</p>
+            <p className="staff-stat-value">
+              {students === null ? "—" : counts.studentsPaid}
             </p>
           </article>
         </div>
@@ -440,6 +555,142 @@ export default function BackofficeScreen() {
             </ul>
           </div>
         </div>
+      )}
+
+      {section === "cobros" && (
+        <>
+        <div className="mb-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <article className="staff-stat is-accent">
+            <p className="staff-stat-label">Packs pagados</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.pack}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">En prueba</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.trial}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">Sin pago</p>
+            <p className="staff-stat-value">
+              {teachers === null ? "—" : counts.unpaid}
+            </p>
+          </article>
+          <article className="staff-stat">
+            <p className="staff-stat-label">Alumnos pendientes</p>
+            <p className="staff-stat-value">
+              {students === null ? "—" : counts.studentsPending}
+            </p>
+          </article>
+        </div>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <div className="staff-card">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h3 className="panel-heading !mb-0">Autoescuelas</h3>
+              <label className="flex items-center gap-2 text-sm text-ink-600">
+                Ampliar prueba
+                <select
+                  className="rounded-lg border-2 border-ink-900/20 bg-white px-2 py-1 text-xs font-medium"
+                  value={extendMonths}
+                  onChange={(e) => setExtendMonths(Number(e.target.value))}
+                  aria-label="Meses de prueba a añadir"
+                >
+                  {TRIAL_MONTH_OPTIONS.map((months) => (
+                    <option key={months} value={months}>
+                      {months} {months === 1 ? "mes" : "meses"}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+            <ul className="staff-list">
+              {filteredTeachers === null && (
+                <li className="py-3 text-sm text-ink-600">Cargando...</li>
+              )}
+              {filteredTeachers !== null && filteredTeachers.length === 0 && (
+                <li className="py-3 text-sm text-ink-600">
+                  No hay autoescuelas.
+                </li>
+              )}
+              {filteredTeachers?.map((u) => {
+                const center = centerForTeacher(u);
+                const status = statusForTeacher(u);
+                const seatsLeft =
+                  status === "pack"
+                    ? Math.max(
+                        0,
+                        (center?.seatsPurchased ?? 0) - (center?.seatsUsed ?? 0)
+                      )
+                    : 0;
+                return (
+                  <li
+                    key={u.username}
+                    className="flex flex-col gap-2 border-b border-line py-4 last:border-b-0"
+                  >
+                    <div className="flex min-w-0 items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <span className="block truncate font-bold text-ink-900">
+                          {u.schoolName || u.name}
+                        </span>
+                        <span className="text-[13px] text-ink-400">
+                          {u.name} · {u.username}
+                          {u.schoolCode ? ` · ${u.schoolCode}` : ""}
+                        </span>
+                      </div>
+                      <PayBadge status={status} />
+                    </div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <TrialBadge endsAt={u.trialEndsAt} />
+                      {status === "pack" ? (
+                        <span className="text-[12px] font-semibold text-ink-500">
+                          {seatsLeft} plazas libres
+                          {center?.packPaidUntil
+                            ? ` · hasta ${new Date(center.packPaidUntil).toLocaleDateString("es-ES")}`
+                            : ""}
+                        </span>
+                      ) : null}
+                      <button
+                        type="button"
+                        className="btn-ghost-brand !px-3 !py-1.5 !text-[13px]"
+                        onClick={() => void handleExtendTrial(u)}
+                      >
+                        Dar {extendMonths}{" "}
+                        {extendMonths === 1 ? "mes" : "meses"} de prueba
+                      </button>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="staff-card">
+            <h3 className="panel-heading">Alumnos</h3>
+            <ul className="staff-list">
+              {filteredStudents === null && (
+                <li className="py-3 text-sm text-ink-600">Cargando...</li>
+              )}
+              {filteredStudents !== null && filteredStudents.length === 0 && (
+                <li className="py-3 text-sm text-ink-600">No hay alumnos.</li>
+              )}
+              {filteredStudents?.map((u) => (
+                <li key={u.username} className="staff-list-item">
+                  <div className="min-w-0 flex-1">
+                    <span className="block truncate font-bold text-ink-900">
+                      {u.name}
+                    </span>
+                    <span className="text-[13px] text-ink-400">
+                      {u.username} · {teacherLabel(u.teacherId)}
+                    </span>
+                  </div>
+                  <StudentPayBadge billing={u.billing} paidUntil={u.paidUntil} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        </>
       )}
 
       {section === "profesores" && (
@@ -567,11 +818,14 @@ export default function BackofficeScreen() {
                     <span className="truncate text-[13px] text-ink-400">
                       {u.schoolName || "Sin autoescuela"} · {u.username}
                     </span>
-                    {u.schoolName ? (
-                      <TrialBadge
-                        endsAt={schoolTrialEndsAt(teachers, u.schoolName)}
-                      />
-                    ) : null}
+                    <span className="mt-1 flex flex-wrap items-center gap-2">
+                      {u.schoolName ? (
+                        <TrialBadge
+                          endsAt={schoolTrialEndsAt(teachers, u.schoolName)}
+                        />
+                      ) : null}
+                      <PayBadge status={statusForTeacher(u)} />
+                    </span>
                   </div>
                   <button
                     className="btn-danger-soft shrink-0"
@@ -717,6 +971,10 @@ export default function BackofficeScreen() {
                       <span className="text-[13px] text-ink-400">
                         Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
                       </span>
+                      <StudentPayBadge
+                        billing={u.billing}
+                        paidUntil={u.paidUntil}
+                      />
                       <span
                         className={`text-[12px] ${
                           u.teacherId ? "text-brand-600" : "text-danger-500"

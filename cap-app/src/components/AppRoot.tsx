@@ -4,6 +4,8 @@ import { AppProvider, useApp } from "@/context/AppContext";
 import type { Portal } from "@/lib/portal";
 import { PORTAL_LABELS } from "@/lib/portal";
 import LoginScreen from "@/components/screens/LoginScreen";
+import SignupScreen from "@/components/screens/SignupScreen";
+import PaywallScreen from "@/components/screens/PaywallScreen";
 import SetPasswordScreen from "@/components/screens/SetPasswordScreen";
 import BackofficeScreen from "@/components/screens/BackofficeScreen";
 import TeacherScreen from "@/components/screens/TeacherScreen";
@@ -32,6 +34,10 @@ function Screens({ portal }: { portal: Portal }) {
   switch (screen) {
     case "login":
       return <LoginScreen />;
+    case "signup":
+      return <SignupScreen />;
+    case "paywall":
+      return <PaywallScreen />;
     case "set-password":
       return <SetPasswordScreen />;
     case "backoffice":

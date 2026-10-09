@@ -14,6 +14,8 @@ Mapa para agentes. Léelo al empezar. El código manda en el detalle; esto son l
 - **Temario de fallos:** viajeros no usa temas de mercancías (estiba, ADR, ATP, animales, CMR). Tablas en `cap-app/src/lib/questionTopics.ts`.
 - **Puntuación CAP:** solo cuentan las primeras 100 preguntas; +1 / −0,5 / 0; reserva 101–103; aprobado ≥ 50. No “inventar” otro baremo.
 - **Firestore legado:** `users`, `paused_tests`, `test_results`, `score_records`, `wrong_questions`. Contraseñas van en el doc de usuario (no es Auth de Firebase). No migres el modelo sin pedirlo.
+- **Cobro:** dos vías, mismo precio 5 € × mes. (1) Autoescuela compra plazas en el panel profesor (5 € × plazas × meses). El alumno que se registra con el código consume una plaza (`billing: school`, `paidUntil` del pack). (2) Si no hay plaza, el alumno paga él (enlace/QR) 5 € × N meses (`billing: prepaid`). Comisión 1 € × N **solo** en (2), vía Stripe Connect. No es suscripción; al vencer, paywall. Backend en `functions/` (la app es `output: "export"`, no Next API).
+- **Prueba profesor:** el alta de autoescuela (email marketing) es gratis 1 mes para ver la plataforma. Meter alumnos no va incluido: o compra pack o envía enlace/QR. El admin ve cobros (pagado / prueba / sin pago) y puede ampliar la prueba.
 - **Exámenes:** JSON en `cap-app/src/data/exams/`. Tras ingestar, hay que registrar el test en `tests.ts` (mercancías) o `viajerosCatalog.ts` (viajeros).
 
 ## Ayuda al alumno
@@ -65,5 +67,6 @@ Lexend + Source Sans 3. Detalle en `design-system/grupo-cap-landing/MASTER.md`.
 | Catálogo tests | `cap-app/src/lib/tests.ts`, `viajerosCatalog.ts` |
 | Temas de fallos | `cap-app/src/lib/questionTopics.ts` |
 | Portales | `cap-app/src/lib/portal.ts` |
+| Cobro | `functions/src/index.ts`, `cap-app/src/lib/billing.ts` |
 | Ingesta | `scripts/ingest_*.py` |
 | Landing | `landing/index.html`, `landing/sw.js` |
