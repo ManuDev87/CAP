@@ -471,9 +471,24 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
   const teacherId = String(data.teacherId ?? "");
   let destination: string | undefined;
   if (schoolCode) {
-    const center = await db.collection("centers").doc(schoolCode).get();
+    const centerRef = db.collection("centers").doc(schoolCode);
+    const center = await centerRef.get();
     const accountId = center.data()?.stripeAccountId as string | undefined;
-    const chargesEnabled = center.data()?.chargesEnabled === true;
+    let chargesEnabled = center.data()?.chargesEnabled === true;
+    if (accountId && !chargesEnabled) {
+      try {
+        const account = await stripeClient().accounts.retrieve(accountId);
+        chargesEnabled = account.charges_enabled === true;
+        if (chargesEnabled) {
+          await centerRef.set(
+            { chargesEnabled: true, connectStatus: "active" },
+            { merge: true }
+          );
+        }
+      } catch (err) {
+        logger.warn("Connect account lookup failed", err);
+      }
+    }
     if (accountId && chargesEnabled) destination = accountId;
   }
 
@@ -600,6 +615,22 @@ export const stripeWebhook = onRequest(
     } catch (err) {
       logger.error("Webhook signature failed", err);
       res.status(400).send("Invalid signature");
+      return;
+    }
+
+    if (event.type === "account.updated") {
+      const account = event.data.object as Stripe.Account;
+      const schoolCode = String(account.metadata?.schoolCode || "");
+      if (schoolCode) {
+        await db.collection("centers").doc(schoolCode).set(
+          {
+            chargesEnabled: account.charges_enabled === true,
+            connectStatus: account.charges_enabled ? "active" : "onboarding",
+          },
+          { merge: true }
+        );
+      }
+      res.status(200).json({ received: true, kind: "account" });
       return;
     }
 

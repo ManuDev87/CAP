@@ -280,8 +280,12 @@ export default function QuizScreen() {
   const combinedPdf = answersPdf ?? questionsPdf;
 
   function openPdf(url?: string) {
-    if (url) window.open(url, "_blank", "noopener,noreferrer");
-    else alert("El PDF original de este examen aún no está disponible.");
+    if (!url) {
+      alert("El PDF original de este examen aún no está disponible.");
+      return;
+    }
+    const href = url.startsWith("http") ? url : new URL(url, window.location.origin).href;
+    window.open(href, "_blank", "noopener,noreferrer");
   }
 
   const unanswered = questions.length - Object.keys(userAnswers).length;

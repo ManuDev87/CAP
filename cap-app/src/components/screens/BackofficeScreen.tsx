@@ -347,17 +347,24 @@ export default function BackofficeScreen() {
     }
   }
 
-  async function handleExtendTrial(teacher: UserListEntry) {
+  async function handleShiftTrial(teacher: UserListEntry, months: number) {
+    if (months < 0 && (!teacher.trialEndsAt || remainingTrialDays(teacher.trialEndsAt) < 0)) {
+      return;
+    }
     const from =
       teacher.trialEndsAt && remainingTrialDays(teacher.trialEndsAt) >= 0
         ? new Date(teacher.trialEndsAt)
         : new Date();
-    const next = addTrialMonths(from, extendMonths).getTime();
+    const next = addTrialMonths(from, months).getTime();
     try {
       await setTeacherTrialEndsAt(teacher.username, next);
       await refresh();
     } catch (err) {
-      alert("Error al ampliar la prueba: " + (err as Error).message);
+      alert(
+        months < 0
+          ? "Error al quitar tiempo de prueba: " + (err as Error).message
+          : "Error al ampliar la prueba: " + (err as Error).message
+      );
     }
   }
 
@@ -654,11 +661,21 @@ export default function BackofficeScreen() {
                       <button
                         type="button"
                         className="btn-ghost-brand !px-3 !py-1.5 !text-[13px]"
-                        onClick={() => void handleExtendTrial(u)}
+                        onClick={() => void handleShiftTrial(u, extendMonths)}
                       >
                         Dar {extendMonths}{" "}
                         {extendMonths === 1 ? "mes" : "meses"} de prueba
                       </button>
+                      <button
+                        type="button"
+                        className="btn-danger-soft !px-3 !py-1.5 !text-[13px]"
+                        disabled={
+                          !u.trialEndsAt || remainingTrialDays(u.trialEndsAt) < 0
+                        }
+                        onClick={() => void handleShiftTrial(u, -1)}
+                      >
+                        Quitar 1 mes de prueba
+          </button>
                     </div>
                   </li>
                 );
@@ -964,11 +981,11 @@ export default function BackofficeScreen() {
                   className="flex flex-col gap-2 border-b border-line py-4 last:border-b-0"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <div className="flex min-w-0 flex-col">
-                      <span className="truncate font-bold text-ink-900">
-                        {u.name}
-                      </span>
-                      <span className="text-[13px] text-ink-400">
+                  <div className="flex min-w-0 flex-col">
+                    <span className="truncate font-bold text-ink-900">
+                      {u.name}
+                    </span>
+                    <span className="text-[13px] text-ink-400">
                         Usuario: {u.username} · {CAP_TRACK_LABELS[u.capTrack]}
                       </span>
                       <StudentPayBadge
@@ -981,7 +998,7 @@ export default function BackofficeScreen() {
                         }`}
                       >
                         {teacherLabel(u.teacherId)}
-                      </span>
+                    </span>
                     </div>
                     <button
                       className="btn-danger-soft shrink-0"

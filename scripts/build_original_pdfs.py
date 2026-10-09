@@ -118,7 +118,7 @@ def main() -> None:
     links: dict[str, dict] = {}
 
     for item in load_json("_andalucia_provincias_manifest.json"):
-        got = from_andalucia(item)
+        got = from_local(item) or from_andalucia(item)
         if got:
             links[item["id"]] = got
 

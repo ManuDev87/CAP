@@ -23,7 +23,7 @@ function walk(dir) {
 
 const allFiles = walk(OUT_DIR)
   .map((f) => relative(OUT_DIR, f).replaceAll("\\", "/"))
-  .filter((f) => f !== "sw.js")
+  .filter((f) => f !== "sw.js" && !f.startsWith("originales/"))
   .sort();
 
 // Build version = hash of file list + sizes (changes whenever content changes)
