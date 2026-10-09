@@ -35,6 +35,9 @@ const CORS_ORIGINS = [
 
 type Role = "student" | "teacher" | "root";
 type Billing = "school" | "prepaid";
+type CheckoutParams = Stripe.Checkout.SessionCreateParams & {
+  managed_payments?: { enabled: boolean };
+};
 
 const httpsOpts = {
   region: REGION,
@@ -483,7 +486,7 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
   }
 
   const origin = appUrl.value();
-  const params: Stripe.Checkout.SessionCreateParams = {
+  const params: CheckoutParams = {
     mode: "payment",
     success_url: `${origin}/alumno?paid=1`,
     cancel_url: `${origin}/alumno?pay=1`,
@@ -491,6 +494,7 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
     customer_email: typeof data.email === "string" ? data.email : undefined,
     line_items: [{ price: stripePriceId.value(), quantity: months }],
     invoice_creation: { enabled: true },
+    managed_payments: { enabled: false },
     metadata: {
       kind: "student",
       username,
@@ -518,7 +522,9 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
   }
 
   try {
-    const session = await stripeClient().checkout.sessions.create(params);
+    const session = await stripeClient().checkout.sessions.create(
+      params as Stripe.Checkout.SessionCreateParams
+    );
     json(res, 200, { url: session.url, months, amountCents: STUDENT_MONTH_CENTS * months });
   } catch (err) {
     logger.error("createCheckoutSession failed", err);
@@ -554,13 +560,14 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
   const origin = appUrl.value();
   const quantity = seats * months;
   try {
-    const session = await stripeClient().checkout.sessions.create({
+    const packParams: CheckoutParams = {
       mode: "payment",
       success_url: `${origin}/profesor?pack=1`,
       cancel_url: `${origin}/profesor?pack=0`,
       client_reference_id: username,
       line_items: [{ price: stripePriceId.value(), quantity }],
       invoice_creation: { enabled: true },
+      managed_payments: { enabled: false },
       metadata: {
         kind: "school_pack",
         username,
@@ -577,7 +584,10 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
           months: String(months),
         },
       },
-    });
+    };
+    const session = await stripeClient().checkout.sessions.create(
+      packParams as Stripe.Checkout.SessionCreateParams
+    );
     json(res, 200, {
       url: session.url,
       seats,
