@@ -16,6 +16,7 @@ import {
   PAID_MONTH_OPTIONS,
   PAID_SEAT_OPTIONS,
   formatPaidUntil,
+  isActiveSchoolTrial,
   packTotal,
 } from "@/lib/billing";
 import {
@@ -150,6 +151,15 @@ export default function TeacherScreen() {
     };
   }, [teacherId, applyCenter]);
 
+  const trialDays =
+    user?.trialEndsAt != null ? remainingTrialDays(user.trialEndsAt) : null;
+  const hideBillingUi =
+    (trialDays != null && trialDays >= 0 && !packActive) ||
+    isActiveSchoolTrial({
+      trialEndsAt: user?.trialEndsAt,
+      packPaidUntil: packActive ? packPaidUntil : null,
+    });
+
   const filterOptions = useMemo(() => {
     const seen = new Set<string>();
     const options: { id: string; name: string }[] = [];
@@ -214,6 +224,12 @@ export default function TeacherScreen() {
       setSection("alumnos");
     } catch (err) {
       if (err instanceof ApiError && err.status === 402) {
+        if (hideBillingUi) {
+          alert(
+            "Durante la prueba puedes explorar la plataforma. El alta de alumnos se abre cuando termine el periodo de prueba."
+          );
+          return;
+        }
         setSection("licencias");
         setPackMsg(
           "Sin plazas. Compra un pack o envía el enlace para que pague el alumno."
@@ -227,6 +243,7 @@ export default function TeacherScreen() {
   }
 
   async function copyInvite() {
+    if (trialBillingLocked()) return;
     const text = inviteUrl || schoolCode;
     if (!text) return;
     await navigator.clipboard.writeText(text);
@@ -234,7 +251,14 @@ export default function TeacherScreen() {
     window.setTimeout(() => setCopied(false), 2000);
   }
 
+  function trialBillingLocked(): boolean {
+    if (!hideBillingUi) return false;
+    setSection("licencias");
+    return true;
+  }
+
   async function buyPack() {
+    if (trialBillingLocked()) return;
     if (!teacherId) return;
     setPackBusy(true);
     try {
@@ -252,6 +276,7 @@ export default function TeacherScreen() {
   }
 
   async function openConnect() {
+    if (trialBillingLocked()) return;
     if (!teacherId) return;
     setCenterBusy(true);
     try {
@@ -320,9 +345,6 @@ export default function TeacherScreen() {
     return packSeats;
   }, [packCustomSeats, packSeats]);
 
-  const trialDays =
-    user?.trialEndsAt != null ? remainingTrialDays(user.trialEndsAt) : null;
-
   const qrSrc = inviteUrl
     ? `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(inviteUrl)}`
     : "";
@@ -389,10 +411,17 @@ export default function TeacherScreen() {
               ? `Prueba gratis · ${formatTrialLabel(trialDays)}`
               : "La prueba gratuita ha caducado"}
           </p>
-          <p className="mt-1 text-sm text-ink-500">
-            Puedes ver la plataforma. Para meter alumnos compra un pack de
-            plazas o envía el enlace/QR para que paguen ellos.
-          </p>
+          {hideBillingUi ? (
+            <p className="mt-1 text-sm text-ink-500">
+              Tienes un periodo de prueba gratis. El cobro de plazas y el pago
+              del alumno se activan al terminar la prueba.
+            </p>
+          ) : (
+            <p className="mt-1 text-sm text-ink-500">
+              Puedes ver la plataforma. Para meter alumnos compra un pack de
+              plazas o envía el enlace/QR para que paguen ellos.
+            </p>
+          )}
         </div>
       ) : null}
 
@@ -406,14 +435,18 @@ export default function TeacherScreen() {
                   {schoolCode}
                 </p>
                 <p className="mt-1 text-sm text-ink-500">
-                  {packActive
-                    ? `${seatsLeft} plaza${seatsLeft === 1 ? "" : "s"} libre${seatsLeft === 1 ? "" : "s"}`
-                    : "Sin pack activo: el alumno paga al registrarse"}
+                  {hideBillingUi
+                    ? "Tienes un periodo de prueba gratis"
+                    : packActive
+                      ? `${seatsLeft} plaza${seatsLeft === 1 ? "" : "s"} libre${seatsLeft === 1 ? "" : "s"}`
+                      : "Sin pack activo: el alumno paga al registrarse"}
                 </p>
               </div>
               <button
                 type="button"
-                className="btn-ghost-brand !px-3.5 !py-2 !text-sm"
+                className={`btn-ghost-brand !px-3.5 !py-2 !text-sm ${
+                  hideBillingUi ? "opacity-50" : ""
+                }`}
                 onClick={() => setSection("licencias")}
               >
                 Comprar plazas o enviar QR
@@ -463,7 +496,9 @@ export default function TeacherScreen() {
                 <li className="py-3 text-sm text-ink-600">
                   {studentQuery.trim()
                     ? "Ningún alumno coincide con la búsqueda."
-                    : "Aún no tienes alumnos. Compra plazas o envía el enlace en Licencias."}
+                    : hideBillingUi
+                      ? "Aún no tienes alumnos."
+                      : "Aún no tienes alumnos. Compra plazas o envía el enlace en Licencias."}
                 </li>
               )}
               {filteredStudents?.map((u) => (
@@ -500,7 +535,13 @@ export default function TeacherScreen() {
       )}
 
       {section === "licencias" && (
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="relative">
+        <div
+          className={`grid gap-6 lg:grid-cols-2 ${
+            hideBillingUi ? "pointer-events-none select-none opacity-40" : ""
+          }`}
+          aria-hidden={hideBillingUi || undefined}
+        >
           <div className="staff-card">
             <h3 className="panel-heading">Comprar plazas</h3>
             <p className="mb-4 text-sm text-ink-500">
@@ -636,6 +677,21 @@ export default function TeacherScreen() {
             </div>
           </div>
         </div>
+        {hideBillingUi ? (
+          <div className="absolute inset-0 z-10 flex items-center justify-center p-4">
+            <div className="staff-card max-w-md text-center shadow-lg">
+              <p className="text-base font-bold text-ink-900">
+                Tienes un periodo de prueba gratis
+              </p>
+              <p className="mt-2 text-sm text-ink-500">
+                {trialDays != null ? `${formatTrialLabel(trialDays)}. ` : ""}
+                Comprar plazas y el enlace de pago del alumno se activan al
+                terminar la prueba.
+              </p>
+            </div>
+          </div>
+        ) : null}
+        </div>
       )}
 
       {section === "alta" && (
@@ -644,8 +700,9 @@ export default function TeacherScreen() {
             <div className="staff-card">
               <h3 className="panel-heading">Para meter alumnos</h3>
               <p className="mb-4 text-sm text-ink-500">
-                La prueba sirve para ver la plataforma. Un alumno entra con una
-                plaza de pack o pagando él.
+                {hideBillingUi
+                  ? "Tienes un periodo de prueba gratis. El cobro de plazas y el pago del alumno se activan al terminar la prueba."
+                  : "La prueba sirve para ver la plataforma. Un alumno entra con una plaza de pack o pagando él."}
               </p>
               <div className="flex flex-col gap-2">
                 <button
@@ -667,9 +724,11 @@ export default function TeacherScreen() {
           ) : (
           <div className="staff-card">
             <h3 className="panel-heading">Nuevo alumno</h3>
-            <p className="mb-3 text-sm text-ink-500">
-              Esta alta usa 1 plaza del pack ({seatsLeft} libres).
-            </p>
+            {!hideBillingUi ? (
+              <p className="mb-3 text-sm text-ink-500">
+                Esta alta usa 1 plaza del pack ({seatsLeft} libres).
+              </p>
+            ) : null}
             <form onSubmit={handleAddStudent} className="flex flex-col gap-3">
               <input
                 type="text"

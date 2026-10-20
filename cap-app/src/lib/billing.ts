@@ -72,6 +72,14 @@ export const SCHOOL_PAY_LABELS: Record<SchoolPayStatus, string> = {
   unpaid: "Sin pago",
 };
 
+/** Trial is running and there is no paid pack: lock license / student-pay actions. */
+export function isActiveSchoolTrial(input: {
+  trialEndsAt?: number | null;
+  packPaidUntil?: number | null;
+}): boolean {
+  return schoolPayStatus(input) === "trial";
+}
+
 export function studentPayLabel(input: {
   billing?: BillingKind | string | null;
   paidUntil?: unknown;
