@@ -196,7 +196,12 @@ export default function StatsChart({ records, filterTestId }: StatsChartProps) {
 
     if (found) {
       const passed = found.record.score >= PASS;
-      tooltip.innerHTML = `<strong>${found.record.testName}</strong><br>
+      const name = found.record.testName
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+      tooltip.innerHTML = `<strong>${name}</strong><br>
         <span style="color:${passed ? BRAND : DANGER}; font-weight:700;">${formatScore(found.record.score)} pts</span>
         &nbsp;${found.record.passed ? "✅ Aprobado" : "❌ Suspenso"}`;
       const W = rect.width;

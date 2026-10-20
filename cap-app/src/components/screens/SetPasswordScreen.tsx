@@ -2,7 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
-import { getUserDoc, setUserPassword } from "@/lib/db";
+import { getUserDoc } from "@/lib/db";
+import { staffRemote } from "@/lib/api";
 import { parsePaidUntil } from "@/lib/billing";
 import { PORTAL_LABELS } from "@/lib/portal";
 import { IconSpinner } from "@/components/icons";
@@ -27,17 +28,21 @@ export default function SetPasswordScreen() {
 
     setBusy(true);
     try {
-      await setUserPassword(pendingPwdUser.username, p1);
+      await staffRemote("setPassword", { password: p1 });
       const doc = await getUserDoc(pendingPwdUser.username);
       const role =
-        pendingPwdUser.role === "teacher" || doc?.role === "teacher"
-          ? "teacher"
+        pendingPwdUser.role === "teacher" ||
+        pendingPwdUser.role === "root" ||
+        doc?.role === "teacher"
+          ? pendingPwdUser.role === "root"
+            ? "root"
+            : "teacher"
           : "student";
       loginAs({
         username: pendingPwdUser.username,
         name: pendingPwdUser.name,
         role,
-        capTrack: role === "teacher" ? undefined : pendingPwdUser.capTrack,
+        capTrack: role === "teacher" || role === "root" ? undefined : pendingPwdUser.capTrack,
         billing:
           doc?.billing === "prepaid" || doc?.billing === "school"
             ? doc.billing
@@ -75,21 +80,23 @@ export default function SetPasswordScreen() {
             className="input"
             placeholder="Nueva Contraseña"
             required
+            minLength={6}
             value={pwd1}
             onChange={(e) => setPwd1(e.target.value)}
           />
           <input
             type="password"
             className="input"
-            placeholder="Repita la Contraseña"
+            placeholder="Repetir Contraseña"
             required
+            minLength={6}
             value={pwd2}
             onChange={(e) => setPwd2(e.target.value)}
           />
           {error && <p className="error-text">{error}</p>}
-          <button type="submit" className="btn-primary mt-1 w-full" disabled={busy}>
+          <button type="submit" className="btn-primary w-full" disabled={busy}>
             {busy && <IconSpinner className="text-base" />}
-            Guardar y Entrar
+            Guardar y entrar
           </button>
         </form>
       </div>

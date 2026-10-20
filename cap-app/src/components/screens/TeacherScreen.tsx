@@ -8,6 +8,7 @@ import {
   connectOnboardRemote,
   createSchoolPackRemote,
   ensureCenterRemote,
+  staffRemote,
   type CenterInfo,
 } from "@/lib/api";
 import {
@@ -24,7 +25,6 @@ import {
   remainingTrialDays,
 } from "@/lib/trial";
 import {
-  deleteUser,
   listStudentsByTeacher,
   loadScoreRecords,
   type UserListEntry,
@@ -295,7 +295,7 @@ export default function TeacherScreen() {
   async function handleDelete(u: string) {
     if (!confirm(`¿Seguro que quieres borrar al alumno ${u}?`)) return;
     try {
-      await deleteUser(u);
+      await staffRemote("deleteStudent", { username: u });
       if (selected?.username === u) {
         setSelected(null);
         setSection("alumnos");

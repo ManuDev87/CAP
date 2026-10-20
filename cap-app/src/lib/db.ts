@@ -158,8 +158,15 @@ export async function listAllStudents(): Promise<UserListEntry[]> {
 export async function listStudentsByTeacher(
   teacherId: string
 ): Promise<UserListEntry[]> {
-  const students = await listAllStudents();
-  return students.filter((u) => u.teacherId === teacherId);
+  const snap = await getDocs(
+    query(collection(db, "users"), where("teacherId", "==", teacherId))
+  );
+  const students: UserListEntry[] = [];
+  snap.forEach((d) => {
+    const entry = toListEntry(d.id, d.data() as UserDoc);
+    if (entry.role === "student") students.push(entry);
+  });
+  return students;
 }
 
 /** Assign an existing orphan student to a teacher (root only). */

@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase-admin/app";
+import { getAuth } from "firebase-admin/auth";
 import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
 import { onRequest, type Request } from "firebase-functions/v2/https";
 import { defineSecret, defineString } from "firebase-functions/params";
@@ -161,12 +162,44 @@ async function uniqueSchoolCode(schoolName: string): Promise<string> {
 }
 
 async function mintToken(
-  _username: string,
-  _role: Role,
-  _extra: { teacherId?: string; schoolCode?: string } = {}
+  username: string,
+  role: Role,
+  extra: { teacherId?: string; schoolCode?: string } = {}
 ): Promise<string> {
-  // Contraseñas en Firestore; el proyecto no usa Firebase Auth.
-  return "";
+  const claims: Record<string, string> = { role };
+  if (extra.teacherId) claims.teacherId = extra.teacherId;
+  if (extra.schoolCode) claims.schoolCode = extra.schoolCode;
+  return getAuth().createCustomToken(username, claims);
+}
+
+async function callerFromRequest(
+  req: Request
+): Promise<{ uid: string; role: Role } | null> {
+  const header = req.headers.authorization;
+  if (typeof header !== "string" || !header.startsWith("Bearer ")) return null;
+  try {
+    const decoded = await getAuth().verifyIdToken(header.slice(7));
+    const role: Role =
+      decoded.role === "teacher" || decoded.role === "root"
+        ? decoded.role
+        : "student";
+    return { uid: decoded.uid, role };
+  } catch (err) {
+    logger.warn("Invalid ID token", err);
+    return null;
+  }
+}
+
+async function requireCaller(
+  req: Request,
+  res: { status: (n: number) => { json: (b: unknown) => void } }
+): Promise<{ uid: string; role: Role } | null> {
+  const caller = await callerFromRequest(req);
+  if (!caller) {
+    json(res, 401, { error: "Sesión no válida. Entra otra vez." });
+    return null;
+  }
+  return caller;
 }
 
 function publicUser(id: string, data: Record<string, unknown>) {
@@ -205,24 +238,35 @@ export const login = onRequest(httpsOpts, async (req, res) => {
     return;
   }
 
-  if (username === "root") {
-    json(res, 400, { error: "Usa el portal de administrador" });
-    return;
-  }
-
   const userRef = db.collection("users").doc(username);
   const userSnap = await userRef.get();
-  if (!userSnap.exists) {
+  if (!userSnap.exists && username !== "root") {
     json(res, 401, { error: "Usuario no encontrado" });
     return;
   }
-  const data = userSnap.data()!;
+  const data = (userSnap.data() ?? { name: "root", role: "root" }) as Record<
+    string,
+    unknown
+  >;
   const secretSnap = await db.collection("user_secrets").doc(username).get();
   const hash = secretSnap.data()?.passwordHash as string | undefined;
   const legacy = typeof data.password === "string" ? data.password : "";
+  const uninitialized = !hash && (!legacy || legacy === "");
 
   let ok = false;
-  if (hash) {
+  let mustSetPassword = false;
+  if (username === "root" && !password) {
+    json(res, 401, { error: "Usuario o contraseña no válidos" });
+    return;
+  }
+  if (!password) {
+    if (!uninitialized) {
+      json(res, 401, { error: "Usuario o contraseña no válidos" });
+      return;
+    }
+    ok = true;
+    mustSetPassword = true;
+  } else if (hash) {
     ok = await bcrypt.compare(password, hash);
   } else if (legacy) {
     ok = legacy === password;
@@ -232,20 +276,37 @@ export const login = onRequest(httpsOpts, async (req, res) => {
         passwordHash: nextHash,
         migratedAt: FieldValue.serverTimestamp(),
       });
-      await userRef.update({ password: FieldValue.delete() });
+      if (userSnap.exists) {
+        await userRef.update({ password: FieldValue.delete() });
+      }
     }
+  } else if (username === "root" && password === "1234") {
+    ok = true;
+    mustSetPassword = true;
   }
   if (!ok) {
     json(res, 401, { error: "Credenciales incorrectas" });
     return;
   }
 
-  const role: Role = data.role === "teacher" ? "teacher" : "student";
+  const role: Role =
+    username === "root" || data.role === "root"
+      ? "root"
+      : data.role === "teacher"
+        ? "teacher"
+        : "student";
+  if (username === "root" && !userSnap.exists) {
+    await userRef.set({ name: "root", role: "root" }, { merge: true });
+  }
   const token = await mintToken(username, role, {
-    teacherId: data.teacherId,
-    schoolCode: data.schoolCode,
+    teacherId: String(data.teacherId ?? ""),
+    schoolCode: String(data.schoolCode ?? ""),
   });
-  json(res, 200, { token, user: publicUser(username, data) });
+  json(res, 200, {
+    token,
+    user: publicUser(username, { ...data, role, name: data.name ?? username }),
+    mustSetPassword,
+  });
 });
 
 export const registerTeacher = onRequest(httpsOpts, async (req, res) => {
@@ -407,6 +468,12 @@ export const addStudentByTeacher = onRequest(httpsOpts, async (req, res) => {
     return;
   }
 
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  if (caller.role !== "teacher" || caller.uid !== teacherUsername) {
+    json(res, 403, { error: "Solo el profesor puede dar de alta alumnos" });
+    return;
+  }
   const teacherSnap = await db.collection("users").doc(teacherUsername).get();
   if (!teacherSnap.exists || teacherSnap.data()?.role !== "teacher") {
     json(res, 403, { error: "Solo el profesor puede dar de alta alumnos" });
@@ -480,6 +547,12 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
     return;
   }
 
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  if (caller.uid !== username) {
+    json(res, 403, { error: "El cobro solo puede hacerlo el propio alumno" });
+    return;
+  }
   const userSnap = await db.collection("users").doc(username).get();
   if (!userSnap.exists) {
     json(res, 404, { error: "Usuario no encontrado" });
@@ -586,6 +659,12 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
     return;
   }
 
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  if (caller.role !== "teacher" || caller.uid !== username) {
+    json(res, 403, { error: "Solo el profesor puede comprar plazas" });
+    return;
+  }
   const userSnap = await db.collection("users").doc(username).get();
   if (!userSnap.exists || userSnap.data()?.role !== "teacher") {
     json(res, 403, { error: "Solo el profesor puede comprar plazas" });
@@ -817,6 +896,12 @@ export const ensureCenter = onRequest(httpsOpts, async (req, res) => {
     json(res, 400, { error: "Usuario no válido" });
     return;
   }
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  if (caller.role !== "teacher" || caller.uid !== username) {
+    json(res, 403, { error: "Solo el profesor puede crear el código" });
+    return;
+  }
   const userRef = db.collection("users").doc(username);
   const userSnap = await userRef.get();
   if (!userSnap.exists || userSnap.data()?.role !== "teacher") {
@@ -851,6 +936,12 @@ export const connectOnboard = onRequest(httpsOpts, async (req, res) => {
   const username = normalizeUsername(body.username);
   if (!isValidUsername(username)) {
     json(res, 400, { error: "Usuario no válido" });
+    return;
+  }
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  if (caller.role !== "teacher" || caller.uid !== username) {
+    json(res, 403, { error: "Solo el profesor puede vincular Stripe" });
     return;
   }
   const userSnap = await db.collection("users").doc(username).get();
@@ -909,4 +1000,175 @@ export const connectOnboard = onRequest(httpsOpts, async (req, res) => {
     }
     json(res, 502, { error: "No se pudo abrir Stripe Connect. Inténtalo de nuevo." });
   }
+});
+
+export const staff = onRequest(httpsOpts, async (req, res) => {
+  if (req.method !== "POST") {
+    json(res, 405, { error: "Method not allowed" });
+    return;
+  }
+  const caller = await requireCaller(req, res);
+  if (!caller) return;
+  const body = await readJson(req);
+  const action = String(body.action ?? "");
+
+  if (action === "setPassword") {
+    const password = String(body.password ?? "");
+    if (password.length < 6) {
+      json(res, 400, { error: "La contraseña debe tener al menos 6 caracteres" });
+      return;
+    }
+    await db.collection("user_secrets").doc(caller.uid).set({
+      passwordHash: await bcrypt.hash(password, 10),
+      updatedAt: FieldValue.serverTimestamp(),
+    });
+    await db
+      .collection("users")
+      .doc(caller.uid)
+      .set({ password: FieldValue.delete() }, { merge: true });
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  if (action === "deleteStudent") {
+    const username = normalizeUsername(body.username);
+    if (!isValidUsername(username)) {
+      json(res, 400, { error: "Usuario no válido" });
+      return;
+    }
+    const snap = await db.collection("users").doc(username).get();
+    if (!snap.exists || snap.data()?.role === "teacher" || snap.data()?.role === "root") {
+      json(res, 404, { error: "Alumno no encontrado" });
+      return;
+    }
+    const owner = String(snap.data()?.teacherId ?? "");
+    if (caller.role !== "root" && !(caller.role === "teacher" && caller.uid === owner)) {
+      json(res, 403, { error: "No puedes borrar este alumno" });
+      return;
+    }
+    await db.collection("users").doc(username).delete();
+    await db.collection("user_secrets").doc(username).delete().catch(() => undefined);
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  if (caller.role !== "root") {
+    json(res, 403, { error: "Solo el administrador" });
+    return;
+  }
+
+  if (action === "createUser") {
+    const username = normalizeUsername(body.username);
+    const name = String(body.name ?? "").trim();
+    const password = String(body.password ?? "");
+    const role: Role = body.role === "teacher" ? "teacher" : "student";
+    if (!isValidUsername(username) || !name) {
+      json(res, 400, { error: "Datos no válidos" });
+      return;
+    }
+    if (password && password.length < 6) {
+      json(res, 400, { error: "La contraseña debe tener al menos 6 caracteres" });
+      return;
+    }
+    const userRef = db.collection("users").doc(username);
+    if ((await userRef.get()).exists) {
+      json(res, 409, { error: "Ese usuario ya existe" });
+      return;
+    }
+    const userData: Record<string, unknown> = { name, role };
+    if (role === "teacher") {
+      const schoolName = String(body.schoolName ?? "").trim();
+      if (!schoolName) {
+        json(res, 400, { error: "Nombre de autoescuela obligatorio" });
+        return;
+      }
+      userData.schoolName = schoolName;
+      const trialEndsAt = Number(body.trialEndsAt);
+      if (Number.isFinite(trialEndsAt) && trialEndsAt > 0) {
+        userData.trialEndsAt = Timestamp.fromMillis(trialEndsAt);
+      }
+    } else {
+      const teacherId = normalizeUsername(body.teacherId);
+      if (!isValidUsername(teacherId)) {
+        json(res, 400, { error: "Profesor obligatorio" });
+        return;
+      }
+      userData.teacherId = teacherId;
+      userData.capTrack = body.capTrack === "viajeros" ? "viajeros" : "mercancias";
+    }
+    const batch = db.batch();
+    batch.set(userRef, userData);
+    if (password) {
+      batch.set(db.collection("user_secrets").doc(username), {
+        passwordHash: await bcrypt.hash(password, 10),
+        createdAt: FieldValue.serverTimestamp(),
+      });
+    }
+    await batch.commit();
+    json(res, 200, { ok: true, user: publicUser(username, userData) });
+    return;
+  }
+
+  if (action === "deleteUser") {
+    const username = normalizeUsername(body.username);
+    if (!isValidUsername(username) || username === "root") {
+      json(res, 400, { error: "Usuario no válido" });
+      return;
+    }
+    await db.collection("users").doc(username).delete();
+    await db.collection("user_secrets").doc(username).delete().catch(() => undefined);
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  if (action === "assignStudent") {
+    const username = normalizeUsername(body.username);
+    const teacherId = normalizeUsername(body.teacherId);
+    if (!isValidUsername(username) || !isValidUsername(teacherId)) {
+      json(res, 400, { error: "Datos no válidos" });
+      return;
+    }
+    const teacher = await db.collection("users").doc(teacherId).get();
+    if (!teacher.exists || teacher.data()?.role !== "teacher") {
+      json(res, 400, { error: "Profesor no válido" });
+      return;
+    }
+    await db.collection("users").doc(username).set(
+      { teacherId, role: "student" },
+      { merge: true }
+    );
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  if (action === "setTrial") {
+    const username = normalizeUsername(body.username);
+    const trialEndsAt = Number(body.trialEndsAt);
+    if (!isValidUsername(username) || !Number.isFinite(trialEndsAt)) {
+      json(res, 400, { error: "Datos no válidos" });
+      return;
+    }
+    await db.collection("users").doc(username).set(
+      { trialEndsAt: Timestamp.fromMillis(trialEndsAt) },
+      { merge: true }
+    );
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  if (action === "setSeed") {
+    const username = normalizeUsername(body.username);
+    if (!isValidUsername(username)) {
+      json(res, 400, { error: "Usuario no válido" });
+      return;
+    }
+    await db.collection("users").doc(username).set(
+      { showSeedBtn: body.enabled === true },
+      { merge: true }
+    );
+    json(res, 200, { ok: true });
+    return;
+  }
+
+  json(res, 400, { error: "Acción no válida" });
 });

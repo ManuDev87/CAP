@@ -1,4 +1,5 @@
 import { getApps, initializeApp, type FirebaseApp } from "firebase/app";
+import { getAuth, type Auth } from "firebase/auth";
 import {
   getFirestore,
   initializeFirestore,
@@ -39,3 +40,4 @@ function createDb(): Firestore {
 }
 
 export const db = createDb();
+export const auth: Auth = getAuth(app);

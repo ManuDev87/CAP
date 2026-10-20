@@ -1,3 +1,5 @@
+import { currentIdToken } from "./authSession";
+
 const FUNCTIONS_BASE =
   process.env.NEXT_PUBLIC_FUNCTIONS_URL ??
   "https://europe-west1-grupo-cap.cloudfunctions.net";
@@ -12,9 +14,14 @@ export class ApiError extends Error {
 }
 
 async function post<T>(path: string, body: unknown): Promise<T> {
+  const token = await currentIdToken();
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+  };
+  if (token) headers.Authorization = `Bearer ${token}`;
   const res = await fetch(`${FUNCTIONS_BASE}/${path}`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify(body),
   });
   let data: { error?: string } & T;
@@ -43,7 +50,10 @@ export type ApiUser = {
 };
 
 export function loginRemote(username: string, password: string) {
-  return post<{ token: string; user: ApiUser }>("login", { username, password });
+  return post<{ token: string; user: ApiUser; mustSetPassword?: boolean }>(
+    "login",
+    { username, password }
+  );
 }
 
 export function registerTeacherRemote(input: {
@@ -114,4 +124,11 @@ export function ensureCenterRemote(username: string) {
   return post<CenterInfo>("ensureCenter", {
     username,
   });
+}
+
+export function staffRemote<T = { ok: true }>(
+  action: string,
+  body: Record<string, unknown> = {}
+) {
+  return post<T>("staff", { action, ...body });
 }

@@ -7,6 +7,7 @@ import {
   registerStudentRemote,
   registerTeacherRemote,
 } from "@/lib/api";
+import { signInWithAppToken } from "@/lib/authSession";
 import type { CapTrack } from "@/lib/types";
 import { CAP_TRACK_LABELS } from "@/lib/types";
 import { IconSpinner } from "@/components/icons";
@@ -29,12 +30,14 @@ export default function SignupScreen() {
     setBusy(true);
     try {
       if (isTeacher) {
-        const { user } = await registerTeacherRemote({
+        const { user, token } = await registerTeacherRemote({
           username,
           password,
           name,
           schoolName,
         });
+        if (!token) throw new ApiError("No se pudo abrir la sesión", 500);
+        await signInWithAppToken(token);
         loginAs({
           username: user.username,
           name: user.name,
@@ -44,13 +47,15 @@ export default function SignupScreen() {
         });
         return;
       }
-      const { user } = await registerStudentRemote({
+      const { user, token } = await registerStudentRemote({
         username,
         password,
         name,
         schoolCode,
         capTrack,
       });
+      if (!token) throw new ApiError("No se pudo abrir la sesión", 500);
+      await signInWithAppToken(token);
       loginAs({
         username: user.username,
         name: user.name,

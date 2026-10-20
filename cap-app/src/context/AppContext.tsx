@@ -11,6 +11,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 import { getUserDoc, loadWrongQuestions } from "@/lib/db";
+import { signOutApp, waitForAuthUser } from "@/lib/authSession";
 import { parsePaidUntil, studentNeedsPaywall } from "@/lib/billing";
 import {
   PORTAL_PATHS,
@@ -149,15 +150,6 @@ export function AppProvider({
       const justPaid = params.get("paid") === "1";
       if (code) setSchoolCodeFromUrl(code);
 
-      const username = localStorage.getItem(USER_KEY);
-      if (!username) {
-        if (!cancelled) {
-          if (code && portal === "alumno") setScreen("signup");
-          setHydrated(true);
-        }
-        return;
-      }
-
       const applySession = (u: SessionUser) => {
         const home = portalForRole(u.role);
         if (home !== portal) {
@@ -165,6 +157,7 @@ export function AppProvider({
           return;
         }
         setUser(u);
+        localStorage.setItem(USER_KEY, u.username);
         localStorage.setItem(USER_NAME_KEY, u.name);
         localStorage.setItem(USER_ROLE_KEY, u.role);
         if (studentNeedsPaywall(u) || (forcePaywall && u.role === "student")) {
@@ -185,28 +178,33 @@ export function AppProvider({
         setHydrated(true);
       };
 
-      if (username === "root") {
-        if (!cancelled) {
-          applySession({ username: "root", name: "root", role: "root" });
-        }
+      const fbUser = await waitForAuthUser();
+      if (cancelled) return;
+      if (!fbUser) {
+        localStorage.removeItem(USER_KEY);
+        localStorage.removeItem(USER_NAME_KEY);
+        localStorage.removeItem(USER_ROLE_KEY);
+        if (code && portal === "alumno") setScreen("signup");
+        setHydrated(true);
         return;
       }
 
-      const cachedRole = localStorage.getItem(USER_ROLE_KEY);
-      const cachedName = localStorage.getItem(USER_NAME_KEY) || username;
+      const username = fbUser.uid;
+      if (username === "root") {
+        applySession({ username: "root", name: "root", role: "root" });
+        return;
+      }
 
       try {
         const doc = await getUserDoc(username);
         if (cancelled) return;
         if (!doc) {
-          localStorage.removeItem(USER_KEY);
-          localStorage.removeItem(USER_NAME_KEY);
-          localStorage.removeItem(USER_ROLE_KEY);
+          await signOutApp();
           if (code && portal === "alumno") setScreen("signup");
           setHydrated(true);
           return;
         }
-        const session = sessionFromDoc(username, doc, cachedName);
+        const session = sessionFromDoc(username, doc);
         if (justPaid && session.role === "student") {
           applySession({
             ...session,
@@ -217,13 +215,8 @@ export function AppProvider({
         applySession(session);
       } catch {
         if (cancelled) return;
-        const role: SessionUser["role"] =
-          cachedRole === "teacher"
-            ? "teacher"
-            : cachedRole === "root"
-              ? "root"
-              : "student";
-        applySession({ username, name: cachedName, role });
+        if (code && portal === "alumno") setScreen("signup");
+        setHydrated(true);
       }
     })();
     return () => {
@@ -274,6 +267,7 @@ export function AppProvider({
   }, []);
 
   const logout = useCallback(() => {
+    void signOutApp();
     setUser(null);
     setActiveExam(null);
     setQuizMode(null);

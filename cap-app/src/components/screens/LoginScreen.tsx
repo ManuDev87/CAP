@@ -2,16 +2,13 @@
 
 import { useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
-import { getUserDoc } from "@/lib/db";
 import {
   PORTAL_LABELS,
   roleMatchesPortal,
   wrongPortalMessage,
 } from "@/lib/portal";
 import { ApiError, loginRemote } from "@/lib/api";
-import { parsePaidUntil } from "@/lib/billing";
-import type { SessionUser } from "@/lib/types";
-import { normalizeCapTrack } from "@/lib/types";
+import { signInWithAppToken } from "@/lib/authSession";
 import { IconSpinner } from "@/components/icons";
 
 export default function LoginScreen() {
@@ -26,88 +23,40 @@ export default function LoginScreen() {
     const user = username.trim().toLowerCase();
     const pass = password.trim();
     setError(null);
-
-    if (user === "root" && pass === "1234") {
-      if (!roleMatchesPortal("root", portal)) {
-        setError(wrongPortalMessage(portal));
-        return;
-      }
-      loginAs({ username: "root", name: "root", role: "root" });
-      return;
-    }
-
     setBusy(true);
     try {
-      if (pass) {
-        try {
-          const remote = await loginRemote(user, pass);
-          if (!roleMatchesPortal(remote.user.role, portal)) {
-            setError(wrongPortalMessage(portal));
-            return;
-          }
-          loginAs({
-            username: remote.user.username,
-            name: remote.user.name,
-            role: remote.user.role,
-            capTrack:
-              remote.user.role === "student" ? remote.user.capTrack : undefined,
-            billing: remote.user.billing ?? undefined,
-            paidUntil: remote.user.paidUntil ?? undefined,
-            schoolCode: remote.user.schoolCode ?? undefined,
-            trialEndsAt: remote.user.trialEndsAt ?? undefined,
-          });
-          return;
-        } catch (err) {
-          if (err instanceof ApiError && err.status === 401) {
-            setError(err.message);
-            return;
-          }
-        }
-      }
-
-      const data = await getUserDoc(user);
-      if (!data) {
-        setError("Usuario no encontrado");
-        return;
-      }
-
-      const role: SessionUser["role"] =
-        data.role === "teacher" ? "teacher" : "student";
-
-      if (!roleMatchesPortal(role, portal)) {
+      const remote = await loginRemote(user, pass);
+      if (!roleMatchesPortal(remote.user.role, portal)) {
         setError(wrongPortalMessage(portal));
         return;
       }
-
-      if (!data.password || data.password === "") {
+      if (!remote.token) {
+        setError("No se pudo abrir la sesión");
+        return;
+      }
+      await signInWithAppToken(remote.token);
+      if (remote.mustSetPassword) {
         requestSetPassword(
-          user,
-          data.name,
-          role,
-          role === "student" ? normalizeCapTrack(data.capTrack) : undefined
+          remote.user.username,
+          remote.user.name,
+          remote.user.role,
+          remote.user.role === "student" ? remote.user.capTrack : undefined
         );
         return;
       }
-      if (data.password === pass) {
-        loginAs({
-          username: user,
-          name: data.name,
-          role,
-          capTrack: role === "student" ? normalizeCapTrack(data.capTrack) : undefined,
-          billing:
-            data.billing === "prepaid" || data.billing === "school"
-              ? data.billing
-              : undefined,
-          paidUntil: parsePaidUntil(data.paidUntil),
-          schoolCode: data.schoolCode,
-          trialEndsAt: parsePaidUntil(data.trialEndsAt),
-        });
-      } else {
-        setError("Credenciales incorrectas");
-      }
+      loginAs({
+        username: remote.user.username,
+        name: remote.user.name,
+        role: remote.user.role,
+        capTrack:
+          remote.user.role === "student" ? remote.user.capTrack : undefined,
+        billing: remote.user.billing ?? undefined,
+        paidUntil: remote.user.paidUntil ?? undefined,
+        schoolCode: remote.user.schoolCode ?? undefined,
+        trialEndsAt: remote.user.trialEndsAt ?? undefined,
+      });
     } catch (err) {
-      console.error("Login err", err);
-      setError("Error de conexión");
+      setError(err instanceof ApiError ? err.message : "Error de conexión");
     } finally {
       setBusy(false);
     }

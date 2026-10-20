@@ -2,15 +2,11 @@
 
 import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import { useApp } from "@/context/AppContext";
+import { ApiError, staffRemote } from "@/lib/api";
 import {
-  assignStudentToTeacher,
-  createUser,
-  deleteUser,
   listAllStudents,
   listCenters,
   listTeachers,
-  setShowSeedBtn,
-  setTeacherTrialEndsAt,
   type CenterListEntry,
   type UserListEntry,
 } from "@/lib/db";
@@ -251,7 +247,7 @@ export default function BackofficeScreen() {
 
     setTBusy(true);
     try {
-      const created = await createUser({
+      await staffRemote("createUser", {
         username,
         name,
         password,
@@ -261,10 +257,6 @@ export default function BackofficeScreen() {
           ? addTrialMonths(new Date(), tTrialMonths).getTime()
           : schoolTrialEndsAt(teachers, schoolName),
       });
-      if (!created) {
-        alert("Ese nombre de usuario ya existe.");
-        return;
-      }
       setTName("");
       setTUsername("");
       setTPassword("");
@@ -275,7 +267,7 @@ export default function BackofficeScreen() {
       setTimeout(() => setTSuccess(false), 3000);
       await refresh();
     } catch (err) {
-      alert("Error al conectar: " + (err as Error).message);
+      alert(err instanceof ApiError ? err.message : "Error al conectar: " + (err as Error).message);
     } finally {
       setTBusy(false);
     }
@@ -292,7 +284,7 @@ export default function BackofficeScreen() {
 
     setSBusy(true);
     try {
-      const created = await createUser({
+      await staffRemote("createUser", {
         username,
         name,
         password,
@@ -300,10 +292,6 @@ export default function BackofficeScreen() {
         teacherId: sTeacherId,
         capTrack: sCapTrack,
       });
-      if (!created) {
-        alert("Ese nombre de usuario ya existe.");
-        return;
-      }
       setSName("");
       setSUsername("");
       setSPassword("");
@@ -313,7 +301,7 @@ export default function BackofficeScreen() {
       setTimeout(() => setSSuccess(false), 3000);
       await refresh();
     } catch (err) {
-      alert("Error al conectar: " + (err as Error).message);
+      alert(err instanceof ApiError ? err.message : "Error al conectar: " + (err as Error).message);
     } finally {
       setSBusy(false);
     }
@@ -322,7 +310,7 @@ export default function BackofficeScreen() {
   async function handleDelete(u: string, kind: "profesor" | "alumno") {
     if (!confirm(`¿Seguro que quieres borrar al ${kind} ${u}?`)) return;
     try {
-      await deleteUser(u);
+      await staffRemote("deleteUser", { username: u });
       await refresh();
     } catch (err) {
       alert("Error al borrar: " + (err as Error).message);
@@ -332,7 +320,7 @@ export default function BackofficeScreen() {
   async function handleAssign(username: string, teacherId: string) {
     if (!teacherId) return;
     try {
-      await assignStudentToTeacher(username, teacherId);
+      await staffRemote("assignStudent", { username, teacherId });
       await refresh();
     } catch (err) {
       alert("Error al asignar: " + (err as Error).message);
@@ -341,7 +329,7 @@ export default function BackofficeScreen() {
 
   async function handleToggleSeed(u: string, enabled: boolean) {
     try {
-      await setShowSeedBtn(u, enabled);
+      await staffRemote("setSeed", { username: u, enabled });
     } catch (err) {
       alert("Error al actualizar permiso: " + (err as Error).message);
     }
@@ -357,7 +345,10 @@ export default function BackofficeScreen() {
         : new Date();
     const next = addTrialMonths(from, months).getTime();
     try {
-      await setTeacherTrialEndsAt(teacher.username, next);
+      await staffRemote("setTrial", {
+        username: teacher.username,
+        trialEndsAt: next,
+      });
       await refresh();
     } catch (err) {
       alert(
