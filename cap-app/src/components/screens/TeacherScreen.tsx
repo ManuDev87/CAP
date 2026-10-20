@@ -640,12 +640,16 @@ export default function TeacherScreen() {
                 {schoolCode}
               </p>
             ) : null}
-            {inviteUrl ? (
+            {hideBillingUi ? (
+              <p className="mb-3 text-sm font-medium text-ink-500">
+                El enlace de alta se activa al terminar la prueba.
+              </p>
+            ) : inviteUrl ? (
               <p className="mb-3 break-all text-sm font-medium text-ink-600">
                 {inviteUrl}
               </p>
             ) : null}
-            {qrSrc ? (
+            {!hideBillingUi && qrSrc ? (
               <div className="mb-4 flex justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

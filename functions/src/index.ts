@@ -94,6 +94,29 @@ function seatState(data: Record<string, unknown> | undefined) {
   return { seatsPurchased, seatsUsed, packUntil, packActive, hasSeat };
 }
 
+const TRIAL_BILLING_MSG =
+  "Esta autoescuela está en periodo de prueba. El alta y el pago se activan al terminar la prueba.";
+
+function trialStillActive(value: unknown): boolean {
+  const ms = millisFromTs(value);
+  if (ms == null) return false;
+  const end = new Date(ms);
+  const endDay = new Date(end.getFullYear(), end.getMonth(), end.getDate()).getTime();
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  return endDay >= today;
+}
+
+async function schoolTrialLocksBilling(
+  teacherId: string,
+  centerData: Record<string, unknown> | undefined
+): Promise<boolean> {
+  if (seatState(centerData).packActive) return false;
+  if (!teacherId) return false;
+  const teacher = await db.collection("users").doc(teacherId).get();
+  return trialStillActive(teacher.data()?.trialEndsAt);
+}
+
 function publicCenter(schoolCode: string, data: Record<string, unknown> | undefined) {
   const { seatsPurchased, seatsUsed, packActive } = seatState(data);
   const packPaidUntil = millisFromTs(data?.packPaidUntil);
@@ -319,6 +342,10 @@ export const registerStudent = onRequest(httpsOpts, async (req, res) => {
     json(res, 400, { error: "Centro sin profesor asignado" });
     return;
   }
+  if (await schoolTrialLocksBilling(teacherId, centerSnap.data())) {
+    json(res, 403, { error: TRIAL_BILLING_MSG });
+    return;
+  }
 
   const userRef = db.collection("users").doc(username);
   if ((await userRef.get()).exists) {
@@ -400,6 +427,10 @@ export const addStudentByTeacher = onRequest(httpsOpts, async (req, res) => {
   const centerRef = db.collection("centers").doc(schoolCode);
   const centerSnap = await centerRef.get();
   const { seatsUsed, packUntil, hasSeat } = seatState(centerSnap.data());
+  if (await schoolTrialLocksBilling(teacherUsername, centerSnap.data())) {
+    json(res, 403, { error: TRIAL_BILLING_MSG });
+    return;
+  }
   if (!hasSeat) {
     json(res, 402, {
       error: "Sin plazas. Compra un pack o envía el enlace para que pague el alumno.",
@@ -466,6 +497,15 @@ export const createCheckoutSession = onRequest(httpsOpts, async (req, res) => {
   if (schoolCode) {
     const centerRef = db.collection("centers").doc(schoolCode);
     const center = await centerRef.get();
+    if (
+      await schoolTrialLocksBilling(
+        teacherId || String(center.data()?.teacherId ?? ""),
+        center.data()
+      )
+    ) {
+      json(res, 403, { error: TRIAL_BILLING_MSG });
+      return;
+    }
     const accountId = center.data()?.stripeAccountId as string | undefined;
     let chargesEnabled = center.data()?.chargesEnabled === true;
     if (accountId && !chargesEnabled) {
@@ -554,6 +594,11 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
   const schoolCode = String(userSnap.data()?.schoolCode ?? "");
   if (!schoolCode) {
     json(res, 400, { error: "Este profesor no tiene código de centro" });
+    return;
+  }
+  const packCenter = await db.collection("centers").doc(schoolCode).get();
+  if (await schoolTrialLocksBilling(username, packCenter.data())) {
+    json(res, 403, { error: TRIAL_BILLING_MSG });
     return;
   }
 
@@ -854,6 +899,14 @@ export const connectOnboard = onRequest(httpsOpts, async (req, res) => {
     json(res, 200, { url: link.url, accountId });
   } catch (err) {
     logger.error("connectOnboard failed", err);
+    const msg = err instanceof Error ? err.message : "";
+    if (msg.includes("signed up for Connect")) {
+      json(res, 503, {
+        error:
+          "Activa Stripe Connect una vez en el panel (modo test): dashboard.stripe.com/test/connect y pulsa Empezar. Luego vuelve a Cobrar 1 €.",
+      });
+      return;
+    }
     json(res, 502, { error: "No se pudo abrir Stripe Connect. Inténtalo de nuevo." });
   }
 });
