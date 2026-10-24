@@ -23,6 +23,7 @@ const REGION = "europe-west1";
 const EURO_CENTS = 100;
 const STUDENT_MONTH_CENTS = 5 * EURO_CENTS;
 const SCHOOL_MONTH_CENTS = 1 * EURO_CENTS;
+const SCHOOL_SEAT_MONTH_CENTS = 4 * EURO_CENTS;
 const MIN_MONTHS = 1;
 const MAX_MONTHS = 12;
 const MIN_SEATS = 1;
@@ -169,7 +170,12 @@ async function mintToken(
   const claims: Record<string, string> = { role };
   if (extra.teacherId) claims.teacherId = extra.teacherId;
   if (extra.schoolCode) claims.schoolCode = extra.schoolCode;
-  return getAuth().createCustomToken(username, claims);
+  try {
+    return await getAuth().createCustomToken(username, claims);
+  } catch (err) {
+    logger.error("createCustomToken failed", err);
+    throw err;
+  }
 }
 
 async function callerFromRequest(
@@ -233,7 +239,7 @@ export const login = onRequest(httpsOpts, async (req, res) => {
   const body = await readJson(req);
   const username = normalizeUsername(body.username);
   const password = String(body.password ?? "");
-  if (!isValidUsername(username) || !password) {
+  if (!isValidUsername(username)) {
     json(res, 400, { error: "Usuario o contraseña no válidos" });
     return;
   }
@@ -298,15 +304,22 @@ export const login = onRequest(httpsOpts, async (req, res) => {
   if (username === "root" && !userSnap.exists) {
     await userRef.set({ name: "root", role: "root" }, { merge: true });
   }
-  const token = await mintToken(username, role, {
-    teacherId: String(data.teacherId ?? ""),
-    schoolCode: String(data.schoolCode ?? ""),
-  });
-  json(res, 200, {
-    token,
-    user: publicUser(username, { ...data, role, name: data.name ?? username }),
-    mustSetPassword,
-  });
+  try {
+    const token = await mintToken(username, role, {
+      teacherId: String(data.teacherId ?? ""),
+      schoolCode: String(data.schoolCode ?? ""),
+    });
+    json(res, 200, {
+      token,
+      user: publicUser(username, { ...data, role, name: data.name ?? username }),
+      mustSetPassword,
+    });
+  } catch (err) {
+    logger.error("login mintToken failed", err);
+    json(res, 500, {
+      error: "No se pudo abrir la sesión. Inténtalo de nuevo.",
+    });
+  }
 });
 
 export const registerTeacher = onRequest(httpsOpts, async (req, res) => {
@@ -684,12 +697,24 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
   const origin = appUrl.value();
   const quantity = seats * months;
   try {
+    const basePrice = await stripeClient().prices.retrieve(stripePriceId.value());
+    const product =
+      typeof basePrice.product === "string" ? basePrice.product : basePrice.product.id;
     const packParams: CheckoutParams = {
       mode: "payment",
       success_url: `${origin}/profesor?pack=1`,
       cancel_url: `${origin}/profesor?pack=0`,
       client_reference_id: username,
-      line_items: [{ price: stripePriceId.value(), quantity }],
+      line_items: [
+        {
+          price_data: {
+            currency: "eur",
+            unit_amount: SCHOOL_SEAT_MONTH_CENTS,
+            product,
+          },
+          quantity,
+        },
+      ],
       invoice_creation: { enabled: true },
       managed_payments: { enabled: false },
       metadata: {
@@ -716,7 +741,7 @@ export const createSchoolPackCheckout = onRequest(httpsOpts, async (req, res) =>
       url: session.url,
       seats,
       months,
-      amountCents: STUDENT_MONTH_CENTS * quantity,
+      amountCents: SCHOOL_SEAT_MONTH_CENTS * quantity,
     });
   } catch (err) {
     logger.error("createSchoolPackCheckout failed", err);
@@ -828,7 +853,7 @@ export const stripeWebhook = onRequest(
         schoolCode,
         seats,
         months,
-        amountCents: session.amount_total ?? STUDENT_MONTH_CENTS * seats * months,
+        amountCents: session.amount_total ?? SCHOOL_SEAT_MONTH_CENTS * seats * months,
         createdAt: FieldValue.serverTimestamp(),
       });
       res.status(200).json({ received: true, kind: "school_pack" });
@@ -1049,6 +1074,44 @@ export const staff = onRequest(httpsOpts, async (req, res) => {
     await db.collection("users").doc(username).delete();
     await db.collection("user_secrets").doc(username).delete().catch(() => undefined);
     json(res, 200, { ok: true });
+    return;
+  }
+
+  if (action === "studentScores") {
+    const username = normalizeUsername(body.username);
+    if (!isValidUsername(username)) {
+      json(res, 400, { error: "Usuario no válido" });
+      return;
+    }
+    const snap = await db.collection("users").doc(username).get();
+    if (!snap.exists || snap.data()?.role === "teacher" || snap.data()?.role === "root") {
+      json(res, 404, { error: "Alumno no encontrado" });
+      return;
+    }
+    const owner = String(snap.data()?.teacherId ?? "");
+    if (caller.role !== "root" && !(caller.role === "teacher" && caller.uid === owner)) {
+      json(res, 403, { error: "No puedes ver este alumno" });
+      return;
+    }
+    const recordsSnap = await db
+      .collection("score_records")
+      .where("user", "==", username)
+      .get();
+    const records = recordsSnap.docs.map((d) => {
+      const data = d.data();
+      const ts = data.timestamp;
+      const timestamp =
+        ts instanceof Timestamp ? ts.toMillis() : typeof ts === "number" ? ts : 0;
+      return {
+        testId: String(data.testId ?? ""),
+        testName: String(data.testName ?? data.testId ?? ""),
+        score: Number(data.score ?? 0),
+        passed: data.passed === true,
+        timestamp,
+      };
+    });
+    records.sort((a, b) => a.timestamp - b.timestamp);
+    json(res, 200, { records });
     return;
   }
 

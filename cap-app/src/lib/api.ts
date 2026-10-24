@@ -132,3 +132,17 @@ export function staffRemote<T = { ok: true }>(
 ) {
   return post<T>("staff", { action, ...body });
 }
+
+export type RemoteScoreRecord = {
+  testId: string;
+  testName: string;
+  score: number;
+  passed: boolean;
+  timestamp: number;
+};
+
+export function studentScoresRemote(username: string) {
+  return staffRemote<{ records: RemoteScoreRecord[] }>("studentScores", {
+    username,
+  });
+}

@@ -5,6 +5,7 @@ import {
   doc,
   getDoc,
   getDocs,
+  increment,
   query,
   serverTimestamp,
   setDoc,
@@ -303,27 +304,18 @@ export async function saveResultStats(
   finalScore: number
 ): Promise<void> {
   const passed = finalScore >= 50;
-
-  // Pass/fail counters per user+test
   const docId = `${username}_${testId}`;
-  const ref = doc(db, "test_results", docId);
-  const snap = await getDoc(ref);
-  if (snap.exists()) {
-    const data = snap.data();
-    await updateDoc(ref, {
-      passes: passed ? (data.passes || 0) + 1 : data.passes || 0,
-      fails: !passed ? (data.fails || 0) + 1 : data.fails || 0,
-    });
-  } else {
-    await setDoc(ref, {
+  await setDoc(
+    doc(db, "test_results", docId),
+    {
       user: username,
       testId,
-      passes: passed ? 1 : 0,
-      fails: passed ? 0 : 1,
-    });
-  }
+      passes: increment(passed ? 1 : 0),
+      fails: increment(passed ? 0 : 1),
+    },
+    { merge: true }
+  );
 
-  // Individual score record for the stats screen
   await addDoc(collection(db, "score_records"), {
     user: username,
     testId,
@@ -420,21 +412,16 @@ export async function seedTestData(username: string): Promise<void> {
 
   for (const [testId, counts] of Object.entries(counters)) {
     const docId = `${username}_${testId}`;
-    const ref = doc(db, "test_results", docId);
-    const existing = await getDoc(ref);
-    if (existing.exists()) {
-      await updateDoc(ref, {
-        passes: (existing.data().passes || 0) + counts.passes,
-        fails: (existing.data().fails || 0) + counts.fails,
-      });
-    } else {
-      await setDoc(ref, {
+    await setDoc(
+      doc(db, "test_results", docId),
+      {
         user: username,
         testId,
-        passes: counts.passes,
-        fails: counts.fails,
-      });
-    }
+        passes: increment(counts.passes),
+        fails: increment(counts.fails),
+      },
+      { merge: true }
+    );
   }
 }
 

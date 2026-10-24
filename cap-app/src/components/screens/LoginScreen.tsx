@@ -56,7 +56,19 @@ export default function LoginScreen() {
         trialEndsAt: remote.user.trialEndsAt ?? undefined,
       });
     } catch (err) {
-      setError(err instanceof ApiError ? err.message : "Error de conexión");
+      if (err instanceof ApiError) {
+        setError(err.message);
+      } else {
+        const code =
+          typeof err === "object" && err && "code" in err
+            ? String((err as { code: string }).code)
+            : "";
+        setError(
+          code.startsWith("auth/")
+            ? "No se pudo abrir la sesión. Recarga e inténtalo de nuevo."
+            : "Error de conexión"
+        );
+      }
     } finally {
       setBusy(false);
     }

@@ -9,6 +9,7 @@ import {
   createSchoolPackRemote,
   ensureCenterRemote,
   staffRemote,
+  studentScoresRemote,
   type CenterInfo,
 } from "@/lib/api";
 import {
@@ -16,6 +17,7 @@ import {
   MAX_PAID_SEATS,
   PAID_MONTH_OPTIONS,
   PAID_SEAT_OPTIONS,
+  SCHOOL_SEAT_EURO_PER_MONTH,
   formatPaidUntil,
   isActiveSchoolTrial,
   packTotal,
@@ -26,7 +28,6 @@ import {
 } from "@/lib/trial";
 import {
   listStudentsByTeacher,
-  loadScoreRecords,
   type UserListEntry,
 } from "@/lib/db";
 import type { CapTrack, ScoreRecord } from "@/lib/types";
@@ -315,11 +316,19 @@ export default function TeacherScreen() {
     setErrorTopics([]);
     setErrorTotal(0);
     try {
-      const [scoreRecords, topicStats] = await Promise.all([
-        loadScoreRecords(student.username),
+      const [scoreRemote, topicStats] = await Promise.all([
+        studentScoresRemote(student.username),
         computeErrorTopicStats(student.username, student.capTrack),
       ]);
-      setRecords(scoreRecords);
+      setRecords(
+        scoreRemote.records.map((r) => ({
+          testId: r.testId,
+          testName: r.testName,
+          score: r.score,
+          passed: r.passed,
+          timestamp: new Date(r.timestamp),
+        }))
+      );
       setErrorTopics(topicStats.topics);
       setErrorTotal(topicStats.total);
     } catch (err) {
@@ -545,7 +554,7 @@ export default function TeacherScreen() {
           <div className="staff-card">
             <h3 className="panel-heading">Comprar plazas</h3>
             <p className="mb-4 text-sm text-ink-500">
-              Tú pagas {EURO_PER_MONTH} € × plaza × mes. El alumno entra con tu
+              Tú pagas {SCHOOL_SEAT_EURO_PER_MONTH} € × plaza × mes. El alumno entra con tu
               código y no paga. Un solo cobro, no es suscripción.
             </p>
             {packActive ? (

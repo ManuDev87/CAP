@@ -4,6 +4,7 @@ import { remainingTrialDays } from "./trial";
 export const PAID_MONTH_OPTIONS = [1, 2, 3, 6, 12] as const;
 export const PAID_SEAT_OPTIONS = [12, 25, 50] as const;
 export const EURO_PER_MONTH = 5;
+export const SCHOOL_SEAT_EURO_PER_MONTH = 4;
 export const MIN_PAID_MONTHS = 1;
 export const MAX_PAID_MONTHS = 12;
 export const MIN_PAID_SEATS = 1;
@@ -48,7 +49,7 @@ export function monthsTotal(months: number): number {
 }
 
 export function packTotal(seats: number, months: number): number {
-  return EURO_PER_MONTH * seats * months;
+  return SCHOOL_SEAT_EURO_PER_MONTH * seats * months;
 }
 
 export type SchoolPayStatus = "pack" | "trial" | "unpaid";
